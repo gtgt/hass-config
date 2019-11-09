@@ -2246,7 +2246,7 @@
             "hide": false,
             "installed": true,
             "installed_commit": "c30f5bc",
-            "last_commit": "c30f5bc",
+            "last_commit": "34fe326",
             "last_release_tag": "0.16.3",
             "name": "HACS (Home Assistant Community Store)",
             "new": false,
@@ -2363,8 +2363,8 @@
             "description": "Programmable thermostat that let you have a smart thermostat on budget.",
             "full_name": "custom-components/climate.programmable_thermostat",
             "hide": false,
-            "installed": true,
-            "installed_commit": "58c9bd5",
+            "installed": false,
+            "installed_commit": null,
             "last_commit": "58c9bd5",
             "last_release_tag": "3.0",
             "name": "Programmable Thermostat",
@@ -2373,7 +2373,7 @@
             "selected_tag": null,
             "show_beta": false,
             "topics": [],
-            "version_installed": "3.0"
+            "version_installed": null
         },
         "173564471": {
             "authors": [],
@@ -2381,8 +2381,8 @@
             "description": "Improved file sensor component that let you read the whole last line content.",
             "full_name": "custom-components/sensor.file_restore",
             "hide": false,
-            "installed": false,
-            "installed_commit": null,
+            "installed": true,
+            "installed_commit": "19cc627",
             "last_commit": "19cc627",
             "last_release_tag": "2.0",
             "name": "File Restore",
@@ -2391,7 +2391,7 @@
             "selected_tag": null,
             "show_beta": false,
             "topics": [],
-            "version_installed": null
+            "version_installed": "2.0"
         },
         "173955605": {
             "authors": [],
@@ -6159,7 +6159,7 @@
             "hide": false,
             "installed": true,
             "installed_commit": "ec2f266",
-            "last_commit": "ec2f266",
+            "last_commit": "8d539d6",
             "last_release_tag": null,
             "name": "amoled",
             "new": false,
@@ -6897,6 +6897,24 @@
                 "ls50w",
                 "lsx"
             ],
+            "version_installed": null
+        },
+        "220671784": {
+            "authors": [],
+            "category": "integration",
+            "description": "Programmable thermostat that let you have a smart thermostat on budget.",
+            "full_name": "gtgt/climate.programmable_thermostat",
+            "hide": false,
+            "installed": true,
+            "installed_commit": "be62493",
+            "last_commit": "be62493",
+            "last_release_tag": null,
+            "name": "Programmable Thermostat",
+            "new": false,
+            "repository_manifest": {},
+            "selected_tag": null,
+            "show_beta": false,
+            "topics": [],
             "version_installed": null
         },
         "76125161": {

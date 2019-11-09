@@ -4,3 +4,6 @@
     friendly_name: "Dolgozó"
   climate.ac_childb:
     friendly_name: "Milán"
+
+  sensor.ac_target_temp:
+    friendly_name: "Alapértelmezett célhőmérséklet"

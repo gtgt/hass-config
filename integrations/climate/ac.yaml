@@ -1,34 +1,18 @@
-  - platform: generic_thermostat
+  - platform: programmable_thermostat
     name: ac_study
     heater: switch.ac_relay_study
-    #ac_control: switch.ac_relay_study
-    target_sensor: sensor.study_temp
+    cooler: switch.ac_relay_study
+    actual_temp_sensor: sensor.study_temp
+    target_temp_sensor: sensor.ac_target_temp
     min_temp: 20
     max_temp: 23
-    target_temp: 22
-    cold_tolerance: 0.5
-    hot_tolerance: 0.5
-    min_cycle_duration:
-      seconds: 10
-    keep_alive:
-      minutes: 3
-    initial_hvac_mode: "heat"
-    away_temp: 16
-    precision: 0.5
-  - platform: generic_thermostat
+    tolerance: 0.5
+  - platform: programmable_thermostat
     name: ac_childb
     heater: switch.ac_relay_childb
-    #ac_control: switch.ac_relay_childb
-    target_sensor: sensor.childb_temp
+    cooler: switch.ac_relay_childb
+    actual_temp_sensor: sensor.childb_temp
+    target_temp_sensor: sensor.ac_target_temp
     min_temp: 20
     max_temp: 23
-    target_temp: 22
-    cold_tolerance: 0.5
-    hot_tolerance: 0.5
-    min_cycle_duration:
-      seconds: 10
-    keep_alive:
-      minutes: 3
-    initial_hvac_mode: "heat"
-    away_temp: 16
-    precision: 0.5
+    tolerance: 0.5

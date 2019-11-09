@@ -180,6 +180,15 @@
                 "name": null,
                 "platform": "mobile_app",
                 "unique_id": "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a_mobile_app_xiaomi_mi3w_battery"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.p_gt",
+                "name": null,
+                "platform": "person",
+                "unique_id": "aithuShiex4UTh4A"
             }
         ]
     },

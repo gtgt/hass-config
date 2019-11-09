@@ -1,0 +1,6 @@
+  - platform: file_restore
+    name: ac_target_temp
+    unit_of_measurement: "°C"
+    file_path: /config/ac_target_temp.csv
+    length: day
+    detail: hour

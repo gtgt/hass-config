@@ -94,11 +94,13 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
 
         self._target_temp = float(hass.states.get(target_entity_id).state)
         self._restore_temp = self._target_temp
+        self._cur_temp = self._target_temp
         # To avoid error in case real temp sensor take some time to return a number
         if hass.states.get(sensor_entity_id).state != STATE_UNKNOWN:
-            self._cur_temp = float(hass.states.get(sensor_entity_id).state)
-        else:
-            self._cur_temp = self._target_temp
+            try:
+                self._cur_temp = float(hass.states.get(sensor_entity_id).state)
+            except ValueError as ex:
+                _LOGGER.warning("Unable to update from sensor: %s", ex)
         self._active = False
         self._temp_lock = asyncio.Lock()
         self._hvac_action = CURRENT_HVAC_OFF
@@ -198,16 +200,18 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
                     await self._async_turn_off(mode="cool")
         elif self._hvac_mode == HVAC_MODE_HEAT:
             await self._async_control_thermo(mode="heat")
-            for opmod in self._hvac_list:
-                if opmod is HVAC_MODE_COOL:
-                    await self._async_turn_off(mode="cool")
-                    return
+            if self.heater_entity_id != self.cooler_entity_id:
+                for opmod in self._hvac_list:
+                    if opmod is HVAC_MODE_COOL:
+                        await self._async_turn_off(mode="cool")
+                        return
         elif self._hvac_mode == HVAC_MODE_COOL:
             await self._async_control_thermo(mode="cool")
-            for opmod in self._hvac_list:
-                if opmod is HVAC_MODE_HEAT:
-                    await self._async_turn_off(mode="heat")
-                    return
+            if self.heater_entity_id != self.cooler_entity_id:
+                for opmod in self._hvac_list:
+                    if opmod is HVAC_MODE_HEAT:
+                        await self._async_turn_off(mode="heat")
+                        return
         else:
             for opmod in self._hvac_list:
                 if opmod is HVAC_MODE_HEAT:
@@ -226,7 +230,7 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
             self._hvac_action = CURRENT_HVAC_COOL
         else:
             _LOGGER.error("No type has been passed to turn_on function")
-        _LOGGER.info("new action %s", self._hvac_action)
+        _LOGGER.info("new action %s (%s)", self._hvac_action, mode)
         await self.hass.services.async_call(HA_DOMAIN, SERVICE_TURN_ON, data)
         await self.async_update_ha_state()
 

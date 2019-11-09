@@ -2,4 +2,7 @@
       icon: mdi:nintendo-switch
     "switch.apb_*":
       icon: mdi:lightbulb
-      
+    "device_tracker.*":
+      hidden: true
+    "sensor.*_up_time":
+      hidden: true
