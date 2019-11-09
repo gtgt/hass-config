@@ -1,0 +1,70 @@
+  - platform: modbus
+    scan_interval: 5
+    coils:
+      - name: APB_Q0
+        hub: apb
+        slave: 1
+        coil: 512
+      - name: APB_Q1
+        hub: apb
+        slave: 1
+        coil: 513
+      - name: APB_Q2
+        hub: apb
+        slave: 1
+        coil: 514
+      - name: APB_Q3
+        hub: apb
+        slave: 1
+        coil: 515
+      - name: APB_Q4
+        hub: apb
+        slave: 1
+        coil: 516
+      - name: APB_Q5
+        hub: apb
+        slave: 1
+        coil: 517
+      - name: APB_Q6
+        hub: apb
+        slave: 1
+        coil: 518
+      - name: APB_Q7
+        hub: apb
+        slave: 1
+        coil: 519
+
+
+      - name: APB_Q10
+        hub: apb
+        slave: 1
+        coil: 528
+      - name: APB_Q11
+        hub: apb
+        slave: 1
+        coil: 529
+      - name: APB_Q12
+        hub: apb
+        slave: 1
+        coil: 530
+      - name: APB_Q13
+        hub: apb
+        slave: 1
+        coil: 531
+#      - name: APB_Q14
+#        hub: apb
+#        slave: 1
+#        coil: 532
+#      - name: APB_Q15
+#        hub: apb
+#        slave: 1
+#        coil: 533
+#      - name: APB_Q16
+#        hub: apb
+#        slave: 1
+#        coil: 534
+      - name: APB_Q17
+        hub: apb
+        slave: 1
+        coil: 535
+        

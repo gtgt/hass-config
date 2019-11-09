@@ -1,0 +1,12 @@
+  - id: 'ac_mode'
+    alias: AC mode 
+    initial_state: 'true'
+    trigger:
+      - entity_id: climate.daikin_ac
+        platform: state
+    action:
+      - service: climate.set_ac_mode
+        data:
+          entity_id: climate.ac_study
+          #hvac_mode: "state_attr('climate', 'hvac_mode")"
+          ac_mode: "{{ (is_state_attr('climate.daikin_ac', 'hvac_action', 'cooling') | bool }}"

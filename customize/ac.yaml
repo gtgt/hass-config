@@ -1,0 +1,6 @@
+  climate.daikin_ac:
+    friendly_name: "Daikin AC"
+  climate.ac_study:
+    friendly_name: "Dolgozó"
+  climate.ac_childb:
+    friendly_name: "Milán"

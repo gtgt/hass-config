@@ -1,0 +1,4 @@
+  - platform: openweathermap
+    name: "Időjárás"
+    mode: hourly
+    api_key: !secret owm_api_key

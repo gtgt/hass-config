@@ -1,0 +1,117 @@
+  - platform: modbus
+    scan_interval: 5
+    coils:
+      - name: APB_I0
+        hub: apb
+        slave: 1
+        coil: 256
+      - name: APB_I1
+        hub: apb
+        slave: 1
+        coil: 257
+      - name: APB_I2
+        hub: apb
+        slave: 1
+        coil: 258
+      - name: APB_I3
+        hub: apb
+        slave: 1
+        coil: 259
+      - name: APB_I4
+        hub: apb
+        slave: 1
+        coil: 260
+      - name: APB_I5
+        hub: apb
+        slave: 1
+        coil: 261
+      - name: APB_I6
+        hub: apb
+        slave: 1
+        coil: 262
+      - name: APB_I7
+        hub: apb
+        slave: 1
+        coil: 263
+      - name: APB_I8
+        hub: apb
+        slave: 1
+        coil: 264
+      - name: APB_I9
+        hub: apb
+        slave: 1
+        coil: 265
+      - name: APB_IA
+        hub: apb
+        slave: 1
+        coil: 266
+      - name: APB_IB
+        hub: apb
+        slave: 1
+        coil: 267
+      - name: APB_IC
+        hub: apb
+        slave: 1
+        coil: 268
+      - name: APB_ID
+        hub: apb
+        slave: 1
+        coil: 269
+
+
+#      - name: APB_I10
+#        hub: apb
+#        slave: 1
+#        coil: 272
+#      - name: APB_I11
+#        hub: apb
+#        slave: 1
+#        coil: 273
+      - name: APB_I12
+        hub: apb
+        slave: 1
+        coil: 274
+      - name: APB_I13
+        hub: apb
+        slave: 1
+        coil: 275
+      - name: APB_I14
+        hub: apb
+        slave: 1
+        coil: 276
+      - name: APB_I15
+        hub: apb
+        slave: 1
+        coil: 277
+      - name: APB_I16
+        hub: apb
+        slave: 1
+        coil: 278
+      - name: APB_I17
+        hub: apb
+        slave: 1
+        coil: 279
+      - name: APB_I18
+        hub: apb
+        slave: 1
+        coil: 280
+      - name: APB_I19
+        hub: apb
+        slave: 1
+        coil: 281
+      - name: APB_I1A
+        hub: apb
+        slave: 1
+        coil: 282
+      - name: APB_I1B
+        hub: apb
+        slave: 1
+        coil: 283
+      - name: APB_I1C
+        hub: apb
+        slave: 1
+        coil: 284
+#      - name: APB_I1D
+#        hub: apb
+#        slave: 1
+#        coil: 285

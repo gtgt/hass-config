@@ -1,0 +1,29 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Nov  9 2019, 13:45:08",
+            "esphome_version": "1.15.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "BC:DD:C2:30:FA:B4",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "study",
+            "uses_password": true
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 1347789869,
+                "name": "study_temp",
+                "object_id": "study_temp",
+                "unique_id": "dallas-AFA86FA811646128",
+                "unit_of_measurement": "\u00b0C"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.c46b80c5098f49b4881ee15b8648ef96",
+    "version": 1
+}

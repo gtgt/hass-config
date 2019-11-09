@@ -1,0 +1,33 @@
+ac_valve:
+  name: AC
+  view: yes
+  entities:
+    - climate.daikin_ac
+    - climate.ac_study
+    - climate.ac_childb
+    - switch.ac_relay_study
+    - switch.ac_relay_childa
+    - switch.ac_relay_childb
+    - switch.ac_relay_bedroom
+    - switch.ac_relay_ventillation
+
+apb:
+  name: APB
+  view: yes
+  entities:
+    - switch.apb_q0
+    - switch.apb_q1
+    - switch.apb_q2
+    - switch.apb_q3
+    - switch.apb_q4
+    - switch.apb_q5
+    - switch.apb_q6
+    - switch.apb_q7
+    - switch.apb_q10
+    - switch.apb_q11
+    - switch.apb_q12
+    - switch.apb_q13
+#    - switch.apb_q14
+#    - switch.apb_q15
+#    - switch.apb_q16
+    - switch.apb_q17

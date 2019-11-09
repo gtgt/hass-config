@@ -1,0 +1,4 @@
+.HA_VERSION
+secrets.yaml
+home-assistant*
+custom_components/hacs

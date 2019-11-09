@@ -1,0 +1,5 @@
+    "binary_sensor.apb_*":
+      icon: mdi:nintendo-switch
+    "switch.apb_*":
+      icon: mdi:lightbulb
+      

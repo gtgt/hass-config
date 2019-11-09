@@ -1,0 +1,32 @@
+{
+    "data": {
+        "binary_sensor": {},
+        "deleted_ids": [],
+        "sensor": {
+            "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a_mobile_app_xiaomi_mi3w_battery": {
+                "added": true,
+                "attributes": {
+                    "charging_state": "charging",
+                    "device_class": "battery",
+                    "health": "good",
+                    "icon": "mdi:battery-charging-20",
+                    "power": "AC",
+                    "state": 16,
+                    "technology": "Li-poly",
+                    "temperature": "25.1",
+                    "voltage": "3791 mV"
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-20",
+                "name": "xiaomi_mi3w Battery Sensor",
+                "state": "16.0",
+                "type": "sensor",
+                "unique_id": "mobile_app_xiaomi_mi3w_battery",
+                "unit_of_measurement": "%",
+                "webhook_id": "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a"
+            }
+        }
+    },
+    "key": "mobile_app",
+    "version": 1
+}

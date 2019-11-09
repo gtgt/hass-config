@@ -1,0 +1,178 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "cloud_poll",
+                "data": {},
+                "domain": "hacs",
+                "entry_id": "704804f8d93640819af6c5809097affd",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "configuration.yaml",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.8",
+                    "mac": "A0CC2B6BDF3B"
+                },
+                "domain": "daikin",
+                "entry_id": "43f08b7d3100453da1de05ca95e831b8",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "192.168.1.8",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "doPbHk3nod0:APA91bGBmSOd0c8R_HXB_HnzFR7CkA6erlHLmoAYNX-8wjPR7s3r_AwcWXc6tEDt3xFpieClQjeUp-V8Qu_T9B_TUcStK-H107W4S4ImmDMtQXOQ2uVXqn60wclCQ8cSSU1xAwBnWWk5",
+                        "push_url": "https://us-central1-ha-client-c73c4.cloudfunctions.net/sendPushNotification"
+                    },
+                    "app_id": "ha_client",
+                    "app_name": "HA Client",
+                    "app_version": "0.7.2-",
+                    "device_id": "c2df1a7b865d432cbfc079349a635b2d",
+                    "device_name": "GT's Mi Note 2",
+                    "manufacturer": "Xiaomi",
+                    "model": "Mi Note 2",
+                    "os_name": "Android",
+                    "os_version": "8.0.0",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "0060b125c0f2a2c040646133ee3fe420025921a6290a8cdd3e9da9e0aa298beb"
+                },
+                "domain": "mobile_app",
+                "entry_id": "2ac8a0338b30435b97d6b03e932480d5",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "GT's Mi Note 2",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "ac_relay.lan",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "20c06d361c7a476491520ec1a4238b3d",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "ac_relay",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "study.local",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "c46b80c5098f49b4881ee15b8648ef96",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "study",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "childb.local",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "888a4acda5af4815a34f663f156aad09",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "childb",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "fXTD7OKJ90E:APA91bF3k1w-M9181LLAkNDhuHThSINuIjT7mwSM7cKrO-QZyGNqCFCz-InfU4ln8xSW_HpV-WrHYJZUlzjAvrjtv6GugnnvMQVsTQHZh6C7k_enXDXvzTTsIU69qB9JSl_ucRALy0r9",
+                        "push_url": "https://us-central1-ha-client-c73c4.cloudfunctions.net/sendPushNotification"
+                    },
+                    "app_id": "ha_client",
+                    "app_name": "HA Client",
+                    "app_version": "0.7.2-",
+                    "device_id": "db3dde07a0e941fab871a09ef3d67fe4",
+                    "device_name": "GT's MI 3W",
+                    "manufacturer": "Xiaomi",
+                    "model": "MI 3W",
+                    "os_name": "Android",
+                    "os_version": "7.1.2",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "983491ec9ea3062aba4311a3cc74013aa0587453b2e9f96b5596bf6460131576"
+                },
+                "domain": "mobile_app",
+                "entry_id": "c5548384322b4f3bacaefbd76233e4a8",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "GT's MI 3W",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "dJzwJ0x6Frc:APA91bHkz7DOmUUZ3kTMnDXPc6itsWtUz6jtH1C8QG2K2QuarGFEOil-NjxIcHP9dXPm5hKHG85imtAy9Y_cPekiCS5m3QIPl-i0HQSc6vUuCicgRuomELJTTttrCzp2EPH1Na3qLhIP",
+                        "push_url": "https://ariela.surodev.com/notification/"
+                    },
+                    "app_id": "com.surodev.ariela",
+                    "app_name": "Ariela",
+                    "app_version": "1.3.7.4",
+                    "device_id": "e36da0bcd6c540459ce0c2e7e9b87c34",
+                    "device_name": "Xiaomi_MI3W",
+                    "manufacturer": "Xiaomi",
+                    "model": "cancro",
+                    "os_name": "7.1.2",
+                    "os_version": "7.1.2",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a"
+                },
+                "domain": "mobile_app",
+                "entry_id": "b8b0c4c586bb4badbf8b209c039c6de5",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Xiaomi_MI3W",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

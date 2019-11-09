@@ -1,0 +1,87 @@
+# Enable config via the interface
+config:
+
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  unit_system: metric
+  time_zone: Europe/Budapest
+  customize: !include_dir_merge_named customize
+  customize_glob: !include customize_glob.yaml
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+      trusted_networks:
+        - 192.168.1.0/24
+        - 127.0.0.1
+    - type: legacy_api_password
+      api_password: !secret api_password
+      
+logger:
+  default: info
+  
+http:
+  ip_ban_enabled: True
+  login_attempts_threshold: 5
+#   base_url: example.duckdns.org:8123
+
+# Enable system health on info page
+system_health:
+
+hacs:
+  token: !secret hacs_token
+  theme: true
+  python_script: true
+
+# Text to speech&
+tts:
+  - platform: google_translate
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Track the sun
+sun:
+
+daikin:
+  hosts:
+    - 192.168.1.8
+
+modbus:
+  name: apb
+  type: serial
+  method: rtu
+  port: /dev/ttyUSB0
+  baudrate: 9600
+  stopbits: 1
+  bytesize: 8
+  parity: N
+  timeout: 5
+  
+satel_integra: !include satel_integra.yaml
+
+media_player:
+  - platform: kodi
+    host: qbox.lan
+    port: 80
+    tcp_port: 9090
+    name: kodi
+    username: !secret kodi_username
+    password: !secret kodi_password
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+weather: !include_dir_merge_list integrations/weather
+climate: !include_dir_merge_list integrations/climate
+fan: !include_dir_merge_list integrations/fan
+binary_sensor: !include_dir_merge_list integrations/binary_sensor
+sensor: !include_dir_merge_list integrations/sensor
+switch: !include_dir_merge_list integrations/switch
+# camera: !include_dir_merge_list integrations/camera
+
+automation: !include_dir_merge_list automations
+
+group: !include groups.yaml
+script: !include scripts.yaml

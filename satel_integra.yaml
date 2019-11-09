@@ -1,0 +1,41 @@
+  host: alarm.lan
+  port: 7094
+#  partitions:
+#    01:
+#      name: 'House'
+#      arm_home_mode: 2
+#    02:
+#      name: 'Garage'
+#  zones:
+#    01:
+#      name: 'Bedroom'
+#      type: 'motion'
+#    02:
+#      name: 'Hall'
+#      type: 'motion'
+#    30:
+#      name: 'Kitchen - smoke'
+#      type: 'smoke'
+#    113:
+#      name: 'Entry door'
+#      type: 'opening'
+#  outputs:
+#    05:
+#      name: 'Garden lights trigger'
+#      type: 'light'
+#    09:
+#      name: 'Gate opening trigger'
+#      type: 'opening'
+#    30:
+#      name: 'Alarm triggered'
+#      type: 'safety'
+#    32:
+#      name: 'Alarm power problem'
+#      type: 'safety'
+#  switchable_outputs:
+#    05:
+#      name: 'Gate open'
+#    06:
+#      name: 'Gate close'
+#    14:
+#      name: 'Garden light'

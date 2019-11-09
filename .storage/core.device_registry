@@ -1,0 +1,220 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": null,
+                "config_entries": [
+                    "43f08b7d3100453da1de05ca95e831b8"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a0:cc:2b:6b:df:3b"
+                    ]
+                ],
+                "id": "fd301bb8ae1f4dfd9ba41bb6ce001ac9",
+                "identifiers": [],
+                "manufacturer": "Daikin",
+                "model": "FDXM50F3V1B",
+                "name": "AC",
+                "name_by_user": null,
+                "sw_version": "3.3.6",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2ac8a0338b30435b97d6b03e932480d5"
+                ],
+                "connections": [],
+                "id": "d3d3ebda50694ef2af877b07ade106e2",
+                "identifiers": [
+                    [
+                        "device_id",
+                        "c2df1a7b865d432cbfc079349a635b2d"
+                    ],
+                    [
+                        "webhook_id",
+                        "0060b125c0f2a2c040646133ee3fe420025921a6290a8cdd3e9da9e0aa298beb"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Mi Note 2",
+                "name": "GT's Mi Note 2",
+                "name_by_user": null,
+                "sw_version": "8.0.0",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2ac8a0338b30435b97d6b03e932480d5"
+                ],
+                "connections": [],
+                "id": "09bb020c0dd047469cd52d7a363cb481",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "c2df1a7b865d432cbfc079349a635b2d"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Mi Note 2",
+                "name": null,
+                "name_by_user": null,
+                "sw_version": "8.0.0",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "20c06d361c7a476491520ec1a4238b3d"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "4c:11:ae:0d:1d:c9"
+                    ]
+                ],
+                "id": "c42ff05402484b959e04718619abc8d3",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "ac_relay",
+                "name_by_user": "AC Szelepvez\u00e9rl\u00e9s",
+                "sw_version": "1.15.0-dev (Nov  9 2019, 13:38:43)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c46b80c5098f49b4881ee15b8648ef96"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "bc:dd:c2:30:fa:b4"
+                    ]
+                ],
+                "id": "da4c7ac12b234f1ca74bf288cc817943",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "study",
+                "name_by_user": "Dolgoz\u00f3",
+                "sw_version": "1.15.0-dev (Nov  9 2019, 13:45:08)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "888a4acda5af4815a34f663f156aad09"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "60:01:94:16:06:9e"
+                    ]
+                ],
+                "id": "238aa9b0192b4fc992cf76d9a8a8490d",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "childb",
+                "name_by_user": "Mil\u00e1n",
+                "sw_version": "1.15.0-dev (Nov  9 2019, 13:41:14)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c5548384322b4f3bacaefbd76233e4a8"
+                ],
+                "connections": [],
+                "id": "22340b021c954bc4b6979a2f2bd32ef9",
+                "identifiers": [
+                    [
+                        "device_id",
+                        "db3dde07a0e941fab871a09ef3d67fe4"
+                    ],
+                    [
+                        "webhook_id",
+                        "983491ec9ea3062aba4311a3cc74013aa0587453b2e9f96b5596bf6460131576"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MI 3W",
+                "name": "GT's MI 3W",
+                "name_by_user": null,
+                "sw_version": "7.1.2",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c5548384322b4f3bacaefbd76233e4a8"
+                ],
+                "connections": [],
+                "id": "b11b8d5e090b4659b59907b78a3c0d8c",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "db3dde07a0e941fab871a09ef3d67fe4"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MI 3W",
+                "name": null,
+                "name_by_user": null,
+                "sw_version": "7.1.2",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b8b0c4c586bb4badbf8b209c039c6de5"
+                ],
+                "connections": [],
+                "id": "ef389f23dc184bb381c5f9eaf60ca946",
+                "identifiers": [
+                    [
+                        "webhook_id",
+                        "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a"
+                    ],
+                    [
+                        "device_id",
+                        "e36da0bcd6c540459ce0c2e7e9b87c34"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "cancro",
+                "name": "Xiaomi_MI3W",
+                "name_by_user": null,
+                "sw_version": "7.1.2",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "b8b0c4c586bb4badbf8b209c039c6de5"
+                ],
+                "connections": [],
+                "id": "4b107ce207ee41c69af02d6784062df3",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "e36da0bcd6c540459ce0c2e7e9b87c34"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "cancro",
+                "name": null,
+                "name_by_user": null,
+                "sw_version": "7.1.2",
+                "via_device_id": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
