@@ -1,0 +1,10 @@
+  group.all_switches:
+    friendly_name: "Összes kapcsoló"
+  group.all_lights:
+    friendly_name: "Összes világítás"
+  group.all_devices:
+    friendly_name: "Összes eszköz"
+  group.all_automations:
+    friendly_name: "Automatizálás"
+  group.all_scripts:
+    friendly_name: "Szkriptek"

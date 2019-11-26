@@ -1,0 +1,44 @@
+- id: airpurifier_pro_mode_set
+  alias: Air Purifier mode set
+  hide_entity: true
+  trigger:
+    entity_id: input_select.airpurifier_pro_mode
+    platform: state
+  action:
+    service: fan.set_speed
+    data_template:
+      entity_id: fan.airpurifier_pro
+      speed: '{{ states.input_select.airpurifier_pro_mode.state }}'
+- id: airpurifier_pro_mode_changed
+  alias: Air Purifier mode changed
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: fan.airpurifier_pro
+  action:
+    service: input_select.select_option
+    entity_id: input_select.airpurifier_pro_mode
+    data_template:
+      option: '{{ states.fan.airpurifier_pro.attributes.speed }}'
+- id: airpurifier_pro_favorite_level_set
+  alias: Air Purifier favorite level set
+  hide_entity: true
+  trigger:
+    entity_id: input_number.airpurifier_pro_favorite_level
+    platform: state
+  action:
+    service: fan.xiaomi_miio_set_favorite_level
+    data_template:
+      entity_id: fan.airpurifier_pro
+      level: '{{ states.input_number.airpurifier_pro_favorite_level.state | int }}'
+- id: airpurifier_pro_mode_favorite_level_changed
+  alias: Air Purifier favorite level changed
+  hide_entity: true
+  trigger:
+    platform: state
+    entity_id: fan.airpurifier_pro
+  action:
+    service: input_number.set_value
+    entity_id: input_number.airpurifier_pro_favorite_level
+    data_template:
+      value: '{{ states.fan.airpurifier_pro.attributes.favorite_level }}'

@@ -1,0 +1,39 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Nov 13 2019, 10:41:17",
+            "esphome_version": "1.15.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "4C:11:AE:0E:6C:A4",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "bathroom",
+            "uses_password": true
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 1083925892,
+                "name": "bathroom_temp",
+                "object_id": "bathroom_temp",
+                "unique_id": "bathroomsensorbathroom_temp",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 3493367305,
+                "name": "bathroom_humidity",
+                "object_id": "bathroom_humidity",
+                "unique_id": "bathroomsensorbathroom_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.8f23112f2cb54b1f8c1f9e8688ff3421",
+    "version": 1
+}

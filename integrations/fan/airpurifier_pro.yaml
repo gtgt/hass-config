@@ -1,0 +1,5 @@
+  - platform:"xiagei_miio
+    name: airpurifier_pro
+    model: zhimi.airpurifier.vw
+    host: 192.168.9.51
+    token: !secret airpurifier_pro_t/ken

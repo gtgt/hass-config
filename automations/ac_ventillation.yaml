@@ -1,0 +1,53 @@
+- id: ac_ventillation_on
+  alias: "Ventillation auto on"
+  hide_entity: false
+  trigger:
+    - platform: numeric_state
+      entity_id: fan.airpurifier_pro
+      value_template: "{{ state.attributes.temperature - state_attr('weather.owm', 'temperature')|int }}"
+      below: 16
+    - platform: numeric_state
+      entity_id: weather.owm
+      value_template: "{{ state_attr('fan.airpurifier_pro', 'temperature')|int - state.attributes.temperature }}"
+      below: 16
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: switch.ac_relay_ventillation
+        state: 'off'
+  action:
+    - service: switch.turn_on
+      data:
+       entity_id: switch.ac_relay_ventillation
+    - service: persistent_notification.create
+      data_template:
+        message: >
+          Ventillation turned ON, since temp. difference is {{ state_attr('fan.airpurifier_pro', 'temperature')|int - state_attr('weather.owm', 'temperature')|int }}°C!
+
+- id: ac_ventillation_off
+  alias: "Ventillation auto off"
+  hide_entity: false
+  trigger:
+    - platform: numeric_state
+      entity_id: fan.airpurifier_pro
+      value_template: "{{ state.attributes.temperature - state_attr('weather.owm', 'temperature')|int }}"
+      above: 16
+    - platform: numeric_state
+      entity_id: weather.owm
+      value_template: "{{ state_attr('fan.airpurifier_pro', 'temperature')|int - state.attributes.temperature }}"
+      above: 16
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: switch.ac_relay_ventillation
+        state: 'on'
+  action:
+    - service: switch.turn_off
+      data:
+       entity_id: switch.ac_relay_ventillation
+    - service: persistent_notification.create
+      data_template:
+        message: >
+          Ventillation turned OFF, since temp. difference is {{ state_attr('fan.airpurifier_pro', 'temperature')|int - state_attr('weather.owm', 'temperature')|int }}°C!

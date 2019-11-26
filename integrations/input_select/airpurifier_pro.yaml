@@ -1,0 +1,7 @@
+  airpurifier_pro_mode:
+    name: "Mód"
+    options:
+      - Auto
+      - Silent
+      - Favorite
+    icon: "mdi:animation-outline"
