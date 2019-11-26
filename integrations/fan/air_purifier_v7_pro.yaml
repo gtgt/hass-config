@@ -1,5 +1,0 @@
-  - platform: xiaomi_miio
-    name: "Pufi v7"
-    model: zhimi.airpurifier.v7
-    host: 192.168.1.51
-    token: !secret air_purifier_v7_pro_token

@@ -24,50 +24,6 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "2ac8a0338b30435b97d6b03e932480d5"
-                ],
-                "connections": [],
-                "id": "d3d3ebda50694ef2af877b07ade106e2",
-                "identifiers": [
-                    [
-                        "device_id",
-                        "c2df1a7b865d432cbfc079349a635b2d"
-                    ],
-                    [
-                        "webhook_id",
-                        "0060b125c0f2a2c040646133ee3fe420025921a6290a8cdd3e9da9e0aa298beb"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "Mi Note 2",
-                "name": "GT's Mi Note 2",
-                "name_by_user": null,
-                "sw_version": "8.0.0",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "2ac8a0338b30435b97d6b03e932480d5"
-                ],
-                "connections": [],
-                "id": "09bb020c0dd047469cd52d7a363cb481",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "c2df1a7b865d432cbfc079349a635b2d"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "Mi Note 2",
-                "name": null,
-                "name_by_user": null,
-                "sw_version": "8.0.0",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
                     "20c06d361c7a476491520ec1a4238b3d"
                 ],
                 "connections": [
@@ -122,95 +78,91 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "childb",
                 "name_by_user": "Mil\u00e1n",
-                "sw_version": "1.15.0-dev (Nov  9 2019, 13:41:14)",
+                "sw_version": "1.15.0-dev (Nov 15 2019, 23:25:16)",
                 "via_device_id": null
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "c5548384322b4f3bacaefbd76233e4a8"
+                    "c9d4debac02a43ba996b19c3bf6e4963"
                 ],
-                "connections": [],
-                "id": "22340b021c954bc4b6979a2f2bd32ef9",
-                "identifiers": [
+                "connections": [
                     [
-                        "device_id",
-                        "db3dde07a0e941fab871a09ef3d67fe4"
-                    ],
-                    [
-                        "webhook_id",
-                        "983491ec9ea3062aba4311a3cc74013aa0587453b2e9f96b5596bf6460131576"
+                        "mac",
+                        "4c:11:ae:0e:3d:03"
                     ]
                 ],
-                "manufacturer": "Xiaomi",
-                "model": "MI 3W",
-                "name": "GT's MI 3W",
+                "id": "5f8b5b3f072a472fbface84d4a70ae63",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "childa",
                 "name_by_user": null,
-                "sw_version": "7.1.2",
+                "sw_version": "1.15.0-dev (Nov 15 2019, 01:02:44)",
                 "via_device_id": null
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "c5548384322b4f3bacaefbd76233e4a8"
+                    "8f23112f2cb54b1f8c1f9e8688ff3421"
                 ],
-                "connections": [],
-                "id": "b11b8d5e090b4659b59907b78a3c0d8c",
-                "identifiers": [
+                "connections": [
                     [
-                        "mobile_app",
-                        "db3dde07a0e941fab871a09ef3d67fe4"
+                        "mac",
+                        "4c:11:ae:0e:6c:a4"
                     ]
                 ],
-                "manufacturer": "Xiaomi",
-                "model": "MI 3W",
-                "name": null,
+                "id": "c1d96cb753be4bb0a5fff704ad728654",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "bathroom",
                 "name_by_user": null,
-                "sw_version": "7.1.2",
+                "sw_version": "1.15.0-dev (Nov 13 2019, 10:41:17)",
                 "via_device_id": null
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "b8b0c4c586bb4badbf8b209c039c6de5"
+                    "214106cfa2674bc0a8d7853b7b064d69"
                 ],
                 "connections": [],
-                "id": "ef389f23dc184bb381c5f9eaf60ca946",
+                "id": "3d9c0bcc9f24448cbd6d2a333b4c2e52",
                 "identifiers": [
                     [
                         "webhook_id",
-                        "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a"
+                        "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
                     ],
                     [
                         "device_id",
-                        "e36da0bcd6c540459ce0c2e7e9b87c34"
+                        "fbf4a0a4d15f4fd1b450e6633920b821"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
-                "model": "cancro",
-                "name": "Xiaomi_MI3W",
+                "model": "Mi Note 2",
+                "name": "GT's Mi Note 2",
                 "name_by_user": null,
-                "sw_version": "7.1.2",
+                "sw_version": "8.0.0",
                 "via_device_id": null
             },
             {
                 "area_id": null,
                 "config_entries": [
-                    "b8b0c4c586bb4badbf8b209c039c6de5"
+                    "214106cfa2674bc0a8d7853b7b064d69"
                 ],
                 "connections": [],
-                "id": "4b107ce207ee41c69af02d6784062df3",
+                "id": "5046865547dd46bdb43d50b703f2b7cf",
                 "identifiers": [
                     [
                         "mobile_app",
-                        "e36da0bcd6c540459ce0c2e7e9b87c34"
+                        "fbf4a0a4d15f4fd1b450e6633920b821"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
-                "model": "cancro",
+                "model": "Mi Note 2",
                 "name": null,
                 "name_by_user": null,
-                "sw_version": "7.1.2",
+                "sw_version": "8.0.0",
                 "via_device_id": null
             }
         ]

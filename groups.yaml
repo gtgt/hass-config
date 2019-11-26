@@ -1,9 +1,10 @@
-ac_valve:
+ac:
   name: AC
   view: yes
   entities:
-    - climate.daikin_ac
+    - climate.ac
     - climate.ac_study
+    - climate.ac_childa
     - climate.ac_childb
     - switch.ac_relay_study
     - switch.ac_relay_childa
@@ -31,3 +32,58 @@ apb:
 #    - switch.apb_q15
 #    - switch.apb_q16
     - switch.apb_q17
+
+alarm:
+  name: Riasztó
+  view: yes
+  entities:
+    - binary_sensor.pir_entry
+    - binary_sensor.pir_study
+    - binary_sensor.pir_bedroom
+    - binary_sensor.pir_kitchen
+    - binary_sensor.pir_livingroom
+    - binary_sensor.pir_childa
+    - binary_sensor.pir_childb
+    - binary_sensor.window_study
+    - binary_sensor.window_bedroom
+    - binary_sensor.window_bathroom
+    - binary_sensor.window_kitchen
+    - binary_sensor.window_livingroom1
+    - binary_sensor.window_livingroom2
+    - binary_sensor.window_childa
+    - binary_sensor.window_childb
+    - binary_sensor.dusk_detector
+    - binary_sensor.pir_terrace
+    - binary_sensor.pir_backyard_left
+    - binary_sensor.pir_backyard_back
+    - binary_sensor.pir_backyard_right
+    - binary_sensor.pir_backyard_sidewalk
+    - binary_sensor.fire_attic
+    - binary_sensor.alarm_armed_fully
+    - switch.alarm_output1
+    - switch.alarm_output2
+    - switch.alarm_sirene_buzzer
+    - switch.alarm_sirene_light
+    - switch.terrace_light
+    - switch.outside_wall_light1
+    - switch.outside_wall_light2
+    - alarm_control_panel.inside
+    - alarm_control_panel.windows
+    - alarm_control_panel.outside
+
+airpurifier_pro:
+  name: Légtisztító
+  view: yes
+  entities:
+    - fan.airpurifier_pro
+    - input_select.airpurifier_pro_mode
+    - input_number.airpurifier_pro_favorite_level
+    - switch.airpurifier_pro_child_lock
+    - switch.airpurifier_pro_led
+    - switch.airpurifier_pro_buzzer
+    - sensor.airpurifier_pro_speed
+    - sensor.airpurifier_pro_filter_remaining
+    - sensor.airpurifier_pro_air_quality_pm25
+    - sensor.airpurifier_pro_temp
+    - sensor.airpurifier_pro_humidity
+    - sensor.airpurifier_pro_air_quality_pm25

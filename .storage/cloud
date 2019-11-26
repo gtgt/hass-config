@@ -1,12 +1,45 @@
 {
     "data": {
-        "alexa_enabled": true,
+        "alexa_enabled": false,
         "alexa_entity_configs": {},
         "cloud_user": "bb4e9201fafa4db38a4f0c170a37ad1f",
-        "cloudhooks": {},
+        "cloudhooks": {
+            "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808": {
+                "cloudhook_id": "3f96acac48844887bcd7a220a6dcd3ac",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABdy-f3LRt9AX0sNKO8ZZzYiU0uQTWLhRqawjjZY8XTcCPPnIdTH7HbuinEDd719H4CeRYoROoD4WpKS35pzUuHtS5T1jxvRQihKhAM29lgQOVU8Hksx7h24BReFR2yiNAKXNZMA7e_Zt9TDRDK_ZnfTP8bphxFZODQiMLig-VIfgSykiQ=",
+                "managed": true,
+                "webhook_id": "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
+            }
+        },
         "google_enabled": true,
-        "google_entity_configs": {},
+        "google_entity_configs": {
+            "alarm_control_panel.inside": {
+                "disable_2fa": true
+            },
+            "alarm_control_panel.outside": {
+                "disable_2fa": false
+            },
+            "alarm_control_panel.windows": {
+                "disable_2fa": true
+            },
+            "group.all_devices": {
+                "should_expose": false
+            },
+            "group.all_fans": {
+                "should_expose": false
+            },
+            "group.all_switches": {
+                "should_expose": false
+            },
+            "switch.alarm_sirene_buzzer": {
+                "should_expose": true
+            },
+            "switch.alarm_sirene_light": {
+                "should_expose": true
+            }
+        },
         "google_local_webhook_id": "f97dd8fcce8df16e2a3140e8570e1d50c2f36ceea7694c9e1100f88ad7a46600",
+        "google_report_state": true,
         "google_secure_devices_pin": null,
         "remote_enabled": false
     },

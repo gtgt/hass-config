@@ -1,9 +1,38 @@
   climate.daikin_ac:
-    friendly_name: "Daikin AC"
+    friendly_name: "Daikin"
   climate.ac_study:
     friendly_name: "Dolgozó"
+  climate.ac_childa:
+    friendly_name: "Máté"
   climate.ac_childb:
     friendly_name: "Milán"
+    
+  switch.ac_relay_study:
+    friendly_name: "Dolgozó klíma"
+  switch.ac_relay_childa:
+    friendly_name: "Máté klíma"
+  switch.ac_relay_childb:
+    friendly_name: "Milán klíma"
+  switch.ac_relay_bedroom:
+    friendly_name: "Háló klíma"
+  switch.ac_relay_ventillation:
+    friendly_name: "Szellőztetés"
+    
+  sensor.ac_relay_up_time:
+    friendly_name: "AC relé bekapcsolva"
+  
+  sensor.childb_temp_outside:
+    friendly_name: "Kinti hőmérséklet"
+  sensor.study_temp:
+    friendly_name: "Dolgozó hőmérséklet"
+  sensor.childa_temp:
+    friendly_name: "Máté hőmérséklet"
+  sensor.childa_humidity:
+    friendly_name: "Máté páratartalom"
+  sensor.childb_temp:
+    friendly_name: "Milán hőmérséklet"
+  sensor.childb_humidity:
+    friendly_name: "Milán páratartalom"
 
   sensor.ac_target_temp:
     friendly_name: "Alapértelmezett célhőmérséklet"

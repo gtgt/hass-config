@@ -1,2 +1,6 @@
 sensor.hacs:
   hidden: true
+weather.owm:
+  friendly_name: "Időjárás"
+fan.airpurifier_pro:
+  friendly_name: "Pufi"

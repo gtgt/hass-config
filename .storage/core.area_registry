@@ -1,19 +1,6 @@
 {
     "data": {
-        "areas": [
-            {
-                "id": "ae957701889b4e2aba1b1b1be552d034",
-                "name": "Nappali"
-            },
-            {
-                "id": "ef839d0f25f444fa8e80690cd3ff2d99",
-                "name": "Konyha"
-            },
-            {
-                "id": "125c2a8dd9984ab08e82d933058ad82f",
-                "name": "H\u00e1l\u00f3szoba"
-            }
-        ]
+        "areas": []
     },
     "key": "core.area_registry",
     "version": 1
