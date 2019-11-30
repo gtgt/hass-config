@@ -2305,7 +2305,7 @@
             "full_name": "hacs/integration",
             "hide": false,
             "installed": true,
-            "installed_commit": "c30f5bc",
+            "installed_commit": "499bf36",
             "last_commit": "499bf36",
             "last_release_tag": "0.17.4",
             "name": "HACS (Home Assistant Community Store)",
@@ -2325,7 +2325,7 @@
                 "package-manager",
                 "python"
             ],
-            "version_installed": "0.16.3"
+            "version_installed": "0.17.4"
         },
         "172800356": {
             "authors": [
@@ -7246,6 +7246,55 @@
             "new": true,
             "repository_manifest": {
                 "name": "Green Slate Theme"
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "topics": [],
+            "version_installed": null
+        },
+        "223938651": {
+            "authors": [],
+            "category": "theme",
+            "description": "Midnight Blue theme for Home Assistant",
+            "full_name": "home-assistant-community-themes/midnight-blue",
+            "hide": false,
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": null,
+            "name": "midnight_blue",
+            "new": true,
+            "repository_manifest": {
+                "name": "Midnight Blue Theme"
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "topics": [
+                "hacs",
+                "home-assistant",
+                "theme"
+            ],
+            "version_installed": null
+        },
+        "223993584": {
+            "authors": [
+                "@Ernst79",
+                "@Magalex2x14"
+            ],
+            "category": "integration",
+            "description": "Xiaomi Mi Temperature and Humidity monitor (BLE) sensor",
+            "full_name": "custom-components/sensor.mitemp_bt",
+            "hide": false,
+            "installed": false,
+            "installed_commit": null,
+            "last_commit": null,
+            "last_release_tag": "0.3.0",
+            "name": "Xiaomi Mi temperature and humidity monitor",
+            "new": true,
+            "repository_manifest": {
+                "domains": "sensor",
+                "iot_class": "local push",
+                "name": "Xiaomi Mi temperature and humidity monitor (BLE) sensor platform"
             },
             "selected_tag": null,
             "show_beta": false,
