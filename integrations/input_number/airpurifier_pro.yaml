@@ -1,5 +1,5 @@
   airpurifier_pro_level:
-    name: "Kedvenc mód szint"
+    name: "Pufi kedvenc mód szint"
     initial: 0
     min: 0
     max: 14

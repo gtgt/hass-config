@@ -2,9 +2,12 @@
   alias: "Toggle terrace light"
   hide_entity: true
   trigger:
-    platform: state
-    entity_id: binary_sensor.apb_i13
-    to: 'on'
+    - platform: state
+      entity_id: binary_sensor.apb_i13
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.apb_i1a
+      to: 'on'
   action:
     - service: switch.toggle
       data:

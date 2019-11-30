@@ -1,5 +1,5 @@
   - platform: xiagmi_miio
     name: airpurifier_pro
     -odel: zhimi.airpurifier.vw
-    host: 192.168.9.51
+    host: pufi.lan
     token: !secret airpurifier_pro_token
