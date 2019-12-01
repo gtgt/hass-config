@@ -104,26 +104,6 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "8f23112f2cb54b1f8c1f9e8688ff3421"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "4c:11:ae:0e:6c:a4"
-                    ]
-                ],
-                "id": "c1d96cb753be4bb0a5fff704ad728654",
-                "identifiers": [],
-                "manufacturer": "espressif",
-                "model": "PLATFORMIO_ESP01_1M",
-                "name": "bathroom",
-                "name_by_user": null,
-                "sw_version": "1.15.0-dev (Nov 13 2019, 10:41:17)",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
                     "214106cfa2674bc0a8d7853b7b064d69"
                 ],
                 "connections": [],

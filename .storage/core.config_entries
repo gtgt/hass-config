@@ -99,23 +99,6 @@
                 "version": 1
             },
             {
-                "connection_class": "local_push",
-                "data": {
-                    "host": "bathroom.lan",
-                    "password": "Qwe123Asd",
-                    "port": 6053
-                },
-                "domain": "esphome",
-                "entry_id": "8f23112f2cb54b1f8c1f9e8688ff3421",
-                "options": {},
-                "source": "user",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "bathroom",
-                "version": 1
-            },
-            {
                 "connection_class": "cloud_push",
                 "data": {
                     "app_data": {

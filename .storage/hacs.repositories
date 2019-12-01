@@ -4596,8 +4596,8 @@
             "description": "A Dark Theme for Home Assistant",
             "full_name": "seangreen2/slate_theme",
             "hide": false,
-            "installed": true,
-            "installed_commit": "7f3e51d",
+            "installed": false,
+            "installed_commit": null,
             "last_commit": "7f3e51d",
             "last_release_tag": null,
             "name": "slate",
@@ -6230,8 +6230,8 @@
             "description": "Amoled theme for Home Assistant",
             "full_name": "home-assistant-community-themes/amoled",
             "hide": false,
-            "installed": true,
-            "installed_commit": "8d539d6",
+            "installed": false,
+            "installed_commit": null,
             "last_commit": "7146b0b",
             "last_release_tag": null,
             "name": "amoled",
@@ -6491,8 +6491,8 @@
             "description": "Midnight theme for Home Assistant",
             "full_name": "home-assistant-community-themes/midnight",
             "hide": false,
-            "installed": true,
-            "installed_commit": "aa97521",
+            "installed": false,
+            "installed_commit": null,
             "last_commit": "0a23416",
             "last_release_tag": null,
             "name": "midnight",
@@ -6953,7 +6953,7 @@
             "last_commit": "03409b6",
             "last_release_tag": null,
             "name": "dark_orange",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "Dark Orange Theme"
             },
@@ -7141,12 +7141,12 @@
             "description": "Clear Theme for Home Assistant",
             "full_name": "naofireblade/clear-theme",
             "hide": false,
-            "installed": false,
-            "installed_commit": null,
+            "installed": true,
+            "installed_commit": "b9e122b",
             "last_commit": "b9e122b",
             "last_release_tag": "v1.0",
             "name": "clear",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "homeassistant": "0.101.0",
                 "name": "Clear Theme"
@@ -7154,7 +7154,7 @@
             "selected_tag": null,
             "show_beta": false,
             "topics": [],
-            "version_installed": null
+            "version_installed": "v1.0"
         },
         "221288367": {
             "authors": [],
@@ -7162,12 +7162,12 @@
             "description": "Dark variant of Clear Theme for Home Assistant",
             "full_name": "naofireblade/clear-theme-dark",
             "hide": false,
-            "installed": false,
-            "installed_commit": null,
+            "installed": true,
+            "installed_commit": "ece24b0",
             "last_commit": "ece24b0",
             "last_release_tag": "v1.0",
             "name": "clear-dark",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "homeassistant": "0.101.0",
                 "name": "Clear Theme Dark"
@@ -7175,7 +7175,7 @@
             "selected_tag": null,
             "show_beta": false,
             "topics": [],
-            "version_installed": null
+            "version_installed": "v1.0"
         },
         "222292912": {
             "authors": [
@@ -7214,7 +7214,7 @@
             "last_commit": "c9edd42",
             "last_release_tag": null,
             "name": "ios-dark-mode",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "iOS Dark Mode Theme",
                 "render_readme": true
@@ -7260,10 +7260,10 @@
             "hide": false,
             "installed": false,
             "installed_commit": null,
-            "last_commit": null,
+            "last_commit": "e92ca87",
             "last_release_tag": null,
             "name": "midnight_blue",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "Midnight Blue Theme"
             },

@@ -1,5 +1,5 @@
-  - platform: xiagmi_miio
+  - platform: xiaomi_miio
     name: airpurifier_pro
-    -odel: zhimi.airpurifier.vw
-    host: pufi.lan
+    model: zhimi.airpurifier.v7
+    host: 192.168.1.51
     token: !secret airpurifier_pro_token

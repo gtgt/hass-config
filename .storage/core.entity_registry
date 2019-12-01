@@ -173,24 +173,6 @@
                 "unique_id": "cloud-remote-ui-connectivity"
             },
             {
-                "config_entry_id": "8f23112f2cb54b1f8c1f9e8688ff3421",
-                "device_id": "c1d96cb753be4bb0a5fff704ad728654",
-                "disabled_by": null,
-                "entity_id": "sensor.bathroom_humidity",
-                "name": null,
-                "platform": "esphome",
-                "unique_id": "bathroomsensorbathroom_humidity"
-            },
-            {
-                "config_entry_id": "8f23112f2cb54b1f8c1f9e8688ff3421",
-                "device_id": "c1d96cb753be4bb0a5fff704ad728654",
-                "disabled_by": null,
-                "entity_id": "sensor.bathroom_temp",
-                "name": null,
-                "platform": "esphome",
-                "unique_id": "bathroomsensorbathroom_temp"
-            },
-            {
                 "config_entry_id": "214106cfa2674bc0a8d7853b7b064d69",
                 "device_id": "5046865547dd46bdb43d50b703f2b7cf",
                 "disabled_by": null,
