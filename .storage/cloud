@@ -9,6 +9,12 @@
                 "cloudhook_url": "https://hooks.nabu.casa/gAAAAABdy-f3LRt9AX0sNKO8ZZzYiU0uQTWLhRqawjjZY8XTcCPPnIdTH7HbuinEDd719H4CeRYoROoD4WpKS35pzUuHtS5T1jxvRQihKhAM29lgQOVU8Hksx7h24BReFR2yiNAKXNZMA7e_Zt9TDRDK_ZnfTP8bphxFZODQiMLig-VIfgSykiQ=",
                 "managed": true,
                 "webhook_id": "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
+            },
+            "f97dd8fcce8df16e2a3140e8570e1d50c2f36ceea7694c9e1100f88ad7a46600": {
+                "cloudhook_id": "e3d47af736f140bc8c71e3a979b126ad",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABd4556c-UVD9euwS6WQHWNR9rygJS7xEFfuW8-FaaeJbYnBohNM-J-HLslEnyDEFP4UAOJ7HO8jTnD58mQMTSBn56ivlakOfGLPV0SYBsCh9Rq0NjW9tn2S1CmP5YU7i42ooao6ra1zaN6cnDbiQHdxIhDQtVAxHAEB7VtFFDazCRP7Rc=",
+                "managed": false,
+                "webhook_id": "f97dd8fcce8df16e2a3140e8570e1d50c2f36ceea7694c9e1100f88ad7a46600"
             }
         },
         "google_enabled": true,
@@ -17,7 +23,7 @@
                 "disable_2fa": true
             },
             "alarm_control_panel.outside": {
-                "disable_2fa": false
+                "disable_2fa": true
             },
             "alarm_control_panel.windows": {
                 "disable_2fa": true
@@ -31,6 +37,27 @@
             "group.all_switches": {
                 "should_expose": false
             },
+            "sensor.ac_bedroom_target_temp": {
+                "should_expose": false
+            },
+            "sensor.ac_childa_target_temp": {
+                "should_expose": false
+            },
+            "sensor.ac_childb_target_temp": {
+                "should_expose": false
+            },
+            "sensor.ac_study_target_temp": {
+                "should_expose": false
+            },
+            "sensor.airpurifier_pro_temp": {
+                "should_expose": false
+            },
+            "sensor.io_temp_diff": {
+                "should_expose": false
+            },
+            "sensor.livingroom_temp": {
+                "should_expose": false
+            },
             "switch.alarm_sirene_buzzer": {
                 "should_expose": true
             },
@@ -41,7 +68,8 @@
         "google_local_webhook_id": "f97dd8fcce8df16e2a3140e8570e1d50c2f36ceea7694c9e1100f88ad7a46600",
         "google_report_state": true,
         "google_secure_devices_pin": null,
-        "remote_enabled": false
+        "remote_enabled": false,
+        "username": "f729f493-c32e-443e-ae8f-721fb3de29bc"
     },
     "key": "cloud",
     "version": 1

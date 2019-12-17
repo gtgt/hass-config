@@ -6,6 +6,8 @@
     friendly_name: "Máté"
   climate.ac_childb:
     friendly_name: "Milán"
+  climate.ac_bedroom:
+    friendly_name: "Háló"
     
   switch.ac_relay_study:
     friendly_name: "Dolgozó klíma"
@@ -33,6 +35,11 @@
     friendly_name: "Milán hőmérséklet"
   sensor.childb_humidity:
     friendly_name: "Milán páratartalom"
+  sensor.bedroom_temp:
+    friendly_name: "Háló hőmérséklet"
+  sensor.bedroom_humidity:
+    friendly_name: "Háló páratartalom"
+
 
   sensor.ac_target_temp:
     friendly_name: "Alapértelmezett célhőmérséklet"

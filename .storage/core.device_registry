@@ -38,7 +38,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "ac_relay",
                 "name_by_user": "AC Szelepvez\u00e9rl\u00e9s",
-                "sw_version": "1.15.0-dev (Nov  9 2019, 13:38:43)",
+                "sw_version": "1.15.0-dev (Dec 14 2019, 16:38:40)",
                 "via_device_id": null
             },
             {
@@ -98,7 +98,7 @@
                 "model": "PLATFORMIO_ESP01_1M",
                 "name": "childa",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Nov 15 2019, 01:02:44)",
+                "sw_version": "1.15.0-dev (Dec 15 2019, 23:18:06)",
                 "via_device_id": null
             },
             {
@@ -110,12 +110,12 @@
                 "id": "3d9c0bcc9f24448cbd6d2a333b4c2e52",
                 "identifiers": [
                     [
-                        "webhook_id",
-                        "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
-                    ],
-                    [
                         "device_id",
                         "fbf4a0a4d15f4fd1b450e6633920b821"
+                    ],
+                    [
+                        "webhook_id",
+                        "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -140,9 +140,29 @@
                 ],
                 "manufacturer": "Xiaomi",
                 "model": "Mi Note 2",
-                "name": null,
+                "name": "GT's Mi Note 2",
                 "name_by_user": null,
                 "sw_version": "8.0.0",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "ab9bb3d4c70e4b12b86de6ce3eb2b16a"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "68:c6:3a:a4:80:f6"
+                    ]
+                ],
+                "id": "d551453fa4be48a5aee139af793ae073",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "bedroom",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (Dec  6 2019, 10:24:06)",
                 "via_device_id": null
             }
         ]

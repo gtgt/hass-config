@@ -1,0 +1,192 @@
+substitutions:
+  name: bedroom
+
+globals:
+  - id: mic_min
+    type: float
+    restore_value: no
+    initial_value: '1024'
+  - id: mic_max
+    type: float
+    restore_value: no
+    initial_value: '0'
+
+esphome:
+  name: ${name}
+  platform: ESP8266
+  board: d1_mini
+
+status_led:
+  pin:
+    number: D4
+    inverted: true
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "${name} fallback hotspot"
+    password: !secret ap_password
+
+captive_portal:
+
+# Enable logging
+logger:
+  level: DEBUG
+  logs:
+    adc: INFO
+
+# Enable Web server
+web_server:
+  port: 80
+  auth:
+    username: admin
+    password: !secret web_server_password
+
+# Enable Home Assistant API
+api:
+  password: !secret api_password
+
+ota:
+  password: !secret ota_password
+
+time:
+  - platform: homeassistant
+    id: now
+
+sensor:
+  - platform: dht
+    model: DHT11
+    pin: GPIO0
+    temperature:
+      id: temp
+      name: ${name}_temp
+      filters:
+        - offset: -3.5
+    humidity:
+      id: humidity
+      name: ${name}_humidity
+    update_interval: 20s
+  - platform: adc
+    id: mic
+    name: ${name}_mic
+    pin: A0
+    update_interval: 0.25s
+    accuracy_decimals: 1
+    unit_of_measurement: "dB"
+    icon: "mdi:ear-hearing"
+    filters:
+      - lambda: |-
+          float sample = x * 1024.0f;
+          if (sample > id(mic_max)) {
+             id(mic_max) = sample;
+          } else if (sample < id(mic_min)) {
+             id(mic_min) = sample;
+          }
+          return sample;
+      - median:
+          window_size: 10 
+          send_every: 10 
+          send_first_at: 10
+      - lambda: |-
+          float peak2peak = id(mic_max) - id(mic_min);
+          ESP_LOGD("mic", "Mic value: %.1f / %.1f (%.1f - %.1f)", peak2peak, x, id(mic_max), id(mic_min));
+          id(mic_min) = 1024.0f;
+          id(mic_max) = 0.0f;
+          float volts = ((peak2peak * 3.3) / 1024)*10;
+          ESP_LOGD("mic", "Mic volts: %.4f", volts);
+          float volts_db = 20*log10(volts/0.001259); 
+          ESP_LOGD("mic", "Mic dB: %.1f", volts_db);
+          return volts_db;
+      - delta: 5
+  - platform: rotary_encoder
+    id: target_rotary
+    internal: true
+    pin_a: D5 #GPIO14
+    pin_b: D6 #GPIO12
+    min_value: 20
+    max_value: 23
+    on_value:
+      then:
+      - lambda: |-
+          if (id(target_rotary).state != id(target_temp).state) {
+            ESP_LOGD("ac", "Target temp set by rotary encoder: %s", id(target_rotary).state);
+            id(target_temp).publish_state(id(target_rotary).state);
+          }
+
+  - platform: homeassistant
+    id: target_temp
+    entity_id: sensor.ac_${name}_target_temp
+    internal: true
+    on_value:
+      then:
+      - lambda: |-
+          if (id(target_temp).state != id(target_rotary).state) {
+            ESP_LOGD("ac", "Target temp set by homeassistant: %s", id(target_temp).state);
+            id(target_rotary).publish_state(id(target_temp).state);
+          }
+
+binary_sensor:
+  - platform: gpio
+    pin: D7 #GPIO13
+    id: button_rotary
+    internal: true
+    device_class: opening
+
+  - platform: homeassistant
+    id: valve_state
+    entity_id: sensor.ac_${name}_assumed_state
+    internal: true
+
+font:
+  - file: '_fonts/slkscr.ttf'
+    id: titlefont
+    size: 8
+
+  - file: '_fonts/BebasNeue-Regular.ttf'
+    id: clockfont
+    size: 24
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: valuefont
+    size: 10
+
+i2c:
+  sda: D2 #GPIO4
+  scl: D1 #GPIO5
+  scan: false
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x64"
+    reset_pin: D0
+    address: 0x3C
+    update_interval: 2s
+    lambda: |-
+      // Print "${name}" in top center.
+      it.printf(64, 0, id(titlefont), TextAlign::TOP_CENTER, "${name}");
+
+      // Print time in HH:MM format
+      it.strftime(0, 50, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
+
+      // Print inside temperature
+      if (id(temp).has_state()) {
+        it.printf(125, 10, id(valuefont), TextAlign::TOP_RIGHT , "Tc: %.1f °C", id(temp).state);
+      }
+
+      // Print inside humidity
+      if (id(humidity).has_state()) {
+        it.printf(125, 22, id(valuefont), TextAlign::TOP_RIGHT , "H: %.1f %%", id(humidity).state);
+      }
+
+      // Print outside temperature
+      if (id(mic).has_state()) {
+        it.printf(125, 34, id(valuefont), TextAlign::TOP_RIGHT , "N: %.1f dB", id(mic).state);
+      }
+
+      // Print target temperature (from homeassistant sensor)
+      if (id(target_temp).has_state()) {
+        it.printf(125, 46, id(valuefont), TextAlign::TOP_RIGHT , "Tt: %.1f °C", id(target_temp).state);
+      }

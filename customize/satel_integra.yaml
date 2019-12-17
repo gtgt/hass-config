@@ -46,6 +46,8 @@
   binary_sensor.alarm_armed_fully:
     friendly_name: "Teljes riasztás"
     icon: mdi:shield-home
+  binary_sensor.alarm_tamper:
+    friendly_name: "Szabotázs"
   switch.alarm_output1:
     friendly_name: "Riasztó kimenet 1"
     icon: mdi:transit-connection-variant

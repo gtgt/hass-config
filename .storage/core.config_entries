@@ -107,7 +107,7 @@
                     },
                     "app_id": "ha_client",
                     "app_name": "HA Client",
-                    "app_version": "0.7.3-",
+                    "app_version": "0.7.6",
                     "cloudhook_url": "https://hooks.nabu.casa/gAAAAABdy-f3LRt9AX0sNKO8ZZzYiU0uQTWLhRqawjjZY8XTcCPPnIdTH7HbuinEDd719H4CeRYoROoD4WpKS35pzUuHtS5T1jxvRQihKhAM29lgQOVU8Hksx7h24BReFR2yiNAKXNZMA7e_Zt9TDRDK_ZnfTP8bphxFZODQiMLig-VIfgSykiQ=",
                     "device_id": "fbf4a0a4d15f4fd1b450e6633920b821",
                     "device_name": "GT's Mi Note 2",
@@ -127,6 +127,23 @@
                     "disable_new_entities": false
                 },
                 "title": "GT's Mi Note 2",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "bedroom.lan",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "ab9bb3d4c70e4b12b86de6ce3eb2b16a",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "bedroom",
                 "version": 1
             }
         ]

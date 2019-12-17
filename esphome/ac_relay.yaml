@@ -84,7 +84,7 @@ switch:
     pin:
       number: D1 #5
       mode: OUTPUT
-      inverted: no
+      inverted: yes
 
 sensor:
 # Extra sensor to keep track of plug uptime

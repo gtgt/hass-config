@@ -2,10 +2,25 @@ ac:
   name: AC
   view: yes
   entities:
+    - sensor.study_temp
+    - sensor.childa_temp
+    - sensor.childa_humidity
+    - sensor.childb_temp
+    - sensor.childb_humidity
+    - sensor.bedroom_temp
+    - sensor.bedroom_humidity
+    - sensor.livingroom_temp
+    - sensor.livingroom_humidity
+    - sensor.ac_study_target_temp
+    - sensor.ac_childa_target_temp
+    - sensor.ac_childb_target_temp
+    - sensor.ac_bedroom_target_temp
+    - sensor.io_temp_diff
     - climate.ac
     - climate.ac_study
     - climate.ac_childa
     - climate.ac_childb
+    - climate.ac_bedroom
     - switch.ac_relay_study
     - switch.ac_relay_childa
     - switch.ac_relay_childb
@@ -60,6 +75,7 @@ alarm:
     - binary_sensor.pir_backyard_sidewalk
     - binary_sensor.fire_attic
     - binary_sensor.alarm_armed_fully
+    - binary_sensor.alarm_tamper
     - switch.alarm_output1
     - switch.alarm_output2
     - switch.alarm_sirene_buzzer

@@ -69,13 +69,13 @@ sensor:
 
   - platform: homeassistant
     id: target_temp
-    entity_id: sensor.ac_childb_target_temp
+    entity_id: sensor.ac_${name}_target_temp
     internal: true
 
 binary_sensor:
   - platform: homeassistant
     id: valve_state
-    entity_id: sensor.ac_childb_assumed_state
+    entity_id: sensor.ac_${name}_assumed_state
     internal: true
 
 font:
@@ -92,7 +92,7 @@ font:
     size: 8
 
 i2c:
-  sda: D2 #GPIO?
+  sda: D2 #GPIO4
   scl: D1 #GPIO5
   scan: false
 
@@ -106,24 +106,24 @@ display:
       it.printf(32, 0, id(titlefont), TextAlign::TOP_CENTER, "${name}");
 
       // Print time in HH:MM format
-      it.strftime(0, 30, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
+      it.strftime(0, 40, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
 
       // Print inside temperature
       if (id(temp).has_state()) {
-        it.printf(63, 0, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp).state);
+        it.printf(63, 10, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp).state);
       }
 
       // Print inside humidity
       if (id(humidity).has_state()) {
-        it.printf(63, 12, id(valuefont), TextAlign::TOP_RIGHT , "%.1f%%", id(humidity).state);
+        it.printf(63, 20, id(valuefont), TextAlign::TOP_RIGHT , "%.1f%%", id(humidity).state);
       }
 
       // Print outside temperature
       if (id(temp_outside).has_state()) {
-        it.printf(63, 24, id(valuefont), TextAlign::BASELINE_RIGHT , "%.1f°C", id(temp_outside).state);
+        it.printf(63, 30, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp_outside).state);
       }
 
       // Print target temperature (from homeassistant sensor)
       if (id(target_temp).has_state()) {
-        it.printf(63, 32, id(valuefont), TextAlign::BASELINE_RIGHT , "%.1f°C", id(target_temp).state);
+        it.printf(63, 40, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(target_temp).state);
       }

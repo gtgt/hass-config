@@ -21,8 +21,10 @@ homeassistant:
       api_password: !secret api_password
       
 logger:
-  default: info
+  default: warn
   logs:
+    custom_components.programmable_thermostat.climate: info
+    homeassistant.components.cloud.google_config: error
     satel_integra.satel_integra: error
     homeassistant.components.binary_sensor: error
   
@@ -50,7 +52,7 @@ logbook:
 # Configure the history of the logbook
 recorder:
   purge_interval: 5
-  purge_keep_days: 5
+  purge_keep_days: 15
   exclude:
     entities:
       - sensor.ac_target_temp

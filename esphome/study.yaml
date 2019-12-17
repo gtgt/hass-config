@@ -57,13 +57,13 @@ sensor:
 
   - platform: homeassistant
     id: target_temp
-    entity_id: sensor.ac_study_target_temp
+    entity_id: sensor.ac_${name}_target_temp
     internal: true
 
 binary_sensor:
   - platform: homeassistant
     id: valve_state
-    entity_id: sensor.ac_study_assumed_state
+    entity_id: sensor.ac_${name}_assumed_state
     internal: true
 
 font:

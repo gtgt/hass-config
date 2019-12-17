@@ -1,0 +1,36 @@
+  - platform: file_restore
+    name: ac_target_temp
+    unit_of_measurement: "°C"
+    file_path: /config/ac_target_temp.csv
+    length: day
+    detail: hour
+  - platform: template
+    sensors:
+      livingroom_temp:
+        friendly_name: "Nappali hőmérséklet"
+        value_template: "{{ state_attr('fan.airpurifier_pro', 'temperature') }}"
+      livingroom_humidity:
+        friendly_name: "Nappali páratartalom"
+        value_template: "{{ state_attr('fan.airpurifier_pro', 'humidity') }}"
+
+      io_temp_diff:
+        friendly_name: "Hőmérsékletkülönbség"
+        value_template: "{{ states('sensor.livingroom_temp')|float|round(1) - state_attr('weather.owm', 'temperature')|float|round(1) }}"
+        icon_template: "mdi:home-thermometer-outline"
+
+      ac_study_target_temp:
+        friendly_name: "Dolgozó célhőmérséklet"
+        value_template: "{{ state_attr('climate.ac_study', 'temperature') }}"
+        availability_template: "{{ states('climate.ac_study') != 'off' }}"
+      ac_childa_target_temp:
+        friendly_name: "Máté célhőmérséklet"
+        value_template: "{{ state_attr('climate.ac_childa', 'temperature') }}"
+        availability_template: "{{ states('climate.ac_childa') != 'off' }}"
+      ac_childb_target_temp:
+        friendly_name: "Milán célhőmérséklet"
+        value_template: "{{ state_attr('climate.ac_childb', 'temperature') }}"
+        availability_template: "{{ states('climate.ac_childb') != 'off' }}"
+      ac_bedroom_target_temp:
+        friendly_name: "Háló célhőmérséklet"
+        value_template: "{{ state_attr('climate.ac_bedroom', 'temperature') }}"
+        availability_template: "{{ states('climate.ac_bedroom') != 'off' }}"

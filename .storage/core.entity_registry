@@ -180,6 +180,33 @@
                 "name": null,
                 "platform": "mobile_app",
                 "unique_id": "fbf4a0a4d15f4fd1b450e6633920b821"
+            },
+            {
+                "config_entry_id": "ab9bb3d4c70e4b12b86de6ce3eb2b16a",
+                "device_id": "d551453fa4be48a5aee139af793ae073",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_humidity",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "bedroomsensorbedroom_humidity"
+            },
+            {
+                "config_entry_id": "ab9bb3d4c70e4b12b86de6ce3eb2b16a",
+                "device_id": "d551453fa4be48a5aee139af793ae073",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_mic",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "68c63aa480f6-adc"
+            },
+            {
+                "config_entry_id": "ab9bb3d4c70e4b12b86de6ce3eb2b16a",
+                "device_id": "d551453fa4be48a5aee139af793ae073",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_temp",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "bedroomsensorbedroom_temp"
             }
         ]
     },

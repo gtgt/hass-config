@@ -1,17 +1,17 @@
   - platform: template
     sensors:
       airpurifier_pro_temp:
-        friendly_name: "Nappali hőmérséklet"
+        friendly_name: "Pufi hőmérséklet"
         value_template: "{{ state_attr('fan.airpurifier_pro', 'temperature') }}"
         unit_of_measurement: "°C"
         device_class: "temperature"
       airpurifier_pro_humidity:
-        friendly_name: "Nappali Páratartalom"
+        friendly_name: "Pufi páratartalom"
         value_template: "{{ state_attr('fan.airpurifier_pro', 'humidity') }}"
         unit_of_measurement: "%"
         device_class: "humidity"
       airpurifier_pro_air_quality_pm25:
-        friendly_name: "Nappali levegőminőség"
+        friendly_name: "Pufi levegőminőség"
         value_template: "{{ state_attr('fan.airpurifier_pro', 'aqi') }}"
         unit_of_measurement: "μg/m³"
         icon_template: "mdi:weather-fog"
