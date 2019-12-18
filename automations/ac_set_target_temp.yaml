@@ -1,0 +1,19 @@
+  - id: 'ac_bedroom_set_target'
+    hide_entity: false
+    initial_state: on
+    alias: AC Háló helyi hőmérséklet szabályozás
+    trigger:
+      - platform: state
+        entity_id: sensor.bedroom_target_rotary
+    condition:
+      condition: and
+      conditions:
+        - condition: template
+          value_template: "{{ trigger.to_state.state|int > 15 }}"
+        - condition: template
+          value_template: "{{ trigger.to_state.state|int < 27 }}"
+    action:
+      - service: climate.set_temperature
+        data_template:
+          entity_id: climate.ac_bedroom
+          temperature: '{{ trigger.to_state.state }}'

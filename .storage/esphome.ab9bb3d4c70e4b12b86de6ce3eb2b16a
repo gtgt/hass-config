@@ -1,7 +1,7 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Dec  6 2019, 10:24:06",
+            "compilation_time": "Dec 18 2019, 03:43:31",
             "esphome_version": "1.15.0-dev",
             "has_deep_sleep": false,
             "mac_address": "68:C6:3A:A4:80:F6",
@@ -19,6 +19,16 @@
                 "object_id": "bedroom_mic",
                 "unique_id": "68c63aa480f6-adc",
                 "unit_of_measurement": "dB"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:rotate-right",
+                "key": 2185773987,
+                "name": "bedroom_target_rotary",
+                "object_id": "bedroom_target_rotary",
+                "unique_id": "bedroomsensorbedroom_target_rotary",
+                "unit_of_measurement": "steps"
             },
             {
                 "accuracy_decimals": 1,

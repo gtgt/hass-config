@@ -39,7 +39,18 @@
     friendly_name: "Háló hőmérséklet"
   sensor.bedroom_humidity:
     friendly_name: "Háló páratartalom"
-
-
-  sensor.ac_target_temp:
-    friendly_name: "Alapértelmezett célhőmérséklet"
+  sensor.livingroom_temp:
+    friendly_name: "Nappali hőmérséklet"
+  sensor.livingroom_humidity:
+    friendly_name: "Nappali páratartalom"
+  sensor.io_temp_diff:
+    friendly_name: "Hőmérsékletkülönbség"
+    
+  sensor.ac_study_target_temp:
+    friendly_name: "Dolgozó célhőmérséklet"
+  sensor.ac_childa_target_temp:
+    friendly_name: "Máté célhőmérséklet"
+  sensor.ac_childb_target_temp:
+    friendly_name: "Milán célhőmérséklet"
+  sensor.ac_bedroom_target_temp:
+    friendly_name: "Háló célhőmérséklet"

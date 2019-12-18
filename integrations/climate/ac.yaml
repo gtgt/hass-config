@@ -3,34 +3,34 @@
     heater: switch.ac_relay_study
     cooler: switch.ac_relay_study
     actual_temp_sensor: sensor.study_temp
-    target_temp_sensor: sensor.ac_target_temp
+    target_temp_sensor: sensor.ac_default_target_temp
     min_temp: 20
-    max_temp: 23
+    max_temp: 25
     tolerance: 0.5
   - platform: programmable_thermostat
     name: ac_childa
     heater: switch.ac_relay_childa
     cooler: switch.ac_relay_childa
     actual_temp_sensor: sensor.childa_temp
-    target_temp_sensor: sensor.ac_target_temp
+    target_temp_sensor: sensor.ac_default_target_temp
     min_temp: 20
-    max_temp: 23
+    max_temp: 25
     tolerance: 0.5
   - platform: programmable_thermostat
     name: ac_childb
     heater: switch.ac_relay_childb
     cooler: switch.ac_relay_childb
     actual_temp_sensor: sensor.childb_temp
-    target_temp_sensor: sensor.ac_target_temp
+    target_temp_sensor: sensor.ac_default_target_temp
     min_temp: 20
-    max_temp: 23
+    max_temp: 25
     tolerance: 0.5
   - platform: programmable_thermostat
     name: ac_bedroom
     heater: switch.ac_relay_bedroom
     cooler: switch.ac_relay_bedroom
     actual_temp_sensor: sensor.bedroom_temp
-    target_temp_sensor: sensor.ac_target_temp
+    target_temp_sensor: sensor.ac_default_target_temp
     min_temp: 20
-    max_temp: 23
+    max_temp: 25
     tolerance: 0.5

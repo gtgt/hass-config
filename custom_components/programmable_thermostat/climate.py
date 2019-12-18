@@ -91,8 +91,11 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
         self._initial_hvac_mode = initial_hvac_mode
         self.target_entity_id = target_entity_id
         self._unit = unit
-
-        self._target_temp = float(hass.states.get(target_entity_id).state)
+        try:
+            self._target_temp = float(hass.states.get(target_entity_id).state)
+        except ValueError as ex:
+            self._target_temp = 22.0
+        
         self._restore_temp = self._target_temp
         self._cur_temp = self._target_temp
         # To avoid error in case real temp sensor take some time to return a number
@@ -226,13 +229,13 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
         if mode == "heat":
             data = {ATTR_ENTITY_ID: self.heater_entity_id}
             self._hvac_action = CURRENT_HVAC_HEAT
-            _LOGGER.info("[%s] New action to %s: %s (%s)", self._name, self.heater_entity_id, self._hvac_action, mode)
+            _LOGGER.debug("[%s] New action to %s: %s (%s)", self._name, self.heater_entity_id, self._hvac_action, mode)
         elif mode == "cool":
             data = {ATTR_ENTITY_ID: self.cooler_entity_id}
             self._hvac_action = CURRENT_HVAC_COOL
-            _LOGGER.info("[%s] New action to %s: %s (%s)", self._name, self.cooler_entity_id, self._hvac_action, mode)
+            _LOGGER.debug("[%s] New action to %s: %s (%s)", self._name, self.cooler_entity_id, self._hvac_action, mode)
         else:
-            _LOGGER.warn("No type has been passed to turn_on function")
+            _LOGGER.warn("[%s] No type has been passed to turn_on function", self._name)
             return
         await self.hass.services.async_call(HA_DOMAIN, SERVICE_TURN_ON, data)
         await self.async_update_ha_state()
@@ -291,8 +294,9 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
         if new_state is None:
             return
         self._restore_temp = float(new_state.state)
-        if self._hvac_mode != HVAC_MODE_HEAT_COOL:
-            self._async_restore_program_temp()
+        _LOGGER.info("[%s] Target temp changed: %f", self._name, self._restore_temp)
+        """if self._hvac_mode != HVAC_MODE_HEAT_COOL:"""
+        self._async_restore_program_temp()
         await self.control_system_mode()
         await self.async_update_ha_state()
 
@@ -313,9 +317,9 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
             if not self._active and None not in (self._cur_temp,
                                                  self._target_temp):
                 self._active = True
-                _LOGGER.info("Obtained current and target temperature. "
+                _LOGGER.info("[%s] Obtained current and target temperature. "
                              "Generic thermostat active. %s, %s",
-                             self._cur_temp, self._target_temp)
+                             self._name, self._cur_temp, self._target_temp)
 
             if not self._active or self._hvac_mode == HVAC_MODE_OFF or self._hvac_mode == hvac_mode:
                 return

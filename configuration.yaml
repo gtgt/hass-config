@@ -33,6 +33,8 @@ http:
   login_attempts_threshold: 5
 #   base_url: example.duckdns.org:8123
 
+python_script:
+
 mobile_app:
 
 cloud:

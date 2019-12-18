@@ -207,6 +207,15 @@
                 "name": null,
                 "platform": "esphome",
                 "unique_id": "bedroomsensorbedroom_temp"
+            },
+            {
+                "config_entry_id": "ab9bb3d4c70e4b12b86de6ce3eb2b16a",
+                "device_id": "d551453fa4be48a5aee139af793ae073",
+                "disabled_by": null,
+                "entity_id": "sensor.bedroom_target_rotary",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "bedroomsensorbedroom_target_rotary"
             }
         ]
     },

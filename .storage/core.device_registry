@@ -110,12 +110,12 @@
                 "id": "3d9c0bcc9f24448cbd6d2a333b4c2e52",
                 "identifiers": [
                     [
-                        "device_id",
-                        "fbf4a0a4d15f4fd1b450e6633920b821"
-                    ],
-                    [
                         "webhook_id",
                         "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
+                    ],
+                    [
+                        "device_id",
+                        "fbf4a0a4d15f4fd1b450e6633920b821"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -162,7 +162,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "bedroom",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Dec  6 2019, 10:24:06)",
+                "sw_version": "1.15.0-dev (Dec 18 2019, 03:43:31)",
                 "via_device_id": null
             }
         ]
