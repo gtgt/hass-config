@@ -1,5 +1,5 @@
 substitutions:
-  name: bathroom
+  name: kitchen
 
 esphome:
   name: ${name}
@@ -43,25 +43,44 @@ time:
   - platform: homeassistant
     id: now
 
+dallas:
+  - pin: GPIO0
+    update_interval: 20s
+
 sensor:
+  - platform: dallas
+    id: temp
+    name: ${name}_temp_ac_inlet
+    address: 0x9902099246320028
+    filters:
+      - offset: 0
+
   - platform: dht
     model: DHT11
     pin: GPIO2
-    update_interval: 4s
+    update_interval: 15s
     temperature:
-      id: temp
-      name: ${name}_temp
-      filters: 
-        - sliding_window_moving_average:
-            window_size: 15 
-            send_every: 15 
-            send_first_at: 15
-        - offset: -1.0
+      id: temp2
+      name: ${name}_temp2
+      filters:
+        - offset: 0
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #-   sliding_window_moving_average:
+        - median:
+            window_size: 4
+            send_every: 4
+            send_first_at: 4
     humidity:
       id: humidity
       name: ${name}_humidity
-      filters: 
-         - sliding_window_moving_average:
-             window_size: 15 
-             send_every: 15 
-             send_first_at: 15
+      filters:
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #- sliding_window_moving_average:
+        - median:
+            window_size: 4
+            send_every: 4
+            send_first_at: 4

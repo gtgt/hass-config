@@ -75,7 +75,7 @@ sensor:
 binary_sensor:
   - platform: homeassistant
     id: valve_state
-    entity_id: sensor.ac_${name}_assumed_state
+    entity_id: switch.ac_relay_${name}
     internal: true
 
 font:
@@ -107,6 +107,12 @@ display:
 
       // Print time in HH:MM format
       it.strftime(0, 40, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
+      
+
+      // Print valve state
+      if (id(valve_state).has_state()) {
+        it.printf(63, 0, id(titlefont), TextAlign::TOP_RIGHT , "%d", id(valve_state).state);
+      }
 
       // Print inside temperature
       if (id(temp).has_state()) {

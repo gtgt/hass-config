@@ -8,6 +8,8 @@
     friendly_name: "Milán"
   climate.ac_bedroom:
     friendly_name: "Háló"
+  climate.ac_livingroom:
+    friendly_name: "Nappali"
     
   switch.ac_relay_study:
     friendly_name: "Dolgozó klíma"
@@ -17,6 +19,8 @@
     friendly_name: "Milán klíma"
   switch.ac_relay_bedroom:
     friendly_name: "Háló klíma"
+  switch.ac_relay_livingroom:
+    friendly_name: "Nappali klíma"
   switch.ac_relay_ventillation:
     friendly_name: "Szellőztetés"
     
@@ -54,3 +58,6 @@
     friendly_name: "Milán célhőmérséklet"
   sensor.ac_bedroom_target_temp:
     friendly_name: "Háló célhőmérséklet"
+  sensor.ac_livingroom_target_temp:
+    friendly_name: "Nappali célhőmérséklet"
+    

@@ -58,7 +58,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "study",
                 "name_by_user": "Dolgoz\u00f3",
-                "sw_version": "1.15.0-dev (Nov  9 2019, 13:45:08)",
+                "sw_version": "1.15.0-dev (Dec 26 2019, 00:06:16)",
                 "via_device_id": null
             },
             {
@@ -78,7 +78,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "childb",
                 "name_by_user": "Mil\u00e1n",
-                "sw_version": "1.15.0-dev (Nov 15 2019, 23:25:16)",
+                "sw_version": "1.15.0-dev (Dec 26 2019, 00:10:26)",
                 "via_device_id": null
             },
             {
@@ -162,7 +162,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "bedroom",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Dec 18 2019, 03:43:31)",
+                "sw_version": "1.15.0-dev (Dec 20 2019, 18:41:07)",
                 "via_device_id": null
             }
         ]

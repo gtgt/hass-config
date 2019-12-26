@@ -63,7 +63,7 @@ sensor:
 binary_sensor:
   - platform: homeassistant
     id: valve_state
-    entity_id: sensor.ac_${name}_assumed_state
+    entity_id: switch.ac_relay_${name}
     internal: true
 
 font:
@@ -77,7 +77,7 @@ font:
 
   - file: '_fonts/NotoSans-Regular.ttf'
     id: valuefont
-    size: 11
+    size: 10
 
 i2c:
   sda: D3 #GPIO0
@@ -96,12 +96,17 @@ display:
       // Print time in HH:MM format
       it.strftime(0, 30, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
 
-      // Print inside temperature
+      // Print valve state
+      if (id(valve_state).has_state()) {
+        it.printf(127, 0, id(titlefont), TextAlign::TOP_RIGHT , "%d", id(valve_state).state);
+      }
+
+      // Print temperature
       if (id(temp).has_state()) {
         it.printf(127, 8, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp).state);
       }
 
       // Print target temperature
       if (id(target_temp).has_state()) {
-        it.printf(127, 20, id(valuefont), TextAlign::BASELINE_RIGHT , "%.1f°C", id(target_temp).state);
+        it.printf(127, 32, id(valuefont), TextAlign::BASELINE_RIGHT , "%.1f°C", id(target_temp).state);
       }

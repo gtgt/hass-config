@@ -10,6 +10,7 @@
 
       io_temp_diff:
         value_template: "{{ (states('sensor.livingroom_temp')|float - state_attr('weather.owm', 'temperature')|float)|round(1) }}"
+        availability_template: "{{ states('sensor.livingroom_temp')|float > 0 and state_attr('weather.owm', 'temperature')|float > 0 }}"
         icon_template: "mdi:home-thermometer-outline"
 
       ac_study_target_temp:
@@ -24,3 +25,7 @@
       ac_bedroom_target_temp:
         value_template: "{{ state_attr('climate.ac_bedroom', 'temperature') }}"
         availability_template: "{{ states('climate.ac_bedroom') != 'off' }}"
+      ac_livingroom_target_temp:
+        value_template: "{{ state_attr('climate.ac_livingroom', 'temperature') }}"
+        availability_template: "{{ states('climate.ac_livingroom') != 'off' }}"
+        

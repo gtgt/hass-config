@@ -64,7 +64,7 @@ sensor:
       id: temp
       name: ${name}_temp
       filters:
-        - offset: -1.0
+        - offset: -0.5
     humidity:
       id: humidity
       name: ${name}_humidity
@@ -162,7 +162,7 @@ font:
 
   - file: '_fonts/BebasNeue-Regular.ttf'
     id: clockfont
-    size: 24
+    size: 36
 
   - file: '_fonts/NotoSans-Regular.ttf'
     id: valuefont

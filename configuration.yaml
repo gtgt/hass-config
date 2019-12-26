@@ -114,7 +114,7 @@ binary_sensor: !include_dir_merge_list integrations/binary_sensor
 sensor: !include_dir_merge_list integrations/sensor
 switch: !include_dir_merge_list integrations/switch
 # camera: !include_dir_merge_list integrations/camera
-#input_boolean: !include_dir_merge_named integrations/input_boolean
+input_boolean: !include_dir_merge_named integrations/input_boolean
 #input_datetime: !include_dir_merge_named integrations/input_datetime
 input_number: !include_dir_merge_named integrations/input_number
 input_select: !include_dir_merge_named integrations/input_select
