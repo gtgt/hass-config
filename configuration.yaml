@@ -47,17 +47,31 @@ history:
 
 # View all events in a logbook
 logbook:
-  exclude:
+  include:
     domains:
-      - binary_sensor
-      
+      - sensor
+      - switch
+      - media_player
+      - climate
+  exclude:
+    entities:
+      - sensor.ac_target_temp
+      - sensor.ac_relay_up_time
+
 # Configure the history of the logbook
 recorder:
   purge_interval: 5
   purge_keep_days: 15
+  include:
+    domains:
+      - sensor
+      - switch
+      - media_player
+      - climate
   exclude:
     entities:
       - sensor.ac_target_temp
+      - sensor.ac_relay_up_time
 
 updater:
 

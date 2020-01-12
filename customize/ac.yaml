@@ -8,6 +8,8 @@
     friendly_name: "Milán"
   climate.ac_bedroom:
     friendly_name: "Háló"
+  climate.ac_kitchen:
+    friendly_name: "Konyha"
   climate.ac_livingroom:
     friendly_name: "Nappali"
     
@@ -19,8 +21,11 @@
     friendly_name: "Milán klíma"
   switch.ac_relay_bedroom:
     friendly_name: "Háló klíma"
-  switch.ac_relay_livingroom:
-    friendly_name: "Nappali klíma"
+  switch.ac_relay_kitchen:
+    friendly_name: "Konyha klíma"
+  input_boolean.ac_relay_livingroom:
+    friendly_name: "Nappali klíma (dummy)"
+    hidden: true
   switch.ac_relay_ventillation:
     friendly_name: "Szellőztetés"
     
@@ -47,9 +52,13 @@
     friendly_name: "Nappali hőmérséklet"
   sensor.livingroom_humidity:
     friendly_name: "Nappali páratartalom"
-  sensor.io_temp_diff:
-    friendly_name: "Hőmérsékletkülönbség"
-    
+  sensor.kitchen_temp_ac_inlet:
+    friendly_name: "Konyha AC beomlő hőmérséklet"
+  sensor.kitchen_temp_ac_gas_tube:
+    friendly_name: "AC gázcső hőmérséklet"
+
+  sensor.ac_default_target_temp:
+    friendly_name: "Alapértelmezett célhőmérséklet"
   sensor.ac_study_target_temp:
     friendly_name: "Dolgozó célhőmérséklet"
   sensor.ac_childa_target_temp:
@@ -58,6 +67,11 @@
     friendly_name: "Milán célhőmérséklet"
   sensor.ac_bedroom_target_temp:
     friendly_name: "Háló célhőmérséklet"
-  sensor.ac_livingroom_target_temp:
-    friendly_name: "Nappali célhőmérséklet"
+  sensor.ac_kitchen_target_temp:
+    friendly_name: "Konyha célhőmérséklet"
     
+  sensor.io_temp_diff:
+    friendly_name: "Hőmérsékletkülönbség"
+
+  sensor.bedroom_target_rotary:
+    friendly_name: "Háló tekerő gomb"

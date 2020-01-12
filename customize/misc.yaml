@@ -4,3 +4,5 @@ weather.owm:
   friendly_name: "Időjárás"
 fan.airpurifier_pro:
   friendly_name: "Pufi"
+sensor.bedroom_mic:
+  friendly_name: "Háló zaj"

@@ -145,6 +145,83 @@
                 },
                 "title": "bedroom",
                 "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "kitchen.lan",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "kitchen",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "d93H4onvovA:APA91bGkuF4ZKAZThWt8AQ6NkfOyUl_2mNHOChamHt_PuxvP9qidXy0rox22ccNu7UZi4OjqC2vGc-9nfoqEgeSK0rxO3WH-dtMFIugSJ2u9EH_7X_aGTI1g-SGF18LZbjHFmw_b-sKP",
+                        "push_url": "https://ariela.surodev.com/notification/"
+                    },
+                    "app_id": "com.surodev.ariela",
+                    "app_name": "Ariela",
+                    "app_version": "1.3.8.1",
+                    "device_id": "238e4b47b43e46d68ff9e51e97672192",
+                    "device_name": "Mi_Phone",
+                    "manufacturer": "Xiaomi",
+                    "model": "dipper",
+                    "os_name": "9",
+                    "os_version": "9",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "c95c7e3826a41c939997f9990f95a01d74a58362457a2ba262fb880cb2c5abcf"
+                },
+                "domain": "mobile_app",
+                "entry_id": "4a258a7c193b4724a0071475da16dabf",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Mi_Phone",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "d76Glyzy-qM:APA91bF1kd3zWyuDUO2cNXhsDTZyx9VrJzx1cJcf5KcXJn3M0_3UJ1FRNvtjyjm4yNxnEbqfuqwX84z2jyuKIlK2GU9SWNtum2O3nqcG4zEcN-tdO376M_9sK4hcXLHUDVwPP4GLhqUO",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "1.3.1 (57)",
+                    "device_id": "28229efd93b04683b038dc93d2ef0d2e",
+                    "device_name": "MI 8",
+                    "manufacturer": "Xiaomi",
+                    "model": "MI 8",
+                    "os_name": "Android",
+                    "os_version": "28",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506"
+                },
+                "domain": "mobile_app",
+                "entry_id": "6e27ab9518d043dbb118aa7c8c65472f",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "MI 8",
+                "version": 1
             }
         ]
     },

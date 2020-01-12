@@ -7,10 +7,10 @@ esphome:
   platform: ESP8266
   board: d1_mini
   
-status_led:
-  pin:
-    number: D4
-    inverted: true
+#status_led:
+#  pin:
+#    number: D4
+#    inverted: true
 
 wifi:
   ssid: !secret wifi_ssid
@@ -78,13 +78,21 @@ switch:
       mode: OUTPUT
       inverted: yes
   - platform: gpio
-    id: ventillation
-    name: ${name}_ventillation
-    icon: "mdi:fan"
+    id: kitchen
+    name: ${name}_kitchen
+    icon: ${icon}
     pin:
       number: D1 #5
       mode: OUTPUT
       inverted: yes
+  - platform: gpio
+    id: ventillation
+    name: ${name}_ventillation
+    icon: "mdi:fan"
+    pin:
+      number: D4
+      mode: OUTPUT
+      inverted: no
 
 sensor:
 # Extra sensor to keep track of plug uptime

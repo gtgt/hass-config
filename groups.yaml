@@ -11,23 +11,21 @@ ac:
     - sensor.bedroom_humidity
     - sensor.livingroom_temp
     - sensor.livingroom_humidity
-    - sensor.ac_study_target_temp
-    - sensor.ac_childa_target_temp
-    - sensor.ac_childb_target_temp
-    - sensor.ac_bedroom_target_temp
-    - sensor.ac_livingroom_target_temp
     - sensor.io_temp_diff
+    - sensor.kitchen_temp_ac_gas_tube
+    - sensor.kitchen_temp_ac_inlet
     - climate.ac
     - climate.ac_study
     - climate.ac_childa
     - climate.ac_childb
     - climate.ac_bedroom
+    - climate.ac_kitchen
     - climate.ac_livingroom
     - switch.ac_relay_study
     - switch.ac_relay_childa
     - switch.ac_relay_childb
     - switch.ac_relay_bedroom
-    - switch.ac_relay_livingroom
+    - switch.ac_relay_kitchen
     - switch.ac_relay_ventillation
     - input_boolean.ac_relay_livingroom
     - automation.ventillation_auto_off

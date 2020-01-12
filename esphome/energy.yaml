@@ -25,7 +25,8 @@ captive_portal:
 # Enable logging
 logger:
   level: DEBUG
-  baud_rate: 0
+  #baud_rate: 0
+  hardware_uart: UART1
 
 # Enable Web server
 web_server:

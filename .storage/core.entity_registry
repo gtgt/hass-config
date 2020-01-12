@@ -216,6 +216,69 @@
                 "name": null,
                 "platform": "esphome",
                 "unique_id": "bedroomsensorbedroom_target_rotary"
+            },
+            {
+                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
+                "device_id": "abaae83134c64727801b1e0fcc8e9134",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_temp_ac_inlet",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "dallas-9902099246320028"
+            },
+            {
+                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
+                "device_id": "abaae83134c64727801b1e0fcc8e9134",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_humidity",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "kitchensensorkitchen_humidity"
+            },
+            {
+                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
+                "device_id": "abaae83134c64727801b1e0fcc8e9134",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_temp2",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "kitchensensorkitchen_temp2"
+            },
+            {
+                "config_entry_id": "20c06d361c7a476491520ec1a4238b3d",
+                "device_id": "c42ff05402484b959e04718619abc8d3",
+                "disabled_by": null,
+                "entity_id": "switch.ac_relay_kitchen",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "ac_relayswitchac_relay_kitchen"
+            },
+            {
+                "config_entry_id": "4a258a7c193b4724a0071475da16dabf",
+                "device_id": "347bf7399a184095823e9cdba72cc047",
+                "disabled_by": null,
+                "entity_id": "device_tracker.mi_phone",
+                "name": null,
+                "platform": "mobile_app",
+                "unique_id": "238e4b47b43e46d68ff9e51e97672192"
+            },
+            {
+                "config_entry_id": "6e27ab9518d043dbb118aa7c8c65472f",
+                "device_id": "7d8d5e5a951e48909278677477bd663c",
+                "disabled_by": null,
+                "entity_id": "device_tracker.mi_8",
+                "name": null,
+                "platform": "mobile_app",
+                "unique_id": "28229efd93b04683b038dc93d2ef0d2e"
+            },
+            {
+                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
+                "device_id": "abaae83134c64727801b1e0fcc8e9134",
+                "disabled_by": null,
+                "entity_id": "sensor.kitchen_temp_ac_gas_tube",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "dallas-99020791775C3828"
             }
         ]
     },

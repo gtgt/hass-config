@@ -25,7 +25,7 @@
       ac_bedroom_target_temp:
         value_template: "{{ state_attr('climate.ac_bedroom', 'temperature') }}"
         availability_template: "{{ states('climate.ac_bedroom') != 'off' }}"
-      ac_livingroom_target_temp:
-        value_template: "{{ state_attr('climate.ac_livingroom', 'temperature') }}"
-        availability_template: "{{ states('climate.ac_livingroom') != 'off' }}"
+      ac_kitchen_target_temp:
+        value_template: "{{ state_attr('climate.ac_kitchen', 'temperature') }}"
+        availability_template: "{{ states('climate.ac_kitchen') != 'off' }}"
         

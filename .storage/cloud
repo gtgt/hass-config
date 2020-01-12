@@ -46,6 +46,9 @@
             "sensor.ac_childb_target_temp": {
                 "should_expose": false
             },
+            "sensor.ac_default_target_temp": {
+                "should_expose": false
+            },
             "sensor.ac_study_target_temp": {
                 "should_expose": false
             },

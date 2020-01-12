@@ -38,7 +38,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "ac_relay",
                 "name_by_user": "AC Szelepvez\u00e9rl\u00e9s",
-                "sw_version": "1.15.0-dev (Dec 14 2019, 16:38:40)",
+                "sw_version": "1.15.0-dev (Dec 28 2019, 19:10:48)",
                 "via_device_id": null
             },
             {
@@ -163,6 +163,66 @@
                 "name": "bedroom",
                 "name_by_user": null,
                 "sw_version": "1.15.0-dev (Dec 20 2019, 18:41:07)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "60f7d6f23b2a48898e96e9575f527f1d"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "4c:11:ae:0e:6c:a4"
+                    ]
+                ],
+                "id": "abaae83134c64727801b1e0fcc8e9134",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "kitchen",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (Jan 12 2020, 14:33:36)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "4a258a7c193b4724a0071475da16dabf"
+                ],
+                "connections": [],
+                "id": "347bf7399a184095823e9cdba72cc047",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "238e4b47b43e46d68ff9e51e97672192"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "dipper",
+                "name": "Mi_Phone",
+                "name_by_user": null,
+                "sw_version": "9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "6e27ab9518d043dbb118aa7c8c65472f"
+                ],
+                "connections": [],
+                "id": "7d8d5e5a951e48909278677477bd663c",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "28229efd93b04683b038dc93d2ef0d2e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MI 8",
+                "name": "MI 8",
+                "name_by_user": null,
+                "sw_version": "28",
                 "via_device_id": null
             }
         ]

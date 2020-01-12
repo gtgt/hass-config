@@ -6,10 +6,10 @@ esphome:
   platform: ESP8266
   board: esp01_1m
 
-#status_led:
-#  pin:
-#    number: GPIO2
-#    inverted: true
+status_led:
+  pin:
+    number: GPIO2
+    inverted: true
 
 wifi:
   ssid: !secret wifi_ssid
@@ -49,38 +49,14 @@ dallas:
 
 sensor:
   - platform: dallas
-    id: temp
+    id: temp1
     name: ${name}_temp_ac_inlet
     address: 0x9902099246320028
     filters:
       - offset: 0
-
-  - platform: dht
-    model: DHT11
-    pin: GPIO2
-    update_interval: 15s
-    temperature:
-      id: temp2
-      name: ${name}_temp2
-      filters:
-        - offset: 0
-        #- exponential_moving_average:
-        #    alpha: 0.75
-        #    send_every: 4
-        #-   sliding_window_moving_average:
-        - median:
-            window_size: 4
-            send_every: 4
-            send_first_at: 4
-    humidity:
-      id: humidity
-      name: ${name}_humidity
-      filters:
-        #- exponential_moving_average:
-        #    alpha: 0.75
-        #    send_every: 4
-        #- sliding_window_moving_average:
-        - median:
-            window_size: 4
-            send_every: 4
-            send_first_at: 4
+  - platform: dallas
+    id: temp2
+    name: ${name}_temp_ac_gas_tube
+    address: 0x99020791775C3828
+    filters:
+      - offset: 0

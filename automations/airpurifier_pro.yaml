@@ -27,7 +27,7 @@
     entity_id: input_number.airpurifier_pro_favorite_level
     platform: state
   action:
-    service: fan.xiaomi_miio_set_favorite_level
+    service: xiaomi_miio.fan_set_favorite_level
     data_template:
       entity_id: fan.airpurifier_pro
       level: '{{ states.input_number.airpurifier_pro_favorite_level.state | int }}'

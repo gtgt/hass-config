@@ -1,0 +1,10 @@
+- platform: nut
+  name: UPS
+  host: 40817795-nut
+  username: admin
+  password: "JtKPY!6ctXsU"
+  resources:
+    - battery.charge
+    - battery.runtime
+    - ups.load
+    - ups.status

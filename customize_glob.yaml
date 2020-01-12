@@ -5,6 +5,9 @@
 "device_tracker.*":
     hidden: true
     control: hidden
+"sensor.*_target_*":
+    hidden: true
+    control: hidden
 "sensor.*_up_time":
     hidden: true
     control: hidden
