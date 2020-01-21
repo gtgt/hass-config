@@ -36,8 +36,8 @@
     tolerance: 0.5
   - platform: programmable_thermostat
     name: ac_kitchen
-    heater: input_boolean.ac_relay_kitchen
-    cooler: input_boolean.ac_relay_kitchen
+    heater: switch.ac_relay_kitchen
+    cooler: switch.ac_relay_kitchen
     actual_temp_sensor: sensor.livingroom_temp
     target_temp_sensor: sensor.ac_default_target_temp
     min_temp: 20

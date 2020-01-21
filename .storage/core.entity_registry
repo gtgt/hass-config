@@ -218,33 +218,6 @@
                 "unique_id": "bedroomsensorbedroom_target_rotary"
             },
             {
-                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
-                "device_id": "abaae83134c64727801b1e0fcc8e9134",
-                "disabled_by": null,
-                "entity_id": "sensor.kitchen_temp_ac_inlet",
-                "name": null,
-                "platform": "esphome",
-                "unique_id": "dallas-9902099246320028"
-            },
-            {
-                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
-                "device_id": "abaae83134c64727801b1e0fcc8e9134",
-                "disabled_by": null,
-                "entity_id": "sensor.kitchen_humidity",
-                "name": null,
-                "platform": "esphome",
-                "unique_id": "kitchensensorkitchen_humidity"
-            },
-            {
-                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
-                "device_id": "abaae83134c64727801b1e0fcc8e9134",
-                "disabled_by": null,
-                "entity_id": "sensor.kitchen_temp2",
-                "name": null,
-                "platform": "esphome",
-                "unique_id": "kitchensensorkitchen_temp2"
-            },
-            {
                 "config_entry_id": "20c06d361c7a476491520ec1a4238b3d",
                 "device_id": "c42ff05402484b959e04718619abc8d3",
                 "disabled_by": null,
@@ -272,10 +245,19 @@
                 "unique_id": "28229efd93b04683b038dc93d2ef0d2e"
             },
             {
-                "config_entry_id": "60f7d6f23b2a48898e96e9575f527f1d",
-                "device_id": "abaae83134c64727801b1e0fcc8e9134",
+                "config_entry_id": "a8efc587ab5b416c882454d751745a7f",
+                "device_id": "96fb745a523b4df7b77acd5de411de1f",
                 "disabled_by": null,
-                "entity_id": "sensor.kitchen_temp_ac_gas_tube",
+                "entity_id": "sensor.ac_sensor_temp_ac_outlet",
+                "name": null,
+                "platform": "esphome",
+                "unique_id": "dallas-9902099246320028"
+            },
+            {
+                "config_entry_id": "a8efc587ab5b416c882454d751745a7f",
+                "device_id": "96fb745a523b4df7b77acd5de411de1f",
+                "disabled_by": null,
+                "entity_id": "sensor.ac_sensor_temp_ac_gas_tube",
                 "name": null,
                 "platform": "esphome",
                 "unique_id": "dallas-99020791775C3828"

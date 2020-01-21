@@ -12,8 +12,8 @@ ac:
     - sensor.livingroom_temp
     - sensor.livingroom_humidity
     - sensor.io_temp_diff
-    - sensor.kitchen_temp_ac_gas_tube
-    - sensor.kitchen_temp_ac_inlet
+    - sensor.ac_sensor_temp_ac_outlet
+    - sensor.ac_sensor_temp_ac_gas_tube
     - climate.ac
     - climate.ac_study
     - climate.ac_childa

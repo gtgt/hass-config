@@ -168,26 +168,6 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "60f7d6f23b2a48898e96e9575f527f1d"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "4c:11:ae:0e:6c:a4"
-                    ]
-                ],
-                "id": "abaae83134c64727801b1e0fcc8e9134",
-                "identifiers": [],
-                "manufacturer": "espressif",
-                "model": "PLATFORMIO_ESP01_1M",
-                "name": "kitchen",
-                "name_by_user": null,
-                "sw_version": "1.15.0-dev (Jan 12 2020, 14:33:36)",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
                     "4a258a7c193b4724a0071475da16dabf"
                 ],
                 "connections": [],
@@ -223,6 +203,26 @@
                 "name": "MI 8",
                 "name_by_user": null,
                 "sw_version": "28",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "a8efc587ab5b416c882454d751745a7f"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "4c:11:ae:0e:6c:a4"
+                    ]
+                ],
+                "id": "96fb745a523b4df7b77acd5de411de1f",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "ac_sensor",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (Jan 21 2020, 15:30:51)",
                 "via_device_id": null
             }
         ]

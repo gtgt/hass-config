@@ -50,7 +50,7 @@ uart:
   tx_pin: GPIO1
   rx_pin: GPIO3
   baud_rate: 9600
-  stop_bits: 1
+  # stop_bits: 2
 
 sensor:
   - platform: pzemac

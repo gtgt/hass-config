@@ -1,5 +1,5 @@
 substitutions:
-  name: kitchen
+  name: ac_sensor
 
 esphome:
   name: ${name}
@@ -50,7 +50,7 @@ dallas:
 sensor:
   - platform: dallas
     id: temp1
-    name: ${name}_temp_ac_inlet
+    name: ${name}_temp_ac_outlet
     address: 0x9902099246320028
     filters:
       - offset: 0

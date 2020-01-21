@@ -1,12 +1,12 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Jan 12 2020, 14:33:36",
+            "compilation_time": "Jan 21 2020, 15:30:51",
             "esphome_version": "1.15.0-dev",
             "has_deep_sleep": false,
             "mac_address": "4C:11:AE:0E:6C:A4",
             "model": "PLATFORMIO_ESP01_1M",
-            "name": "kitchen",
+            "name": "ac_sensor",
             "uses_password": true
         },
         "sensor": [
@@ -14,9 +14,9 @@
                 "accuracy_decimals": 1,
                 "force_update": false,
                 "icon": "mdi:thermometer",
-                "key": 626145178,
-                "name": "kitchen_temp_ac_inlet",
-                "object_id": "kitchen_temp_ac_inlet",
+                "key": 792558390,
+                "name": "ac_sensor_temp_ac_outlet",
+                "object_id": "ac_sensor_temp_ac_outlet",
                 "unique_id": "dallas-9902099246320028",
                 "unit_of_measurement": "\u00b0C"
             },
@@ -24,9 +24,9 @@
                 "accuracy_decimals": 1,
                 "force_update": false,
                 "icon": "mdi:thermometer",
-                "key": 1824345198,
-                "name": "kitchen_temp_ac_gas_tube",
-                "object_id": "kitchen_temp_ac_gas_tube",
+                "key": 1944633169,
+                "name": "ac_sensor_temp_ac_gas_tube",
+                "object_id": "ac_sensor_temp_ac_gas_tube",
                 "unique_id": "dallas-99020791775C3828",
                 "unit_of_measurement": "\u00b0C"
             }
@@ -34,6 +34,6 @@
         "services": [],
         "text_sensor": []
     },
-    "key": "esphome.60f7d6f23b2a48898e96e9575f527f1d",
+    "key": "esphome.a8efc587ab5b416c882454d751745a7f",
     "version": 1
 }
