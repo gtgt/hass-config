@@ -5,7 +5,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.io_temp_diff
-      below: 16
+      below: 15
   condition:
     condition: and
     conditions:
@@ -19,7 +19,7 @@
     - service: notify.notify
       data_template:
         message: >
-          Ventillation turned ON, since temp. difference is {{ states.sensor.livingroom_temp.state_with_unit }}!
+          Ventillation turned ON, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!
 
 - id: ac_ventillation_off
   alias: "Ventillation auto off"
@@ -42,4 +42,4 @@
     - service: notify.notify
       data_template:
         message: >
-          Ventillation turned OFF, since temp. difference is {{ states.sensor.livingroom_temp.state_with_unit }}!
+          Ventillation turned OFF, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!

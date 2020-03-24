@@ -2,6 +2,6 @@
     name: "Pufi kedvenc mód szint"
     initial: 0
     min: 0
-    max: 14
+    max: 16
     step: 1
     icon: "mdi:weather-windy"

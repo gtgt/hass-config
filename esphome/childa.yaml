@@ -4,12 +4,12 @@ substitutions:
 esphome:
   name: ${name}
   platform: ESP8266
-  board: esp01_1m
+  board: d1_mini
 
-#status_led:
-#  pin:
-#    number: GPIO2
-#    inverted: true
+status_led:
+  pin:
+    number: D4
+    inverted: true
 
 wifi:
   ssid: !secret wifi_ssid
@@ -46,13 +46,13 @@ time:
 sensor:
   - platform: dht
     model: DHT11
-    pin: GPIO2
+    pin: D5
     update_interval: 15s
     temperature:
       id: temp
       name: ${name}_temp
       filters:
-        - offset: -5.5
+        - offset: 0
         #- exponential_moving_average:
         #    alpha: 0.75
         #    send_every: 4

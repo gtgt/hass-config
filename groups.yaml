@@ -33,7 +33,7 @@ ac:
     - weather.owm
 
 apb:
-  name: APB
+  name: Villany
   view: yes
   entities:
     - switch.apb_q0
@@ -93,7 +93,7 @@ alarm:
     - alarm_control_panel.outside
 
 airpurifier_pro:
-  name: Légtisztító
+  name: Pufi
   view: yes
   entities:
     - fan.airpurifier_pro
@@ -108,3 +108,4 @@ airpurifier_pro:
     - sensor.airpurifier_pro_temp
     - sensor.airpurifier_pro_humidity
     - sensor.airpurifier_pro_air_quality_pm25
+    - input_number.airpurifier_pro_level

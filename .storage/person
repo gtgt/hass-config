@@ -1,7 +1,7 @@
 {
     "data": {
-        "persons": []
+        "items": []
     },
     "key": "person",
-    "version": 1
+    "version": 2
 }

@@ -3,6 +3,62 @@
         "binary_sensor": {},
         "deleted_ids": [],
         "sensor": {
+            "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "AC",
+                    "is_charging": true
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-charging-70",
+                "name": "Battery Level",
+                "state": 76,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506"
+            },
+            "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": null,
+                    "Country": "Hungary",
+                    "ISO Country Code": "HU",
+                    "Locality": "Pilisv\u00f6r\u00f6sv\u00e1r",
+                    "Location": [
+                        47.623481399999996,
+                        18.9181656
+                    ],
+                    "Postal Code": "2085",
+                    "Sub Administrative Area": null,
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": null,
+                    "Thoroughfare": "Retek utca"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Pilisv\u00f6r\u00f6sv\u00e1r, Retek u., 2085 Hungary",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506"
+            },
+            "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": "46:d9:e7:f2:66:1a",
+                    "frequency": 2462,
+                    "ip_address": "192.168.1.167",
+                    "is_hidden": false,
+                    "link_speed": 54,
+                    "signal_level": -47
+                },
+                "icon": "mdi:wifi-strength-3",
+                "name": "Wifi Connection",
+                "state": "engeddel",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506"
+            },
             "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a_mobile_app_xiaomi_mi3w_battery": {
                 "added": true,
                 "attributes": {
@@ -24,6 +80,60 @@
                 "unique_id": "mobile_app_xiaomi_mi3w_battery",
                 "unit_of_measurement": "%",
                 "webhook_id": "26bc42f1aaa2079834ea64073c0d3acecaf704a317905f08abc0871984082c0a"
+            },
+            "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "N/A",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-50",
+                "name": "Battery Level",
+                "state": 50,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198"
+            },
+            "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198_geocoded_location": {
+                "attributes": {
+                    "Administrative Area": null,
+                    "Country": "Hungary",
+                    "ISO Country Code": "HU",
+                    "Locality": "Pilisv\u00f6r\u00f6sv\u00e1r",
+                    "Location": [
+                        47.623481399999996,
+                        18.9181656
+                    ],
+                    "Postal Code": "2085",
+                    "Sub Administrative Area": null,
+                    "Sub Locality": null,
+                    "Sub Thoroughfare": null,
+                    "Thoroughfare": "Retek utca"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Pilisv\u00f6r\u00f6sv\u00e1r, Retek u., 2085 Hungary",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198"
+            },
+            "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198_wifi_connection": {
+                "attributes": {
+                    "bssid": "46:d9:e7:f2:66:1a",
+                    "frequency": 2462,
+                    "ip_address": "192.168.1.20",
+                    "is_hidden": false,
+                    "link_speed": 54,
+                    "signal_level": -48
+                },
+                "icon": "mdi:wifi-strength-3",
+                "name": "Wifi Connection",
+                "state": "engeddel",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198"
             }
         }
     },

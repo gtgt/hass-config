@@ -42,36 +42,37 @@ cloud:
 # Enable system health on info page
 system_health:
 
-# Enables support for tracking state changes over time.
-history:
+## Enables support for tracking state changes over time.
+#history:
 
-# View all events in a logbook
-logbook:
-  include:
-    domains:
-      - sensor
-      - switch
-      - media_player
-      - climate
-  exclude:
-    entities:
-      - sensor.ac_target_temp
-      - sensor.ac_relay_up_time
+## View all events in a logbook
+#logbook:
+#  include:
+#    domains:
+#      - sensor
+#      - switch
+#      - media_player
+#      - climate
+#  exclude:
+#    entities:
+#      - sensor.ac_target_temp
+#      - sensor.ac_relay_up_time
 
-# Configure the history of the logbook
-recorder:
-  purge_interval: 5
-  purge_keep_days: 15
-  include:
-    domains:
-      - sensor
-      - switch
-      - media_player
-      - climate
-  exclude:
-    entities:
-      - sensor.ac_target_temp
-      - sensor.ac_relay_up_time
+## Configure the history of the logbook
+#recorder:
+#  db_url: sqlite:////config/home-assistant_v2.db
+#  purge_interval: 1
+#  purge_keep_days: 3
+#  include:
+#    domains:
+#      - sensor
+#      - switch
+#      - media_player
+#      - climate
+#  exclude:
+#    entities:
+#      - sensor.ac_target_temp
+#      - sensor.ac_relay_up_time
 
 updater:
 
@@ -120,6 +121,9 @@ media_extractor:
 
 frontend:
   themes: !include_dir_merge_named themes
+
+lovelace:
+  mode: yaml
 
 weather: !include_dir_merge_list integrations/weather
 climate: !include_dir_merge_list integrations/climate

@@ -1,11 +1,11 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Dec 15 2019, 23:18:06",
+            "compilation_time": "Mar 17 2020, 20:59:21",
             "esphome_version": "1.15.0-dev",
             "has_deep_sleep": false,
-            "mac_address": "4C:11:AE:0E:3D:03",
-            "model": "PLATFORMIO_ESP01_1M",
+            "mac_address": "18:FE:34:E0:C1:2A",
+            "model": "PLATFORMIO_D1_MINI",
             "name": "childa",
             "uses_password": true
         },

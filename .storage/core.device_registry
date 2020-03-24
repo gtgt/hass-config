@@ -110,12 +110,12 @@
                 "id": "3d9c0bcc9f24448cbd6d2a333b4c2e52",
                 "identifiers": [
                     [
-                        "webhook_id",
-                        "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
-                    ],
-                    [
                         "device_id",
                         "fbf4a0a4d15f4fd1b450e6633920b821"
+                    ],
+                    [
+                        "webhook_id",
+                        "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
                     ]
                 ],
                 "manufacturer": "Xiaomi",
@@ -223,6 +223,86 @@
                 "name": "ac_sensor",
                 "name_by_user": null,
                 "sw_version": "1.15.0-dev (Jan 21 2020, 15:30:51)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "18aefcbb0b9e461480e8ab356705f0f9"
+                ],
+                "connections": [],
+                "id": "2e061c4909f447e0935779a8d277b90b",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "a91bcb1a93e1997d"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MI CC 9",
+                "name": "Mi 9 Lite",
+                "name_by_user": null,
+                "sw_version": "28",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c909fbb7c4a24e9e8100680d5c0b4acb"
+                ],
+                "connections": [],
+                "id": "f63a684768264ca5b9ea183aa885fb0e",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "b06c02c9904d45119895249ef294f968"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MI 8",
+                "name": "GT's MI 8",
+                "name_by_user": null,
+                "sw_version": "9",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "52674ed45f9a49fbbb2540916c5e2591"
+                ],
+                "connections": [],
+                "id": "d4ed5629bc6646eba8441846c2646a4f",
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "fcdb64046b90c350"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "Mi Note 2",
+                "name": "Mi Note 2",
+                "name_by_user": null,
+                "sw_version": "26",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "c9d4debac02a43ba996b19c3bf6e4963"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "18:fe:34:e0:c1:2a"
+                    ]
+                ],
+                "id": "c7008817f17e452c8109a00664c03767",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "childa",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (Mar 17 2020, 20:59:21)",
                 "via_device_id": null
             }
         ]

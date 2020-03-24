@@ -1,0 +1,290 @@
+title: Cékla 3.
+views:
+  - path: ac
+    title: AC
+    badges:
+      - entity: sensor.study_temp
+      - entity: sensor.childa_temp
+      - entity: sensor.childa_humidity
+      - entity: sensor.childb_temp
+      - entity: sensor.childb_humidity
+      - entity: sensor.bedroom_temp
+      - entity: sensor.bedroom_humidity
+      - entity: sensor.livingroom_temp
+      - entity: sensor.livingroom_humidity
+      - entity: sensor.io_temp_diff
+      - entity: sensor.ac_sensor_temp_ac_outlet
+      - entity: sensor.ac_sensor_temp_ac_gas_tube
+    cards:
+      - type: entities
+        entities:
+          - automation.ventillation_auto_off
+          - automation.ventillation_auto_on
+        title: Automatizálás
+      - type: thermostat
+        entity: climate.ac
+      - type: thermostat
+        entity: climate.ac_study
+      - type: thermostat
+        entity: climate.ac_childa
+      - type: thermostat
+        entity: climate.ac_childb
+      - type: thermostat
+        entity: climate.ac_bedroom
+      - type: thermostat
+        entity: climate.ac_kitchen
+      - type: entities
+        entities:
+          - switch.ac_relay_study
+          - switch.ac_relay_childa
+          - switch.ac_relay_childb
+          - switch.ac_relay_bedroom
+          - switch.ac_relay_kitchen
+          - switch.ac_relay_ventillation
+        title: Kapcsoló
+      - type: weather-forecast
+        entity: weather.owm
+  - path: apb
+    title: Villany
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - switch.apb_q0
+          - switch.apb_q1
+          - switch.apb_q2
+          - switch.apb_q3
+          - switch.apb_q4
+          - switch.apb_q5
+          - switch.apb_q6
+          - switch.apb_q7
+          - switch.apb_q10
+          - switch.apb_q11
+          - switch.apb_q12
+          - switch.apb_q13
+          - switch.apb_q17
+        title: Kapcsoló
+  - path: alarm
+    title: Riasztó
+    badges:
+      - entity: binary_sensor.pir_entry
+      - entity: binary_sensor.pir_study
+      - entity: binary_sensor.pir_bedroom
+      - entity: binary_sensor.pir_kitchen
+      - entity: binary_sensor.pir_livingroom
+      - entity: binary_sensor.pir_childa
+      - entity: binary_sensor.pir_childb
+      - entity: binary_sensor.window_study
+      - entity: binary_sensor.window_bedroom
+      - entity: binary_sensor.window_bathroom
+      - entity: binary_sensor.window_kitchen
+      - entity: binary_sensor.window_livingroom1
+      - entity: binary_sensor.window_livingroom2
+      - entity: binary_sensor.window_childa
+      - entity: binary_sensor.window_childb
+      - entity: binary_sensor.dusk_detector
+      - entity: binary_sensor.pir_terrace
+      - entity: binary_sensor.pir_backyard_left
+      - entity: binary_sensor.pir_backyard_back
+      - entity: binary_sensor.pir_backyard_right
+      - entity: binary_sensor.pir_backyard_sidewalk
+      - entity: binary_sensor.fire_attic
+      - entity: binary_sensor.alarm_armed_fully
+      - entity: binary_sensor.alarm_tamper
+    cards:
+      - type: alarm-panel
+        entity: alarm_control_panel.inside
+      - type: alarm-panel
+        entity: alarm_control_panel.windows
+      - type: alarm-panel
+        entity: alarm_control_panel.outside
+      - type: entities
+        entities:
+          - switch.alarm_output1
+          - switch.alarm_output2
+          - switch.alarm_sirene_buzzer
+          - switch.alarm_sirene_light
+          - switch.terrace_light
+          - switch.outside_wall_light1
+          - switch.outside_wall_light2
+        title: Kapcsoló
+  - path: airpurifier_pro
+    title: Pufi
+    badges:
+      - entity: sensor.airpurifier_pro_speed
+      - entity: sensor.airpurifier_pro_filter_remaining
+      - entity: sensor.airpurifier_pro_air_quality_pm25
+      - entity: sensor.airpurifier_pro_temp
+      - entity: sensor.airpurifier_pro_humidity
+    cards:
+      - type: entities
+        entities:
+          - fan.airpurifier_pro
+        title: Ventilátor
+      - type: entities
+        entities:
+          - input_number.airpurifier_pro_level
+        title: Szám bemenet
+      - type: entities
+        entities:
+          - input_select.airpurifier_pro_mode
+        title: Választási bemenet
+      - type: entities
+        entities:
+          - switch.airpurifier_pro_child_lock
+          - switch.airpurifier_pro_led
+          - switch.airpurifier_pro_buzzer
+        title: Kapcsoló
+  - path: default_view
+    title: Összes
+    badges:
+      - entity: binary_sensor.apb_i0
+      - entity: binary_sensor.apb_i19
+      - entity: binary_sensor.apb_i1a
+      - entity: binary_sensor.apb_i1b
+      - entity: binary_sensor.apb_i1c
+      - entity: binary_sensor.apb_i5
+      - entity: binary_sensor.apb_i3
+      - entity: binary_sensor.apb_i6
+      - entity: binary_sensor.apb_i4
+      - entity: binary_sensor.apb_i7
+      - entity: binary_sensor.apb_i8
+      - entity: binary_sensor.apb_i9
+      - entity: binary_sensor.apb_ia
+      - entity: binary_sensor.apb_ib
+      - entity: binary_sensor.apb_ic
+      - entity: binary_sensor.apb_id
+      - entity: binary_sensor.apb_i12
+      - entity: binary_sensor.apb_i13
+      - entity: binary_sensor.apb_i14
+      - entity: binary_sensor.apb_i1
+      - entity: binary_sensor.apb_i15
+      - entity: binary_sensor.apb_i2
+      - entity: binary_sensor.apb_i16
+      - entity: binary_sensor.apb_i17
+      - entity: binary_sensor.apb_i18
+      - entity: binary_sensor.dusk_detector
+      - entity: binary_sensor.pir_terrace
+      - entity: binary_sensor.pir_backyard_left
+      - entity: binary_sensor.pir_backyard_back
+      - entity: binary_sensor.pir_backyard_right
+      - entity: binary_sensor.pir_backyard_sidewalk
+      - entity: binary_sensor.fire_attic
+      - entity: binary_sensor.alarm_armed_fully
+      - entity: binary_sensor.alarm_tamper
+      - entity: binary_sensor.window_study
+      - entity: binary_sensor.pir_childb
+      - entity: binary_sensor.window_bedroom
+      - entity: binary_sensor.pir_livingroom
+      - entity: binary_sensor.pir_entry
+      - entity: binary_sensor.pir_childa
+      - entity: binary_sensor.window_bathroom
+      - entity: binary_sensor.window_kitchen
+      - entity: binary_sensor.pir_kitchen
+      - entity: binary_sensor.window_livingroom1
+      - entity: binary_sensor.pir_study
+      - entity: binary_sensor.window_livingroom2
+      - entity: binary_sensor.pir_bedroom
+      - entity: binary_sensor.window_childa
+      - entity: binary_sensor.window_childb
+      - entity: binary_sensor.updater
+      - entity: binary_sensor.remote_ui
+      - entity: person.gt
+      - entity: person.gsm
+      - entity: sensor.io_temp_diff
+      - entity: sensor.livingroom_humidity
+      - entity: sensor.livingroom_temp
+      - entity: sensor.airpurifier_pro_humidity
+      - entity: sensor.airpurifier_pro_air_quality_pm25
+      - entity: sensor.airpurifier_pro_speed
+      - entity: sensor.airpurifier_pro_filter_remaining
+      - entity: sensor.airpurifier_pro_temp
+      - entity: sensor.moon
+      - entity: sensor.battery_level
+      - entity: sensor.wifi_connection
+      - entity: sensor.mi_8_geocoded_location
+      - entity: sensor.battery_level_2
+      - entity: sensor.mi_note_2_wifi_connection
+      - entity: sensor.mi_note_2_geocoded_location
+      - entity: sensor.childb_humidity
+      - entity: sensor.childb_temp
+      - entity: sensor.childb_temp_outside
+      - entity: sensor.study_temp
+      - entity: sensor.childa_temp
+      - entity: sensor.childa_humidity
+      - entity: sensor.bedroom_humidity
+      - entity: sensor.bedroom_mic
+      - entity: sensor.bedroom_temp
+      - entity: sensor.ac_sensor_temp_ac_outlet
+      - entity: sensor.ac_sensor_temp_ac_gas_tube
+      - entity: sensor.ac_inside_temperature
+      - entity: sun.sun
+    cards:
+      - type: alarm-panel
+        entity: alarm_control_panel.inside
+      - type: alarm-panel
+        entity: alarm_control_panel.outside
+      - type: alarm-panel
+        entity: alarm_control_panel.windows
+      - type: picture-entity
+        entity: camera.weather
+      - type: thermostat
+        entity: climate.ac_childb
+      - type: thermostat
+        entity: climate.ac_kitchen
+      - type: thermostat
+        entity: climate.ac_bedroom
+      - type: thermostat
+        entity: climate.ac_study
+      - type: thermostat
+        entity: climate.ac_childa
+      - type: thermostat
+        entity: climate.ac
+      - type: entities
+        entities:
+          - fan.airpurifier_pro
+        title: Ventilátor
+      - type: entities
+        entities:
+          - input_number.airpurifier_pro_level
+        title: Szám bemenet
+      - type: entities
+        entities:
+          - input_select.airpurifier_pro_mode
+        title: Választási bemenet
+      - type: media-control
+        entity: media_player.kodi
+      - type: entities
+        entities:
+          - switch.airpurifier_pro_buzzer
+          - switch.airpurifier_pro_led
+          - switch.airpurifier_pro_child_lock
+          - switch.apb_q7
+          - switch.apb_q10
+          - switch.apb_q4
+          - switch.apb_q11
+          - switch.apb_q2
+          - switch.apb_q0
+          - switch.apb_q3
+          - switch.apb_q12
+          - switch.apb_q13
+          - switch.apb_q17
+          - switch.apb_q5
+          - switch.apb_q1
+          - switch.apb_q6
+          - switch.outside_wall_light1
+          - switch.outside_wall_light2
+          - switch.alarm_sirene_buzzer
+          - switch.alarm_output1
+          - switch.alarm_output2
+          - switch.alarm_sirene_light
+          - switch.terrace_light
+          - switch.ac_relay_childa
+          - switch.ac_relay_kitchen
+          - switch.ac_relay_childb
+          - switch.ac_relay_ventillation
+          - switch.ac_relay_study
+          - switch.ac_relay_bedroom
+        title: Kapcsoló
+      - type: weather-forecast
+        entity: weather.owm

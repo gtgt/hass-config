@@ -12,6 +12,7 @@
                     "disable_new_entities": false
                 },
                 "title": "configuration.yaml",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -28,6 +29,7 @@
                     "disable_new_entities": false
                 },
                 "title": "192.168.1.8",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -45,6 +47,7 @@
                     "disable_new_entities": false
                 },
                 "title": "ac_relay",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -62,6 +65,7 @@
                     "disable_new_entities": false
                 },
                 "title": "study",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -79,6 +83,7 @@
                     "disable_new_entities": false
                 },
                 "title": "childb",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -96,6 +101,7 @@
                     "disable_new_entities": false
                 },
                 "title": "childa",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -107,7 +113,7 @@
                     },
                     "app_id": "ha_client",
                     "app_name": "HA Client",
-                    "app_version": "0.7.6",
+                    "app_version": "0.7.7",
                     "cloudhook_url": "https://hooks.nabu.casa/gAAAAABdy-f3LRt9AX0sNKO8ZZzYiU0uQTWLhRqawjjZY8XTcCPPnIdTH7HbuinEDd719H4CeRYoROoD4WpKS35pzUuHtS5T1jxvRQihKhAM29lgQOVU8Hksx7h24BReFR2yiNAKXNZMA7e_Zt9TDRDK_ZnfTP8bphxFZODQiMLig-VIfgSykiQ=",
                     "device_id": "fbf4a0a4d15f4fd1b450e6633920b821",
                     "device_name": "GT's Mi Note 2",
@@ -127,6 +133,7 @@
                     "disable_new_entities": false
                 },
                 "title": "GT's Mi Note 2",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -144,6 +151,7 @@
                     "disable_new_entities": false
                 },
                 "title": "bedroom",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -174,6 +182,7 @@
                     "disable_new_entities": false
                 },
                 "title": "Mi_Phone",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -181,11 +190,11 @@
                 "data": {
                     "app_data": {
                         "push_token": "d76Glyzy-qM:APA91bF1kd3zWyuDUO2cNXhsDTZyx9VrJzx1cJcf5KcXJn3M0_3UJ1FRNvtjyjm4yNxnEbqfuqwX84z2jyuKIlK2GU9SWNtum2O3nqcG4zEcN-tdO376M_9sK4hcXLHUDVwPP4GLhqUO",
-                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
                     },
                     "app_id": "io.homeassistant.companion.android",
                     "app_name": "Home Assistant",
-                    "app_version": "1.4.0 (77)",
+                    "app_version": "1.8.0-144 (144)",
                     "device_id": "28229efd93b04683b038dc93d2ef0d2e",
                     "device_name": "MI 8",
                     "manufacturer": "Xiaomi",
@@ -204,6 +213,7 @@
                     "disable_new_entities": false
                 },
                 "title": "MI 8",
+                "unique_id": null,
                 "version": 1
             },
             {
@@ -221,6 +231,100 @@
                     "disable_new_entities": false
                 },
                 "title": "ac_sensor",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "fvg2b-HT6qY:APA91bGtG-ZiLqSjPKsmn-cdgchtzP54SbqYigKzXfSlb3-HKD5JkaxfLAy9rjIFaLuZXgb-XKhq8Bchac0NGxJNdY0CeQRNcvGvj8vtBKGfKkGqZ_jC3hf6HxMD8UytvDtcF3oFI3sC",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "1.5.1 (97)",
+                    "device_id": "a91bcb1a93e1997d",
+                    "device_name": "Mi 9 Lite",
+                    "manufacturer": "Xiaomi",
+                    "model": "MI CC 9",
+                    "os_name": "Android",
+                    "os_version": "28",
+                    "supports_encryption": false,
+                    "user_id": "1dedaecfcb6546b7a5acc4f80b5ac32c",
+                    "webhook_id": "59281cd80f3ebf781ba5a79ebadba1bade94c89941a019e84f59c2b3ef38c0fd"
+                },
+                "domain": "mobile_app",
+                "entry_id": "18aefcbb0b9e461480e8ab356705f0f9",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Mi 9 Lite",
+                "unique_id": "io.homeassistant.companion.android-a91bcb1a93e1997d",
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "ex9MUzLx3wE:APA91bHUJGUPiiLxqlczY9UdeVZiWZ7Zpq3SyjO2C9RtX_e3kosb7bRV9OFHi4vx0VqJeEgKajf2v8ExLu71_S3f24Ba8dBKozXG5ngyZiAjF7PHSttwNabpNs_p73Fsj3ce3tm-_sZc",
+                        "push_url": "https://us-central1-ha-client-c73c4.cloudfunctions.net/sendPushNotification"
+                    },
+                    "app_id": "ha_client",
+                    "app_name": "HA Client",
+                    "app_version": "0.7.7",
+                    "device_id": "b06c02c9904d45119895249ef294f968",
+                    "device_name": "GT's MI 8",
+                    "manufacturer": "Xiaomi",
+                    "model": "MI 8",
+                    "os_name": "Android",
+                    "os_version": "9",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "53285ecd0ac1e11e4487caa560eda73b07a880b858f9791646cec8d61f79bfb8"
+                },
+                "domain": "mobile_app",
+                "entry_id": "c909fbb7c4a24e9e8100680d5c0b4acb",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "GT's MI 8",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "app_data": {
+                        "push_token": "dM8GGPHQj74:APA91bEpaPQqgaqNEV21NSpJ5udqC0V_KqYayYY1oO-Cw_ipM4wXJIuazb-d5EL7DRy-q04VT5yVRJDBXCJd2EolWxzf9r4UCjnr7hF61XwSPG-QrsCOg1CZrvlJytYJgpNwRWQz5Zbj",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
+                    },
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "1.8.0-144 (144)",
+                    "device_id": "fcdb64046b90c350",
+                    "device_name": "Mi Note 2",
+                    "manufacturer": "Xiaomi",
+                    "model": "Mi Note 2",
+                    "os_name": "Android",
+                    "os_version": "26",
+                    "supports_encryption": false,
+                    "user_id": "5a0a633ef7644660a34bd271371786aa",
+                    "webhook_id": "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198"
+                },
+                "domain": "mobile_app",
+                "entry_id": "52674ed45f9a49fbbb2540916c5e2591",
+                "options": {},
+                "source": "registration",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Mi Note 2",
+                "unique_id": "io.homeassistant.companion.android-fcdb64046b90c350",
                 "version": 1
             }
         ]
