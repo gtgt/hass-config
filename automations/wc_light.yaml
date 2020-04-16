@@ -1,6 +1,5 @@
 - id: wc_light_off
   alias: "WC light off at sunrise"
-  hide_entity: true
   trigger:
     platform: sun
     event: sunrise
@@ -11,7 +10,6 @@
        entity_id: switch.apb_q4
 - id: wc_light_on
   alias: "WC light on at sunset"
-  hide_entity: true
   trigger:
     platform: sun
     event: sunset

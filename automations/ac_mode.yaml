@@ -1,5 +1,4 @@
   - id: 'ac_mode'
-    hide_entity: true
     initial_state: on
     alias: AC mode
     trigger:

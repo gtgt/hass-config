@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -14,18 +14,18 @@
                     "step": 1.0
                 },
                 "context": {
-                    "id": "87b8b05aaf01420caea078dc8b25846b",
-                    "parent_id": "dce7027931bf44519cc3261eea6e20f4",
+                    "id": "75919c26b705460bb1dc2e983fc9e481",
+                    "parent_id": "2fdb1bc86a304b3ca8ff68edf20d10b3",
                     "user_id": null
                 },
                 "entity_id": "input_number.airpurifier_pro_level",
-                "last_changed": "2020-03-24T16:22:54.114569+00:00",
-                "last_updated": "2020-03-24T16:22:54.114569+00:00",
+                "last_changed": "2020-04-16T13:31:15.929577+00:00",
+                "last_updated": "2020-04-16T13:31:15.929577+00:00",
                 "state": "16.0"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -38,604 +38,207 @@
                     ]
                 },
                 "context": {
-                    "id": "54f5920a852f4457826f572f716668b4",
+                    "id": "2bca0df4b2564740b08120a3a876fdeb",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_select.airpurifier_pro_mode",
-                "last_changed": "2020-03-24T16:22:17.915124+00:00",
-                "last_updated": "2020-03-24T16:22:17.915124+00:00",
-                "state": "Auto"
+                "last_changed": "2020-04-16T13:30:44.311583+00:00",
+                "last_updated": "2020-04-16T13:30:44.311583+00:00",
+                "state": "Silent"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
                     "friendly_name": "Tomi",
-                    "gps_accuracy": 16,
                     "id": "aithuShiex4UTh4A",
-                    "latitude": 47.6230488,
-                    "longitude": 18.9186843,
-                    "source": "device_tracker.gt_s_mi_note_2",
                     "user_id": "5a0a633ef7644660a34bd271371786aa"
                 },
                 "context": {
-                    "id": "a30b31a4daa94e2fb2a678a8e9c82add",
+                    "id": "fc279de395f24fce9f9965e8dec88041",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.gt",
-                "last_changed": "2020-03-24T16:22:19.012158+00:00",
-                "last_updated": "2020-03-24T16:22:36.134891+00:00",
-                "state": "home"
+                "last_changed": "2020-04-16T13:30:44.473473+00:00",
+                "last_updated": "2020-04-16T13:31:02.710353+00:00",
+                "state": "unknown"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
                     "friendly_name": "gsm",
+                    "gps_accuracy": 39,
                     "id": "gsm",
+                    "latitude": 47.6227596,
+                    "longitude": 18.9187824,
+                    "source": "device_tracker.mi_9_lite",
                     "user_id": "1dedaecfcb6546b7a5acc4f80b5ac32c"
                 },
                 "context": {
-                    "id": "6c6e169dc36d4dc68d3ea4d6ccfa2274",
+                    "id": "866c62148c334b2a8834388af81accc6",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.gsm",
-                "last_changed": "2020-03-24T16:22:23.162708+00:00",
-                "last_updated": "2020-03-24T16:22:36.149610+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "AC H\u00e1l\u00f3 helyi h\u0151m\u00e9rs\u00e9klet szab\u00e1lyoz\u00e1s",
-                    "id": "ac_bedroom_set_target",
-                    "last_triggered": "2020-03-24T16:22:36.638952+00:00"
-                },
-                "context": {
-                    "id": "b36a41f64fe44b74b0b0de5a0c9ac8e9",
-                    "parent_id": "6fde8ae339334cf8b7b6d9b6dc02f69f",
-                    "user_id": null
-                },
-                "entity_id": "automation.ac_halo_helyi_homerseklet_szabalyozas",
-                "last_changed": "2020-03-24T16:22:23.220664+00:00",
-                "last_updated": "2020-03-24T16:22:36.639540+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Toggle terrace light",
-                    "hidden": true,
-                    "id": "terrace_light",
-                    "last_triggered": "2020-03-23T21:03:03.049355+00:00"
-                },
-                "context": {
-                    "id": "0c984de36034449295fcddd036868b57",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.toggle_terrace_light",
-                "last_changed": "2020-03-24T16:22:23.222543+00:00",
-                "last_updated": "2020-03-24T16:22:23.222543+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Set theme at startup",
-                    "hidden": true,
-                    "last_triggered": "2020-03-24T16:22:36.373731+00:00"
-                },
-                "context": {
-                    "id": "fad0bc9b01124da68e40ec6ba1e5c464",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.set_theme_at_startup",
-                "last_changed": "2020-03-24T16:22:23.224659+00:00",
-                "last_updated": "2020-03-24T16:22:36.374283+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Ventillation auto on",
-                    "id": "ac_ventillation_on",
-                    "last_triggered": "2020-03-24T10:30:37.520645+00:00"
-                },
-                "context": {
-                    "id": "4110451199494176ac985e22f040784a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.ventillation_auto_on",
-                "last_changed": "2020-03-24T16:22:23.227375+00:00",
-                "last_updated": "2020-03-24T16:22:23.227375+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Ventillation auto off",
-                    "id": "ac_ventillation_off",
-                    "last_triggered": "2020-03-22T19:38:14.414296+00:00"
-                },
-                "context": {
-                    "id": "2caa02bb921042aabcaff6921f3e6d74",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.ventillation_auto_off",
-                "last_changed": "2020-03-24T16:22:23.229408+00:00",
-                "last_updated": "2020-03-24T16:22:23.229408+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "WC light off at sunrise",
-                    "hidden": true,
-                    "id": "wc_light_off",
-                    "last_triggered": "2020-03-24T04:38:59.131706+00:00"
-                },
-                "context": {
-                    "id": "14f01e03d8cd4a77945e59aec1ddc81a",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.wc_light_off_at_sunrise",
-                "last_changed": "2020-03-24T16:22:23.231194+00:00",
-                "last_updated": "2020-03-24T16:22:23.231194+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "WC light on at sunset",
-                    "hidden": true,
-                    "id": "wc_light_on",
-                    "last_triggered": "2020-03-23T17:00:44.239064+00:00"
-                },
-                "context": {
-                    "id": "0a2c3d5cd3c4402e82b9fa7faddff28b",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.wc_light_on_at_sunset",
-                "last_changed": "2020-03-24T16:22:23.232968+00:00",
-                "last_updated": "2020-03-24T16:22:23.232968+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Air Purifier mode set",
-                    "hidden": true,
-                    "id": "airpurifier_pro_mode_set",
-                    "last_triggered": "2020-03-23T18:17:28.404758+00:00"
-                },
-                "context": {
-                    "id": "ff6e6f69c4eb4098817cdee9585c44b1",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "automation.air_purifier_mode_set",
-                "last_changed": "2020-03-24T16:22:23.235170+00:00",
-                "last_updated": "2020-03-24T16:22:23.235170+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Air Purifier mode changed",
-                    "hidden": true,
-                    "id": "airpurifier_pro_mode_changed",
-                    "last_triggered": "2020-03-24T16:42:31.155674+00:00"
-                },
-                "context": {
-                    "id": "48db5e5bab9a43f5a22e775f01826c12",
-                    "parent_id": "1928a7e7b6b646a1afbfd2295a4db4a8",
-                    "user_id": null
-                },
-                "entity_id": "automation.air_purifier_mode_changed",
-                "last_changed": "2020-03-24T16:22:23.237174+00:00",
-                "last_updated": "2020-03-24T16:42:31.156917+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "AC mode",
-                    "hidden": true,
-                    "id": "ac_mode",
-                    "last_triggered": "2020-03-24T16:22:41.822180+00:00"
-                },
-                "context": {
-                    "id": "3fd97034617d4a22a3542f2c7bc1ccf9",
-                    "parent_id": "049e811c354d4f298c61616f7881aad0",
-                    "user_id": null
-                },
-                "entity_id": "automation.ac_mode",
-                "last_changed": "2020-03-24T16:22:23.239137+00:00",
-                "last_updated": "2020-03-24T16:22:41.823142+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Air Purifier favorite level set",
-                    "hidden": true,
-                    "id": "airpurifier_pro_level_set",
-                    "last_triggered": "2020-03-24T16:22:54.202584+00:00"
-                },
-                "context": {
-                    "id": "95d98ee120ee4724ad2b916b8c51ace6",
-                    "parent_id": "87b8b05aaf01420caea078dc8b25846b",
-                    "user_id": null
-                },
-                "entity_id": "automation.air_purifier_favorite_level_set",
-                "last_changed": "2020-03-24T16:22:23.240946+00:00",
-                "last_updated": "2020-03-24T16:22:54.203962+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Air Purifier favorite level changed",
-                    "hidden": true,
-                    "id": "airpurifier_pro_level_changed",
-                    "last_triggered": "2020-03-24T16:42:31.168352+00:00"
-                },
-                "context": {
-                    "id": "e265220303e14341a629d8b0cc895ea7",
-                    "parent_id": "1928a7e7b6b646a1afbfd2295a4db4a8",
-                    "user_id": null
-                },
-                "entity_id": "automation.air_purifier_favorite_level_changed",
-                "last_changed": "2020-03-24T16:22:23.242761+00:00",
-                "last_updated": "2020-03-24T16:42:31.169032+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "H\u00e1ztart\u00e1si h. vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "9bd92ca93f5c4049a31ac87a7df25e2d",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q7",
-                "last_changed": "2020-03-24T16:36:41.408339+00:00",
-                "last_updated": "2020-03-24T16:36:41.408339+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "El\u0151szoba vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "858fe13b01554f2fbe7dea868cd0dbd5",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q10",
-                "last_changed": "2020-03-24T16:22:23.246441+00:00",
-                "last_updated": "2020-03-24T16:22:23.246441+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "WC vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "4ae322d70abf4f1bae1777ef7b7c1cd7",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q4",
-                "last_changed": "2020-03-24T16:22:23.247670+00:00",
-                "last_updated": "2020-03-24T16:22:23.247670+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "\u00c1tj\u00e1r\u00f3 vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "1e2137cea0c74460878bd4b0c83ca3ba",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q11",
-                "last_changed": "2020-03-24T16:22:23.248855+00:00",
-                "last_updated": "2020-03-24T16:22:23.248855+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "F\u00fcrd\u0151 vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "efdf413535774c378dcc595abd60632f",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q2",
-                "last_changed": "2020-03-24T16:22:23.250023+00:00",
-                "last_updated": "2020-03-24T16:22:23.250023+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Dolgoz\u00f3 vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "41b066f48b214482ac27f74c1d177686",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q0",
-                "last_changed": "2020-03-24T16:22:23.251230+00:00",
-                "last_updated": "2020-03-24T16:22:23.251230+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Konyha vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "5cb7579291864917baec047f41f7585d",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q3",
-                "last_changed": "2020-03-24T16:22:23.252418+00:00",
-                "last_updated": "2020-03-24T16:22:23.252418+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "\u00c9tkez\u0151asztal vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "a76c0cfa01a5453eb7929f9bcb37b621",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q12",
-                "last_changed": "2020-03-24T16:32:05.800801+00:00",
-                "last_updated": "2020-03-24T16:32:05.800801+00:00",
-                "state": "on"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Nappali vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "a3e2897157244afeb793f3bbef393080",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q13",
-                "last_changed": "2020-03-24T16:22:23.255076+00:00",
-                "last_updated": "2020-03-24T16:22:23.255076+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Terasz vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "8cef49964e764194a6e40b1461e94057",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q17",
-                "last_changed": "2020-03-24T16:22:23.256359+00:00",
-                "last_updated": "2020-03-24T16:22:23.256359+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "M\u00e1t\u00e9 vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "575aee0bfb884cd29160b6fd84653e4c",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q5",
-                "last_changed": "2020-03-24T16:22:23.257560+00:00",
-                "last_updated": "2020-03-24T16:22:23.257560+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "H\u00e1l\u00f3 vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "b5009748c88241128c5c4acc35a78ec9",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q1",
-                "last_changed": "2020-03-24T16:22:23.258732+00:00",
-                "last_updated": "2020-03-24T16:22:23.258732+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "friendly_name": "Mil\u00e1n vil\u00e1g\u00edt\u00e1s",
-                    "icon": "mdi:lightbulb"
-                },
-                "context": {
-                    "id": "5929738f421848438469c24ef1455b07",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "switch.apb_q6",
-                "last_changed": "2020-03-24T16:22:23.259958+00:00",
-                "last_updated": "2020-03-24T16:22:23.259958+00:00",
-                "state": "off"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "battery_level": 44,
-                    "control": "hidden",
-                    "friendly_name": "GT's Mi Note 2",
-                    "gps_accuracy": 16,
-                    "hidden": true,
-                    "latitude": 47.6230488,
-                    "longitude": 18.9186843,
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "6b81c3a9491d4829be6c6b4923cf334c",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.gt_s_mi_note_2",
-                "last_changed": "2020-03-24T16:22:27.832133+00:00",
-                "last_updated": "2020-03-24T16:22:27.832133+00:00",
+                "last_changed": "2020-04-16T13:30:44.636117+00:00",
+                "last_updated": "2020-04-16T13:31:02.713072+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "control": "hidden",
-                    "friendly_name": "Mi_Phone",
-                    "hidden": true,
-                    "source_type": "gps"
+                    "current_temperature": 24.2,
+                    "friendly_name": "Dolgoz\u00f3",
+                    "hvac_action": "off",
+                    "hvac_modes": [
+                        "heat",
+                        "cool",
+                        "heat_cool",
+                        "off"
+                    ],
+                    "max_temp": 25.0,
+                    "min_temp": 20.0,
+                    "supported_features": 1,
+                    "temperature": 22.0
                 },
                 "context": {
-                    "id": "8d7de72e001d44609bc603c72f366373",
+                    "id": "7b8ba8b9982145758489ee21b988dbf1",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "device_tracker.mi_phone",
-                "last_changed": "2020-03-24T16:22:27.834678+00:00",
-                "last_updated": "2020-03-24T16:22:27.834678+00:00",
-                "state": "unknown"
+                "entity_id": "climate.ac_study",
+                "last_changed": "2020-04-16T13:30:44.808157+00:00",
+                "last_updated": "2020-04-16T13:43:52.027454+00:00",
+                "state": "heat"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "altitude": 0.0,
-                    "battery_level": 71,
-                    "control": "hidden",
-                    "course": 0,
-                    "friendly_name": "MI 8",
-                    "gps_accuracy": 22,
-                    "hidden": true,
-                    "latitude": 47.6228747,
-                    "longitude": 18.9187208,
-                    "source_type": "gps",
-                    "speed": 0,
-                    "vertical_accuracy": 0
+                    "current_temperature": 23.2,
+                    "friendly_name": "M\u00e1t\u00e9",
+                    "hvac_action": "off",
+                    "hvac_modes": [
+                        "heat",
+                        "cool",
+                        "heat_cool",
+                        "off"
+                    ],
+                    "max_temp": 25.0,
+                    "min_temp": 20.0,
+                    "supported_features": 1,
+                    "temperature": 22.0
                 },
                 "context": {
-                    "id": "94660ffd8a0b47ec98b87d91b9a5491e",
+                    "id": "cba744fc646c4eb5b392b1ab708c2e6b",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "device_tracker.mi_8",
-                "last_changed": "2020-03-24T16:22:27.837452+00:00",
-                "last_updated": "2020-03-24T16:22:27.837452+00:00",
-                "state": "home"
+                "entity_id": "climate.ac_childa",
+                "last_changed": "2020-04-16T13:30:44.814531+00:00",
+                "last_updated": "2020-04-16T13:30:56.537468+00:00",
+                "state": "heat"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "current_temperature": 21.8,
+                    "friendly_name": "Mil\u00e1n",
+                    "hvac_action": "off",
+                    "hvac_modes": [
+                        "heat",
+                        "cool",
+                        "heat_cool",
+                        "off"
+                    ],
+                    "max_temp": 25.0,
+                    "min_temp": 20.0,
+                    "supported_features": 1,
+                    "temperature": 22.0
+                },
+                "context": {
+                    "id": "9f9f0dc761ba4da9a9e81d59e3d1cd1f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "climate.ac_childb",
+                "last_changed": "2020-04-16T13:30:44.819568+00:00",
+                "last_updated": "2020-04-16T13:30:56.847877+00:00",
+                "state": "heat"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "current_temperature": 22.3,
+                    "friendly_name": "H\u00e1l\u00f3",
+                    "hvac_action": "off",
+                    "hvac_modes": [
+                        "heat",
+                        "cool",
+                        "heat_cool",
+                        "off"
+                    ],
+                    "max_temp": 25.0,
+                    "min_temp": 20.0,
+                    "supported_features": 1,
+                    "temperature": 22.0
+                },
+                "context": {
+                    "id": "acd8c96273524cd98083f969bede79f6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "climate.ac_bedroom",
+                "last_changed": "2020-04-16T13:30:44.825605+00:00",
+                "last_updated": "2020-04-16T13:45:45.904573+00:00",
+                "state": "heat"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "current_temperature": 21.8,
+                    "friendly_name": "Konyha",
+                    "hvac_action": "off",
+                    "hvac_modes": [
+                        "heat",
+                        "cool",
+                        "heat_cool",
+                        "off"
+                    ],
+                    "max_temp": 25.0,
+                    "min_temp": 20.0,
+                    "supported_features": 1,
+                    "temperature": 22.0
+                },
+                "context": {
+                    "id": "c5cd2d827c5c4173a9d2f162b2fd3c9f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "climate.ac_kitchen",
+                "last_changed": "2020-04-16T13:30:44.830443+00:00",
+                "last_updated": "2020-04-16T13:45:12.177248+00:00",
+                "state": "heat"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
                     "altitude": 0.0,
@@ -652,207 +255,503 @@
                     "vertical_accuracy": 0
                 },
                 "context": {
-                    "id": "5e04cfb59b3842849dad45e8f508ab15",
+                    "id": "a56c9dfbfbf2490f857b97ef2558703c",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "device_tracker.mi_9_lite",
-                "last_changed": "2020-03-24T16:22:27.839929+00:00",
-                "last_updated": "2020-03-24T16:22:27.839929+00:00",
+                "last_changed": "2020-04-16T13:30:57.110555+00:00",
+                "last_updated": "2020-04-16T13:30:57.110555+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
-            "state": {
-                "attributes": {
-                    "control": "hidden",
-                    "friendly_name": "GT's MI 8",
-                    "hidden": true,
-                    "source_type": "gps"
-                },
-                "context": {
-                    "id": "3fcc9743f7b04ed3948ab2be3e5f2079",
-                    "parent_id": null,
-                    "user_id": null
-                },
-                "entity_id": "device_tracker.gt_s_mi_8",
-                "last_changed": "2020-03-24T16:22:27.841453+00:00",
-                "last_updated": "2020-03-24T16:22:27.841453+00:00",
-                "state": "unknown"
-            }
-        },
-        {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
                     "altitude": 0.0,
-                    "battery_level": 50,
+                    "battery_level": 77,
                     "control": "hidden",
-                    "course": 90,
+                    "course": 0,
                     "friendly_name": "Mi Note 2",
-                    "gps_accuracy": 16,
+                    "gps_accuracy": 13,
                     "hidden": true,
-                    "latitude": 47.6232472,
-                    "longitude": 18.9183678,
+                    "latitude": 47.623249,
+                    "longitude": 18.9183679,
                     "source_type": "gps",
                     "speed": 0,
                     "vertical_accuracy": 0
                 },
                 "context": {
-                    "id": "2528c620543b4409958ae9cbf6fe5f01",
+                    "id": "378cea985a854ce5b6668922635732e6",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "device_tracker.mi_note_2",
-                "last_changed": "2020-03-24T16:22:27.843995+00:00",
-                "last_updated": "2020-03-24T16:22:27.843995+00:00",
+                "last_changed": "2020-04-16T13:30:57.113370+00:00",
+                "last_updated": "2020-04-16T13:30:57.113370+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 21.7,
-                    "friendly_name": "Mil\u00e1n",
-                    "hvac_action": "off",
-                    "hvac_modes": [
-                        "heat",
-                        "cool",
-                        "heat_cool",
-                        "off"
-                    ],
-                    "max_temp": 25.0,
-                    "min_temp": 20.0,
-                    "supported_features": 1,
-                    "temperature": 22.0
+                    "friendly_name": "AC mode",
+                    "id": "ac_mode",
+                    "last_triggered": "2020-04-16T10:51:00.290276+00:00"
                 },
                 "context": {
-                    "id": "0f17eb3fb81546d3a0bdbfc138d6beae",
+                    "id": "06b8a3d8c39248caaca4c6bc1a7dacbd",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "climate.ac_childb",
-                "last_changed": "2020-03-24T16:22:28.240646+00:00",
-                "last_updated": "2020-03-24T16:42:44.207517+00:00",
-                "state": "heat"
+                "entity_id": "automation.ac_mode",
+                "last_changed": "2020-04-16T13:31:02.365812+00:00",
+                "last_updated": "2020-04-16T13:31:02.365812+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 21.0,
-                    "friendly_name": "Konyha",
-                    "hvac_action": "off",
-                    "hvac_modes": [
-                        "heat",
-                        "cool",
-                        "heat_cool",
-                        "off"
-                    ],
-                    "max_temp": 25.0,
-                    "min_temp": 20.0,
-                    "supported_features": 1,
-                    "temperature": 22.0
+                    "friendly_name": "AC H\u00e1l\u00f3 helyi h\u0151m\u00e9rs\u00e9klet szab\u00e1lyoz\u00e1s",
+                    "id": "ac_bedroom_set_target",
+                    "last_triggered": "2020-04-16T13:31:03.100300+00:00"
                 },
                 "context": {
-                    "id": "58880d43b1484172bc8933624bc9bbe8",
-                    "parent_id": null,
+                    "id": "04476254a5274d089c645cde59e0766d",
+                    "parent_id": "a9a017b30c6543228ea6f0b51006b7ee",
                     "user_id": null
                 },
-                "entity_id": "climate.ac_kitchen",
-                "last_changed": "2020-03-24T16:22:28.266056+00:00",
-                "last_updated": "2020-03-24T16:42:31.102285+00:00",
-                "state": "heat"
+                "entity_id": "automation.ac_halo_helyi_homerseklet_szabalyozas",
+                "last_changed": "2020-04-16T13:31:02.368198+00:00",
+                "last_updated": "2020-04-16T13:31:03.100645+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 21.7,
-                    "friendly_name": "H\u00e1l\u00f3",
-                    "hvac_action": "off",
-                    "hvac_modes": [
-                        "heat",
-                        "cool",
-                        "heat_cool",
-                        "off"
-                    ],
-                    "max_temp": 25.0,
-                    "min_temp": 20.0,
-                    "supported_features": 1,
-                    "temperature": 22.0
+                    "friendly_name": "Ventillation auto on",
+                    "id": "ac_ventillation_on",
+                    "last_triggered": "2020-04-04T06:18:08.458243+00:00"
                 },
                 "context": {
-                    "id": "c2f4cd87cf574a55b266ef2aff371124",
+                    "id": "f52cf88733d14f119231d3923c0864c4",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "climate.ac_bedroom",
-                "last_changed": "2020-03-24T16:22:28.284027+00:00",
-                "last_updated": "2020-03-24T16:41:27.057487+00:00",
-                "state": "heat"
+                "entity_id": "automation.ventillation_auto_on",
+                "last_changed": "2020-04-16T13:31:02.370417+00:00",
+                "last_updated": "2020-04-16T13:31:02.370417+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 24.5,
-                    "friendly_name": "Dolgoz\u00f3",
-                    "hvac_action": "off",
-                    "hvac_modes": [
-                        "heat",
-                        "cool",
-                        "heat_cool",
-                        "off"
-                    ],
-                    "max_temp": 25.0,
-                    "min_temp": 20.0,
-                    "supported_features": 1,
-                    "temperature": 22.0
+                    "friendly_name": "Ventillation auto off",
+                    "id": "ac_ventillation_off",
+                    "last_triggered": "2020-04-07T02:10:11.738725+00:00"
                 },
                 "context": {
-                    "id": "35d39d1cb4b24b37bc90ae6281089437",
+                    "id": "99b23352996741b6afc2a6ffc21dc6d4",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "climate.ac_study",
-                "last_changed": "2020-03-24T16:22:28.292610+00:00",
-                "last_updated": "2020-03-24T16:42:33.357150+00:00",
-                "state": "heat"
+                "entity_id": "automation.ventillation_auto_off",
+                "last_changed": "2020-04-16T13:31:02.372658+00:00",
+                "last_updated": "2020-04-16T13:31:02.372658+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-03-24T16:42:56.862161+00:00",
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 22.0,
-                    "friendly_name": "M\u00e1t\u00e9",
-                    "hvac_action": "off",
-                    "hvac_modes": [
-                        "heat",
-                        "cool",
-                        "heat_cool",
-                        "off"
-                    ],
-                    "max_temp": 25.0,
-                    "min_temp": 20.0,
-                    "supported_features": 1,
-                    "temperature": 22.0
+                    "friendly_name": "Air Purifier mode set",
+                    "id": "airpurifier_pro_mode_set",
+                    "last_triggered": "2020-03-31T16:51:49.834300+00:00"
                 },
                 "context": {
-                    "id": "2bc21efba06c4370943f1abe11b7f6d2",
+                    "id": "278d581b52bb4028abb074d6c6c78302",
                     "parent_id": null,
                     "user_id": null
                 },
-                "entity_id": "climate.ac_childa",
-                "last_changed": "2020-03-24T16:22:28.303886+00:00",
-                "last_updated": "2020-03-24T16:40:00.312399+00:00",
-                "state": "heat"
+                "entity_id": "automation.air_purifier_mode_set",
+                "last_changed": "2020-04-16T13:31:02.375669+00:00",
+                "last_updated": "2020-04-16T13:31:02.375669+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Air Purifier mode changed",
+                    "id": "airpurifier_pro_mode_changed",
+                    "last_triggered": "2020-04-16T13:45:43.215505+00:00"
+                },
+                "context": {
+                    "id": "352a79b76510459da0c3f7a0718d0840",
+                    "parent_id": "88caaa4f6b2940ba91e898b96cf18c5e",
+                    "user_id": null
+                },
+                "entity_id": "automation.air_purifier_mode_changed",
+                "last_changed": "2020-04-16T13:31:02.377885+00:00",
+                "last_updated": "2020-04-16T13:45:43.215775+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Air Purifier favorite level set",
+                    "id": "airpurifier_pro_level_set",
+                    "last_triggered": "2020-04-16T13:31:16.017387+00:00"
+                },
+                "context": {
+                    "id": "afb43d7622f64581bd01bc0030e6c4d5",
+                    "parent_id": "75919c26b705460bb1dc2e983fc9e481",
+                    "user_id": null
+                },
+                "entity_id": "automation.air_purifier_favorite_level_set",
+                "last_changed": "2020-04-16T13:31:02.379919+00:00",
+                "last_updated": "2020-04-16T13:31:16.017928+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Air Purifier favorite level changed",
+                    "id": "airpurifier_pro_level_changed",
+                    "last_triggered": "2020-04-16T13:45:43.221698+00:00"
+                },
+                "context": {
+                    "id": "489f5299fa2b46d7a1425cadfe926222",
+                    "parent_id": "88caaa4f6b2940ba91e898b96cf18c5e",
+                    "user_id": null
+                },
+                "entity_id": "automation.air_purifier_favorite_level_changed",
+                "last_changed": "2020-04-16T13:31:02.382132+00:00",
+                "last_updated": "2020-04-16T13:45:43.222015+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Toggle terrace light",
+                    "id": "terrace_light",
+                    "last_triggered": "2020-04-15T20:51:33.739824+00:00"
+                },
+                "context": {
+                    "id": "ca016b630e1e4eb19d78228da83173bd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.toggle_terrace_light",
+                "last_changed": "2020-04-16T13:31:02.384261+00:00",
+                "last_updated": "2020-04-16T13:31:02.384261+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Set theme at startup",
+                    "last_triggered": "2020-04-16T13:31:02.773130+00:00"
+                },
+                "context": {
+                    "id": "84c0717f3a6b4d6d87214bd6380e189e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.set_theme_at_startup",
+                "last_changed": "2020-04-16T13:31:02.386373+00:00",
+                "last_updated": "2020-04-16T13:31:02.773397+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "WC light off at sunrise",
+                    "id": "wc_light_off",
+                    "last_triggered": "2020-04-16T03:53:26.201084+00:00"
+                },
+                "context": {
+                    "id": "7dc68a836bb44b5888961a1660883bb6",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.wc_light_off_at_sunrise",
+                "last_changed": "2020-04-16T13:31:02.388394+00:00",
+                "last_updated": "2020-04-16T13:31:02.388394+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T13:46:03.010162+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "WC light on at sunset",
+                    "id": "wc_light_on",
+                    "last_triggered": "2020-04-15T17:33:22.241218+00:00"
+                },
+                "context": {
+                    "id": "2c1d6b695fc9448198f02aa40551829b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.wc_light_on_at_sunset",
+                "last_changed": "2020-04-16T13:31:02.390397+00:00",
+                "last_updated": "2020-04-16T13:31:02.390397+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "H\u00e1ztart\u00e1si h. vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "07e1c6a8410740ecbfc840f3a5b3d873",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q7",
+                "last_changed": "2020-04-16T11:27:56.531232+00:00",
+                "last_updated": "2020-04-16T11:27:56.531232+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Dolgoz\u00f3 vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "7129eab94fa84777a09cbbd0b1541f1f",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q0",
+                "last_changed": "2020-04-16T10:50:46.571539+00:00",
+                "last_updated": "2020-04-16T10:50:46.571539+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "\u00c9tkez\u0151asztal vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "f725f8d018944356a757ec715c0d56dc",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q12",
+                "last_changed": "2020-04-16T10:50:46.572318+00:00",
+                "last_updated": "2020-04-16T10:50:46.572318+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "H\u00e1l\u00f3 vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "141713d628714277a88f7b85bb91d97b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q1",
+                "last_changed": "2020-04-16T10:50:46.573117+00:00",
+                "last_updated": "2020-04-16T10:50:46.573117+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "El\u0151szoba vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "749d7201150c4231aeee76555d899b79",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q10",
+                "last_changed": "2020-04-16T10:50:46.573880+00:00",
+                "last_updated": "2020-04-16T10:50:46.573880+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Nappali vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "f486be7dc6834e7b91593c32ec7d2741",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q13",
+                "last_changed": "2020-04-16T10:50:46.574630+00:00",
+                "last_updated": "2020-04-16T10:50:46.574630+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "\u00c1tj\u00e1r\u00f3 vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "c9c772742e4f49ba94cf977fd18a5f6d",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q11",
+                "last_changed": "2020-04-16T10:50:46.575471+00:00",
+                "last_updated": "2020-04-16T10:50:46.575471+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "F\u00fcrd\u0151 vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "1f44cfea709e488e8627a13aa24cfc7b",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q2",
+                "last_changed": "2020-04-16T10:50:46.576248+00:00",
+                "last_updated": "2020-04-16T10:50:46.576248+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Terasz vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "d9c35d4a98d144f8ae1e2e6ae0b59a0e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q17",
+                "last_changed": "2020-04-16T10:50:46.577024+00:00",
+                "last_updated": "2020-04-16T10:50:46.577024+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Konyha vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "bed55cf0ec6c455b8e84dbf5867ac2af",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q3",
+                "last_changed": "2020-04-16T10:50:46.577770+00:00",
+                "last_updated": "2020-04-16T10:50:46.577770+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "WC vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "e4765caf749648e8b579425b8e1fa62e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q4",
+                "last_changed": "2020-04-16T10:50:46.578562+00:00",
+                "last_updated": "2020-04-16T10:50:46.578562+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "M\u00e1t\u00e9 vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "3cf165a8b298427e8b257802577c41fe",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q5",
+                "last_changed": "2020-04-16T10:50:46.579317+00:00",
+                "last_updated": "2020-04-16T10:50:46.579317+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-04-16T12:03:33.222897+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Mil\u00e1n vil\u00e1g\u00edt\u00e1s",
+                    "icon": "mdi:lightbulb"
+                },
+                "context": {
+                    "id": "32453d91fc1a419891922d8aa4cdd00e",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "switch.apb_q6",
+                "last_changed": "2020-04-16T10:50:46.580050+00:00",
+                "last_updated": "2020-04-16T10:50:46.580050+00:00",
+                "state": "off"
             }
         }
     ],

@@ -1,5 +1,5 @@
   - platform: modbus
-    scan_interval: 0.5
+    scan_interval: 1
     inputs:
       - name: APB_I0
         hub: apb

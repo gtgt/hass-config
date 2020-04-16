@@ -4,12 +4,6 @@
         "alexa_entity_configs": {},
         "cloud_user": "bb4e9201fafa4db38a4f0c170a37ad1f",
         "cloudhooks": {
-            "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808": {
-                "cloudhook_id": "3f96acac48844887bcd7a220a6dcd3ac",
-                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABdy-f3LRt9AX0sNKO8ZZzYiU0uQTWLhRqawjjZY8XTcCPPnIdTH7HbuinEDd719H4CeRYoROoD4WpKS35pzUuHtS5T1jxvRQihKhAM29lgQOVU8Hksx7h24BReFR2yiNAKXNZMA7e_Zt9TDRDK_ZnfTP8bphxFZODQiMLig-VIfgSykiQ=",
-                "managed": true,
-                "webhook_id": "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
-            },
             "f97dd8fcce8df16e2a3140e8570e1d50c2f36ceea7694c9e1100f88ad7a46600": {
                 "cloudhook_id": "e3d47af736f140bc8c71e3a979b126ad",
                 "cloudhook_url": "https://hooks.nabu.casa/gAAAAABd4556c-UVD9euwS6WQHWNR9rygJS7xEFfuW8-FaaeJbYnBohNM-J-HLslEnyDEFP4UAOJ7HO8jTnD58mQMTSBn56ivlakOfGLPV0SYBsCh9Rq0NjW9tn2S1CmP5YU7i42ooao6ra1zaN6cnDbiQHdxIhDQtVAxHAEB7VtFFDazCRP7Rc=",

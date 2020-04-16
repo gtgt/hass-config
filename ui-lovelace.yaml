@@ -1,4 +1,17 @@
 title: Cékla 3.
+custom_header:
+  compact_mode: true
+  split_mode: true
+  background: var(--app-header-background-color)
+  elements_color: var(--app-header-text-color)
+  active_tab_color: var(--state-icon-active-color)
+  tab_indicator_color: var(--state-icon-active-color)
+  tab_icons:
+    ac: mdi:air-conditioner
+    apb: mdi:lightbulb-multiple-outline
+    alarm: mdi:shield-home
+    airpurifier_pro: mdi:air-purifier
+    default_view: mdi:asterisk
 views:
   - path: ac
     title: AC
@@ -202,10 +215,10 @@ views:
       - entity: sensor.moon
       - entity: sensor.battery_level
       - entity: sensor.wifi_connection
-      - entity: sensor.mi_8_geocoded_location
+      - entity: sensor.gt_mi_8_geocoded_location
       - entity: sensor.battery_level_2
-      - entity: sensor.mi_note_2_wifi_connection
-      - entity: sensor.mi_note_2_geocoded_location
+      - entity: sensor.gt_s_mi_note_2_wifi_connection
+      - entity: sensor.gt_s_mi_note_2_geocoded_location
       - entity: sensor.childb_humidity
       - entity: sensor.childb_temp
       - entity: sensor.childb_temp_outside

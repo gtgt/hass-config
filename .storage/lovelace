@@ -1,0 +1,98 @@
+{
+    "data": {
+        "config": {
+            "custom_header": {
+                "compact_mode": true
+            },
+            "title": "C\u00e9kla 3.",
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "climate.ac",
+                            "name": "AC",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.ac_bedroom",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.ac_childa",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.ac_childb",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.ac_kitchen",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "climate.ac_study",
+                            "type": "thermostat"
+                        }
+                    ],
+                    "icon": "ac-unit",
+                    "path": "climate",
+                    "title": "Kl\u00edma"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.apb_q0"
+                                },
+                                {
+                                    "entity": "switch.apb_q10"
+                                },
+                                {
+                                    "entity": "switch.apb_q2"
+                                },
+                                {
+                                    "entity": "switch.apb_q1"
+                                },
+                                {
+                                    "entity": "switch.apb_q3"
+                                },
+                                {
+                                    "entity": "switch.apb_q6"
+                                },
+                                {
+                                    "entity": "switch.apb_q5"
+                                },
+                                {
+                                    "entity": "switch.apb_q13"
+                                },
+                                {
+                                    "entity": "switch.apb_q17"
+                                },
+                                {
+                                    "entity": "switch.apb_q4"
+                                },
+                                {
+                                    "entity": "switch.apb_q11"
+                                },
+                                {
+                                    "entity": "switch.apb_q12"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Vil\u00e1ga\u00edt\u00e1s",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "lightbulb-on-outline",
+                    "path": "light",
+                    "title": "Vil\u00e1g\u00edt\u00e1s"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

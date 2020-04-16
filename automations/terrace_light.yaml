@@ -1,6 +1,5 @@
 - id: terrace_light
   alias: "Toggle terrace light"
-  hide_entity: true
   trigger:
     - platform: state
       entity_id: binary_sensor.apb_i13

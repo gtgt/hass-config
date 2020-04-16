@@ -1,6 +1,5 @@
 - id: airpurifier_pro_mode_set
   alias: Air Purifier mode set
-  hide_entity: true
   trigger:
     entity_id: input_select.airpurifier_pro_mode
     platform: state
@@ -11,7 +10,6 @@
       speed: '{{ states.input_select.airpurifier_pro_mode.state }}'
 - id: airpurifier_pro_mode_changed
   alias: Air Purifier mode changed
-  hide_entity: true
   trigger:
     platform: state
     entity_id: fan.airpurifier_pro
@@ -22,7 +20,6 @@
       option: '{{ states.fan.airpurifier_pro.attributes.speed }}'
 - id: airpurifier_pro_level_set
   alias: Air Purifier favorite level set
-  hide_entity: true
   trigger:
     entity_id: input_number.airpurifier_pro_level
     platform: state
@@ -33,7 +30,6 @@
       level: '{{ states.input_number.airpurifier_pro_level.state | int }}'
 - id: airpurifier_pro_level_changed
   alias: Air Purifier favorite level changed
-  hide_entity: true
   trigger:
     platform: state
     entity_id: fan.airpurifier_pro

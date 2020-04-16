@@ -1,9 +1,8 @@
   - alias: 'Set theme at startup'
-    hide_entity: true
     trigger:
      - platform: homeassistant
        event: start
     action:
       service: frontend.set_theme
       data:
-        name: clear-dark
+        name: "Google Dark Theme"

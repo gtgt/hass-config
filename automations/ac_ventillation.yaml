@@ -1,6 +1,5 @@
 - id: ac_ventillation_on
   alias: "Ventillation auto on"
-  hide_entity: false
   initial_state: true
   trigger:
     - platform: numeric_state
@@ -23,7 +22,6 @@
 
 - id: ac_ventillation_off
   alias: "Ventillation auto off"
-  hide_entity: false
   initial_state: true
   trigger:
     - platform: numeric_state

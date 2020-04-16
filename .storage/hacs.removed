@@ -412,6 +412,27 @@
             "reason": null,
             "removal_type": "blacklist",
             "repository": "xaviml/z2m_ikea_controller"
+        },
+        {
+            "acknowledged": false,
+            "link": "https://github.com/hacs/integration/pull/1045",
+            "reason": "Request from author",
+            "removal_type": "blacklist",
+            "repository": "r-renato/hass-xiaomi-mi-flora-and-flower-care"
+        },
+        {
+            "acknowledged": false,
+            "link": null,
+            "reason": "Abandoned/Broken",
+            "removal_type": "stale",
+            "repository": "custom-cards/dual-gauge-card"
+        },
+        {
+            "acknowledged": false,
+            "link": "https://github.com/hacs/default/issues/318",
+            "reason": "Abandoned/Broken",
+            "removal_type": "stale",
+            "repository": "custom-cards/surveillance-card"
         }
     ],
     "key": "hacs.removed",

@@ -1,5 +1,5 @@
   - platform: modbus
-    scan_interval: 5
+    scan_interval: 3
     coils:
       - name: APB_Q0
         hub: apb

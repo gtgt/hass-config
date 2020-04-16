@@ -6,3 +6,5 @@
 - name: gsm
   id: gsm
   user_id: !secret user_id_gsm
+  device_trackers:
+    - device_tracker.mi_9_lite

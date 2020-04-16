@@ -1,5 +1,4 @@
   - id: 'ac_bedroom_set_target'
-    hide_entity: false
     initial_state: on
     alias: AC Háló helyi hőmérséklet szabályozás
     trigger:

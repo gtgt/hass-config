@@ -1,18 +1,24 @@
 {
     "data": {
         "binary_sensor": {},
-        "deleted_ids": [],
+        "deleted_ids": [
+            "53285ecd0ac1e11e4487caa560eda73b07a880b858f9791646cec8d61f79bfb8",
+            "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506",
+            "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5",
+            "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808",
+            "c95c7e3826a41c939997f9990f95a01d74a58362457a2ba262fb880cb2c5abcf"
+        ],
         "sensor": {
             "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506_battery_level": {
                 "added": true,
                 "attributes": {
-                    "charger_type": "AC",
-                    "is_charging": true
+                    "charger_type": "N/A",
+                    "is_charging": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-charging-70",
+                "icon": "mdi:battery-80",
                 "name": "Battery Level",
-                "state": 76,
+                "state": 83,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -50,7 +56,7 @@
                     "ip_address": "192.168.1.167",
                     "is_hidden": false,
                     "link_speed": 54,
-                    "signal_level": -47
+                    "signal_level": -43
                 },
                 "icon": "mdi:wifi-strength-3",
                 "name": "Wifi Connection",
@@ -88,9 +94,9 @@
                     "is_charging": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-50",
+                "icon": "mdi:battery-70",
                 "name": "Battery Level",
-                "state": 50,
+                "state": 77,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -99,7 +105,7 @@
             "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198_geocoded_location": {
                 "attributes": {
                     "Administrative Area": null,
-                    "Country": "Hungary",
+                    "Country": "Magyarorsz\u00e1g",
                     "ISO Country Code": "HU",
                     "Locality": "Pilisv\u00f6r\u00f6sv\u00e1r",
                     "Location": [
@@ -114,7 +120,7 @@
                 },
                 "icon": "mdi:map",
                 "name": "Geocoded Location",
-                "state": "Pilisv\u00f6r\u00f6sv\u00e1r, Retek u., 2085 Hungary",
+                "state": "Pilisv\u00f6r\u00f6sv\u00e1r, Retek u., 2085 Magyarorsz\u00e1g",
                 "type": "sensor",
                 "unique_id": "geocoded_location",
                 "webhook_id": "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198"
@@ -126,7 +132,7 @@
                     "ip_address": "192.168.1.20",
                     "is_hidden": false,
                     "link_speed": 54,
-                    "signal_level": -48
+                    "signal_level": -47
                 },
                 "icon": "mdi:wifi-strength-3",
                 "name": "Wifi Connection",
@@ -134,6 +140,62 @@
                 "type": "sensor",
                 "unique_id": "wifi_connection",
                 "webhook_id": "52f5135bdf4dc9cb85d2b47e60b98b6bdabe65d351be537f3999f5f087500198"
+            },
+            "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5_battery_level": {
+                "added": true,
+                "attributes": {
+                    "charger_type": "N/A",
+                    "is_charging": false
+                },
+                "device_class": "battery",
+                "icon": "mdi:battery-40",
+                "name": "Battery Level",
+                "state": 47,
+                "type": "sensor",
+                "unique_id": "battery_level",
+                "unit_of_measurement": "%",
+                "webhook_id": "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5"
+            },
+            "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5_geocoded_location": {
+                "added": true,
+                "attributes": {
+                    "Administrative Area": null,
+                    "Country": "Hungary",
+                    "ISO Country Code": "HU",
+                    "Locality": "Budapest",
+                    "Location": [
+                        47.525816,
+                        19.107091
+                    ],
+                    "Postal Code": "1147",
+                    "Sub Administrative Area": null,
+                    "Sub Locality": "XIV. ker\u00fclet",
+                    "Sub Thoroughfare": "42a",
+                    "Thoroughfare": "Czobor utca"
+                },
+                "icon": "mdi:map",
+                "name": "Geocoded Location",
+                "state": "Budapest, Czobor u. 42a, 1147 Hungary",
+                "type": "sensor",
+                "unique_id": "geocoded_location",
+                "webhook_id": "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5"
+            },
+            "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5_wifi_connection": {
+                "added": true,
+                "attributes": {
+                    "bssid": null,
+                    "frequency": -1,
+                    "ip_address": "0.0.0.0",
+                    "is_hidden": false,
+                    "link_speed": -1,
+                    "signal_level": -1
+                },
+                "icon": "mdi:wifi-strength-off",
+                "name": "Wifi Connection",
+                "state": "<not connected>",
+                "type": "sensor",
+                "unique_id": "wifi_connection",
+                "webhook_id": "911beb3fb15ee304067f5eb938a6549290b7f9889298f811a9768bee849c6dd5"
             }
         }
     },

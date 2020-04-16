@@ -105,38 +105,6 @@
                 "version": 1
             },
             {
-                "connection_class": "cloud_push",
-                "data": {
-                    "app_data": {
-                        "push_token": "doPbHk3nod0:APA91bGBmSOd0c8R_HXB_HnzFR7CkA6erlHLmoAYNX-8wjPR7s3r_AwcWXc6tEDt3xFpieClQjeUp-V8Qu_T9B_TUcStK-H107W4S4ImmDMtQXOQ2uVXqn60wclCQ8cSSU1xAwBnWWk5",
-                        "push_url": "https://us-central1-ha-client-c73c4.cloudfunctions.net/sendPushNotification"
-                    },
-                    "app_id": "ha_client",
-                    "app_name": "HA Client",
-                    "app_version": "0.7.7",
-                    "cloudhook_url": "https://hooks.nabu.casa/gAAAAABdy-f3LRt9AX0sNKO8ZZzYiU0uQTWLhRqawjjZY8XTcCPPnIdTH7HbuinEDd719H4CeRYoROoD4WpKS35pzUuHtS5T1jxvRQihKhAM29lgQOVU8Hksx7h24BReFR2yiNAKXNZMA7e_Zt9TDRDK_ZnfTP8bphxFZODQiMLig-VIfgSykiQ=",
-                    "device_id": "fbf4a0a4d15f4fd1b450e6633920b821",
-                    "device_name": "GT's Mi Note 2",
-                    "manufacturer": "Xiaomi",
-                    "model": "Mi Note 2",
-                    "os_name": "Android",
-                    "os_version": "8.0.0",
-                    "supports_encryption": false,
-                    "user_id": "5a0a633ef7644660a34bd271371786aa",
-                    "webhook_id": "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
-                },
-                "domain": "mobile_app",
-                "entry_id": "214106cfa2674bc0a8d7853b7b064d69",
-                "options": {},
-                "source": "registration",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "GT's Mi Note 2",
-                "unique_id": null,
-                "version": 1
-            },
-            {
                 "connection_class": "local_push",
                 "data": {
                     "host": "bedroom.lan",
@@ -151,68 +119,6 @@
                     "disable_new_entities": false
                 },
                 "title": "bedroom",
-                "unique_id": null,
-                "version": 1
-            },
-            {
-                "connection_class": "cloud_push",
-                "data": {
-                    "app_data": {
-                        "push_token": "d93H4onvovA:APA91bGkuF4ZKAZThWt8AQ6NkfOyUl_2mNHOChamHt_PuxvP9qidXy0rox22ccNu7UZi4OjqC2vGc-9nfoqEgeSK0rxO3WH-dtMFIugSJ2u9EH_7X_aGTI1g-SGF18LZbjHFmw_b-sKP",
-                        "push_url": "https://ariela.surodev.com/notification/"
-                    },
-                    "app_id": "com.surodev.ariela",
-                    "app_name": "Ariela",
-                    "app_version": "1.3.8.1",
-                    "device_id": "238e4b47b43e46d68ff9e51e97672192",
-                    "device_name": "Mi_Phone",
-                    "manufacturer": "Xiaomi",
-                    "model": "dipper",
-                    "os_name": "9",
-                    "os_version": "9",
-                    "supports_encryption": false,
-                    "user_id": "5a0a633ef7644660a34bd271371786aa",
-                    "webhook_id": "c95c7e3826a41c939997f9990f95a01d74a58362457a2ba262fb880cb2c5abcf"
-                },
-                "domain": "mobile_app",
-                "entry_id": "4a258a7c193b4724a0071475da16dabf",
-                "options": {},
-                "source": "registration",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Mi_Phone",
-                "unique_id": null,
-                "version": 1
-            },
-            {
-                "connection_class": "cloud_push",
-                "data": {
-                    "app_data": {
-                        "push_token": "d76Glyzy-qM:APA91bF1kd3zWyuDUO2cNXhsDTZyx9VrJzx1cJcf5KcXJn3M0_3UJ1FRNvtjyjm4yNxnEbqfuqwX84z2jyuKIlK2GU9SWNtum2O3nqcG4zEcN-tdO376M_9sK4hcXLHUDVwPP4GLhqUO",
-                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
-                    },
-                    "app_id": "io.homeassistant.companion.android",
-                    "app_name": "Home Assistant",
-                    "app_version": "1.8.0-144 (144)",
-                    "device_id": "28229efd93b04683b038dc93d2ef0d2e",
-                    "device_name": "MI 8",
-                    "manufacturer": "Xiaomi",
-                    "model": "MI 8",
-                    "os_name": "Android",
-                    "os_version": "28",
-                    "supports_encryption": false,
-                    "user_id": "5a0a633ef7644660a34bd271371786aa",
-                    "webhook_id": "23068af67d36db41ceffdcdde9baa7cda00245725060ec47316ed264490c7506"
-                },
-                "domain": "mobile_app",
-                "entry_id": "6e27ab9518d043dbb118aa7c8c65472f",
-                "options": {},
-                "source": "registration",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "MI 8",
                 "unique_id": null,
                 "version": 1
             },
@@ -269,37 +175,6 @@
                 "connection_class": "cloud_push",
                 "data": {
                     "app_data": {
-                        "push_token": "ex9MUzLx3wE:APA91bHUJGUPiiLxqlczY9UdeVZiWZ7Zpq3SyjO2C9RtX_e3kosb7bRV9OFHi4vx0VqJeEgKajf2v8ExLu71_S3f24Ba8dBKozXG5ngyZiAjF7PHSttwNabpNs_p73Fsj3ce3tm-_sZc",
-                        "push_url": "https://us-central1-ha-client-c73c4.cloudfunctions.net/sendPushNotification"
-                    },
-                    "app_id": "ha_client",
-                    "app_name": "HA Client",
-                    "app_version": "0.7.7",
-                    "device_id": "b06c02c9904d45119895249ef294f968",
-                    "device_name": "GT's MI 8",
-                    "manufacturer": "Xiaomi",
-                    "model": "MI 8",
-                    "os_name": "Android",
-                    "os_version": "9",
-                    "supports_encryption": false,
-                    "user_id": "5a0a633ef7644660a34bd271371786aa",
-                    "webhook_id": "53285ecd0ac1e11e4487caa560eda73b07a880b858f9791646cec8d61f79bfb8"
-                },
-                "domain": "mobile_app",
-                "entry_id": "c909fbb7c4a24e9e8100680d5c0b4acb",
-                "options": {},
-                "source": "registration",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "GT's MI 8",
-                "unique_id": null,
-                "version": 1
-            },
-            {
-                "connection_class": "cloud_push",
-                "data": {
-                    "app_data": {
                         "push_token": "dM8GGPHQj74:APA91bEpaPQqgaqNEV21NSpJ5udqC0V_KqYayYY1oO-Cw_ipM4wXJIuazb-d5EL7DRy-q04VT5yVRJDBXCJd2EolWxzf9r4UCjnr7hF61XwSPG-QrsCOg1CZrvlJytYJgpNwRWQz5Zbj",
                         "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
                     },
@@ -325,6 +200,55 @@
                 },
                 "title": "Mi Note 2",
                 "unique_id": "io.homeassistant.companion.android-fcdb64046b90c350",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "40817795-nut",
+                    "name": "UPS",
+                    "password": "JtKPY!6ctXsU",
+                    "platform": "nut",
+                    "port": 3493,
+                    "resources": [
+                        "battery.charge",
+                        "battery.runtime",
+                        "ups.load",
+                        "ups.status"
+                    ],
+                    "username": "admin"
+                },
+                "domain": "nut",
+                "entry_id": "e58a95fc9a384a2aa3fcb8599f03e29b",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "40817795-nut:3493",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "base_path": "/ipp/print",
+                    "host": "192.168.1.7",
+                    "name": "M2070",
+                    "port": 631,
+                    "ssl": false,
+                    "uuid": "16a65700-007c-1000-bb49-30cda7c782c7",
+                    "verify_ssl": false
+                },
+                "domain": "ipp",
+                "entry_id": "17eeecbb996c4f1db1475605f9bb8c90",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "M2070",
+                "unique_id": "16a65700-007c-1000-bb49-30cda7c782c7",
                 "version": 1
             }
         ]

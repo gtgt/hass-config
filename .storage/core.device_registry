@@ -104,50 +104,6 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "214106cfa2674bc0a8d7853b7b064d69"
-                ],
-                "connections": [],
-                "id": "3d9c0bcc9f24448cbd6d2a333b4c2e52",
-                "identifiers": [
-                    [
-                        "device_id",
-                        "fbf4a0a4d15f4fd1b450e6633920b821"
-                    ],
-                    [
-                        "webhook_id",
-                        "7cb5b94ad943a99b7cd60ed52ffb29f56740a2feea7af0070723d42543890808"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "Mi Note 2",
-                "name": "GT's Mi Note 2",
-                "name_by_user": null,
-                "sw_version": "8.0.0",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "214106cfa2674bc0a8d7853b7b064d69"
-                ],
-                "connections": [],
-                "id": "5046865547dd46bdb43d50b703f2b7cf",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "fbf4a0a4d15f4fd1b450e6633920b821"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "Mi Note 2",
-                "name": "GT's Mi Note 2",
-                "name_by_user": null,
-                "sw_version": "8.0.0",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
                     "ab9bb3d4c70e4b12b86de6ce3eb2b16a"
                 ],
                 "connections": [
@@ -163,46 +119,6 @@
                 "name": "bedroom",
                 "name_by_user": null,
                 "sw_version": "1.15.0-dev (Dec 20 2019, 18:41:07)",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "4a258a7c193b4724a0071475da16dabf"
-                ],
-                "connections": [],
-                "id": "347bf7399a184095823e9cdba72cc047",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "238e4b47b43e46d68ff9e51e97672192"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "dipper",
-                "name": "Mi_Phone",
-                "name_by_user": null,
-                "sw_version": "9",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "6e27ab9518d043dbb118aa7c8c65472f"
-                ],
-                "connections": [],
-                "id": "7d8d5e5a951e48909278677477bd663c",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "28229efd93b04683b038dc93d2ef0d2e"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "MI 8",
-                "name": "MI 8",
-                "name_by_user": null,
-                "sw_version": "28",
                 "via_device_id": null
             },
             {
@@ -248,26 +164,6 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "c909fbb7c4a24e9e8100680d5c0b4acb"
-                ],
-                "connections": [],
-                "id": "f63a684768264ca5b9ea183aa885fb0e",
-                "identifiers": [
-                    [
-                        "mobile_app",
-                        "b06c02c9904d45119895249ef294f968"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "MI 8",
-                "name": "GT's MI 8",
-                "name_by_user": null,
-                "sw_version": "9",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
                     "52674ed45f9a49fbbb2540916c5e2591"
                 ],
                 "connections": [],
@@ -303,6 +199,26 @@
                 "name": "childa",
                 "name_by_user": null,
                 "sw_version": "1.15.0-dev (Mar 17 2020, 20:59:21)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "17eeecbb996c4f1db1475605f9bb8c90"
+                ],
+                "connections": [],
+                "id": "6cbfa868b2754cc4b0f6c4d6fdfe6b46",
+                "identifiers": [
+                    [
+                        "ipp",
+                        "16a65700-007c-1000-bb49-30cda7c782c7"
+                    ]
+                ],
+                "manufacturer": "Samsung",
+                "model": "M2070 Series",
+                "name": "Samsung M2070 Series",
+                "name_by_user": null,
+                "sw_version": null,
                 "via_device_id": null
             }
         ]
