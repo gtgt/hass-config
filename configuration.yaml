@@ -94,6 +94,8 @@ tts:
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
+shopping_list:
+
 # Track the sun
 sun:
 
@@ -128,20 +130,6 @@ media_extractor:
 frontend:
   themes: !include_dir_merge_named themes
 
-lovelace:
-  mode: yaml
-  # Add yaml dashboards
-  #dashboards:
-  #  dashboard-2:
-  #    mode: yaml
-  #    title: Dashboard2
-  #    icon: mdi:view-dashboard-outline
-  #    show_in_sidebar: true
-  #    filename: ui-lovelace.yaml
-  resources:
-    - url: /hacsfiles/custom-header/custom-header.js # /community_plugin/custom-header/custom-header.js
-      type: module
-
 # https://www.home-assistant.io/docs/automation/
 automation: !include_dir_merge_list automations
 
@@ -151,6 +139,7 @@ automation: !include_dir_merge_list automations
 weather: !include_dir_merge_list integrations/weather
 climate: !include_dir_merge_list integrations/climate
 fan: !include_dir_merge_list integrations/fan
+vacuum: !include_dir_merge_list integrations/vacuum
 binary_sensor: !include_dir_merge_list integrations/binary_sensor
 sensor: !include_dir_merge_list integrations/sensor
 switch: !include_dir_merge_list integrations/switch
@@ -163,3 +152,33 @@ input_select: !include_dir_merge_named integrations/input_select
 
 #group: !include groups.yaml
 person: !include person.yaml
+
+lovelace:
+  mode: yaml
+  # Add yaml dashboards
+  #dashboards:
+  #  dashboard-2:
+  #    mode: yaml
+  #    title: Dashboard2
+  #    icon: mdi:view-dashboard-outline
+  #    show_in_sidebar: true
+  #    filename: ui-lovelace.yaml
+  resources:
+    - url: /local/css/overrides.css
+      type: css
+    - url: /hacsfiles/custom-header/custom-header.js # /community_plugin/custom-header/custom-header.js
+      type: module
+    - url: /hacsfiles/lovelace-card-mod/card-mod.js
+      type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
+    - url: /hacsfiles/lovelace-battery-entity/battery-entity.js
+      type: module
+    - url: /hacsfiles/lovelace-xiaomi-vacuum-card/xiaomi-vacuum-card.js
+      type: module
+    - url: /hacsfiles/weather-card/weather-card.js
+      type: module
+    - url: /hacsfiles/lovelace-google-keep-card/google-keep-card.js
+      type: module
+    - url: /hacsfiles/lovelace-thermostat-card/main.js
+      type: module

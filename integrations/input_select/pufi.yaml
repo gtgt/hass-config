@@ -1,4 +1,4 @@
-  airpurifier_pro_mode:
+  pufi_mode:
     name: "Pufi mód"
     options:
       - Auto

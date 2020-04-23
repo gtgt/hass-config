@@ -203,52 +203,35 @@
                 "version": 1
             },
             {
-                "connection_class": "local_poll",
-                "data": {
-                    "host": "40817795-nut",
-                    "name": "UPS",
-                    "password": "JtKPY!6ctXsU",
-                    "platform": "nut",
-                    "port": 3493,
-                    "resources": [
-                        "battery.charge",
-                        "battery.runtime",
-                        "ups.load",
-                        "ups.status"
-                    ],
-                    "username": "admin"
-                },
-                "domain": "nut",
-                "entry_id": "e58a95fc9a384a2aa3fcb8599f03e29b",
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "shopping_list",
+                "entry_id": "1c8228af936e471580eaeb3c48a25e5c",
                 "options": {},
                 "source": "import",
                 "system_options": {
                     "disable_new_entities": false
                 },
-                "title": "40817795-nut:3493",
-                "unique_id": null,
+                "title": "Shopping List",
+                "unique_id": "shopping_list",
                 "version": 1
             },
             {
-                "connection_class": "local_poll",
+                "connection_class": "local_push",
                 "data": {
-                    "base_path": "/ipp/print",
-                    "host": "192.168.1.7",
-                    "name": "M2070",
-                    "port": 631,
-                    "ssl": false,
-                    "uuid": "16a65700-007c-1000-bb49-30cda7c782c7",
-                    "verify_ssl": false
+                    "host": "energy.local",
+                    "password": "Qwe123Asd",
+                    "port": 6053
                 },
-                "domain": "ipp",
-                "entry_id": "17eeecbb996c4f1db1475605f9bb8c90",
+                "domain": "esphome",
+                "entry_id": "345484f0acb247f3a0025e2109930523",
                 "options": {},
                 "source": "zeroconf",
                 "system_options": {
                     "disable_new_entities": false
                 },
-                "title": "M2070",
-                "unique_id": "16a65700-007c-1000-bb49-30cda7c782c7",
+                "title": "energy",
+                "unique_id": null,
                 "version": 1
             }
         ]

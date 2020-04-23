@@ -4,9 +4,9 @@
   - platform: template
     sensors:
       livingroom_temp:
-        value_template: "{{ state_attr('fan.airpurifier_pro', 'temperature') }}"
+        value_template: "{{ state_attr('fan.pufi', 'temperature') }}"
       livingroom_humidity:
-        value_template: "{{ state_attr('fan.airpurifier_pro', 'humidity') }}"
+        value_template: "{{ state_attr('fan.pufi', 'humidity') }}"
 
       io_temp_diff:
         value_template: "{{ (states('sensor.livingroom_temp')|float - state_attr('weather.owm', 'temperature')|float)|round(1) }}"

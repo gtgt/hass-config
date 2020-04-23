@@ -220,6 +220,46 @@
                 "name_by_user": null,
                 "sw_version": null,
                 "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "345484f0acb247f3a0025e2109930523"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2c:f4:32:14:f3:ab"
+                    ]
+                ],
+                "id": "6649548c27aa4d72908e8d0177986f4c",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP07",
+                "name": "energy",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (Apr 23 2020, 03:38:02)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "345484f0acb247f3a0025e2109930523"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "4c:11:ae:0c:44:7f"
+                    ]
+                ],
+                "id": "dbaed7138968428c963f78e7fbf75ca9",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_D1_MINI",
+                "name": "energy",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (Apr 23 2020, 10:34:55)",
+                "via_device_id": null
             }
         ]
     },

@@ -8,7 +8,7 @@ esphome:
 
 status_led:
   pin:
-    number: D4
+    number: GPIO2
     inverted: true
 
 wifi:
@@ -24,9 +24,9 @@ captive_portal:
 
 # Enable logging
 logger:
-  level: DEBUG
-  #baud_rate: 0
-  hardware_uart: UART1
+  level: VERBOSE
+  baud_rate: 9600
+  #hardware_uart: UART1
 
 # Enable Web server
 web_server:
@@ -50,45 +50,51 @@ uart:
   tx_pin: GPIO1
   rx_pin: GPIO3
   baud_rate: 9600
-  # stop_bits: 2
+  stop_bits: 2
 
 sensor:
   - platform: pzemac
-    address: 1
+    address: 2
     current:
       name: ${name}_current1
     voltage:
       name: ${name}_voltage1
+    energy:
+      name: ${name}_energy1
     power:
       name: ${name}_power1
     frequency:
       name: ${name}_freq1
     power_factor:
       name: ${name}_pf1
-    update_interval: 5s
+    update_interval: 3s
   - platform: pzemac
     address: 2
     current:
       name: ${name}_current2
     voltage:
       name: ${name}_voltage2
+    energy:
+      name: ${name}_energy2
     power:
       name: ${name}_power2
     frequency:
       name: ${name}_freq2
     power_factor:
       name: ${name}_pf2
-    update_interval: 5s
+    update_interval: 3s
   - platform: pzemac
     address: 3
     current:
       name: ${name}_current3
     voltage:
       name: ${name}_voltage3
+    energy:
+      name: ${name}_energy3
     power:
       name: ${name}_power3
     frequency:
       name: ${name}_freq3
     power_factor:
       name: ${name}_pf3
-    update_interval: 5s
+    update_interval: 3s

@@ -1,0 +1,199 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Apr 23 2020, 10:34:55",
+            "esphome_version": "1.15.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "4C:11:AE:0C:44:7F",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "energy",
+            "uses_password": true
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:flash",
+                "key": 3807224619,
+                "name": "energy_voltage1",
+                "object_id": "energy_voltage1",
+                "unique_id": "energysensorenergy_voltage1",
+                "unit_of_measurement": "V"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:flash",
+                "key": 3807224616,
+                "name": "energy_voltage2",
+                "object_id": "energy_voltage2",
+                "unique_id": "energysensorenergy_voltage2",
+                "unit_of_measurement": "V"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:flash",
+                "key": 3807224617,
+                "name": "energy_voltage3",
+                "object_id": "energy_voltage3",
+                "unique_id": "energysensorenergy_voltage3",
+                "unit_of_measurement": "V"
+            },
+            {
+                "accuracy_decimals": 3,
+                "force_update": false,
+                "icon": "mdi:current-ac",
+                "key": 3648367368,
+                "name": "energy_current1",
+                "object_id": "energy_current1",
+                "unique_id": "energysensorenergy_current1",
+                "unit_of_measurement": "A"
+            },
+            {
+                "accuracy_decimals": 3,
+                "force_update": false,
+                "icon": "mdi:current-ac",
+                "key": 3648367371,
+                "name": "energy_current2",
+                "object_id": "energy_current2",
+                "unique_id": "energysensorenergy_current2",
+                "unit_of_measurement": "A"
+            },
+            {
+                "accuracy_decimals": 3,
+                "force_update": false,
+                "icon": "mdi:current-ac",
+                "key": 3648367370,
+                "name": "energy_current3",
+                "object_id": "energy_current3",
+                "unique_id": "energysensorenergy_current3",
+                "unit_of_measurement": "A"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:power",
+                "key": 2828288468,
+                "name": "energy_power1",
+                "object_id": "energy_power1",
+                "unique_id": "energysensorenergy_power1",
+                "unit_of_measurement": "W"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:power",
+                "key": 2828288471,
+                "name": "energy_power2",
+                "object_id": "energy_power2",
+                "unique_id": "energysensorenergy_power2",
+                "unit_of_measurement": "W"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:power",
+                "key": 2828288470,
+                "name": "energy_power3",
+                "object_id": "energy_power3",
+                "unique_id": "energysensorenergy_power3",
+                "unit_of_measurement": "W"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:counter",
+                "key": 2697947505,
+                "name": "energy_energy1",
+                "object_id": "energy_energy1",
+                "unique_id": "energysensorenergy_energy1",
+                "unit_of_measurement": "Wh"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:counter",
+                "key": 2697947506,
+                "name": "energy_energy2",
+                "object_id": "energy_energy2",
+                "unique_id": "energysensorenergy_energy2",
+                "unit_of_measurement": "Wh"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:counter",
+                "key": 2697947507,
+                "name": "energy_energy3",
+                "object_id": "energy_energy3",
+                "unique_id": "energysensorenergy_energy3",
+                "unit_of_measurement": "Wh"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:current-ac",
+                "key": 392256935,
+                "name": "energy_freq1",
+                "object_id": "energy_freq1",
+                "unique_id": "energysensorenergy_freq1",
+                "unit_of_measurement": "hz"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:current-ac",
+                "key": 392256932,
+                "name": "energy_freq2",
+                "object_id": "energy_freq2",
+                "unique_id": "energysensorenergy_freq2",
+                "unit_of_measurement": "hz"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:current-ac",
+                "key": 392256933,
+                "name": "energy_freq3",
+                "object_id": "energy_freq3",
+                "unique_id": "energysensorenergy_freq3",
+                "unit_of_measurement": "hz"
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:flash",
+                "key": 943455959,
+                "name": "energy_pf1",
+                "object_id": "energy_pf1",
+                "unique_id": "energysensorenergy_pf1",
+                "unit_of_measurement": ""
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:flash",
+                "key": 943455956,
+                "name": "energy_pf2",
+                "object_id": "energy_pf2",
+                "unique_id": "energysensorenergy_pf2",
+                "unit_of_measurement": ""
+            },
+            {
+                "accuracy_decimals": 2,
+                "force_update": false,
+                "icon": "mdi:flash",
+                "key": 943455957,
+                "name": "energy_pf3",
+                "object_id": "energy_pf3",
+                "unique_id": "energysensorenergy_pf3",
+                "unit_of_measurement": ""
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.345484f0acb247f3a0025e2109930523",
+    "version": 1
+}

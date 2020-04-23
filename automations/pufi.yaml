@@ -1,0 +1,40 @@
+- id: pufi_mode_set
+  alias: Pufi mode set
+  trigger:
+    entity_id: input_select.pufi_mode
+    platform: state
+  action:
+    service: fan.set_speed
+    data_template:
+      entity_id: fan.pufi
+      speed: '{{ states.input_select.pufi_mode.state }}'
+- id: pufi_mode_changed
+  alias: Pufi mode changed
+  trigger:
+    platform: state
+    entity_id: fan.pufi
+  action:
+    service: input_select.select_option
+    entity_id: input_select.pufi_mode
+    data_template:
+      option: '{{ states.fan.pufi.attributes.speed }}'
+- id: pufi_level_set
+  alias: Pufi favorite level set
+  trigger:
+    entity_id: input_number.pufi_level
+    platform: state
+  action:
+    service: xiaomi_miio.fan_set_favorite_level
+    data_template:
+      entity_id: fan.pufi
+      level: '{{ states.input_number.pufi_level.state | int }}'
+- id: pufi_level_changed
+  alias: Pufi favorite level changed
+  trigger:
+    platform: state
+    entity_id: fan.pufi
+  action:
+    service: input_number.set_value
+    entity_id: input_number.pufi_level
+    data_template:
+      value: '{{ states.fan.pufi.attributes.favorite_level }}'

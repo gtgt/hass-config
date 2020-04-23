@@ -433,6 +433,27 @@
             "reason": "Abandoned/Broken",
             "removal_type": "stale",
             "repository": "custom-cards/surveillance-card"
+        },
+        {
+            "acknowledged": false,
+            "link": "https://github.com/hacs/default/issues/344",
+            "reason": "Repository is archived",
+            "removal_type": "blacklist",
+            "repository": "robmarkcole/HASS-Sighthound"
+        },
+        {
+            "acknowledged": false,
+            "link": "https://github.com/hacs/default/issues/344",
+            "reason": "Repository is archived",
+            "removal_type": "blacklist",
+            "repository": "custom-cards/home-setter"
+        },
+        {
+            "acknowledged": false,
+            "link": "https://github.com/hacs/default/issues/347",
+            "reason": "Repository is archived",
+            "removal_type": "blacklist",
+            "repository": "pippyn/Home-Assistant-Sensor-Ophaalkalender"
         }
     ],
     "key": "hacs.removed",

@@ -12,6 +12,10 @@
         - condition: template
           value_template: "{{ trigger.to_state.state in ['off', 'heat', 'cool', 'heat_cool'] }}"
     action:
+      - service: notify.notify
+        data_template:
+          message: >
+            Switch climate from {{ trigger.from_state.state }} to {{ trigger.to_state.state }}!
       - service: climate.set_hvac_mode
         data:
           entity_id: 
@@ -20,8 +24,3 @@
             - climate.ac_childb
             - climate.ac_bedroom
           hvac_mode: "{{ trigger.to_state.state }}"
-      - service: notify.notify
-        data_template:
-          message: >
-            Switch climate from {{ trigger.from_state.state }} to {{ trigger.to_state.state }}!
-          

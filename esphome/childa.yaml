@@ -4,11 +4,11 @@ substitutions:
 esphome:
   name: ${name}
   platform: ESP8266
-  board: d1_mini
+  board: esp01_1m
 
 status_led:
   pin:
-    number: D4
+    number: GPIO2
     inverted: true
 
 wifi:
