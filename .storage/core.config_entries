@@ -145,11 +145,11 @@
                 "data": {
                     "app_data": {
                         "push_token": "fvg2b-HT6qY:APA91bGtG-ZiLqSjPKsmn-cdgchtzP54SbqYigKzXfSlb3-HKD5JkaxfLAy9rjIFaLuZXgb-XKhq8Bchac0NGxJNdY0CeQRNcvGvj8vtBKGfKkGqZ_jC3hf6HxMD8UytvDtcF3oFI3sC",
-                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1"
                     },
                     "app_id": "io.homeassistant.companion.android",
                     "app_name": "Home Assistant",
-                    "app_version": "1.5.1 (97)",
+                    "app_version": "1.8.0-144 (144)",
                     "device_id": "a91bcb1a93e1997d",
                     "device_name": "Mi 9 Lite",
                     "manufacturer": "Xiaomi",

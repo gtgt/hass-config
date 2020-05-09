@@ -82,98 +82,198 @@ views:
   - path: apb
     #title: Villany
     icon: mdi:lightbulb-multiple-outline
-    badges:
-      - entity: binary_sensor.apb_i0
-      - entity: binary_sensor.apb_i19
-      - entity: binary_sensor.apb_i1a
-      - entity: binary_sensor.apb_i1b
-      - entity: binary_sensor.apb_i1c
-      - entity: binary_sensor.apb_i5
-      - entity: binary_sensor.apb_i3
-      - entity: binary_sensor.apb_i6
-      - entity: binary_sensor.apb_i4
-      - entity: binary_sensor.apb_i7
-      - entity: binary_sensor.apb_i8
-      - entity: binary_sensor.apb_i9
-      - entity: binary_sensor.apb_ia
-      - entity: binary_sensor.apb_ib
-      - entity: binary_sensor.apb_ic
-      - entity: binary_sensor.apb_id
-      - entity: binary_sensor.apb_i12
-      - entity: binary_sensor.apb_i13
-      - entity: binary_sensor.apb_i14
-      - entity: binary_sensor.apb_i1
-      - entity: binary_sensor.apb_i15
-      - entity: binary_sensor.apb_i2
-      - entity: binary_sensor.apb_i16
-      - entity: binary_sensor.apb_i17
-      - entity: binary_sensor.apb_i18
+    # badges:
+    #   - entity: binary_sensor.apb_i0
+    #   - entity: binary_sensor.apb_i19
+    #   - entity: binary_sensor.apb_i1a
+    #   - entity: binary_sensor.apb_i1b
+    #   - entity: binary_sensor.apb_i1c
+    #   - entity: binary_sensor.apb_i5
+    #   - entity: binary_sensor.apb_i3
+    #   - entity: binary_sensor.apb_i6
+    #   - entity: binary_sensor.apb_i4
+    #   - entity: binary_sensor.apb_i7
+    #   - entity: binary_sensor.apb_i8
+    #   - entity: binary_sensor.apb_i9
+    #   - entity: binary_sensor.apb_ia
+    #   - entity: binary_sensor.apb_ib
+    #   - entity: binary_sensor.apb_ic
+    #   - entity: binary_sensor.apb_id
+    #   - entity: binary_sensor.apb_i12
+    #   - entity: binary_sensor.apb_i13
+    #   - entity: binary_sensor.apb_i14
+    #   - entity: binary_sensor.apb_i1
+    #   - entity: binary_sensor.apb_i15
+    #   - entity: binary_sensor.apb_i2
+    #   - entity: binary_sensor.apb_i16
+    #   - entity: binary_sensor.apb_i17
+    #   - entity: binary_sensor.apb_i18
     cards:
       - type: entities
+        show_header_toggle: false
         entities:
-          - switch.apb_q0
-          - switch.apb_q1
-          - switch.apb_q2
-          - switch.apb_q3
-          - switch.apb_q4
-          - switch.apb_q5
-          - switch.apb_q6
-          - switch.apb_q7
-          - switch.apb_q10
-          - switch.apb_q11
-          - switch.apb_q12
-          - switch.apb_q13
-          - switch.apb_q17
+          - type: custom:slider-entity-row
+            entity: light.7212000298f4abc95132
+            hide_when_off: true
+            min: 11
+            step: 5
+            tap_action:
+              action: toggle
+          - type: custom:rgb-light-card
+            entity: light.7212000298f4abc95132
+            hide_when_off: true
+            justify: right
+            colors:
+              - rgb_color: [255, 255, 255]
+                icon_color: '#FFFFFF'
+              - rgb_color: [51, 102, 204]
+                icon_color: '#3366CC'
+              - rgb_color: [51, 204, 51]
+                icon_color: '#33CC33'
+              - rgb_color: [255, 0, 255]
+                icon_color: '#FF00FF'
+              - rgb_color: [255, 0, 0]
+                icon_color: '#D50000'
+      - type: glance
+        show_state: false
+        columns: 3
+        entities:
+          - entity: switch.apb_q0
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q1
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q2
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q3
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q4
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q5
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q6
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q7
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q10
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q11
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q12
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q13
+            tap_action:
+              action: toggle
+          - entity: switch.apb_q17
+            tap_action:
+              action: toggle
   - path: energy
     icon: mdi:flash
     badges:
       - entity: sensor.energy_voltage1
-        name: Frekvencia
+        name: Feszültség 1
       - entity: sensor.energy_voltage2
+        name: Feszültség 2
       - entity: sensor.energy_voltage3
+        name: Feszültség 3
       - entity: sensor.energy_freq1
-        name: Frekvencia
+        name: Frekvencia 1
       - entity: sensor.energy_freq2
+        name: Frekvencia 2
       - entity: sensor.energy_freq3
+        name: Frekvencia 3
       - entity: sensor.energy_pf1
-        name: Áramfaktor
+        name: Áramfaktor 1
       - entity: sensor.energy_pf2
+        name: Áramfaktor 2
       - entity: sensor.energy_pf3
+        name: Áramfaktor 3
     cards:
-      - type: vertical-stack
-        cards:
+      - type: entity-filter
+        card:
+          type: glance
+        entities:
           - type: sensor
             entity: sensor.energy_current1
-            name: Áramerősség
+            name: Áramerősség 1
           - type: sensor
             entity: sensor.energy_current2
-            name: Áramerősség
+            name: Áramerősség 2
           - type: sensor
             entity: sensor.energy_current3
-            name: Áramerősség
-      - type: vertical-stack
-        cards:
+            name: Áramerősség 3
+        state_filter:
+          - operator: "!="
+            value: unavailable
+        show_empty: false
+      - type: entity-filter
+        card:
+          type: glance
+        entities:
           - type: sensor
             entity: sensor.energy_power1
-            name: Pillanatnyi teljesítmény
+            name: P. teljesítmény 1
           - type: sensor
             entity: sensor.energy_power2
-            name: Pillanatnyi teljesítmény
+            name: P. teljesítmény 2
           - type: sensor
             entity: sensor.energy_power3
-            name: Pillanatnyi teljesítmény
-      - type: vertical-stack
-        cards:
+            name: P. teljesítmény 3
+        state_filter:
+          - operator: "!="
+            value: unavailable
+        show_empty: false
+      - type: entity-filter
+        card:
+          type: glance
+        entities:
           - type: sensor
             entity: sensor.energy_energy1
-            name: Fogyasztás
+            name: Fogyasztás 1
           - type: sensor
             entity: sensor.energy_energy2
-            name: Fogyasztás
+            name: Fogyasztás 2
           - type: sensor
             entity: sensor.energy_energy3
-            name: Fogyasztás
-
+            name: Fogyasztás 3
+        state_filter:
+          - operator: "!="
+            value: unavailable
+        show_empty: false
+      - type: entity-filter
+        card:
+          type: glance
+        entities:
+          - type: button
+            entity: switch.energy_reset1
+            name: 1
+            icon: mdi:numeric-0
+          - type: button
+            entity: switch.energy_reset2
+            name: 2
+            icon: mdi:numeric-0
+          - type: button
+            entity: switch.energy_reset3
+            name: 3
+            icon: mdi:numeric-0
+          - type: button
+            entity: switch.energy_restart
+            name: Újraindfítás
+            icon: mdi:reload
+        state_filter:
+          - operator: "!="
+            value: unavailable
+        show_empty: false
 
   - path: alarm
     #title: Riasztó

@@ -1,7 +1,7 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Apr 23 2020, 10:34:55",
+            "compilation_time": "May  9 2020, 01:58:56",
             "esphome_version": "1.15.0-dev",
             "has_deep_sleep": false,
             "mac_address": "4C:11:AE:0C:44:7F",
@@ -192,6 +192,40 @@
             }
         ],
         "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "mdi:restart",
+                "key": 1102582941,
+                "name": "energy_restart",
+                "object_id": "energy_restart",
+                "unique_id": "energyswitchenergy_restart"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2614731994,
+                "name": "energy_reset1",
+                "object_id": "energy_reset1",
+                "unique_id": "energyswitchenergy_reset1"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2614731993,
+                "name": "energy_reset2",
+                "object_id": "energy_reset2",
+                "unique_id": "energyswitchenergy_reset2"
+            },
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2614731992,
+                "name": "energy_reset3",
+                "object_id": "energy_reset3",
+                "unique_id": "energyswitchenergy_reset3"
+            }
+        ],
         "text_sensor": []
     },
     "key": "esphome.345484f0acb247f3a0025e2109930523",

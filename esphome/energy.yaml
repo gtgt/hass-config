@@ -8,7 +8,7 @@ esphome:
 
 status_led:
   pin:
-    number: GPIO2
+    number: D4
     inverted: true
 
 wifi:
@@ -24,9 +24,9 @@ captive_portal:
 
 # Enable logging
 logger:
-  level: VERBOSE
-  baud_rate: 9600
-  #hardware_uart: UART1
+  #level: INFO
+  baud_rate: 0
+  hardware_uart: UART1
 
 # Enable Web server
 web_server:
@@ -47,14 +47,34 @@ time:
     id: now
 
 uart:
-  tx_pin: GPIO1
-  rx_pin: GPIO3
-  baud_rate: 9600
-  stop_bits: 2
+  - id: ubus1
+    rx_pin: D2
+    tx_pin: D1
+    baud_rate: 9600
+    #stop_bits: 2
+  - id: ubus2
+    rx_pin: D6
+    tx_pin: D5
+    baud_rate: 9600
+    #stop_bits: 2
+  - id: ubus3
+    rx_pin: GPIO3
+    tx_pin: GPIO1
+    baud_rate: 9600
+    #stop_bits: 2
 
+modbus:
+  - id: mbus1
+    uart_id: ubus1
+  - id: mbus2
+    uart_id: ubus2
+  - id: mbus3
+    uart_id: ubus3
+    
 sensor:
   - platform: pzemac
-    address: 2
+    modbus_id: mbus1
+    address: 1
     current:
       name: ${name}_current1
     voltage:
@@ -69,6 +89,7 @@ sensor:
       name: ${name}_pf1
     update_interval: 3s
   - platform: pzemac
+    modbus_id: mbus2
     address: 2
     current:
       name: ${name}_current2
@@ -84,6 +105,7 @@ sensor:
       name: ${name}_pf2
     update_interval: 3s
   - platform: pzemac
+    modbus_id: mbus3
     address: 3
     current:
       name: ${name}_current3
@@ -98,3 +120,19 @@ sensor:
     power_factor:
       name: ${name}_pf3
     update_interval: 3s
+
+switch:
+  - platform: restart
+    name: ${name}_restart
+  - platform: uart
+    uart_id: ubus1
+    name: ${name}_reset1
+    data: [0x01, 0x42, 0x80, 0x11]
+  - platform: uart
+    uart_id: ubus2
+    name: ${name}_reset2
+    data: [0x01, 0x42, 0x80, 0x11]
+  - platform: uart
+    uart_id: ubus3
+    name: ${name}_reset3
+    data: [0x01, 0x42, 0x80, 0x11]
