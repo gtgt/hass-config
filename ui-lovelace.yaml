@@ -77,20 +77,24 @@ views:
         entities:
           - type: custom:slider-entity-row
             entity: light.dining_table
-            name: 'Fényerő'
+            name: 'Fő'
+            toggle: true
             hide_when_off: true
+            min: 5
             step: 10
-          - type: custom:slider-entity-row
-            entity: light.dining_table
-            attribute: color_temp
-            name: 'Színhőmérséklet'
-            icon: mdi:invert-colors
-            hide_when_off: true
-            step: 10
+          #- type: custom:slider-entity-row
+          #  entity: light.dining_table
+          #  attribute: color_temp
+          #  name: 'Színhőmérséklet'
+          #  icon: mdi:invert-colors
+          #  hide_when_off: true
+          #  step: 10
           - type: custom:slider-entity-row
             entity: light.dining_table_ambilight
             name: 'Hangulat'
+            toggle: true
             hide_when_off: true
+            min: 5
             step: 10
           - type: custom:rgb-light-card
             entity: light.dining_table_ambilight
@@ -432,11 +436,10 @@ views:
           - type: entities
             entities:
             - sensor.ups_status_data
-            #- sensor.ups_battery_charge
+            - type: custom:battery-entity
+              entity: sensor.ups_battery_charge
             - sensor.ups_battery_runtime
             - sensor.ups_load
-#          - type: custom:battery-entity
-#            entity: sensor.ups_battery_charge
       - type: entities
         title: Kapcsoló
         entities:

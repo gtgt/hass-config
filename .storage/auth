@@ -754,7 +754,7 @@
                 "created_at": "2020-03-29T13:54:25.010510+00:00",
                 "id": "4c9ba2490c1042afa7f83787a2955da5",
                 "jwt_key": "709fb4ce00a87c499e175a46cea33997b9d4542e4e09e847f6ed9a5a72999a92977a4238373725ab4bfabf8e7b53f8408d69f72f42c026b115a8a901c61c6697",
-                "last_used_at": "2020-05-14T22:53:42.378585+00:00",
+                "last_used_at": "2020-05-15T00:16:47.337476+00:00",
                 "last_used_ip": "192.168.1.167",
                 "token": "6085190a2a931cab4a833908d31bb9636bf4fa97c6af992565103c723c113f1441b87ccdd4cf85334283f651d5ef74bb2de5c26045e022f70ea18fc2c4d84939",
                 "token_type": "normal",
