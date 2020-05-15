@@ -24,6 +24,10 @@ homeassistant:
 
 zeroconf:
 
+discovery:
+  ignore:
+    - yeelight
+
 logger:
   default: warn
   logs:
@@ -98,6 +102,15 @@ shopping_list:
 
 # Track the sun
 sun:
+
+yeelight:
+  devices:
+    192.168.1.41:
+      name: dining_table
+      #model: ceiling13
+      nightlight_switch_type: light
+      save_on_change: true
+      transition: 350
 
 daikin:
   hosts:

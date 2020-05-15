@@ -94,9 +94,9 @@
                     "is_charging": false
                 },
                 "device_class": "battery",
-                "icon": "mdi:battery-70",
+                "icon": "mdi:battery-20",
                 "name": "Battery Level",
-                "state": 77,
+                "state": 25,
                 "type": "sensor",
                 "unique_id": "battery_level",
                 "unit_of_measurement": "%",
@@ -132,9 +132,9 @@
                     "ip_address": "192.168.1.20",
                     "is_hidden": false,
                     "link_speed": 54,
-                    "signal_level": -47
+                    "signal_level": -1
                 },
-                "icon": "mdi:wifi-strength-3",
+                "icon": "mdi:wifi-strength-off",
                 "name": "Wifi Connection",
                 "state": "engeddel",
                 "type": "sensor",
