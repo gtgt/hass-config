@@ -21,6 +21,7 @@ homeassistant:
       api_password: !secret api_password
       
 #zone: !include zone.yaml
+upnp:
 
 zeroconf:
 

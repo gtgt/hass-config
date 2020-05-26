@@ -149,7 +149,7 @@
                     },
                     "app_id": "io.homeassistant.companion.android",
                     "app_name": "Home Assistant",
-                    "app_version": "1.8.0-144 (144)",
+                    "app_version": "1.9.0-167 (167)",
                     "device_id": "a91bcb1a93e1997d",
                     "device_name": "Mi 9 Lite",
                     "manufacturer": "Xiaomi",
@@ -180,7 +180,7 @@
                     },
                     "app_id": "io.homeassistant.companion.android",
                     "app_name": "Home Assistant",
-                    "app_version": "1.8.0-144 (144)",
+                    "app_version": "1.9.0-167 (167)",
                     "device_id": "fcdb64046b90c350",
                     "device_name": "Mi Note 2",
                     "manufacturer": "Xiaomi",
@@ -231,6 +231,40 @@
                     "disable_new_entities": false
                 },
                 "title": "energy",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "udn": "uuid:upnp-InternetGatewayDevice-74:DA:88:0D:70:1C0"
+                },
+                "domain": "upnp",
+                "entry_id": "020acae9289f4bfdbb09ae3b2c148814",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "UPnP/IGD",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "bedroom_rgb.local",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "bd54e0399ed349a4b05fe3cf1f35ebb4",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "bedroom_rgb",
                 "unique_id": null,
                 "version": 1
             }

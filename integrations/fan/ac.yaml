@@ -1,0 +1,35 @@
+
+ - platform: template
+   fans:
+     ac:
+       friendly_name: "AC Fan"
+       value_template: >
+         {% if states('climate.ac') in ['On','Auto','Heat','Cold', 'Dry'] %}
+           off
+         {% else %}
+           on
+         {% endif %}
+       speed_template: "{{state_attr('climate.ac', 'fan_mode')}}"
+       oscillating_template: >
+         false
+       speeds:
+        - '1'
+        - '2'
+        - '3'
+        - '4'
+        - '5'
+        - 'Auto'
+        - 'Silence'
+       set_speed:
+         service: climate.set_fan_mode
+         data:
+           entity_id: climate.ac
+           fan_mode: "{{state_attr('fan.ac', 'speed')}}"
+       turn_on:
+         service: climate.turn_on
+         data:
+           entity_id: climate.ac
+       turn_off:
+         service: climate.turn_off
+         data:
+           entity_id: climate.ac

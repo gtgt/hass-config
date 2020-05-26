@@ -71,10 +71,11 @@
         hub: apb
         slave: 1
         address: 274
-      - name: APB_I13
-        hub: apb
-        slave: 1
-        address: 275
+      # -> rpi_gpio
+      #- name: APB_I13
+      #  hub: apb
+      #  slave: 1
+      #  address: 275
       - name: APB_I14
         hub: apb
         slave: 1
@@ -87,10 +88,11 @@
         hub: apb
         slave: 1
         address: 278
-      - name: APB_I17
-        hub: apb
-        slave: 1
-        address: 279
+      # -> rpi_gpio
+      #- name: APB_I17
+      #  hub: apb
+      #  slave: 1
+      #  address: 279
       - name: APB_I18
         hub: apb
         slave: 1
@@ -99,10 +101,11 @@
         hub: apb
         slave: 1
         address: 281
-      - name: APB_I1A
-        hub: apb
-        slave: 1
-        address: 282
+      # -> rpi_gpio
+      #- name: APB_I1A
+      #  hub: apb
+      #  slave: 1
+      #  address: 282
       - name: APB_I1B
         hub: apb
         slave: 1

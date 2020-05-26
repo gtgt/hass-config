@@ -260,6 +260,51 @@
                 "name_by_user": null,
                 "sw_version": "1.15.0-dev (May  9 2020, 01:58:56)",
                 "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "020acae9289f4bfdbb09ae3b2c148814"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:upnp-InternetGatewayDevice-74:DA:88:0D:70:1C0"
+                    ]
+                ],
+                "id": "48371bbc424b49fb8598ce2095bc1614",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:upnp-InternetGatewayDevice-74:DA:88:0D:70:1C0"
+                    ]
+                ],
+                "manufacturer": "TP-Link",
+                "model": "TL-R600VPN",
+                "name": "TP-Link SMB TL-R600VPN",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "bd54e0399ed349a4b05fe3cf1f35ebb4"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "98:f4:ab:c9:51:32"
+                    ]
+                ],
+                "id": "158580f36373420ba4238e14b95e5ef8",
+                "identifiers": [],
+                "manufacturer": "espressif",
+                "model": "PLATFORMIO_ESP01_1M",
+                "name": "bedroom_rgb",
+                "name_by_user": null,
+                "sw_version": "1.15.0-dev (May 26 2020, 15:33:26)",
+                "via_device_id": null
             }
         ]
     },

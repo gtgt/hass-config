@@ -6,3 +6,12 @@ fan.airpurifier_pro:
   friendly_name: "Pufi"
 sensor.bedroom_mic:
   friendly_name: "Háló zaj"
+switch.red_led:
+  friendly_name: "Piros LED"
+  icon: mdi:led-off
+switch.yellow_led:
+  friendly_name: "Sárga LED"
+  icon: mdi:led-off
+switch.green_led:
+  friendly_name: "Zöld LED"
+  icon: mdi:led-off

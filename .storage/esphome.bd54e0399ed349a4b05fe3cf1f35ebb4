@@ -1,0 +1,35 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "May 26 2020, 15:33:26",
+            "esphome_version": "1.15.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "98:F4:AB:C9:51:32",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "bedroom_rgb",
+            "uses_password": true
+        },
+        "light": [
+            {
+                "effects": [
+                    "None",
+                    "bedroom_rgb_random",
+                    "bedroom_rgb_random_slow"
+                ],
+                "key": 395114707,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "bedroom_rgb",
+                "object_id": "bedroom_rgb",
+                "supports_brightness": true,
+                "supports_color_temperature": false,
+                "supports_rgb": true,
+                "supports_white_value": true,
+                "unique_id": "bedroom_rgblightbedroom_rgb"
+            }
+        ],
+        "services": []
+    },
+    "key": "esphome.bd54e0399ed349a4b05fe3cf1f35ebb4",
+    "version": 1
+}
