@@ -51,20 +51,28 @@
         hub: apb
         slave: 1
         coil: 531
-#      - name: APB_Q14
-#        hub: apb
-#        slave: 1
-#        coil: 532
-#      - name: APB_Q15
-#        hub: apb
-#        slave: 1
-#        coil: 533
-#      - name: APB_Q16
-#        hub: apb
-#        slave: 1
-#        coil: 534
+      - name: APB_Q14
+        hub: apb
+        slave: 1
+        coil: 532
+      - name: APB_Q15
+        hub: apb
+        slave: 1
+        coil: 533
+      - name: APB_Q16
+        hub: apb
+        slave: 1
+        coil: 534
       - name: APB_Q17
         hub: apb
         slave: 1
         coil: 535
         
+      - name: APB_M0
+        hub: apb
+        slave: 1
+        coil: 9728
+      - name: APB_M1
+        hub: apb
+        slave: 1
+        coil: 9729

@@ -1,0 +1,11 @@
+
+- id: energy_meter_pulse
+  alias: Energy meter pulse
+  trigger:
+    platform: state
+    entity_id: binary_sensor.energy_meter_pulse
+    to: 'on'
+  action:
+    - service: persistent_notification.create
+      data:
+        message: Energy meter pulse!

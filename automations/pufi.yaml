@@ -13,6 +13,9 @@
   trigger:
     platform: state
     entity_id: fan.pufi
+  condition:
+  - condition: template
+    value_template: "{{ trigger.to_state.state in ['Auto', 'Silent', 'Favorite'] }}"
   action:
     service: input_select.select_option
     entity_id: input_select.pufi_mode

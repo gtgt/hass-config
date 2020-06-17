@@ -12,7 +12,7 @@
         - condition: template
           value_template: "{{ trigger.to_state.state in ['off', 'heat', 'cool', 'heat_cool'] }}"
     action:
-      - service: notify.notify
+      - service: persistent_notification.create
         data_template:
           message: >
             Switch climate from {{ trigger.from_state.state }} to {{ trigger.to_state.state }}!

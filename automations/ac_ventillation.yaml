@@ -15,7 +15,7 @@
     - service: switch.turn_on
       data:
        entity_id: switch.ac_relay_ventillation
-    - service: notify.notify
+    - service: persistent_notification.create
       data_template:
         message: >
           Ventillation turned ON, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!
@@ -37,7 +37,7 @@
     - service: switch.turn_off
       data:
        entity_id: switch.ac_relay_ventillation
-    - service: notify.notify
+    - service: persistent_notification.create
       data_template:
         message: >
           Ventillation turned OFF, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!

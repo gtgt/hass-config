@@ -1,9 +1,14 @@
   - platform: rpi_gpio
-    bouncetime: 0.2
+    bouncetime: 50
     invert_logic: false
-    pull_mode: 'UP'
+    #pull_mode: UP
     ports:
       4: energy_meter_pulse
-      18: apb_i17
-      23: apb_i13
-      24: apb_i1a
+  - platform: rpi_gpio
+    bouncetime: 50
+    invert_logic: true
+    #pull_mode: UP
+    ports:
+      18: APB_I17
+      23: APB_I13
+      24: APB_I1a

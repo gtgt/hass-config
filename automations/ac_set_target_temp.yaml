@@ -1,6 +1,70 @@
-  - id: 'ac_bedroom_set_target'
+  - id: ac_terget_temp_restore
     initial_state: on
-    alias: AC Háló helyi hőmérséklet szabályozás
+    trigger:
+      - platform: homeassistant
+        event: start
+    action:
+      - service: saver.execute
+        data:
+          script:
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_study
+                temperature: "{{ climate_ac_study_temperature | int }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_childa
+                temperature: "{{ climate_ac_childa_temperature | int }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_childb
+                temperature: "{{ climate_ac_childb_temperature | int }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_bedroom
+                temperature: "{{ climate_ac_bedroom_temperature | int }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_kitchen
+                temperature: "{{ climate_ac_kitchen_temperature | int }}"
+      - service: automation.turn_on
+        data:
+          entity_id: automation.ac_terget_temp_save
+
+  - id: ac_terget_temp_save
+    initial_state: off
+    trigger:
+      - platform: homeassistant
+        event: shutdown
+      - platform: state
+        entity_id: climate.ac_study
+      - platform: state
+        entity_id: climate.ac_childa
+      - platform: state
+        entity_id: climate.ac_childb
+      - platform: state
+        entity_id: climate.ac_bedroom
+      - platform: state
+        entity_id: climate.ac_kitchen
+    action:
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_study
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_childa
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_childb
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_bedroom
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_kitchen
+
+  - id: ac_bedroom_set_target
+    initial_state: on
     trigger:
       - platform: state
         entity_id: sensor.bedroom_target_rotary

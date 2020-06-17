@@ -55,7 +55,7 @@ output:
     pin: GPIO13
   - platform: esp8266_pwm
     id: output_white
-    pin: GPIO4
+    pin: GPIO2
 
 # here go the light definitions, effects and restore mode
 light:

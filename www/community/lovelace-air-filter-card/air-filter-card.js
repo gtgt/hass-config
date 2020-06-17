@@ -4,10 +4,10 @@
  * @Description   : 
  * @Date          : 2019-10-12 02:38:30
  * @LastEditors   : fineemb
- * @LastEditTime  : 2020-05-02 09:28:51
+ * @LastEditTime  : 2020-05-21 01:03:55
  */
 
-console.info("%c  AIR FILTER CARD  \n%c Version 1.1.0 ",
+console.info("%c  AIR FILTER CARD  \n%c Version 1.1.2 ",
 "color: orange; font-weight: bold; background: black", 
 "color: white; font-weight: bold; background: dimgray");
 
@@ -148,6 +148,8 @@ static getStubConfig() {
   setConfig(config) {
     this._config = deepClone(config);
     let entityid = this._config.entity;
+    this.modes = this._config.modes;
+    
     const icons = {
       auto: "mdi:brightness-auto",
       silent: "mdi:weather-night",
@@ -180,14 +182,14 @@ static getStubConfig() {
             <div id="pm25u">PM2.5</div>
             <div id="pm25">00</div>
             <div id="buttons">
-              <paper-icon-button icon="mdi:brightness-auto" slot="prefix"></paper-icon-button>
-              <paper-icon-button icon="mdi:weather-night" slot="prefix"></paper-icon-button>
-              <paper-icon-button icon="mdi:weather-windy" slot="prefix"></paper-icon-button>
+              <ha-icon-button icon="mdi:brightness-auto" slot="prefix"></ha-icon-button>
+              <ha-icon-button icon="mdi:weather-night" slot="prefix"></ha-icon-button>
+              <ha-icon-button icon="mdi:weather-windy" slot="prefix"></ha-icon-button>
             </div>
             <div id="title">Air purifier</div>
           </div>
           <div class="prop" style="text-align: right;">
-            <paper-icon-button icon="hass:dots-vertical" class="c_icon" role="button" tabindex="0" aria-disabled="false"></paper-icon-button>
+            <ha-icon-button icon="hass:dots-vertical" class="c_icon" role="button" tabindex="0" aria-disabled="false"></ha-icon-button>
           </div>
         </div>
       </div>
@@ -277,7 +279,7 @@ static getStubConfig() {
       display: flex;
       justify-content: center;
     }
-    div#buttons paper-icon-button{
+    div#buttons ha-icon-button{
       width:25%;
       height: 100%;
     }
@@ -300,7 +302,7 @@ static getStubConfig() {
       border: 5px solid #b90f02
     }
 
-    paper-icon-button.active{
+    ha-icon-button.active{
       color:var(--paper-item-icon-active-color);
     }
     </style>

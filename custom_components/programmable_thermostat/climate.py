@@ -4,7 +4,7 @@ import logging
 
 import voluptuous as vol
 
-from homeassistant.components.climate import PLATFORM_SCHEMA, ClimateDevice
+from homeassistant.components.climate import PLATFORM_SCHEMA, ClimateEntity
 from homeassistant.components.climate.const import (
     ATTR_HVAC_MODE, CURRENT_HVAC_COOL, CURRENT_HVAC_HEAT, CURRENT_HVAC_IDLE,
     CURRENT_HVAC_OFF, HVAC_MODE_COOL, HVAC_MODE_HEAT, HVAC_MODE_OFF,HVAC_MODE_HEAT_COOL,
@@ -73,7 +73,7 @@ async def async_setup_platform(hass, config, async_add_entities,
         max_temp, target_entity_id, tolerance, initial_hvac_mode, unit)])
 
 
-class ProgrammableThermostat(ClimateDevice, RestoreEntity):
+class ProgrammableThermostat(ClimateEntity, RestoreEntity):
     """ProgrammableThermostat."""
 
     def __init__(self, hass, name, heater_entity_id, cooler_entity_id,
@@ -95,7 +95,7 @@ class ProgrammableThermostat(ClimateDevice, RestoreEntity):
             self._target_temp = float(hass.states.get(target_entity_id).state)
         except ValueError as ex:
             self._target_temp = 22.0
-        
+
         self._restore_temp = self._target_temp
         self._cur_temp = self._target_temp
         # To avoid error in case real temp sensor take some time to return a number

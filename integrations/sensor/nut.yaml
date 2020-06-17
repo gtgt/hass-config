@@ -1,6 +1,6 @@
 - platform: nut
   name: UPS
-  host: 40817795-nut
+  host: localhost
   username: admin
   password: "JtKPY!6ctXsU"
   resources:

@@ -1,35 +1,46 @@
   switch.apb_q0:
-    friendly_name: "Dolgozó világítás"
+    friendly_name: "Dolgozó"
   switch.apb_q1:
-    friendly_name: "Háló világítás"
+    friendly_name: "Háló"
   switch.apb_q2:
-    friendly_name: "Fürdő világítás"
+    friendly_name: "Fürdő"
   switch.apb_q3:
-    friendly_name: "Konyha világítás"
+    friendly_name: "Konyha"
   switch.apb_q4:
-    friendly_name: "WC világítás"
+    friendly_name: "WC"
   switch.apb_q5:
-    friendly_name: "Máté világítás"
+    friendly_name: "Máté"
   switch.apb_q6:
-    friendly_name: "Milán világítás"
+    friendly_name: "Milán"
   switch.apb_q7:
-    friendly_name: "Háztartási h. világítás"
+    friendly_name: "Háztartási h."
   switch.apb_q10:
-    friendly_name: "Előszoba világítás"
+    friendly_name: "Előszoba"
   switch.apb_q11:
-    friendly_name: "Átjáró világítás"
+    friendly_name: "Átjáró"
   switch.apb_q12:
-    friendly_name: "Étkezőasztal világítás"
+    friendly_name: "Étkezőasztal"
   switch.apb_q13:
-    friendly_name: "Nappali világítás"
-#  switch.apb_q14:
-#    friendly_name: "? világítás"
-#  switch.apb_q15:
-#    friendly_name: "? világítás"
-#  switch.apb_q16:
-#    friendly_name: "? világítás"
+    friendly_name: "Nappali"
+  switch.apb_q14:
+    friendly_name: "Járda"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_q15:
+    friendly_name: "Udvar"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_q16:
+    friendly_name: "Utcafront"
+    icon: "mdi:outdoor-lamp"
   switch.apb_q17:
-    friendly_name: "Terasz világítás"
+    friendly_name: "Terasz"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_m0:
+    friendly_name: "Világítás ki"
+    icon: "mdi:lightbulb-off"
+  switch.apb_m0:
+    friendly_name: "Külső Világítás"
+    icon: "mdi:vanity-light"
+
 
 
   binary_sensor.apb_i0:
@@ -81,10 +92,10 @@
   binary_sensor.apb_i19:
     friendly_name: "Nappali - Előszoba + Milán J"
   binary_sensor.apb_i1a:
-    friendly_name: "Terasz világítás"
+    friendly_name: "Terasz"
   binary_sensor.apb_i1b:
-    friendly_name: "Riasztó 1"
+    friendly_name: "Riasztó mozgás"
   binary_sensor.apb_i1c:
-    friendly_name: "Riasztó 2"
+    friendly_name: "Riasztó riasztás"
 #  binary_sensor.apb_i1d:
-#    friendly_name: "Dolgozó J"
+#    friendly_name: "Világítás ki"

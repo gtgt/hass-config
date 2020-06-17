@@ -14,18 +14,23 @@
         icon_template: "mdi:home-thermometer-outline"
 
       ac_study_target_temp:
+        entity_id: climate.ac_study
         value_template: "{{ state_attr('climate.ac_study', 'temperature') }}"
-        availability_template: "{{ states('climate.ac_study') != 'off' }}"
+        #availability_template: "{{ states('climate.ac_study') != 'off' }}"
       ac_childa_target_temp:
+        entity_id: climate.ac_childa
         value_template: "{{ state_attr('climate.ac_childa', 'temperature') }}"
-        availability_template: "{{ states('climate.ac_childa') != 'off' }}"
+        #availability_template: "{{ states('climate.ac_childa') != 'off' }}"
       ac_childb_target_temp:
+        entity_id: climate.ac_childb
         value_template: "{{ state_attr('climate.ac_childb', 'temperature') }}"
-        availability_template: "{{ states('climate.ac_childb') != 'off' }}"
+        #availability_template: "{{ states('climate.ac_childb') != 'off' }}"
       ac_bedroom_target_temp:
+        entity_id: climate.ac_bedroom
         value_template: "{{ state_attr('climate.ac_bedroom', 'temperature') }}"
-        availability_template: "{{ states('climate.ac_bedroom') != 'off' }}"
+        #availability_template: "{{ states('climate.ac_bedroom') != 'off' }}"
       ac_kitchen_target_temp:
+        entity_id: climate.ac_kitchen
         value_template: "{{ state_attr('climate.ac_kitchen', 'temperature') }}"
-        availability_template: "{{ states('climate.ac_kitchen') != 'off' }}"
+        #availability_template: "{{ states('climate.ac_kitchen') != 'off' }}"
         

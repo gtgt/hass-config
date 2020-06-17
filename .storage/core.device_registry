@@ -1,9 +1,11 @@
 {
     "data": {
+        "deleted_devices": [],
         "devices": [
             {
                 "area_id": null,
                 "config_entries": [
+                    "a4cdbe0107cc4d0b96285d9ef0a0ca4b",
                     "43f08b7d3100453da1de05ca95e831b8"
                 ],
                 "connections": [
@@ -12,6 +14,7 @@
                         "a0:cc:2b:6b:df:3b"
                     ]
                 ],
+                "entry_type": null,
                 "id": "fd301bb8ae1f4dfd9ba41bb6ce001ac9",
                 "identifiers": [],
                 "manufacturer": "Daikin",
@@ -32,6 +35,7 @@
                         "4c:11:ae:0d:1d:c9"
                     ]
                 ],
+                "entry_type": null,
                 "id": "c42ff05402484b959e04718619abc8d3",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -52,6 +56,7 @@
                         "bc:dd:c2:30:fa:b4"
                     ]
                 ],
+                "entry_type": null,
                 "id": "da4c7ac12b234f1ca74bf288cc817943",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -72,6 +77,7 @@
                         "60:01:94:16:06:9e"
                     ]
                 ],
+                "entry_type": null,
                 "id": "238aa9b0192b4fc992cf76d9a8a8490d",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -92,6 +98,7 @@
                         "4c:11:ae:0e:3d:03"
                     ]
                 ],
+                "entry_type": null,
                 "id": "5f8b5b3f072a472fbface84d4a70ae63",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -112,6 +119,7 @@
                         "68:c6:3a:a4:80:f6"
                     ]
                 ],
+                "entry_type": null,
                 "id": "d551453fa4be48a5aee139af793ae073",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -132,6 +140,7 @@
                         "4c:11:ae:0e:6c:a4"
                     ]
                 ],
+                "entry_type": null,
                 "id": "96fb745a523b4df7b77acd5de411de1f",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -147,6 +156,7 @@
                     "18aefcbb0b9e461480e8ab356705f0f9"
                 ],
                 "connections": [],
+                "entry_type": null,
                 "id": "2e061c4909f447e0935779a8d277b90b",
                 "identifiers": [
                     [
@@ -167,6 +177,7 @@
                     "52674ed45f9a49fbbb2540916c5e2591"
                 ],
                 "connections": [],
+                "entry_type": null,
                 "id": "d4ed5629bc6646eba8441846c2646a4f",
                 "identifiers": [
                     [
@@ -192,6 +203,7 @@
                         "18:fe:34:e0:c1:2a"
                     ]
                 ],
+                "entry_type": null,
                 "id": "c7008817f17e452c8109a00664c03767",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -199,26 +211,6 @@
                 "name": "childa",
                 "name_by_user": null,
                 "sw_version": "1.15.0-dev (Mar 17 2020, 20:59:21)",
-                "via_device_id": null
-            },
-            {
-                "area_id": null,
-                "config_entries": [
-                    "17eeecbb996c4f1db1475605f9bb8c90"
-                ],
-                "connections": [],
-                "id": "6cbfa868b2754cc4b0f6c4d6fdfe6b46",
-                "identifiers": [
-                    [
-                        "ipp",
-                        "16a65700-007c-1000-bb49-30cda7c782c7"
-                    ]
-                ],
-                "manufacturer": "Samsung",
-                "model": "M2070 Series",
-                "name": "Samsung M2070 Series",
-                "name_by_user": null,
-                "sw_version": null,
                 "via_device_id": null
             },
             {
@@ -232,6 +224,7 @@
                         "2c:f4:32:14:f3:ab"
                     ]
                 ],
+                "entry_type": null,
                 "id": "6649548c27aa4d72908e8d0177986f4c",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -252,6 +245,7 @@
                         "4c:11:ae:0c:44:7f"
                     ]
                 ],
+                "entry_type": null,
                 "id": "dbaed7138968428c963f78e7fbf75ca9",
                 "identifiers": [],
                 "manufacturer": "espressif",
@@ -272,6 +266,7 @@
                         "uuid:upnp-InternetGatewayDevice-74:DA:88:0D:70:1C0"
                     ]
                 ],
+                "entry_type": null,
                 "id": "48371bbc424b49fb8598ce2095bc1614",
                 "identifiers": [
                     [
@@ -297,13 +292,119 @@
                         "98:f4:ab:c9:51:32"
                     ]
                 ],
+                "entry_type": null,
                 "id": "158580f36373420ba4238e14b95e5ef8",
                 "identifiers": [],
                 "manufacturer": "espressif",
                 "model": "PLATFORMIO_ESP01_1M",
                 "name": "bedroom_rgb",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (May 26 2020, 15:33:26)",
+                "sw_version": "1.15.0-dev (Jun  8 2020, 22:06:12)",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "9dc8e50e9d1a4c5ca017abbe39321026"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "2785b843277748859ce473c289d88d4e",
+                "identifiers": [
+                    [
+                        "huawei_lte",
+                        "YQD7S18502000441"
+                    ]
+                ],
+                "manufacturer": "Huawei",
+                "model": "B525s-23a",
+                "name": "B525s-23a",
+                "name_by_user": null,
+                "sw_version": "11.187.61.00.1217",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "729872b7a4c04ad7aa7a37ba69eedeaf"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "a1391c77b3fa4791a944f29b19d4e8db",
+                "identifiers": [
+                    [
+                        "nut",
+                        "729872b7a4c04ad7aa7a37ba69eedeaf"
+                    ]
+                ],
+                "manufacturer": "EATON",
+                "model": "5E 850i",
+                "name": "Eaton",
+                "name_by_user": null,
+                "sw_version": "03.08.0018",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2a6499265d0347fe869e0fd3f92413c1"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "a8e490ac558c494b89af127e7d3e569f",
+                "identifiers": [
+                    [
+                        "nut",
+                        "2a6499265d0347fe869e0fd3f92413c1"
+                    ]
+                ],
+                "manufacturer": "EATON",
+                "model": "5E 850i",
+                "name": "Eaton",
+                "name_by_user": null,
+                "sw_version": "03.08.0018",
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "45e7241e4a674992ad423ac9e1776841"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "ec1d6d364698496594fb362272ccd654",
+                "identifiers": [
+                    [
+                        "solaredge_modbus",
+                        "solaredge"
+                    ]
+                ],
+                "manufacturer": "Solaredge",
+                "model": null,
+                "name": "solaredge",
+                "name_by_user": null,
+                "sw_version": null,
+                "via_device_id": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "76b2e0824eba483288576ec074c460dc"
+                ],
+                "connections": [],
+                "entry_type": null,
+                "id": "4dc48e95c2634b2b8b8b4191e21c6f41",
+                "identifiers": [
+                    [
+                        "ipp",
+                        "16a65700-007c-1000-bb49-30cda7c782c7"
+                    ]
+                ],
+                "manufacturer": "Samsung",
+                "model": "M2070 Series",
+                "name": "Samsung M2070 Series",
+                "name_by_user": null,
+                "sw_version": null,
                 "via_device_id": null
             }
         ]

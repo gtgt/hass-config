@@ -1,0 +1,53 @@
+{
+    "data": {
+        "archived": false,
+        "authors": [],
+        "category": "plugin",
+        "config_flow": false,
+        "content_in_root": false,
+        "country": [],
+        "default_branch": "master",
+        "description": "This is a companion card for Google Keep sensor. It displays notes downloaded by integration in a friendly way, similar to Google Keep app.",
+        "domain": null,
+        "domains": [],
+        "downloads": 0,
+        "file_name": "google-keep-card.js",
+        "filename": "",
+        "first_install": false,
+        "fork": false,
+        "full_name": "PiotrMachowski/lovelace-google-keep-card",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "199546187",
+        "installed": true,
+        "installed_commit": "dd03d3f",
+        "installed_version": "v1.0.1",
+        "iot_class": null,
+        "last_commit": "dd03d3f",
+        "last_updated": "2019-10-31T14:12:19Z",
+        "last_version": "v1.0.1",
+        "manifest_name": null,
+        "new": false,
+        "open_issues": 1,
+        "persistent_directory": null,
+        "published_tags": [
+            "v1.0.1",
+            "v1.0.0"
+        ],
+        "pushed_at": "2019-10-31T14:12:19",
+        "releases": true,
+        "render_readme": false,
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 13,
+        "topics": [
+            "home-assistant",
+            "lovelace-card"
+        ],
+        "zip_release": false
+    },
+    "key": "hacs/199546187.hacs",
+    "version": "6"
+}

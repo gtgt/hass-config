@@ -1,4 +1,4 @@
   - platform: xiaomi_miio
     name: roberta
-    host: rockrobo.lan
+    host: roberta.lan
     token: !secret roberta_token

@@ -28,16 +28,17 @@ zeroconf:
 discovery:
   ignore:
     - yeelight
+    - daikin
 
 logger:
   default: warn
   logs:
-    custom_components.programmable_thermostat.climate: debug
+    custom_components.programmable_thermostat.climate: warning
     homeassistant.components.cloud.google_config: error
     satel_integra.satel_integra: error
     homeassistant.components.binary_sensor: error
-    #homeassistant.components.modbus: debug
-    #pymodbus.client: debug
+    homeassistant.components.modbus: info
+    pymodbus.client: info
   
 http:
   ip_ban_enabled: True
@@ -104,18 +105,7 @@ shopping_list:
 # Track the sun
 sun:
 
-yeelight:
-  devices:
-    192.168.1.41:
-      name: dining_table
-      #model: ceiling13
-      nightlight_switch_type: light
-      save_on_change: true
-      transition: 350
-
-daikin:
-  hosts:
-    - 192.168.1.8
+saver:
 
 modbus:
   name: apb
@@ -139,12 +129,27 @@ media_player:
     username: !secret kodi_username
     password: !secret kodi_password
     
-tuya:
-  username: !secret tuya_username
-  password: !secret tuya_password
-  country_code: 36
-  platform: smart_life
+#tuya:
+#  username: !secret tuya_username
+#  password: !secret tuya_password
+#  country_code: 36
+#  platform: smart_life
 
+yeelight:
+  devices:
+    192.168.1.41:
+      name: dining_table
+      #model: ceiling13
+      nightlight_switch_type: light
+      save_on_change: true
+      transition: 350
+
+huawei_lte:
+  - url: http://192.168.8.1/
+    username: !secret huawei_username
+    password: !secret huawei_password
+    notify:
+      recipient: !secret huawei_notify_recipient
 
 media_extractor:
 
@@ -165,11 +170,13 @@ binary_sensor: !include_dir_merge_list integrations/binary_sensor
 sensor: !include_dir_merge_list integrations/sensor
 switch: !include_dir_merge_list integrations/switch
 camera: !include_dir_merge_list integrations/camera
+
 #input_boolean: !include_dir_merge_named integrations/input_boolean
 #input_datetime: !include_dir_merge_named integrations/input_datetime
 input_number: !include_dir_merge_named integrations/input_number
 input_select: !include_dir_merge_named integrations/input_select
 #input_text: !include_dir_merge_named integrations/input_text
+utility_meter: !include_dir_merge_named integrations/utility_meter
 
 #group: !include groups.yaml
 person: !include person.yaml
@@ -204,6 +211,8 @@ lovelace:
     - url: /hacsfiles/lovelace-slider-entity-row/slider-entity-row.js
       type: module
     - url: /hacsfiles/rgb-light-card/card.js
+      type: module
+    - url: /hacsfiles/power-wheel-card/power-wheel-card.js?v=1
       type: module
     #- url: /hacsfiles/lovelace-google-keep-card/google-keep-card.js
     #  type: module

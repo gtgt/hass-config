@@ -2,7 +2,7 @@
     "data": {
         "alexa_enabled": false,
         "alexa_entity_configs": {},
-        "cloud_user": "bb4e9201fafa4db38a4f0c170a37ad1f",
+        "cloud_user": null,
         "cloudhooks": {
             "f97dd8fcce8df16e2a3140e8570e1d50c2f36ceea7694c9e1100f88ad7a46600": {
                 "cloudhook_id": "e3d47af736f140bc8c71e3a979b126ad",

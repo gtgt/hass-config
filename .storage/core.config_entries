@@ -29,13 +29,13 @@
                     "disable_new_entities": false
                 },
                 "title": "192.168.1.8",
-                "unique_id": null,
+                "unique_id": "A0CC2B6BDF3B",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "ac_relay.lan",
+                    "host": "192.168.1.137",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -47,13 +47,13 @@
                     "disable_new_entities": false
                 },
                 "title": "ac_relay",
-                "unique_id": null,
+                "unique_id": "ac_relay",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "study.local",
+                    "host": "192.168.1.142",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -65,13 +65,13 @@
                     "disable_new_entities": false
                 },
                 "title": "study",
-                "unique_id": null,
+                "unique_id": "study",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "childb.local",
+                    "host": "192.168.1.174",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -83,13 +83,13 @@
                     "disable_new_entities": false
                 },
                 "title": "childb",
-                "unique_id": null,
+                "unique_id": "childb",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "childa.lan",
+                    "host": "192.168.1.180",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -101,13 +101,13 @@
                     "disable_new_entities": false
                 },
                 "title": "childa",
-                "unique_id": null,
+                "unique_id": "childa",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "bedroom.lan",
+                    "host": "192.168.1.187",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -119,13 +119,13 @@
                     "disable_new_entities": false
                 },
                 "title": "bedroom",
-                "unique_id": null,
+                "unique_id": "bedroom",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "ac_sensor.lan",
+                    "host": "192.168.1.188",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -137,7 +137,7 @@
                     "disable_new_entities": false
                 },
                 "title": "ac_sensor",
-                "unique_id": null,
+                "unique_id": "ac_sensor",
                 "version": 1
             },
             {
@@ -219,7 +219,7 @@
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "energy.local",
+                    "host": "192.168.1.127",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -231,7 +231,7 @@
                     "disable_new_entities": false
                 },
                 "title": "energy",
-                "unique_id": null,
+                "unique_id": "energy",
                 "version": 1
             },
             {
@@ -247,13 +247,13 @@
                     "disable_new_entities": false
                 },
                 "title": "UPnP/IGD",
-                "unique_id": null,
+                "unique_id": "uuid:upnp-InternetGatewayDevice-74:DA:88:0D:70:1C0::urn:schemas-upnp-org:device:InternetGatewayDevice:1",
                 "version": 1
             },
             {
                 "connection_class": "local_push",
                 "data": {
-                    "host": "bedroom_rgb.local",
+                    "host": "192.168.1.181",
                     "password": "Qwe123Asd",
                     "port": 6053
                 },
@@ -265,7 +265,210 @@
                     "disable_new_entities": false
                 },
                 "title": "bedroom_rgb",
+                "unique_id": "bedroom_rgb",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "password": "jah56789S",
+                    "password_from_yaml": "jah56789S",
+                    "url": "http://192.168.8.1/",
+                    "username": "admin",
+                    "username_from_yaml": "admin"
+                },
+                "domain": "huawei_lte",
+                "entry_id": "9dc8e50e9d1a4c5ca017abbe39321026",
+                "options": {
+                    "recipient": [
+                        "36704522992"
+                    ],
+                    "recipient_from_yaml": [
+                        "36704522992"
+                    ]
+                },
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "B525s-23a",
                 "unique_id": null,
+                "version": 2
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.8",
+                    "key": null,
+                    "mac": "A0CC2B6BDF3B",
+                    "password": null,
+                    "uuid": null
+                },
+                "domain": "daikin",
+                "entry_id": "a4cdbe0107cc4d0b96285d9ef0a0ca4b",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "192.168.1.8",
+                "unique_id": "A0CC2B6BDF3B",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "localhost",
+                    "password": "JtKPY!6ctXsU",
+                    "port": 3493,
+                    "resources": [
+                        "ups.timer.shutdown",
+                        "ups.status.display",
+                        "ups.status",
+                        "ups.start.battery",
+                        "ups.power.nominal",
+                        "ups.load",
+                        "ups.delay.shutdown",
+                        "ups.beeper.status",
+                        "output.voltage.nominal",
+                        "output.voltage",
+                        "output.frequency.nominal",
+                        "output.frequency",
+                        "input.voltage",
+                        "battery.type",
+                        "battery.runtime",
+                        "battery.charge"
+                    ],
+                    "username": "admin"
+                },
+                "domain": "nut",
+                "entry_id": "729872b7a4c04ad7aa7a37ba69eedeaf",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "localhost:3493",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "40817795-nut",
+                    "name": "UPS",
+                    "password": "JtKPY!6ctXsU",
+                    "platform": "nut",
+                    "port": 3493,
+                    "resources": [
+                        "battery.charge",
+                        "battery.runtime",
+                        "ups.load",
+                        "ups.status"
+                    ],
+                    "username": "admin"
+                },
+                "domain": "nut",
+                "entry_id": "2a6499265d0347fe869e0fd3f92413c1",
+                "options": {},
+                "source": "import",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "40817795-nut:3493",
+                "unique_id": null,
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "solaredge.lan",
+                    "name": "solaredge",
+                    "port": 502,
+                    "scan_interval": 10
+                },
+                "domain": "solaredge_modbus",
+                "entry_id": "45e7241e4a674992ad423ac9e1776841",
+                "options": {},
+                "source": "user",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "solaredge",
+                "unique_id": "solaredge.lan",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "base_path": "/ipp/print",
+                    "host": "192.168.1.7",
+                    "name": "Samsung M2070",
+                    "port": 631,
+                    "ssl": false,
+                    "uuid": "16a65700-007c-1000-bb49-30cda7c782c7",
+                    "verify_ssl": false
+                },
+                "domain": "ipp",
+                "entry_id": "76b2e0824eba483288576ec074c460dc",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Samsung M2070",
+                "unique_id": "16a65700-007c-1000-bb49-30cda7c782c7",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.10",
+                    "name": "Konica Minolta Bizhub C364 @ geretamas"
+                },
+                "domain": "ipp",
+                "entry_id": "02a9dc984c404d6f833bee371edfa461",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "8a044b4b-ad2f-3af8-62c3-0d4e81c59126",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.10",
+                    "name": "Thermal printer @ geretamas"
+                },
+                "domain": "ipp",
+                "entry_id": "6e36d29133ad42c98fda5da34a33c8d6",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "044bc073-962f-3e44-597f-1500aeabf51f",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.10",
+                    "name": "Samsung CLX-3160 @ geretamas"
+                },
+                "domain": "ipp",
+                "entry_id": "be6c3cb437c04803bcccca13d09ab1f3",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "63d440b8-3b22-37ac-6566-f621c50d6aeb",
                 "version": 1
             }
         ]
