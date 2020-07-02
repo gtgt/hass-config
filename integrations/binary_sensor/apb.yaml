@@ -1,5 +1,5 @@
   - platform: modbus
-    scan_interval: 1
+    scan_interval: 10
     inputs:
       - name: APB_I0
         hub: apb
@@ -114,7 +114,7 @@
         hub: apb
         slave: 1
         address: 284
-#      - name: APB_I1D
-#        hub: apb
-#        slave: 1
-#        address: 285
+      - name: APB_I1D
+        hub: apb
+        slave: 1
+        address: 285

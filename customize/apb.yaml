@@ -37,7 +37,7 @@
   switch.apb_m0:
     friendly_name: "Világítás ki"
     icon: "mdi:lightbulb-off"
-  switch.apb_m0:
+  switch.apb_m1:
     friendly_name: "Külső Világítás"
     icon: "mdi:vanity-light"
 
@@ -97,5 +97,5 @@
     friendly_name: "Riasztó mozgás"
   binary_sensor.apb_i1c:
     friendly_name: "Riasztó riasztás"
-#  binary_sensor.apb_i1d:
-#    friendly_name: "Világítás ki"
+  binary_sensor.apb_i1d:
+    friendly_name: "Világítás ki"

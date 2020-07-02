@@ -1,4 +1,4 @@
-  - id: ac_terget_temp_restore
+  - alias: ac_terget_temp_restore
     initial_state: on
     trigger:
       - platform: homeassistant
@@ -10,28 +10,28 @@
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_study
-                temperature: "{{ climate_ac_study_temperature | int }}"
+                temperature: "{{ climate_ac_study_attr_temperature | int }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_childa
-                temperature: "{{ climate_ac_childa_temperature | int }}"
+                temperature: "{{ climate_ac_childa_attr_temperature | int }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_childb
-                temperature: "{{ climate_ac_childb_temperature | int }}"
+                temperature: "{{ climate_ac_childb_attr_temperature | int }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_bedroom
-                temperature: "{{ climate_ac_bedroom_temperature | int }}"
+                temperature: "{{ climate_ac_bedroom_attr_temperature | int }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_kitchen
-                temperature: "{{ climate_ac_kitchen_temperature | int }}"
+                temperature: "{{ climate_ac_kitchen_attr_temperature | int }}"
       - service: automation.turn_on
         data:
           entity_id: automation.ac_terget_temp_save
 
-  - id: ac_terget_temp_save
+  - alias: ac_terget_temp_save
     initial_state: off
     trigger:
       - platform: homeassistant

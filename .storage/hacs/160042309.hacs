@@ -26,11 +26,11 @@
         "installed_version": "v0.1.1",
         "iot_class": null,
         "last_commit": "cc4eafd",
-        "last_updated": "2020-05-18T15:15:25Z",
+        "last_updated": "2020-06-25T11:05:10Z",
         "last_version": "v0.1.1",
         "manifest_name": null,
         "new": false,
-        "open_issues": 8,
+        "open_issues": 9,
         "persistent_directory": null,
         "published_tags": [
             "v0.1.1",
@@ -39,12 +39,12 @@
             "v0.0.15",
             "v0.0.14"
         ],
-        "pushed_at": "2020-05-18T15:15:25",
+        "pushed_at": "2020-06-25T11:05:10",
         "releases": true,
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 50,
+        "stargazers_count": 58,
         "topics": [
             "custom-card",
             "energy",

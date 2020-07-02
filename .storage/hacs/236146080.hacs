@@ -34,7 +34,7 @@
         "last_version": "V1.1.0",
         "manifest_name": "SolarEdge Modbus",
         "new": false,
-        "open_issues": 0,
+        "open_issues": 1,
         "persistent_directory": null,
         "published_tags": [
             "V1.1.0",
@@ -45,7 +45,7 @@
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 7,
+        "stargazers_count": 8,
         "topics": [
             "hassio",
             "home-assistant",

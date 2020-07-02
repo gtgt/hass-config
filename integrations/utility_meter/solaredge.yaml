@@ -10,3 +10,6 @@
     solar_production_monthly:
       source: sensor.solaredge_ac_energy_kwh
       cycle: monthly
+    solar_production_yearly:
+      source: sensor.solaredge_ac_energy_kwh
+      cycle: yearly

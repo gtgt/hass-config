@@ -11,7 +11,7 @@
          {% endif %}
        speed_template: "{{state_attr('climate.ac', 'fan_mode')}}"
        oscillating_template: >
-         false
+         False
        speeds:
         - '1'
         - '2'

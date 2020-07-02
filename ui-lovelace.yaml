@@ -57,6 +57,8 @@ views:
             colors:
               - rgb_color: [255, 255, 255]
                 icon_color: '#FEFEFE'
+              - rgb_color: [0, 0, 255]
+                icon_color: '#0000FF'
               - rgb_color: [51, 102, 204]
                 icon_color: '#3366CC'
               - rgb_color: [0, 255, 255]
@@ -103,6 +105,8 @@ views:
             colors:
               - rgb_color: [255, 255, 255]
                 icon_color: '#FEFEFE'
+              - rgb_color: [0, 0, 255]
+                icon_color: '#0000FF'
               - rgb_color: [51, 102, 204]
                 icon_color: '#3366CC'
               - rgb_color: [0, 255, 255]
@@ -468,6 +472,9 @@ views:
         - sensor.solar_production_daily
         - sensor.solar_production_weekly
         - sensor.solar_production_monthly
+        - sensor.solaredge_ac_energy_kwh
+        - sensor.solaredge_ac_current
+        - sensor.solaredge_ac_power
       - type: vertical-stack
         title: UPS
         cards:

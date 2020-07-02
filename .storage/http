@@ -1,12 +1,15 @@
 {
     "data": {
+        "base_url": "https://gt.home.kg",
         "cors_allowed_origins": [
             "https://cast.home-assistant.io"
         ],
         "ip_ban_enabled": true,
         "login_attempts_threshold": 5,
         "server_host": "0.0.0.0",
-        "server_port": 8123,
+        "server_port": 443,
+        "ssl_certificate": "/ssl/fullchain.pem",
+        "ssl_key": "/ssl/privkey.pem",
         "ssl_profile": "modern"
     },
     "key": "http",

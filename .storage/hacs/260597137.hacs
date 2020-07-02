@@ -30,7 +30,7 @@
         "last_version": "v1.1.2",
         "manifest_name": null,
         "new": false,
-        "open_issues": 4,
+        "open_issues": 5,
         "persistent_directory": null,
         "published_tags": [
             "v1.1.2",
@@ -42,7 +42,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 4,
+        "stargazers_count": 5,
         "topics": [],
         "zip_release": false
     },

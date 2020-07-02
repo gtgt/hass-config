@@ -46,7 +46,7 @@ time:
 sensor:
   - platform: dht
     model: DHT11
-    pin: D5
+    pin: GPIO14
     update_interval: 15s
     temperature:
       id: temp

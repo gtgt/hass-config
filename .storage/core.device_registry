@@ -126,7 +126,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "bedroom",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Dec 20 2019, 18:41:07)",
+                "sw_version": "1.15.0-dev (Jun 30 2020, 10:31:36)",
                 "via_device_id": null
             },
             {
@@ -195,7 +195,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "c9d4debac02a43ba996b19c3bf6e4963"
+                    "c9d4debac02a43ba996b19c3bf6e4963",
+                    "bd54e0399ed349a4b05fe3cf1f35ebb4"
                 ],
                 "connections": [
                     [
@@ -284,6 +285,7 @@
             {
                 "area_id": null,
                 "config_entries": [
+                    "c9d4debac02a43ba996b19c3bf6e4963",
                     "bd54e0399ed349a4b05fe3cf1f35ebb4"
                 ],
                 "connections": [
@@ -299,7 +301,7 @@
                 "model": "PLATFORMIO_ESP01_1M",
                 "name": "bedroom_rgb",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Jun  8 2020, 22:06:12)",
+                "sw_version": "1.15.0-dev (Jun 19 2020, 22:38:14)",
                 "via_device_id": null
             },
             {

@@ -4,3 +4,7 @@ home-assistant*
 custom_components/hacs
 __pycache__
 .cloud
+.pip_progress
+.storage/auth*
+.storage/cloud
+.storage/mobile_app

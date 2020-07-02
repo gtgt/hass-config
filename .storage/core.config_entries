@@ -427,7 +427,7 @@
                     "name": "Konica Minolta Bizhub C364 @ geretamas"
                 },
                 "domain": "ipp",
-                "entry_id": "02a9dc984c404d6f833bee371edfa461",
+                "entry_id": "9adfac8c122b480d9f0a02d18366bd4d",
                 "options": {},
                 "source": "ignore",
                 "system_options": {
@@ -441,27 +441,10 @@
                 "connection_class": "local_poll",
                 "data": {
                     "host": "192.168.1.10",
-                    "name": "Thermal printer @ geretamas"
-                },
-                "domain": "ipp",
-                "entry_id": "6e36d29133ad42c98fda5da34a33c8d6",
-                "options": {},
-                "source": "ignore",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Ignored",
-                "unique_id": "044bc073-962f-3e44-597f-1500aeabf51f",
-                "version": 1
-            },
-            {
-                "connection_class": "local_poll",
-                "data": {
-                    "host": "192.168.1.10",
                     "name": "Samsung CLX-3160 @ geretamas"
                 },
                 "domain": "ipp",
-                "entry_id": "be6c3cb437c04803bcccca13d09ab1f3",
+                "entry_id": "169904c2477c4998be95b142075859db",
                 "options": {},
                 "source": "ignore",
                 "system_options": {
@@ -469,6 +452,23 @@
                 },
                 "title": "Ignored",
                 "unique_id": "63d440b8-3b22-37ac-6566-f621c50d6aeb",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.10",
+                    "name": "Thermal printer @ geretamas"
+                },
+                "domain": "ipp",
+                "entry_id": "b533086854e443619b1a8a9cff5b31b9",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "044bc073-962f-3e44-597f-1500aeabf51f",
                 "version": 1
             }
         ]
