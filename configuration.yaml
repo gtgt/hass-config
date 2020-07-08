@@ -37,8 +37,10 @@ logger:
     homeassistant.components.cloud.google_config: error
     satel_integra.satel_integra: error
     homeassistant.components.binary_sensor: error
-    homeassistant.components.modbus: info
-    pymodbus.client: info
+    homeassistant.components.ipp: fatal
+    homeassistant.components.nut: fatal
+#    homeassistant.components.modbus: info
+#    pymodbus.client: info
   
 http:
   server_port: 443
@@ -50,7 +52,7 @@ http:
 
 python_script:
 
-map:
+#map:
 
 mobile_app:
 
@@ -194,28 +196,4 @@ lovelace:
   #    icon: mdi:view-dashboard-outline
   #    show_in_sidebar: true
   #    filename: ui-lovelace.yaml
-  resources:
-    - url: /local/css/overrides.css
-      type: css
-    - url: /hacsfiles/custom-header/custom-header.js # /community_plugin/custom-header/custom-header.js
-      type: module
-    - url: /hacsfiles/lovelace-card-mod/card-mod.js
-      type: module
-    - url: /hacsfiles/lovelace-layout-card/layout-card.js
-      type: module
-    - url: /hacsfiles/lovelace-battery-entity/battery-entity.js
-      type: module
-    - url: /hacsfiles/lovelace-xiaomi-vacuum-card/xiaomi-vacuum-card.js
-      type: module
-    - url: /hacsfiles/weather-card/weather-card.js
-      type: module
-    - url: /hacsfiles/lovelace-thermostat-card/main.js
-      type: module
-    - url: /hacsfiles/lovelace-slider-entity-row/slider-entity-row.js
-      type: module
-    - url: /hacsfiles/rgb-light-card/card.js
-      type: module
-    - url: /hacsfiles/power-wheel-card/power-wheel-card.js?v=1
-      type: module
-    #- url: /hacsfiles/lovelace-google-keep-card/google-keep-card.js
-    #  type: module
+  resources: !include ui-resources.yaml

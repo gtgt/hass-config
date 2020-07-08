@@ -423,7 +423,7 @@
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "host": "192.168.1.10",
+                    "host": "192.168.1.138",
                     "name": "Konica Minolta Bizhub C364 @ geretamas"
                 },
                 "domain": "ipp",
@@ -440,7 +440,7 @@
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "host": "192.168.1.10",
+                    "host": "192.168.1.138",
                     "name": "Samsung CLX-3160 @ geretamas"
                 },
                 "domain": "ipp",
@@ -457,7 +457,7 @@
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "host": "192.168.1.10",
+                    "host": "192.168.1.138",
                     "name": "Thermal printer @ geretamas"
                 },
                 "domain": "ipp",

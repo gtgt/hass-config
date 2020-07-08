@@ -60,7 +60,7 @@
                     ],
                     "target_temp_step": 1
                 },
-                "config_entry_id": "43f08b7d3100453da1de05ca95e831b8",
+                "config_entry_id": "a4cdbe0107cc4d0b96285d9ef0a0ca4b",
                 "device_class": null,
                 "device_id": "fd301bb8ae1f4dfd9ba41bb6ce001ac9",
                 "disabled_by": null,
@@ -76,7 +76,7 @@
             },
             {
                 "capabilities": {},
-                "config_entry_id": "43f08b7d3100453da1de05ca95e831b8",
+                "config_entry_id": "a4cdbe0107cc4d0b96285d9ef0a0ca4b",
                 "device_class": "temperature",
                 "device_id": "fd301bb8ae1f4dfd9ba41bb6ce001ac9",
                 "disabled_by": null,

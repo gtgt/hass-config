@@ -32,7 +32,7 @@
         "last_version": "1.6.0",
         "manifest_name": null,
         "new": false,
-        "open_issues": 0,
+        "open_issues": 1,
         "persistent_directory": null,
         "published_tags": [
             "1.6.0",
@@ -46,7 +46,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 72,
+        "stargazers_count": 73,
         "topics": [
             "home-assistant",
             "lovelace",
