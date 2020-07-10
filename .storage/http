@@ -1,6 +1,5 @@
 {
     "data": {
-        "base_url": "https://gt.home.kg",
         "cors_allowed_origins": [
             "https://cast.home-assistant.io"
         ],

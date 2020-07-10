@@ -401,29 +401,7 @@
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "base_path": "/ipp/print",
-                    "host": "192.168.1.7",
-                    "name": "Samsung M2070",
-                    "port": 631,
-                    "ssl": false,
-                    "uuid": "16a65700-007c-1000-bb49-30cda7c782c7",
-                    "verify_ssl": false
-                },
-                "domain": "ipp",
-                "entry_id": "76b2e0824eba483288576ec074c460dc",
-                "options": {},
-                "source": "zeroconf",
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "title": "Samsung M2070",
-                "unique_id": "16a65700-007c-1000-bb49-30cda7c782c7",
-                "version": 1
-            },
-            {
-                "connection_class": "local_poll",
-                "data": {
-                    "host": "192.168.1.138",
+                    "host": "192.168.1.10",
                     "name": "Konica Minolta Bizhub C364 @ geretamas"
                 },
                 "domain": "ipp",
@@ -440,7 +418,7 @@
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "host": "192.168.1.138",
+                    "host": "192.168.1.10",
                     "name": "Samsung CLX-3160 @ geretamas"
                 },
                 "domain": "ipp",
@@ -457,7 +435,7 @@
             {
                 "connection_class": "local_poll",
                 "data": {
-                    "host": "192.168.1.138",
+                    "host": "192.168.1.10",
                     "name": "Thermal printer @ geretamas"
                 },
                 "domain": "ipp",
@@ -469,6 +447,59 @@
                 },
                 "title": "Ignored",
                 "unique_id": "044bc073-962f-3e44-597f-1500aeabf51f",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "192.168.1.150",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "64f96f02d456421ab611c069c497c839",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "garden",
+                "unique_id": "garden",
+                "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "host": "192.168.1.173",
+                    "password": "Qwe123Asd",
+                    "port": 6053
+                },
+                "domain": "esphome",
+                "entry_id": "ab98349bfa814bb299fa3214a6ef7a9b",
+                "options": {},
+                "source": "zeroconf",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "controller1",
+                "unique_id": "controller1",
+                "version": 1
+            },
+            {
+                "connection_class": "local_poll",
+                "data": {
+                    "host": "192.168.1.7",
+                    "name": "printer1"
+                },
+                "domain": "ipp",
+                "entry_id": "f94756a3263d4146a819f75cb51f6281",
+                "options": {},
+                "source": "ignore",
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "title": "Ignored",
+                "unique_id": "16a65700-007c-1000-bb49-30cda7c782c7",
                 "version": 1
             }
         ]

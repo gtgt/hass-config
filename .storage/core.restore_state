@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -10,22 +10,22 @@
                     "id": "aithuShiex4UTh4A",
                     "latitude": 47.525998,
                     "longitude": 19.064161,
-                    "source": "person.gt",
+                    "source": "device_tracker.mi_note_2",
                     "user_id": "5a0a633ef7644660a34bd271371786aa"
                 },
                 "context": {
-                    "id": "544d37be672843ebbc7da1ea9590935f",
+                    "id": "3bac5139f1944931864c0346f3945568",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.gt",
-                "last_changed": "2020-07-08T14:11:20.561508+00:00",
-                "last_updated": "2020-07-08T14:11:20.561508+00:00",
+                "last_changed": "2020-07-10T01:41:44.224940+00:00",
+                "last_updated": "2020-07-10T01:46:59.877842+00:00",
                 "state": "not_home"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -34,28 +34,28 @@
                     "id": "gsm",
                     "latitude": 47.6227596,
                     "longitude": 18.9187824,
-                    "source": "person.gsm",
+                    "source": "device_tracker.mi_9_lite",
                     "user_id": "1dedaecfcb6546b7a5acc4f80b5ac32c"
                 },
                 "context": {
-                    "id": "49c88aba8910407fb264ffe7e4e1193c",
+                    "id": "c5b70446b19545c2bfd73ce8c2b972f7",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "person.gsm",
-                "last_changed": "2020-07-08T14:11:20.562673+00:00",
-                "last_updated": "2020-07-08T14:11:20.562673+00:00",
+                "last_changed": "2020-07-10T01:41:44.225869+00:00",
+                "last_updated": "2020-07-10T01:46:59.895880+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "entities": {
                         "climate.ac_bedroom": {
                             "attributes": {
-                                "current_temperature": 22.7,
+                                "current_temperature": 23.6,
                                 "friendly_name": "H\u00e1l\u00f3",
                                 "hvac_action": "off",
                                 "hvac_modes": [
@@ -67,21 +67,21 @@
                                 "max_temp": 27.0,
                                 "min_temp": 21.0,
                                 "supported_features": 1,
-                                "temperature": 23.0
+                                "temperature": 25.0
                             },
                             "context": {
-                                "id": "baeb02fb97794037b808824e789a4f0c",
+                                "id": "92f684951d44485896b9a66a69671aa1",
                                 "parent_id": null,
                                 "user_id": null
                             },
                             "entity_id": "climate.ac_bedroom",
-                            "last_changed": "2020-07-07T18:05:52.531791+00:00",
-                            "last_updated": "2020-07-08T11:27:28.258838+00:00",
+                            "last_changed": "2020-07-10T01:46:13.155700+00:00",
+                            "last_updated": "2020-07-10T23:02:17.646578+00:00",
                             "state": "cool"
                         },
                         "climate.ac_childa": {
                             "attributes": {
-                                "current_temperature": 25.6,
+                                "current_temperature": 28.0,
                                 "friendly_name": "M\u00e1t\u00e9",
                                 "hvac_action": "off",
                                 "hvac_modes": [
@@ -96,18 +96,18 @@
                                 "temperature": 25.0
                             },
                             "context": {
-                                "id": "e11afb845e2b446cbcbf2040896169b6",
+                                "id": "142ab188c05a4a17ad693516206971d1",
                                 "parent_id": null,
                                 "user_id": null
                             },
                             "entity_id": "climate.ac_childa",
-                            "last_changed": "2020-07-07T18:05:52.528564+00:00",
-                            "last_updated": "2020-07-08T12:54:44.567177+00:00",
+                            "last_changed": "2020-07-10T01:46:13.140351+00:00",
+                            "last_updated": "2020-07-10T22:17:45.472870+00:00",
                             "state": "off"
                         },
                         "climate.ac_childb": {
                             "attributes": {
-                                "current_temperature": 24.1,
+                                "current_temperature": 25.2,
                                 "friendly_name": "Mil\u00e1n",
                                 "hvac_action": "off",
                                 "hvac_modes": [
@@ -122,18 +122,18 @@
                                 "temperature": 22.0
                             },
                             "context": {
-                                "id": "d1fb3ef78a8444a6a234e511383f6d8c",
+                                "id": "6abd5a84d255473bbccd20cb1d5ea333",
                                 "parent_id": null,
                                 "user_id": null
                             },
                             "entity_id": "climate.ac_childb",
-                            "last_changed": "2020-07-07T18:05:52.530186+00:00",
-                            "last_updated": "2020-07-08T14:09:40.036467+00:00",
+                            "last_changed": "2020-07-10T01:46:13.141897+00:00",
+                            "last_updated": "2020-07-10T23:27:25.416548+00:00",
                             "state": "off"
                         },
                         "climate.ac_kitchen": {
                             "attributes": {
-                                "current_temperature": 22.1,
+                                "current_temperature": 24.7,
                                 "friendly_name": "Konyha",
                                 "hvac_action": "off",
                                 "hvac_modes": [
@@ -148,18 +148,18 @@
                                 "temperature": 23.0
                             },
                             "context": {
-                                "id": "98bc95e2cb41414fb516bb2b3ab32032",
+                                "id": "32ff32d84e8644208864fc551d675d0d",
                                 "parent_id": null,
                                 "user_id": null
                             },
                             "entity_id": "climate.ac_kitchen",
-                            "last_changed": "2020-07-07T18:05:52.533510+00:00",
-                            "last_updated": "2020-07-08T14:10:35.437508+00:00",
-                            "state": "cool"
+                            "last_changed": "2020-07-10T01:46:13.157811+00:00",
+                            "last_updated": "2020-07-10T23:32:50.120452+00:00",
+                            "state": "off"
                         },
                         "climate.ac_study": {
                             "attributes": {
-                                "current_temperature": 23.4,
+                                "current_temperature": 25.9,
                                 "friendly_name": "Dolgoz\u00f3",
                                 "hvac_action": "cooling",
                                 "hvac_modes": [
@@ -174,13 +174,13 @@
                                 "temperature": 23.0
                             },
                             "context": {
-                                "id": "045f406907be40ed8fe81a310c32cc35",
+                                "id": "f9a93e9b980d4014af5e8f91e83fe604",
                                 "parent_id": null,
                                 "user_id": null
                             },
                             "entity_id": "climate.ac_study",
-                            "last_changed": "2020-07-07T18:05:52.526993+00:00",
-                            "last_updated": "2020-07-08T14:08:44.190776+00:00",
+                            "last_changed": "2020-07-10T01:46:13.132836+00:00",
+                            "last_updated": "2020-07-10T23:32:46.766268+00:00",
                             "state": "cool"
                         }
                     },
@@ -188,18 +188,18 @@
                     "variables": {}
                 },
                 "context": {
-                    "id": "27d556f0a49a498b87caf7391d39a2d8",
+                    "id": "a973257874e44cdea8327f9b8921bbe4",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "saver.saver",
-                "last_changed": "2020-07-08T14:11:22.049526+00:00",
-                "last_updated": "2020-07-08T14:11:22.049526+00:00",
+                "last_changed": "2020-07-10T01:41:45.630388+00:00",
+                "last_updated": "2020-07-10T01:41:45.630388+00:00",
                 "state": "5"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -212,18 +212,42 @@
                     ]
                 },
                 "context": {
-                    "id": "53af03c0f6fc49c2bf5ebf6e68fb2189",
+                    "id": "2831cafc47cc4688aea6fee4dae832ae",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "input_select.pufi_mode",
-                "last_changed": "2020-07-08T14:11:22.052511+00:00",
-                "last_updated": "2020-07-08T14:11:22.052511+00:00",
+                "last_changed": "2020-07-10T01:41:45.631394+00:00",
+                "last_updated": "2020-07-10T01:41:45.631394+00:00",
                 "state": "Auto"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
+            "state": {
+                "attributes": {
+                    "editable": false,
+                    "friendly_name": "Alap\u00e9rtelmezett c\u00e9lh\u0151m\u00e9rs\u00e9klet",
+                    "icon": "mdi:home-thermometer-outline",
+                    "initial": 25.0,
+                    "max": 27.0,
+                    "min": 22.0,
+                    "mode": "slider",
+                    "step": 1.0
+                },
+                "context": {
+                    "id": "2ff25d70156e4c8aafc53ffef1179076",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "input_number.ac_default_target_temp",
+                "last_changed": "2020-07-10T01:41:45.643057+00:00",
+                "last_updated": "2020-07-10T01:41:45.643057+00:00",
+                "state": "25.0"
+            }
+        },
+        {
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "editable": false,
@@ -236,92 +260,92 @@
                     "step": 1.0
                 },
                 "context": {
-                    "id": "39bdc3c7b4e24dcdbceff331fca350eb",
-                    "parent_id": null,
+                    "id": "8a8c83095a68494f973b30e847336c63",
+                    "parent_id": "bea47d67cf5b401380bfaaeff6dc6c1e",
                     "user_id": null
                 },
                 "entity_id": "input_number.pufi_level",
-                "last_changed": "2020-07-08T14:11:22.058506+00:00",
-                "last_updated": "2020-07-08T14:11:22.058506+00:00",
-                "state": "0.0"
+                "last_changed": "2020-07-10T01:47:10.357243+00:00",
+                "last_updated": "2020-07-10T01:47:10.357243+00:00",
+                "state": "16.0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "AC mode",
                     "id": "ac_mode",
-                    "last_triggered": "2020-06-24T19:18:23.098349+00:00"
+                    "last_triggered": "2020-07-09T15:02:32.058749+00:00"
                 },
                 "context": {
-                    "id": "ab43fbef5edf43dd8e280396e69fffa0",
+                    "id": "c08f9cda87184c229e92f70b46a2745b",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.ac_mode",
-                "last_changed": "2020-07-08T14:11:22.116413+00:00",
-                "last_updated": "2020-07-08T14:11:22.116413+00:00",
+                "last_changed": "2020-07-10T01:41:45.916847+00:00",
+                "last_updated": "2020-07-10T01:41:45.916847+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "ac_terget_temp_restore",
-                    "last_triggered": "2020-07-07T18:06:02.460492+00:00"
+                    "last_triggered": "2020-07-10T01:47:00.272328+00:00"
                 },
                 "context": {
-                    "id": "e6e50debef4d46fca1ad1f27a0ccbf57",
+                    "id": "1e4b974be099449da2114bdc4dd2a39e",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.ac_terget_temp_restore",
-                "last_changed": "2020-07-08T14:11:22.117978+00:00",
-                "last_updated": "2020-07-08T14:11:22.117978+00:00",
+                "last_changed": "2020-07-10T01:41:45.918317+00:00",
+                "last_updated": "2020-07-10T01:47:00.272653+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "ac_terget_temp_save",
-                    "last_triggered": "2020-07-08T14:10:35.595758+00:00"
+                    "last_triggered": "2020-07-10T23:32:50.143849+00:00"
                 },
                 "context": {
-                    "id": "4fdd01f712294ba09ac823067eb7ea8c",
-                    "parent_id": null,
+                    "id": "c4fc9de39d1f4e278359a90dfffab321",
+                    "parent_id": "32ff32d84e8644208864fc551d675d0d",
                     "user_id": null
                 },
                 "entity_id": "automation.ac_terget_temp_save",
-                "last_changed": "2020-07-08T14:11:22.119405+00:00",
-                "last_updated": "2020-07-08T14:11:22.119405+00:00",
-                "state": "off"
+                "last_changed": "2020-07-10T01:47:00.723472+00:00",
+                "last_updated": "2020-07-10T23:32:50.144082+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "automation 3",
                     "id": "ac_bedroom_set_target",
-                    "last_triggered": "2020-07-08T11:10:31.567449+00:00"
+                    "last_triggered": "2020-07-10T19:29:04.408138+00:00"
                 },
                 "context": {
-                    "id": "91cd45378d704fc597733dbfb5012012",
-                    "parent_id": null,
+                    "id": "b0673c586e5e4bc9a80fbe361a555e17",
+                    "parent_id": "cd196c5ee905485eb02581546cf5dd5f",
                     "user_id": null
                 },
                 "entity_id": "automation.ac_halo_helyi_homerseklet_szabalyozas",
-                "last_changed": "2020-07-08T14:11:22.120693+00:00",
-                "last_updated": "2020-07-08T14:11:22.120693+00:00",
+                "last_changed": "2020-07-10T01:41:45.920831+00:00",
+                "last_updated": "2020-07-10T19:29:04.408641+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Ventillation auto on",
@@ -329,18 +353,18 @@
                     "last_triggered": "2020-07-07T05:09:11.422481+00:00"
                 },
                 "context": {
-                    "id": "9b755a90c2834729b376a0fb31533887",
+                    "id": "7cdd847164b74404ad113d1d51411bbb",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.ventillation_auto_on",
-                "last_changed": "2020-07-08T14:11:22.122021+00:00",
-                "last_updated": "2020-07-08T14:11:22.122021+00:00",
+                "last_changed": "2020-07-10T01:41:45.922059+00:00",
+                "last_updated": "2020-07-10T01:41:45.922059+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Ventillation auto off",
@@ -348,18 +372,18 @@
                     "last_triggered": "2020-05-22T02:50:49.504310+00:00"
                 },
                 "context": {
-                    "id": "cdc257df183f473189989eadd757f053",
+                    "id": "d18bb746b5b949e7b872c3d2d7c4c7c3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.ventillation_auto_off",
-                "last_changed": "2020-07-08T14:11:22.123411+00:00",
-                "last_updated": "2020-07-08T14:11:22.123411+00:00",
+                "last_changed": "2020-07-10T01:41:45.923374+00:00",
+                "last_updated": "2020-07-10T01:41:45.923374+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Energy meter pulse",
@@ -367,18 +391,18 @@
                     "last_triggered": "2020-07-07T18:24:25.950988+00:00"
                 },
                 "context": {
-                    "id": "2027696ade3c450b85a8286cfdae7046",
+                    "id": "a5039748b700483784dd441c827f1050",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.energy_meter_pulse",
-                "last_changed": "2020-07-08T14:11:22.124810+00:00",
-                "last_updated": "2020-07-08T14:11:22.124810+00:00",
+                "last_changed": "2020-07-10T01:41:45.924589+00:00",
+                "last_updated": "2020-07-10T01:41:45.924589+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Pufi mode set",
@@ -386,18 +410,18 @@
                     "last_triggered": "2020-06-28T16:54:53.142495+00:00"
                 },
                 "context": {
-                    "id": "af8f22018b3c4f4c9d4ff0151e46ba0c",
+                    "id": "664911e6ed5c40feb255fb835f900409",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.pufi_mode_set",
-                "last_changed": "2020-07-08T14:11:22.126181+00:00",
-                "last_updated": "2020-07-08T14:11:22.126181+00:00",
+                "last_changed": "2020-07-10T01:41:45.925828+00:00",
+                "last_updated": "2020-07-10T01:41:45.925828+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Pufi mode changed",
@@ -405,56 +429,56 @@
                     "last_triggered": "2020-06-17T18:32:40.097515+00:00"
                 },
                 "context": {
-                    "id": "c9bea491b78e4b308c8b5f6773c38672",
+                    "id": "b753955fd9d64bcc8176f475b0a9077c",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.pufi_mode_changed",
-                "last_changed": "2020-07-08T14:11:22.127569+00:00",
-                "last_updated": "2020-07-08T14:11:22.127569+00:00",
+                "last_changed": "2020-07-10T01:41:45.927080+00:00",
+                "last_updated": "2020-07-10T01:41:45.927080+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Pufi favorite level set",
                     "id": "pufi_level_set",
-                    "last_triggered": "2020-07-07T18:06:23.549461+00:00"
+                    "last_triggered": "2020-07-10T01:47:10.458345+00:00"
                 },
                 "context": {
-                    "id": "634959079b24442dad5c9e107e9f0285",
-                    "parent_id": null,
+                    "id": "2fd87c2cb88748c08a39c5f56f60862e",
+                    "parent_id": "8a8c83095a68494f973b30e847336c63",
                     "user_id": null
                 },
                 "entity_id": "automation.pufi_favorite_level_set",
-                "last_changed": "2020-07-08T14:11:22.128851+00:00",
-                "last_updated": "2020-07-08T14:11:22.128851+00:00",
+                "last_changed": "2020-07-10T01:41:45.928351+00:00",
+                "last_updated": "2020-07-10T01:47:10.458895+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Pufi favorite level changed",
                     "id": "pufi_level_changed",
-                    "last_triggered": "2020-07-08T14:10:35.366763+00:00"
+                    "last_triggered": "2020-07-10T23:33:21.118381+00:00"
                 },
                 "context": {
-                    "id": "bc8cd4a038f24bf8ac4e6c1d4c9bec07",
-                    "parent_id": null,
+                    "id": "8e82880df9bb4d5fb72f7907a3168641",
+                    "parent_id": "bf919fb93d9240cd891699c7ba29c5d5",
                     "user_id": null
                 },
                 "entity_id": "automation.pufi_favorite_level_changed",
-                "last_changed": "2020-07-08T14:11:22.130220+00:00",
-                "last_updated": "2020-07-08T14:11:22.130220+00:00",
+                "last_changed": "2020-07-10T01:41:45.929827+00:00",
+                "last_updated": "2020-07-10T23:33:21.118628+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Toggle terrace light",
@@ -462,444 +486,444 @@
                     "last_triggered": "2020-06-28T12:28:31.986606+00:00"
                 },
                 "context": {
-                    "id": "c00d1a9e9e994f86a6821b0ce1d37573",
+                    "id": "0c4e52e33d2b42acadf33b4088bc8961",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.toggle_terrace_light",
-                "last_changed": "2020-07-08T14:11:22.131505+00:00",
-                "last_updated": "2020-07-08T14:11:22.131505+00:00",
+                "last_changed": "2020-07-10T01:41:45.931096+00:00",
+                "last_updated": "2020-07-10T01:41:45.931096+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Set theme at startup",
-                    "last_triggered": "2020-07-07T18:06:02.516562+00:00"
+                    "last_triggered": "2020-07-10T01:47:00.362850+00:00"
                 },
                 "context": {
-                    "id": "7a182a74cde1441c9e9e86fad564abf4",
+                    "id": "7e07963cdc2a401d8668bd83c46d7421",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.set_theme_at_startup",
-                "last_changed": "2020-07-08T14:11:22.132872+00:00",
-                "last_updated": "2020-07-08T14:11:22.132872+00:00",
+                "last_changed": "2020-07-10T01:41:45.932256+00:00",
+                "last_updated": "2020-07-10T01:47:00.363240+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "WC light off at sunrise",
                     "id": "wc_light_off",
-                    "last_triggered": "2020-07-08T02:55:43.053892+00:00"
+                    "last_triggered": "2020-07-10T02:57:26.077014+00:00"
                 },
                 "context": {
-                    "id": "ab1af3ce377c4d489cfe399c998782fb",
+                    "id": "a36e0e5af7a04745a84000fe6ac93550",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.wc_light_off_at_sunrise",
-                "last_changed": "2020-07-08T14:11:22.134322+00:00",
-                "last_updated": "2020-07-08T14:11:22.134322+00:00",
+                "last_changed": "2020-07-10T01:41:45.933378+00:00",
+                "last_updated": "2020-07-10T02:57:26.077287+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "WC light on at sunset",
                     "id": "wc_light_on",
-                    "last_triggered": "2020-07-07T18:43:37.054405+00:00"
+                    "last_triggered": "2020-07-10T18:41:59.052763+00:00"
                 },
                 "context": {
-                    "id": "7b12ba94130a4679a4261af6df04557d",
+                    "id": "fb84ab89f143404b99cc05a2fd293fdd",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "automation.wc_light_on_at_sunset",
-                "last_changed": "2020-07-08T14:11:22.136048+00:00",
-                "last_updated": "2020-07-08T14:11:22.136048+00:00",
+                "last_changed": "2020-07-10T01:41:45.934500+00:00",
+                "last_updated": "2020-07-10T18:41:59.053041+00:00",
                 "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Dolgoz\u00f3",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "4474fd7f9d3c480d9f61442b3be89c54",
+                    "id": "a64d17212474456fb469a1e8904038d0",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q0",
-                "last_changed": "2020-07-08T14:13:04.246428+00:00",
-                "last_updated": "2020-07-08T14:13:04.246428+00:00",
+                "last_changed": "2020-07-10T01:42:33.784030+00:00",
+                "last_updated": "2020-07-10T01:42:33.784030+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "H\u00e1l\u00f3",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "f489a091412440a59c739bda6c3c146f",
+                    "id": "4d3abef727c44865884c761ea84deefa",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q1",
-                "last_changed": "2020-07-08T14:13:04.247490+00:00",
-                "last_updated": "2020-07-08T14:13:04.247490+00:00",
+                "last_changed": "2020-07-10T19:29:55.096185+00:00",
+                "last_updated": "2020-07-10T19:29:55.096185+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "F\u00fcrd\u0151",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "d18b9a1d1cd648009b872171dd7e5c4a",
+                    "id": "e9bce340e7d04f638b1a718ad2c0f458",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q2",
-                "last_changed": "2020-07-08T14:13:04.248307+00:00",
-                "last_updated": "2020-07-08T14:13:04.248307+00:00",
+                "last_changed": "2020-07-10T22:26:23.147154+00:00",
+                "last_updated": "2020-07-10T22:26:23.147154+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Konyha",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "f0ebfe8fcf1746aba38bc3e2487c98cc",
+                    "id": "22a494f6556047a7bc35ad3d733ed361",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q3",
-                "last_changed": "2020-07-08T14:13:04.249044+00:00",
-                "last_updated": "2020-07-08T14:13:04.249044+00:00",
+                "last_changed": "2020-07-10T21:30:08.197195+00:00",
+                "last_updated": "2020-07-10T21:30:08.197195+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "WC",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "98a289f19f0c498cad1ba3f21ecb3560",
+                    "id": "8c45fd0c525c4dd486dc7ebdb47e8ab7",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q4",
-                "last_changed": "2020-07-08T14:13:04.249927+00:00",
-                "last_updated": "2020-07-08T14:13:04.249927+00:00",
-                "state": "off"
+                "last_changed": "2020-07-10T17:58:40.440847+00:00",
+                "last_updated": "2020-07-10T17:58:40.440847+00:00",
+                "state": "on"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "M\u00e1t\u00e9",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "bc93db3ab2b7464fadb93c4704fcb301",
+                    "id": "012df5f863c64c5c9fbe6ffa77abc10b",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q5",
-                "last_changed": "2020-07-08T14:13:04.250712+00:00",
-                "last_updated": "2020-07-08T14:13:04.250712+00:00",
+                "last_changed": "2020-07-10T05:58:12.325941+00:00",
+                "last_updated": "2020-07-10T05:58:12.325941+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Mil\u00e1n",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "1954aed35c4a4c7b84ef7857375462f8",
+                    "id": "d5012a22a0404b6d9e030eebf89954ae",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q6",
-                "last_changed": "2020-07-08T14:13:04.251460+00:00",
-                "last_updated": "2020-07-08T14:13:04.251460+00:00",
+                "last_changed": "2020-07-10T22:14:32.496202+00:00",
+                "last_updated": "2020-07-10T22:14:32.496202+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "H\u00e1ztart\u00e1si h.",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "4ca52176c1ea4c40898b1104eab05188",
+                    "id": "df9d9c3f33b54e168804c2e10d4c2662",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q7",
-                "last_changed": "2020-07-08T14:13:04.252374+00:00",
-                "last_updated": "2020-07-08T14:13:04.252374+00:00",
+                "last_changed": "2020-07-10T22:27:03.402651+00:00",
+                "last_updated": "2020-07-10T22:27:03.402651+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "El\u0151szoba",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "a2af593d692543d8b94771a200eff2c8",
+                    "id": "571f6fb92759447da92ca735c8036955",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q10",
-                "last_changed": "2020-07-08T14:13:04.253147+00:00",
-                "last_updated": "2020-07-08T14:13:04.253147+00:00",
+                "last_changed": "2020-07-10T01:42:33.791153+00:00",
+                "last_updated": "2020-07-10T01:42:33.791153+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "\u00c1tj\u00e1r\u00f3",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "988309cb050d47768516220bccb080a0",
+                    "id": "0e2fe55e2bde44a88739758e8914a8e3",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q11",
-                "last_changed": "2020-07-08T14:13:04.253903+00:00",
-                "last_updated": "2020-07-08T14:13:04.253903+00:00",
+                "last_changed": "2020-07-10T22:28:35.484163+00:00",
+                "last_updated": "2020-07-10T22:28:35.484163+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "\u00c9tkez\u0151asztal",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "634f747f9abe45c1b0dfc3f4c04ff2db",
+                    "id": "1e20791b94d4400fa11686ff91a763ea",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q12",
-                "last_changed": "2020-07-08T14:13:04.254708+00:00",
-                "last_updated": "2020-07-08T14:13:04.254708+00:00",
+                "last_changed": "2020-07-10T22:14:44.532460+00:00",
+                "last_updated": "2020-07-10T22:14:44.532460+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Nappali",
                     "icon": "mdi:lightbulb"
                 },
                 "context": {
-                    "id": "a631c6d8c4a0471c9e0d7159247ae9df",
+                    "id": "a814e5a858ac4b5bb6f85e612a465b10",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q13",
-                "last_changed": "2020-07-08T14:13:04.255450+00:00",
-                "last_updated": "2020-07-08T14:13:04.255450+00:00",
+                "last_changed": "2020-07-10T22:27:55.595149+00:00",
+                "last_updated": "2020-07-10T22:27:55.595149+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "J\u00e1rda",
                     "icon": "mdi:outdoor-lamp"
                 },
                 "context": {
-                    "id": "f6ff9fd5e6454d71ba4b451890a7dd8c",
+                    "id": "b6f3cd39cdfc43c1b7123b7ab972ec0d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q14",
-                "last_changed": "2020-07-08T14:13:04.256238+00:00",
-                "last_updated": "2020-07-08T14:13:04.256238+00:00",
+                "last_changed": "2020-07-10T01:42:33.798547+00:00",
+                "last_updated": "2020-07-10T01:42:33.798547+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Udvar",
                     "icon": "mdi:outdoor-lamp"
                 },
                 "context": {
-                    "id": "7f55fadf94b840f886e08aea0672d76f",
+                    "id": "7c6734ef7620448692a35faff42354b6",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q15",
-                "last_changed": "2020-07-08T14:13:04.257107+00:00",
-                "last_updated": "2020-07-08T14:13:04.257107+00:00",
+                "last_changed": "2020-07-10T01:42:33.799592+00:00",
+                "last_updated": "2020-07-10T01:42:33.799592+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Utcafront",
                     "icon": "mdi:outdoor-lamp"
                 },
                 "context": {
-                    "id": "b08e85e63a1e4226b6e2dd52888ff43a",
+                    "id": "bf11819390534e0ca065d2484e6c3e8e",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q16",
-                "last_changed": "2020-07-08T14:13:04.257836+00:00",
-                "last_updated": "2020-07-08T14:13:04.257836+00:00",
+                "last_changed": "2020-07-10T01:42:33.800598+00:00",
+                "last_updated": "2020-07-10T01:42:33.800598+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Terasz",
                     "icon": "mdi:outdoor-lamp"
                 },
                 "context": {
-                    "id": "5115093d535e40a782f20b502fd19996",
+                    "id": "67a7081d1f00467a8bf4eed342923f9c",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_q17",
-                "last_changed": "2020-07-08T14:13:04.258588+00:00",
-                "last_updated": "2020-07-08T14:13:04.258588+00:00",
+                "last_changed": "2020-07-10T06:32:21.982114+00:00",
+                "last_updated": "2020-07-10T06:32:21.982114+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "Vil\u00e1g\u00edt\u00e1s ki",
                     "icon": "mdi:lightbulb-off"
                 },
                 "context": {
-                    "id": "1a5706933afe4d2b8ee8c6eaca62929d",
+                    "id": "c8dc40c2d8d34f33919279614ecb34d2",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_m0",
-                "last_changed": "2020-07-08T14:13:04.259461+00:00",
-                "last_updated": "2020-07-08T14:13:04.259461+00:00",
+                "last_changed": "2020-07-10T01:42:33.802615+00:00",
+                "last_updated": "2020-07-10T01:42:33.802615+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "K\u00fcls\u0151 Vil\u00e1g\u00edt\u00e1s",
                     "icon": "mdi:vanity-light"
                 },
                 "context": {
-                    "id": "bee589b897ea44a6bc6774a9ed57ddbb",
+                    "id": "e9379188ad0b41d5885e5a1219ef44d8",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "switch.apb_m1",
-                "last_changed": "2020-07-08T14:13:04.260356+00:00",
-                "last_updated": "2020-07-08T14:13:04.260356+00:00",
+                "last_changed": "2020-07-10T01:42:33.803584+00:00",
+                "last_updated": "2020-07-10T01:42:33.803584+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "energy_meter_daily",
                     "icon": "mdi:counter",
                     "last_period": "0",
-                    "last_reset": "2020-07-08T00:00:00.031656+02:00",
+                    "last_reset": "2020-07-11T00:00:00.029394+02:00",
                     "meter_period": "daily",
                     "source": "binary_sensor.energy_meter_pulse",
-                    "status": "paused"
+                    "status": "collecting"
                 },
                 "context": {
-                    "id": "6b6a385d2c2e4e9ab8a83c8f64398a30",
+                    "id": "928a0b0bd5564e7e877b4953250598dd",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.energy_meter_daily",
-                "last_changed": "2020-07-08T14:13:10.270897+00:00",
-                "last_updated": "2020-07-08T14:13:10.270897+00:00",
+                "last_changed": "2020-07-10T01:46:13.115841+00:00",
+                "last_updated": "2020-07-10T22:00:00.041931+00:00",
                 "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "energy_meter_hourly",
                     "icon": "mdi:counter",
                     "last_period": "0",
-                    "last_reset": "2020-07-08T16:00:00.021189+02:00",
+                    "last_reset": "2020-07-11T01:00:00.015353+02:00",
                     "meter_period": "hourly",
                     "source": "binary_sensor.energy_meter_pulse",
-                    "status": "paused"
+                    "status": "collecting"
                 },
                 "context": {
-                    "id": "628ff8fb2d04468c9f85797386c324b1",
+                    "id": "e8deb301e9744454aef8a9fd326533dc",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.energy_meter_hourly",
-                "last_changed": "2020-07-08T14:13:10.272329+00:00",
-                "last_updated": "2020-07-08T14:13:10.272329+00:00",
+                "last_changed": "2020-07-10T01:46:13.117768+00:00",
+                "last_updated": "2020-07-10T23:00:00.015989+00:00",
                 "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "energy_meter_weekly",
@@ -908,21 +932,21 @@
                     "last_reset": "2020-07-07T20:05:49.748380+02:00",
                     "meter_period": "weekly",
                     "source": "binary_sensor.energy_meter_pulse",
-                    "status": "paused"
+                    "status": "collecting"
                 },
                 "context": {
-                    "id": "b19af59266534bada388264fd98eefd7",
+                    "id": "329530bb2d1c4d22bf9a4b03ed9bbfe2",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.energy_meter_weekly",
-                "last_changed": "2020-07-08T14:13:10.273580+00:00",
-                "last_updated": "2020-07-08T14:13:10.273580+00:00",
+                "last_changed": "2020-07-10T01:46:13.119057+00:00",
+                "last_updated": "2020-07-10T01:46:13.119788+00:00",
                 "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "energy_meter_monthly",
@@ -931,21 +955,21 @@
                     "last_reset": "2020-07-07T20:05:49.748660+02:00",
                     "meter_period": "monthly",
                     "source": "binary_sensor.energy_meter_pulse",
-                    "status": "paused"
+                    "status": "collecting"
                 },
                 "context": {
-                    "id": "e5a320503d9e4198873be716e85a27a6",
+                    "id": "7f8c117224fe49debf6695363432273e",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.energy_meter_monthly",
-                "last_changed": "2020-07-08T14:13:10.274765+00:00",
-                "last_updated": "2020-07-08T14:13:10.274765+00:00",
+                "last_changed": "2020-07-10T01:46:13.120806+00:00",
+                "last_updated": "2020-07-10T01:46:13.121349+00:00",
                 "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "energy_meter_yearly",
@@ -954,69 +978,69 @@
                     "last_reset": "2020-07-07T20:05:49.748946+02:00",
                     "meter_period": "yearly",
                     "source": "binary_sensor.energy_meter_pulse",
-                    "status": "paused"
+                    "status": "collecting"
                 },
                 "context": {
-                    "id": "39be67af6a734b488ef26df39a93da13",
+                    "id": "201673c3658d4fc4af60dfef5680e067",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.energy_meter_yearly",
-                "last_changed": "2020-07-08T14:13:10.275929+00:00",
-                "last_updated": "2020-07-08T14:13:10.275929+00:00",
+                "last_changed": "2020-07-10T01:46:13.122315+00:00",
+                "last_updated": "2020-07-10T01:46:13.122838+00:00",
                 "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "solar_production_daily",
                     "icon": "mdi:counter",
-                    "last_period": "33.120",
-                    "last_reset": "2020-07-08T00:00:00.045565+02:00",
+                    "last_period": "33.970",
+                    "last_reset": "2020-07-11T00:00:00.058089+02:00",
                     "meter_period": "daily",
                     "source": "sensor.solaredge_ac_energy_kwh",
-                    "status": "paused",
+                    "status": "collecting",
                     "unit_of_measurement": "kWh"
                 },
                 "context": {
-                    "id": "4e50945cb02447588c486e6b91c74ddf",
+                    "id": "5903cdb0e1a542619de568872f86ef32",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.solar_production_daily",
-                "last_changed": "2020-07-08T14:13:10.277122+00:00",
-                "last_updated": "2020-07-08T14:13:10.277122+00:00",
-                "state": "24.223"
+                "last_changed": "2020-07-10T22:00:00.058789+00:00",
+                "last_updated": "2020-07-10T22:00:00.058789+00:00",
+                "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "solar_production_hourly",
                     "icon": "mdi:counter",
-                    "last_period": "2.972",
-                    "last_reset": "2020-07-08T16:00:00.029061+02:00",
+                    "last_period": "0",
+                    "last_reset": "2020-07-11T01:00:00.024419+02:00",
                     "meter_period": "hourly",
                     "source": "sensor.solaredge_ac_energy_kwh",
-                    "status": "paused",
+                    "status": "collecting",
                     "unit_of_measurement": "kWh"
                 },
                 "context": {
-                    "id": "83aa57bc3b4e46bda8c3f408446c0ea4",
+                    "id": "3828048bf97d438280b27884ab83e99f",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.solar_production_hourly",
-                "last_changed": "2020-07-08T14:13:10.278366+00:00",
-                "last_updated": "2020-07-08T14:13:10.278366+00:00",
-                "state": "0.687"
+                "last_changed": "2020-07-10T19:00:00.030419+00:00",
+                "last_updated": "2020-07-10T23:00:00.024952+00:00",
+                "state": "0"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "solar_production_weekly",
@@ -1025,22 +1049,22 @@
                     "last_reset": "2020-06-29T00:00:00.032288+02:00",
                     "meter_period": "weekly",
                     "source": "sensor.solaredge_ac_energy_kwh",
-                    "status": "paused",
+                    "status": "collecting",
                     "unit_of_measurement": "kWh"
                 },
                 "context": {
-                    "id": "9eb8435f0f794257ac530d5dd4dd8371",
+                    "id": "98bba7916a1549aebcf65944dab8d05d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.solar_production_weekly",
-                "last_changed": "2020-07-08T14:13:10.279638+00:00",
-                "last_updated": "2020-07-08T14:13:10.279638+00:00",
-                "state": "141.937"
+                "last_changed": "2020-07-10T18:19:34.150507+00:00",
+                "last_updated": "2020-07-10T18:19:34.150507+00:00",
+                "state": "213.744"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "solar_production_monthly",
@@ -1049,22 +1073,22 @@
                     "last_reset": "2020-07-01T00:00:00.028353+02:00",
                     "meter_period": "monthly",
                     "source": "sensor.solaredge_ac_energy_kwh",
-                    "status": "paused",
+                    "status": "collecting",
                     "unit_of_measurement": "kWh"
                 },
                 "context": {
-                    "id": "a9e7397a83c948769f330ed834a6b6f8",
+                    "id": "97e4f4ea38c64d2caf22ba66002529fc",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.solar_production_monthly",
-                "last_changed": "2020-07-08T14:13:10.280877+00:00",
-                "last_updated": "2020-07-08T14:13:10.280877+00:00",
-                "state": "90.881"
+                "last_changed": "2020-07-10T18:19:34.154529+00:00",
+                "last_updated": "2020-07-10T18:19:34.154529+00:00",
+                "state": "162.688"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "friendly_name": "solar_production_yearly",
@@ -1073,27 +1097,27 @@
                     "last_reset": "2020-06-24T09:34:40.578660+02:00",
                     "meter_period": "yearly",
                     "source": "sensor.solaredge_ac_energy_kwh",
-                    "status": "paused",
+                    "status": "collecting",
                     "unit_of_measurement": "kWh"
                 },
                 "context": {
-                    "id": "beecdb00f079424c89430f8a7c9a4907",
+                    "id": "352eff1d413d418c81a886c348132405",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "sensor.solar_production_yearly",
-                "last_changed": "2020-07-08T14:13:10.282040+00:00",
-                "last_updated": "2020-07-08T14:13:10.282040+00:00",
-                "state": "290.834"
+                "last_changed": "2020-07-10T18:19:34.158361+00:00",
+                "last_updated": "2020-07-10T18:19:34.158361+00:00",
+                "state": "362.641"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 23.5,
+                    "current_temperature": 25.9,
                     "friendly_name": "Dolgoz\u00f3",
-                    "hvac_action": "off",
+                    "hvac_action": "cooling",
                     "hvac_modes": [
                         "heat",
                         "cool",
@@ -1103,24 +1127,24 @@
                     "max_temp": 27.0,
                     "min_temp": 21.0,
                     "supported_features": 1,
-                    "temperature": 25.0
+                    "temperature": 23.0
                 },
                 "context": {
-                    "id": "54ed8a5dc2f1417a9f8b7febb0f02a31",
+                    "id": "f9a93e9b980d4014af5e8f91e83fe604",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.ac_study",
-                "last_changed": "2020-07-08T14:13:10.289275+00:00",
-                "last_updated": "2020-07-08T14:13:12.194826+00:00",
+                "last_changed": "2020-07-10T01:46:13.132836+00:00",
+                "last_updated": "2020-07-10T23:32:46.766268+00:00",
                 "state": "cool"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 25.6,
+                    "current_temperature": 28.0,
                     "friendly_name": "M\u00e1t\u00e9",
                     "hvac_action": "off",
                     "hvac_modes": [
@@ -1135,21 +1159,21 @@
                     "temperature": 25.0
                 },
                 "context": {
-                    "id": "644e1248a1774be3a82502793bc1e431",
+                    "id": "142ab188c05a4a17ad693516206971d1",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.ac_childa",
-                "last_changed": "2020-07-08T14:13:10.291027+00:00",
-                "last_updated": "2020-07-08T14:13:11.985145+00:00",
+                "last_changed": "2020-07-10T01:46:13.140351+00:00",
+                "last_updated": "2020-07-10T22:17:45.472870+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 24.1,
+                    "current_temperature": 25.2,
                     "friendly_name": "Mil\u00e1n",
                     "hvac_action": "off",
                     "hvac_modes": [
@@ -1161,24 +1185,24 @@
                     "max_temp": 27.0,
                     "min_temp": 21.0,
                     "supported_features": 1,
-                    "temperature": 25.0
+                    "temperature": 22.0
                 },
                 "context": {
-                    "id": "149b098b80ff46c0a3d56f3c6bf49ad4",
+                    "id": "6abd5a84d255473bbccd20cb1d5ea333",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.ac_childb",
-                "last_changed": "2020-07-08T14:13:10.292581+00:00",
-                "last_updated": "2020-07-08T14:13:12.108849+00:00",
+                "last_changed": "2020-07-10T01:46:13.141897+00:00",
+                "last_updated": "2020-07-10T23:27:25.416548+00:00",
                 "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 25.0,
+                    "current_temperature": 23.6,
                     "friendly_name": "H\u00e1l\u00f3",
                     "hvac_action": "off",
                     "hvac_modes": [
@@ -1193,21 +1217,21 @@
                     "temperature": 25.0
                 },
                 "context": {
-                    "id": "57d5b23f5cee46ca915bf279f11b11b3",
+                    "id": "92f684951d44485896b9a66a69671aa1",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.ac_bedroom",
-                "last_changed": "2020-07-08T14:13:10.294212+00:00",
-                "last_updated": "2020-07-08T14:13:10.294212+00:00",
+                "last_changed": "2020-07-10T01:46:13.155700+00:00",
+                "last_updated": "2020-07-10T23:02:17.646578+00:00",
                 "state": "cool"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
-                    "current_temperature": 25.0,
+                    "current_temperature": 24.7,
                     "friendly_name": "Konyha",
                     "hvac_action": "off",
                     "hvac_modes": [
@@ -1219,21 +1243,21 @@
                     "max_temp": 27.0,
                     "min_temp": 21.0,
                     "supported_features": 1,
-                    "temperature": 25.0
+                    "temperature": 23.0
                 },
                 "context": {
-                    "id": "906ebde3f427408694107a56fcc439fd",
+                    "id": "32ff32d84e8644208864fc551d675d0d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "climate.ac_kitchen",
-                "last_changed": "2020-07-08T14:13:10.295948+00:00",
-                "last_updated": "2020-07-08T14:13:10.295948+00:00",
-                "state": "cool"
+                "last_changed": "2020-07-10T01:46:13.157811+00:00",
+                "last_updated": "2020-07-10T23:32:50.120452+00:00",
+                "state": "off"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "altitude": 0.0,
@@ -1250,18 +1274,18 @@
                     "vertical_accuracy": 0
                 },
                 "context": {
-                    "id": "c5e3895b6a8b4f889ebf9120e0a74a8e",
+                    "id": "430b4719120d47cab30b2934ece1cbf1",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "device_tracker.mi_9_lite",
-                "last_changed": "2020-07-08T14:13:11.872768+00:00",
-                "last_updated": "2020-07-08T14:13:11.872768+00:00",
+                "last_changed": "2020-07-10T01:46:43.730930+00:00",
+                "last_updated": "2020-07-10T01:46:43.730930+00:00",
                 "state": "home"
             }
         },
         {
-            "last_seen": "2020-07-08T14:13:19.894075+00:00",
+            "last_seen": "2020-07-10T23:33:25.018442+00:00",
             "state": {
                 "attributes": {
                     "altitude": 159.0,
@@ -1277,13 +1301,13 @@
                     "vertical_accuracy": 4
                 },
                 "context": {
-                    "id": "e0035ab763e847d29e900fc223c26782",
+                    "id": "51dedcfb3fa844248d7aaa28ac04840d",
                     "parent_id": null,
                     "user_id": null
                 },
                 "entity_id": "device_tracker.mi_note_2",
-                "last_changed": "2020-07-08T14:13:11.876283+00:00",
-                "last_updated": "2020-07-08T14:13:11.876283+00:00",
+                "last_changed": "2020-07-10T01:46:43.734857+00:00",
+                "last_updated": "2020-07-10T01:46:43.734857+00:00",
                 "state": "not_home"
             }
         }

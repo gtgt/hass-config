@@ -8,3 +8,4 @@ __pycache__
 .storage/auth*
 .storage/cloud
 .storage/mobile_app
+gtfs/*

@@ -1,1 +1,6 @@
- 
+  - platform: generic
+    name: south
+    still_image_url: https://www.pngitem.com/pimgs/m/193-1938855_security-camera-clip-art-map-of-eu-member.png
+    content_type: image/png
+    stream_source: rtsp://nvr.lan:554/user=admin&password=6266&channel=1&stream=0.sdp
+    #framerate: 5

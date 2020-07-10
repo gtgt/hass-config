@@ -3,7 +3,7 @@
     heater: switch.ac_relay_study
     cooler: switch.ac_relay_study
     actual_temp_sensor: sensor.study_temp
-    target_temp_sensor: sensor.ac_default_target_temp
+    target_temp_sensor: input_number.ac_default_target_temp
     min_temp: 21
     max_temp: 27
     tolerance: 0.5

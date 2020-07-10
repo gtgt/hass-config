@@ -1,0 +1,7 @@
+  ac_default_target_temp:
+    name: "Alapértelmezett célhőmérséklet"
+    initial: 25
+    min: 22
+    max: 27
+    step: 1
+    icon: "mdi:home-thermometer-outline"
