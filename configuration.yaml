@@ -39,9 +39,11 @@ logger:
     custom_components.programmable_thermostat.climate: warning
     homeassistant.components.cloud.google_config: error
     satel_integra.satel_integra: error
+    miio.miioprotocol: fatal
     homeassistant.components.binary_sensor: error
     homeassistant.components.ipp: fatal
     homeassistant.components.nut: fatal
+    homeassistant.components.xiaomi_miio.vacuum: error
 #    homeassistant.components.modbus: info
 #    pymodbus.client: info
   

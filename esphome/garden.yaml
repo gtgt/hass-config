@@ -24,6 +24,7 @@ captive_portal:
 
 # Enable logging
 logger:
+  baud_rate: 0
 
 # Enable Web server
 web_server:
@@ -42,14 +43,30 @@ ota:
 time:
   - platform: homeassistant
     id: now
+
+i2c:
+  sda: GPIO1
+  scl: GPIO3
+  scan: true
+  
 dallas:
   - pin: GPIO0
     update_interval: 20s
-
+  
 sensor:
   - platform: dallas
-    id: temp1
+    id: temp0
     name: ${name}_temp_pool
     address: 0xAA02179245598028
     filters:
       - offset: 0
+
+display:
+  - platform: lcd_pcf8574
+    dimensions: 16x2
+    address: 0x3F
+    update_interval: 1s
+    lambda: |-
+      if (id(temp0).has_state()) {
+        it.printf("Tt: %.1f 'C", id(temp0).state);
+      }

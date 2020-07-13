@@ -6,6 +6,13 @@
     entity_id: binary_sensor.energy_meter_pulse
     to: 'on'
   action:
-    - service: persistent_notification.create
+    - service: input_number.increment
       data:
-        message: Energy meter pulse!
+        entity_id: input_number.energy_meter_kwh
+    - service: switch.turn_on
+      data:
+        entity_id: switch.red_led
+    - delay: 1.0
+    - service: switch.turn_off
+      data:
+        entity_id: switch.red_led

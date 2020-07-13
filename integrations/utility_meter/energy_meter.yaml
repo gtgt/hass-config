@@ -1,15 +1,15 @@
     energy_meter_daily:
-      source: binary_sensor.energy_meter_pulse
+      source: sensor.energy_meter_kwh
       cycle: daily
     energy_meter_hourly:
-      source: binary_sensor.energy_meter_pulse
+      source: sensor.energy_meter_kwh
       cycle: hourly
     energy_meter_weekly:
-      source: binary_sensor.energy_meter_pulse
+      source: sensor.energy_meter_kwh
       cycle: weekly
     energy_meter_monthly:
-      source: binary_sensor.energy_meter_pulse
+      source: sensor.energy_meter_kwh
       cycle: monthly
     energy_meter_yearly:
-      source: binary_sensor.energy_meter_pulse
+      source: sensor.energy_meter_kwh
       cycle: yearly

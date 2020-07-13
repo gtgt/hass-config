@@ -90,8 +90,8 @@
             {
                 "area_id": null,
                 "config_entries": [
-                    "64f96f02d456421ab611c069c497c839",
-                    "c9d4debac02a43ba996b19c3bf6e4963"
+                    "c9d4debac02a43ba996b19c3bf6e4963",
+                    "64f96f02d456421ab611c069c497c839"
                 ],
                 "connections": [
                     [
@@ -106,7 +106,7 @@
                 "model": "PLATFORMIO_ESP01_1M",
                 "name": "garden",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Jul  9 2020, 18:35:24)",
+                "sw_version": "1.15.0-dev (Jul 11 2020, 22:35:39)",
                 "via_device_id": null
             },
             {
@@ -127,7 +127,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "bedroom",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (Jun 30 2020, 10:31:36)",
+                "sw_version": "1.15.0-dev (Jul 11 2020, 13:35:24)",
                 "via_device_id": null
             },
             {
@@ -254,7 +254,7 @@
                 "model": "PLATFORMIO_D1_MINI",
                 "name": "energy",
                 "name_by_user": null,
-                "sw_version": "1.15.0-dev (May  9 2020, 01:58:56)",
+                "sw_version": "1.15.0-dev (Jul 13 2020, 01:21:42)",
                 "via_device_id": null
             },
             {

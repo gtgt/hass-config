@@ -461,8 +461,9 @@ views:
       - type: media-control
         entity: media_player.kodi
       - type: custom:power-wheel-card
-        solar_power_entity: sensor.solaredge_ac_power
-        grid_power_entity: sensor.solaredge_ac_power
+        power_decimals: 3
+        solar_power_entity: sensor.solar_production_hourly
+        grid_power_entity: sensor.energy_meter_hourly
         #solar_energy_entity: sensor.solaredge_ac_energy_kwh
         #grid_energy_entity: sensor.solaredge_ac_energy_kwh
       - type: entities
@@ -475,6 +476,10 @@ views:
         - sensor.solaredge_ac_energy_kwh
         - sensor.solaredge_ac_current
         - sensor.solaredge_ac_power
+        - sensor.energy_meter_kwh
+        - sensor.energy_meter_power
+        - sensor.energy_meter_daily
+        - sensor.energy_meter_hourly
       - type: vertical-stack
         title: UPS
         cards:

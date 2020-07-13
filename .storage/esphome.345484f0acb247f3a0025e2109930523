@@ -1,7 +1,7 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "May  9 2020, 01:58:56",
+            "compilation_time": "Jul 13 2020, 01:21:42",
             "esphome_version": "1.15.0-dev",
             "has_deep_sleep": false,
             "mac_address": "4C:11:AE:0C:44:7F",
