@@ -11539,7 +11539,7 @@
             "category": "plugin",
             "description": "A card giving richer public transit display using NextBus sensors.",
             "domain": null,
-            "downloads": 0,
+            "downloads": 68,
             "first_install": true,
             "full_name": "dcramer/lovelace-nextbus-card",
             "installed": false,
@@ -12114,7 +12114,7 @@
             "first_install": false,
             "full_name": "JuanMTech/google_dark_theme",
             "installed": true,
-            "installed_commit": "ef09c1f",
+            "installed_commit": "dcdabc4",
             "last_commit": "dcdabc4",
             "last_release_tag": "v1.8",
             "last_updated": "2020-07-29T22:46:23Z",
@@ -12132,7 +12132,7 @@
                 "home-assistant",
                 "theme"
             ],
-            "version_installed": "v1.7"
+            "version_installed": "v1.8"
         },
         "234032927": {
             "authors": [],
@@ -12747,7 +12747,7 @@
             "first_install": false,
             "full_name": "JuanMTech/orange_dark",
             "installed": true,
-            "installed_commit": "3df3795",
+            "installed_commit": "60213dc",
             "last_commit": "60213dc",
             "last_release_tag": "v1.7",
             "last_updated": "2020-07-29T22:55:59Z",
@@ -12765,7 +12765,7 @@
                 "home-assistant",
                 "themes"
             ],
-            "version_installed": "v1.6"
+            "version_installed": "v1.7"
         },
         "235869023": {
             "authors": [],
@@ -18177,7 +18177,7 @@
             "last_release_tag": "v.1.2",
             "last_updated": "2020-07-22T22:56:52Z",
             "name": "caule-themes-pack-1",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "caule-themes-pack-1.yaml",
                 "name": "Caule Themes Pack 1 - by caulecriativo.com",
@@ -18312,13 +18312,13 @@
             "downloads": 0,
             "first_install": true,
             "full_name": "thomasloven/lovelace-badge-card",
-            "installed": false,
-            "installed_commit": null,
+            "installed": true,
+            "installed_commit": "817bdb3",
             "last_commit": "817bdb3",
             "last_release_tag": null,
             "last_updated": "2020-07-27T09:50:35Z",
             "name": "lovelace-badge-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "badge-card",
                 "render_readme": true

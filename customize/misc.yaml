@@ -15,3 +15,5 @@ switch.yellow_led:
 switch.green_led:
   friendly_name: "Zöld LED"
   icon: mdi:led-off
+sensor.mav_solymar_ujpest:
+  friendly_name: "Solymár -> Újpest"

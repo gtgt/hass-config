@@ -9,16 +9,10 @@
   cards:
     - type: media-control
       entity: media_player.kodi
-    - type: vertical-stack
-      title: UPS
-      cards:
-        - type: entities
-          entities:
-          - sensor.eaton_status_data
-          - type: custom:battery-entity
-            entity: sensor.eaton_battery_charge
-          - sensor.eaton_battery_runtime
-          - sensor.eaton_load
+    - type: entities
+      title: Vonat
+      entities:
+        - sensor.mav_solymar_ujpest
     - type: entities
       title: Kapcsoló
       entities:

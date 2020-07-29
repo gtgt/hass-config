@@ -131,3 +131,13 @@
         - type: sensor
           entity: sensor.grid_power_hourly
           name: "Óránkénti átlag"
+    - type: vertical-stack
+      title: UPS
+      cards:
+        - type: entities
+          entities:
+          - sensor.eaton_status_data
+          - type: custom:battery-entity
+            entity: sensor.eaton_battery_charge
+          - sensor.eaton_battery_runtime
+          - sensor.eaton_load
