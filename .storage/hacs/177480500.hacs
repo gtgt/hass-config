@@ -30,7 +30,7 @@
         "last_version": "0.2",
         "manifest_name": null,
         "new": false,
-        "open_issues": 22,
+        "open_issues": 24,
         "persistent_directory": null,
         "published_tags": [
             "0.2",
@@ -41,7 +41,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 104,
+        "stargazers_count": 105,
         "topics": [
             "battery-entities",
             "home-assistant",

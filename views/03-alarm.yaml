@@ -1,0 +1,88 @@
+- path: alarm
+  #title: Riasztó
+  icon: mdi:shield-home
+  badges:
+    - entity: binary_sensor.pir_entry
+    - entity: binary_sensor.pir_study
+    - entity: binary_sensor.pir_bedroom
+    - entity: binary_sensor.pir_kitchen
+    - entity: binary_sensor.pir_livingroom
+    - entity: binary_sensor.pir_childa
+    - entity: binary_sensor.pir_childb
+    - entity: binary_sensor.window_study
+    - entity: binary_sensor.window_bedroom
+    - entity: binary_sensor.window_bathroom
+    - entity: binary_sensor.window_kitchen
+    - entity: binary_sensor.window_livingroom1
+    - entity: binary_sensor.window_livingroom2
+    - entity: binary_sensor.window_childa
+    - entity: binary_sensor.window_childb
+    - entity: binary_sensor.dusk_detector
+    - entity: binary_sensor.pir_terrace
+    - entity: binary_sensor.pir_backyard_left
+    - entity: binary_sensor.pir_backyard_back
+    - entity: binary_sensor.pir_backyard_right
+    - entity: binary_sensor.pir_backyard_sidewalk
+    - entity: binary_sensor.fire_attic
+    - entity: binary_sensor.alarm_armed_fully
+    - entity: binary_sensor.alarm_tamper
+  cards:
+    - type: alarm-panel
+      entity: alarm_control_panel.inside
+    - type: alarm-panel
+      entity: alarm_control_panel.windows
+    - type: alarm-panel
+      entity: alarm_control_panel.outside
+    - type: entities
+      entities:
+        - switch.alarm_output1
+        - switch.alarm_output2
+        - switch.alarm_sirene_buzzer
+        - switch.alarm_sirene_light
+        - switch.terrace_light
+        - switch.outside_wall_light1
+        - switch.outside_wall_light2
+- path: pufi
+  #title: Pufi
+  icon: mdi:air-purifier
+  badges:
+    - entity: sensor.pufi_speed
+    - entity: sensor.pufi_filter_remaining
+    - entity: sensor.pufi_air_quality_pm25
+    - entity: sensor.pufi_temp
+    - entity: sensor.pufi_humidity
+  cards:
+    - type: entities
+      show_header_toggle: false
+      state_color: true
+      entities:
+        - fan.pufi
+        - input_number.pufi_level
+        - input_select.pufi_mode
+        - switch.pufi_child_lock
+        - switch.pufi_led
+        - switch.pufi_buzzer
+- path: roberta
+  #title: Roberta
+  icon: mdi:robot-vacuum
+  panel: false
+  cards:
+    - type: custom:xiaomi-vacuum-card
+      entity: vacuum.roberta
+      image: /local/img/roberta.jpg
+      name: Roberta
+      vendor: Xiaomi
+      buttons:
+        spot: true
+      icons:
+        locate: mdi:map-marker-question-outline
+        spot: mdi:map-marker-radius-outline
+        return: mdi:map-marker-right-outline
+      labels:
+        status: Státusz
+        battery: Akku
+        mode: Mód
+        main_brush: Fő seprű
+        side_brush: Oldalső seprű
+        filter: Filter
+        sensor: Szenzor

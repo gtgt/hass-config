@@ -1,8 +1,0 @@
-  - platform: template
-    sensors:
-      energy_meter_kwh:
-        value_template: "{{ states('input_number.energy_meter_kwh')|float|round(4) }}"
-        unit_of_measurement: kWh
-      energy_meter_power:
-        value_template: "{{ states('sensor.energy_meter_hourly')|float * 1000 }}"
-        unit_of_measurement: W

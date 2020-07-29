@@ -1,6 +1,0 @@
-  - platform: syncthru
-    resource: http://printer1.lan
-    name: printer1
-  - platform: syncthru
-    resource: http://printer2.lan
-    name: printer2

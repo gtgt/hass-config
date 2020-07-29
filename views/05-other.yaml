@@ -1,0 +1,27 @@
+- path: other
+  #title: Egyéb
+  icon: mdi:asterisk
+  badges:
+    - entity: person.gt
+    - entity: person.gsm
+    - entity: sensor.moon
+    - entity: sun.sun
+  cards:
+    - type: media-control
+      entity: media_player.kodi
+    - type: vertical-stack
+      title: UPS
+      cards:
+        - type: entities
+          entities:
+          - sensor.eaton_status_data
+          - type: custom:battery-entity
+            entity: sensor.eaton_battery_charge
+          - sensor.eaton_battery_runtime
+          - sensor.eaton_load
+    - type: entities
+      title: Kapcsoló
+      entities:
+        - switch.red_led
+        - switch.yellow_led
+        - switch.green_led

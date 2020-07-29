@@ -1,0 +1,81 @@
+- path: ac
+  #title: AC
+  icon: mdi:air-conditioner
+  #panel: true
+  badges:
+    - entity: sensor.study_temp
+    - entity: sensor.childa_temp
+    - entity: sensor.childa_humidity
+    - entity: sensor.childb_temp
+    - entity: sensor.childb_humidity
+    - entity: sensor.childb_temp_outside
+    - entity: sensor.bedroom_temp
+    - entity: sensor.bedroom_humidity
+    - entity: sensor.livingroom_temp
+    - entity: sensor.livingroom_humidity
+    - entity: sensor.io_temp_diff
+    - entity: sensor.ac_sensor_temp_ac_outlet
+    - entity: sensor.ac_sensor_temp_ac_gas_tube
+    - entity: sensor.ac_inside_temperature
+  cards:
+    - type: custom:layout-card
+      layout: horizontal
+      min_columns: 2
+      cards:
+      - type: custom:thermostat-card
+        entity: climate.ac
+        ambient_temperature: sensor.livingroom_temp
+        title: AC
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_study
+        title: Dolgozó
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_childa
+        title: Máté
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_childb
+        title: Milán
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_bedroom
+        title: Háló
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_kitchen
+        title: Konyha
+        pending: 0
+    - type: entities
+      title: Ventillátor
+      show_header_toggle: false
+      entities:
+      - entity: fan.ac
+        type: custom:slider-entity-row
+        name: AC
+        attribute: speed
+        min: 1
+        max: 5
+    - type: entities
+      title: Automatizálás
+      entities:
+        - entity: automation.ventillation_auto_off
+          secondary_info: last-triggered
+        - entity: automation.ventillation_auto_on
+          secondary_info: last-triggered
+    - type: entities
+      title: Kapcsoló
+      entities:
+        - switch.ac_relay_study
+        - switch.ac_relay_childa
+        - switch.ac_relay_childb
+        - switch.ac_relay_bedroom
+        - switch.ac_relay_kitchen
+        - switch.ac_relay_ventillation
+    - type: vertical-stack
+      cards:
+      - type: picture-entity
+        entity: camera.weather
+      - type: weather-forecast
+        entity: weather.owm

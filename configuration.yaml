@@ -9,7 +9,7 @@ homeassistant:
   time_zone: Europe/Budapest
   customize: !include_dir_merge_named customize
   customize_glob: !include customize_glob.yaml
-  whitelist_external_dirs:
+  allowlist_external_dirs:
     - /config
   auth_providers:
     - type: homeassistant
@@ -187,7 +187,7 @@ input_select: !include_dir_merge_named integrations/input_select
 #input_text: !include_dir_merge_named integrations/input_text
 utility_meter: !include_dir_merge_named integrations/utility_meter
 
-#group: !include groups.yaml
+#group: !include group.yaml
 person: !include person.yaml
 
 lovelace:

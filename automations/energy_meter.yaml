@@ -9,6 +9,21 @@
     - service: input_number.increment
       data:
         entity_id: input_number.energy_meter_kwh
+    - service: saver.set_variable
+      data_template:
+        name: energy_meter_power
+        value: >-
+          {% set ppWh = 400 %}
+          {% set lastTick = state_attr('saver.saver', 'variables')["energy_meter_last_tick"]|int %}
+          {% if lastTick > 0 -%}
+            {{ (3600000 / ((as_timestamp(now()) * 1000)|int + (now().microsecond / 1000)|round|int - lastTick) / ppWh * 1000)|int }}
+          {%- else -%}
+            0
+          {%- endif %}
+    - service: saver.set_variable
+      data_template:
+        name: energy_meter_last_tick
+        value: "{{ (as_timestamp(now()) * 1000)|int + (now().microsecond / 1000)|round|int }}"
     - service: switch.turn_on
       data:
         entity_id: switch.red_led

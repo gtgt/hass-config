@@ -1,0 +1,32 @@
+sensor.solar_production_hourly:
+  friendly_name: "Napenergia termelés (órás átlag)"
+sensor.solar_production_daily:
+  friendly_name: "Napenergia termelés (napi átlag)"
+sensor.solar_production_weekly:
+  friendly_name: "Napenergia termelés (heti átlag)"
+sensor.solar_production_mountly:
+  friendly_name: "Napenergia termelés (havi átlag)"
+sensor.solar_production_yearly:
+  friendly_name: "Napenergia termelés (éves átlag)"
+sensor.energy_meter_power:
+  friendly_name: "Fogyasztásmérő pillanatnyi fogyasztás"
+  icon: mdi:transmission-tower
+sensor.energy_meter_kwh:
+  friendly_name: "Fogyasztásmérő fogyasztás (kWh)"
+  icon: mdi:counter
+sensor.energy_meter_hourly:
+  friendly_name: "Fogyasztásmérő termelés (órás átlag)"
+sensor.energy_meter_daily:
+  friendly_name: "Fogyasztásmérő termelés (napi átlag)"
+sensor.energy_meter_weekly:
+  friendly_name: "Fogyasztásmérő termelés (heti átlag)"
+sensor.energy_meter_mountly:
+  friendly_name: "Fogyasztásmérő termelés (havi átlag)"
+sensor.energy_meter_yearly:
+  friendly_name: "Fogyasztásmérő termelés (éves átlag)"
+sensor.grid_power:
+  friendly_name: "Hálózat egyenleg"
+  icon: mdi:scale-balance
+sensor.grid_power_hourly:
+  friendly_name: "Hálózat egyenleg (órás átlag)"
+  icon: mdi:scale-balance

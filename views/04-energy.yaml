@@ -1,0 +1,133 @@
+- path: energy
+  icon: mdi:flash
+  badges:
+    - entity: sensor.energy_voltage1
+      name: Feszültség 1
+    - entity: sensor.energy_voltage2
+      name: Feszültség 2
+    - entity: sensor.energy_voltage3
+      name: Feszültség 3
+    - entity: sensor.energy_freq1
+      name: Frekvencia 1
+    - entity: sensor.energy_freq2
+      name: Frekvencia 2
+    - entity: sensor.energy_freq3
+      name: Frekvencia 3
+    - entity: sensor.energy_pf1
+      name: Áramfaktor 1
+    - entity: sensor.energy_pf2
+      name: Áramfaktor 2
+    - entity: sensor.energy_pf3
+      name: Áramfaktor 3
+  cards:
+    - type: entity-filter
+      card:
+        type: glance
+      entities:
+        - type: sensor
+          entity: sensor.energy_current1
+          name: Áramerősség 1
+        - type: sensor
+          entity: sensor.energy_current2
+          name: Áramerősség 2
+        - type: sensor
+          entity: sensor.energy_current3
+          name: Áramerősség 3
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      show_empty: false
+    - type: entity-filter
+      card:
+        type: glance
+      entities:
+        - type: sensor
+          entity: sensor.energy_power1
+          name: P. teljesítmény 1
+        - type: sensor
+          entity: sensor.energy_power2
+          name: P. teljesítmény 2
+        - type: sensor
+          entity: sensor.energy_power3
+          name: P. teljesítmény 3
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      show_empty: false
+    - type: entity-filter
+      card:
+        type: glance
+      entities:
+        - type: sensor
+          entity: sensor.energy_energy1
+          name: Fogyasztás 1
+        - type: sensor
+          entity: sensor.energy_energy2
+          name: Fogyasztás 2
+        - type: sensor
+          entity: sensor.energy_energy3
+          name: Fogyasztás 3
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      show_empty: false
+    - type: entity-filter
+      card:
+        type: glance
+      entities:
+        - type: button
+          entity: switch.energy_reset1
+          name: 1
+          icon: mdi:numeric-0
+        - type: button
+          entity: switch.energy_reset2
+          name: 2
+          icon: mdi:numeric-0
+        - type: button
+          entity: switch.energy_reset3
+          name: 3
+          icon: mdi:numeric-0
+        - type: button
+          entity: switch.energy_restart
+          name: Újraindfítás
+          icon: mdi:reload
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      show_empty: false
+    - type: custom:power-wheel-card
+      #power_decimals: 3
+      production_is_positive: true
+      solar_power_entity: sensor.solaredge_ac_power
+      grid_power_entity: sensor.grid_power
+      #solar_energy_entity: sensor.solaredge_ac_energy_kwh
+      #grid_energy_entity: sensor.energy_meter_kwh
+      solar_icon: "mdi:weather-sunny"
+      grid_icon: "mdi:transmission-tower"
+      home_icon: "mdi:home"
+    - type: entities
+      title: Napenergia
+      entities:
+        - sensor.solaredge_ac_current
+        - sensor.solaredge_ac_power
+        - sensor.solaredge_ac_energy_kwh
+        - sensor.solar_production_hourly
+        - sensor.solar_production_daily
+        - sensor.solar_production_weekly
+        - sensor.solar_production_monthly
+    - type: entities
+      title: Fogyasztásmérő
+      entities:
+        - sensor.energy_meter_kwh
+        - sensor.energy_meter_power
+        - sensor.energy_meter_hourly
+        - sensor.energy_meter_daily
+    - type: glance
+      title: Egyenleg
+      entities:
+        - type: sensor
+          entity: sensor.grid_power
+          name: "Pillanatnyi"
+        - type: sensor
+          entity: sensor.grid_power_hourly
+          name: "Óránkénti átlag"
