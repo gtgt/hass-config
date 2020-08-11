@@ -5,13 +5,14 @@
         unit_of_measurement: kWh
       energy_meter_power:
         unit_of_measurement: W
+        entity_id: sensor.energy_meter_kwh
         value_template: >-
-          {{ state_attr('saver.saver', 'variables')["energy_meter_power"]| int }}
+          {{ state_attr('saver.saver', 'variables')["energy_meter_power"]|int }}
       grid_power:
-        unit_of_measurement: 'W'
+        unit_of_measurement: W
         value_template: >-
-          {{ -1 * (states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int) }}
+          {{ -1 * ((states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int))|float|round(2) }}
       grid_power_hourly:
-        unit_of_measurement: 'W'
+        unit_of_measurement: W
         value_template: >-
-          {{ -1 * ((states('sensor.energy_meter_hourly')|float * 1000) - (states('sensor.solar_production_hourly')|float * 1000)) }}
+          {{ -1 * ((state_attr('sensor.energy_meter_hourly', 'last_period')|float * 1000) - (state_attr('sensor.solar_production_hourly', 'last_period')|float * 1000))|round(2) }}

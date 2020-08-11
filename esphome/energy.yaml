@@ -44,7 +44,7 @@ ota:
 
 time:
   - platform: homeassistant
-    id: now
+    id: hatime
 
 uart:
   - id: ubus1

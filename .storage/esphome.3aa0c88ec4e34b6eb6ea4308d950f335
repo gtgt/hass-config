@@ -1,0 +1,49 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Aug  6 2020, 21:33:34",
+            "esphome_version": "1.16.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "60:01:94:16:06:9E",
+            "model": "PLATFORMIO_D1_MINI",
+            "name": "childb",
+            "uses_password": true
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 1381775050,
+                "name": "childb_temp",
+                "object_id": "childb_temp",
+                "unique_id": "childbsensorchildb_temp",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 1171038058,
+                "name": "childb_temp_outside",
+                "object_id": "childb_temp_outside",
+                "unique_id": "dallas-070316A279825328",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 1841324271,
+                "name": "childb_humidity",
+                "object_id": "childb_humidity",
+                "unique_id": "childbsensorchildb_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.3aa0c88ec4e34b6eb6ea4308d950f335",
+    "version": 1
+}

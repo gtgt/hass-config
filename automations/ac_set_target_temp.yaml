@@ -1,5 +1,5 @@
-  - alias: ac_terget_temp_restore
-    initial_state: on
+  - alias: ac_target_temp_restore
+    initial_state: off
     trigger:
       - platform: homeassistant
         event: start
@@ -10,28 +10,28 @@
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_study
-                temperature: "{{ climate_ac_study_attr_temperature | int }}"
+                temperature: "{{ climate_ac_study_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_childa
-                temperature: "{{ climate_ac_childa_attr_temperature | int }}"
+                temperature: "{{ climate_ac_childa_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_childb
-                temperature: "{{ climate_ac_childb_attr_temperature | int }}"
+                temperature: "{{ climate_ac_childb_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_bedroom
-                temperature: "{{ climate_ac_bedroom_attr_temperature | int }}"
+                temperature: "{{ climate_ac_bedroom_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_kitchen
-                temperature: "{{ climate_ac_kitchen_attr_temperature | int }}"
+                temperature: "{{ climate_ac_kitchen_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
       - service: automation.turn_on
         data:
           entity_id: automation.ac_terget_temp_save
 
-  - alias: ac_terget_temp_save
+  - alias: ac_target_temp_save
     initial_state: off
     trigger:
       - platform: homeassistant
@@ -63,20 +63,3 @@
         data:
           entity_id: climate.ac_kitchen
 
-  - id: ac_bedroom_set_target
-    initial_state: on
-    trigger:
-      - platform: state
-        entity_id: sensor.bedroom_target_rotary
-    condition:
-      condition: and
-      conditions:
-        - condition: template
-          value_template: "{{ trigger.to_state.state|int > 15 }}"
-        - condition: template
-          value_template: "{{ trigger.to_state.state|int < 27 }}"
-    action:
-      - service: climate.set_temperature
-        data_template:
-          entity_id: climate.ac_bedroom
-          temperature: '{{ trigger.to_state.state }}'

@@ -40,7 +40,7 @@ ota:
 
 time:
   - platform: homeassistant
-    id: now
+    id: hatime
 
 # Defining the output pins
 output:

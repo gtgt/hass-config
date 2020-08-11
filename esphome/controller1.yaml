@@ -44,7 +44,7 @@ ota:
 
 time:
   - platform: homeassistant
-    id: now
+    id: hatime
 
 # We can still control the backlight independently
 switch:
@@ -119,8 +119,8 @@ display:
       it.rectangle(0,  0, it.get_width(), it.get_height(), id(blue));
       it.rectangle(0, 20, it.get_width(), it.get_height(), id(blue));   // header bar
 
-      it.strftime((240 / 2), (140 / 3) * 1 + 5, id(titlefont), id(gray), TextAlign::CENTER, "%Y-%m-%d", id(now).now());
-      it.strftime((240 / 2), (140 / 3) * 2 + 5, id(clockfont), id(gray), TextAlign::CENTER, "%H:%M:%S", id(now).now());
+      it.strftime((240 / 2), (140 / 3) * 1 + 5, id(titlefont), id(gray), TextAlign::CENTER, "%Y-%m-%d", id(hatime).now());
+      it.strftime((240 / 2), (140 / 3) * 2 + 5, id(clockfont), id(gray), TextAlign::CENTER, "%H:%M:%S", id(hatime).now());
       it.print(5, 5, id(valuefont), id(yellow), TextAlign::TOP_LEFT, "ESPHome");
 
       // Comment out the above lines to see the image without text overlaid

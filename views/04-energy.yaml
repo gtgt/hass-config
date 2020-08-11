@@ -99,7 +99,7 @@
       #power_decimals: 3
       production_is_positive: true
       solar_power_entity: sensor.solaredge_ac_power
-      grid_power_entity: sensor.grid_power
+      grid_power_entity: sensor.energy_meter_power
       #solar_energy_entity: sensor.solaredge_ac_energy_kwh
       #grid_energy_entity: sensor.energy_meter_kwh
       solar_icon: "mdi:weather-sunny"
@@ -130,7 +130,7 @@
           name: "Pillanatnyi"
         - type: sensor
           entity: sensor.grid_power_hourly
-          name: "Óránkénti átlag"
+          name: "Előző óra átlag"
     - type: vertical-stack
       title: UPS
       cards:

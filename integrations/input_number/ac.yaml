@@ -1,7 +1,35 @@
-  ac_default_target_temp:
-    name: "Alapértelmezett célhőmérséklet"
-    initial: 25
-    min: 22
-    max: 27
-    step: 1
-    icon: "mdi:home-thermometer-outline"
+ac_default_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:home-thermometer-outline"
+
+ac_study_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"
+
+ac_childa_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"
+
+ac_childb_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"
+
+ac_bedroom_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"
+
+ac_kitchen_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"

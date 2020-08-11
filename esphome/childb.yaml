@@ -41,7 +41,7 @@ ota:
 
 time:
   - platform: homeassistant
-    id: now
+    id: hatime
 
 dallas:
   - pin: D5 #GPIO14
@@ -69,7 +69,7 @@ sensor:
 
   - platform: homeassistant
     id: target_temp
-    entity_id: sensor.ac_${name}_target_temp
+    entity_id: input_number.ac_${name}_target_temp
     internal: true
 
 binary_sensor:
@@ -106,7 +106,7 @@ display:
       it.printf(32, 0, id(titlefont), TextAlign::TOP_CENTER, "${name}");
 
       // Print time in HH:MM format
-      it.strftime(0, 40, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
+      it.strftime(0, 40, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(hatime).now());
       
 
       // Print valve state

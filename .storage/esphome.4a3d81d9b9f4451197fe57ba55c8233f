@@ -1,7 +1,7 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Aug 10 2020, 22:10:59",
+            "compilation_time": "Aug 11 2020, 03:08:26",
             "esphome_version": "1.16.0-dev",
             "has_deep_sleep": false,
             "mac_address": "68:C6:3A:A4:80:F6",
@@ -10,16 +10,6 @@
             "uses_password": true
         },
         "sensor": [
-            {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:rotate-right",
-                "key": 2185773987,
-                "name": "bedroom_target_rotary",
-                "object_id": "bedroom_target_rotary",
-                "unique_id": "bedroomsensorbedroom_target_rotary",
-                "unit_of_measurement": "steps"
-            },
             {
                 "accuracy_decimals": 1,
                 "force_update": false,
@@ -44,6 +34,6 @@
         "services": [],
         "text_sensor": []
     },
-    "key": "esphome.ab9bb3d4c70e4b12b86de6ce3eb2b16a",
+    "key": "esphome.4a3d81d9b9f4451197fe57ba55c8233f",
     "version": 1
 }

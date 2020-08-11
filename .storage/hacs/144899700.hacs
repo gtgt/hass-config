@@ -26,11 +26,11 @@
         "installed_version": "16",
         "iot_class": null,
         "last_commit": "5026d7d",
-        "last_updated": "2020-07-19T01:21:21Z",
+        "last_updated": "2020-08-01T03:14:29Z",
         "last_version": "16",
         "manifest_name": null,
         "new": false,
-        "open_issues": 16,
+        "open_issues": 17,
         "persistent_directory": null,
         "published_tags": [
             "16",
@@ -39,12 +39,12 @@
             "13",
             "12"
         ],
-        "pushed_at": "2020-07-19T01:21:21",
+        "pushed_at": "2020-08-01T03:14:29",
         "releases": true,
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 334,
+        "stargazers_count": 340,
         "topics": [],
         "zip_release": false
     },

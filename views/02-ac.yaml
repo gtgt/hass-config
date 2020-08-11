@@ -73,6 +73,14 @@
         - switch.ac_relay_bedroom
         - switch.ac_relay_kitchen
         - switch.ac_relay_ventillation
+#    - type: entities
+#      title: Célhőmérséklet
+#      entities:
+#        - input_number.ac_study_target_temp
+#        - input_number.ac_childa_target_temp
+#        - input_number.ac_childb_target_temp
+#        - input_number.ac_bedroom_target_temp
+#        - input_number.ac_kitchen_target_temp
     - type: vertical-stack
       cards:
       - type: picture-entity

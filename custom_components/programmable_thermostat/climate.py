@@ -152,8 +152,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
                 self._async_update_temp(sensor_state)
             target_state = self.hass.states.get(self.target_entity_id)
             if target_state and \
-               target_state.state != STATE_UNKNOWN and \
-               self._hvac_mode != HVAC_MODE_HEAT_COOL:
+               target_state.state != STATE_UNKNOWN:
                 self._async_update_program_temp(target_state)
 
         self.hass.bus.async_listen_once(
@@ -275,6 +274,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
     async def async_set_temperature(self, **kwargs):
         """Set new target temperature."""
         temperature = kwargs.get(ATTR_TEMPERATURE)
+        _LOGGER.info("[%s] Async set target temp of %s: %s (%s)", self._name, self.cooler_entity_id, temperature, self._target_temp)
         if temperature is None:
             return
         self._target_temp = float(temperature)
@@ -295,7 +295,6 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
             return
         self._restore_temp = float(new_state.state)
         _LOGGER.info("[%s] Target temp changed: %f", self._name, self._restore_temp)
-        """if self._hvac_mode != HVAC_MODE_HEAT_COOL:"""
         self._async_restore_program_temp()
         await self.control_system_mode()
         await self.async_update_ha_state()
@@ -359,23 +358,25 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
         try:
             self._cur_temp = float(state.state)
         except ValueError as ex:
-            _LOGGER.error("Unable to update from sensor: %s", ex)
+            _LOGGER.error("Unable to update %s as temp value from sensor: %s", state.state, ex)
 
     @callback
     def _async_restore_program_temp(self):
         """Update thermostat with latest state from sensor to have back automatic value."""
+        _LOGGER.info("[%s] Restore target temp to %s: %s (%s)", self._name, self.cooler_entity_id, self._restore_temp, self._target_temp)
         try:
             self._target_temp = self._restore_temp
         except ValueError as ex:
-            _LOGGER.error("Unable to update from sensor: %s", ex)
+            _LOGGER.error("Unable to restore %s as target temp value from sensor: %s", state.state, ex)
 
     @callback
     def _async_update_program_temp(self, state):
         """Update thermostat with latest state from sensor."""
+        _LOGGER.info("[%s] Update target temp to %s: %s (%s)", self._name, self.cooler_entity_id, state.states, self._target_temp)
         try:
             self._target_temp = float(state.state)
         except ValueError as ex:
-            _LOGGER.error("Unable to update from sensor: %s", ex)
+            _LOGGER.error("Unable to update %s as target temp value from sensor: %s", state.state, ex)
 
     @property
     def should_poll(self):

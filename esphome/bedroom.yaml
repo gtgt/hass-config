@@ -66,7 +66,7 @@ sensor:
       id: temp
       name: ${name}_temp
       filters:
-        - offset: -0.5
+        - offset: 0
     humidity:
       id: humidity
       name: ${name}_humidity
@@ -110,28 +110,34 @@ sensor:
   - platform: rotary_encoder
     id: target_rotary
     name: ${name}_target_rotary
+    internal: true
     pin_a: D5 #GPIO14
     pin_b: D6 #GPIO12
     min_value: 40
-    max_value: 50
+    max_value: 54
     accuracy_decimals: 1
     resolution: 1
     filters:
       - lambda: return x / 2;
-#    on_value:
-#      then:
-#        - if:
-#            condition:
-#              lambda: 'return x != (id(target_temp).state * 2);'
-#            then:
-#            - lambda: |-
-#                ESP_LOGI("ac", "Target temp set by rotary encoder: %f", x);
-#                id(target_temp).publish_state(x);
+    on_value:
+      then:
+        - if:
+            condition:
+              lambda: 'return x != id(target_temp).state * 1;'
+            then:
+            - lambda: |-
+                ESP_LOGI("ac", "Target temp set by rotary encoder: %f", x);
+                id(target_temp).publish_state(x);
+            - homeassistant.service:
+                service: input_number.set_value
+                data:
+                  entity_id: input_number.ac_${name}_target_temp
+                  value: !lambda 'return x;'
 
   - platform: homeassistant
     id: target_temp
-    entity_id: sensor.ac_${name}_target_temp
-    internal: true
+    entity_id: input_number.ac_${name}_target_temp
+    internal: false
     on_value:
       then:
         - if:
@@ -181,7 +187,7 @@ display:
     model: "SH1106 128x64"
     reset_pin: D0
     address: 0x3C
-    update_interval: 2s
+    update_interval: 1s
     lambda: |-
         // Print "${name}" in top center.
         it.printf(64, 0, id(titlefont), TextAlign::TOP_CENTER, "${name}");

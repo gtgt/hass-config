@@ -36,7 +36,7 @@ discovery:
 logger:
   default: warn
   logs:
-    custom_components.programmable_thermostat.climate: warning
+    custom_components.programmable_thermostat.climate: warn
     homeassistant.components.cloud.google_config: error
     satel_integra.satel_integra: error
     miio.miioprotocol: fatal

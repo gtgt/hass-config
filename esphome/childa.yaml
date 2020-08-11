@@ -41,7 +41,7 @@ ota:
 
 time:
   - platform: homeassistant
-    id: now
+    id: hatime
 
 sensor:
   - platform: dht

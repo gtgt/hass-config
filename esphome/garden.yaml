@@ -42,7 +42,7 @@ ota:
 
 time:
   - platform: homeassistant
-    id: now
+    id: hatime
 
 i2c:
   sda: GPIO1

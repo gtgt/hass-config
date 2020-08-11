@@ -1,7 +1,7 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Aug  6 2020, 21:27:44",
+            "compilation_time": "Aug 11 2020, 00:05:33",
             "esphome_version": "1.16.0-dev",
             "has_deep_sleep": false,
             "mac_address": "18:FE:34:E0:C1:2A",
@@ -34,6 +34,6 @@
         "services": [],
         "text_sensor": []
     },
-    "key": "esphome.bd54e0399ed349a4b05fe3cf1f35ebb4",
+    "key": "esphome.814ea3acf6e14f7e804f5228be02276e",
     "version": 1
 }

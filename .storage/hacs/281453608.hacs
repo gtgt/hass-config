@@ -30,7 +30,7 @@
         "last_version": null,
         "manifest_name": null,
         "new": false,
-        "open_issues": 1,
+        "open_issues": 3,
         "persistent_directory": null,
         "published_tags": [],
         "pushed_at": "2020-07-27T09:50:35",
@@ -38,7 +38,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 7,
+        "stargazers_count": 8,
         "topics": [
             "home-assistant"
         ],
