@@ -28,10 +28,8 @@
                 "unique_id": "bedroom_rgblightbedroom_rgb"
             }
         ],
-        "sensor": [],
-        "services": [],
-        "text_sensor": []
+        "services": []
     },
-    "key": "esphome.814ea3acf6e14f7e804f5228be02276e",
+    "key": "esphome.4c870299bc414227be0aebe083daf4c7",
     "version": 1
 }

@@ -1,0 +1,39 @@
+{
+    "data": {
+        "device_info": {
+            "compilation_time": "Aug 11 2020, 00:05:33",
+            "esphome_version": "1.16.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "18:FE:34:E0:C1:2A",
+            "model": "PLATFORMIO_ESP01_1M",
+            "name": "childa",
+            "uses_password": true
+        },
+        "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:thermometer",
+                "key": 2866744611,
+                "name": "childa_temp",
+                "object_id": "childa_temp",
+                "unique_id": "childasensorchilda_temp",
+                "unit_of_measurement": "\u00b0C"
+            },
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:water-percent",
+                "key": 679618606,
+                "name": "childa_humidity",
+                "object_id": "childa_humidity",
+                "unique_id": "childasensorchilda_humidity",
+                "unit_of_measurement": "%"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.08f52cab997545e2b21b808d17d515bb",
+    "version": 1
+}

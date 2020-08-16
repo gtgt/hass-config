@@ -104,7 +104,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
             try:
                 self._cur_temp = float(sensor_state.state)
             except ValueError as ex:
-                _LOGGER.warning("Unable to update from sensor: %s", ex)
+                _LOGGER.warning("Unable to update from sensor (%s): %s", sensor_entity_id, ex)
         self._active = False
         self._temp_lock = asyncio.Lock()
         self._hvac_action = CURRENT_HVAC_OFF
@@ -358,7 +358,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
         try:
             self._cur_temp = float(state.state)
         except ValueError as ex:
-            _LOGGER.error("Unable to update %s as temp value from sensor: %s", state.state, ex)
+            _LOGGER.error("Unable to update %s as temp value from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
 
     @callback
     def _async_restore_program_temp(self):
@@ -367,7 +367,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
         try:
             self._target_temp = self._restore_temp
         except ValueError as ex:
-            _LOGGER.error("Unable to restore %s as target temp value from sensor: %s", state.state, ex)
+            _LOGGER.error("Unable to restore %s as target temp value from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
 
     @callback
     def _async_update_program_temp(self, state):
@@ -376,7 +376,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
         try:
             self._target_temp = float(state.state)
         except ValueError as ex:
-            _LOGGER.error("Unable to update %s as target temp value from sensor: %s", state.state, ex)
+            _LOGGER.error("Unable to update %s as target temp value from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
 
     @property
     def should_poll(self):

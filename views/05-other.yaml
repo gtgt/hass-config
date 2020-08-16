@@ -13,9 +13,18 @@
       title: Vonat
       entities:
         - sensor.mav_solymar_ujpest
+        - sensor.mav_ujpest_solymar
     - type: entities
       title: Kapcsoló
       entities:
         - switch.red_led
         - switch.yellow_led
         - switch.green_led
+    - type: vertical-stack
+      cards:
+        - type: picture-entity
+          entity: camera.espcam1
+        - type: entities
+          entities:
+            - light.espcam1_light
+            - sensor.espcam1_wifi_signal

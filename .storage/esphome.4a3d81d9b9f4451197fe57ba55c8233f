@@ -1,7 +1,7 @@
 {
     "data": {
         "device_info": {
-            "compilation_time": "Aug 11 2020, 03:08:26",
+            "compilation_time": "Aug 11 2020, 03:31:36",
             "esphome_version": "1.16.0-dev",
             "has_deep_sleep": false,
             "mac_address": "68:C6:3A:A4:80:F6",
@@ -10,6 +10,16 @@
             "uses_password": true
         },
         "sensor": [
+            {
+                "accuracy_decimals": 1,
+                "force_update": false,
+                "icon": "mdi:ear-hearing",
+                "key": 164023899,
+                "name": "bedroom_mic",
+                "object_id": "bedroom_mic",
+                "unique_id": "68c63aa480f6-adc",
+                "unit_of_measurement": "dB"
+            },
             {
                 "accuracy_decimals": 1,
                 "force_update": false,

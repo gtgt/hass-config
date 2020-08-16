@@ -26,11 +26,11 @@
         "installed_version": "2.0.0",
         "iot_class": null,
         "last_commit": "037ba24",
-        "last_updated": "2020-08-01T03:22:38Z",
+        "last_updated": "2020-08-15T14:29:33Z",
         "last_version": "2.0.0",
         "manifest_name": null,
         "new": false,
-        "open_issues": 24,
+        "open_issues": 26,
         "persistent_directory": null,
         "published_tags": [
             "2.0.0",
@@ -39,7 +39,7 @@
             "12",
             "11"
         ],
-        "pushed_at": "2020-08-01T03:22:38",
+        "pushed_at": "2020-08-15T14:29:33",
         "releases": true,
         "render_readme": false,
         "selected_tag": null,

@@ -10,3 +10,9 @@
     # https://peti817172m%40gmail.com:WGY6vIqzPs6nHsSL@www.mavcsoport.hu/gtfs/gtfsMavMenetrend.zip
     data: gtfsMavMenetrend.zip
     include_tomorrow: true
+  - platform: gtfs
+    name: mav_ujpest_solymar
+    origin: 284
+    destination: 3670
+    data: gtfsMavMenetrend.zip
+    include_tomorrow: true
