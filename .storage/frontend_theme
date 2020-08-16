@@ -1,0 +1,8 @@
+{
+    "data": {
+        "frontend_default_dark_theme": "default",
+        "frontend_default_theme": "Google Dark Theme"
+    },
+    "key": "frontend_theme",
+    "version": 1
+}

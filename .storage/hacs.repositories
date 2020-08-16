@@ -2363,7 +2363,7 @@
             "last_release_tag": null,
             "last_updated": "2020-07-18T11:55:02Z",
             "name": "home-assistant-themes",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "dark_themes.yaml",
                 "name": "Dark theme pack for Home Assistant",
@@ -3127,7 +3127,7 @@
             "category": "integration",
             "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
             "domain": "hacs",
-            "downloads": 18193,
+            "downloads": 18265,
             "first_install": false,
             "full_name": "hacs/integration",
             "installed": true,
@@ -3920,7 +3920,7 @@
             "category": "plugin",
             "description": "Simple card for Xiaomi (and other) robot vacuums in Home Assistant's Lovelace UI",
             "domain": null,
-            "downloads": 9123,
+            "downloads": 9124,
             "first_install": false,
             "full_name": "benct/lovelace-xiaomi-vacuum-card",
             "installed": true,
@@ -9657,7 +9657,7 @@
             "category": "plugin",
             "description": "Custom Header adds enhancements and customization options to Home Assistant's Lovelace header.",
             "domain": null,
-            "downloads": 2296,
+            "downloads": 2327,
             "first_install": false,
             "full_name": "maykar/custom-header",
             "installed": true,
@@ -9812,7 +9812,7 @@
             "first_install": false,
             "full_name": "gtgt/climate.programmable_thermostat",
             "installed": true,
-            "installed_commit": "fedbc99",
+            "installed_commit": "bd80b3e",
             "last_commit": "bd80b3e",
             "last_release_tag": null,
             "last_updated": "2020-08-16T21:23:25Z",
@@ -12655,8 +12655,8 @@
             "downloads": 0,
             "first_install": false,
             "full_name": "JuanMTech/orange_dark",
-            "installed": true,
-            "installed_commit": "60213dc",
+            "installed": false,
+            "installed_commit": null,
             "last_commit": "60213dc",
             "last_release_tag": "v1.7",
             "last_updated": "2020-07-29T22:55:59Z",
@@ -12674,7 +12674,7 @@
                 "home-assistant",
                 "themes"
             ],
-            "version_installed": "v1.7"
+            "version_installed": null
         },
         "235869023": {
             "authors": [],
@@ -17544,7 +17544,7 @@
             "last_release_tag": "v1.2.0",
             "last_updated": "2020-06-27T10:18:31Z",
             "name": "hass-shutter-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "hass-shutter-card.js",
                 "name": "Shutter Card",
@@ -17710,7 +17710,7 @@
             "last_release_tag": "v0.1.3",
             "last_updated": "2020-07-09T21:19:35Z",
             "name": "PlantPictureCard",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "PlantPictureCard.js",
                 "name": "Plant Picture Card",
@@ -17853,7 +17853,7 @@
             "last_release_tag": null,
             "last_updated": "2020-07-04T10:57:39Z",
             "name": "power-usage-card-regex",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "content_in_root": true,
                 "filename": "power-usage-card-regex.js",
@@ -17933,7 +17933,7 @@
             "last_release_tag": "v1.0.3",
             "last_updated": "2020-07-26T00:24:39Z",
             "name": "lovelace-lightning-detector-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "lightning-detector-card.js",
                 "name": "Lightning Detector Card",
@@ -17967,7 +17967,7 @@
             "last_release_tag": "1.2",
             "last_updated": "2020-07-04T13:45:21Z",
             "name": "animated-weather-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "homeassistant": "0.109.0",
                 "name": "Animated Weather Card",
@@ -18039,7 +18039,7 @@
             "last_release_tag": "v1.2.0",
             "last_updated": "2020-08-03T17:37:01Z",
             "name": "select-list-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "domains": [
                     "input_select"
@@ -18257,7 +18257,7 @@
             "last_release_tag": "0.0.2",
             "last_updated": "2020-07-13T00:41:43Z",
             "name": "water-heater-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "content_in_root": false,
                 "filename": "water-heater-card.js",
@@ -18289,7 +18289,7 @@
             "last_release_tag": "v1.2.3",
             "last_updated": "2020-08-11T00:32:37Z",
             "name": "lovelace-rpi-monitor-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "rpi-monitor-card.js",
                 "name": "RPi Monitor Card",
@@ -18387,7 +18387,7 @@
             "last_release_tag": "v0.35",
             "last_updated": "2020-08-16T14:42:12Z",
             "name": "lovelace-light-soft-ui-theme",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "country": "US",
                 "homeassistant": "0.98.0",
@@ -18422,7 +18422,7 @@
             "last_release_tag": "v0.35",
             "last_updated": "2020-08-16T14:39:24Z",
             "name": "lovelace-dark-soft-ui-theme",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "country": "US",
                 "homeassistant": "0.98.0",
@@ -18563,7 +18563,7 @@
             "last_release_tag": "v0.3.2",
             "last_updated": "2020-08-13T19:52:01Z",
             "name": "lovelace-clock-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "Lovelace Clock Card",
                 "render_readme": true
@@ -18631,7 +18631,7 @@
             "last_release_tag": "v1.0",
             "last_updated": "2020-08-01T17:17:45Z",
             "name": "ios_dark_mode_theme",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "iOS Dark Mode",
                 "render_readme": true
@@ -18660,7 +18660,7 @@
             "last_release_tag": "v1.0",
             "last_updated": "2020-08-01T17:32:44Z",
             "name": "ios_light_mode_theme",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "name": "iOS Light Mode",
                 "render_readme": true
@@ -18765,7 +18765,7 @@
             "last_release_tag": "v0.2.1",
             "last_updated": "2020-08-16T11:31:46Z",
             "name": "compass-card",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "compass-card.js",
                 "name": "Compass Card",
@@ -18796,7 +18796,7 @@
             "last_release_tag": null,
             "last_updated": 0,
             "name": "cover-position-preset-row",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "cover-position-preset-row.js",
                 "name": "Cover Position Preset Row"
@@ -18825,7 +18825,7 @@
             "last_release_tag": null,
             "last_updated": 0,
             "name": "cover-control-button-row",
-            "new": true,
+            "new": false,
             "repository_manifest": {
                 "filename": "cover-control-button-row.js",
                 "name": "Cover Control Button Row"

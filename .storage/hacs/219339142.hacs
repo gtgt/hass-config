@@ -10,7 +10,7 @@
         "description": "Custom Header adds enhancements and customization options to Home Assistant's Lovelace header.",
         "domain": null,
         "domains": [],
-        "downloads": 2296,
+        "downloads": 2327,
         "file_name": "custom-header.js",
         "filename": "custom-header.js",
         "first_install": false,
