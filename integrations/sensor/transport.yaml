@@ -11,6 +11,18 @@
     data: gtfsMavMenetrend.zip
     include_tomorrow: true
   - platform: gtfs
+    name: mav_pvar_ujpest
+    origin: 3671
+    destination: 284
+    data: gtfsMavMenetrend.zip
+    include_tomorrow: true
+  - platform: gtfs
+    name: mav_pvar_nyugati
+    origin: 3671
+    destination: 269
+    data: gtfsMavMenetrend.zip
+    include_tomorrow: true
+  - platform: gtfs
     name: mav_ujpest_solymar
     origin: 284
     destination: 3670

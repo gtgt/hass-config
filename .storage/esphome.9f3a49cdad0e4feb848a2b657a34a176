@@ -19,7 +19,7 @@
             }
         ],
         "device_info": {
-            "compilation_time": "Aug 16 2020, 23:18:11",
+            "compilation_time": "Aug 17 2020, 02:17:56",
             "esphome_version": "1.16.0-dev",
             "has_deep_sleep": false,
             "mac_address": "F0:08:D1:D4:7F:4C",

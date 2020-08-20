@@ -30,7 +30,7 @@
         "last_version": "v1.9",
         "manifest_name": null,
         "new": false,
-        "open_issues": 0,
+        "open_issues": 1,
         "persistent_directory": null,
         "published_tags": [
             "v1.9",
@@ -44,7 +44,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 73,
+        "stargazers_count": 74,
         "topics": [
             "hacs",
             "home-assistant",
