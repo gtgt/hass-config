@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "JuanMTech/google_dark_theme",
+        "full_name_lower": "juanmtech/google_dark_theme",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -30,7 +31,7 @@
         "last_version": "v1.9",
         "manifest_name": null,
         "new": false,
-        "open_issues": 1,
+        "open_issues": 0,
         "persistent_directory": null,
         "published_tags": [
             "v1.9",
@@ -44,7 +45,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 74,
+        "stargazers_count": 75,
         "topics": [
             "hacs",
             "home-assistant",

@@ -18,6 +18,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "PiotrMachowski/Home-Assistant-custom-components-Saver",
+        "full_name_lower": "piotrmachowski/home-assistant-custom-components-saver",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,

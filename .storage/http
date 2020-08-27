@@ -8,7 +8,12 @@
         "server_port": 443,
         "ssl_certificate": "/ssl/fullchain.pem",
         "ssl_key": "/ssl/privkey.pem",
-        "ssl_profile": "modern"
+        "ssl_profile": "modern",
+        "trusted_proxies": [
+            "192.168.1.5",
+            "192.168.1.10"
+        ],
+        "use_x_forwarded_for": true
     },
     "key": "http",
     "version": 1

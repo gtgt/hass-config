@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "thomasloven/lovelace-slider-entity-row",
+        "full_name_lower": "thomasloven/lovelace-slider-entity-row",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -30,7 +31,7 @@
         "last_version": "16",
         "manifest_name": null,
         "new": false,
-        "open_issues": 18,
+        "open_issues": 19,
         "persistent_directory": null,
         "published_tags": [
             "16",
@@ -44,7 +45,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 341,
+        "stargazers_count": 342,
         "topics": [],
         "zip_release": false
     },

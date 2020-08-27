@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": true,
         "full_name": "gtgt/climate.programmable_thermostat",
+        "full_name_lower": "gtgt/climate.programmable_thermostat",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,

@@ -7,14 +7,14 @@
     - entity: sensor.moon
     - entity: sun.sun
   cards:
-    - type: vertical-stack
-      cards:
-        - type: picture-entity
-          entity: camera.espcam1
-        - type: entities
-          entities:
-            - light.espcam1_light
-            - sensor.espcam1_wifi_signal
+    - type: picture-glance
+      camera_image: camera.espcam1
+      camera_view: live
+      show_state: false
+      entities:
+        - light.espcam1
+        - sensor.espcam1_wifi_signal
+        - binary_sensor.espcam1_pir
     - type: media-control
       entity: media_player.kodi
     - type: entities

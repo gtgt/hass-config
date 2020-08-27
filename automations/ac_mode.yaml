@@ -23,4 +23,5 @@
             - climate.ac_childa
             - climate.ac_childb
             - climate.ac_bedroom
+            - climate.ac_kitchen
           hvac_mode: "{{ trigger.to_state.state }}"

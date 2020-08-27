@@ -1,0 +1,52 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 3997357327,
+                "name": "controller1_status",
+                "object_id": "controller1_status",
+                "unique_id": "controller1binary_sensorcontroller1_status"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1789282403,
+                "name": "controller1_button0",
+                "object_id": "controller1_button0",
+                "unique_id": "controller1binary_sensorcontroller1_button0"
+            },
+            {
+                "device_class": "",
+                "is_status_binary_sensor": false,
+                "key": 1789282402,
+                "name": "controller1_button1",
+                "object_id": "controller1_button1",
+                "unique_id": "controller1binary_sensorcontroller1_button1"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Aug 24 2020, 02:12:54",
+            "esphome_version": "1.16.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "24:62:AB:F9:8E:14",
+            "model": "Adafruit ESP32 Feather",
+            "name": "controller1",
+            "uses_password": true
+        },
+        "services": [],
+        "switch": [
+            {
+                "assumed_state": false,
+                "icon": "",
+                "key": 2988928984,
+                "name": "controller1_backlight",
+                "object_id": "controller1_backlight",
+                "unique_id": "controller1switchcontroller1_backlight"
+            }
+        ]
+    },
+    "key": "esphome.9143021537e941b2a8a4bbafab88d5eb",
+    "version": 1
+}

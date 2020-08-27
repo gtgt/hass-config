@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "cbulock/lovelace-battery-entity",
+        "full_name_lower": "cbulock/lovelace-battery-entity",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,

@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "thomasloven/lovelace-card-mod",
+        "full_name_lower": "thomasloven/lovelace-card-mod",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -30,7 +31,7 @@
         "last_version": "2.0.0",
         "manifest_name": null,
         "new": false,
-        "open_issues": 26,
+        "open_issues": 27,
         "persistent_directory": null,
         "published_tags": [
             "2.0.0",
@@ -44,7 +45,7 @@
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 170,
+        "stargazers_count": 175,
         "topics": [],
         "zip_release": false
     },

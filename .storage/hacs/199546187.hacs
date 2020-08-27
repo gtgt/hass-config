@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "PiotrMachowski/lovelace-google-keep-card",
+        "full_name_lower": "piotrmachowski/lovelace-google-keep-card",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -41,7 +42,7 @@
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 14,
+        "stargazers_count": 15,
         "topics": [
             "home-assistant",
             "lovelace-card"

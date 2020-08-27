@@ -18,6 +18,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "bokub/rgb-light-card",
+        "full_name_lower": "bokub/rgb-light-card",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -46,7 +47,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 82,
+        "stargazers_count": 83,
         "topics": [
             "home-assistant",
             "lovelace",

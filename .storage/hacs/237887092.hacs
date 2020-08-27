@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "fineemb/lovelace-thermostat-card",
+        "full_name_lower": "fineemb/lovelace-thermostat-card",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -44,7 +45,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 21,
+        "stargazers_count": 22,
         "topics": [],
         "zip_release": false
     },

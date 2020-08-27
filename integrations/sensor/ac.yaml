@@ -6,6 +6,6 @@
         value_template: "{{ state_attr('fan.pufi', 'humidity') }}"
 
       io_temp_diff:
-        value_template: "{{ (states('sensor.livingroom_temp')|float - state_attr('weather.owm', 'temperature')|float)|round(1) }}"
+        value_template: "{{ (state_attr('weather.owm', 'temperature')|float - states('sensor.livingroom_temp')|float)|round(1) }}"
         availability_template: "{{ states('sensor.livingroom_temp')|float > 0 and state_attr('weather.owm', 'temperature') != None }}"
         icon_template: "mdi:home-thermometer-outline"

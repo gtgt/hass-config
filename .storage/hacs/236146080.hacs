@@ -20,6 +20,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "binsentsu/home-assistant-solaredge-modbus",
+        "full_name_lower": "binsentsu/home-assistant-solaredge-modbus",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -45,7 +46,7 @@
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 8,
+        "stargazers_count": 9,
         "topics": [
             "hassio",
             "home-assistant",

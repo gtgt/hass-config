@@ -16,6 +16,7 @@
         "first_install": false,
         "fork": false,
         "full_name": "gurbyz/power-wheel-card",
+        "full_name_lower": "gurbyz/power-wheel-card",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
@@ -30,7 +31,7 @@
         "last_version": "v0.1.2",
         "manifest_name": null,
         "new": false,
-        "open_issues": 9,
+        "open_issues": 10,
         "persistent_directory": null,
         "published_tags": [
             "v0.1.2",
@@ -44,7 +45,7 @@
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 66,
+        "stargazers_count": 68,
         "topics": [
             "custom-card",
             "energy",
