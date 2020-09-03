@@ -10,7 +10,7 @@
         "description": "Simple card for Xiaomi (and other) robot vacuums in Home Assistant's Lovelace UI",
         "domain": null,
         "domains": [],
-        "downloads": 9337,
+        "downloads": 9465,
         "file_name": "xiaomi-vacuum-card.js",
         "filename": "xiaomi-vacuum-card.js",
         "first_install": false,
@@ -43,7 +43,7 @@
         "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 90,
+        "stargazers_count": 91,
         "topics": [
             "home-assistant",
             "home-assistant-frontend",

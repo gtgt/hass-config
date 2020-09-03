@@ -27,11 +27,11 @@
         "installed_version": "v1.4.7",
         "iot_class": null,
         "last_commit": "3aa9e2b",
-        "last_updated": "2020-08-20T10:48:18Z",
+        "last_updated": "2020-09-02T08:03:21Z",
         "last_version": "v1.4.7",
         "manifest_name": null,
         "new": false,
-        "open_issues": 35,
+        "open_issues": 36,
         "persistent_directory": null,
         "published_tags": [
             "v1.4.7",
@@ -40,12 +40,12 @@
             "v1.4.4",
             "v1.4.3"
         ],
-        "pushed_at": "2020-08-20T10:48:18",
+        "pushed_at": "2020-09-02T08:03:21",
         "releases": true,
         "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 139,
+        "stargazers_count": 142,
         "topics": [],
         "zip_release": false
     },

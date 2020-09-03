@@ -1,0 +1,8 @@
+
+  - platform: proxy
+    name: espcam1_240x135
+    entity_id: camera.espcam1
+    mode: resize
+    max_stream_width: 240
+    max_stream_height: 135
+    image_refresh_rate: 1.0
