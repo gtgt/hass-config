@@ -1,11 +1,13 @@
 {
+    "version": "6",
+    "key": "hacs/234022648.hacs",
     "data": {
         "archived": false,
         "authors": [],
         "category": "theme",
-        "config_flow": false,
         "content_in_root": false,
         "country": [],
+        "config_flow": false,
         "default_branch": "master",
         "description": "\ud83c\udfa8 By JuanMTech -- A Home Assistant theme inspired on the Google app dark mode.",
         "domain": null,
@@ -16,23 +18,25 @@
         "first_install": false,
         "fork": false,
         "full_name": "JuanMTech/google_dark_theme",
-        "full_name_lower": "juanmtech/google_dark_theme",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
         "homeassistant": null,
         "id": "234022648",
+        "iot_class": null,
         "installed": true,
         "installed_commit": "4c206df",
         "installed_version": "v1.9",
-        "iot_class": null,
+        "open_issues": 1,
         "last_commit": "4c206df",
-        "last_updated": "2020-08-03T08:18:06Z",
         "last_version": "v1.9",
+        "last_updated": "2020-08-03T08:18:06Z",
         "manifest_name": null,
         "new": false,
-        "open_issues": 0,
         "persistent_directory": null,
+        "pushed_at": "2020-08-03T08:18:06",
+        "releases": true,
+        "render_readme": true,
         "published_tags": [
             "v1.9",
             "v1.8",
@@ -40,19 +44,15 @@
             "v1.6",
             "v1.5"
         ],
-        "pushed_at": "2020-08-03T08:18:06",
-        "releases": true,
-        "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 76,
+        "stargazers_count": 79,
         "topics": [
             "hacs",
             "home-assistant",
             "theme"
         ],
-        "zip_release": false
-    },
-    "key": "hacs/234022648.hacs",
-    "version": "6"
+        "zip_release": false,
+        "full_name_lower": "juanmtech/google_dark_theme"
+    }
 }

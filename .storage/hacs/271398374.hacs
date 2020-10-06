@@ -1,13 +1,15 @@
 {
+    "version": "6",
+    "key": "hacs/271398374.hacs",
     "data": {
         "archived": false,
         "authors": [
             "@PiotrMachowski"
         ],
         "category": "integration",
-        "config_flow": true,
         "content_in_root": false,
         "country": [],
+        "config_flow": true,
         "default_branch": "master",
         "description": "This custom component allows you to save current state of any entity and use its data later to restore it.",
         "domain": "saver",
@@ -18,35 +20,34 @@
         "first_install": false,
         "fork": false,
         "full_name": "PiotrMachowski/Home-Assistant-custom-components-Saver",
-        "full_name_lower": "piotrmachowski/home-assistant-custom-components-saver",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
         "homeassistant": null,
         "id": "271398374",
+        "iot_class": null,
         "installed": true,
         "installed_commit": "35597dc",
         "installed_version": "v1.1.0",
-        "iot_class": null,
+        "open_issues": 1,
         "last_commit": "7f679fd",
-        "last_updated": "2020-08-13T00:23:39Z",
         "last_version": "v1.1.0",
+        "last_updated": "2020-08-13T00:23:39Z",
         "manifest_name": "Saver",
         "new": false,
-        "open_issues": 0,
         "persistent_directory": null,
+        "pushed_at": "2020-08-13T00:23:39",
+        "releases": true,
+        "render_readme": true,
         "published_tags": [
             "v1.1.0",
             "v1.0.2",
             "v1.0.1",
             "v1.0.0"
         ],
-        "pushed_at": "2020-08-13T00:23:39",
-        "releases": true,
-        "render_readme": true,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 13,
+        "stargazers_count": 14,
         "topics": [
             "automation",
             "helper",
@@ -55,8 +56,7 @@
             "script",
             "variable"
         ],
-        "zip_release": false
-    },
-    "key": "hacs/271398374.hacs",
-    "version": "6"
+        "zip_release": false,
+        "full_name_lower": "piotrmachowski/home-assistant-custom-components-saver"
+    }
 }

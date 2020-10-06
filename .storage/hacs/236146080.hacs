@@ -1,13 +1,15 @@
 {
+    "version": "6",
+    "key": "hacs/236146080.hacs",
     "data": {
         "archived": false,
         "authors": [
             "@binsentsu"
         ],
         "category": "integration",
-        "config_flow": true,
         "content_in_root": false,
         "country": [],
+        "config_flow": true,
         "default_branch": "master",
         "description": "Home assistant Component for reading data locally from Solaredge inverter through modbus TCP",
         "domain": "solaredge_modbus",
@@ -20,33 +22,34 @@
         "first_install": false,
         "fork": false,
         "full_name": "binsentsu/home-assistant-solaredge-modbus",
-        "full_name_lower": "binsentsu/home-assistant-solaredge-modbus",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
         "homeassistant": "0.109.0",
         "id": "236146080",
-        "installed": true,
-        "installed_commit": "351c4d3",
-        "installed_version": "V1.1.0",
         "iot_class": "local_poll",
-        "last_commit": "351c4d3",
-        "last_updated": "2020-07-26T20:55:16Z",
-        "last_version": "V1.1.0",
+        "installed": true,
+        "installed_commit": "e52d368",
+        "installed_version": "V1.2.1",
+        "open_issues": 2,
+        "last_commit": "e52d368",
+        "last_version": "V1.2.1",
+        "last_updated": "2020-10-03T06:50:14Z",
         "manifest_name": "SolarEdge Modbus",
         "new": false,
-        "open_issues": 4,
         "persistent_directory": null,
+        "pushed_at": "2020-10-03T06:50:14",
+        "releases": true,
+        "render_readme": false,
         "published_tags": [
+            "V1.2.1",
+            "V1.2.0",
             "V1.1.0",
             "V1.0.0"
         ],
-        "pushed_at": "2020-07-26T20:55:16",
-        "releases": true,
-        "render_readme": false,
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 9,
+        "stargazers_count": 10,
         "topics": [
             "hassio",
             "home-assistant",
@@ -55,8 +58,7 @@
             "solaredge",
             "solaredge-inverter"
         ],
-        "zip_release": false
-    },
-    "key": "hacs/236146080.hacs",
-    "version": "6"
+        "zip_release": false,
+        "full_name_lower": "binsentsu/home-assistant-solaredge-modbus"
+    }
 }

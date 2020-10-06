@@ -1,20 +1,20 @@
 {
+    "version": 1,
+    "key": "http",
     "data": {
-        "cors_allowed_origins": [
-            "https://cast.home-assistant.io"
-        ],
-        "ip_ban_enabled": true,
-        "login_attempts_threshold": 5,
         "server_port": 443,
         "ssl_certificate": "/ssl/fullchain.pem",
         "ssl_key": "/ssl/privkey.pem",
-        "ssl_profile": "modern",
+        "ip_ban_enabled": true,
+        "login_attempts_threshold": 50,
+        "use_x_forwarded_for": true,
         "trusted_proxies": [
             "192.168.1.5",
             "192.168.1.10"
         ],
-        "use_x_forwarded_for": true
-    },
-    "key": "http",
-    "version": 1
+        "ssl_profile": "modern",
+        "cors_allowed_origins": [
+            "https://cast.home-assistant.io"
+        ]
+    }
 }

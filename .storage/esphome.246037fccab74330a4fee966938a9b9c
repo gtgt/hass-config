@@ -1,79 +1,79 @@
 {
+    "version": 1,
+    "key": "esphome.246037fccab74330a4fee966938a9b9c",
     "data": {
         "device_info": {
-            "compilation_time": "Aug 10 2020, 23:54:41",
-            "esphome_version": "1.16.0-dev",
-            "has_deep_sleep": false,
-            "mac_address": "4C:11:AE:0D:1D:C9",
-            "model": "PLATFORMIO_D1_MINI",
+            "uses_password": true,
             "name": "ac_relay",
-            "uses_password": true
+            "mac_address": "4C:11:AE:0D:1D:C9",
+            "compilation_time": "Aug 10 2020, 23:54:41",
+            "model": "PLATFORMIO_D1_MINI",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
         },
-        "sensor": [
-            {
-                "accuracy_decimals": 0,
-                "force_update": false,
-                "icon": "mdi:timelapse",
-                "key": 3869629663,
-                "name": "ac_relay_up_time",
-                "object_id": "ac_relay_up_time",
-                "unique_id": "4c11ae0d1dc9-uptime",
-                "unit_of_measurement": "s"
-            }
-        ],
         "services": [],
         "switch": [
             {
-                "assumed_state": false,
-                "icon": "mdi:air-conditioner",
+                "object_id": "ac_relay_study",
                 "key": 2350364817,
                 "name": "ac_relay_study",
-                "object_id": "ac_relay_study",
-                "unique_id": "ac_relayswitchac_relay_study"
+                "unique_id": "ac_relayswitchac_relay_study",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
             },
             {
-                "assumed_state": false,
-                "icon": "mdi:air-conditioner",
+                "object_id": "ac_relay_childa",
                 "key": 2378864261,
                 "name": "ac_relay_childa",
-                "object_id": "ac_relay_childa",
-                "unique_id": "ac_relayswitchac_relay_childa"
+                "unique_id": "ac_relayswitchac_relay_childa",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
             },
             {
-                "assumed_state": false,
-                "icon": "mdi:air-conditioner",
+                "object_id": "ac_relay_childb",
                 "key": 2378864262,
                 "name": "ac_relay_childb",
-                "object_id": "ac_relay_childb",
-                "unique_id": "ac_relayswitchac_relay_childb"
+                "unique_id": "ac_relayswitchac_relay_childb",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
             },
             {
-                "assumed_state": false,
-                "icon": "mdi:air-conditioner",
+                "object_id": "ac_relay_bedroom",
                 "key": 1278558998,
                 "name": "ac_relay_bedroom",
-                "object_id": "ac_relay_bedroom",
-                "unique_id": "ac_relayswitchac_relay_bedroom"
+                "unique_id": "ac_relayswitchac_relay_bedroom",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
             },
             {
-                "assumed_state": false,
-                "icon": "mdi:air-conditioner",
+                "object_id": "ac_relay_kitchen",
                 "key": 187781562,
                 "name": "ac_relay_kitchen",
-                "object_id": "ac_relay_kitchen",
-                "unique_id": "ac_relayswitchac_relay_kitchen"
+                "unique_id": "ac_relayswitchac_relay_kitchen",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
             },
             {
-                "assumed_state": false,
-                "icon": "mdi:fan",
+                "object_id": "ac_relay_ventillation",
                 "key": 972628339,
                 "name": "ac_relay_ventillation",
-                "object_id": "ac_relay_ventillation",
-                "unique_id": "ac_relayswitchac_relay_ventillation"
+                "unique_id": "ac_relayswitchac_relay_ventillation",
+                "icon": "mdi:fan",
+                "assumed_state": false
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "ac_relay_up_time",
+                "key": 3869629663,
+                "name": "ac_relay_up_time",
+                "unique_id": "4c11ae0d1dc9-uptime",
+                "icon": "mdi:timelapse",
+                "unit_of_measurement": "s",
+                "accuracy_decimals": 0,
+                "force_update": false
             }
         ],
         "text_sensor": []
-    },
-    "key": "esphome.246037fccab74330a4fee966938a9b9c",
-    "version": 1
+    }
 }

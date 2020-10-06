@@ -1,39 +1,39 @@
 {
+    "version": 1,
+    "key": "esphome.f888982c686a4c5691f2253247e44814",
     "data": {
         "device_info": {
-            "compilation_time": "Aug 10 2020, 23:59:37",
-            "esphome_version": "1.16.0-dev",
-            "has_deep_sleep": false,
-            "mac_address": "4C:11:AE:0E:6C:A4",
-            "model": "PLATFORMIO_ESP01_1M",
+            "uses_password": true,
             "name": "ac_sensor",
-            "uses_password": true
+            "mac_address": "4C:11:AE:0E:6C:A4",
+            "compilation_time": "Aug 10 2020, 23:59:37",
+            "model": "PLATFORMIO_ESP01_1M",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
         },
+        "services": [],
         "sensor": [
             {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:thermometer",
+                "object_id": "ac_sensor_temp_ac_outlet",
                 "key": 792558390,
                 "name": "ac_sensor_temp_ac_outlet",
-                "object_id": "ac_sensor_temp_ac_outlet",
                 "unique_id": "dallas-9902099246320028",
-                "unit_of_measurement": "\u00b0C"
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
             },
             {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:thermometer",
+                "object_id": "ac_sensor_temp_ac_gas_tube",
                 "key": 1944633169,
                 "name": "ac_sensor_temp_ac_gas_tube",
-                "object_id": "ac_sensor_temp_ac_gas_tube",
                 "unique_id": "dallas-99020791775C3828",
-                "unit_of_measurement": "\u00b0C"
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
             }
         ],
-        "services": [],
         "text_sensor": []
-    },
-    "key": "esphome.f888982c686a4c5691f2253247e44814",
-    "version": 1
+    }
 }

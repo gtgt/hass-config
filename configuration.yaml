@@ -44,6 +44,7 @@ logger:
     homeassistant.components.ipp: fatal
     homeassistant.components.nut: fatal
     homeassistant.components.xiaomi_miio.vacuum: error
+    homeassistant.components.http: info
 #    homeassistant.components.modbus: info
 #    pymodbus.client: info
   
@@ -52,7 +53,7 @@ http:
   ssl_certificate: /ssl/fullchain.pem
   ssl_key: /ssl/privkey.pem
   ip_ban_enabled: true
-  login_attempts_threshold: 5
+  login_attempts_threshold: 50
   use_x_forwarded_for: true
   trusted_proxies:
     - 192.168.1.5
@@ -69,39 +70,72 @@ mobile_app:
 # Enable system health on info page
 system_health:
 
-## Enables support for tracking state changes over time.
-#history:
-
-## View all events in a logbook
-#logbook:
-#  include:
-#    domains:
-#      - sensor
-#      - switch
-#      - media_player
-#      - climate
-#  exclude:
-#    entities:
-#      - sensor.ac_target_temp
-#      - sensor.ac_relay_up_time
-
 ## Configure the history of the logbook
-#recorder:
-#  db_url: sqlite:////config/home-assistant_v2.db
-#  purge_interval: 1
-#  purge_keep_days: 3
+recorder:
+  db_url: mysql://homeassistant:K9cdXAIVbG62TRna@core-mariadb/homeassistant?charset=utf8
+  commit_interval: 2
+  purge_keep_days: 14
+  include:
+    domains:
+      - binary_sensor
+      - switch
+      - media_player
+      - climate
+      - light
+      - person
+      - weather
+      - input_number
+      - input_select
+    entity_globs:
+      - sensor.ac_*
+      - sensor.*temp*
+  exclude:
+    entity_globs:
+      - switch.*_led
+      - switch.*_backlight
+      - sensor.*_time
+      - switch.energy_res*
+      - input_number.energy_*
+    domains:
+      - persistent_notification
+
+## Enables support for tracking state changes over time.
+history:
+logbook:
+
+#influxdb:
+#  api_version: 2
+#  ssl: true
+#  host: !secret influxdb_host
+#  #port: 9999
+#  token: !secret influxdb_token
+#  organization: !secret influxdb_org
+#  bucket: !secret influxdb_bucket
+#  tags:
+#    source: HA
+#  tags_attributes:
+#    - friendly_name
+#  default_measurement: units
 #  include:
 #    domains:
-#      - sensor
 #      - switch
 #      - media_player
 #      - climate
+#      - light
+#    entity_globs:
+#      - sensor.ac_*
+#      - sensor.*temp*
 #  exclude:
 #    entities:
-#      - sensor.ac_target_temp
+#      - zone.home
 #      - sensor.ac_relay_up_time
+#    domains:
+#      - persistent_notification
+#      - person
 
 updater:
+
+media_source:
 
 hacs:
   token: !secret hacs_token
@@ -135,10 +169,10 @@ satel_integra: !include satel_integra.yaml
 
 media_player:
   - platform: kodi
-    host: qbox.lan
+    host: 192.168.1.9
     port: 80
     tcp_port: 9090
-    name: kodi
+    name: QBox
     username: !secret kodi_username
     password: !secret kodi_password
     

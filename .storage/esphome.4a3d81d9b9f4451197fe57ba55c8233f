@@ -1,49 +1,49 @@
 {
+    "version": 1,
+    "key": "esphome.4a3d81d9b9f4451197fe57ba55c8233f",
     "data": {
         "device_info": {
-            "compilation_time": "Aug 11 2020, 03:31:36",
-            "esphome_version": "1.16.0-dev",
-            "has_deep_sleep": false,
-            "mac_address": "68:C6:3A:A4:80:F6",
-            "model": "PLATFORMIO_D1_MINI",
+            "uses_password": true,
             "name": "bedroom",
-            "uses_password": true
+            "mac_address": "68:C6:3A:A4:80:F6",
+            "compilation_time": "Oct  2 2020, 00:53:07",
+            "model": "PLATFORMIO_D1_MINI",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
         },
+        "services": [],
         "sensor": [
             {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:ear-hearing",
+                "object_id": "bedroom_mic",
                 "key": 164023899,
                 "name": "bedroom_mic",
-                "object_id": "bedroom_mic",
                 "unique_id": "68c63aa480f6-adc",
-                "unit_of_measurement": "dB"
+                "icon": "mdi:ear-hearing",
+                "unit_of_measurement": "dB",
+                "accuracy_decimals": 1,
+                "force_update": false
             },
             {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:thermometer",
+                "object_id": "bedroom_temp",
                 "key": 364322316,
                 "name": "bedroom_temp",
-                "object_id": "bedroom_temp",
                 "unique_id": "bedroomsensorbedroom_temp",
-                "unit_of_measurement": "\u00b0C"
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
             },
             {
-                "accuracy_decimals": 0,
-                "force_update": false,
-                "icon": "mdi:water-percent",
+                "object_id": "bedroom_humidity",
                 "key": 655344241,
                 "name": "bedroom_humidity",
-                "object_id": "bedroom_humidity",
                 "unique_id": "bedroomsensorbedroom_humidity",
-                "unit_of_measurement": "%"
+                "icon": "mdi:water-percent",
+                "unit_of_measurement": "%",
+                "accuracy_decimals": 0,
+                "force_update": false
             }
         ],
-        "services": [],
         "text_sensor": []
-    },
-    "key": "esphome.4a3d81d9b9f4451197fe57ba55c8233f",
-    "version": 1
+    }
 }

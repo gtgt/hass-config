@@ -11,19 +11,35 @@ sensor.solar_production_yearly:
 sensor.energy_meter_power:
   friendly_name: "Fogyasztásmérő pillanatnyi fogyasztás"
   icon: mdi:transmission-tower
+
 sensor.energy_meter_kwh:
   friendly_name: "Fogyasztásmérő állás"
   icon: mdi:counter
-sensor.energy_meter_hourly:
+sensor.energy_meter_hourly_kwh:
   friendly_name: "Fogyasztásmérő növekedés ebben az órában"
-sensor.energy_meter_daily:
+sensor.energy_meter_daily_kwh:
   friendly_name: "Fogyasztásmérő növekedés mai napon"
-sensor.energy_meter_weekly:
+sensor.energy_meter_weekly_kwh:
   friendly_name: "Fogyasztásmérő növekedés ezen a héten"
-sensor.energy_meter_montly:
+sensor.energy_meter_monthly_kwh:
   friendly_name: "Fogyasztásmérő növekedés ebben a hónapban"
-sensor.energy_meter_yearly:
+sensor.energy_meter_yearly_kwh:
   friendly_name: "Fogyasztásmérő növekedés ebben az évben"
+
+sensor.energy_kwh:
+  friendly_name: "Fogyasztás"
+  icon: mdi:counter
+sensor.energy_hourly_kwh:
+  friendly_name: "Fogyasztás ebben az órában"
+sensor.energy_daily_kwh:
+  friendly_name: "Fogyasztás mai napon"
+sensor.energy_weekly_kwh:
+  friendly_name: "Fogyasztás ezen a héten"
+sensor.energy_monthly_kwh:
+  friendly_name: "Fogyasztás ebben a hónapban"
+sensor.energy_yearly_kwh:
+  friendly_name: "Fogyasztás ebben az évben"
+
 sensor.grid_power:
   friendly_name: "Hálózat egyenleg"
   icon: mdi:scale-balance

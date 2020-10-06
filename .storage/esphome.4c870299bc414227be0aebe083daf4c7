@@ -1,35 +1,35 @@
 {
+    "version": 1,
+    "key": "esphome.4c870299bc414227be0aebe083daf4c7",
     "data": {
         "device_info": {
-            "compilation_time": "Aug 11 2020, 20:55:26",
-            "esphome_version": "1.16.0-dev",
-            "has_deep_sleep": false,
-            "mac_address": "98:F4:AB:C9:51:32",
-            "model": "PLATFORMIO_ESP01_1M",
+            "uses_password": true,
             "name": "bedroom_rgb",
-            "uses_password": true
+            "mac_address": "98:F4:AB:C9:51:32",
+            "compilation_time": "Aug 11 2020, 20:55:26",
+            "model": "PLATFORMIO_ESP01_1M",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
         },
+        "services": [],
         "light": [
             {
+                "object_id": "bedroom_rgb",
+                "key": 395114707,
+                "name": "bedroom_rgb",
+                "unique_id": "bedroom_rgblightbedroom_rgb",
+                "supports_brightness": true,
+                "supports_rgb": true,
+                "supports_white_value": true,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
                 "effects": [
                     "None",
                     "bedroom_rgb_random",
                     "bedroom_rgb_random_slow"
-                ],
-                "key": 395114707,
-                "max_mireds": 0.0,
-                "min_mireds": 0.0,
-                "name": "bedroom_rgb",
-                "object_id": "bedroom_rgb",
-                "supports_brightness": true,
-                "supports_color_temperature": false,
-                "supports_rgb": true,
-                "supports_white_value": true,
-                "unique_id": "bedroom_rgblightbedroom_rgb"
+                ]
             }
-        ],
-        "services": []
-    },
-    "key": "esphome.4c870299bc414227be0aebe083daf4c7",
-    "version": 1
+        ]
+    }
 }

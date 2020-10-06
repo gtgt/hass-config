@@ -20,7 +20,29 @@
     - entity: sensor.energy_pf3
       name: Áramfaktor 3
   cards:
+    - type: sensor
+      entity: sensor.grid_power
+    - type: markdown
+      card_size: 1
+      content: |
+        ### Energy meter
+        Balance: {% if states('sensor.solaredge_ac_power') > states('sensor.energy_meter_power') %}{{ states('sensor.energy_power') }}{% else %}{{ -1 * states('sensor.energy_meter_power')|int }}{% endif %}W
+        Consumption: {{ states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int }}W
+    - type: custom:power-wheel-card
+      #power_decimals: 3
+      production_is_positive: true
+      solar_power_entity: sensor.solaredge_ac_power
+      grid_power_entity: sensor.grid_power
+      #solar_energy_entity: sensor.solaredge_ac_energy_kwh
+      #grid_energy_entity: sensor.energy_meter_kwh
+      solar_icon: "mdi:weather-sunny"
+      grid_icon: "mdi:transmission-tower"
+      home_icon: "mdi:home"
     - type: entity-filter
+      show_empty: false
+      state_filter:
+        - operator: "!="
+          value: unavailable
       card:
         type: glance
       entities:
@@ -33,11 +55,11 @@
         - type: sensor
           entity: sensor.energy_current3
           name: Áramerősség 3
+    - type: entity-filter
+      show_empty: false
       state_filter:
         - operator: "!="
           value: unavailable
-      show_empty: false
-    - type: entity-filter
       card:
         type: glance
       entities:
@@ -50,11 +72,11 @@
         - type: sensor
           entity: sensor.energy_power3
           name: P. teljesítmény 3
+    - type: entity-filter
+      show_empty: false
       state_filter:
         - operator: "!="
           value: unavailable
-      show_empty: false
-    - type: entity-filter
       card:
         type: glance
       entities:
@@ -67,11 +89,11 @@
         - type: sensor
           entity: sensor.energy_energy3
           name: Fogyasztás 3
+    - type: entity-filter
+      show_empty: false
       state_filter:
         - operator: "!="
           value: unavailable
-      show_empty: false
-    - type: entity-filter
       card:
         type: glance
       entities:
@@ -87,24 +109,20 @@
           entity: switch.energy_reset3
           name: 3
           icon: mdi:numeric-0
+    - type: entity-filter
+      show_empty: false
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      card:
+        type: glance
+      entities:
+        - type: sensor
+          entity: sensor.energy_kwh
         - type: button
           entity: switch.energy_restart
           name: Újraindfítás
           icon: mdi:reload
-      state_filter:
-        - operator: "!="
-          value: unavailable
-      show_empty: false
-    - type: custom:power-wheel-card
-      #power_decimals: 3
-      production_is_positive: true
-      solar_power_entity: sensor.solaredge_ac_power
-      grid_power_entity: sensor.energy_meter_power
-      #solar_energy_entity: sensor.solaredge_ac_energy_kwh
-      #grid_energy_entity: sensor.energy_meter_kwh
-      solar_icon: "mdi:weather-sunny"
-      grid_icon: "mdi:transmission-tower"
-      home_icon: "mdi:home"
     - type: entities
       title: Napenergia
       entities:
@@ -115,29 +133,12 @@
         - sensor.solar_production_daily
         - sensor.solar_production_weekly
         - sensor.solar_production_monthly
-    - type: entities
-      title: Fogyasztásmérő
-      entities:
-        - sensor.energy_meter_kwh
-        - sensor.energy_meter_power
-        - sensor.energy_meter_hourly
-        - sensor.energy_meter_daily
-    - type: glance
-      title: Egyenleg
-      entities:
-        - type: sensor
-          entity: sensor.grid_power
-          name: "Pillanatnyi"
-        - type: sensor
-          entity: sensor.grid_power_hourly
-          name: "Előző óra átlag"
     - type: vertical-stack
       title: UPS
       cards:
         - type: entities
           entities:
           - sensor.eaton_status_data
-          - type: custom:battery-entity
-            entity: sensor.eaton_battery_charge
+          - sensor.eaton_battery_charge
           - sensor.eaton_battery_runtime
           - sensor.eaton_load

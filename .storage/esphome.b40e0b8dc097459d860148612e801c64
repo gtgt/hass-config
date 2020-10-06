@@ -1,49 +1,49 @@
 {
+    "version": 1,
+    "key": "esphome.b40e0b8dc097459d860148612e801c64",
     "data": {
         "device_info": {
-            "compilation_time": "Aug 11 2020, 03:11:06",
-            "esphome_version": "1.16.0-dev",
-            "has_deep_sleep": false,
-            "mac_address": "60:01:94:16:06:9E",
-            "model": "PLATFORMIO_D1_MINI",
+            "uses_password": true,
             "name": "childb",
-            "uses_password": true
+            "mac_address": "60:01:94:16:06:9E",
+            "compilation_time": "Aug 11 2020, 03:11:06",
+            "model": "PLATFORMIO_D1_MINI",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
         },
+        "services": [],
         "sensor": [
             {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:thermometer",
+                "object_id": "childb_temp",
                 "key": 1381775050,
                 "name": "childb_temp",
-                "object_id": "childb_temp",
                 "unique_id": "childbsensorchildb_temp",
-                "unit_of_measurement": "\u00b0C"
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
             },
             {
-                "accuracy_decimals": 1,
-                "force_update": false,
-                "icon": "mdi:thermometer",
+                "object_id": "childb_temp_outside",
                 "key": 1171038058,
                 "name": "childb_temp_outside",
-                "object_id": "childb_temp_outside",
                 "unique_id": "dallas-070316A279825328",
-                "unit_of_measurement": "\u00b0C"
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
             },
             {
-                "accuracy_decimals": 0,
-                "force_update": false,
-                "icon": "mdi:water-percent",
+                "object_id": "childb_humidity",
                 "key": 1841324271,
                 "name": "childb_humidity",
-                "object_id": "childb_humidity",
                 "unique_id": "childbsensorchildb_humidity",
-                "unit_of_measurement": "%"
+                "icon": "mdi:water-percent",
+                "unit_of_measurement": "%",
+                "accuracy_decimals": 0,
+                "force_update": false
             }
         ],
-        "services": [],
         "text_sensor": []
-    },
-    "key": "esphome.b40e0b8dc097459d860148612e801c64",
-    "version": 1
+    }
 }

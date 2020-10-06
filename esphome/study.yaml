@@ -54,7 +54,7 @@ sensor:
     name: ${name}_temp
     address: 0xAFA86FA811646128
     filters:
-      - offset: -3.2
+      - offset: -2.5
 
   - platform: homeassistant
     id: target_temp

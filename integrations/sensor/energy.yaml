@@ -1,5 +1,6 @@
   - platform: template
     sensors:
+      # from energy meter pulse (see automation for saver/input_number updates)
       energy_meter_kwh:
         value_template: "{{ states('input_number.energy_meter_kwh')|float|round(4) }}"
         unit_of_measurement: kWh
@@ -8,11 +9,22 @@
         entity_id: sensor.energy_meter_kwh
         value_template: >-
           {{ state_attr('saver.saver', 'variables')["energy_meter_power"]|int }}
+
+      # from PZEM-004t v3
+      energy_power:
+        value_template: "{{ states('sensor.energy_power1')|int + states('sensor.energy_power2')|int + states('sensor.energy_power3')|int }}"
+        unit_of_measurement: W
+      energy_kwh:
+        value_template: "{{ ((states('sensor.energy_energy1')|int + states('sensor.energy_energy2')|int + states('sensor.energy_energy3')|int) / 1000)|float|round(2) }}"
+        unit_of_measurement: kWh
+
+      # energy flow direction calculation
+      # if solar energy production is higher than what goes to grid, then we push to grid, when lower (cloudy/night), we pull from grid
       grid_power:
         unit_of_measurement: W
         value_template: >-
-          {{ -1 * ((states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int))|float|round(2) }}
-      grid_power_hourly:
-        unit_of_measurement: W
-        value_template: >-
-          {{ -1 * ((state_attr('sensor.energy_meter_hourly', 'last_period')|float * 1000) - (state_attr('sensor.solar_production_hourly', 'last_period')|float * 1000))|round(2) }}
+          {% if states('sensor.solaredge_ac_power') > states('sensor.energy_power') %}
+            {{ states('sensor.energy_power') }}
+          {% else %}
+            {{ -1 * states('sensor.energy_power') }}
+          {% endif %}

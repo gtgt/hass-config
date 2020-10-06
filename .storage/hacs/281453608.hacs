@@ -1,11 +1,13 @@
 {
+    "version": "6",
+    "key": "hacs/281453608.hacs",
     "data": {
         "archived": false,
         "authors": [],
         "category": "plugin",
-        "config_flow": false,
         "content_in_root": false,
         "country": [],
+        "config_flow": false,
         "default_branch": "master",
         "description": "\ud83d\udd39 Place badges anywhere in the lovelace layout",
         "domain": "",
@@ -16,35 +18,33 @@
         "first_install": false,
         "fork": false,
         "full_name": "thomasloven/lovelace-badge-card",
-        "full_name_lower": "thomasloven/lovelace-badge-card",
         "hacs": null,
         "hide": false,
         "hide_default_branch": false,
         "homeassistant": null,
         "id": "281453608",
+        "iot_class": null,
         "installed": true,
         "installed_commit": "817bdb3",
         "installed_version": null,
-        "iot_class": null,
+        "open_issues": 5,
         "last_commit": "817bdb3",
-        "last_updated": "2020-07-27T09:50:35Z",
         "last_version": null,
+        "last_updated": "2020-07-27T09:50:35Z",
         "manifest_name": null,
         "new": false,
-        "open_issues": 3,
         "persistent_directory": null,
-        "published_tags": [],
         "pushed_at": "2020-07-27T09:50:35",
         "releases": false,
         "render_readme": true,
+        "published_tags": [],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 9,
+        "stargazers_count": 10,
         "topics": [
             "home-assistant"
         ],
-        "zip_release": false
-    },
-    "key": "hacs/281453608.hacs",
-    "version": "6"
+        "zip_release": false,
+        "full_name_lower": "thomasloven/lovelace-badge-card"
+    }
 }
