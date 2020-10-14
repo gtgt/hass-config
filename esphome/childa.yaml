@@ -43,6 +43,10 @@ time:
   - platform: homeassistant
     id: hatime
 
+switch:
+  - platform: restart
+    name: ${name}_restart
+
 sensor:
   - platform: dht
     model: DHT11

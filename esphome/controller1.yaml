@@ -49,6 +49,8 @@ time:
 
 # We can still control the backlight independently
 switch:
+  - platform: restart
+    name: ${name}_restart
   - platform: gpio
     pin: GPIO4
     name: ${name}_backlight
@@ -96,7 +98,7 @@ font:
     size: 36
   - file: '_fonts/NotoSans-Regular.ttf'
     id: valuefont
-    size: 10
+    size: 12
 
 color:
   - id: red
@@ -140,9 +142,9 @@ display:
       }
       
       it.strftime(120, 5, id(valuefont), id(gray), TextAlign::TOP_CENTER, "%Y.%m.%d", id(hatime).now());
-      it.strftime(120, 15, id(clockfont), id(gray), TextAlign::TOP_CENTER, "%H:%M:%S", id(hatime).now());
+      it.strftime(120, 20, id(clockfont), id(gray), TextAlign::TOP_CENTER, "%H:%M", id(hatime).now());
       
       if (id(temp0).has_state()) {
-        it.printf(15, 130, id(titlefont), id(gray), TextAlign::BOTTOM_LEFT, "Tc: %.1f C", id(temp0).state);
+        it.printf(15, 130, id(titlefont), id(gray), TextAlign::BOTTOM_LEFT, "%.1f C", id(temp0).state);
       }
       

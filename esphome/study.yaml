@@ -44,6 +44,10 @@ time:
   - platform: homeassistant
     id: hatime
 
+switch:
+  - platform: restart
+    name: ${name}_restart
+
 dallas:
   - pin: D2 #GPIO4
     update_interval: 20s

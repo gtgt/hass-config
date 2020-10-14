@@ -1,15 +1,11 @@
 substitutions:
-  name: garden
+  name: magichome_rgb
 
 esphome:
   name: ${name}
   platform: ESP8266
-  board: esp01_1m
-
-status_led:
-  pin:
-    number: GPIO2
-    inverted: true
+  board: esp8285
+  esp8266_restore_from_flash: true
 
 wifi:
   ssid: !secret wifi_ssid
@@ -24,7 +20,7 @@ captive_portal:
 
 # Enable logging
 logger:
-  baud_rate: 0
+  #level: INFO
 
 # Enable Web server
 web_server:
@@ -48,29 +44,32 @@ switch:
   - platform: restart
     name: ${name}_restart
 
-i2c:
-  sda: GPIO1
-  scl: GPIO3
-  scan: true
-  
-dallas:
-  - pin: GPIO0
-    update_interval: 20s
-  
-sensor:
-  - platform: dallas
-    id: temp0
-    name: ${name}_temp_pool
-    address: 0xAA02179245598028
-    filters:
-      - offset: 0
+# this is code for the RGBW version of magichome 
+light:
+  - platform: rgb
+    name: ${name}
+    red: pwm_r
+    green: pwm_g
+    blue: pwm_b
+   #white: pwm_w
 
-display:
-  - platform: lcd_pcf8574
-    dimensions: 16x2
-    address: 0x3F
-    update_interval: 1s
-    lambda: |-
-      if (id(temp0).has_state()) {
-        it.printf("Tt: %.1f 'C", id(temp0).state);
-      }
+output:
+  - platform: esp8266_pwm
+    pin: GPIO5
+    frequency: 1000 Hz
+    id: pwm_r
+
+  - platform: esp8266_pwm
+    pin: GPIO12
+    frequency: 1000 Hz
+    id: pwm_g
+
+  - platform: esp8266_pwm
+    pin: GPIO13
+    frequency: 1000 Hz
+    id: pwm_b
+
+ #- platform: esp8266_pwm
+   #pin: GPIO15
+   #frequency: 1000 Hz
+   #id: pwm_w

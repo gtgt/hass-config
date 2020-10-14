@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "key": "esphome.d4dc87150c0b11ebbac9c92dd68deff0",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "magichome_rgb",
+            "mac_address": "50:02:91:30:1D:8A",
+            "compilation_time": "Oct 12 2020, 00:18:39",
+            "model": "PLATFORMIO_ESP8285",
+            "has_deep_sleep": false,
+            "esphome_version": "1.15.2"
+        },
+        "services": [],
+        "light": [
+            {
+                "object_id": "magichome_rgb",
+                "key": 3356892827,
+                "name": "magichome_rgb",
+                "unique_id": "magichome_rgblightmagichome_rgb",
+                "supports_brightness": true,
+                "supports_rgb": true,
+                "supports_white_value": false,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
+                "effects": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+- path: camera
+  #title: Kamera
+  icon: mdi:cctv
+  cards:
+    - type: picture-entity
+      entity: camera.bedroom
+      camera_view: live
+      show_state: false
+    - type: entity-filter
+      show_empty: false
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      card:
+        type: picture-glance
+        camera_image: camera.espcam1
+        camera_view: live
+        show_state: false
+      entities:
+        - light.espcam1
+        - sensor.espcam1_wifi_signal
+        - binary_sensor.espcam1_pir

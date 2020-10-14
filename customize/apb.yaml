@@ -32,7 +32,7 @@
     friendly_name: "Utcafront"
     icon: "mdi:outdoor-lamp"
   switch.apb_q17:
-    friendly_name: "Terasz"
+    friendly_name: "Q17"
     icon: "mdi:outdoor-lamp"
   switch.apb_m0:
     friendly_name: "Világítás ki"

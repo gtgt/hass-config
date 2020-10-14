@@ -45,6 +45,8 @@ time:
     id: hatime
 
 switch:
+  - platform: restart
+    name: ${name}_restart
   - platform: gpio
     id: study
     name: ${name}_study
@@ -83,6 +85,22 @@ switch:
     icon: ${icon}
     pin:
       number: D1 #5
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: livingroom
+    name: ${name}_livingroom
+    icon: ${icon}
+    pin:
+      number: D2
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: r7
+    name: ${name}_r7
+    icon: ${icon}
+    pin:
+      number: D3
       mode: OUTPUT
       inverted: yes
   - platform: gpio

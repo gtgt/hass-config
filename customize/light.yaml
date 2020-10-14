@@ -9,5 +9,13 @@ light.dining_table_ambilight:
   icon: mdi:television-ambient-light
 light.dining_table_nightlight:
   friendly_name: "Étkező (éjszakai mód)"
+  icon: mdi:weather-night
 binary_sensor.dining_table_nightlight:
   friendly_name: "Étkező (éjszakai mód)"
+  icon: mdi:weather-night
+light.terrace_led:
+  friendly_name: "Terasz"
+  icon: mdi:led-strip-variant
+light.magichome_rgb:
+  friendly_name: "Magichome RGB"
+  icon: mdi:led-strip

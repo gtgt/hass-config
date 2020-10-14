@@ -6,7 +6,7 @@
         unit_of_measurement: kWh
       energy_meter_power:
         unit_of_measurement: W
-        entity_id: sensor.energy_meter_kwh
+        #entity_id: sensor.energy_meter_kwh
         value_template: >-
           {{ state_attr('saver.saver', 'variables')["energy_meter_power"]|int }}
 
@@ -23,8 +23,8 @@
       grid_power:
         unit_of_measurement: W
         value_template: >-
-          {% if states('sensor.solaredge_ac_power') > states('sensor.energy_power') %}
-            {{ states('sensor.energy_power') }}
+          {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_power')|int %}
+            {{ states('sensor.energy_power')|int }}
           {% else %}
-            {{ -1 * states('sensor.energy_power') }}
+            {{ -1 * states('sensor.energy_power')|int }}
           {% endif %}

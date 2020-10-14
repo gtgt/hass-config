@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "key": "esphome.b1580a570c0411ebabbfafb344a1df78",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "terrace_light",
+            "mac_address": "40:F5:20:C8:2A:31",
+            "compilation_time": "Oct 11 2020, 23:00:47",
+            "model": "PLATFORMIO_ESP8285",
+            "has_deep_sleep": false,
+            "esphome_version": "1.15.2"
+        },
+        "services": [],
+        "light": [
+            {
+                "object_id": "terrace_light",
+                "key": 4018257716,
+                "name": "terrace_light",
+                "unique_id": "terrace_lightlightterrace_light",
+                "supports_brightness": true,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "supports_color_temperature": false,
+                "min_mireds": 0.0,
+                "max_mireds": 0.0,
+                "effects": []
+            }
+        ]
+    }
+}

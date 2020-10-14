@@ -42,6 +42,10 @@ time:
   - platform: homeassistant
     id: hatime
 
+switch:
+  - platform: restart
+    name: ${name}_restart
+
 # Defining the output pins
 output:
   - platform: esp8266_pwm

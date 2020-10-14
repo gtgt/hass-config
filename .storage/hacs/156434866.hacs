@@ -27,7 +27,7 @@
         "installed": true,
         "installed_commit": "e8f0ac8",
         "installed_version": "16",
-        "open_issues": 22,
+        "open_issues": 24,
         "last_commit": "e8f0ac8",
         "last_version": "16",
         "last_updated": "2020-08-17T19:55:12Z",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 224,
+        "stargazers_count": 228,
         "topics": [],
         "zip_release": false,
         "full_name_lower": "thomasloven/lovelace-layout-card"

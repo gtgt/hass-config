@@ -1,15 +1,11 @@
 substitutions:
-  name: ac_sensor
+  name: magichome_rgb
 
 esphome:
   name: ${name}
   platform: ESP8266
-  board: esp01_1m
-
-status_led:
-  pin:
-    number: GPIO2
-    inverted: true
+  board: esp8285
+  esp8266_restore_from_flash: true
 
 wifi:
   ssid: !secret wifi_ssid
@@ -24,6 +20,7 @@ captive_portal:
 
 # Enable logging
 logger:
+  #level: INFO
 
 # Enable Web server
 web_server:
@@ -42,25 +39,33 @@ ota:
 time:
   - platform: homeassistant
     id: hatime
-    
-switch:
-  - platform: restart
-    name: ${name}_restart
 
-dallas:
-  - pin: GPIO0
-    update_interval: 20s
+# this is code for the RGBW version of magichome 
+light:
+  - platform: rgbw
+    name: ${name}
+    red: pwm_r
+    green: pwm_g
+    blue: pwm_b
+    white: pwm_w
 
-sensor:
-  - platform: dallas
-    id: temp1
-    name: ${name}_temp_ac_outlet
-    address: 0x9902099246320028
-    filters:
-      - offset: 0
-  - platform: dallas
-    id: temp2
-    name: ${name}_temp_ac_gas_tube
-    address: 0x99020791775C3828
-    filters:
-      - offset: 0
+output:
+  - platform: esp8266_pwm
+    pin: GPIO5
+    frequency: 1000 Hz
+    id: pwm_r
+
+  - platform: esp8266_pwm
+    pin: GPIO12
+    frequency: 1000 Hz
+    id: pwm_g
+
+  - platform: esp8266_pwm
+    pin: GPIO13
+    frequency: 1000 Hz
+    id: pwm_b
+
+  - platform: esp8266_pwm
+    pin: GPIO15
+    frequency: 1000 Hz
+    id: pwm_w

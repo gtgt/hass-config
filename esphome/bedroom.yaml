@@ -5,8 +5,13 @@ esphome:
   name: ${name}
   platform: ESP8266
   board: d1_mini
+  esp8266_restore_from_flash: true
 #  libraries:
 #    - "ArduinoMenu library"
+  on_boot:
+    priority: -100
+    then:
+      - lambda: "id(target_rotary).set_value(id(room_climate).target_temperature_high * 2);"
 
 globals:
   - id: mic_min
@@ -57,6 +62,31 @@ ota:
 time:
   - platform: homeassistant
     id: now
+    
+switch:
+  - platform: restart
+    name: ${name}_restart
+
+climate:
+  - platform: thermostat
+    id: room_climate
+    name: ${name}
+    sensor: temp
+    default_target_temperature_low: 23 °C
+    default_target_temperature_high: 26 °C
+    visual:
+      min_temperature: 21
+      max_temperature: 27
+      temperature_step: 0.5
+    cool_action:
+      - lambda: |-
+          id(ac_switch).publish_state(true);
+    heat_action:
+      - lambda: |-
+          id(ac_switch).publish_state(true);
+    idle_action:
+      - lambda: |-
+          id(ac_switch).publish_state(false);
 
 sensor:
   - platform: dht
@@ -123,46 +153,24 @@ sensor:
       then:
         - if:
             condition:
-              lambda: 'return x != id(target_temp).state * 1;'
+              lambda: 'return x != id(room_climate).target_temperature_high * 1;'
             then:
             - lambda: |-
                 ESP_LOGI("ac", "Target temp set by rotary encoder: %f", x);
-                id(target_temp).publish_state(x);
-            - homeassistant.service:
-                service: input_number.set_value
-                data:
-                  entity_id: input_number.ac_${name}_target_temp
-                  value: !lambda 'return x;'
-
-  - platform: homeassistant
-    id: target_temp
-    entity_id: input_number.ac_${name}_target_temp
-    internal: false
-    on_value:
-      then:
-        - if:
-            condition:
-              lambda: 'return x != id(target_rotary).state / 2;'
-            then:
-            - lambda: |-
-                ESP_LOGI("ac", "Target temp set by homeassistant: %f", x);
-            - sensor.rotary_encoder.set_value:
-                id: target_rotary
-                value: !lambda 'return x * 2;'
-
+                auto call = id(room_climate).make_call();
+                call.set_target_temperature_high(x);
+                call.perform();
 
 binary_sensor:
+  - platform: homeassistant
+    id: ac_switch
+    entity_id: switch.ac_relay_${name}
+    internal: true
   - platform: gpio
     pin: D7 #GPIO13
     id: button_rotary
     internal: true
     device_class: opening
-
-text_sensor:
-  - platform: homeassistant
-    id: ac_mode
-    internal: true
-    entity_id: climate.ac_${name}
 
 font:
   - file: '_fonts/slkscr.ttf'
@@ -196,8 +204,8 @@ display:
         it.strftime(0, 50, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
   
         // Print inside temperature
-        if (id(temp).has_state()) {
-          it.printf(125, 10, id(valuefont), TextAlign::TOP_RIGHT , "Tc: %.1f °C", id(temp).state);
+        if (id(room_climate).mode) {
+          it.printf(125, 10, id(valuefont), TextAlign::TOP_RIGHT , "Tc: %.1f °C", id(room_climate).current_temperature);
         }
   
         // Print inside humidity
@@ -211,6 +219,10 @@ display:
         }
   
         // Print target temperature (from homeassistant sensor)
-        if (id(target_temp).has_state()) {
-          it.printf(125, 46, id(valuefont), TextAlign::TOP_RIGHT , "Tt: %.1f °C", id(target_temp).state);
+        if (id(room_climate).mode) {
+          it.printf(125, 46, id(valuefont), TextAlign::TOP_RIGHT , "Tt: %.1f °C", id(room_climate).target_temperature_high);
+        }
+
+        if (id(ac_switch).has_state()) {
+          it.printf(0, 64, id(valuefont), TextAlign::BOTTOM_LEFT , "%d", id(ac_switch).state);
         }

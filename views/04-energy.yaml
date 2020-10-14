@@ -7,12 +7,12 @@
       name: Feszültség 2
     - entity: sensor.energy_voltage3
       name: Feszültség 3
-    - entity: sensor.energy_freq1
-      name: Frekvencia 1
-    - entity: sensor.energy_freq2
-      name: Frekvencia 2
-    - entity: sensor.energy_freq3
-      name: Frekvencia 3
+    #- entity: sensor.energy_freq1
+    #  name: Frekvencia 1
+    #- entity: sensor.energy_freq2
+    #  name: Frekvencia 2
+    #- entity: sensor.energy_freq3
+    #  name: Frekvencia 3
     - entity: sensor.energy_pf1
       name: Áramfaktor 1
     - entity: sensor.energy_pf2
@@ -26,8 +26,13 @@
       card_size: 1
       content: |
         ### Energy meter
-        Balance: {% if states('sensor.solaredge_ac_power') > states('sensor.energy_meter_power') %}{{ states('sensor.energy_power') }}{% else %}{{ -1 * states('sensor.energy_meter_power')|int }}{% endif %}W
+        {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_meter_power')|int %}
+        Balance: {{ states('sensor.energy_meter_power')|int }}W
         Consumption: {{ states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int }}W
+        {% else %}
+        Balance: {{ -1 * states('sensor.energy_meter_power')|int }}W
+        Consumption: {{ states('sensor.energy_meter_power')|int + states('sensor.solaredge_ac_power')|int }}W
+        {% endif %}
     - type: custom:power-wheel-card
       #power_decimals: 3
       production_is_positive: true
