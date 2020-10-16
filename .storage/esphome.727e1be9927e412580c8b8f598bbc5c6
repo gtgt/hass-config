@@ -12,6 +12,40 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
+        "switch": [
+            {
+                "object_id": "energy_restart",
+                "key": 1102582941,
+                "name": "energy_restart",
+                "unique_id": "energyswitchenergy_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            },
+            {
+                "object_id": "energy_reset1",
+                "key": 2614731994,
+                "name": "energy_reset1",
+                "unique_id": "energyswitchenergy_reset1",
+                "icon": "",
+                "assumed_state": false
+            },
+            {
+                "object_id": "energy_reset2",
+                "key": 2614731993,
+                "name": "energy_reset2",
+                "unique_id": "energyswitchenergy_reset2",
+                "icon": "",
+                "assumed_state": false
+            },
+            {
+                "object_id": "energy_reset3",
+                "key": 2614731992,
+                "name": "energy_reset3",
+                "unique_id": "energyswitchenergy_reset3",
+                "icon": "",
+                "assumed_state": false
+            }
+        ],
         "sensor": [
             {
                 "object_id": "energy_voltage1",
@@ -194,40 +228,6 @@
                 "force_update": false
             }
         ],
-        "text_sensor": [],
-        "switch": [
-            {
-                "object_id": "energy_restart",
-                "key": 1102582941,
-                "name": "energy_restart",
-                "unique_id": "energyswitchenergy_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy_reset1",
-                "key": 2614731994,
-                "name": "energy_reset1",
-                "unique_id": "energyswitchenergy_reset1",
-                "icon": "",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy_reset2",
-                "key": 2614731993,
-                "name": "energy_reset2",
-                "unique_id": "energyswitchenergy_reset2",
-                "icon": "",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy_reset3",
-                "key": 2614731992,
-                "name": "energy_reset3",
-                "unique_id": "energyswitchenergy_reset3",
-                "icon": "",
-                "assumed_state": false
-            }
-        ]
+        "text_sensor": []
     }
 }

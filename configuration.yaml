@@ -96,8 +96,9 @@ recorder:
       - switch.*_led
       - switch.*_backlight
       - sensor.*_time
-      - switch.energy_res*
+      - switch.energy_re*
       - input_number.energy_*
+      - binary_sensor.*_pulse
     domains:
       - persistent_notification
 

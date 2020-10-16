@@ -6,7 +6,7 @@
             "uses_password": true,
             "name": "ac_relay",
             "mac_address": "4C:11:AE:0D:1D:C9",
-            "compilation_time": "Aug 10 2020, 23:54:41",
+            "compilation_time": "Oct 14 2020, 02:13:53",
             "model": "PLATFORMIO_D1_MINI",
             "has_deep_sleep": false,
             "esphome_version": "1.16.0-dev"
@@ -26,6 +26,14 @@
         ],
         "text_sensor": [],
         "switch": [
+            {
+                "object_id": "ac_relay_restart",
+                "key": 1188761155,
+                "name": "ac_relay_restart",
+                "unique_id": "ac_relayswitchac_relay_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            },
             {
                 "object_id": "ac_relay_study",
                 "key": 2350364817,
@@ -63,6 +71,22 @@
                 "key": 187781562,
                 "name": "ac_relay_kitchen",
                 "unique_id": "ac_relayswitchac_relay_kitchen",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
+            },
+            {
+                "object_id": "ac_relay_livingroom",
+                "key": 4005216720,
+                "name": "ac_relay_livingroom",
+                "unique_id": "ac_relayswitchac_relay_livingroom",
+                "icon": "mdi:air-conditioner",
+                "assumed_state": false
+            },
+            {
+                "object_id": "ac_relay_r7",
+                "key": 3722740971,
+                "name": "ac_relay_r7",
+                "unique_id": "ac_relayswitchac_relay_r7",
                 "icon": "mdi:air-conditioner",
                 "assumed_state": false
             },

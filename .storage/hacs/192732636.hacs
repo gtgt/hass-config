@@ -27,7 +27,7 @@
         "installed": true,
         "installed_commit": "c185504",
         "installed_version": "v1.5.0",
-        "open_issues": 39,
+        "open_issues": 41,
         "last_commit": "c185504",
         "last_version": "v1.5.0",
         "last_updated": "2020-10-12T10:12:46Z",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 151,
+        "stargazers_count": 152,
         "topics": [],
         "zip_release": false,
         "full_name_lower": "bramkragten/weather-card"

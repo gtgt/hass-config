@@ -47,6 +47,10 @@
         entity: climate.ac_kitchen
         title: Konyha
         pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_livingroom
+        title: Nappali
+        pending: 0
     - type: entities
       title: Ventillátor
       show_header_toggle: false
@@ -60,6 +64,10 @@
     - type: entities
       title: Automatizálás
       entities:
+        - entity: automation.ac_auto_off
+          secondary_info: last-triggered
+        - entity: automation.ac_auto_on
+          secondary_info: last-triggered
         - entity: automation.ventillation_auto_off
           secondary_info: last-triggered
         - entity: automation.ventillation_auto_on
@@ -72,6 +80,7 @@
         - switch.ac_relay_childb
         - switch.ac_relay_bedroom
         - switch.ac_relay_kitchen
+        - switch.ac_relay_livingroom
         - switch.ac_relay_ventillation
 #    - type: entities
 #      title: Célhőmérséklet
@@ -81,6 +90,7 @@
 #        - input_number.ac_childb_target_temp
 #        - input_number.ac_bedroom_target_temp
 #        - input_number.ac_kitchen_target_temp
+#        - input_number.ac_livingroom_target_temp
     - type: vertical-stack
       cards:
       - type: picture-entity

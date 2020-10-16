@@ -27,7 +27,7 @@
         "installed": true,
         "installed_commit": "5026d7d",
         "installed_version": "16",
-        "open_issues": 19,
+        "open_issues": 18,
         "last_commit": "a0748e1",
         "last_version": "16",
         "last_updated": "2020-10-09T11:06:18Z",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 356,
+        "stargazers_count": 357,
         "topics": [],
         "zip_release": false,
         "full_name_lower": "thomasloven/lovelace-slider-entity-row"

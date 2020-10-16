@@ -1,5 +1,5 @@
-- id: wc_light_off
-  alias: "WC light off at sunrise"
+- id: wc_light_off_at_sunrise
+  alias: wc_light_off_at_sunrise
   trigger:
     platform: sun
     event: sunrise
@@ -8,8 +8,8 @@
     - service: switch.turn_off
       data:
        entity_id: switch.apb_q4
-- id: wc_light_on
-  alias: "WC light on at sunset"
+- id: wc_light_on_at_sunrise
+  alias: wc_light_on_at_sunrise
   trigger:
     platform: sun
     event: sunset

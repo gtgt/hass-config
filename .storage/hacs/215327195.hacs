@@ -14,7 +14,7 @@
         "domains": [
             "light"
         ],
-        "downloads": 787,
+        "downloads": 1073,
         "file_name": "card.js",
         "filename": "card.js",
         "first_install": false,
@@ -48,7 +48,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 95,
+        "stargazers_count": 96,
         "topics": [
             "hacktoberfest",
             "home-assistant",

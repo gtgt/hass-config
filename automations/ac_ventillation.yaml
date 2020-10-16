@@ -1,10 +1,10 @@
-- id: ac_ventillation_on
-  alias: "Ventillation auto on"
+- id: ventillation_auto_on
+  alias: ventillation_auto_on
   initial_state: true
   trigger:
     - platform: numeric_state
       entity_id: sensor.io_temp_diff
-      above: -15
+      above: -19
   condition:
     condition: and
     conditions:
@@ -20,13 +20,13 @@
         message: >
           Ventillation turned ON, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!
 
-- id: ac_ventillation_off
-  alias: "Ventillation auto off"
+- id: ventillation_auto_off
+  alias: ventillation_auto_off
   initial_state: true
   trigger:
     - platform: numeric_state
       entity_id: sensor.io_temp_diff
-      below: -16
+      below: -20
   condition:
     condition: and
     conditions:

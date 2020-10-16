@@ -1,0 +1,49 @@
+{
+    "version": 1,
+    "key": "esphome.af5d6d770db311ebb10b19f97c9994ae",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "bedroom",
+            "mac_address": "68:C6:3A:A4:80:F6",
+            "compilation_time": "Oct  2 2020, 00:53:07",
+            "model": "PLATFORMIO_D1_MINI",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
+        },
+        "services": [],
+        "sensor": [
+            {
+                "object_id": "bedroom_mic",
+                "key": 164023899,
+                "name": "bedroom_mic",
+                "unique_id": "68c63aa480f6-adc",
+                "icon": "mdi:ear-hearing",
+                "unit_of_measurement": "dB",
+                "accuracy_decimals": 1,
+                "force_update": false
+            },
+            {
+                "object_id": "bedroom_temp",
+                "key": 364322316,
+                "name": "bedroom_temp",
+                "unique_id": "bedroomsensorbedroom_temp",
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
+            },
+            {
+                "object_id": "bedroom_humidity",
+                "key": 655344241,
+                "name": "bedroom_humidity",
+                "unique_id": "bedroomsensorbedroom_humidity",
+                "icon": "mdi:water-percent",
+                "unit_of_measurement": "%",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": []
+    }
+}

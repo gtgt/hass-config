@@ -1,0 +1,49 @@
+{
+    "version": 1,
+    "key": "esphome.bd50d36b0db311eba7bc9173856bfac0",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "childa",
+            "mac_address": "18:FE:34:E0:C1:2A",
+            "compilation_time": "Oct 13 2020, 21:52:19",
+            "model": "PLATFORMIO_ESP01_1M",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
+        },
+        "services": [],
+        "sensor": [
+            {
+                "object_id": "childa_temp",
+                "key": 2866744611,
+                "name": "childa_temp",
+                "unique_id": "childasensorchilda_temp",
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
+            },
+            {
+                "object_id": "childa_humidity",
+                "key": 679618606,
+                "name": "childa_humidity",
+                "unique_id": "childasensorchilda_humidity",
+                "icon": "mdi:water-percent",
+                "unit_of_measurement": "%",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": [],
+        "switch": [
+            {
+                "object_id": "childa_restart",
+                "key": 2003069058,
+                "name": "childa_restart",
+                "unique_id": "childaswitchchilda_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            }
+        ]
+    }
+}

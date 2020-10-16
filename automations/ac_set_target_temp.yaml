@@ -1,5 +1,6 @@
-  - alias: ac_target_temp_restore
-    initial_state: off
+  - id: ac_target_temp_restore
+    alias: ac_target_temp_restore
+    initial_state: on
     trigger:
       - platform: homeassistant
         event: start
@@ -27,12 +28,18 @@
               data_template:
                 entity_id: climate.ac_kitchen
                 temperature: "{{ climate_ac_kitchen_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_livingroom
+                temperature: "{{ climate_ac_livingroom_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
+                
       - service: automation.turn_on
         data:
           entity_id: automation.ac_terget_temp_save
 
-  - alias: ac_target_temp_save
-    initial_state: off
+  - id: ac_target_temp_save
+    alias: ac_target_temp_save
+    initial_state: on
     trigger:
       - platform: homeassistant
         event: shutdown
@@ -46,6 +53,8 @@
         entity_id: climate.ac_bedroom
       - platform: state
         entity_id: climate.ac_kitchen
+      - platform: state
+        entity_id: climate.ac_livingroom
     action:
       - service: saver.save_state
         data:
@@ -62,4 +71,7 @@
       - service: saver.save_state
         data:
           entity_id: climate.ac_kitchen
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_livingroom
 

@@ -12,16 +12,19 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
-        "switch": [
+        "sensor": [
             {
-                "object_id": "controller1_backlight",
-                "key": 2988928984,
-                "name": "controller1_backlight",
-                "unique_id": "controller1switchcontroller1_backlight",
-                "icon": "",
-                "assumed_state": false
+                "object_id": "fishtank_temp",
+                "key": 682263480,
+                "name": "fishtank_temp",
+                "unique_id": "dallas-AA02179245598028",
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
             }
         ],
+        "text_sensor": [],
         "binary_sensor": [
             {
                 "object_id": "controller1_status",
@@ -48,18 +51,15 @@
                 "is_status_binary_sensor": false
             }
         ],
-        "sensor": [
+        "switch": [
             {
-                "object_id": "fishtank_temp",
-                "key": 682263480,
-                "name": "fishtank_temp",
-                "unique_id": "dallas-AA02179245598028",
-                "icon": "mdi:thermometer",
-                "unit_of_measurement": "\u00b0C",
-                "accuracy_decimals": 1,
-                "force_update": false
+                "object_id": "controller1_backlight",
+                "key": 2988928984,
+                "name": "controller1_backlight",
+                "unique_id": "controller1switchcontroller1_backlight",
+                "icon": "",
+                "assumed_state": false
             }
-        ],
-        "text_sensor": []
+        ]
     }
 }

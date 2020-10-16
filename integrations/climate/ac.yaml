@@ -43,4 +43,13 @@
     min_temp: 21
     max_temp: 27
     tolerance: 0.5
+  - platform: programmable_thermostat
+    name: ac_livingroom
+    heater: switch.ac_relay_livingroom
+    cooler: switch.ac_relay_livingroom
+    actual_temp_sensor: sensor.livingroom_temp
+    target_temp_sensor: input_number.ac_livingroom_target_temp
+    min_temp: 21
+    max_temp: 27
+    tolerance: 0.5
     

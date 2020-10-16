@@ -1,0 +1,50 @@
+- id: ac_auto_off
+  alias: ac_auto_off
+  initial_state: on
+  trigger:
+    platform: state
+    entity_id:
+      - switch.ac_relay_study
+      - switch.ac_relay_childa
+      - switch.ac_relay_childb
+      - switch.ac_relay_bedroom
+      - switch.ac_relay_kitchen
+      - switch.ac_relay_livingroom
+  condition:
+    condition: state
+    entity_id:
+      - switch.ac_relay_study
+      - switch.ac_relay_childa
+      - switch.ac_relay_childb
+      - switch.ac_relay_bedroom
+      - switch.ac_relay_kitchen
+      - switch.ac_relay_livingroom
+    state: 'off'
+  action:
+    - service: climate.turn_off
+      data:
+        entity_id:
+          - climate.ac
+- id: ac_auto_on
+  alias: ac_auto_on
+  initial_state: on
+  trigger:
+    platform: state
+    entity_id:
+      - switch.ac_relay_study
+      - switch.ac_relay_childa
+      - switch.ac_relay_childb
+      - switch.ac_relay_bedroom
+      - switch.ac_relay_kitchen
+      - switch.ac_relay_livingroom
+    to: 'on'
+  condition:
+    condition: state
+    entity_id:
+      - climate.ac
+    state: 'off'
+  action:
+    - service: climate.turn_on
+      data:
+        entity_id:
+          - climate.ac
