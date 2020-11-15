@@ -1,0 +1,88 @@
+{
+    "version": 1,
+    "key": "esphome.487cd6611dc95878700ec113d0c718a8",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "t_bedroom",
+            "mac_address": "98:F4:AB:DF:C6:23",
+            "compilation_time": "Nov 15 2020, 03:01:22",
+            "model": "PLATFORMIO_ESP01_1M",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
+        },
+        "services": [],
+        "climate": [
+            {
+                "object_id": "t_bedroom",
+                "key": 3194738338,
+                "name": "t_bedroom",
+                "unique_id": "t_bedroomclimatet_bedroom",
+                "supports_current_temperature": true,
+                "supports_two_point_target_temperature": false,
+                "supported_modes": [
+                    0,
+                    3
+                ],
+                "visual_min_temperature": 10.0,
+                "visual_max_temperature": 30.0,
+                "visual_temperature_step": 0.10000000149011612,
+                "supports_away": false,
+                "supports_action": true,
+                "supported_fan_modes": [],
+                "supported_swing_modes": []
+            }
+        ],
+        "switch": [
+            {
+                "object_id": "t_bedroom_eco_mode",
+                "key": 2965110322,
+                "name": "t_bedroom_eco_mode",
+                "unique_id": "t_bedroomswitcht_bedroom_eco_mode",
+                "icon": "",
+                "assumed_state": false
+            },
+            {
+                "object_id": "t_bedroom_locked_mode",
+                "key": 1832662327,
+                "name": "t_bedroom_locked_mode",
+                "unique_id": "t_bedroomswitcht_bedroom_locked_mode",
+                "icon": "",
+                "assumed_state": false
+            }
+        ],
+        "fan": [
+            {
+                "object_id": "t_bedroom",
+                "key": 3194738338,
+                "name": "t_bedroom",
+                "unique_id": "t_bedroomfant_bedroom",
+                "supports_oscillation": false,
+                "supports_speed": true
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "t_bedroom_mode",
+                "key": 1551849004,
+                "name": "t_bedroom_mode",
+                "unique_id": "t_bedroomsensort_bedroom_mode",
+                "icon": "",
+                "unit_of_measurement": "",
+                "accuracy_decimals": 0,
+                "force_update": false
+            },
+            {
+                "object_id": "t_bedroom_system_mode",
+                "key": 198545600,
+                "name": "t_bedroom_system_mode",
+                "unique_id": "t_bedroomsensort_bedroom_system_mode",
+                "icon": "",
+                "unit_of_measurement": "",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": []
+    }
+}

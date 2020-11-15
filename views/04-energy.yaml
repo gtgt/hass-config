@@ -43,6 +43,9 @@
       solar_icon: "mdi:weather-sunny"
       grid_icon: "mdi:transmission-tower"
       home_icon: "mdi:home"
+    - type: sensor
+      entity: sensor.energy2_power
+      graph: none
     - type: entity-filter
       show_empty: false
       state_filter:
@@ -126,7 +129,7 @@
           entity: sensor.energy_kwh
         - type: button
           entity: switch.energy_restart
-          name: Újraindfítás
+          name: Újraindítás
           icon: mdi:reload
     - type: entities
       title: Napenergia

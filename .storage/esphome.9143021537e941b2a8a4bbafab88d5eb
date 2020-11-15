@@ -6,12 +6,30 @@
             "uses_password": true,
             "name": "controller1",
             "mac_address": "24:62:AB:F9:8E:14",
-            "compilation_time": "Oct  7 2020, 01:15:39",
+            "compilation_time": "Oct 20 2020, 03:25:15",
             "model": "Adafruit ESP32 Feather",
             "has_deep_sleep": false,
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
+        "switch": [
+            {
+                "object_id": "controller1_restart",
+                "key": 1352746966,
+                "name": "controller1_restart",
+                "unique_id": "controller1switchcontroller1_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            },
+            {
+                "object_id": "controller1_backlight",
+                "key": 2988928984,
+                "name": "controller1_backlight",
+                "unique_id": "controller1switchcontroller1_backlight",
+                "icon": "",
+                "assumed_state": false
+            }
+        ],
         "sensor": [
             {
                 "object_id": "fishtank_temp",
@@ -49,16 +67,6 @@
                 "unique_id": "controller1binary_sensorcontroller1_button1",
                 "device_class": "",
                 "is_status_binary_sensor": false
-            }
-        ],
-        "switch": [
-            {
-                "object_id": "controller1_backlight",
-                "key": 2988928984,
-                "name": "controller1_backlight",
-                "unique_id": "controller1switchcontroller1_backlight",
-                "icon": "",
-                "assumed_state": false
             }
         ]
     }

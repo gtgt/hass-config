@@ -1,0 +1,4 @@
+climate.t_bedroom:
+  friendly_name: "Háló"
+  min_temp: 21
+  max_temp: 27

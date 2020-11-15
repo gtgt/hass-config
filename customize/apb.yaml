@@ -29,11 +29,11 @@
     friendly_name: "Udvar"
     icon: "mdi:outdoor-lamp"
   switch.apb_q16:
-    friendly_name: "Utcafront"
-    icon: "mdi:outdoor-lamp"
+    friendly_name: "Terasz"
+    icon: "mdi:led-strip-variant"
   switch.apb_q17:
-    friendly_name: "Q17"
-    icon: "mdi:outdoor-lamp"
+    friendly_name: "Bejárati ajtó"
+    icon: "mdi:wall-sconce-flat"
   switch.apb_m0:
     friendly_name: "Világítás ki"
     icon: "mdi:lightbulb-off"
@@ -92,7 +92,7 @@
   binary_sensor.apb_i19:
     friendly_name: "Nappali - Előszoba + Milán J"
   binary_sensor.apb_i1a:
-    friendly_name: "Terasz"
+    friendly_name: "Terasz (riasztó)"
   binary_sensor.apb_i1b:
     friendly_name: "Riasztó mozgás"
   binary_sensor.apb_i1c:

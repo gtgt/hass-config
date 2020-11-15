@@ -4,7 +4,7 @@ substitutions:
 esphome:
   name: ${name}
   platform: ESP8266
-  board: esp01_1m
+  board: esp12e
 
 status_led:
   pin:
@@ -24,7 +24,6 @@ captive_portal:
 
 # Enable logging
 logger:
-  baud_rate: 0
 
 # Enable Web server
 web_server:
@@ -43,34 +42,38 @@ ota:
 time:
   - platform: homeassistant
     id: hatime
-    
+
 switch:
   - platform: restart
     name: ${name}_restart
 
-i2c:
-  sda: GPIO1
-  scl: GPIO3
-  scan: true
-  
-dallas:
-  - pin: GPIO0
-    update_interval: 20s
-  
 sensor:
-  - platform: dallas
-    id: temp0
-    name: ${name}_temp_pool
-    address: 0xAA02179245598028
-    filters:
-      - offset: 0
-
-display:
-  - platform: lcd_pcf8574
-    dimensions: 16x2
-    address: 0x3F
-    update_interval: 1s
-    lambda: |-
-      if (id(temp0).has_state()) {
-        it.printf("Tt: %.1f 'C", id(temp0).state);
-      }
+  - platform: dht
+    model: DHT11
+    pin: GPIO5
+    update_interval: 15s
+    temperature:
+      id: temp
+      name: ${name}_temp
+      filters:
+        - offset: 0
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #-   sliding_window_moving_average:
+        - median:
+            window_size: 4 
+            send_every: 4 
+            send_first_at: 4
+    humidity:
+      id: humidity
+      name: ${name}_humidity
+      filters:
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #- sliding_window_moving_average:
+        - median:
+            window_size: 4 
+            send_every: 4 
+            send_first_at: 4

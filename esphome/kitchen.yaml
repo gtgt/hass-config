@@ -1,5 +1,5 @@
 substitutions:
-  name: childa
+  name: kitchen
 
 esphome:
   name: ${name}
@@ -24,6 +24,7 @@ captive_portal:
 
 # Enable logging
 logger:
+  baud_rate: 0
 
 # Enable Web server
 web_server:
@@ -42,21 +43,21 @@ ota:
 time:
   - platform: homeassistant
     id: hatime
-
+    
 switch:
   - platform: restart
     name: ${name}_restart
-
+    
 sensor:
   - platform: dht
     model: DHT11
-    pin: GPIO14
+    pin: GPIO0
     update_interval: 15s
     temperature:
       id: temp
       name: ${name}_temp
       filters:
-        - offset: -2
+        - offset: 0
         #- exponential_moving_average:
         #    alpha: 0.75
         #    send_every: 4

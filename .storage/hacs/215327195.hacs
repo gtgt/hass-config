@@ -14,7 +14,7 @@
         "domains": [
             "light"
         ],
-        "downloads": 1073,
+        "downloads": 2881,
         "file_name": "card.js",
         "filename": "card.js",
         "first_install": false,
@@ -29,7 +29,7 @@
         "installed": true,
         "installed_commit": "5c2fcef",
         "installed_version": "1.7.1",
-        "open_issues": 2,
+        "open_issues": 3,
         "last_commit": "5c2fcef",
         "last_version": "1.7.1",
         "last_updated": "2020-10-11T16:29:16Z",
@@ -48,9 +48,8 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 96,
+        "stargazers_count": 105,
         "topics": [
-            "hacktoberfest",
             "home-assistant",
             "lovelace",
             "lovelace-custom-card",

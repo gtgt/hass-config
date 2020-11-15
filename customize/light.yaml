@@ -14,7 +14,7 @@ binary_sensor.dining_table_nightlight:
   friendly_name: "Étkező (éjszakai mód)"
   icon: mdi:weather-night
 light.terrace_led:
-  friendly_name: "Terasz"
+  friendly_name: "Magichome W"
   icon: mdi:led-strip-variant
 light.magichome_rgb:
   friendly_name: "Magichome RGB"

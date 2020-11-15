@@ -27,7 +27,7 @@
         "installed": true,
         "installed_commit": "4c206df",
         "installed_version": "v1.9",
-        "open_issues": 1,
+        "open_issues": 3,
         "last_commit": "4c206df",
         "last_version": "v1.9",
         "last_updated": "2020-08-03T08:18:06Z",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 80,
+        "stargazers_count": 82,
         "topics": [
             "hacs",
             "home-assistant",

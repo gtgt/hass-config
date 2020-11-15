@@ -13,10 +13,10 @@ homeassistant:
     - /config
   auth_providers:
     - type: homeassistant
-    - type: trusted_networks
-      trusted_networks:
-        - 192.168.1.0/24
-        - 127.0.0.1
+#   - type: trusted_networks
+#     trusted_networks:
+#       - 192.168.1.0/24
+#       - 127.0.0.1
     - type: legacy_api_password
       api_password: !secret api_password
       
@@ -36,7 +36,7 @@ discovery:
 logger:
   default: warn
   logs:
-    custom_components.programmable_thermostat.climate: warn
+    custom_components.programmable_thermostat.climate: info
     homeassistant.components.cloud.google_config: error
     satel_integra.satel_integra: error
     miio.miioprotocol: fatal
@@ -58,6 +58,11 @@ http:
   trusted_proxies:
     - 192.168.1.5
     - 192.168.1.10
+
+mqtt:
+  broker: 192.168.1.3
+  discovery: true
+  discovery_prefix: homeassistant
 
 stream:
 
@@ -159,14 +164,17 @@ saver:
 
 modbus:
   name: apb
-  type: serial
-  method: rtu
-  port: /dev/ttyUSB0
-  baudrate: 9600
-  stopbits: 1
-  bytesize: 8
-  parity: N
-  timeout: 5
+  type: tcp
+  host: 127.0.0.1
+  port: 502
+#  type: serial
+#  method: rtu
+#  port: /dev/ttyUSB0
+#  baudrate: 9600
+#  stopbits: 1
+#  bytesize: 8
+#  parity: N
+  timeout: 10
   
 satel_integra: !include satel_integra.yaml
 

@@ -5,47 +5,13 @@
         "device_info": {
             "uses_password": true,
             "name": "energy",
-            "mac_address": "4C:11:AE:0C:44:7F",
-            "compilation_time": "Sep 11 2020, 05:38:06",
-            "model": "PLATFORMIO_D1_MINI",
+            "mac_address": "2C:F4:32:14:F3:AB",
+            "compilation_time": "Apr 23 2020, 03:38:02",
+            "model": "PLATFORMIO_ESP07",
             "has_deep_sleep": false,
-            "esphome_version": "1.16.0-dev"
+            "esphome_version": "1.15.0-dev"
         },
         "services": [],
-        "switch": [
-            {
-                "object_id": "energy_restart",
-                "key": 1102582941,
-                "name": "energy_restart",
-                "unique_id": "energyswitchenergy_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy_reset1",
-                "key": 2614731994,
-                "name": "energy_reset1",
-                "unique_id": "energyswitchenergy_reset1",
-                "icon": "",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy_reset2",
-                "key": 2614731993,
-                "name": "energy_reset2",
-                "unique_id": "energyswitchenergy_reset2",
-                "icon": "",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy_reset3",
-                "key": 2614731992,
-                "name": "energy_reset3",
-                "unique_id": "energyswitchenergy_reset3",
-                "icon": "",
-                "assumed_state": false
-            }
-        ],
         "sensor": [
             {
                 "object_id": "energy_voltage1",

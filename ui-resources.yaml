@@ -24,5 +24,7 @@
       type: module
     - url: /hacsfiles/purifier-card/purifier-card.js
       type: module
+    - url: /hacsfiles/surveillance-card/surveillance-card.js
+      type: module
     #- url: /hacsfiles/lovelace-google-keep-card/google-keep-card.js
     #  type: module
