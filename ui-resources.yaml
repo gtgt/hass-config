@@ -1,7 +1,5 @@
     - url: /local/css/overrides.css
       type: css
-    - url: /hacsfiles/custom-header/custom-header.js
-      type: module
     - url: /hacsfiles/lovelace-card-mod/card-mod.js
       type: module
     - url: /hacsfiles/lovelace-badge-card/badge-card.js

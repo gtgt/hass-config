@@ -12,7 +12,7 @@
         "description": "Air Purifier card for Home Assistant Lovelace UI",
         "domain": "",
         "domains": [],
-        "downloads": 401,
+        "downloads": 404,
         "file_name": "purifier-card.js",
         "filename": "purifier-card.js",
         "first_install": false,
