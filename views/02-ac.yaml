@@ -44,10 +44,6 @@
         title: Háló
         pending: 0
       - type: custom:thermostat-card
-        entity: climate.ac_bedroom
-        title: Háló (régi)
-        pending: 0
-      - type: custom:thermostat-card
         entity: climate.ac_kitchen
         title: Konyha
         pending: 0

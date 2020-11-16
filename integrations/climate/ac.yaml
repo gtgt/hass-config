@@ -26,15 +26,6 @@
     max_temp: 27
     tolerance: 0.5
   - platform: programmable_thermostat
-    name: ac_bedroom
-    heater: switch.ac_relay_bedroom
-    cooler: switch.ac_relay_bedroom
-    actual_temp_sensor: sensor.bedroom_temp
-    target_temp_sensor: input_number.ac_bedroom_target_temp
-    min_temp: 21
-    max_temp: 27
-    tolerance: 0.5
-  - platform: programmable_thermostat
     name: ac_kitchen
     heater: switch.ac_relay_kitchen
     cooler: switch.ac_relay_kitchen

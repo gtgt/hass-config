@@ -231,13 +231,13 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
               return
             data = {ATTR_ENTITY_ID: self.heater_entity_id}
             self._hvac_action = CURRENT_HVAC_HEAT
-            _LOGGER.debug("[%s] Turn on %s: %s (%s)", self._name, self.heater_entity_id, self._hvac_action, mode)
+            _LOGGER.info("[%s] Turn on %s: %s (%s)", self._name, self.heater_entity_id, self._hvac_action, mode)
         elif mode == "cool":
             if self._hvac_action is CURRENT_HVAC_COOL:
               return
             data = {ATTR_ENTITY_ID: self.cooler_entity_id}
             self._hvac_action = CURRENT_HVAC_COOL
-            _LOGGER.debug("[%s] Turn on %s: %s (%s)", self._name, self.cooler_entity_id, self._hvac_action, mode)
+            _LOGGER.info("[%s] Turn on %s: %s (%s)", self._name, self.cooler_entity_id, self._hvac_action, mode)
         else:
             _LOGGER.warning("[%s] No type has been passed to turn_on function", self._name)
             return
@@ -339,11 +339,9 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
 
             if self._is_device_active:
                 if delta <= 0:
-                    _LOGGER.info("Turning off %s", entity)
                     await self._async_turn_off(mode=mode)
             else:
                 if delta >= self._tolerance:
-                    _LOGGER.info("Turning on %s", entity)
                     await self._async_turn_on(mode=mode)
                 else:
                      self._set_hvac_action_off(mode=mode)
@@ -369,7 +367,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
 
     @callback
     def _async_update_temp(self, state):
-        if state is None or self._cur_temp == float(state.state):
+        if state is None or state.state is 'unavailable' or self._cur_temp == float(state.state):
           return
         """Update thermostat with latest state from sensor."""
         try:
@@ -390,7 +388,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
 
     @callback
     def _async_update_program_temp(self, state):
-        if state is None or self._target_temp == float(state.state):
+        if state is None or state.state is 'unavailable' or self._target_temp == float(state.state):
           return
         """Update thermostat with latest state from sensor."""
         _LOGGER.info("[%s] Update target temp to %s: %s (%s)", self._name, self.target_entity_id, state.state, self._target_temp)

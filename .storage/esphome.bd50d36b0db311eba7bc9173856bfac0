@@ -12,16 +12,6 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
-        "switch": [
-            {
-                "object_id": "childa_restart",
-                "key": 2003069058,
-                "name": "childa_restart",
-                "unique_id": "childaswitchchilda_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            }
-        ],
         "sensor": [
             {
                 "object_id": "childa_temp",
@@ -44,6 +34,16 @@
                 "force_update": false
             }
         ],
-        "text_sensor": []
+        "text_sensor": [],
+        "switch": [
+            {
+                "object_id": "childa_restart",
+                "key": 2003069058,
+                "name": "childa_restart",
+                "unique_id": "childaswitchchilda_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            }
+        ]
     }
 }

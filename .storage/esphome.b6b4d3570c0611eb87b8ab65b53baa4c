@@ -6,10 +6,10 @@
             "uses_password": true,
             "name": "terrace_led",
             "mac_address": "40:F5:20:C8:2A:31",
-            "compilation_time": "Oct 11 2020, 23:12:20",
+            "compilation_time": "Nov 15 2020, 15:39:04",
             "model": "PLATFORMIO_ESP8285",
             "has_deep_sleep": false,
-            "esphome_version": "1.15.2"
+            "esphome_version": "1.16.0-dev"
         },
         "services": [],
         "light": [
@@ -25,6 +25,16 @@
                 "min_mireds": 0.0,
                 "max_mireds": 0.0,
                 "effects": []
+            }
+        ],
+        "switch": [
+            {
+                "object_id": "terrace_led_restart",
+                "key": 2539114339,
+                "name": "terrace_led_restart",
+                "unique_id": "terrace_ledswitchterrace_led_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
             }
         ]
     }

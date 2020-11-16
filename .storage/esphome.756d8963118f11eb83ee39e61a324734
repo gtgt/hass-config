@@ -12,16 +12,6 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
-        "switch": [
-            {
-                "object_id": "kitchen_restart",
-                "key": 3246804967,
-                "name": "kitchen_restart",
-                "unique_id": "kitchenswitchkitchen_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            }
-        ],
         "sensor": [
             {
                 "object_id": "kitchen_temp",
@@ -44,6 +34,16 @@
                 "force_update": false
             }
         ],
-        "text_sensor": []
+        "text_sensor": [],
+        "switch": [
+            {
+                "object_id": "kitchen_restart",
+                "key": 3246804967,
+                "name": "kitchen_restart",
+                "unique_id": "kitchenswitchkitchen_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            }
+        ]
     }
 }

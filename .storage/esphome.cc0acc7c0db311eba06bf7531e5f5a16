@@ -12,6 +12,16 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
+        "switch": [
+            {
+                "object_id": "bedroom_rgb_restart",
+                "key": 2887119047,
+                "name": "bedroom_rgb_restart",
+                "unique_id": "bedroom_rgbswitchbedroom_rgb_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            }
+        ],
         "light": [
             {
                 "object_id": "bedroom_rgb",
@@ -29,16 +39,6 @@
                     "bedroom_rgb_random",
                     "bedroom_rgb_random_slow"
                 ]
-            }
-        ],
-        "switch": [
-            {
-                "object_id": "bedroom_rgb_restart",
-                "key": 2887119047,
-                "name": "bedroom_rgb_restart",
-                "unique_id": "bedroom_rgbswitchbedroom_rgb_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
             }
         ]
     }

@@ -46,3 +46,8 @@ sensor.grid_power:
 sensor.grid_power_hourly:
   friendly_name: "Hálózat egyenleg (előző óra átlag)"
   icon: mdi:scale-balance
+
+sensor.energy2_power:
+  friendly_name: "Klíma fogyasztás"
+  icon: mdi:air-conditioner
+  

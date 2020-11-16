@@ -12,37 +12,6 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
-        "switch": [
-            {
-                "object_id": "controller1_restart",
-                "key": 1352746966,
-                "name": "controller1_restart",
-                "unique_id": "controller1switchcontroller1_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            },
-            {
-                "object_id": "controller1_backlight",
-                "key": 2988928984,
-                "name": "controller1_backlight",
-                "unique_id": "controller1switchcontroller1_backlight",
-                "icon": "",
-                "assumed_state": false
-            }
-        ],
-        "sensor": [
-            {
-                "object_id": "fishtank_temp",
-                "key": 682263480,
-                "name": "fishtank_temp",
-                "unique_id": "dallas-AA02179245598028",
-                "icon": "mdi:thermometer",
-                "unit_of_measurement": "\u00b0C",
-                "accuracy_decimals": 1,
-                "force_update": false
-            }
-        ],
-        "text_sensor": [],
         "binary_sensor": [
             {
                 "object_id": "controller1_status",
@@ -67,6 +36,37 @@
                 "unique_id": "controller1binary_sensorcontroller1_button1",
                 "device_class": "",
                 "is_status_binary_sensor": false
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "fishtank_temp",
+                "key": 682263480,
+                "name": "fishtank_temp",
+                "unique_id": "dallas-AA02179245598028",
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
+            }
+        ],
+        "text_sensor": [],
+        "switch": [
+            {
+                "object_id": "controller1_restart",
+                "key": 1352746966,
+                "name": "controller1_restart",
+                "unique_id": "controller1switchcontroller1_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            },
+            {
+                "object_id": "controller1_backlight",
+                "key": 2988928984,
+                "name": "controller1_backlight",
+                "unique_id": "controller1switchcontroller1_backlight",
+                "icon": "",
+                "assumed_state": false
             }
         ]
     }

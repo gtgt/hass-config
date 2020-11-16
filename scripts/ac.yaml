@@ -1,0 +1,6 @@
+turn_switch_by_climate:
+  icon: mdi:switch
+  sequence:
+    - service_template: "switch.turn_{{ 'off' if state_attr(climate_entity_id, 'hvac_action') in ['idle', 'off'] else 'on' }}"
+      data:
+        entity_id: "{{ switch_entity_id }}"
