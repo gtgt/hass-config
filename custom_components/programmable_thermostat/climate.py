@@ -250,10 +250,12 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
           return
         if mode == "heat":
             data = {ATTR_ENTITY_ID: self.heater_entity_id}
+            _LOGGER.info("[%s] Turn off %s: from %s (to %s)", self._name, self.heater_entity_id, self._hvac_action, mode)
         elif mode == "cool":
             data = {ATTR_ENTITY_ID: self.cooler_entity_id}
+            _LOGGER.info("[%s] Turn off %s: from %s (to %s)", self._name, self.cooler_entity_id, self._hvac_action, mode)
         else:
-            _LOGGER.warning("No type has been passed to turn_off function")
+            _LOGGER.warning("No valid type has been passed to turn_off function")
             return
         self._set_hvac_action_off(mode=mode)
         await self.hass.services.async_call(HA_DOMAIN, SERVICE_TURN_OFF, data)
@@ -281,7 +283,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
     async def async_set_temperature(self, **kwargs):
         """Set new target temperature."""
         temperature = kwargs.get(ATTR_TEMPERATURE)
-        _LOGGER.info("[%s] Async set target temp of %s: %s (%s)", self._name, self.target_entity_id, temperature, self._target_temp)
+        _LOGGER.info("[%s] Async set target temp of %s to %s (from %s)", self._name, self.target_entity_id, temperature, self._target_temp)
         if temperature is None:
             return
         self._target_temp = float(temperature)
@@ -304,7 +306,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
         if new_state is None:
             return
         self._restore_temp = float(new_state.state)
-        _LOGGER.info("[%s] Target temp changed on %s: %f", self._name, entity_id, self._restore_temp)
+        _LOGGER.info("[%s] Target temp changed on %s to %f", self._name, entity_id, self._restore_temp)
         self._async_restore_program_temp()
         await self.control_system_mode()
         await self.async_update_ha_state()
@@ -326,13 +328,12 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
         else:
             _LOGGER.error("No type has been passed to control_thermo function")
         self._check_mode_type = mode
+        _LOGGER.debug("[%s] Control thermo called: delta=%f, target=%f, curr=%f (%s)", self._name, delta, self._target_temp, self._cur_temp, mode)
         async with self._temp_lock:
-            if not self._active and None not in (self._cur_temp,
-                                                 self._target_temp):
+            if not self._active and None not in (self._cur_temp, self._target_temp):
                 self._active = True
-                _LOGGER.info("[%s] Obtained current and target temperature. "
-                             "Generic thermostat active. %s, %s",
-                             self._name, self._cur_temp, self._target_temp)
+                _LOGGER.info("[%s] Obtained current and target temperature. Generic thermostat active. %s, %s", self._name, self._cur_temp, self._target_temp)
+                self.async_schedule_update_ha_state()
 
             if not self._active or self._hvac_mode == HVAC_MODE_OFF or self._hvac_mode == hvac_mode:
                 return
@@ -344,7 +345,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
                 if delta >= self._tolerance:
                     await self._async_turn_on(mode=mode)
                 else:
-                     self._set_hvac_action_off(mode=mode)
+                    self._set_hvac_action_off(mode=mode)
 
     def _set_hvac_action_off(self, mode=None):
         """This is used to set CURRENT_HVAC_OFF on the climate integration.
@@ -356,7 +357,7 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
            not self._hvac_mode == HVAC_MODE_HEAT_COOL and \
            not self._hvac_action == CURRENT_HVAC_OFF):
             self._hvac_action = CURRENT_HVAC_OFF
-            _LOGGER.info("[%s] Set off: %s (%s)", self._name, self._hvac_action, self._hvac_mode)
+            _LOGGER.info("[%s] Set hvac action to current hvac off: %s (%s)", self._name, self._hvac_action, self._hvac_mode)
 
     @callback
     def _async_switch_changed(self, entity_id, old_state, new_state):
@@ -367,35 +368,35 @@ class ProgrammableThermostat(ClimateEntity, RestoreEntity):
 
     @callback
     def _async_update_temp(self, state):
-        if state is None or state.state in (STATE_UNKNOWN, STATE_UNAVAILABLE) or self._cur_temp == float(state.state):
+        if state is None or state.state in (None, STATE_UNKNOWN, STATE_UNAVAILABLE) or self._cur_temp == float(state.state):
           return
         """Update thermostat with latest state from sensor."""
         try:
             self._cur_temp = float(state.state)
         except ValueError as ex:
-            _LOGGER.warning("Unable to update %s as temp value from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
+            _LOGGER.warning("Unable to update current temp value %s from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
 
     @callback
     def _async_restore_program_temp(self):
         if self._restore_temp is None or self._target_temp == self._restore_temp:
           return
         """Update thermostat with latest state from sensor to have back automatic value."""
-        _LOGGER.info("[%s] Restore target temp to %s: %s (%s)", self._name, self.target_entity_id, self._restore_temp, self._target_temp)
+        _LOGGER.info("[%s] Restore target temp of %s to %s (from %s)", self._name, self.target_entity_id, self._restore_temp, self._target_temp)
         try:
             self._target_temp = self._restore_temp
         except ValueError as ex:
-            _LOGGER.warning("Unable to restore %s as target temp value from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
+            _LOGGER.warning("Unable to restore target temp value on %s from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
 
     @callback
     def _async_update_program_temp(self, state):
-        if state is None or state.state in (STATE_UNKNOWN, STATE_UNAVAILABLE) or self._target_temp == float(state.state):
+        if state is None or state.state in (None, STATE_UNKNOWN, STATE_UNAVAILABLE) or self._target_temp == float(state.state):
           return
         """Update thermostat with latest state from sensor."""
-        _LOGGER.info("[%s] Update target temp to %s: %s (%s)", self._name, self.target_entity_id, state.state, self._target_temp)
+        _LOGGER.info("[%s] Update target temp of %s to %s (from %s)", self._name, self.target_entity_id, state.state, self._target_temp)
         try:
             self._target_temp = float(state.state)
         except ValueError as ex:
-            _LOGGER.warning("Unable to update %s as target temp value from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
+            _LOGGER.warning("Unable to update target temp value on %s from sensor (%s): %s", state.state, self.sensor_entity_id, ex)
 
     @property
     def should_poll(self):

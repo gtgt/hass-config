@@ -38,7 +38,7 @@
         entity: climate.ac_childb
         title: Milán
         pending: 0
-      - type: thermostat
+      - type: custom:thermostat-card
         entity: climate.t_bedroom
         title: Háló
         pending: 0
