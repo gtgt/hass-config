@@ -43,10 +43,8 @@
     friendly_name: "Milán hőmérséklet"
   sensor.childb_humidity:
     friendly_name: "Milán páratartalom"
-  sensor.bedroom_temp:
+  sensor.t_bedroom_temperature:
     friendly_name: "Háló hőmérséklet"
-  sensor.bedroom_humidity:
-    friendly_name: "Háló páratartalom"
   sensor.livingroom_temp:
     friendly_name: "Nappali hőmérséklet"
   sensor.livingroom_humidity:
@@ -64,8 +62,6 @@
     friendly_name: "Máté célhőmérséklet"
   sensor.ac_childb_target_temp:
     friendly_name: "Milán célhőmérséklet"
-  sensor.ac_bedroom_target_temp:
-    friendly_name: "Háló célhőmérséklet"
   sensor.ac_kitchen_target_temp:
     friendly_name: "Konyha célhőmérséklet"
   sensor.ac_livingroom_target_temp:
@@ -73,9 +69,6 @@
     
   sensor.io_temp_diff:
     friendly_name: "Hőmérsékletkülönbség"
-
-  sensor.bedroom_target_rotary:
-    friendly_name: "Háló tekerő gomb"
 
   automation.ventillation_auto_off:
     friendly_name: "Szellőztetés ki ha túl hideg van odakint"

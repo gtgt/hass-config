@@ -9,8 +9,7 @@
     - entity: sensor.childb_temp
     - entity: sensor.childb_humidity
     - entity: sensor.childb_temp_outside
-    - entity: sensor.bedroom_temp
-    - entity: sensor.bedroom_humidity
+    - entity: sensor.t_bedroom_temperature
     - entity: sensor.livingroom_temp
     - entity: sensor.livingroom_humidity
     - entity: sensor.io_temp_diff

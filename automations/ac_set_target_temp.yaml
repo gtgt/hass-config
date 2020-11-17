@@ -22,8 +22,8 @@
                 temperature: "{{ climate_ac_childb_attr_temperature | default(states('input_number.ac_childb_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
-                entity_id: climate.ac_bedroom
-                temperature: "{{ climate_ac_bedroom_attr_temperature | default(states('input_number.ac_bedroom_target_temp')) | float }}"
+                entity_id: climate.t_bedroom
+                temperature: "{{ climate_t_bedroom_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.ac_kitchen
@@ -50,7 +50,7 @@
       - platform: state
         entity_id: climate.ac_childb
       - platform: state
-        entity_id: climate.ac_bedroom
+        entity_id: climate.t_bedroom
       - platform: state
         entity_id: climate.ac_kitchen
       - platform: state
@@ -67,7 +67,7 @@
           entity_id: climate.ac_childb
       - service: saver.save_state
         data:
-          entity_id: climate.ac_bedroom
+          entity_id: climate.t_bedroom
       - service: saver.save_state
         data:
           entity_id: climate.ac_kitchen
