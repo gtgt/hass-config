@@ -12,7 +12,7 @@
         "description": "\ud83d\ude48 Hides the Home Assistant header and/or sidebar",
         "domain": "",
         "domains": [],
-        "downloads": 2299,
+        "downloads": 2300,
         "file_name": "kiosk-mode.js",
         "filename": "",
         "first_install": false,

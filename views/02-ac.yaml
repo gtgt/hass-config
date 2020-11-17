@@ -55,12 +55,11 @@
       title: Ventillátor
       show_header_toggle: false
       entities:
-      - entity: fan.ac
-        type: custom:slider-entity-row
-        name: AC
-        attribute: speed
-        min: 1
-        max: 5
+        - type: attribute
+          entity: fan.ac
+          attribute: speed
+          prefix: 'Sebesség: '
+          name: Klíma
     - type: entities
       title: Automatizálás
       entities:
@@ -93,7 +92,7 @@
 #        - input_number.ac_livingroom_target_temp
     - type: vertical-stack
       cards:
-      - type: picture-entity
-        entity: camera.weather
       - type: weather-forecast
         entity: weather.owm
+      - type: picture-entity
+        entity: camera.weather
