@@ -20147,6 +20147,28 @@
             ],
             "version_installed": null
         },
+        "191663150": {
+            "authors": [],
+            "category": "plugin",
+            "description": "Provides a means to show a compact graphical control row for 3 speed fans in Home Assistant",
+            "domain": null,
+            "downloads": 0,
+            "full_name": "finity69x2/fan-control-entity-row",
+            "first_install": false,
+            "installed_commit": null,
+            "installed": false,
+            "last_commit": "6345a16",
+            "last_release_tag": "1.9",
+            "last_updated": "2020-08-31T01:29:15Z",
+            "name": "fan-control-entity-row",
+            "new": false,
+            "repository_manifest": {},
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 28,
+            "topics": [],
+            "version_installed": null
+        },
         "223993584": {
             "authors": [
                 "@Magalex2x14",
@@ -20253,6 +20275,126 @@
             ],
             "version_installed": null
         },
+        "215327195": {
+            "authors": [],
+            "category": "plugin",
+            "description": "\ud83d\udca1 A Lovelace custom card for RGB lights",
+            "domain": null,
+            "downloads": 2949,
+            "full_name": "bokub/rgb-light-card",
+            "first_install": false,
+            "installed_commit": "5c2fcef",
+            "installed": true,
+            "last_commit": "5c2fcef",
+            "last_release_tag": "1.7.1",
+            "last_updated": "2020-10-11T16:29:16Z",
+            "name": "rgb-light-card",
+            "new": false,
+            "repository_manifest": {
+                "name": "RGB Light Card",
+                "content_in_root": true,
+                "filename": "card.js",
+                "render_readme": true,
+                "domains": [
+                    "light"
+                ]
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 105,
+            "topics": [
+                "home-assistant",
+                "lovelace",
+                "lovelace-custom-card",
+                "rgb-lights"
+            ],
+            "version_installed": "1.7.1"
+        },
+        "147764937": {
+            "authors": [],
+            "category": "plugin",
+            "description": "A custom component for displaying camera feeds in the style of a surveillance system.",
+            "domain": "",
+            "downloads": 0,
+            "full_name": "custom-cards/surveillance-card",
+            "first_install": false,
+            "installed_commit": "ae917f7",
+            "installed": true,
+            "last_commit": "ae917f7",
+            "last_release_tag": "0.0.4",
+            "last_updated": "2020-10-23T13:47:24Z",
+            "name": "surveillance-card",
+            "new": false,
+            "repository_manifest": {
+                "name": "surveillance-card",
+                "content_in_root": true,
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": true,
+            "stars": 88,
+            "topics": [],
+            "version_installed": "0.0.4"
+        },
+        "199546187": {
+            "authors": [],
+            "category": "plugin",
+            "description": "This is a companion card for Google Keep sensor. It displays notes downloaded by integration in a friendly way, similar to Google Keep app.",
+            "domain": null,
+            "downloads": 0,
+            "full_name": "PiotrMachowski/lovelace-google-keep-card",
+            "first_install": false,
+            "installed_commit": "d979a43",
+            "installed": true,
+            "last_commit": "d979a43",
+            "last_release_tag": "v1.1.0",
+            "last_updated": "2020-10-21T21:26:29Z",
+            "name": "lovelace-google-keep-card",
+            "new": false,
+            "repository_manifest": {},
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 16,
+            "topics": [
+                "home-assistant",
+                "lovelace-card"
+            ],
+            "version_installed": "v1.1.0"
+        },
+        "271398374": {
+            "authors": [
+                "@PiotrMachowski"
+            ],
+            "category": "integration",
+            "description": "This custom component allows you to save current state of any entity and use its data later to restore it.",
+            "domain": "saver",
+            "downloads": 0,
+            "full_name": "PiotrMachowski/Home-Assistant-custom-components-Saver",
+            "first_install": false,
+            "installed_commit": "5a00fb4",
+            "installed": true,
+            "last_commit": "41f15ce",
+            "last_release_tag": "v1.1.1",
+            "last_updated": "2020-10-15T15:54:02Z",
+            "name": "saver",
+            "new": false,
+            "repository_manifest": {
+                "name": "Saver",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 17,
+            "topics": [
+                "automation",
+                "helper",
+                "home-assistant",
+                "save",
+                "script",
+                "variable"
+            ],
+            "version_installed": "v1.1.1"
+        },
         "192732636": {
             "authors": [],
             "category": "plugin",
@@ -20274,6 +20416,176 @@
             "stars": 160,
             "topics": [],
             "version_installed": "v1.5.0"
+        },
+        "156434866": {
+            "authors": [],
+            "category": "plugin",
+            "description": "\ud83d\udd39 Get more control over the placement of lovelace cards.",
+            "domain": null,
+            "downloads": 0,
+            "full_name": "thomasloven/lovelace-layout-card",
+            "first_install": false,
+            "installed_commit": "e8f0ac8",
+            "installed": true,
+            "last_commit": "e8f0ac8",
+            "last_release_tag": "16",
+            "last_updated": "2020-10-22T07:15:22Z",
+            "name": "lovelace-layout-card",
+            "new": false,
+            "repository_manifest": {
+                "name": "layout-card",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 239,
+            "topics": [],
+            "version_installed": "16"
+        },
+        "160042309": {
+            "authors": [],
+            "category": "plugin",
+            "description": "An intuitive way to represent the power and energy that your home is consuming or producing. (A custom card for the Lovelace UI of Home Assistant.)",
+            "domain": null,
+            "downloads": 0,
+            "full_name": "gurbyz/power-wheel-card",
+            "first_install": false,
+            "installed_commit": "d136d6d",
+            "installed": true,
+            "last_commit": "d136d6d",
+            "last_release_tag": "v0.1.5",
+            "last_updated": "2020-11-05T15:05:31Z",
+            "name": "power-wheel-card",
+            "new": false,
+            "repository_manifest": {
+                "name": "Power wheel card"
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 75,
+            "topics": [
+                "custom-card",
+                "energy",
+                "home-assistant",
+                "lovelace-ui",
+                "solar-panels"
+            ],
+            "version_installed": "v0.1.5"
+        },
+        "144899700": {
+            "authors": [],
+            "category": "plugin",
+            "description": "\ud83d\udd39 Add sliders to entity cards",
+            "domain": null,
+            "downloads": 0,
+            "full_name": "thomasloven/lovelace-slider-entity-row",
+            "first_install": false,
+            "installed_commit": "5026d7d",
+            "installed": true,
+            "last_commit": "a0748e1",
+            "last_release_tag": "16",
+            "last_updated": "2020-10-09T11:06:18Z",
+            "name": "lovelace-slider-entity-row",
+            "new": false,
+            "repository_manifest": {
+                "name": "slider-entity-row",
+                "render_readme": true
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 372,
+            "topics": [],
+            "version_installed": "16"
+        },
+        "193372044": {
+            "authors": [],
+            "category": "plugin",
+            "description": "This card enables you to specify a target or start a zoned cleanup using live or static map, just like in Xiaomi Home app. Additionally you can define a list of zones and choose the ones to be cleaned.",
+            "domain": null,
+            "downloads": 0,
+            "full_name": "PiotrMachowski/lovelace-xiaomi-vacuum-map-card",
+            "first_install": false,
+            "installed_commit": "738bd88",
+            "installed": true,
+            "last_commit": "738bd88",
+            "last_release_tag": "v1.2.1",
+            "last_updated": "2020-10-29T17:07:33Z",
+            "name": "lovelace-xiaomi-vacuum-map-card",
+            "new": false,
+            "repository_manifest": {},
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 336,
+            "topics": [
+                "home-assistant",
+                "lovelace-card",
+                "roborock",
+                "vacuum",
+                "xiaomi",
+                "xiaomi-vacuum"
+            ],
+            "version_installed": "v1.2.1"
+        },
+        "220671784": {
+            "authors": [],
+            "category": "integration",
+            "description": "Programmable thermostat that let you have a smart thermostat on budget.",
+            "domain": "programmable_thermostat",
+            "downloads": 0,
+            "full_name": "gtgt/climate.programmable_thermostat",
+            "first_install": false,
+            "installed_commit": "6d8b0ef",
+            "installed": true,
+            "last_commit": "34d0b84",
+            "last_release_tag": null,
+            "last_updated": "2020-11-16T23:43:48Z",
+            "name": "programmable_thermostat",
+            "new": false,
+            "repository_manifest": {},
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 0,
+            "topics": [],
+            "version_installed": null
+        },
+        "236146080": {
+            "authors": [
+                "@binsentsu"
+            ],
+            "category": "integration",
+            "description": "Home assistant Component for reading data locally from Solaredge inverter through modbus TCP",
+            "domain": "solaredge_modbus",
+            "downloads": 0,
+            "full_name": "binsentsu/home-assistant-solaredge-modbus",
+            "first_install": false,
+            "installed_commit": "e52d368",
+            "installed": true,
+            "last_commit": "e52d368",
+            "last_release_tag": "V1.2.1",
+            "last_updated": "2020-10-24T19:45:46Z",
+            "name": "solaredge_modbus",
+            "new": false,
+            "repository_manifest": {
+                "name": "Solaredge Modbus",
+                "content_in_root": false,
+                "domains": [
+                    "sensor"
+                ],
+                "homeassistant": "0.109.0",
+                "iot_class": "local_poll"
+            },
+            "selected_tag": null,
+            "show_beta": false,
+            "stars": 10,
+            "topics": [
+                "hassio",
+                "home-assistant",
+                "modbus",
+                "modbus-tcp",
+                "solaredge",
+                "solaredge-inverter"
+            ],
+            "version_installed": "V1.2.1"
         },
         "303101606": {
             "authors": [],
@@ -20331,77 +20643,34 @@
             "topics": [],
             "version_installed": "v1.3.0"
         },
-        "199546187": {
+        "234022648": {
             "authors": [],
-            "category": "plugin",
-            "description": "This is a companion card for Google Keep sensor. It displays notes downloaded by integration in a friendly way, similar to Google Keep app.",
+            "category": "theme",
+            "description": "\ud83c\udfa8 By JuanMTech -- A Home Assistant theme inspired on the Google app dark mode.",
             "domain": null,
             "downloads": 0,
-            "full_name": "PiotrMachowski/lovelace-google-keep-card",
+            "full_name": "JuanMTech/google_dark_theme",
             "first_install": false,
-            "installed_commit": "d979a43",
+            "installed_commit": "4c206df",
             "installed": true,
-            "last_commit": "d979a43",
-            "last_release_tag": "v1.1.0",
-            "last_updated": "2020-10-21T21:26:29Z",
-            "name": "lovelace-google-keep-card",
-            "new": false,
-            "repository_manifest": {},
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 16,
-            "topics": [
-                "home-assistant",
-                "lovelace-card"
-            ],
-            "version_installed": "v1.1.0"
-        },
-        "191663150": {
-            "authors": [],
-            "category": "plugin",
-            "description": "Provides a means to show a compact graphical control row for 3 speed fans in Home Assistant",
-            "domain": null,
-            "downloads": 0,
-            "full_name": "finity69x2/fan-control-entity-row",
-            "first_install": false,
-            "installed_commit": "6345a16",
-            "installed": true,
-            "last_commit": "6345a16",
-            "last_release_tag": "1.9",
-            "last_updated": "2020-08-31T01:29:15Z",
-            "name": "fan-control-entity-row",
-            "new": false,
-            "repository_manifest": {},
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 28,
-            "topics": [],
-            "version_installed": "1.9"
-        },
-        "156434866": {
-            "authors": [],
-            "category": "plugin",
-            "description": "\ud83d\udd39 Get more control over the placement of lovelace cards.",
-            "domain": null,
-            "downloads": 0,
-            "full_name": "thomasloven/lovelace-layout-card",
-            "first_install": false,
-            "installed_commit": "e8f0ac8",
-            "installed": true,
-            "last_commit": "e8f0ac8",
-            "last_release_tag": "16",
-            "last_updated": "2020-10-22T07:15:22Z",
-            "name": "lovelace-layout-card",
+            "last_commit": "4c206df",
+            "last_release_tag": "v1.9",
+            "last_updated": "2020-08-03T08:18:06Z",
+            "name": "google_dark_theme",
             "new": false,
             "repository_manifest": {
-                "name": "layout-card",
+                "name": "Google Dark Theme",
                 "render_readme": true
             },
             "selected_tag": null,
             "show_beta": false,
-            "stars": 239,
-            "topics": [],
-            "version_installed": "16"
+            "stars": 82,
+            "topics": [
+                "hacs",
+                "home-assistant",
+                "theme"
+            ],
+            "version_installed": "v1.9"
         },
         "180229356": {
             "authors": [],
@@ -20441,70 +20710,6 @@
             ],
             "version_installed": "v4.1.0"
         },
-        "234022648": {
-            "authors": [],
-            "category": "theme",
-            "description": "\ud83c\udfa8 By JuanMTech -- A Home Assistant theme inspired on the Google app dark mode.",
-            "domain": null,
-            "downloads": 0,
-            "full_name": "JuanMTech/google_dark_theme",
-            "first_install": false,
-            "installed_commit": "4c206df",
-            "installed": true,
-            "last_commit": "4c206df",
-            "last_release_tag": "v1.9",
-            "last_updated": "2020-08-03T08:18:06Z",
-            "name": "google_dark_theme",
-            "new": false,
-            "repository_manifest": {
-                "name": "Google Dark Theme",
-                "render_readme": true
-            },
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 82,
-            "topics": [
-                "hacs",
-                "home-assistant",
-                "theme"
-            ],
-            "version_installed": "v1.9"
-        },
-        "215327195": {
-            "authors": [],
-            "category": "plugin",
-            "description": "\ud83d\udca1 A Lovelace custom card for RGB lights",
-            "domain": null,
-            "downloads": 2949,
-            "full_name": "bokub/rgb-light-card",
-            "first_install": false,
-            "installed_commit": "5c2fcef",
-            "installed": true,
-            "last_commit": "5c2fcef",
-            "last_release_tag": "1.7.1",
-            "last_updated": "2020-10-11T16:29:16Z",
-            "name": "rgb-light-card",
-            "new": false,
-            "repository_manifest": {
-                "name": "RGB Light Card",
-                "content_in_root": true,
-                "filename": "card.js",
-                "render_readme": true,
-                "domains": [
-                    "light"
-                ]
-            },
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 105,
-            "topics": [
-                "home-assistant",
-                "lovelace",
-                "lovelace-custom-card",
-                "rgb-lights"
-            ],
-            "version_installed": "1.7.1"
-        },
         "274738925": {
             "authors": [],
             "category": "plugin",
@@ -20540,211 +20745,6 @@
                 "smart-home"
             ],
             "version_installed": "v0.5.0"
-        },
-        "160042309": {
-            "authors": [],
-            "category": "plugin",
-            "description": "An intuitive way to represent the power and energy that your home is consuming or producing. (A custom card for the Lovelace UI of Home Assistant.)",
-            "domain": null,
-            "downloads": 0,
-            "full_name": "gurbyz/power-wheel-card",
-            "first_install": false,
-            "installed_commit": "d136d6d",
-            "installed": true,
-            "last_commit": "d136d6d",
-            "last_release_tag": "v0.1.5",
-            "last_updated": "2020-11-05T15:05:31Z",
-            "name": "power-wheel-card",
-            "new": false,
-            "repository_manifest": {
-                "name": "Power wheel card"
-            },
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 75,
-            "topics": [
-                "custom-card",
-                "energy",
-                "home-assistant",
-                "lovelace-ui",
-                "solar-panels"
-            ],
-            "version_installed": "v0.1.5"
-        },
-        "147764937": {
-            "authors": [],
-            "category": "plugin",
-            "description": "A custom component for displaying camera feeds in the style of a surveillance system.",
-            "domain": "",
-            "downloads": 0,
-            "full_name": "custom-cards/surveillance-card",
-            "first_install": false,
-            "installed_commit": "ae917f7",
-            "installed": true,
-            "last_commit": "ae917f7",
-            "last_release_tag": "0.0.4",
-            "last_updated": "2020-10-23T13:47:24Z",
-            "name": "surveillance-card",
-            "new": false,
-            "repository_manifest": {
-                "name": "surveillance-card",
-                "content_in_root": true,
-                "render_readme": true
-            },
-            "selected_tag": null,
-            "show_beta": true,
-            "stars": 88,
-            "topics": [],
-            "version_installed": "0.0.4"
-        },
-        "271398374": {
-            "authors": [
-                "@PiotrMachowski"
-            ],
-            "category": "integration",
-            "description": "This custom component allows you to save current state of any entity and use its data later to restore it.",
-            "domain": "saver",
-            "downloads": 0,
-            "full_name": "PiotrMachowski/Home-Assistant-custom-components-Saver",
-            "first_install": false,
-            "installed_commit": "5a00fb4",
-            "installed": true,
-            "last_commit": "41f15ce",
-            "last_release_tag": "v1.1.1",
-            "last_updated": "2020-10-15T15:54:02Z",
-            "name": "saver",
-            "new": false,
-            "repository_manifest": {
-                "name": "Saver",
-                "render_readme": true
-            },
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 17,
-            "topics": [
-                "automation",
-                "helper",
-                "home-assistant",
-                "save",
-                "script",
-                "variable"
-            ],
-            "version_installed": "v1.1.1"
-        },
-        "193372044": {
-            "authors": [],
-            "category": "plugin",
-            "description": "This card enables you to specify a target or start a zoned cleanup using live or static map, just like in Xiaomi Home app. Additionally you can define a list of zones and choose the ones to be cleaned.",
-            "domain": null,
-            "downloads": 0,
-            "full_name": "PiotrMachowski/lovelace-xiaomi-vacuum-map-card",
-            "first_install": false,
-            "installed_commit": "738bd88",
-            "installed": true,
-            "last_commit": "738bd88",
-            "last_release_tag": "v1.2.1",
-            "last_updated": "2020-10-29T17:07:33Z",
-            "name": "lovelace-xiaomi-vacuum-map-card",
-            "new": false,
-            "repository_manifest": {},
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 336,
-            "topics": [
-                "home-assistant",
-                "lovelace-card",
-                "roborock",
-                "vacuum",
-                "xiaomi",
-                "xiaomi-vacuum"
-            ],
-            "version_installed": "v1.2.1"
-        },
-        "220671784": {
-            "authors": [],
-            "category": "integration",
-            "description": "Programmable thermostat that let you have a smart thermostat on budget.",
-            "domain": "programmable_thermostat",
-            "downloads": 0,
-            "full_name": "gtgt/climate.programmable_thermostat",
-            "first_install": false,
-            "installed_commit": "6d8b0ef",
-            "installed": true,
-            "last_commit": "34d0b84",
-            "last_release_tag": null,
-            "last_updated": "2020-11-16T23:43:48Z",
-            "name": "programmable_thermostat",
-            "new": false,
-            "repository_manifest": {},
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 0,
-            "topics": [],
-            "version_installed": null
-        },
-        "144899700": {
-            "authors": [],
-            "category": "plugin",
-            "description": "\ud83d\udd39 Add sliders to entity cards",
-            "domain": null,
-            "downloads": 0,
-            "full_name": "thomasloven/lovelace-slider-entity-row",
-            "first_install": false,
-            "installed_commit": "5026d7d",
-            "installed": true,
-            "last_commit": "a0748e1",
-            "last_release_tag": "16",
-            "last_updated": "2020-10-09T11:06:18Z",
-            "name": "lovelace-slider-entity-row",
-            "new": false,
-            "repository_manifest": {
-                "name": "slider-entity-row",
-                "render_readme": true
-            },
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 372,
-            "topics": [],
-            "version_installed": "16"
-        },
-        "236146080": {
-            "authors": [
-                "@binsentsu"
-            ],
-            "category": "integration",
-            "description": "Home assistant Component for reading data locally from Solaredge inverter through modbus TCP",
-            "domain": "solaredge_modbus",
-            "downloads": 0,
-            "full_name": "binsentsu/home-assistant-solaredge-modbus",
-            "first_install": false,
-            "installed_commit": "e52d368",
-            "installed": true,
-            "last_commit": "e52d368",
-            "last_release_tag": "V1.2.1",
-            "last_updated": "2020-10-24T19:45:46Z",
-            "name": "solaredge_modbus",
-            "new": false,
-            "repository_manifest": {
-                "name": "Solaredge Modbus",
-                "content_in_root": false,
-                "domains": [
-                    "sensor"
-                ],
-                "homeassistant": "0.109.0",
-                "iot_class": "local_poll"
-            },
-            "selected_tag": null,
-            "show_beta": false,
-            "stars": 10,
-            "topics": [
-                "hassio",
-                "home-assistant",
-                "modbus",
-                "modbus-tcp",
-                "solaredge",
-                "solaredge-inverter"
-            ],
-            "version_installed": "V1.2.1"
         },
         "190927524": {
             "authors": [],
