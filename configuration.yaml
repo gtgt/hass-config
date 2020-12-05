@@ -90,12 +90,16 @@ recorder:
       - climate
       - light
       - person
+      - device_tracker
       - weather
       - input_number
       - input_select
     entity_globs:
       - sensor.ac_*
       - sensor.*temp*
+      - sensor.*power*
+      - sensor.*current*
+      - sensor.*location*
   exclude:
     entity_globs:
       - switch.*_led

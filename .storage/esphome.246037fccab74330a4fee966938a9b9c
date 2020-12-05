@@ -12,6 +12,19 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
+        "sensor": [
+            {
+                "object_id": "ac_relay_up_time",
+                "key": 3869629663,
+                "name": "ac_relay_up_time",
+                "unique_id": "4c11ae0d1dc9-uptime",
+                "icon": "mdi:timelapse",
+                "unit_of_measurement": "s",
+                "accuracy_decimals": 0,
+                "force_update": false
+            }
+        ],
+        "text_sensor": [],
         "switch": [
             {
                 "object_id": "ac_relay_restart",
@@ -85,19 +98,6 @@
                 "icon": "mdi:fan",
                 "assumed_state": false
             }
-        ],
-        "sensor": [
-            {
-                "object_id": "ac_relay_up_time",
-                "key": 3869629663,
-                "name": "ac_relay_up_time",
-                "unique_id": "4c11ae0d1dc9-uptime",
-                "icon": "mdi:timelapse",
-                "unit_of_measurement": "s",
-                "accuracy_decimals": 0,
-                "force_update": false
-            }
-        ],
-        "text_sensor": []
+        ]
     }
 }

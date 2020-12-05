@@ -27,7 +27,7 @@
         "installed": true,
         "installed_commit": "738bd88",
         "installed_version": "v1.2.1",
-        "open_issues": 13,
+        "open_issues": 14,
         "last_commit": "738bd88",
         "last_version": "v1.2.1",
         "last_updated": "2020-10-29T17:07:33Z",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 336,
+        "stargazers_count": 347,
         "topics": [
             "home-assistant",
             "lovelace-card",

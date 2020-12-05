@@ -8,24 +8,48 @@
     - entity: sensor.childa_humidity
     - entity: sensor.childb_temp
     - entity: sensor.childb_humidity
-    - entity: sensor.childb_temp_outside
+    - entity: sensor.childb_temp2
     - entity: sensor.t_bedroom_temperature
     - entity: sensor.livingroom_temp
     - entity: sensor.livingroom_humidity
+    - entity: sensor.attic_temp
     - entity: sensor.io_temp_diff
-    - entity: sensor.ac_sensor_temp_ac_outlet
-    - entity: sensor.ac_sensor_temp_ac_gas_tube
-    - entity: sensor.ac_inside_temperature
   cards:
+    - type: horizontal-stack
+      cards:
+        - type: sensor
+          entity: sensor.energy2_power
+          graph: line
+          detail: 2
+          hours_to_show: 24
+        - type: sensor
+          entity: sensor.ac_sensor_temp_ac_outlet
+          graph: line
+          detail: 2
+          hours_to_show: 24
+    - type: custom:simple-thermostat
+      entity: climate.ac
+      step_size: 1
+      step_layout: row
+      sensors:
+        - entity: sensor.ac_sensor_temp_ac_outlet
+        - entity: sensor.ac_sensor_temp_ac_gas_tube
+        - entity: sensor.attic_temp
+      control:
+        _names: false
+        preset:
+          none: false
+          away: false
+          eco: false
+          boost: false
+        hvac: true
+        fan:
+          Silence: false
+          Auto: false
     - type: custom:layout-card
       layout: horizontal
       min_columns: 2
       cards:
-      - type: custom:thermostat-card
-        entity: climate.ac
-        ambient_temperature: sensor.livingroom_temp
-        title: AC
-        pending: 0
       - type: custom:thermostat-card
         entity: climate.ac_study
         title: Dolgozó
@@ -51,16 +75,8 @@
         title: Nappali
         pending: 0
     - type: entities
-      title: Ventillátor
-      show_header_toggle: false
-      entities:
-        - type: attribute
-          entity: fan.ac
-          attribute: speed
-          prefix: 'Sebesség: '
-          name: Klíma
-    - type: entities
       title: Automatizálás
+      show_header_toggle: false
       entities:
         - entity: automation.ac_auto_off
           secondary_info: last-triggered
@@ -72,6 +88,7 @@
           secondary_info: last-triggered
     - type: entities
       title: Kapcsoló
+      show_header_toggle: false
       entities:
         - switch.ac_relay_study
         - switch.ac_relay_childa
@@ -80,15 +97,24 @@
         - switch.ac_relay_kitchen
         - switch.ac_relay_livingroom
         - switch.ac_relay_ventillation
-#    - type: entities
-#      title: Célhőmérséklet
-#      entities:
-#        - input_number.ac_study_target_temp
-#        - input_number.ac_childa_target_temp
-#        - input_number.ac_childb_target_temp
-#        - input_number.ac_bedroom_target_temp
-#        - input_number.ac_kitchen_target_temp
-#        - input_number.ac_livingroom_target_temp
+    - type: entities
+      show_header_toggle: false
+      entities:
+        - type: attribute
+          entity: fan.ac
+          attribute: speed
+          prefix: 'Sebesség: '
+          name: 'Ventillátor'
+        - type: attribute
+          entity: climate.ac
+          attribute: preset_mode
+          name: 'Beállítás mód'
+#       - input_number.ac_study_target_temp
+#       - input_number.ac_childa_target_temp
+#       - input_number.ac_childb_target_temp
+#       - input_number.ac_bedroom_target_temp
+#       - input_number.ac_kitchen_target_temp
+#       - input_number.ac_livingroom_target_temp
     - type: vertical-stack
       cards:
       - type: weather-forecast

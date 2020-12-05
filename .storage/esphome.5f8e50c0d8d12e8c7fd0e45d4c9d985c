@@ -1,0 +1,73 @@
+{
+    "version": 1,
+    "key": "esphome.5f8e50c0d8d12e8c7fd0e45d4c9d985c",
+    "data": {
+        "device_info": {
+            "uses_password": true,
+            "name": "attic",
+            "mac_address": "24:62:AB:F9:8E:14",
+            "compilation_time": "Dec  5 2020, 04:04:43",
+            "model": "Adafruit ESP32 Feather",
+            "has_deep_sleep": false,
+            "esphome_version": "1.16.0-dev"
+        },
+        "services": [],
+        "binary_sensor": [
+            {
+                "object_id": "attic_status",
+                "key": 4267695111,
+                "name": "attic_status",
+                "unique_id": "atticbinary_sensorattic_status",
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true
+            },
+            {
+                "object_id": "attic_button0",
+                "key": 704289995,
+                "name": "attic_button0",
+                "unique_id": "atticbinary_sensorattic_button0",
+                "device_class": "",
+                "is_status_binary_sensor": false
+            },
+            {
+                "object_id": "attic_button1",
+                "key": 704289994,
+                "name": "attic_button1",
+                "unique_id": "atticbinary_sensorattic_button1",
+                "device_class": "",
+                "is_status_binary_sensor": false
+            }
+        ],
+        "switch": [
+            {
+                "object_id": "attic_restart",
+                "key": 1182777086,
+                "name": "attic_restart",
+                "unique_id": "atticswitchattic_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            },
+            {
+                "object_id": "attic_backlight",
+                "key": 1496154656,
+                "name": "attic_backlight",
+                "unique_id": "atticswitchattic_backlight",
+                "icon": "",
+                "assumed_state": false
+            }
+        ],
+        "sensor": [
+            {
+                "object_id": "attic_temp",
+                "key": 3400007495,
+                "name": "attic_temp",
+                "unique_id": "dallas-AA02179245598028",
+                "icon": "mdi:thermometer",
+                "unit_of_measurement": "\u00b0C",
+                "accuracy_decimals": 1,
+                "force_update": false
+            }
+        ],
+        "text_sensor": []
+    }
+}

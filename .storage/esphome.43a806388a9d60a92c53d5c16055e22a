@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "key": "esphome.bd50d36b0db311eba7bc9173856bfac0",
+    "key": "esphome.43a806388a9d60a92c53d5c16055e22a",
     "data": {
         "device_info": {
             "uses_password": true,
@@ -22,8 +22,6 @@
                 "assumed_state": false
             }
         ],
-        "sensor": [],
-        "text_sensor": [],
         "light": [
             {
                 "object_id": "bedroom_rgb",

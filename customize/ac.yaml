@@ -31,28 +31,28 @@
   sensor.ac_relay_up_time:
     friendly_name: "AC relé bekapcsolva"
   
-  sensor.childb_temp_outside:
-    friendly_name: "Kinti hőmérséklet"
   sensor.study_temp:
-    friendly_name: "Dolgozó hőmérséklet"
+    friendly_name: "Dolgozó"
   sensor.childa_temp:
-    friendly_name: "Máté hőmérséklet"
+    friendly_name: "Máté"
   sensor.childa_humidity:
-    friendly_name: "Máté páratartalom"
+    friendly_name: "Máté"
   sensor.childb_temp:
-    friendly_name: "Milán hőmérséklet"
+    friendly_name: "Milán"
   sensor.childb_humidity:
-    friendly_name: "Milán páratartalom"
+    friendly_name: "Milán"
+  sensor.childb_temp2:
+    friendly_name: "Milán 2"
   sensor.t_bedroom_temperature:
-    friendly_name: "Háló hőmérséklet"
+    friendly_name: "Háló"
   sensor.livingroom_temp:
-    friendly_name: "Nappali hőmérséklet"
+    friendly_name: "Nappali"
   sensor.livingroom_humidity:
-    friendly_name: "Nappali páratartalom"
+    friendly_name: "Nappali"
   sensor.ac_sensor_temp_ac_outlet:
-    friendly_name: "AC kimenő levegő hőmérséklet"
+    friendly_name: "AC kimenő levegő"
   sensor.ac_sensor_temp_ac_gas_tube:
-    friendly_name: "AC gázcső hőmérséklet"
+    friendly_name: "AC gázcső"
 
   sensor.ac_default_target_temp:
     friendly_name: "Alapértelmezett célhőmérséklet"
@@ -66,9 +66,13 @@
     friendly_name: "Konyha célhőmérséklet"
   sensor.ac_livingroom_target_temp:
     friendly_name: "Nappali célhőmérséklet"
+
+  sensor.attic_temp:
+    friendly_name: "Padlás"
+    icon: mdi:home-roof
     
   sensor.io_temp_diff:
-    friendly_name: "Hőmérsékletkülönbség"
+    friendly_name: "Különbség"
 
   automation.ventillation_auto_off:
     friendly_name: "Szellőztetés ki ha túl hideg van odakint"

@@ -20,19 +20,31 @@
     - entity: sensor.energy_pf3
       name: Áramfaktor 3
   cards:
-    - type: sensor
-      entity: sensor.grid_power
-    - type: markdown
-      card_size: 1
-      content: |
-        ### Energy meter
-        {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_meter_power')|int %}
-        Balance: {{ states('sensor.energy_meter_power')|int }}W
-        Consumption: {{ states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int }}W
-        {% else %}
-        Balance: {{ -1 * states('sensor.energy_meter_power')|int }}W
-        Consumption: {{ states('sensor.energy_meter_power')|int + states('sensor.solaredge_ac_power')|int }}W
-        {% endif %}
+    - type: horizontal-stack
+      cards:
+        - type: sensor
+          entity: sensor.grid_power
+          graph: line
+          detail: 2
+          hours_to_show: 24
+        - type: sensor
+          entity: sensor.energy2_power
+          graph: line
+          detail: 2
+          hours_to_show: 24
+    - type: horizontal-stack
+      cards:
+        - type: markdown
+          card_size: 1
+          content: |
+            ### Energy meter
+            {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_meter_power')|int %}
+            Balance: {{ states('sensor.energy_meter_power')|int }}W
+            Consumption: {{ states('sensor.energy_meter_power')|int - states('sensor.solaredge_ac_power')|int }}W
+            {% else %}
+            Balance: {{ -1 * states('sensor.energy_meter_power')|int }}W
+            Consumption: {{ states('sensor.energy_meter_power')|int + states('sensor.solaredge_ac_power')|int }}W
+            {% endif %}
     - type: custom:power-wheel-card
       #power_decimals: 3
       production_is_positive: true
@@ -43,9 +55,6 @@
       solar_icon: "mdi:weather-sunny"
       grid_icon: "mdi:transmission-tower"
       home_icon: "mdi:home"
-    - type: sensor
-      entity: sensor.energy2_power
-      graph: none
     - type: entity-filter
       show_empty: false
       state_filter:

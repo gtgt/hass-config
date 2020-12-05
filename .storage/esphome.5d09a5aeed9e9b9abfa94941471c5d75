@@ -1,28 +1,17 @@
 {
     "version": 1,
-    "key": "esphome.cc0acc7c0db311eba06bf7531e5f5a16",
+    "key": "esphome.5d09a5aeed9e9b9abfa94941471c5d75",
     "data": {
         "device_info": {
             "uses_password": true,
             "name": "childa",
             "mac_address": "18:FE:34:E0:C1:2A",
-            "compilation_time": "Oct 23 2020, 23:24:21",
+            "compilation_time": "Nov 21 2020, 15:07:06",
             "model": "PLATFORMIO_ESP01_1M",
             "has_deep_sleep": false,
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
-        "light": [],
-        "switch": [
-            {
-                "object_id": "childa_restart",
-                "key": 2003069058,
-                "name": "childa_restart",
-                "unique_id": "childaswitchchilda_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            }
-        ],
         "sensor": [
             {
                 "object_id": "childa_temp",
@@ -45,6 +34,16 @@
                 "force_update": false
             }
         ],
-        "text_sensor": []
+        "text_sensor": [],
+        "switch": [
+            {
+                "object_id": "childa_restart",
+                "key": 2003069058,
+                "name": "childa_restart",
+                "unique_id": "childaswitchchilda_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            }
+        ]
     }
 }

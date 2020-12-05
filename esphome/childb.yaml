@@ -53,8 +53,8 @@ dallas:
 
 sensor:
   - platform: dallas
-    id: temp_outside
-    name: ${name}_temp_outside
+    id: temp
+    name: ${name}_temp
     address: 0x070316A279825328
     filters:
       - offset: 0
@@ -62,8 +62,8 @@ sensor:
     model: AM2302
     pin: D3 #GPIO0
     temperature:
-      id: temp
-      name: ${name}_temp
+      id: temp2
+      name: ${name}_temp2
       filters:
         - offset: 1
     humidity:
@@ -129,8 +129,8 @@ display:
       }
 
       // Print outside temperature
-      if (id(temp_outside).has_state()) {
-        it.printf(63, 30, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp_outside).state);
+      if (id(temp2).has_state()) {
+        it.printf(63, 30, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp2).state);
       }
 
       // Print target temperature (from homeassistant sensor)

@@ -56,7 +56,7 @@ sensor:
       id: temp
       name: ${name}_temp
       filters:
-        - offset: -2
+        - offset: 0
         #- exponential_moving_average:
         #    alpha: 0.75
         #    send_every: 4

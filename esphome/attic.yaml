@@ -1,5 +1,5 @@
 substitutions:
-  name: controller1
+  name: attic
   
 esphome:
   name: ${name}
@@ -27,7 +27,9 @@ captive_portal:
 
 # Enable logging
 logger:
-  baud_rate: 0
+  level: DEBUG
+  baud_rate: 115200
+  #hardware_uart: UART1
 
 # Enable Web server
 web_server:
@@ -84,7 +86,7 @@ dallas:
 sensor:
   - platform: dallas
     id: temp0
-    name: fishtank_temp
+    name: ${name}_temp
     address: 0xAA02179245598028
     filters:
       - offset: 1
@@ -133,7 +135,7 @@ display:
     lambda: |-
       // it.rectangle(0,  0, it.get_width(), it.get_height(), id(blue));
       // it.rectangle(0, 20, it.get_width(), it.get_height(), id(blue));   // header bar
-      it.print(5, 5, id(valuefont), id(yellow), TextAlign::TOP_LEFT, "Fishtank");
+      it.print(5, 5, id(valuefont), id(yellow), TextAlign::TOP_LEFT, "Attic");
       if (id(system_status).state) {
         it.print(235, 5, id(valuefont), id(green), TextAlign::TOP_RIGHT, "Online");
       }
