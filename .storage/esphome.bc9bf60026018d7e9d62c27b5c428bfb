@@ -12,16 +12,6 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
-        "switch": [
-            {
-                "object_id": "childb_restart",
-                "key": 3904174017,
-                "name": "childb_restart",
-                "unique_id": "childbswitchchildb_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            }
-        ],
         "sensor": [
             {
                 "object_id": "childb_temp2",
@@ -54,6 +44,16 @@
                 "force_update": false
             }
         ],
-        "text_sensor": []
+        "text_sensor": [],
+        "switch": [
+            {
+                "object_id": "childb_restart",
+                "key": 3904174017,
+                "name": "childb_restart",
+                "unique_id": "childbswitchchildb_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            }
+        ]
     }
 }

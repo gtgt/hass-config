@@ -43,7 +43,7 @@
     friendly_name: "Milán"
   sensor.childb_temp2:
     friendly_name: "Milán 2"
-  sensor.t_bedroom_temperature:
+  sensor.bedroom_temperature:
     friendly_name: "Háló"
   sensor.livingroom_temp:
     friendly_name: "Nappali"

@@ -14,7 +14,7 @@
         "domains": [
             "light"
         ],
-        "downloads": 3673,
+        "downloads": 4291,
         "file_name": "card.js",
         "filename": "card.js",
         "first_install": false,
@@ -29,7 +29,7 @@
         "installed": true,
         "installed_commit": "5c2fcef",
         "installed_version": "1.7.1",
-        "open_issues": 3,
+        "open_issues": 4,
         "last_commit": "5c2fcef",
         "last_version": "1.7.1",
         "last_updated": "2020-10-11T16:29:16Z",
@@ -48,7 +48,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 109,
+        "stargazers_count": 114,
         "topics": [
             "home-assistant",
             "lovelace",

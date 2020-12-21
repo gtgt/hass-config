@@ -1,0 +1,56 @@
+- path: pufi
+  #title: Pufi
+  icon: mdi:air-purifier
+  badges:
+    - entity: sensor.pufi_speed
+    - entity: sensor.pufi_filter_remaining
+    - entity: sensor.pufi_air_quality_pm25
+    - entity: sensor.pufi_temp
+    - entity: sensor.pufi_humidity
+  cards:
+    - type: 'custom:purifier-card'
+      entity: fan.pufi
+      stats:
+        - attribute: filter_life_remaining
+          unit: '%'
+          subtitle: Filter Remaining
+        - attribute: motor_speed
+          unit: RPS
+          subtitle: Motor Speed
+      actions:
+        - name: Silent
+          icon: 'mdi:weather-night'
+          speed: Silent
+        - name: 25%
+          icon: 'mdi:circle-slice-2'
+          speed: Favorite
+          xiaomi_miio_favorite_level: 3
+        - name: 50%
+          icon: 'mdi:circle-slice-4'
+          speed: Favorite
+          xiaomi_miio_favorite_level: 7
+        - name: 75%
+          icon: 'mdi:circle-slice-6'
+          speed: Favorite
+          xiaomi_miio_favorite_level: 10
+        - name: 100%
+          icon: 'mdi:circle-slice-8'
+          speed: Favorite
+          xiaomi_miio_favorite_level: 14
+        - name: Auto
+          icon: 'mdi:brightness-auto'
+          speed: Auto
+      show_name: true
+      show_state: true
+      show_toolbar: true
+      compact_view: false
+    - type: entities
+      show_header_toggle: false
+      state_color: true
+      entities:
+        - fan.pufi
+        - input_number.pufi_level
+        - input_select.pufi_mode
+        - switch.pufi_child_lock
+        - switch.pufi_led
+        - switch.pufi_buzzer

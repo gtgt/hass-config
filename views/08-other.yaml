@@ -24,8 +24,14 @@
 
     - type: media-control
       entity: media_player.kodi
-    - type: entities
-      title: Vonat
+    - type: entity-filter
+      show_empty: false
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      card:
+        type: entities
+        title: Vonat
       entities:
         - sensor.mav_solymar_ujpest
         - sensor.mav_pvar_ujpest

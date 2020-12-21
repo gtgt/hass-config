@@ -1,7 +1,8 @@
 - path: apb
   #title: Villany
   icon: mdi:lightbulb-multiple-outline
-  # badges:
+  #badges:
+  #  - entity: binary_sensor.dusk_detector
   #   - entity: binary_sensor.apb_i0
   #   - entity: binary_sensor.apb_i19
   #   - entity: binary_sensor.apb_i1a

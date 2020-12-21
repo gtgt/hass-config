@@ -4,14 +4,10 @@
   #panel: true
   badges:
     - entity: sensor.study_temp
-    - entity: sensor.childa_temp
-    - entity: sensor.childa_humidity
-    - entity: sensor.childb_temp
-    - entity: sensor.childb_humidity
-    - entity: sensor.childb_temp2
+    - entity: sensor.t_childa_temperature
+    - entity: sensor.t_childb_temperature
     - entity: sensor.t_bedroom_temperature
-    - entity: sensor.livingroom_temp
-    - entity: sensor.livingroom_humidity
+    - entity: sensor.t_livingroom_temperature
     - entity: sensor.attic_temp
     - entity: sensor.io_temp_diff
   cards:
@@ -55,11 +51,11 @@
         title: Dolgozó
         pending: 0
       - type: custom:thermostat-card
-        entity: climate.ac_childa
+        entity: climate.t_childa
         title: Máté
         pending: 0
       - type: custom:thermostat-card
-        entity: climate.ac_childb
+        entity: climate.t_childb
         title: Milán
         pending: 0
       - type: custom:thermostat-card
@@ -71,7 +67,7 @@
         title: Konyha
         pending: 0
       - type: custom:thermostat-card
-        entity: climate.ac_livingroom
+        entity: climate.t_livingroom
         title: Nappali
         pending: 0
     - type: entities

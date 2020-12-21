@@ -1,3 +1,27 @@
+- id: ac_thermostat_relay_init
+  alias: ac_thermostat_relay_init
+  initial_state: on
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_bedroom
+        switch_entity_id: switch.ac_relay_bedroom
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_childa
+        switch_entity_id: switch.ac_relay_childa
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_cildb
+        switch_entity_id: switch.ac_relay_childb
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_livingroom
+        switch_entity_id: switch.ac_relay_livingroom
+
 - id: ac_thermostat_relay
   alias: ac_thermostat_relay
   initial_state: on
@@ -5,8 +29,29 @@
     - platform: state
       entity_id: climate.t_bedroom
       attribute: hvac_action
+    - platform: state
+      entity_id: climate.t_childa
+      attribute: hvac_action
+    - platform: state
+      entity_id: climate.t_childb
+      attribute: hvac_action
+    - platform: state
+      entity_id: climate.t_livingroom
+      attribute: hvac_action
+  condition:
+    condition: and
+    conditions:
+      - condition: template
+        value_template: "{{ trigger.from_state.attributes.hvac_action != trigger.to_state.attributes.hvac_action }}"
+      - condition: template
+        # fan_only, cool, heat, off
+        value_template: "{{ state_attr(trigger.entity_id, 'hvac_action') in ['heating', 'cooling', 'idle', 'fan', 'off'] }}"
   action:
-    service: script.turn_switch_by_climate
-    data_template:
-      climate_entity_id: "{{ trigger.entity_id }}"
-      switch_entity_id: "switch.ac_relay_{{ trigger.entity_id|regex_findall_index(find='\\.t_(.*)', index=0, ignorecase=False) }}"
+    - service: system_log.write
+      data:
+        level: info
+        message: "{{ trigger.entity_id }}: {{ trigger.from_state.attributes.hvac_action }} -> {{ trigger.to_state.attributes.hvac_action }}"
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: "{{ trigger.entity_id }}"
+        switch_entity_id: "switch.ac_relay_{{ trigger.entity_id|regex_findall_index(find='\\.t_(.*)', index=0, ignorecase=False) }}"

@@ -1,0 +1,24 @@
+- path: roberta
+  #title: Roberta
+  icon: mdi:robot-vacuum
+  panel: false
+  cards:
+    - type: custom:xiaomi-vacuum-card
+      entity: vacuum.roberta
+      image: /local/img/roberta.jpg
+      name: Roberta
+      vendor: Xiaomi
+      buttons:
+        spot: true
+      icons:
+        locate: mdi:map-marker-question-outline
+        spot: mdi:map-marker-radius-outline
+        return: mdi:map-marker-right-outline
+      labels:
+        status: Státusz
+        battery: Akku
+        mode: Mód
+        main_brush: Fő seprű
+        side_brush: Oldalső seprű
+        filter: Filter
+        sensor: Szenzor

@@ -7,20 +7,19 @@
     service: fan.set_speed
     data_template:
       entity_id: fan.pufi
-      speed: '{{ states.input_select.pufi_mode.state }}'
+      speed: "{{ trigger.to_state.state }}"
 - id: pufi_mode_changed
   alias: Pufi mode changed
   trigger:
     platform: state
     entity_id: fan.pufi
-  condition:
-  - condition: template
-    value_template: "{{ trigger.to_state.state in ['Auto', 'Silent', 'Favorite'] }}"
+    attribute: speed
+  condition: "{{ trigger.to_state.state in ['Auto', 'Silent', 'Favorite'] }}"
   action:
     service: input_select.select_option
     entity_id: input_select.pufi_mode
     data_template:
-      option: '{{ states.fan.pufi.attributes.speed }}'
+      option: "{{ state_attr('fan.pufi', 'speed') }}"
 - id: pufi_level_set
   alias: Pufi favorite level set
   trigger:
@@ -30,14 +29,16 @@
     service: xiaomi_miio.fan_set_favorite_level
     data_template:
       entity_id: fan.pufi
-      level: '{{ states.input_number.pufi_level.state | int }}'
+      level: "{{ trigger.to_state.state | int }}"
 - id: pufi_level_changed
   alias: Pufi favorite level changed
   trigger:
     platform: state
     entity_id: fan.pufi
+    attribute: favorite_level
+  condition: "{{ state_attr('fan.pufi', 'favorite_level') > 0 }}"
   action:
     service: input_number.set_value
     entity_id: input_number.pufi_level
     data_template:
-      value: '{{ states.fan.pufi.attributes.favorite_level }}'
+      value: "{{ state_attr('fan.pufi', 'favorite_level') }}"
