@@ -12,6 +12,24 @@
             "esphome_version": "1.16.0-dev"
         },
         "services": [],
+        "switch": [
+            {
+                "object_id": "energy2_restart",
+                "key": 4116582893,
+                "name": "energy2_restart",
+                "unique_id": "energy2switchenergy2_restart",
+                "icon": "mdi:restart",
+                "assumed_state": false
+            },
+            {
+                "object_id": "energy2_reset",
+                "key": 1568442073,
+                "name": "energy2_reset",
+                "unique_id": "energy2switchenergy2_reset",
+                "icon": "",
+                "assumed_state": false
+            }
+        ],
         "sensor": [
             {
                 "object_id": "energy2_temp",
@@ -94,24 +112,6 @@
                 "force_update": false
             }
         ],
-        "text_sensor": [],
-        "switch": [
-            {
-                "object_id": "energy2_restart",
-                "key": 4116582893,
-                "name": "energy2_restart",
-                "unique_id": "energy2switchenergy2_restart",
-                "icon": "mdi:restart",
-                "assumed_state": false
-            },
-            {
-                "object_id": "energy2_reset",
-                "key": 1568442073,
-                "name": "energy2_reset",
-                "unique_id": "energy2switchenergy2_reset",
-                "icon": "",
-                "assumed_state": false
-            }
-        ]
+        "text_sensor": []
     }
 }

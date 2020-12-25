@@ -27,7 +27,7 @@
         "installed": true,
         "installed_commit": "74d19f4",
         "installed_version": "2.0.3",
-        "open_issues": 23,
+        "open_issues": 24,
         "last_commit": "457cf40",
         "last_version": "2.0.3",
         "last_updated": "2020-12-21T03:24:59Z",
@@ -46,7 +46,7 @@
         ],
         "selected_tag": null,
         "show_beta": false,
-        "stargazers_count": 215,
+        "stargazers_count": 217,
         "topics": [],
         "zip_release": false,
         "full_name_lower": "thomasloven/lovelace-card-mod"
