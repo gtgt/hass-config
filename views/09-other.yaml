@@ -1,0 +1,99 @@
+- path: other
+  #title: Egyéb
+  icon: mdi:asterisk
+  type: custom:horizontal-layout
+  layout:
+    max_cols: 2
+  cards:
+    - type: glance
+      entities:
+          - entity: person.gt
+          - entity: person.gsm
+          - entity: sensor.moon
+          - entity: sun.sun
+    - type: entity-filter
+      show_empty: false
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      card:
+        type: picture-glance
+        camera_image: camera.espcam1
+        camera_view: live
+        show_state: false
+      entities:
+        - light.espcam1
+        - sensor.espcam1_wifi_signal
+        - binary_sensor.espcam1_pir
+
+    - type: media-control
+      entity: media_player.qbox
+    - type: entity-filter
+      show_empty: false
+      state_filter:
+        - operator: "!="
+          value: unavailable
+      card:
+        type: entities
+        title: Vonat
+      entities:
+        - sensor.mav_solymar_ujpest
+        - sensor.mav_pvar_ujpest
+        - sensor.mav_pvar_nyugati
+        - sensor.mav_ujpest_solymar
+    - type: vertical-stack
+      title: Rendszer
+      cards:
+        - type: horizontal-stack
+          cards:
+          - type: gauge
+            entity: sensor.processor_use
+            severity: [green: 0, yellow: 50, red: 80]
+          - type: gauge
+            entity: sensor.memory_use_percent
+            severity: [green: 0, yellow: 60, red: 85]
+          - type: gauge
+            entity: sensor.swap_use_percent
+            severity: [green: 0, yellow: 20, red: 50]
+        - type: horizontal-stack
+          cards:
+          - type: sensor
+            entity: sensor.load_1m
+          - type: sensor
+            entity: sensor.load_5m
+          - type: sensor
+            entity: sensor.load_15m
+        - type: entities
+          entities:
+          - sensor.last_boot
+          - sensor.processor_temperature
+          - sensor.disk_use_percent_home
+          - sensor.memory_use
+          - sensor.memory_free
+          - sensor.swap_use
+          - sensor.swap_free
+    - type: conditional
+      conditions:
+        - entity: sensor.fire_permission
+          state_not: Unknown
+      card:
+        type: custom:button-card
+        styles:
+          name:
+            - font-size: 90%
+        name: "Tűzgyújtási tilalom"
+        show_name: true
+        entity: sensor.fire_permission
+        color_type: icon
+        state:
+          - value: 0
+            color: green
+          - value: 1
+            color: red
+    - type: entities
+      title: LED
+      entities:
+        - switch.red_led
+        - switch.yellow_led
+        - switch.green_led
+        

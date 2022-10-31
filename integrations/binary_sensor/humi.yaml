@@ -1,0 +1,10 @@
+- platform: template
+  sensors:
+    humi1_no_water:
+      friendly_name: 'Nincs víz a tartályban'
+      value_template: '{{ states.fan.humi1.attributes.no_water }}'
+      icon_template: 'mdi:tray-alert'
+    humi1_tank_detached:
+      friendly_name: 'Tartály nincs a helyén'
+      value_template: '{{ states.fan.humi1.attributes.water_tank_detached }}'
+      icon_template: 'mdi:tray-remove'

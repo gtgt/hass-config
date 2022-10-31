@@ -1,0 +1,43 @@
+fan.pufi:
+    friendly_name: "Pufi"
+
+input_select.pufi_mode:
+    friendly_name: "Pufi mód"
+
+sensor.pufi_pm2_5:
+    friendly_name: "Levegőminőség"
+
+sensor.pufi_motor_speed:
+    friendly_name: "Ventillátor fordulatszám"
+
+sensor.pufi_second_motor_speed:
+    friendly_name: "Másodlagos ventillátor fordulatszám"
+
+sensor.pufi_filter_life_remaining:
+    friendly_name: "Szűrő élettartam"
+    icon: mdi:air-filter
+
+sensor.pufi_filter_use:
+    unit_of_measurement: ó
+    friendly_name: "Szűrő használat"
+
+sensor.pufi_temperature:
+    friendly_name: "Hőmérséklet"
+
+sensor.pufi_humidity:
+    friendly_name: "Páratartalom"
+
+sensor.pufi_illuminance:
+    friendly_name: "Megvilágítás"
+
+switch.pufi_child_lock:
+    friendly_name: "Gyerekzár"
+
+switch.pufi_led:
+    friendly_name: "Kijelző"
+
+number.pufi_volume:
+    friendly_name: "Hangerő"
+
+number.pufi_favorite_level:
+    friendly_name: "Kedvenc mód szint"

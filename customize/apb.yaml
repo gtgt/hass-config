@@ -1,0 +1,117 @@
+  switch.apb_q0:
+    friendly_name: "Dolgozó"
+  switch.apb_q1:
+    friendly_name: "Háló"
+  switch.apb_q2:
+    friendly_name: "Fürdő"
+  switch.apb_q3:
+    friendly_name: "Konyha"
+  switch.apb_q4:
+    friendly_name: "WC"
+  switch.apb_q5:
+    friendly_name: "Máté"
+  switch.apb_q6:
+    friendly_name: "Milán"
+  switch.apb_q7:
+    friendly_name: "Háztartási h."
+  switch.apb_q10:
+    friendly_name: "Előszoba"
+  switch.apb_q11:
+    friendly_name: "Átjáró"
+  switch.apb_q12:
+    friendly_name: "Étkezőasztal"
+  switch.apb_q13:
+    friendly_name: "Nappali"
+  switch.apb_q14:
+    friendly_name: "Járda"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_q15:
+    friendly_name: "Udvar"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_q16:
+    friendly_name: "Terasz"
+    icon: "mdi:led-strip-variant"
+  switch.apb_q17:
+    friendly_name: "Bejárati ajtó"
+    icon: "mdi:wall-sconce-flat"
+    
+    
+  switch.apb_m14:
+    friendly_name: "Járda"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_m15:
+    friendly_name: "Udvar"
+    icon: "mdi:outdoor-lamp"
+  switch.apb_m16:
+    friendly_name: "Terasz"
+    icon: "mdi:led-strip-variant"
+  switch.apb_m17:
+    friendly_name: "Bejárati ajtó"
+    icon: "mdi:wall-sconce-flat"
+
+
+  switch.apb_m0:
+    friendly_name: "Világítás ki"
+    icon: "mdi:lightbulb-off"
+  switch.apb_m1:
+    friendly_name: "Külső Világítás"
+    icon: "mdi:vanity-light"
+
+
+
+  binary_sensor.apb_i0:
+    friendly_name: "Dolgozó B"
+  binary_sensor.apb_i1:
+    friendly_name: "Dolgozó J"
+  binary_sensor.apb_i2:
+    friendly_name: "Háló B"
+  binary_sensor.apb_i3:
+    friendly_name: "Háló J"
+  binary_sensor.apb_i4:
+    friendly_name: "Átjáró - Fürdő B"
+  binary_sensor.apb_i5:
+    friendly_name: "Átjáró - Fürdő J"
+  binary_sensor.apb_i6:
+    friendly_name: "Nappali - Konyha B"
+  binary_sensor.apb_i7:
+    friendly_name: "Nappali - Konyha J"
+  binary_sensor.apb_i8:
+    friendly_name: "Előszoba - WC B"
+  binary_sensor.apb_i9:
+    friendly_name: "Előszoba - WC J"
+  binary_sensor.apb_ia:
+    friendly_name: "Máté B"
+  binary_sensor.apb_ib:
+    friendly_name: "Máté J"
+  binary_sensor.apb_ic:
+    friendly_name: "Milán B"
+  binary_sensor.apb_id:
+    friendly_name: "Milán J"
+#  binary_sensor.apb_i10:
+#    friendly_name: "? B"
+#  binary_sensor.apb_i11:
+#    friendly_name: "? J"
+  binary_sensor.apb_i12:
+    friendly_name: "Előszoba B"
+  binary_sensor.apb_i13:
+    friendly_name: "Előszoba J"
+  binary_sensor.apb_i14:
+    friendly_name: "Átjáró - HT B"
+  binary_sensor.apb_i15:
+    friendly_name: "Átjáró - HT J"
+  binary_sensor.apb_i16:
+    friendly_name: "Nappali - Átjáró B"
+  binary_sensor.apb_i17:
+    friendly_name: "Nappali - Átjáró J"
+  binary_sensor.apb_i18:
+    friendly_name: "Nappali - Előszoba + Milán B"
+  binary_sensor.apb_i19:
+    friendly_name: "Nappali - Előszoba + Milán J"
+  binary_sensor.apb_i1a:
+    friendly_name: "Terasz (riasztó)"
+  binary_sensor.apb_i1b:
+    friendly_name: "Riasztó mozgás"
+  binary_sensor.apb_i1c:
+    friendly_name: "Riasztó riasztás"
+  binary_sensor.apb_i1d:
+    friendly_name: "Világítás ki"

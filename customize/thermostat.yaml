@@ -1,0 +1,53 @@
+climate.t_study:
+  friendly_name: "Dolgozó"
+  min_temp: 21
+  max_temp: 27
+sensor.t_study_temperature:
+  friendly_name: "Dolgozó"
+sensor.t_study_wifi_rssi:
+  friendly_name: "Dolgozó termosztát jelerősség"
+
+climate.t_bedroom:
+  friendly_name: "Háló"
+  min_temp: 21
+  max_temp: 27
+sensor.t_bedroom_temperature:
+  friendly_name: "Háló"
+sensor.t_bedroom_wifi_rssi:
+  friendly_name: "Háló termosztát jelerősség"
+
+climate.t_childa:
+  friendly_name: "Máté"
+  min_temp: 21
+  max_temp: 27
+sensor.t_childa_temperature:
+  friendly_name: "Máté"
+sensor.t_childa_wifi_rssi:
+  friendly_name: "Máté termosztát jelerősség"
+
+climate.t_childb:
+  friendly_name: "Milán"
+  min_temp: 21
+  max_temp: 27
+sensor.t_childb_temperature:
+  friendly_name: "Milán"
+sensor.t_childb_wifi_rssi:
+  friendly_name: "Milán termosztát jelerősség"
+
+climate.t_livingroom:
+  friendly_name: "Nappali"
+  min_temp: 21
+  max_temp: 27
+sensor.t_livingroom_temperature:
+  friendly_name: "Nappali"
+sensor.t_livingroom_wifi_rssi:
+  friendly_name: "Nappali termosztát jelerősség"
+
+climate.t_kitchen:
+  friendly_name: "Konyha"
+  min_temp: 21
+  max_temp: 27
+sensor.t_kitchen_temperature:
+  friendly_name: "Konyha"
+sensor.t_kitchen_wifi_rssi:
+  friendly_name: "Konyha termosztát jelerősség"

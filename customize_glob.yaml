@@ -1,0 +1,25 @@
+"binary_sensor.apb_*":
+    icon: mdi:nintendo-switch
+"switch.apb_*":
+    icon: mdi:lightbulb
+"device_tracker.*":
+    hidden: true
+    control: hidden
+"sensor.*_target_*":
+    hidden: true
+    control: hidden
+"sensor.*_up_time":
+    hidden: true
+    control: hidden
+"sensor.*temp*":
+    unit_of_measurement: "°C"
+    device_class: "temperature"
+"sensor.*humidity*":
+    unit_of_measurement: "%"
+    device_class: "humidity"
+"sensor.*_geokodolt_hely":
+    icon: mdi:map-marker-radius-outline
+"sensor.*_eszlelt_tevekenyseg":
+    icon: mdi:walk
+"sensor.*location*":
+    icon: mdi:map-marker-radius-outline

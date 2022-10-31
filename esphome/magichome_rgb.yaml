@@ -1,0 +1,4 @@
+substitutions:
+  name: magichome_rgb
+
+<<: _includes/magichome_rgb.yaml

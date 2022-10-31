@@ -1,0 +1,149 @@
+- path: ac
+  #title: AC
+  icon: mdi:air-conditioner
+  type: custom:horizontal-layout
+  layout:
+    max_cols: 2
+#  badges:
+#    - entity: sensor.study_temp
+#    - entity: sensor.t_childa_temperature
+#    - entity: sensor.t_childb_temperature
+#    - entity: sensor.t_bedroom_temperature
+#    - entity: sensor.t_livingroom_temperature
+#    - entity: sensor.attic_temp
+#    - entity: sensor.io_temp_diff
+#    - entity: sensor.ble_temperature_kitchen
+#    - entity: sensor.ble_humidity_kitchen
+#    - entity: sensor.ble_temperature_study
+#    - entity: sensor.ble_humidity_study
+  cards:
+    - type: horizontal-stack
+      cards:
+        - type: sensor
+          entity: sensor.energy2_power
+          graph: line
+          detail: 2
+          hours_to_show: 24
+        - type: sensor
+          entity: sensor.ac_sensor_temp_ac_outlet
+          graph: line
+          detail: 2
+          hours_to_show: 24
+    - type: horizontal-stack
+      cards:
+      - type: sensor
+        entity: sensor.io_temp_diff
+        graph: line
+        detail: 2
+        hours_to_show: 24
+      - type: sensor
+        entity: sensor.ble_temperature_terrace
+        graph: line
+        detail: 2
+        hours_to_show: 24
+    - type: custom:simple-thermostat
+      entity: climate.ac
+      step_size: 1
+      step_layout: row
+      sensors:
+        - entity: sensor.ac_sensor_temp_ac_outlet
+        - entity: sensor.ac_sensor_temp_ac_gas_tube
+        - entity: sensor.attic_temp
+        #- entity: sensor.ble_temperature_terrace
+        #- entity: sensor.ble_humidity_terrace
+        #- entity: sensor.io_temp_diff
+      control:
+        _names: false
+        preset:
+          none: false
+          away: false
+          eco: false
+          boost: false
+        hvac: true
+        fan:
+          Silence: false
+          Auto: false
+    - type: grid
+      columns: 2
+      cards:
+      - type: custom:thermostat-card
+        entity: climate.ac_study
+        title: Dolgozó
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.t_bedroom
+        title: Háló
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.t_childa
+        title: Máté
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.t_childb
+        title: Milán
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.ac_kitchen
+        title: Konyha
+        pending: 0
+      - type: custom:thermostat-card
+        entity: climate.t_livingroom
+        title: Nappali
+        pending: 0
+    - type: entities
+      title: Automatizálás
+      show_header_toggle: false
+      entities:
+        - entity: automation.ac_thermostat_relay_init
+          #secondary_info: last-triggered
+        - entity: automation.ac_thermostat_relay
+          secondary_info: last-triggered
+        - entity: automation.ac_auto_off
+          secondary_info: last-triggered
+        - entity: automation.ac_auto_on
+          secondary_info: last-triggered
+        - entity: automation.ventillation_auto_off
+          secondary_info: last-triggered
+        - entity: automation.ventillation_auto_on
+          secondary_info: last-triggered
+        - entity: automation.ac_mode
+          secondary_info: last-triggered
+    - type: entities
+      title: Szelepek
+      show_header_toggle: false
+      entities:
+        - switch.ac_relay_study
+        - switch.ac_relay_childa
+        - switch.ac_relay_childb
+        - switch.ac_relay_bedroom
+        - switch.ac_relay_kitchen
+        - switch.ac_relay_livingroom
+        - switch.ac_relay_ventillation
+    - type: horizontal-stack
+      cards:
+        - type: entities
+          show_header_toggle: false
+          entities:
+           - type: attribute
+             entity: fan.ac
+             attribute: speed
+             prefix: 'Sebesség: '
+             name: 'Ventillátor'
+           - type: attribute
+             entity: climate.ac
+             attribute: hvac_action
+             name: 'Állapot'
+        - type: glance
+          columns: 1
+          entities:
+           - sensor.moon
+    - type: vertical-stack
+      cards:
+      - type: weather-forecast
+        entity: weather.owm
+#      - type: picture
+#        image: "https://www.yr.no/en/content/2-3046340/meteogram.svg"
+      - type: picture-entity
+        entity: camera.weather
+        show_name: false
+        show_state: false

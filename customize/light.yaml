@@ -1,0 +1,21 @@
+light.bedroom_rgb:
+  friendly_name: "Háló RGB"
+  icon: mdi:track-light
+light.dining_table:
+  friendly_name: "Étkező"
+  icon: mdi:wall-sconce-flat
+light.dining_table_ambilight:
+  friendly_name: "Étkező (hangulat)"
+  icon: mdi:television-ambient-light
+light.dining_table_nightlight:
+  friendly_name: "Étkező (éjszakai mód)"
+  icon: mdi:weather-night
+binary_sensor.dining_table_nightlight:
+  friendly_name: "Étkező (éjszakai mód)"
+  icon: mdi:weather-night
+light.terrace_led:
+  friendly_name: "Magichome W"
+  icon: mdi:led-strip-variant
+light.magichome_rgb:
+  friendly_name: "Magichome RGB"
+  icon: mdi:led-strip

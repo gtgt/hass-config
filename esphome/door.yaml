@@ -1,0 +1,90 @@
+substitutions:
+  name: door
+
+esphome:
+  platform: ESP8266
+  board: d1_mini
+  esp8266_restore_from_flash: true
+
+packages:
+  common: !include _includes/common.yaml
+  fonts: !include _includes/fonts2.yaml
+
+#i2c:
+#  sda: D2
+#  scl: D1
+
+time:
+- platform: sntp
+  id: itime
+  timezone: Europe/Budapest
+
+text_sensor:
+  - platform: homeassistant
+    internal: true
+    id: meeting1
+    entity_id: calendar.gt_epam
+  - platform: homeassistant
+    internal: true
+    id: meeting1_title
+    entity_id: calendar.gt_epam
+    attribute: message
+  - platform: homeassistant
+    internal: true
+    id: meeting1_start
+    entity_id: calendar.gt_epam
+    attribute: start_time
+  - platform: homeassistant
+    internal: true
+    id: meeting1_end
+    entity_id: calendar.gt_epam
+    attribute: end_time
+
+  - platform: homeassistant
+    internal: true
+    id: meeting2
+    entity_id: calendar.gt_oneinc
+  - platform: homeassistant
+    internal: true
+    id: meeting2_title
+    entity_id: calendar.gt_oneinc
+    attribute: message
+  - platform: homeassistant
+    internal: true
+    id: meeting2_start
+    entity_id: calendar.gt_oneinc
+    attribute: start_time
+  - platform: homeassistant
+    internal: true
+    id: meeting2_end
+    entity_id: calendar.gt_oneinc
+    attribute: end_time
+
+
+spi:
+  clk_pin: D1
+  mosi_pin: D3
+
+display:
+  - platform: waveshare_epaper
+    cs_pin: D2
+    dc_pin: D4
+    busy_pin: D5
+    model: 1.54inv2
+    rotation: 270
+    update_interval: 10s
+    full_update_every: 30
+    lambda: |-
+      if (id(itime).timestamp_now() > 90000) {
+        it.strftime(it.get_width() / 2, 0, id(monobig), TextAlign::TOP_CENTER, "%d %H:%M", id(itime).now());
+      } else {
+        it.print(it.get_width() / 2, 0, id(narrowbig), TextAlign::TOP_CENTER, "Connecting...");
+      }
+      if (id(meeting1).has_state()) {
+        it.printf(5, 80, id(narrow), TextAlign::BOTTOM_LEFT, "%s", str_truncate(str_sanitize(id(meeting1_title).state), 20).c_str());
+        it.printf(5, 75, id(normalbig), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.substr(8,8).c_str());
+      }
+      if (id(meeting2).has_state()) {
+        it.printf(5, 150, id(narrow), TextAlign::BOTTOM_LEFT, "%s", str_truncate(str_sanitize(id(meeting2_title).state), 20).c_str());
+        it.printf(5, 145, id(normalbig), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.substr(8,8).c_str());
+      }

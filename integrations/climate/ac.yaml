@@ -1,0 +1,18 @@
+  - platform: programmable_thermostat
+    name: ac_study
+    heater: switch.ac_relay_study
+    cooler: switch.ac_relay_study
+    actual_temp_sensor: sensor.ble_temperature_study
+    target_temp_sensor: input_number.ac_study_target_temp
+    min_temp: 21
+    max_temp: 27
+    tolerance: 0
+  - platform: programmable_thermostat
+    name: ac_kitchen
+    heater: switch.ac_relay_kitchen
+    cooler: switch.ac_relay_kitchen
+    actual_temp_sensor: sensor.ble_temperature_kitchen
+    target_temp_sensor: input_number.ac_kitchen_target_temp
+    min_temp: 19
+    max_temp: 27
+    tolerance: 0

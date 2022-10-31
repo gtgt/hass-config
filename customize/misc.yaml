@@ -1,0 +1,71 @@
+sensor.hacs:
+  hidden: true
+weather.owm:
+  friendly_name: "Időjárás"
+fan.airpurifier_pro:
+  friendly_name: "Pufi"
+sensor.bedroom_mic:
+  friendly_name: "Háló zaj"
+switch.red_led:
+  friendly_name: "Piros LED"
+  icon: mdi:led-off
+switch.yellow_led:
+  friendly_name: "Sárga LED"
+  icon: mdi:led-off
+switch.green_led:
+  friendly_name: "Zöld LED"
+  icon: mdi:led-off
+switch.hg01wt_switch1:
+  friendly_name: "Dugó"
+  device_class: outlet
+
+water_heater.aqua_ariston:
+  friendly_name: "Ariston Aqua Velis"
+  icon: mdi:water-boiler
+switch.aqua_ariston_power:
+  friendly_name: "Főkapcsoló"
+sensor.aqua_ariston_mode:
+  friendly_name: "Üzemmód"
+sensor.aqua_ariston_temperature_mode:
+  friendly_name: "Hőmérséklet mód"
+  unit_of_measurement: ""
+sensor.aqua_ariston_current_temperature:
+  friendly_name: "Hőmérséklet"
+  icon: mdi:coolant-temperature
+sensor.aqua_ariston_required_temperature:
+  friendly_name: "Célhőmérséklet"
+sensor.aqua_ariston_required_showers:
+  friendly_name: "Szükséges zuhanyok száma"
+sensor.aqua_ariston_average_showers:
+  friendly_name: "Zuhanyok"
+sensor.aqua_ariston_time_left_to_heat:
+  friendly_name: "Hátralévö idö"
+sensor.aqua_ariston_active_errors:
+  friendly_name: "Hibák"
+  icon: mdi:water-boiler-alert
+sensor.aqua_ariston_energy_use_in_the_last_day:
+  friendly_name: "Tegnapi fogyasztás"
+  icon: mdi:counter
+sensor.aqua_ariston_energy_use_in_the_last_week:
+  friendly_name: "Múltheti fogyasztás"
+  icon: mdi:counter
+sensor.aqua_ariston_energy_use_in_the_last_month:
+  friendly_name: "Előző havi fogyasztás"
+  icon: mdi:counter
+sensor.aqua_ariston_energy_use_in_the_last_year:
+  friendly_name: "Előző évi fogyasztás"
+  icon: mdi:counter
+  
+sensor.dishwasher:
+  friendly_name: "Mosogatógép"
+sensor.dishwasher_remaining_time:
+  friendly_name: "Hátralévő idő"
+
+sensor.ble_weight_mi_scale:
+  friendly_name: "Mérleg"
+sensor.ble_non_stabilized_weight_mi_scale:
+  friendly_name: "Mérleg (pillanatnyi érték)"
+binary_sensor.ble_weight_removed_mi_scale:
+  friendly_name: "Üres"
+sensor.ble_rssi_mi_scale:
+  friendly_name: "Térerő"

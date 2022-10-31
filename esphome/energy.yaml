@@ -1,0 +1,154 @@
+substitutions:
+  name: energy
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/d1_mini.yaml
+
+logger:
+  level: DEBUG
+  logs:
+    sensor: INFO
+    pzemac: INFO
+  esp8266_store_log_strings_in_flash: false
+  baud_rate: 0
+  hardware_uart: UART1
+
+
+uart:
+  - id: ubus1
+    rx_pin: D2
+    tx_pin: D1
+    baud_rate: 9600
+    #stop_bits: 2
+  - id: ubus2
+    rx_pin: D6
+    tx_pin: D5
+    baud_rate: 9600
+    #stop_bits: 2
+  - id: ubus3
+    rx_pin: GPIO3
+    tx_pin: GPIO1
+    baud_rate: 9600
+    #stop_bits: 2
+
+modbus:
+  - id: mbus1
+    uart_id: ubus1
+  - id: mbus2
+    uart_id: ubus2
+  - id: mbus3
+    uart_id: ubus3
+    
+sensor:
+  - platform: pzemac
+    modbus_id: mbus1
+    address: 1
+    current:
+      name: ${name}_current1
+    voltage:
+      name: ${name}_voltage1
+    energy:
+      name: ${name}_energy1
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.001
+      unit_of_measurement: kWh
+    power:
+      name: ${name}_power1
+    frequency:
+      name: ${name}_freq1
+    power_factor:
+      name: ${name}_pf1
+    update_interval: 3s
+  - platform: pzemac
+    modbus_id: mbus2
+    address: 2
+    current:
+      name: ${name}_current2
+    voltage:
+      name: ${name}_voltage2
+    energy:
+      name: ${name}_energy2
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.001
+      unit_of_measurement: kWh
+    power:
+      name: ${name}_power2
+    frequency:
+      name: ${name}_freq2
+    power_factor:
+      name: ${name}_pf2
+    update_interval: 3s
+  - platform: pzemac
+    modbus_id: mbus3
+    address: 3
+    current:
+      name: ${name}_current3
+    voltage:
+      name: ${name}_voltage3
+    energy:
+      name: ${name}_energy3
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.001
+      unit_of_measurement: kWh
+    power:
+      name: ${name}_power3
+    frequency:
+      name: ${name}_freq3
+    power_factor:
+      name: ${name}_pf3
+    update_interval: 3s
+    
+  - platform: pulse_counter
+    id: meter_pulse_counter
+    pin: GPIO15 # D8
+    unit_of_measurement: 'W'
+    name: ${name}_meter_power
+    count_mode:
+      falling_edge: DISABLE
+      rising_edge: INCREMENT
+    update_interval: 30s
+    filters:
+      - multiply: 75  # (30s/400 pulses per kWh / 0.4 pulses per W)
+    total:
+      name: ${name}_meter_kwh
+      unit_of_measurement: 'kWh'
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.0025 # (1/400 pulses per kWh)
+    on_raw_value:
+      then:
+        - light.turn_on: led_status
+        - delay: 0.5s
+        - light.turn_off: led_status
+
+switch:
+  - platform: restart
+    name: ${name}_restart
+  - platform: uart
+    uart_id: ubus1
+    name: ${name}_reset1
+    data: [0x01, 0x42, 0x80, 0x11]
+  - platform: uart
+    uart_id: ubus2
+    name: ${name}_reset2
+    data: [0x02, 0x42, 0x80, 0x11]
+  - platform: uart
+    uart_id: ubus3
+    name: ${name}_reset3
+    data: [0x03, 0x42, 0x80, 0x11]
+    
+api:
+  services:
+    - service: set_meter_kwh
+      variables:
+        new_value: int
+      then:
+        - pulse_counter.set_total_pulses:
+            id: meter_pulse_counter
+            value: !lambda 'return new_value;'
+
+

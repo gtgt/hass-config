@@ -1,0 +1,102 @@
+  host: alarm.lan
+  port: 7094
+  code: !secret satel_alarm_code
+  partitions:
+    01:
+      name: inside
+      arm_home_mode: 2
+    02:
+      name: windows
+    03:
+      name: outside
+
+  zones:
+    01:
+      name: alarm_tamper
+      type: problem
+    02:
+      name: pir_entry
+      type: motion
+    03:
+      name: pir_study
+      type: motion
+    04:
+      name: pir_bedroom
+      type: motion
+    05:
+      name: pir_kitchen
+      type: motion
+    06:
+      name: pir_livingroom
+      type: motion
+    07:
+      name: pir_childa
+      type: motion
+    08:
+      name: pir_childb
+      type: motion
+    09:
+      name: window_study
+      type: window
+    10:
+      name: window_bedroom
+      type: window
+    11:
+      name: window_bathroom
+      type: window
+    12:
+      name: window_kitchen
+      type: window
+    13:
+      name: window_livingroom1
+      type: window
+    14:
+      name: window_livingroom2
+      type: window
+    15:
+      name: window_childa
+      type: window
+    16:
+      name: window_childb
+      type: window
+    17:
+      name: dusk_detector
+      type: light
+    18:
+      name: pir_terrace
+      type: motion
+    19:
+      name: pir_backyard_left
+      type: motion
+    20:
+      name: pir_backyard_back
+      type: motion
+    21:
+      name: pir_backyard_right
+      type: motion
+    22:
+      name: pir_backyard_sidewalk
+      type: motion
+    23:
+      name: fire_attic
+      type: smoke
+  outputs:
+    06:
+      name: alarm_armed_fully
+      type: safety
+
+  switchable_outputs:
+    01:
+      name: alarm_output1
+    02:
+      name: alarm_output2
+    03:
+      name: alarm_sirene_buzzer
+    04:
+      name: alarm_sirene_light
+    05:
+      name: terrace_light
+    07:
+      name: outside_wall_light1
+    08:
+      name: outside_wall_light2

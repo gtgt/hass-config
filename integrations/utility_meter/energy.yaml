@@ -1,0 +1,62 @@
+    solar_production_hourly:
+      source: sensor.solaredge_ac_grid_power
+      cycle: hourly
+    solar_production_daily:
+      source: sensor.solaredge_ac_grid_power
+      cycle: daily
+    solar_production_weekly:
+      source: sensor.solaredge_ac_grid_power
+      cycle: weekly
+    solar_production_monthly:
+      source: sensor.solaredge_ac_grid_power
+      cycle: monthly
+    solar_production_yearly:
+      source: sensor.solaredge_ac_grid_power
+      cycle: yearly
+
+    energy_kwh_hourly:
+      source: sensor.energy_kwh
+      cycle: hourly
+      delta_values: false
+    energy_kwh_daily:
+      source: sensor.energy_kwh
+      cycle: daily
+      delta_values: false
+    energy_kwh_weekly:
+      source: sensor.energy_kwh
+      cycle: weekly
+      delta_values: false
+    energy_kwh_monthly:
+      source: sensor.energy_kwh
+      cycle: monthly
+      delta_values: false
+    energy_kwh_yearly:
+      source: sensor.energy_kwh
+      cycle: yearly
+      delta_values: false
+
+#    grid_kwh_hourly:
+#      source: sensor.grid_kwh
+#      net_consumption: true
+#      cycle: hourly
+#      delta_values: false
+#    grid_kwh_daily:
+#      source: sensor.grid_kwh
+#      net_consumption: true
+#      cycle: daily
+#      delta_values: false
+#    grid_kwh_weekly:
+#      source: sensor.grid_kwh
+#      net_consumption: true
+#      cycle: weekly
+#      delta_values: false
+#    grid_kwh_monthly:
+#      source: sensor.grid_kwh
+#      net_consumption: true
+#      cycle: monthly
+#      delta_values: false
+#    grid_kwh_yearly:
+#      source: sensor.grid_kwh
+#      net_consumption: true
+#      cycle: yearly
+#      delta_values: false

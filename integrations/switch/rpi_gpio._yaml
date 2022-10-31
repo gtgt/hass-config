@@ -1,0 +1,6 @@
+  - platform: rpi_gpio
+    invert_logic: false
+    ports:
+      17: red_led
+      22: yellow_led
+      27: green_led

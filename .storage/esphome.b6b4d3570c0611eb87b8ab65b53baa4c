@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.b6b4d3570c0611eb87b8ab65b53baa4c",
+  "data": {
+    "device_info": {
+      "uses_password": true,
+      "name": "terrace_led",
+      "mac_address": "40:F5:20:C8:2A:31",
+      "compilation_time": "Aug 17 2022, 23:57:15",
+      "model": "esp8285",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.8.0",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "bluetooth_proxy_version": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 6
+    },
+    "sensor": [
+      {
+        "object_id": "terrace_led_up_time",
+        "key": 506467263,
+        "name": "terrace_led_up_time",
+        "unique_id": "40f520c82a31-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "terrace_led_wifi_signal",
+        "key": 2090040608,
+        "name": "terrace_led_wifi_signal",
+        "unique_id": "40f520c82a31-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "light": [
+      {
+        "object_id": "terrace_led",
+        "key": 1192031567,
+        "name": "terrace_led",
+        "unique_id": "terrace_ledlightterrace_led",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          3
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "terrace_led_restart",
+        "key": 2539114339,
+        "name": "terrace_led_restart",
+        "unique_id": "terrace_ledswitchterrace_led_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "terrace_led_status",
+        "key": 2222982072,
+        "name": "terrace_led_status",
+        "unique_id": "terrace_ledbinary_sensorterrace_led_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ]
+  }
+}

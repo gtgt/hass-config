@@ -1,0 +1,11 @@
+esphome:
+  platform: ESP32
+  board: featheresp32
+  platformio_options:
+    monitor_speed: 115200
+    upload_speed: 921600
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: false

@@ -1,0 +1,421 @@
+- path: tv
+  #title: TV
+  icon: mdi:television
+  panel: false
+  cards:
+  - type: entity
+    entity: input_select.tv_remote
+  - type: conditional
+    conditions:
+      - entity: input_select.tv_remote
+        state: study_tv
+    card:
+        type: vertical-stack
+        cards:
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: Input
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Input
+                  target: {}
+                icon: 'mdi:import'
+                icon_height: 25px
+              - type: button
+                name: Home
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Home
+                  target: {}
+                icon: 'hass:home'
+                icon_height: 25px
+              - type: button
+                name: Options
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Options
+                  target: {}
+                icon: 'mdi:cog'
+                icon_height: 25px
+              - type: button
+                name: Subtitle
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: SubTitle
+                  target: {}
+                icon: 'mdi:subtitles-outline'
+                icon_height: 25px
+              - type: button
+                name: Power
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: TvPower
+                  target: {}
+                icon: 'mdi:power'
+                icon_height: 25px
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: VolumeUp
+                icon: 'hass:volume-plus'
+                icon_height: 25px
+              - type: button
+                name: Guide
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: GGuide
+                  target: {}
+                icon: 'hass:monitor-eye'
+                icon_height: 25px
+                show_icon: false
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Up
+                icon: 'hass:arrow-up-bold'
+                icon_height: 25px
+              - type: button
+                name: Smenu
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: SyncMenu
+                  target: {}
+                icon: 'hass:monitor-eye'
+                icon_height: 25px
+                show_icon: false
+              - type: button
+                name: CH+
+                show_icon: false
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: ChannelUp
+                  target: {}
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Mute
+                icon: 'hass:volume-off'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Left
+                icon: 'hass:arrow-left-bold'
+                icon_height: 25px
+              - type: button
+                name: OK
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Confirm
+                  target: {}
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Right
+                icon: 'hass:arrow-right-bold'
+                icon_height: 25px
+              - type: button
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Media
+                entity: remote.study_tv
+                name: Media
+                icon: 'mdi:folder-multiple-image'
+                show_icon: false
+                show_state: false
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: VolumeUp
+                icon: 'hass:volume-minus'
+                icon_height: 25px
+              - type: button
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Return
+                name: Return
+                show_icon: false
+                show_state: false
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Down
+                icon: 'hass:arrow-down-bold'
+                icon_height: 25px
+              - type: button
+                tap_action:
+                  action: none
+                entity: remote.study_tv
+                name: .
+                show_icon: false
+                show_state: false
+              - type: button
+                name: CH-
+                show_icon: false
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: ChannelDown
+                  target: {}
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Stop
+                icon: 'hass:square'
+                icon_height: 20px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Rewind
+                icon: 'hass:step-backward-2'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Rewind
+                icon: 'hass:step-backward'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Play
+                  target: {}
+                icon: 'mdi:play'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Forward
+                icon: 'hass:step-forward'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Forward
+                icon: 'hass:step-forward-2'
+                icon_height: 25px
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num1
+                icon: 'hass:numeric-1-box'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num2
+                icon: 'hass:numeric-2-box'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num3
+                icon: 'hass:numeric-3-box'
+                icon_height: 25px
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num4
+                icon: 'hass:numeric-4-box'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num5
+                icon: 'hass:numeric-5-box'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num6
+                icon: 'hass:numeric-6-box'
+                icon_height: 25px
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num7
+                icon: 'hass:numeric-7-box'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num8
+                icon: 'hass:numeric-8-box'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num9
+                icon: 'hass:numeric-9-box'
+                icon_height: 25px
+          - type: horizontal-stack
+            cards:
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Record
+                icon: 'hass:video'
+                icon_height: 25px
+              - type: button
+                name: null
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: Num0
+                icon: 'hass:numeric-0-box'
+                icon_height: 25px
+              - type: button
+                name: Manual
+                tap_action:
+                  action: call-service
+                  service: remote.send_command
+                  service_data:
+                    entity_id: remote.study_tv
+                    command: iManual
+                icon_height: 25px
+                show_icon: false
+    

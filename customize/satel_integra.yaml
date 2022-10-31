@@ -1,0 +1,80 @@
+  binary_sensor.pir_entry:
+    friendly_name: "Előszoba PIR"
+  binary_sensor.pir_study:
+    friendly_name: "Dolgozó PIR"
+  binary_sensor.pir_bedroom:
+    friendly_name: "Háló PIR"
+  binary_sensor.pir_kitchen:
+    friendly_name: "Konyha PIR"
+  binary_sensor.pir_livingroom:
+    friendly_name: "Nappali PIR"
+  binary_sensor.pir_childa:
+    friendly_name: "Máté PIR"
+  binary_sensor.pir_childb:
+    friendly_name: "Milán PIR"
+  binary_sensor.window_study:
+    friendly_name: "Dolgozó ablak"
+  binary_sensor.window_bedroom:
+    friendly_name: "Háló ablak"
+  binary_sensor.window_bathroom:
+    friendly_name: "Fürdő ablak"
+  binary_sensor.window_kitchen:
+    friendly_name: "Konyha ablak"
+  binary_sensor.window_livingroom1:
+    friendly_name: "Nappali ablak 2"
+  binary_sensor.window_livingroom2:
+    friendly_name: "Nappali ablak 1"
+  binary_sensor.window_childa:
+    friendly_name: "Máté ablak"
+  binary_sensor.window_childb:
+    friendly_name: "Milán ablak"
+  binary_sensor.dusk_detector:
+    friendly_name: "Sötétség érzékelő"
+    icon: mdi:theme-light-dark
+  binary_sensor.pir_terrace:
+    friendly_name: "Terasz PIR"
+  binary_sensor.pir_backyard_left:
+    friendly_name: "Udvar bal PIR"
+  binary_sensor.pir_backyard_back:
+    friendly_name: "Udvar hátsó PIR"
+  binary_sensor.pir_backyard_right:
+    friendly_name: "Udvar jobb PIR"
+  binary_sensor.pir_backyard_sidewalk:
+    friendly_name: "Udvar járda PIR"
+  binary_sensor.fire_attic:
+    friendly_name: "Padlás tűzjelző"
+  binary_sensor.alarm_armed_fully:
+    friendly_name: "Teljes riasztás"
+    icon: mdi:shield-home
+  binary_sensor.alarm_tamper:
+    friendly_name: "Szabotázs"
+  switch.alarm_output1:
+    friendly_name: "Riasztó kimenet 1"
+    icon: mdi:transit-connection-variant
+  switch.alarm_output2:
+    friendly_name: "Riasztó kimenet 2"
+    icon: mdi:transit-connection-variant
+  switch.alarm_sirene_buzzer:
+    friendly_name: "Riasztó szirána hang"
+    icon: mdi:alarm-bell
+  switch.alarm_sirene_light:
+    friendly_name: "Riasztó sziréna fény"
+    icon: mdi:alarm-light
+  switch.terrace_light:
+    friendly_name: "Terasz világítás"
+    icon: mdi:wall-sconce-flat
+  switch.outside_wall_light1:
+    friendly_name: "Kinti világítás 1"
+    icon: mdi:coach-lamp
+  switch.outside_wall_light2:
+    friendly_name: "Kinti világítás 2"
+    icon: mdi:coach-lamp
+  alarm_control_panel.inside:
+    friendly_name: "Beltér"
+    icon: mdi:shield-home-outline
+  alarm_control_panel.windows:
+    friendly_name: "Ablakok"
+    icon: mdi:shield-half-full
+  alarm_control_panel.outside:
+    friendly_name: "Kültér"
+    icon: mdi:shield-home

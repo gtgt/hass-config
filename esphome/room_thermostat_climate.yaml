@@ -1,0 +1,108 @@
+substitutions:
+  name: room_thermostat_climate
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp12e.yaml
+  fonts: !include _includes/fonts.yaml
+
+esphome:
+  includes:
+    - room_thermostat_climate.h
+  on_boot:
+    priority: -100
+    then:
+      - lambda: "id(room_climate).set_supports_two_points(false);"
+
+logger:
+  baud_rate: 0
+
+dallas:
+  - pin: GPIO4 #D2
+    update_interval: 20s
+
+sensor:
+  - platform: dallas
+    id: temp
+    name: ${name}_temp
+    address: 0xAFA86FA811646128
+    filters:
+      - offset: 1
+
+  - platform: homeassistant
+    id: target_temp
+    entity_id: input_number.ac_${name}_target_temp
+    internal: true
+
+binary_sensor:
+  - platform: homeassistant
+    id: ac_switch
+    entity_id: switch.ac_relay_${name}
+    internal: true
+
+climate:
+  - platform: custom
+    lambda: |-
+      auto room_thermostat = new RoomThermostatClimate();
+      App.register_component(room_thermostat);
+      return {room_thermostat};
+
+    climates:
+      - name: t_${name}
+
+  - platform: thermostat
+    id: room_climate
+    name: t__${name}
+    sensor: temp
+    min_idle_time: 900s
+    min_cooling_off_time: 900s
+    min_cooling_run_time: 900s
+    min_heating_off_time: 900s
+    min_heating_run_time: 900s
+    default_target_temperature_low: 23 °C
+    default_target_temperature_high: 26 °C
+    visual:
+      min_temperature: 21
+      max_temperature: 27
+      temperature_step: 0.5
+    cool_action:
+      - lambda: |-
+          id(ac_switch).publish_state(true);
+    heat_action:
+      - lambda: |-
+          id(ac_switch).publish_state(true);
+    idle_action:
+      - lambda: |-
+          id(ac_switch).publish_state(false);
+
+i2c:
+  sda: GPIO0 #D3
+  scl: GPIO5 #D1
+  scan: false
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x32"
+    reset_pin: GPIO16
+    address: 0x3C
+    lambda: |-
+      // Print "${name}" in top center.
+      it.printf(64, 2, id(titlefont), TextAlign::TOP_CENTER, "${name}");
+
+      // Print time in HH:MM format
+      //it.strftime(2, 25, id(clockfont), TextAlign::CENTER_LEFT, "%H:%M", id(hatime).now);
+
+      // Print valve state
+      if (id(ac_switch).has_state()) {
+        it.printf(126, 0, id(monofont), TextAlign::TOP_RIGHT , "%d", id(ac_switch).state);
+      }
+
+      // Print temperature
+      if (id(temp).has_state()) {
+        it.printf(70, 24, id(bigvaluefont), TextAlign::CENTER , "%.1f°C", id(temp).state);
+      }
+
+      // Print target temperature
+      if (id(target_temp).has_state()) {
+        it.printf(126, 24, id(bigvaluefont), TextAlign::CENTER_RIGHT , "%.1f°C", id(target_temp).state);
+      }

@@ -1,0 +1,33 @@
+packages:
+  common: !include common.yaml
+  board: !include board/magichome.yaml
+
+# this is code for the RGBW version of magichome 
+light:
+  - platform: rgbw
+    name: ${name}
+    red: pwm_r
+    green: pwm_g
+    blue: pwm_b
+    white: pwm_w
+
+output:
+  - platform: esp8266_pwm
+    pin: GPIO5
+    frequency: 1000 Hz
+    id: pwm_r
+
+  - platform: esp8266_pwm
+    pin: GPIO12
+    frequency: 1000 Hz
+    id: pwm_g
+
+  - platform: esp8266_pwm
+    pin: GPIO13
+    frequency: 1000 Hz
+    id: pwm_b
+
+  - platform: esp8266_pwm
+    pin: GPIO15
+    frequency: 1000 Hz
+    id: pwm_w

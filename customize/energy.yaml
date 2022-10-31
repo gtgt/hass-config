@@ -1,0 +1,68 @@
+sensor.solar_production_hourly:
+  friendly_name: "Napenergia termelés ebben az órában"
+sensor.solar_production_daily:
+  friendly_name: "Napenergia termelés ezen a napon"
+sensor.solar_production_weekly:
+  friendly_name: "Napenergia termelés ezen a héten"
+sensor.solar_production_monthly:
+  friendly_name: "Napenergia termelés ebben a hónapban"
+sensor.solar_production_yearly:
+  friendly_name: "Napenergia termelés ebben az évben"
+sensor.energy_meter_power:
+  friendly_name: "Fogyasztásmérő pillanatnyi fogyasztás"
+  icon: mdi:transmission-tower
+
+sensor.energy_meter_kwh:
+  friendly_name: "Fogyasztásmérő állás"
+  icon: mdi:counter
+sensor.energy_meter_hourly_kwh:
+  friendly_name: "Fogyasztásmérő növekedés ebben az órában"
+sensor.energy_meter_daily_kwh:
+  friendly_name: "Fogyasztásmérő növekedés mai napon"
+sensor.energy_meter_weekly_kwh:
+  friendly_name: "Fogyasztásmérő növekedés ezen a héten"
+sensor.energy_meter_monthly_kwh:
+  friendly_name: "Fogyasztásmérő növekedés ebben a hónapban"
+sensor.energy_meter_yearly_kwh:
+  friendly_name: "Fogyasztásmérő növekedés ebben az évben"
+
+sensor.energy_kwh:
+  friendly_name: "Fogyasztás"
+  icon: mdi:counter
+sensor.energy_kwh_hourly:
+  friendly_name: "Fogyasztás ebben az órában"
+sensor.energy_kwh_daily:
+  friendly_name: "Fogyasztás mai napon"
+sensor.energy_kwh_weekly:
+  friendly_name: "Fogyasztás ezen a héten"
+sensor.energy_kwh_monthly:
+  friendly_name: "Fogyasztás ebben a hónapban"
+sensor.energy_kwh_yearly:
+  friendly_name: "Fogyasztás ebben az évben"
+
+sensor.grid_power:
+  friendly_name: "Hálózat egyenleg"
+  icon: mdi:scale-balance
+sensor.grid_kwh:
+  friendly_name: "Hálózati egyenleg"
+  icon: mdi:scale
+sensor.grid_kwh_hourly:
+  friendly_name: "Hálózat egyenleg ebben az órában"
+  icon: mdi:scale
+sensor.grid_kwh_daily:
+  friendly_name: "Hálózat egyenleg a mai napon"
+  icon: mdi:scale
+sensor.grid_kwh_weekly:
+  friendly_name: "Hálózat egyenleg ezen a héten"
+  icon: mdi:scale
+sensor.grid_kwh_monthly:
+  friendly_name: "Hálózat egyenleg ebben a hónapban"
+  icon: mdi:scale
+sensor.grid_kwh_yearly:
+  friendly_name: "Hálózat egyenleg ebben az évben"
+  icon: mdi:scale
+
+sensor.energy2_power:
+  friendly_name: "Klíma fogyasztás"
+  icon: mdi:air-conditioner
+  

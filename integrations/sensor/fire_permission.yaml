@@ -1,0 +1,3 @@
+- platform: fire_protection_hu
+  name: fire_permission
+  county_id: 12 # Pest county

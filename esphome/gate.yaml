@@ -1,0 +1,73 @@
+substitutions:
+  name: gate
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp12e.yaml
+
+i2c:
+  sda: 4
+  scl: 5
+  scan: true
+
+pn532_i2c:
+  update_interval: 1s
+  on_tag:
+    then:
+      - homeassistant.tag_scanned: !lambda 'return x;'
+      - text_sensor.template.publish:
+          id: tag
+          state: !lambda 'return x;'
+
+text_sensor:
+  - platform: template
+    name: ${name}_tag
+    id: tag
+
+sensor:
+  - platform: dht
+    model: DHT22
+    pin: GPIO2
+    update_interval: 15s
+    temperature:
+      id: temp
+      name: ${name}_temp
+      filters:
+        - offset: 0
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #-   sliding_window_moving_average:
+        - median:
+            window_size: 4 
+            send_every: 4 
+            send_first_at: 4
+    humidity:
+      id: humidity
+      name: ${name}_humidity
+      filters:
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #- sliding_window_moving_average:
+        - median:
+            window_size: 4 
+            send_every: 4 
+            send_first_at: 4
+switch:
+  - platform: gpio
+    id: full
+    name: ${name}_full
+    icon: 'mdi:gate'
+    pin:
+      number: GPIO15
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: part
+    name: ${name}_part
+    icon: 'mdi:walk'
+    pin:
+      number: GPIO16
+      mode: OUTPUT
+      inverted: yes

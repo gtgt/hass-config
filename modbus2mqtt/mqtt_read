@@ -1,0 +1,3 @@
+#!/bin/bash
+#mosquitto_sub -u mqtt -P mqttt -d -F '\e[92m%t \e[96m%p\e[0m' -q 2 -t 'modbus/#'
+mosquitto_sub -u mqtt -P mqttt -d -q 2 -t 'homeassistant/#'

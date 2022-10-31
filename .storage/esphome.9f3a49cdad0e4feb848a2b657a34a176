@@ -1,0 +1,70 @@
+{
+    "data": {
+        "binary_sensor": [
+            {
+                "device_class": "connectivity",
+                "is_status_binary_sensor": true,
+                "key": 275217150,
+                "name": "espcam1_status",
+                "object_id": "espcam1_status",
+                "unique_id": "espcam1binary_sensorespcam1_status"
+            },
+            {
+                "device_class": "motion",
+                "is_status_binary_sensor": false,
+                "key": 4222960753,
+                "name": "espcam1_pir",
+                "object_id": "espcam1_pir",
+                "unique_id": "espcam1binary_sensorespcam1_pir"
+            }
+        ],
+        "camera": [
+            {
+                "key": 781941293,
+                "name": "espcam1",
+                "object_id": "espcam1",
+                "unique_id": "espcam1cameraespcam1"
+            }
+        ],
+        "device_info": {
+            "compilation_time": "Aug 23 2020, 11:35:59",
+            "esphome_version": "1.16.0-dev",
+            "has_deep_sleep": false,
+            "mac_address": "F0:08:D1:D4:7F:4C",
+            "model": "Espressif ESP32 Dev Module",
+            "name": "espcam1",
+            "uses_password": true
+        },
+        "light": [
+            {
+                "effects": [],
+                "key": 781941293,
+                "max_mireds": 0.0,
+                "min_mireds": 0.0,
+                "name": "espcam1",
+                "object_id": "espcam1",
+                "supports_brightness": false,
+                "supports_color_temperature": false,
+                "supports_rgb": false,
+                "supports_white_value": false,
+                "unique_id": "espcam1lightespcam1"
+            }
+        ],
+        "sensor": [
+            {
+                "accuracy_decimals": 0,
+                "force_update": false,
+                "icon": "mdi:wifi",
+                "key": 3449067714,
+                "name": "espcam1_wifi_signal",
+                "object_id": "espcam1_wifi_signal",
+                "unique_id": "f008d1d47f4c-wifisignal",
+                "unit_of_measurement": "dB"
+            }
+        ],
+        "services": [],
+        "text_sensor": []
+    },
+    "key": "esphome.9f3a49cdad0e4feb848a2b657a34a176",
+    "version": 1
+}

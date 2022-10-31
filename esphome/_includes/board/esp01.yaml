@@ -1,0 +1,11 @@
+esphome:
+  platform: ESP8266
+  board: esp01_1m
+
+status_led:
+  pin:
+    number: GPIO2
+    inverted: true
+
+logger:
+  baud_rate: 0

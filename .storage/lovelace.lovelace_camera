@@ -1,0 +1,130 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace.lovelace_camera",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "title": "Kamera",
+                    "path": "camera",
+                    "type": "panel",
+                    "visible": [
+                        {
+                            "user": "1dedaecfcb6546b7a5acc4f80b5ac32c"
+                        },
+                        {
+                            "user": "5a0a633ef7644660a34bd271371786aa"
+                        }
+                    ],
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "grid",
+                            "cards": [
+                                {
+                                    "type": "custom:webrtc-camera",
+                                    "url": "rtsp://192.168.1.85:554/user=admin_password=jah56789S_channel=1_stream=0.sdp"
+                                },
+                                {
+                                    "type": "custom:webrtc-camera",
+                                    "url": "rtsp://192.168.1.66:554/user=admin&password=6266&channel=1&stream=0.sdp",
+                                    "title": "south"
+                                },
+                                {
+                                    "type": "custom:webrtc-camera",
+                                    "url": "rtsp://192.168.1.66:554/user=admin&password=6266&channel=2&stream=0.sdp",
+                                    "title": "west"
+                                },
+                                {
+                                    "type": "custom:webrtc-camera",
+                                    "url": "rtsp://192.168.1.66:554/user=admin&password=6266&channel=3&stream=0.sdp",
+                                    "title": "northeast"
+                                },
+                                {
+                                    "type": "custom:webrtc-camera",
+                                    "url": "rtsp://192.168.1.66:554/user=admin&password=6266&channel=4&stream=0.sdp",
+                                    "title": "north"
+                                },
+                                {
+                                    "type": "custom:webrtc-camera",
+                                    "url": "rtsp://192.168.1.66:554/user=admin&password=6266&channel=5&stream=0.sdp",
+                                    "title": "east"
+                                },
+                                {
+                                    "type": "light",
+                                    "entity": "light.bedroom_rgb"
+                                }
+                            ],
+                            "square": false
+                        }
+                    ]
+                },
+                {
+                    "title": "",
+                    "visible": [
+                        {
+                            "user": "5a0a633ef7644660a34bd271371786aa"
+                        }
+                    ],
+                    "type": "panel",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "grid",
+                            "cards": [
+                                {
+                                    "type": "picture-entity",
+                                    "camera_image": "camera.east",
+                                    "entity": "camera.east",
+                                    "show_name": true,
+                                    "show_state": false
+                                },
+                                {
+                                    "type": "picture-entity",
+                                    "entity": "camera.north",
+                                    "camera_image": "camera.north",
+                                    "show_state": false
+                                },
+                                {
+                                    "type": "picture-entity",
+                                    "entity": "camera.north_east",
+                                    "camera_image": "camera.north_east",
+                                    "show_state": false
+                                },
+                                {
+                                    "type": "picture-entity",
+                                    "entity": "camera.south",
+                                    "show_state": false,
+                                    "camera_image": "camera.south"
+                                },
+                                {
+                                    "type": "picture-entity",
+                                    "camera_image": "camera.west",
+                                    "entity": "camera.west",
+                                    "show_state": false
+                                },
+                                {
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "url",
+                                        "url_path": "http://dvr.lan:8090"
+                                    },
+                                    "hold_action": {
+                                        "action": "none"
+                                    },
+                                    "name": "Kezel\u00e9s",
+                                    "icon": "mdi:cctv",
+                                    "show_icon": true,
+                                    "show_state": false
+                                }
+                            ],
+                            "columns": 2
+                        }
+                    ]
+                }
+            ],
+            "title": "Kamera"
+        }
+    }
+}

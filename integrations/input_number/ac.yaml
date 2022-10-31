@@ -1,0 +1,17 @@
+ac_default_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:home-thermometer-outline"
+
+ac_study_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"
+
+ac_kitchen_target_temp:
+  min: 21
+  max: 27
+  step: 0.5
+  icon: "mdi:thermometer"

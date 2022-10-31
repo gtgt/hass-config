@@ -1,0 +1,76 @@
+"type","topic","col2","col3","col4","col5","col6"
+
+#################################################################################
+# Poller-object
+# Columns:
+# type, topic, slaveid, reference, size, functioncode, rate
+#################################################################################
+# Reference-Object
+# Columns:
+# type, topic, reference, rw, data type
+
+poll,apb,0,512,8,coil,2
+ref,Q0,512,rw
+ref,Q1,513,rw
+ref,Q2,514,rw
+ref,Q3,515,rw
+ref,Q4,516,rw
+ref,Q5,517,rw
+ref,Q6,518,rw
+ref,Q7,519,rw
+
+poll,apb,0,528,8,coil,2
+ref,Q10,528,rw
+ref,Q11,529,rw
+ref,Q12,530,rw
+ref,Q13,531,rw
+ref,Q14,532,rw
+ref,Q15,533,rw
+ref,Q16,534,rw
+ref,Q17,535,rw
+
+poll,apb,0,9728,2,coil,3
+ref,M0,9728,rw
+ref,M1,9729,rw
+
+poll,apb,0,9745,4,coil,3
+ref,M14,9745,rw
+ref,M15,9746,rw
+ref,M16,9747,rw
+ref,M17,9748,rw
+
+poll,apb,0,256,14,coil,0.5
+ref,I0,256,r
+ref,I1,257,r
+ref,I2,258,r
+ref,I3,259,r
+ref,I4,260,r
+ref,I5,261,r
+ref,I6,262,r
+ref,I7,263,r
+ref,I8,264,r
+ref,I9,265,r
+ref,IA,266,r
+ref,IB,267,r
+ref,IC,268,r
+ref,ID,269,r
+
+#poll,apb,0,272,18,input_status,0.5
+#ref,I0,272,r
+#ref,I1,273,r
+#ref,I2,274,r
+#ref,I3,275,r
+#ref,I4,276,r
+#ref,I5,277,r
+#ref,I6,278,r
+#ref,I7,279,r
+#ref,I8,280,r
+#ref,I9,281,r
+#ref,IA,282,r
+#ref,IB,283,r
+#ref,IC,284,r
+#ref,ID,285,r
+#ref,ID,286,r
+#ref,ID,287,r
+#ref,ID,288,r
+#ref,ID,289,r

@@ -1,0 +1,66 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/236146080.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@binsentsu"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": true,
+        "default_branch": "master",
+        "description": "Home assistant Component for reading data locally from Solaredge inverter through modbus TCP",
+        "domain": "solaredge_modbus",
+        "domains": [
+            "sensor"
+        ],
+        "downloads": 0,
+        "etag_repository": "W/\"bd6d4b752e397267d39329c8b675189b131709f5624573114a9ecf93d246ffc8\"",
+        "file_name": "",
+        "filename": null,
+        "first_install": false,
+        "fork": false,
+        "full_name": "binsentsu/home-assistant-solaredge-modbus",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": "2021.8.0",
+        "id": "236146080",
+        "iot_class": "local_poll",
+        "installed": true,
+        "installed_commit": "2fad552",
+        "installed_version": "V1.5.1",
+        "open_issues": 39,
+        "last_commit": "2fad552",
+        "last_version": "V1.5.1",
+        "last_updated": "2022-01-28T20:13:03Z",
+        "manifest_name": "SolarEdge Modbus",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2022-01-28T20:13:03",
+        "releases": true,
+        "render_readme": false,
+        "published_tags": [
+            "V1.5.1",
+            "V1.5.0",
+            "V1.4.0",
+            "V1.3.1",
+            "V1.3.0"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 86,
+        "topics": [
+            "hassio",
+            "home-assistant",
+            "modbus",
+            "modbus-tcp",
+            "solaredge",
+            "solaredge-inverter"
+        ],
+        "zip_release": false
+    }
+}

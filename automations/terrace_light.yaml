@@ -1,0 +1,13 @@
+- id: terrace_light
+  alias: "Toggle terrace light"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.apb_i13
+      to: 'on'
+    - platform: state
+      entity_id: binary_sensor.apb_i1a
+      to: 'on'
+  action:
+    - service: switch.toggle
+      data:
+       entity_id: switch.apb_q17

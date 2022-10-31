@@ -1,0 +1,32 @@
+font:
+  - file: '_fonts/slkscr.ttf'
+    id: mono
+    size: 20
+
+  - file: '_fonts/slkscr.ttf'
+    id: monobig
+    size: 42
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: narrow
+    size: 22
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: narrowlarge
+    size: 28
+
+  - file: '_fonts/BebasNeue-Regular.ttf'
+    id: narrowbig
+    size: 32
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: normal
+    size: 22
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: normallarge
+    size: 28
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: normalbig
+    size: 32

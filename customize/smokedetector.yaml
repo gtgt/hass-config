@@ -1,0 +1,12 @@
+binary_sensor.smokedetector1:
+    friendly_name: "Füstjelzó 1"
+    device_class: smoke
+sensor.smokedetector1_battery:
+    friendly_name: "Elem"
+    device_class: battery
+binary_sensor.smokedetector2:
+    friendly_name: "Füstjelzó 2"
+    device_class: smoke
+sensor.smokedetector2_battery:
+    friendly_name: "Elem"
+    device_class: battery

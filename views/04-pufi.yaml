@@ -1,0 +1,98 @@
+- path: pufi
+  #title: Pufi
+  icon: mdi:air-purifier
+#  badges:
+#    - entity: sensor.pufi_motor_speed
+#    - entity: sensor.pufi_filter_use
+#    - entity: sensor.pufi_filter_life_remaining
+#    - entity: sensor.pufi_pm2_5
+#    - entity: sensor.pufi_temperature
+#    - entity: sensor.pufi_humidity
+  cards:
+  - type: conditional
+    conditions:
+      - entity: fan.humi1
+        state_not: unavailable
+    card:
+      type: custom:mini-humidifier
+      model: 'xiaomi_miio_airpurifier:deerma.humidifier.mjjsq'
+      entity: fan.humi1
+      icon: 'mdi:air-humidifier'
+      secondary_info: mode
+      tap_action:
+        action: more-info
+        entity: input_select.humi1_mode
+      target_humidity:
+        icon: 'mdi:water-opacity'
+      toggle:
+        default: false
+        hide: false
+      buttons:
+        mode:
+          icon: 'mdi:water-check-outline'
+          source:
+            1: 'Alacsony'
+            2: 'Közepes'
+            3: 'Magas'
+            4: 'Páratartalom'
+      style: |
+        ha-card {
+
+        }
+  - type: conditional
+    conditions:
+      - entity: fan.pufi
+        state: unavailable
+    card:
+        type: markdown
+        content: |
+          <big>
+              <center><ha-icon icon="mdi:power-plug-off-outline" /></center>
+              <center>Pufi most nagyon szomorú, mert nincs bedugva :(</center>
+          </big>
+  - type: conditional
+    conditions:
+      - entity: fan.pufi
+        state_not: unavailable
+    card:
+        type: vertical-stack
+        cards:
+        - type: 'custom:purifier-card'
+          entity: fan.pufi
+          platform: xiaomi_miio
+          aqi:
+            - entity_id: sensor.pufi_pm2_5
+              attribute: state
+          stats:
+            - entity_id: sensor.pufi_filter_life_remaining
+              unit: '%'
+              subtitle: "Szűrő élettartam"
+            - entity_id: sensor.pufi_pm2_5
+              subtitle: "Levegőminőség"
+              unit: "µg/m³"
+            - entity_id: sensor.pufi_motor_speed
+              unit: RPM
+              subtitle: "Motor sebesség"
+          show_name: true
+          show_state: true
+          show_toolbar: false
+          compact_view: false
+          style: |
+            ha-card {
+              --pc-background: transparent;
+            }
+        - type: entities
+          show_header_toggle: false
+          state_color: true
+          entities:
+            - fan.pufi
+            - number.pufi_favorite_level
+            - input_select.pufi_mode
+            - switch.pufi_child_lock
+            - switch.pufi_led
+            - type: custom:slider-entity-row
+              entity: number.pufi_volume
+              hide_when_off: true
+              min: 0
+              max: 100
+              step: 10

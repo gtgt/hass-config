@@ -1,0 +1,17 @@
+- platform: template
+  sensors:
+    humi1_target_humidity:
+      friendly_name: Cél páratartalom
+      value_template: '{{ states.fan.humi1.attributes.target_humidity }}'
+      unit_of_measurement: '%'
+      icon_template: mdi:cloud-percent-outline
+    humi1_temperature:
+      friendly_name: Hőmérséklet
+      value_template: '{{ states.fan.humi1.attributes.temperature }}'
+      unit_of_measurement: '°C'
+      icon_template: mdi:thermometer
+    humi1_humidity:
+      friendly_name: Páratartalom
+      value_template: '{{ states.fan.humi1.attributes.humidity }}'
+      unit_of_measurement: '%'
+      icon_template: mdi:water-percent

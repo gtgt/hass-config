@@ -1,0 +1,61 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/280845405.hacs",
+    "data": {
+        "archived": false,
+        "authors": [
+            "@chomupashchuk"
+        ],
+        "category": "integration",
+        "content_in_root": false,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "master",
+        "description": "Aqua Ariston NET Remotethermo for Home Assistant",
+        "domain": "aquaariston",
+        "domains": [],
+        "downloads": 0,
+        "etag_repository": "W/\"75fd6b1526b63aa97c1e377aafd9cdaabc80226b4c9f8e92440fdb4abf6e24e0\"",
+        "file_name": "",
+        "filename": null,
+        "first_install": false,
+        "fork": false,
+        "full_name": "chomupashchuk/ariston-aqua-remotethermo-home-assistant",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "280845405",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "966c59a",
+        "installed_version": "1.0.49",
+        "open_issues": 1,
+        "last_commit": "966c59a",
+        "last_version": "1.0.49",
+        "last_updated": "2022-06-01T15:43:58Z",
+        "manifest_name": "AquaAriston",
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2022-06-01T15:43:58",
+        "releases": true,
+        "render_readme": true,
+        "published_tags": [
+            "1.0.49",
+            "1.0.48",
+            "1.0.47",
+            "1.0.46",
+            "1.0.44"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 35,
+        "topics": [
+            "aqua-ariston",
+            "ariston",
+            "ariston-aqua"
+        ],
+        "zip_release": false
+    }
+}

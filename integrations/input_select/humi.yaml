@@ -1,0 +1,7 @@
+humi1_mode:
+  options:
+    - Low
+    - Mid
+    - High
+    - Auto
+  icon: "mdi:water-opacity"

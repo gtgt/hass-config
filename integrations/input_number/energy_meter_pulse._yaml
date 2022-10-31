@@ -1,0 +1,5 @@
+energy_meter_kwh:
+  min: 0
+  max: 999999
+  step: 0.00250000000
+  unit_of_measurement: kWh

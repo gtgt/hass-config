@@ -1,0 +1,77 @@
+  - id: ac_target_temp_restore
+    alias: ac_target_temp_restore
+    initial_state: off
+    trigger:
+      - platform: homeassistant
+        event: start
+    action:
+      - service: saver.execute
+        data:
+          script:
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_study
+                temperature: "{{ climate_ac_study_attr_temperature | default(states('input_number.ac_study_target_temp')) | float }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.t_childa
+                temperature: "{{ climate_t_childa_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.t_childb
+                temperature: "{{ climate_t_childb_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.t_bedroom
+                temperature: "{{ climate_t_bedroom_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.ac_kitchen
+                temperature: "{{ climate_ac_kitchen_attr_temperature | default(states('input_number.ac_kitchen_target_temp')) | float }}"
+            - service: climate.set_temperature
+              data_template:
+                entity_id: climate.t_livingroom
+                temperature: "{{ climate_t_livingroom_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
+      - service: automation.turn_on
+        data:
+          entity_id: automation.ac_target_temp_save
+
+  - id: ac_target_temp_save
+    alias: ac_target_temp_save
+    # don't turn on
+    initial_state: off
+    trigger:
+      - platform: homeassistant
+        event: shutdown
+      - platform: state
+        entity_id: climate.ac_study
+      - platform: state
+        entity_id: climate.t_childa
+      - platform: state
+        entity_id: climate.t_childb
+      - platform: state
+        entity_id: climate.t_bedroom
+      - platform: state
+        entity_id: climate.ac_kitchen
+      - platform: state
+        entity_id: climate.t_livingroom
+    action:
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_study
+      - service: saver.save_state
+        data:
+          entity_id: climate.t_childa
+      - service: saver.save_state
+        data:
+          entity_id: climate.t_childb
+      - service: saver.save_state
+        data:
+          entity_id: climate.t_bedroom
+      - service: saver.save_state
+        data:
+          entity_id: climate.ac_kitchen
+      - service: saver.save_state
+        data:
+          entity_id: climate.t_livingroom
+

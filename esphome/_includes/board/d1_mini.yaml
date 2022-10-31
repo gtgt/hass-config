@@ -1,0 +1,11 @@
+esphome:
+  platform: ESP8266
+  board: d1_mini
+  esp8266_restore_from_flash: true
+
+light:
+  - platform: status_led
+    id: led_status
+    pin:
+      number: D4
+      inverted: true

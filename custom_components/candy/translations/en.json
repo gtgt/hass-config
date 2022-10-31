@@ -1,0 +1,21 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "unknown": "Unexpected error",
+            "detect_encryption": "Failed to detect encryption, check logs"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "ip_address": "Device IP address",
+                    "password": "Encryption key",
+                    "use_encryption": "Use encryption key"
+                }
+            }
+        }
+    },
+    "title": "Candy"
+}

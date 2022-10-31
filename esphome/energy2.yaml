@@ -1,0 +1,73 @@
+substitutions:
+  name: energy2
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp01.yaml
+
+logger:
+  level: INFO
+
+uart:
+  - id: ubus1
+    rx_pin: GPIO3
+    tx_pin: GPIO1
+    baud_rate: 9600
+    #stop_bits: 2
+
+modbus:
+  - id: mbus1
+    uart_id: ubus1
+    
+sensor:
+  - platform: pzemac
+    modbus_id: mbus1
+    address: 1
+    current:
+      name: ${name}_current
+    voltage:
+      name: ${name}_voltage
+    energy:
+      name: ${name}_energy
+    power:
+      name: ${name}_power
+    frequency:
+      name: ${name}_freq
+    power_factor:
+      name: ${name}_pf
+    update_interval: 3s
+  - platform: dht
+    model: DHT11
+    pin: GPIO0
+    update_interval: 15s
+    temperature:
+      id: temp
+      name: ${name}_temp
+      filters:
+        - offset: -2
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #-   sliding_window_moving_average:
+        - median:
+            window_size: 4
+            send_every: 4
+            send_first_at: 4
+    humidity:
+      id: humidity
+      name: ${name}_humidity
+      filters:
+        #- exponential_moving_average:
+        #    alpha: 0.75
+        #    send_every: 4
+        #- sliding_window_moving_average:
+        - median:
+            window_size: 4
+            send_every: 4
+            send_first_at: 4
+
+switch:
+  - platform: uart
+    uart_id: ubus1
+    name: ${name}_reset
+    data: [0x01, 0x42, 0x80, 0x11]

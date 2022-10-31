@@ -1,0 +1,62 @@
+substitutions:
+  name: study
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/d1_mini.yaml
+  fonts: !include _includes/fonts.yaml
+
+dallas:
+  - pin: D2 #GPIO4
+    update_interval: 20s
+
+sensor:
+  - platform: dallas
+    id: temp
+    name: ${name}_temp
+    address: 0xAFA86FA811646128
+    filters:
+      - offset: -2
+
+  - platform: homeassistant
+    id: target_temp
+    entity_id: input_number.ac_${name}_target_temp
+    internal: true
+
+binary_sensor:
+  - platform: homeassistant
+    id: valve_state
+    entity_id: switch.ac_relay_${name}
+    internal: true
+
+i2c:
+  sda: D3 #GPIO0
+  scl: D1 #GPIO5
+  scan: false
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x32"
+    reset_pin: D0
+    address: 0x3C
+    lambda: |-
+      // Print "${name}" in top center.
+      it.printf(64, 2, id(titlefont), TextAlign::TOP_CENTER, "${name}");
+
+      // Print time in HH:MM format
+      it.strftime(2, 25, id(clockfont), TextAlign::CENTER_LEFT, "%H:%M", id(hatime).now());
+
+      // Print valve state
+      if (id(valve_state).has_state()) {
+        it.printf(126, 0, id(monofont), TextAlign::TOP_RIGHT , "%d", id(valve_state).state);
+      }
+
+      // Print temperature
+      if (id(temp).has_state()) {
+        it.printf(70, 24, id(bigvaluefont), TextAlign::CENTER , "%.1f°C", id(temp).state);
+      }
+
+      // Print target temperature
+      if (id(target_temp).has_state()) {
+        it.printf(126, 24, id(bigvaluefont), TextAlign::CENTER_RIGHT , "%.1f°C", id(target_temp).state);
+      }

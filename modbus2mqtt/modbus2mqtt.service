@@ -1,0 +1,15 @@
+[Unit]
+Description=Modbus master which publishes via MQTT
+Requires=hassio-supervisor.service
+After=hassio-supervisor.service
+
+[Service]
+Type=simple
+#Restart=always
+Restart=no
+RestartSec=5s
+ExecStartPre=-sudo killall mbusd
+ExecStart=/usr/bin/python3 /usr/share/hassio/homeassistant/modbus2mqtt/modbus2mqtt.py --rtu /dev/ttyUSB0 --rtu-baud 9600 --rtu-parity none --set-modbus-timeout 5 --autoremove --mqtt-host localhost --mqtt-topic=modbus/ --add-to-homeassistant --always-publish --diagnostics-rate 600 --config /usr/share/hassio/homeassistant/modbus2mqtt/apb.csv
+
+[Install]
+WantedBy=multi-user.target

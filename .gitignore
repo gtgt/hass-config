@@ -1,0 +1,15 @@
+.HA_VERSION
+secrets.yaml
+frigate.yml
+home-assistant*
+custom_components/hacs
+__pycache__
+.cloud
+.shopping_list.json
+.pip_progress
+.storage/*auth*
+.storage/cloud
+.storage/mobile_app
+.storage/core.*
+.storage/hassio
+gtfs/*

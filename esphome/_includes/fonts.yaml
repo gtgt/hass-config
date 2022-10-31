@@ -1,0 +1,20 @@
+font:
+  - file: '_fonts/slkscr.ttf'
+    id: titlefont
+    size: 8
+    
+  - file: '_fonts/slkscr.ttf'
+    id: monofont
+    size: 12
+
+  - file: '_fonts/BebasNeue-Regular.ttf'
+    id: clockfont
+    size: 24
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: valuefont
+    size: 10
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: bigvaluefont
+    size: 14

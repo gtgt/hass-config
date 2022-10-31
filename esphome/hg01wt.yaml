@@ -1,0 +1,80 @@
+substitutions:
+  name: hg01wt
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/tywe3s.yaml
+
+# https://templates.blakadder.com/qualitel_HG01WT.html
+### pins ###
+# GPIO4  | LED blue    | status_led
+# GPIO5  | LED red     | led1
+# GPIO12 | REL1        | relay1
+# GPIO13 | SW1         | button1
+
+
+# GPIO4  | HLW8012/CF  | cf_pin
+# GPIO5  | HLW8012/CF1 | cf1_pin
+# GPIO12 | HLW8012/SEL | sel_pin
+
+
+
+status_led:
+  pin:
+    number: GPIO4
+    inverted: false
+
+output:
+  - platform: gpio
+    id: relay1
+    pin: GPIO12
+  - platform: gpio
+    id: led1
+    pin: GPIO5
+
+switch:
+  - platform: output
+    id: switch1
+    name: ${name}_switch1
+    output: relay1
+    on_turn_on:
+      - output.turn_on: led1
+    on_turn_off:
+      - output.turn_off: led1
+
+binary_sensor:
+  - platform: gpio
+    id: button1
+    name: ${name}_button1
+    pin:
+      number: GPIO13
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    on_press:
+      - switch.toggle: switch1
+
+#sensor:
+#  - platform: hlw8012
+#    sel_pin: GPIO12 # (0 if not connected)
+#    cf_pin: GPIO4
+#    cf1_pin: GPIO5
+#    voltage:
+#      id: hlw8012_voltage
+#      name: ${name}_voltage
+#    power:
+#      id: hlw8012_power
+#      name: ${name}_power
+#      on_value:
+#        - sensor.template.publish:
+#            id: hlw8012_current_calculated
+#            state: !lambda 'return id(hlw8012_power).state / id(hlw8012_voltage).state;'
+#    update_interval: 10s
+#    initial_mode: VOLTAGE
+#    change_mode_every: 4294967295 # basically never
+#  - platform: template
+#    id: hlw8012_current_calculated
+#    name: ${name}_current
+#    unit_of_measurement: A
+#    accuracy_decimals: 2

@@ -1,0 +1,52 @@
+- id: ac_thermostat_relay_init
+  alias: ac_thermostat_relay_init
+  initial_state: on
+  trigger:
+    - platform: homeassistant
+      event: start
+    - platform: time_pattern
+      seconds: "/5"
+  action:
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.ac_study
+        switch_entity_id: switch.ac_relay_study
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_bedroom
+        switch_entity_id: switch.ac_relay_bedroom
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_childa
+        switch_entity_id: switch.ac_relay_childa
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_childb
+        switch_entity_id: switch.ac_relay_childb
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.ac_kitchen
+        switch_entity_id: switch.ac_relay_kitchen
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: climate.t_livingroom
+        switch_entity_id: switch.ac_relay_livingroom
+
+- id: ac_thermostat_relay
+  alias: ac_thermostat_relay
+  initial_state: on
+  trigger:
+    - platform: state
+      entity_id:
+        - climate.ac_study
+        - climate.t_bedroom
+        - climate.t_childa
+        - climate.t_childb
+        - climate.ac_kitchen
+        - climate.t_livingroom
+      attribute: hvac_action
+  action:
+    - service: script.turn_switch_by_climate
+      data_template:
+        climate_entity_id: "{{ trigger.entity_id }}"
+        switch_entity_id: "switch.ac_relay_{{ trigger.entity_id|regex_findall_index(find='\\.(?:t|ac)_(.*)', index=0, ignorecase=False) }}"

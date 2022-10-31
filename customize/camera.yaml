@@ -1,0 +1,8 @@
+camera.espcam1:
+  friendly_name: "ESP32 Kamera 1"
+light.espcam1:
+  friendly_name: "Világítás"
+binary_sensor.espcam1_pir:
+  friendly_name: "Mozgás"
+sensor.espcam1_wifi_signal:
+  friendly_name: "Térerő"

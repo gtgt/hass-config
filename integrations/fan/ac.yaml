@@ -1,0 +1,48 @@
+
+ - platform: template
+   fans:
+     ac:
+       friendly_name: "AC Fan"
+       value_template: >
+         {% if states('climate.ac') in ['fan_only','heat','cool','heat_cool', 'dry'] -%}
+           on
+         {%- else -%}
+           off
+         {%- endif %}
+       percentage_template: >
+         {% if state_attr('climate.ac', 'fan_mode') in ['1','2','3','4','5'] %}
+           {{ ( state_attr('climate.ac', 'fan_mode') | default (3) | int ) * 20  }}
+         {% else -%}
+           3
+         {%- endif %}
+       preset_mode_template: >
+         {% if state_attr('climate.ac', 'fan_mode') in ['none','away', 'eco', 'boost'] %}
+           {{ state_attr('climate.ac', 'fan_mode') }}
+         {% else -%}
+           none
+         {%- endif %}
+       oscillating_template: 'False'
+       speed_count: 100
+       preset_modes:
+         - none
+         - away
+         - eco
+         - boost
+       set_percentage:
+         service: climate.set_fan_mode
+         data:
+           entity_id: climate.ac
+           fan_mode: "{{ ( 100 / ( percentage | default(0) | int ) ) | string }}"
+       set_preset_mode:
+         service: climate.set_fan_mode
+         data:
+           entity_id: climate.ac
+           fan_mode: "{{ preset_mode }}"
+       turn_on:
+         service: climate.turn_on
+         data:
+           entity_id: climate.ac
+       turn_off:
+         service: climate.turn_off
+         data:
+           entity_id: climate.ac

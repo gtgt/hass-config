@@ -1,0 +1,63 @@
+{
+    "version": "6",
+    "minor_version": 1,
+    "key": "hacs/215327195.hacs",
+    "data": {
+        "archived": false,
+        "authors": [],
+        "category": "plugin",
+        "content_in_root": true,
+        "country": [],
+        "config_flow": false,
+        "default_branch": "master",
+        "description": "\ud83d\udca1 A Lovelace custom card for RGB lights",
+        "domain": null,
+        "domains": [
+            "light"
+        ],
+        "downloads": 9536,
+        "etag_repository": "W/\"787629ba6016fecc2b28bdc844952b2d111cb582d99f99cbba46db7e3c5394bf\"",
+        "file_name": "card.js",
+        "filename": "card.js",
+        "first_install": false,
+        "fork": false,
+        "full_name": "bokub/rgb-light-card",
+        "hacs": null,
+        "hide": false,
+        "hide_default_branch": false,
+        "homeassistant": null,
+        "id": "215327195",
+        "iot_class": null,
+        "installed": true,
+        "installed_commit": "abb7c78",
+        "installed_version": "1.11.0",
+        "open_issues": 4,
+        "last_commit": "abb7c78",
+        "last_version": "1.11.0",
+        "last_updated": "2022-03-08T13:13:54Z",
+        "manifest_name": null,
+        "new": false,
+        "persistent_directory": null,
+        "pushed_at": "2022-03-08T13:13:54",
+        "releases": true,
+        "render_readme": true,
+        "published_tags": [
+            "1.11.0",
+            "1.10.0",
+            "1.9.0",
+            "1.8.0",
+            "1.7.1"
+        ],
+        "selected_tag": null,
+        "show_beta": false,
+        "stargazers_count": 297,
+        "topics": [
+            "hacktoberfest",
+            "home-assistant",
+            "lovelace",
+            "lovelace-custom-card",
+            "rgb-lights"
+        ],
+        "zip_release": false
+    }
+}

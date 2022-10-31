@@ -1,0 +1,55 @@
+- path: alarm
+  type: custom:grid-layout
+  layout:
+    grid-template-areas: |
+      "header"
+      "main"
+  #title: Riasztó
+  icon: mdi:shield-home
+  cards:
+    - type: custom:badge-card
+      view_layout:
+        grid-area: header
+      badges:
+        - entity: binary_sensor.pir_entry
+        - entity: binary_sensor.pir_study
+        - entity: binary_sensor.pir_bedroom
+        - entity: binary_sensor.pir_kitchen
+        - entity: binary_sensor.pir_livingroom
+        - entity: binary_sensor.pir_childa
+        - entity: binary_sensor.pir_childb
+        - entity: binary_sensor.window_study
+        - entity: binary_sensor.window_bedroom
+        - entity: binary_sensor.window_bathroom
+        - entity: binary_sensor.window_kitchen
+        - entity: binary_sensor.window_livingroom1
+        - entity: binary_sensor.window_livingroom2
+        - entity: binary_sensor.window_childa
+        - entity: binary_sensor.window_childb
+        - entity: binary_sensor.dusk_detector
+        - entity: binary_sensor.pir_terrace
+        - entity: binary_sensor.pir_backyard_left
+        - entity: binary_sensor.pir_backyard_back
+        - entity: binary_sensor.pir_backyard_right
+        - entity: binary_sensor.pir_backyard_sidewalk
+        - entity: binary_sensor.fire_attic
+        - entity: binary_sensor.alarm_armed_fully
+        - entity: binary_sensor.alarm_tamper
+    - type: custom:layout-card
+      layout_type: custom:horizontal-layout
+      cards:
+        - type: alarm-panel
+          entity: alarm_control_panel.inside
+        - type: alarm-panel
+          entity: alarm_control_panel.windows
+        - type: alarm-panel
+          entity: alarm_control_panel.outside
+    - type: entities
+      entities:
+        - switch.alarm_output1
+        - switch.alarm_output2
+        - switch.alarm_sirene_buzzer
+        - switch.alarm_sirene_light
+        - switch.terrace_light
+        - switch.outside_wall_light1
+        - switch.outside_wall_light2

@@ -1,0 +1,13 @@
+#title: ''
+#custom_header:
+#  header_text: '{{ as_timestamp(now())|timestamp_local }}'
+#  compact_mode: false
+#  split_mode: false
+#  footer_mode: false
+#  fit_tabs: true
+#  tab_icons_and_text: true
+#  background: var(--app-header-background-color)
+#  elements_color: var(--app-header-text-color)
+#  active_tab_color: var(--state-icon-active-color)
+#  tab_indicator_color: var(--state-icon-active-color)
+views: !include_dir_merge_list views

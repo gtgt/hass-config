@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.28001e6fbffd5d1eb6bdfa72a36112d0",
+  "data": {
+    "device_info": {
+      "uses_password": true,
+      "name": "bedroom_rgb",
+      "mac_address": "98:F4:AB:C9:51:32",
+      "compilation_time": "Oct 28 2022, 18:15:59",
+      "model": "esp01_1m",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.10.1",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "bluetooth_proxy_version": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 7
+    },
+    "light": [
+      {
+        "object_id": "bedroom_rgb",
+        "key": 395114707,
+        "name": "bedroom_rgb",
+        "unique_id": "bedroom_rgblightbedroom_rgb",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          39
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [
+          "None",
+          "bedroom_rgb_random",
+          "bedroom_rgb_random_slow"
+        ],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": true,
+        "legacy_supports_white_value": true,
+        "legacy_supports_color_temperature": false
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "bedroom_rgb_up_time",
+        "key": 3721379235,
+        "name": "bedroom_rgb_up_time",
+        "unique_id": "98f4abc95132-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "bedroom_rgb_wifi_signal",
+        "key": 3864866316,
+        "name": "bedroom_rgb_wifi_signal",
+        "unique_id": "98f4abc95132-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "switch": [
+      {
+        "object_id": "bedroom_rgb_restart",
+        "key": 2887119047,
+        "name": "bedroom_rgb_restart",
+        "unique_id": "bedroom_rgbswitchbedroom_rgb_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "bedroom_rgb_status",
+        "key": 4276521828,
+        "name": "bedroom_rgb_status",
+        "unique_id": "bedroom_rgbbinary_sensorbedroom_rgb_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ]
+  }
+}

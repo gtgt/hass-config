@@ -1,0 +1,146 @@
+- path: water-heater
+  #title: Bojler
+  icon: mdi:water-boiler
+  cards:
+    - type: vertical-stack
+      title: Aqua Ariston
+      cards:
+        - type: horizontal-stack
+          cards:
+            - type: conditional
+              conditions:
+              - entity: sensor.aqua_ariston_time_left_to_heat
+                state_not: "00:00:00"
+              card:
+                type: markdown
+                card_size: 1
+                content: |
+                    #### Hátralevő idő
+                    # {{ states.sensor.aqua_ariston_time_left_to_heat.state }}
+            - type: entity
+              entity: switch.aqua_ariston_power
+        - type: horizontal-stack
+          cards:
+          - type: sensor
+            entity: sensor.aqua_ariston_current_temperature
+            graph: line
+            hours_to_show: 24
+            detail: 2
+          - type: sensor
+            entity: sensor.aqua_ariston_average_showers
+            graph: line
+            hours_to_show: 24
+            detail: 2
+        - type: entities
+          entities:
+            - type: conditional
+              conditions:
+                - entity: water_heater.aqua_ariston
+                  state: manual
+              row:
+                type: custom:paper-buttons-row
+                base_config:
+                  entity: sensor.aqua_ariston_required_showers
+                  layout: icon
+                  icon: mdi:shower-head
+                  style:
+                    icon:
+                      --mdc-icon-size: 40px
+                  tap_action:
+                    action: call-service
+                    service: aquaariston.aqua_set_data
+                    service_data:
+                      entity_id: water_heater.aqua_ariston
+                buttons:
+                  - name: 1
+                    style:
+                      icon:
+                        color: "{% if states(config.entity)|int >= 1 %} var(--paper-item-icon-active-color) {% endif %}"
+                    tap_action:
+                      service_data:
+                        required_showers: 1
+                  - name: 2
+                    style:
+                      icon:
+                        color: "{% if states(config.entity)|int >= 2 %} var(--paper-item-icon-active-color) {% endif %}"
+                    tap_action:
+                      service_data:
+                        required_showers: 2
+                  - name: 3
+                    style:
+                      icon:
+                        color: "{% if states(config.entity)|int >= 3 %} var(--paper-item-icon-active-color) {% endif %}"
+                    tap_action:
+                      service_data:
+                        required_showers: 3
+                  - name: 4
+                    style:
+                      icon:
+                        color: "{% if states(config.entity)|int >= 4 %} var(--paper-item-icon-active-color) {% endif %}"
+                    tap_action:
+                      service_data:
+                        required_showers: 4
+            - type: custom:paper-buttons-row
+              base_config:
+                entity: water_heater.aqua_ariston
+                layout: icon
+                state:
+                  attribute: operation_mode
+                style:
+                  icon:
+                    --mdc-icon-size: 40px
+                tap_action:
+                  action: call-service
+                  service: aquaariston.aqua_set_data
+                  service_data:
+                    entity_id: water_heater.aqua_ariston
+              buttons:
+                - name: Kézi
+                  icon: mdi:gesture-tap
+                  state_styles:
+                    manual:
+                      icon:
+                        color: var(--paper-item-icon-active-color)
+                  tap_action:
+                    service_data:
+                      mode: manual
+                - name: Éjszakai
+                  icon: mdi:weather-night
+                  state_styles:
+                    night:
+                      icon:
+                        color: var(--paper-item-icon-active-color)
+                  tap_action:
+                    service_data:
+                      mode: night
+                - name: Program
+                  icon: mdi:clock-outline
+                  state_styles:
+                    program:
+                      icon:
+                        color: var(--paper-item-icon-active-color)
+                  tap_action:
+                    service_data:
+                      mode: program
+            - type: attribute
+              entity: water_heater.aqua_ariston
+              attribute: hvac_action
+              name: "Állapot"
+            - type: conditional
+              conditions:
+                - entity: sensor.aqua_ariston_mode
+                  state: manual
+              row:
+                entity: sensor.aqua_ariston_required_showers
+            - type: divider
+            - sensor.aqua_ariston_energy_use_in_the_last_day
+            - sensor.aqua_ariston_energy_use_in_the_last_week
+            - sensor.aqua_ariston_energy_use_in_the_last_month
+            - sensor.aqua_ariston_energy_use_in_the_last_year
+        - type: conditional
+          conditions:
+            - entity: sensor.aqua_ariston_active_errors
+              state_not: good
+          card:
+            type: sensor
+            entity: sensor.aqua_ariston_active_errors

@@ -1,0 +1,78 @@
+- id: ac_auto_off
+  alias: ac_auto_off
+  initial_state: on
+  trigger:
+    - platform: time_pattern
+      seconds: "/5"
+    - platform: state
+      entity_id:
+        - switch.ac_relay_study
+        - switch.ac_relay_childa
+        - switch.ac_relay_childb
+        - switch.ac_relay_bedroom
+        - switch.ac_relay_kitchen
+        - switch.ac_relay_livingroom
+        - climate.ac
+  condition:
+    - condition: state
+      entity_id:
+        - switch.ac_relay_study
+        - switch.ac_relay_childa
+        - switch.ac_relay_childb
+        - switch.ac_relay_bedroom
+        - switch.ac_relay_kitchen
+        - switch.ac_relay_livingroom
+      state: 'off'
+  action:
+    - service: climate.turn_off
+      data:
+        entity_id: climate.ac
+        
+
+- id: ac_auto_on
+  alias: ac_auto_on
+  initial_state: on
+  trigger:
+    - platform: time_pattern
+      seconds: "/5"
+    - platform: state
+      entity_id:
+        - switch.ac_relay_study
+        - switch.ac_relay_childa
+        - switch.ac_relay_childb
+        - switch.ac_relay_bedroom
+        - switch.ac_relay_kitchen
+        - switch.ac_relay_livingroom
+      to: 'on'
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: switch.ac_relay_study
+          state: 'on'
+        - condition: state
+          entity_id: switch.ac_relay_childa
+          state: 'on'
+        - condition: state
+          entity_id: switch.ac_relay_childb
+          state: 'on'
+        - condition: state
+          entity_id: switch.ac_relay_bedroom
+          state: 'on'
+        - condition: state
+          entity_id: switch.ac_relay_kitchen
+          state: 'on'
+        - condition: state
+          entity_id: switch.ac_relay_livingroom
+          state: 'on'
+    - condition: state
+      entity_id: climate.ac
+      state: 'off'
+  action:
+    - service: climate.turn_on
+      data:
+        entity_id: climate.ac
+    #- service: climate.set_hvac_mode
+    #  data:
+    #    entity_id: climate.ac
+    #    hvac_mode: "{{ states('climate.t_' + trigger.entity_id|regex_findall_index(find='\\.ac_relay_(.*)', index=0, ignorecase=False) ) }}"

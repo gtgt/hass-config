@@ -1,0 +1,5 @@
+#!/bin/bash
+modbus -b 9600 -P n /dev/ttyUSB0 c@{512..519}
+modbus -b 9600 -P n /dev/ttyUSB0 c@{528..535}
+modbus -b 9600 -P n /dev/ttyUSB0 c@{256..269}
+modbus -b 9600 -P n /dev/ttyUSB0 c@{9728..9748}

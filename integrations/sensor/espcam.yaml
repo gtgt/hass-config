@@ -1,0 +1,4 @@
+   - platform: template
+     sensors:
+        camera_espcam1_240x135_token:
+           value_template: "{{ state_attr('camera.espcam1_240x135', 'access_token') }}"

@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace_dashboards",
+    "data": {
+        "items": [
+            {
+                "require_admin": false,
+                "show_in_sidebar": true,
+                "icon": "mdi:map",
+                "title": "T\u00e9rk\u00e9p",
+                "url_path": "lovelace-map",
+                "mode": "storage",
+                "id": "lovelace_map"
+            },
+            {
+                "require_admin": true,
+                "show_in_sidebar": false,
+                "icon": "mdi:camera",
+                "title": "Kamera",
+                "url_path": "lovelace-camera",
+                "mode": "storage",
+                "id": "lovelace_camera"
+            },
+            {
+                "show_in_sidebar": false,
+                "icon": "mdi:view-dashboard-variant",
+                "title": "Test",
+                "require_admin": true,
+                "mode": "storage",
+                "url_path": "lovelace-test",
+                "id": "lovelace_test"
+            }
+        ]
+    }
+}

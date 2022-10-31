@@ -1,0 +1,56 @@
+{
+  "title": "MiWifi",
+  "config": {
+    "error": {
+      "ip_address.not_matched": "Неверный IP",
+      "password.not_matched": "Неверный пароль или алгоритм шифрования",
+      "connection": "Не удалось установить соединение",
+      "router.not.supported": "Роутер не поддерживается. Подробная информация выслана в центр уведомлений."
+    },
+    "step": {
+      "discovery_confirm": {
+        "title": "Настройки MiWiFi",
+        "description": "Введите IP адрес и пароль от вашего роутера",
+        "data": {
+          "ip_address": "IP адрес",
+          "password": "Пароль",
+          "encryption_algorithm": "Алгоритм шифрования пароля",
+          "is_track_devices": "Отслеживать устройства",
+          "stay_online": "Минимальное пребывание онлайн в секундах",
+          "scan_interval": "Интервал сканирования в секундах [PRO]",
+          "timeout": "Тайм-аут запросов в секундах [PRO]"
+        }
+      }
+    }
+  },
+  "options": {
+    "error": {
+      "ip_address.not_matched": "Неверный IP",
+      "password.not_matched": "Неверный пароль или алгоритм шифрования",
+      "connection": "Не удалось установить соединение",
+      "router.not.supported": "Роутер не поддерживается. Подробная информация выслана в центр уведомлений."
+    },
+    "step": {
+      "init": {
+        "title": "Настройки MiWiFi",
+        "description": "Введите IP адрес и пароль от вашего роутера с MiWiFi",
+        "data": {
+          "ip_address": "IP адрес",
+          "password": "Пароль",
+          "encryption_algorithm": "Алгоритм шифрования пароля",
+          "stay_online": "Минимальное пребывание онлайн в секундах",
+          "is_track_devices": "Отслеживать устройства",
+          "scan_interval": "Интервал сканирования в секундах [PRO]",
+          "activity_days": "Допустимое количество дней ожидания после последней активности [PRO]",
+          "timeout": "Тайм-аут запросов в секундах [PRO]",
+          "is_force_load": "Принудительная загрузка устройств в режиме репитера [PRO]"
+        }
+      }
+    }
+  },
+  "system_health": {
+    "info": {
+      "version": "Версия"
+    }
+  }
+}

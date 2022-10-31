@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "repairs.issue_registry",
+  "data": {
+    "issues": [
+      {
+        "created": "2022-10-07T16:33:04.711606+00:00",
+        "dismissed_version": null,
+        "domain": "moon",
+        "is_persistent": false,
+        "issue_id": "removed_yaml"
+      },
+      {
+        "created": "2022-10-07T16:33:04.711925+00:00",
+        "dismissed_version": null,
+        "domain": "season",
+        "is_persistent": false,
+        "issue_id": "removed_yaml"
+      },
+      {
+        "created": "2022-10-07T19:43:56.793527+00:00",
+        "dismissed_version": "2022.10.1",
+        "domain": "places",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml"
+      }
+    ]
+  }
+}

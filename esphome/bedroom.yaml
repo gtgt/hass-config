@@ -1,0 +1,179 @@
+substitutions:
+  name: bedroom
+  
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/d1_mini.yaml
+  fonts: !include _includes/fonts.yaml
+
+esphome:
+#  libraries:
+#    - "ArduinoMenu library"
+  on_boot:
+    priority: -100
+    then:
+      - lambda: "id(target_rotary).set_value(id(room_climate).target_temperature_high * 2);"
+
+globals:
+  - id: mic_min
+    type: float
+    restore_value: no
+    initial_value: '1024'
+  - id: mic_max
+    type: float
+    restore_value: no
+    initial_value: '0'
+
+# Enable logging
+logger:
+  level: DEBUG
+  logs:
+    adc: INFO
+
+
+climate:
+  - platform: thermostat
+    id: room_climate
+    name: ${name}
+    sensor: temp
+    default_target_temperature_low: 23 °C
+    default_target_temperature_high: 26 °C
+    visual:
+      min_temperature: 21
+      max_temperature: 27
+      temperature_step: 0.5
+    cool_action:
+      - lambda: |-
+          id(ac_switch).publish_state(true);
+    heat_action:
+      - lambda: |-
+          id(ac_switch).publish_state(true);
+    idle_action:
+      - lambda: |-
+          id(ac_switch).publish_state(false);
+
+sensor:
+  - platform: dht
+    model: AM2302
+    pin: D3
+    temperature:
+      id: temp
+      name: ${name}_temp
+      filters:
+        - offset: 1
+    humidity:
+      id: humidity
+      name: ${name}_humidity
+    update_interval: 10s
+  - platform: adc
+    id: mic
+    name: ${name}_mic
+    pin: A0
+    update_interval: 0.5s
+    accuracy_decimals: 1
+    unit_of_measurement: "dB"
+    icon: "mdi:ear-hearing"
+    #voltage: 0.0098 - 1.2891
+    filters:
+      - lambda: |-
+          float sample = x * 1024.0f;
+          if (sample > id(mic_max)) {
+             id(mic_max) = sample;
+          } else if (sample < id(mic_min)) {
+             id(mic_min) = sample;
+          }
+          return sample;
+      - median:
+          window_size: 5 
+          send_every: 5 
+          send_first_at: 5
+      - lambda: |-
+          float peak2peak = id(mic_max) - id(mic_min);
+          if (peak2peak <= 0) {
+            peak2peak = x;
+          }
+          //ESP_LOGD("mic", "Mic value: %.1f / %.1f (%.1f - %.1f)", peak2peak, x, id(mic_max), id(mic_min));
+          id(mic_min) = 1024.0f;
+          id(mic_max) = 0.0f;
+          float volts = ((peak2peak * 1) / 1024)*10;
+          //ESP_LOGD("mic", "Mic volts: %.4f", volts);
+          float volts_db = 20*log10(volts/0.001259); 
+          //ESP_LOGD("mic", "Mic dB: %.1f", volts_db);
+          return volts_db;
+      - delta: 5
+  - platform: rotary_encoder
+    id: target_rotary
+    name: ${name}_target_rotary
+    internal: true
+    pin_a: D5 #GPIO14
+    pin_b: D6 #GPIO12
+    min_value: 40
+    max_value: 54
+    accuracy_decimals: 1
+    resolution: 1
+    filters:
+      - lambda: return x / 2;
+    on_value:
+      then:
+        - if:
+            condition:
+              lambda: 'return x != id(room_climate).target_temperature_high * 1;'
+            then:
+            - lambda: |-
+                ESP_LOGI("ac", "Target temp set by rotary encoder: %f", x);
+                auto call = id(room_climate).make_call();
+                call.set_target_temperature_high(x);
+                call.perform();
+
+binary_sensor:
+  - platform: homeassistant
+    id: ac_switch
+    entity_id: switch.ac_relay_${name}
+    internal: true
+  - platform: gpio
+    pin: D7 #GPIO13
+    id: button_rotary
+    internal: true
+    device_class: opening
+
+i2c:
+  sda: D2 #GPIO4
+  scl: D1 #GPIO5
+  scan: false
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 128x64"
+    reset_pin: D0
+    address: 0x3C
+    update_interval: 1s
+    lambda: |-
+        // Print "${name}" in top center.
+        it.printf(64, 0, id(titlefont), TextAlign::TOP_CENTER, "${name}");
+  
+        // Print time in HH:MM format
+        it.strftime(0, 50, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(now).now());
+  
+        // Print inside temperature
+        if (id(room_climate).mode) {
+          it.printf(125, 10, id(valuefont), TextAlign::TOP_RIGHT , "Tc: %.1f °C", id(room_climate).current_temperature);
+        }
+  
+        // Print inside humidity
+        if (id(humidity).has_state()) {
+          it.printf(125, 22, id(valuefont), TextAlign::TOP_RIGHT , "H: %.1f %%", id(humidity).state);
+        }
+  
+        // Print outside temperature
+        if (id(mic).has_state()) {
+          it.printf(125, 34, id(valuefont), TextAlign::TOP_RIGHT , "N: %.1f dB", id(mic).state);
+        }
+  
+        // Print target temperature (from homeassistant sensor)
+        if (id(room_climate).mode) {
+          it.printf(125, 46, id(valuefont), TextAlign::TOP_RIGHT , "Tt: %.1f °C", id(room_climate).target_temperature_high);
+        }
+
+        if (id(ac_switch).has_state()) {
+          it.printf(0, 64, id(valuefont), TextAlign::BOTTOM_LEFT , "%d", id(ac_switch).state);
+        }

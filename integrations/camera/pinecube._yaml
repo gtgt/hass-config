@@ -1,0 +1,7 @@
+- platform: generic
+  name: pinecube
+  stream_source: rtsp://pinecube.lan:8554/video
+  #rtsp_transport: tcp
+  verify_ssl: false
+  framerate: 10
+  still_image_url: 'https://www.pngitem.com/pimgs/m/193-1938855_security-camera-clip-art-map-of-eu-member.png'

@@ -1,0 +1,79 @@
+substitutions:
+  name: attic
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp32.yaml
+  fonts: !include _includes/fonts.yaml
+  color: !include _includes/color.yaml
+
+logger:
+  level: DEBUG
+  baud_rate: 115200
+  #hardware_uart: UART1
+
+# We can still control the backlight independently
+switch:
+  - platform: gpio
+    pin: GPIO4
+    name: ${name}_backlight
+    id: backlight
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      inverted: true
+    name: ${name}_button0
+    id: button0
+  - platform: gpio
+    pin:
+      number: GPIO35
+      inverted: true
+    name: ${name}_button1
+    id: button1
+    
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO19
+
+dallas:
+  - pin: GPIO33
+    update_interval: 20s
+  
+sensor:
+  - platform: dallas
+    id: temp0
+    name: ${name}_temp
+    address: 0xAA02179245598028
+    filters:
+      - offset: 1
+
+
+display:
+  # 240x135
+  - platform: st7789v
+    model: TTGO TDisplay 135x240
+    backlight_pin: GPIO4
+    cs_pin: GPIO5
+    dc_pin: GPIO16
+    reset_pin: GPIO23
+    rotation: 270
+    lambda: |-
+      // it.rectangle(0,  0, it.get_width(), it.get_height(), id(blue));
+      // it.rectangle(0, 20, it.get_width(), it.get_height(), id(blue));   // header bar
+      it.print(5, 5, id(valuefont), id(yellow), TextAlign::TOP_LEFT, "Attic");
+      if (id(system_status).state) {
+        it.print(235, 5, id(valuefont), id(green), TextAlign::TOP_RIGHT, "Online");
+      }
+      else {
+        it.print(235, 5, id(valuefont), id(red), TextAlign::TOP_RIGHT, "Offline");
+      }
+      
+      it.strftime(120, 5, id(valuefont), id(gray), TextAlign::TOP_CENTER, "%Y.%m.%d", id(hatime).now());
+      it.strftime(120, 20, id(clockfont), id(gray), TextAlign::TOP_CENTER, "%H:%M", id(hatime).now());
+      
+      if (id(temp0).has_state()) {
+        it.printf(15, 130, id(clockfont), id(gray), TextAlign::BOTTOM_LEFT, "%.1f C", id(temp0).state);
+      }
+      

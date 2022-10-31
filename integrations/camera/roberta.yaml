@@ -1,0 +1,59 @@
+- platform: xiaomi_cloud_map_extractor
+  name: roberta
+  host: roberta.lan
+  token: !secret roberta_token
+  country: de
+  username: !secret roberta_username
+  password: !secret roberta_password
+  draw: ['all']
+  attributes:
+    - calibration_points
+    - charger
+    - country
+    - goto
+    - goto_path
+    - goto_predicted_path
+    - image
+    - is_empty
+    - map_name
+    - no_go_areas
+    - no_mopping_areas
+    - obstacles
+    - path
+    - room_numbers
+    - rooms
+    - vacuum_position
+    - vacuum_room
+    - walls
+    - zones
+  scan_interval:
+    seconds: 60
+  auto_update: true
+  #store_map: true
+  map_transformation:
+    scale: 2
+  colors:
+    color_map_inside:  [32, 115, 185] 
+    color_map_outside:  [0, 0, 0, 0] 
+    color_map_wall:  [100, 196, 254] 
+    color_map_wall_v2:  [93, 109, 126] 
+    color_grey_wall:  [93, 109, 126] 
+    color_ignored_obstacle:  [0, 0, 0, 127] 
+    color_ignored_obstacle_with_photo:  [0, 0, 0, 127] 
+    color_obstacle:  [0, 0, 0, 127] 
+    color_obstacle_with_photo:  [0, 0, 0, 127] 
+    color_path:  [147, 194, 238] 
+    color_goto_path:  [0, 255, 0] 
+    color_predicted_path:  [255, 255, 0, 0] 
+    #color_cleaned_area: [127, 127, 127, 127] 
+    color_zones:  [0xAD, 0xD8, 0xFF, 0x8F] 
+    color_zones_outline:  [0xAD, 0xD8, 0xFF] 
+    color_virtual_walls:  [255, 0, 0] 
+    color_no_go_zones:  [255, 33, 55, 127] 
+    color_no_go_zones_outline:  [255, 0, 0] 
+    color_no_mop_zones:  [163, 130, 211, 127] 
+    color_no_mop_zones_outline:  [163, 130, 211] 
+    color_charger:  [0x66, 0xfe, 0xda, 0x7f] 
+    color_robo:  [75, 235, 149] 
+    color_unknown:  [0, 0, 0] 
+    color_scan:  [0xDF, 0xDF, 0xDF] 

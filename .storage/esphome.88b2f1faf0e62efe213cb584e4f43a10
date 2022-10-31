@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.88b2f1faf0e62efe213cb584e4f43a10",
+  "data": {
+    "device_info": {
+      "uses_password": true,
+      "name": "ac_relay",
+      "mac_address": "4C:11:AE:0D:1D:C9",
+      "compilation_time": "Oct 28 2022, 18:02:15",
+      "model": "d1_mini",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.10.1",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "bluetooth_proxy_version": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 7
+    },
+    "sensor": [
+      {
+        "object_id": "ac_relay_up_time",
+        "key": 3869629663,
+        "name": "ac_relay_up_time",
+        "unique_id": "4c11ae0d1dc9-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_relay_wifi_signal",
+        "key": 953222208,
+        "name": "ac_relay_wifi_signal",
+        "unique_id": "4c11ae0d1dc9-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "switch": [
+      {
+        "object_id": "ac_relay_restart",
+        "key": 1188761155,
+        "name": "ac_relay_restart",
+        "unique_id": "ac_relayswitchac_relay_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_bedroom",
+        "key": 1278558998,
+        "name": "ac_relay_bedroom",
+        "unique_id": "ac_relayswitchac_relay_bedroom",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_r2",
+        "key": 3722740974,
+        "name": "ac_relay_r2",
+        "unique_id": "ac_relayswitchac_relay_r2",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_childa",
+        "key": 2378864261,
+        "name": "ac_relay_childa",
+        "unique_id": "ac_relayswitchac_relay_childa",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_childb",
+        "key": 2378864262,
+        "name": "ac_relay_childb",
+        "unique_id": "ac_relayswitchac_relay_childb",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_study",
+        "key": 2350364817,
+        "name": "ac_relay_study",
+        "unique_id": "ac_relayswitchac_relay_study",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_livingroom",
+        "key": 4005216720,
+        "name": "ac_relay_livingroom",
+        "unique_id": "ac_relayswitchac_relay_livingroom",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_kitchen",
+        "key": 187781562,
+        "name": "ac_relay_kitchen",
+        "unique_id": "ac_relayswitchac_relay_kitchen",
+        "disabled_by_default": false,
+        "icon": "mdi:air-conditioner",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_ventillation",
+        "key": 972628339,
+        "name": "ac_relay_ventillation",
+        "unique_id": "ac_relayswitchac_relay_ventillation",
+        "disabled_by_default": false,
+        "icon": "mdi:fan",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "ac_relay_status",
+        "key": 2750351128,
+        "name": "ac_relay_status",
+        "unique_id": "ac_relaybinary_sensorac_relay_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+  climate.daikin_ac:
+    friendly_name: "Daikin"
+  climate.ac_study:
+    friendly_name: "Dolgozó"
+  climate.ac_childa:
+    friendly_name: "Máté"
+  climate.ac_childb:
+    friendly_name: "Milán"
+  climate.ac_bedroom:
+    friendly_name: "Háló"
+  climate.ac_kitchen:
+    friendly_name: "Konyha"
+  climate.ac_livingroom:
+    friendly_name: "Nappali"
+    
+  switch.ac_relay_study:
+    friendly_name: "Dolgozó klíma"
+  switch.ac_relay_childa:
+    friendly_name: "Máté klíma"
+  switch.ac_relay_childb:
+    friendly_name: "Milán klíma"
+  switch.ac_relay_bedroom:
+    friendly_name: "Háló klíma"
+  switch.ac_relay_kitchen:
+    friendly_name: "Konyha klíma"
+  switch.ac_relay_livingroom:
+    friendly_name: "Nappali klíma"
+  switch.ac_relay_ventillation:
+    friendly_name: "Szellőztetés"
+    
+  sensor.ac_relay_up_time:
+    friendly_name: "AC relé bekapcsolva"
+  
+  sensor.study_temp:
+    friendly_name: "Dolgozó"
+  sensor.ble_temperature_study:
+    friendly_name: "Dolgozó"
+  sensor.ble_humidity_study:
+    friendly_name: "Dolgozó"
+  sensor.ble_temperature_kitchen:
+    friendly_name: "Konyha"
+  sensor.ble_humidity_kitchen:
+    friendly_name: "Konyha"
+  sensor.childa_temp:
+    friendly_name: "Máté"
+  sensor.childa_humidity:
+    friendly_name: "Máté"
+  sensor.childb_temp:
+    friendly_name: "Milán"
+  sensor.childb_humidity:
+    friendly_name: "Milán"
+  sensor.childb_temp2:
+    friendly_name: "Milán 2"
+  sensor.bedroom_temperature:
+    friendly_name: "Háló"
+  sensor.livingroom_temp:
+    friendly_name: "Nappali"
+  sensor.livingroom_humidity:
+    friendly_name: "Nappali"
+  sensor.ac_sensor_temp_ac_outlet:
+    friendly_name: "AC kimenő levegő"
+  sensor.ac_sensor_temp_ac_gas_tube:
+    friendly_name: "AC gázcső"
+
+  sensor.ac_default_target_temp:
+    friendly_name: "Alapértelmezett célhőmérséklet"
+  sensor.ac_study_target_temp:
+    friendly_name: "Dolgozó célhőmérséklet"
+  sensor.ac_childa_target_temp:
+    friendly_name: "Máté célhőmérséklet"
+  sensor.ac_childb_target_temp:
+    friendly_name: "Milán célhőmérséklet"
+  sensor.ac_kitchen_target_temp:
+    friendly_name: "Konyha célhőmérséklet"
+  sensor.ac_livingroom_target_temp:
+    friendly_name: "Nappali célhőmérséklet"
+
+  sensor.attic_temp:
+    friendly_name: "Padlás"
+    icon: mdi:home-roof
+    
+  sensor.ble_temperature_terrace:
+    friendly_name: "Terasz"
+  sensor.ble_humidity_terrace:
+    friendly_name: "Terasz"
+    
+  sensor.io_temp_diff:
+    friendly_name: "Különbség"
+
+  automation.ventillation_auto_off:
+    friendly_name: "Szellőztetés ki ha túl hideg van odakint"
+  automation.ventillation_auto_on:
+    friendly_name: "Szellőztetés be ha már nincs túl hideg odakint"
+  automation.ac_auto_off:
+    friendly_name: "Klíma kikapcsolás, ha minden szelep zárva"
+  automation.ac_auto_on:
+    friendly_name: "Klíma bekapcsolás, ha legalább egy szelep nyitva"
+  automation.ac_thermostat_relay_init:
+    friendly_name: "Szelepvezérlés (periódikus)"
+  automation.ac_thermostat_relay:
+    friendly_name: "Szelepvezérlés (esemény)"

@@ -1,0 +1,12 @@
+  person.gt:
+    friendly_name: "Tomi"
+  person.gsm:
+    friendly_name: "Marianna"
+  sensor.location_gt:
+    friendly_name: "Tomi"
+  sensor.location_gsm:
+    friendly_name: "Marianna"
+  device_tracker.gt_mi8:
+    friendly_name: "Tomi"
+  device_tracker.mi_9_lite:
+    friendly_name: "Marianna"

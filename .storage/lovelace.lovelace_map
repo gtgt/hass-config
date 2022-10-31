@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.lovelace_map",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "title": "Térkép",
+          "panel": false,
+          "type": "custom:horizontal-layout",
+          "layout": {
+            "max_cols": 2,
+            "card_margin": "var(--masonry-view-card-margin, 16px)"
+          },
+          "badges": [],
+          "cards": [
+            {
+              "type": "map",
+              "entities": [
+                {
+                  "entity": "device_tracker.gt_mi8"
+                },
+                {
+                  "entity": "device_tracker.mi_9_lite"
+                }
+              ],
+              "dark_mode": true,
+              "hours_to_show": 12
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "device_tracker.gt_mi8"
+                },
+                {
+                  "entity": "sensor.gt_mi8_geokodolt_hely",
+                  "secondary_info": "last-updated"
+                },
+                {
+                  "entity": "sensor.location_gt",
+                  "secondary_info": "last-updated"
+                },
+                {
+                  "entity": "device_tracker.mi_9_lite"
+                },
+                {
+                  "entity": "sensor.mi_9_lite_geokodolt_hely",
+                  "secondary_info": "last-updated"
+                },
+                {
+                  "entity": "sensor.location_gsm",
+                  "secondary_info": "last-updated"
+                }
+              ]
+            },
+            {
+              "type": "glance",
+              "entities": [
+                {
+                  "entity": "sensor.gt_mi8_eszlelt_tevekenyseg",
+                  "name": "Tomi"
+                }
+              ],
+              "show_name": true,
+              "state_color": true
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "device_tracker.gt_mi8",
+                  "secondary_info": "last-updated"
+                },
+                {
+                  "entity": "device_tracker.mi_9_lite",
+                  "secondary_info": "last-updated"
+                }
+              ],
+              "state_color": true
+            }
+          ]
+        }
+      ],
+      "title": "Térkép"
+    }
+  }
+}

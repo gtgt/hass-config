@@ -1,0 +1,48 @@
+- id: humi1_operation_mode_select
+  alias: Humi1 operation mode select
+  trigger:
+    - platform: state
+      entity_id: input_select.humi1_mode
+  action:
+    service: fan.set_preset_mode
+    data_template:
+      entity_id: fan.humi1
+      speed: '{{ states.input_select.humi1_mode.state }}'
+
+- id: humi1_operation_mode_update
+  alias: Humi1 operation mode update
+  trigger:
+    - platform: homeassistant
+      event: start
+    - platform: state
+      entity_id: fan.humi1
+  action:
+    service: input_select.select_option
+    entity_id: input_select.humi1_mode
+    data_template:
+      option: '{{ states.fan.humi1.attributes.mode }}'
+
+
+- id: humi1_target_humidity_select
+  alias: Humi1 target humidity select
+  trigger:
+    - platform: state
+      entity_id: input_number.humi1_target_humidity
+  action:
+    - service: xiaomi_miio_airpurifier.fan_set_target_humidity
+      data_template:
+        entity_id: fan.humi1
+        humidity: '{{ states.input_number.humi1_target_humidity.state|int }}'
+
+- id: humi1_target_humidity_update
+  alias: Humi1 target humidity update
+  trigger:
+    - platform: homeassistant
+      event: start
+    - platform: state
+      entity_id: sensor.humi1_target_humidity
+  action:
+    service: input_number.set_value
+    entity_id: input_number.humi1_target_humidity
+    data_template:
+      value: '{{ states.fan.humi1.attributes.target_humidity }}'

@@ -1,0 +1,21 @@
+{
+  "title": "Candy",
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "ip_address": "Device IP address",
+          "password": "Encryption key",
+          "use_encryption": "Use encryption key"
+        }
+      }
+    },
+    "error": {
+      "unknown": "[%key:common::config_flow::error::unknown%]",
+      "detect_encryption": "Failed to detect encryption, check logs"
+    },
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  }
+}

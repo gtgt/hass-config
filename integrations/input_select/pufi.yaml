@@ -1,0 +1,6 @@
+  pufi_mode:
+    options:
+      - Auto
+      - Silent
+      - Favorite
+    icon: "mdi:animation-outline"

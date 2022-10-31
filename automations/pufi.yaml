@@ -1,0 +1,22 @@
+- id: pufi_mode_set
+  alias: Pufi mode set
+  trigger:
+    entity_id: input_select.pufi_mode
+    platform: state
+  action:
+    service: fan.set_preset_mode
+    entity_id: fan.pufi
+    data_template:
+      preset_mode: "{{ trigger.to_state.state }}"
+- id: pufi_mode_changed
+  alias: Pufi mode changed
+  trigger:
+    platform: state
+    entity_id: fan.pufi
+    attribute: preset_mode
+  condition: "{{ trigger.to_state.attributes.preset_mode in ['Auto', 'Silent', 'Favorite'] }}"
+  action:
+    service: input_select.select_option
+    entity_id: input_select.pufi_mode
+    data_template:
+      option: "{{ state_attr('fan.pufi', 'preset_mode') }}"

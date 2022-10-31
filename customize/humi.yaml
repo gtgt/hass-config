@@ -1,0 +1,20 @@
+fan.humi1:
+    friendly_name: "Humi 1"
+
+sensor.humi1_temperature:
+    friendly_name: "Hőmérséklet"
+
+sensor.humi1_humidity:
+    friendly_name: "Páratartalom"
+
+input_number.humi1_target_humidity:
+    friendly_name: "Cél páratartalom"
+
+switch.humi1_buzzer:
+    friendly_name: "Hang"
+
+switch.humi1_led:
+    friendly_name: "LED"
+
+input_select.humi1_mode:
+    friendly_name: "Mód"

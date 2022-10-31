@@ -1,0 +1,6 @@
+tv_remote:
+  name: tv_remote
+  options:
+    - study_tv
+  initial: study_tv
+  icon: mdi:remote-tv

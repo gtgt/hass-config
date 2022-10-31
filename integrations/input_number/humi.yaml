@@ -1,0 +1,6 @@
+humi1_target_humidity:
+  min: 40
+  max: 80
+  step: 1
+  unit_of_measurement: '%'
+  icon: 'mdi:water-check-outline'

@@ -1,0 +1,229 @@
+- path: energy
+  icon: mdi:flash
+  type: custom:grid-layout
+  layout:
+    grid-template-areas: |
+      "header"
+      "main"
+  cards:
+    - type: custom:badge-card
+      view_layout:
+        grid-area: header
+      badges:
+        - entity: sensor.energy_voltage1
+          name: Feszültség 1
+        - entity: sensor.energy_voltage2
+          name: Feszültség 2
+        - entity: sensor.energy_voltage3
+          name: Feszültség 3
+        #- entity: sensor.energy_freq1
+        #  name: Frekvencia 1
+        #- entity: sensor.energy_freq2
+        #  name: Frekvencia 2
+        #- entity: sensor.energy_freq3
+        #  name: Frekvencia 3
+        - entity: sensor.energy_pf1
+          name: Áramfaktor 1
+        - entity: sensor.energy_pf2
+          name: Áramfaktor 2
+        - entity: sensor.energy_pf3
+          name: Áramfaktor 3
+    - type: custom:layout-card
+      layout_type: custom:horizontal-layout
+      layout:
+        max_cols: 2
+      view_layout:
+        grid-area: main
+      cards:
+        - type: horizontal-stack
+          cards:
+            - type: sensor
+              entity: sensor.grid_power
+              graph: line
+              detail: 2
+              hours_to_show: 24
+            - type: sensor
+              entity: sensor.energy2_power
+              graph: line
+              detail: 2
+              hours_to_show: 24
+        - type: markdown
+          card_size: 1
+          content: |
+            ### Energy meter
+            {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_meter_power')|int %}
+            Balance: {{ states('sensor.energy_meter_power')|int }}W
+            Consumption: {{ states('sensor.solaredge_ac_power')|int - states('sensor.energy_meter_power')|int }}W
+            {% else %}
+            Balance: {{ -1 * states('sensor.energy_meter_power')|int }}W
+            Consumption: {{ states('sensor.energy_meter_power')|int + states('sensor.solaredge_ac_power')|int }}W
+            {% endif %}
+        - type: custom:power-flow-card
+          entities:
+            grid: sensor.grid_power
+            solar: sensor.solaredge_ac_power
+            #solar: sensor.solaredge_ac_energy_kwh
+            #grid: sensor.energy_meter_kwh
+          inverted_entities: battery, grid
+          #dashboard_link: /energy
+          watt_threshold: 10000
+          kw_decimals: 2
+        - type: vertical-stack
+          cards:
+            - type: entity-filter
+              show_empty: false
+              state_filter:
+                - operator: "!="
+                  value: unavailable
+              card:
+                type: glance
+              entities:
+                - type: sensor
+                  entity: sensor.energy_current1
+                  name: Áramerősség 1
+                - type: sensor
+                  entity: sensor.energy_current2
+                  name: Áramerősség 2
+                - type: sensor
+                  entity: sensor.energy_current3
+                  name: Áramerősség 3
+            - type: entity-filter
+              show_empty: false
+              state_filter:
+                - operator: "!="
+                  value: unavailable
+              card:
+                type: glance
+              entities:
+                - type: sensor
+                  entity: sensor.energy_power1
+                  name: P. teljesítmény 1
+                - type: sensor
+                  entity: sensor.energy_power2
+                  name: P. teljesítmény 2
+                - type: sensor
+                  entity: sensor.energy_power3
+                  name: P. teljesítmény 3
+            - type: entity-filter
+              show_empty: false
+              state_filter:
+                - operator: "!="
+                  value: unavailable
+              card:
+                type: glance
+              entities:
+                - type: sensor
+                  entity: sensor.energy_energy1
+                  name: Fogyasztás 1
+                - type: sensor
+                  entity: sensor.energy_energy2
+                  name: Fogyasztás 2
+                - type: sensor
+                  entity: sensor.energy_energy3
+                  name: Fogyasztás 3
+            - type: entity-filter
+              show_empty: false
+              state_filter:
+                - operator: "!="
+                  value: unavailable
+              card:
+                type: glance
+              entities:
+                - type: button
+                  entity: switch.energy_reset1
+                  name: Reset 1
+                  icon: mdi:numeric-0-circle-outline
+                - type: button
+                  entity: switch.energy_reset2
+                  name: Reset 2
+                  icon: mdi:numeric-0-circle-outline
+                - type: button
+                  entity: switch.energy_reset3
+                  name: Reset 3
+                  icon: mdi:numeric-0-circle-outline
+            - type: entity-filter
+              show_empty: false
+              state_filter:
+                - operator: "!="
+                  value: unavailable
+              card:
+                type: glance
+              entities:
+                - type: sensor
+                  entity: sensor.energy_meter_power
+                - type: sensor
+                  entity: sensor.energy_kwh
+                - type: button
+                  entity: switch.energy_restart
+                  name: Újraindítás
+                  icon: mdi:reload
+        - type: entities
+          title: Energia fogyasztás
+          entities:
+            - sensor.energy_kwh_hourly
+            - type: attribute
+              entity: sensor.energy_kwh_hourly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy_kwh_daily
+            - type: attribute
+              entity: sensor.energy_kwh_daily
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy_kwh_weekly
+            - type: attribute
+              entity: sensor.energy_kwh_weekly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy_kwh_monthly
+            - type: attribute
+              entity: sensor.energy_kwh_monthly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy_kwh_yearly
+            - type: attribute
+              entity: sensor.energy_kwh_yearly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+    #    - type: entities
+    #      title: Hálózati egyenleg
+    #      entities:
+    #        - sensor.grid_kwh_hourly
+    #        - sensor.grid_kwh_daily
+    #        - sensor.grid_kwh_weekly
+    #        - sensor.grid_kwh_monthly
+    #        - sensor.grid_kwh_monthly
+        - type: entities
+          title: Napenergia
+          entities:
+            - sensor.solaredge_ac_current
+            - sensor.solaredge_ac_power
+            - sensor.solaredge_ac_energy_kwh
+            - sensor.solar_production_hourly
+            - sensor.solar_production_daily
+            - sensor.solar_production_weekly
+            - sensor.solar_production_monthly
+        - type: entities
+          title: Ariston Aqua Velis
+          entities:
+            - sensor.aqua_ariston_energy_use_in_the_last_day
+            - sensor.aqua_ariston_energy_use_in_the_last_week
+            - sensor.aqua_ariston_energy_use_in_the_last_month
+            - sensor.aqua_ariston_energy_use_in_the_last_year
+        - type: entities
+          title: UPS
+          entities:
+          - sensor.eaton_status_data
+          - sensor.eaton_battery_charge
+          - sensor.eaton_battery_runtime
+          - sensor.eaton_load

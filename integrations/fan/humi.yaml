@@ -1,0 +1,5 @@
+- platform: xiaomi_miio_airpurifier
+  name: humi1
+  host: humi1.lan
+  token: !secret humi1_token
+  model: deerma.humidifier.jsq5

@@ -1,0 +1,12 @@
+sensor.mav_solymar_ujpest:
+  friendly_name: "Solymár -> Újpest"
+  icon: mdi:train-variant
+sensor.mav_pvar_ujpest:
+  friendly_name: "Pilisvörösvár -> Újpest"
+  icon: mdi:train-variant
+sensor.mav_pvar_nyugati:
+  friendly_name: "Pilisvörösvár -> Nyugati"
+  icon: mdi:train-variant
+sensor.mav_ujpest_solymar:
+  friendly_name: "Újpest -> Solymár"
+  icon: mdi:train

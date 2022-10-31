@@ -1,0 +1,4 @@
+#  - platform: openweathermap
+#    name: owm
+#    mode: hourly
+#    api_key: !secret owm_api_key

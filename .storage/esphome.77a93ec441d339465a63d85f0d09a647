@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.77a93ec441d339465a63d85f0d09a647",
+  "data": {
+    "device_info": {
+      "uses_password": true,
+      "name": "ac_sensor",
+      "mac_address": "4C:11:AE:0E:6C:A4",
+      "compilation_time": "Oct 28 2022, 19:23:44",
+      "model": "esp01_1m",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.10.1",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "bluetooth_proxy_version": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 7
+    },
+    "sensor": [
+      {
+        "object_id": "ac_sensor_up_time",
+        "key": 1440981250,
+        "name": "ac_sensor_up_time",
+        "unique_id": "4c11ae0e6ca4-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_sensor_wifi_signal",
+        "key": 782336989,
+        "name": "ac_sensor_wifi_signal",
+        "unique_id": "4c11ae0e6ca4-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_sensor_temp_ac_outlet",
+        "key": 792558390,
+        "name": "ac_sensor_temp_ac_outlet",
+        "unique_id": "dallas-9902099246320028",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_sensor_temp_ac_gas_tube",
+        "key": 1944633169,
+        "name": "ac_sensor_temp_ac_gas_tube",
+        "unique_id": "dallas-99020791775c3828",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "switch": [
+      {
+        "object_id": "ac_sensor_restart",
+        "key": 3007705818,
+        "name": "ac_sensor_restart",
+        "unique_id": "ac_sensorswitchac_sensor_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "ac_sensor_status",
+        "key": 2919039115,
+        "name": "ac_sensor_status",
+        "unique_id": "ac_sensorbinary_sensorac_sensor_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ]
+  }
+}

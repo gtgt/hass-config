@@ -1,0 +1,85 @@
+substitutions:
+  name: kitchen
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/d1_mini.yaml
+  fonts: !include _includes/fonts.yaml
+
+dallas:
+  - pin: D5 #GPIO14
+    update_interval: 20s
+
+sensor:
+  - platform: dallas
+    id: temp
+    name: ${name}_temp
+    address: 0x070316A279825328
+    filters:
+      - offset: 2
+  - platform: dht
+    model: AM2302
+    pin: D3 #GPIO0
+    temperature:
+      id: temp2
+      name: ${name}_temp2
+      filters:
+        - offset: 2
+    humidity:
+      id: humidity
+      name: ${name}_humidity
+    update_interval: 20s
+
+  - platform: homeassistant
+    id: target_temp
+    entity_id: input_number.ac_${name}_target_temp
+    internal: true
+
+binary_sensor:
+  - platform: homeassistant
+    id: valve_state
+    entity_id: switch.ac_relay_${name}
+    internal: true
+
+i2c:
+  sda: D2 #GPIO4
+  scl: D1 #GPIO5
+  scan: false
+
+display:
+  - platform: ssd1306_i2c
+    model: "SH1106 64x48"
+    reset_pin: D0
+    address: 0x3C
+    lambda: |-
+      // Print "${name}" in top center.
+      it.printf(32, 0, id(titlefont), TextAlign::TOP_CENTER, "${name}");
+
+      // Print time in HH:MM format
+      it.strftime(0, 40, id(clockfont), TextAlign::BASELINE_LEFT, "%H:%M", id(hatime).now());
+      
+
+      // Print valve state
+      if (id(valve_state).has_state()) {
+        it.printf(63, 0, id(titlefont), TextAlign::TOP_RIGHT , "%d", id(valve_state).state);
+      }
+
+      // Print inside temperature
+      if (id(temp).has_state()) {
+        it.printf(63, 10, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp).state);
+      }
+
+      // Print inside humidity
+      if (id(humidity).has_state()) {
+        it.printf(63, 20, id(valuefont), TextAlign::TOP_RIGHT , "%.1f%%", id(humidity).state);
+      }
+
+      // Print outside temperature
+      if (id(temp2).has_state()) {
+        it.printf(63, 30, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(temp2).state);
+      }
+
+      // Print target temperature (from homeassistant sensor)
+      if (id(target_temp).has_state()) {
+        it.printf(63, 40, id(valuefont), TextAlign::TOP_RIGHT , "%.1f°C", id(target_temp).state);
+      }

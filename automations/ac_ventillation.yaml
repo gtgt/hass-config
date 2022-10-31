@@ -1,0 +1,43 @@
+- id: ventillation_auto_on
+  alias: ventillation_auto_on
+  initial_state: true
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.io_temp_diff
+      above: -26
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: switch.ac_relay_ventillation
+        state: 'off'
+  action:
+    - service: switch.turn_on
+      data:
+       entity_id: switch.ac_relay_ventillation
+    - service: persistent_notification.create
+      data_template:
+        message: >
+          Ventillation turned ON, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!
+
+- id: ventillation_auto_off
+  alias: ventillation_auto_off
+  initial_state: true
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.io_temp_diff
+      below: -25.9
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: switch.ac_relay_ventillation
+        state: 'on'
+  action:
+    - service: switch.turn_off
+      data:
+       entity_id: switch.ac_relay_ventillation
+    - service: persistent_notification.create
+      data_template:
+        message: >
+          Ventillation turned OFF, since temp. difference is {{ states.sensor.io_temp_diff.state_with_unit }}!

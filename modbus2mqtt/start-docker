@@ -1,0 +1,11 @@
+#!/bin/bash
+D=$(dirname $0)
+docker build -t localhost/modbus2mqtt $D
+docker run --name modbus2mqtt --network=host --privileged \
+    -v /mnt/data/supervisor/homeassistant/modbus2mqtt:/modbus2mqtt \
+    --device /dev/ttyUSB0:/dev/ttyUSB0 \
+    --restart unless-stopped --detach \
+    localhost/modbus2mqtt
+
+#--detach --restart unless-stopped
+#--rm
