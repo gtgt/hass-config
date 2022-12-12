@@ -4,7 +4,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.io_temp_diff
-      above: -26
+      above: input_number.ventillation_temp_diff_treshold
   condition:
     condition: and
     conditions:
@@ -26,7 +26,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.io_temp_diff
-      below: -25.9
+      below: input_number.ventillation_temp_diff_treshold
   condition:
     condition: and
     conditions:

@@ -23,41 +23,41 @@ text_sensor:
   - platform: homeassistant
     internal: true
     id: meeting1
-    entity_id: calendar.gt_epam
+    entity_id: calendar.ics1
   - platform: homeassistant
     internal: true
     id: meeting1_title
-    entity_id: calendar.gt_epam
+    entity_id: calendar.ics1
     attribute: message
   - platform: homeassistant
     internal: true
     id: meeting1_start
-    entity_id: calendar.gt_epam
+    entity_id: calendar.ics1
     attribute: start_time
   - platform: homeassistant
     internal: true
     id: meeting1_end
-    entity_id: calendar.gt_epam
+    entity_id: calendar.ics1
     attribute: end_time
 
   - platform: homeassistant
     internal: true
     id: meeting2
-    entity_id: calendar.gt_oneinc
+    entity_id: calendar.ics2
   - platform: homeassistant
     internal: true
     id: meeting2_title
-    entity_id: calendar.gt_oneinc
+    entity_id: calendar.ics2
     attribute: message
   - platform: homeassistant
     internal: true
     id: meeting2_start
-    entity_id: calendar.gt_oneinc
+    entity_id: calendar.ics2
     attribute: start_time
   - platform: homeassistant
     internal: true
     id: meeting2_end
-    entity_id: calendar.gt_oneinc
+    entity_id: calendar.ics2
     attribute: end_time
 
 

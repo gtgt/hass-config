@@ -1,32 +1,49 @@
   climate.daikin_ac:
     friendly_name: "Daikin"
+    icon: mdi:air-conditioner
+  climate.ac:
+    friendly_name: "Klíma"
+    icon: mdi:air-conditioner
   climate.ac_study:
     friendly_name: "Dolgozó"
+    icon: mdi:thermostat-box
   climate.ac_childa:
     friendly_name: "Máté"
+    icon: mdi:thermostat-box
   climate.ac_childb:
     friendly_name: "Milán"
+    icon: mdi:thermostat-box
   climate.ac_bedroom:
     friendly_name: "Háló"
+    icon: mdi:thermostat-box
   climate.ac_kitchen:
     friendly_name: "Konyha"
+    icon: mdi:thermostat-box
   climate.ac_livingroom:
     friendly_name: "Nappali"
+    icon: mdi:thermostat-box
     
   switch.ac_relay_study:
     friendly_name: "Dolgozó klíma"
+    icon: mdi:valve
   switch.ac_relay_childa:
     friendly_name: "Máté klíma"
+    icon: mdi:valve
   switch.ac_relay_childb:
     friendly_name: "Milán klíma"
+    icon: mdi:valve
   switch.ac_relay_bedroom:
     friendly_name: "Háló klíma"
+    icon: mdi:valve
   switch.ac_relay_kitchen:
     friendly_name: "Konyha klíma"
+    icon: mdi:valve
   switch.ac_relay_livingroom:
     friendly_name: "Nappali klíma"
+    icon: mdi:valve
   switch.ac_relay_ventillation:
     friendly_name: "Szellőztetés"
+    icon: mdi:fan
     
   sensor.ac_relay_up_time:
     friendly_name: "AC relé bekapcsolva"
@@ -83,19 +100,41 @@
     friendly_name: "Terasz"
   sensor.ble_humidity_terrace:
     friendly_name: "Terasz"
+  sensor.ble_temperature_attic:
+    friendly_name: "Padlás"
+    icon: mdi:home-roof
+  sensor.ble_humidity_attic:
+    friendly_name: "Padlás"
     
   sensor.io_temp_diff:
     friendly_name: "Különbség"
+  sensor.ac_on:
+    friendly_name: "Klíma aktív"
+    icon: mdi:electric_switch
+  sensor.ac_on_percentage:
+    friendly_name: "Klíma aktív"
+    icon: mdi:percent-outline
 
   automation.ventillation_auto_off:
     friendly_name: "Szellőztetés ki ha túl hideg van odakint"
+    icon: mdi:fan-off
   automation.ventillation_auto_on:
     friendly_name: "Szellőztetés be ha már nincs túl hideg odakint"
+    icon: mdi:fan
+  input_number.ventillation_temp_diff_treshold:
+    friendly_name: "Szellőztetés ki/be 'túl hideg' szintje"
   automation.ac_auto_off:
     friendly_name: "Klíma kikapcsolás, ha minden szelep zárva"
+    icon: mdi:hvac-off
   automation.ac_auto_on:
     friendly_name: "Klíma bekapcsolás, ha legalább egy szelep nyitva"
+    icon: mdi:hvac
   automation.ac_thermostat_relay_init:
     friendly_name: "Szelepvezérlés (periódikus)"
+    icon: mdi:thermostat-auto
   automation.ac_thermostat_relay:
     friendly_name: "Szelepvezérlés (esemény)"
+    icon: mdi:thermostat-box-auto
+  automation.ac_mode:
+    friendly_name: "Klíma mód kapcsolók összekötése"
+    icon: mdi:vector-link

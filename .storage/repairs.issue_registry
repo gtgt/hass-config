@@ -24,6 +24,13 @@
         "domain": "places",
         "is_persistent": false,
         "issue_id": "deprecated_yaml"
+      },
+      {
+        "created": "2022-11-24T15:13:55.731371+00:00",
+        "dismissed_version": "2022.11.4",
+        "domain": "hassio",
+        "is_persistent": false,
+        "issue_id": "unsupported_system_software"
       }
     ]
   }

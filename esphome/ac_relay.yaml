@@ -10,10 +10,10 @@ esphome:
   board: d1_mini
   esp8266_restore_from_flash: true
   
-#status_led:
-#  pin:
-#    number: D4
-#    inverted: true
+status_led:
+  pin:
+    number: D4
+    inverted: true
 
 switch:
   - platform: gpio
@@ -21,39 +21,15 @@ switch:
     name: ${name}_bedroom
     icon: ${icon}
     pin:
-      number: D7 #13
+      number: D1 #5
       mode: OUTPUT
-      inverted: yes
+      inverted: no
   - platform: gpio
     id: r2
     name: ${name}_r2
     icon: ${icon}
     pin:
       number: D0 #16
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: childa
-    name: ${name}_childa
-    icon: ${icon}
-    pin:
-      number: D6 #12
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: childb
-    name: ${name}_childb
-    icon: ${icon}
-    pin:
-      number: D5 #14
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: study
-    name: ${name}_study
-    icon: ${icon}
-    pin:
-      number: D1 #5
       mode: OUTPUT
       inverted: yes
   - platform: gpio
@@ -65,11 +41,35 @@ switch:
       mode: OUTPUT
       inverted: yes
   - platform: gpio
+    id: childb
+    name: ${name}_childb
+    icon: ${icon}
+    pin:
+      number: D3
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: childa
+    name: ${name}_childa
+    icon: ${icon}
+    pin:
+      number: D5
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: study
+    name: ${name}_study
+    icon: ${icon}
+    pin:
+      number: D6
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
     id: kitchen
     name: ${name}_kitchen
     icon: ${icon}
     pin:
-      number: D3
+      number: D7
       mode: OUTPUT
       inverted: yes
   - platform: gpio
@@ -77,6 +77,6 @@ switch:
     name: ${name}_ventillation
     icon: "mdi:fan"
     pin:
-      number: D4
+      number: D8
       mode: OUTPUT
       inverted: no

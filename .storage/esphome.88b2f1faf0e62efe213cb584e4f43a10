@@ -6,11 +6,12 @@
     "device_info": {
       "uses_password": true,
       "name": "ac_relay",
-      "mac_address": "4C:11:AE:0D:1D:C9",
-      "compilation_time": "Oct 28 2022, 18:02:15",
+      "mac_address": "68:C6:3A:A4:80:F6",
+      "compilation_time": "Dec  6 2022, 04:01:18",
       "model": "d1_mini",
+      "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.10.1",
+      "esphome_version": "2022.11.4",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -21,16 +22,29 @@
       "major": 1,
       "minor": 7
     },
+    "binary_sensor": [
+      {
+        "object_id": "ac_relay_status",
+        "key": 2750351128,
+        "name": "ac_relay_status",
+        "unique_id": "ac_relaybinary_sensorac_relay_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "sensor": [
       {
         "object_id": "ac_relay_up_time",
         "key": 3869629663,
         "name": "ac_relay_up_time",
-        "unique_id": "4c11ae0d1dc9-uptime",
+        "unique_id": "68c63aa480f6-uptime",
         "disabled_by_default": false,
         "icon": "mdi:timelapse",
         "entity_category": 2,
-        "device_class": "",
+        "device_class": "duration",
         "unit_of_measurement": "s",
         "accuracy_decimals": 0,
         "force_update": false,
@@ -41,7 +55,7 @@
         "object_id": "ac_relay_wifi_signal",
         "key": 953222208,
         "name": "ac_relay_wifi_signal",
-        "unique_id": "4c11ae0d1dc9-wifisignal",
+        "unique_id": "68c63aa480f6-wifisignal",
         "disabled_by_default": false,
         "icon": "",
         "entity_category": 2,
@@ -89,10 +103,10 @@
         "device_class": ""
       },
       {
-        "object_id": "ac_relay_childa",
-        "key": 2378864261,
-        "name": "ac_relay_childa",
-        "unique_id": "ac_relayswitchac_relay_childa",
+        "object_id": "ac_relay_livingroom",
+        "key": 4005216720,
+        "name": "ac_relay_livingroom",
+        "unique_id": "ac_relayswitchac_relay_livingroom",
         "disabled_by_default": false,
         "icon": "mdi:air-conditioner",
         "entity_category": 0,
@@ -111,10 +125,10 @@
         "device_class": ""
       },
       {
-        "object_id": "ac_relay_study",
-        "key": 2350364817,
-        "name": "ac_relay_study",
-        "unique_id": "ac_relayswitchac_relay_study",
+        "object_id": "ac_relay_childa",
+        "key": 2378864261,
+        "name": "ac_relay_childa",
+        "unique_id": "ac_relayswitchac_relay_childa",
         "disabled_by_default": false,
         "icon": "mdi:air-conditioner",
         "entity_category": 0,
@@ -122,10 +136,10 @@
         "device_class": ""
       },
       {
-        "object_id": "ac_relay_livingroom",
-        "key": 4005216720,
-        "name": "ac_relay_livingroom",
-        "unique_id": "ac_relayswitchac_relay_livingroom",
+        "object_id": "ac_relay_study",
+        "key": 2350364817,
+        "name": "ac_relay_study",
+        "unique_id": "ac_relayswitchac_relay_study",
         "disabled_by_default": false,
         "icon": "mdi:air-conditioner",
         "entity_category": 0,
@@ -153,19 +167,6 @@
         "entity_category": 0,
         "assumed_state": false,
         "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "ac_relay_status",
-        "key": 2750351128,
-        "name": "ac_relay_status",
-        "unique_id": "ac_relaybinary_sensorac_relay_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
       }
     ]
   }

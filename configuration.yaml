@@ -5,10 +5,12 @@ homeassistant:
   name: Home
   latitude: !secret latitude
   longitude: !secret longitude
+  elevation: !secret elevation
   external_url: https://gt.home.kg
   internal_url: https://gt.home.kg
   unit_system: metric
   time_zone: Europe/Budapest
+  country: HU
   currency: HUF
   #media_dirs:
   #  media: "/media"
@@ -88,7 +90,7 @@ system_health:
 recorder:
   db_url: mysql://homeassistant:K9cdXAIVbG62TRna@core-mariadb/homeassistant?charset=utf8
   commit_interval: 2
-  purge_keep_days: 21
+  purge_keep_days: 30
   include:
     domains:
       - binary_sensor
@@ -116,6 +118,7 @@ recorder:
       - sensor.solaredge_ac_energy_kwh
       - sensor.solar_production_hourly
       - sensor.dishwasher
+      - sensor.ble_measured_power_ibeacon
   exclude:
     entity_globs:
       - switch.*_led

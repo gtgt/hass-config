@@ -9,6 +9,7 @@
       "mac_address": "DC:4F:22:14:FE:06",
       "compilation_time": "Oct 28 2022, 18:12:30",
       "model": "esp01_1m",
+      "manufacturer": "",
       "has_deep_sleep": false,
       "esphome_version": "2022.10.1",
       "project_name": "",
@@ -21,39 +22,6 @@
       "major": 1,
       "minor": 7
     },
-    "sensor": [
-      {
-        "object_id": "hg01wt_up_time",
-        "key": 3325659114,
-        "name": "hg01wt_up_time",
-        "unique_id": "dc4f2214fe06-uptime",
-        "disabled_by_default": false,
-        "icon": "mdi:timelapse",
-        "entity_category": 2,
-        "device_class": "",
-        "unit_of_measurement": "s",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 2,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "hg01wt_wifi_signal",
-        "key": 658019893,
-        "name": "hg01wt_wifi_signal",
-        "unique_id": "dc4f2214fe06-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "signal_strength",
-        "unit_of_measurement": "dBm",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      }
-    ],
-    "text_sensor": [],
     "switch": [
       {
         "object_id": "hg01wt_restart",
@@ -101,6 +69,39 @@
         "device_class": "",
         "is_status_binary_sensor": false
       }
-    ]
+    ],
+    "sensor": [
+      {
+        "object_id": "hg01wt_up_time",
+        "key": 3325659114,
+        "name": "hg01wt_up_time",
+        "unique_id": "dc4f2214fe06-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "hg01wt_wifi_signal",
+        "key": 658019893,
+        "name": "hg01wt_wifi_signal",
+        "unique_id": "dc4f2214fe06-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": []
   }
 }

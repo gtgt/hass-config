@@ -1,11 +1,13 @@
 {
-    "data": {
-        "done": [
-            "user",
-            "core_config",
-            "integration"
-        ]
-    },
-    "key": "onboarding",
-    "version": 3
+  "version": 4,
+  "minor_version": 1,
+  "key": "onboarding",
+  "data": {
+    "done": [
+      "user",
+      "core_config",
+      "integration",
+      "analytics"
+    ]
+  }
 }

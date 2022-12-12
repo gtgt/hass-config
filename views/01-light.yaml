@@ -49,46 +49,6 @@
               title: Mosogatógép
     - type: conditional
       conditions:
-      - entity: light.bedroom_rgb
-        state_not: 'unavailable'
-      card:
-        type: entities
-        title: 'Hálószoba RGB'
-        show_header_toggle: true
-        entities:
-          - type: custom:slider-entity-row
-            entity: light.bedroom_rgb
-            name: 'Fényerő'
-            hide_when_off: true
-            min: 11
-            step: 5
-            #tap_action:
-            #  action: toggle
-          - type: custom:rgb-light-card
-            entity: light.bedroom_rgb
-            hide_when_off: true
-            justify: right
-            colors:
-              - rgb_color: [255, 255, 255]
-                icon_color: '#FEFEFE'
-              - rgb_color: [0, 0, 255]
-                icon_color: '#0000FF'
-              - rgb_color: [51, 102, 204]
-                icon_color: '#3366CC'
-              - rgb_color: [0, 255, 255]
-                icon_color: '#00FFFF'
-              - rgb_color: [51, 204, 51]
-                icon_color: '#33CC33'
-              - rgb_color: [255, 0, 255]
-                icon_color: '#FF00FF'
-              - rgb_color: [255, 255, 64]
-                icon_color: '#FFFF40'
-              - rgb_color: [255, 126, 0]
-                icon_color: '#FF7E00'
-              - rgb_color: [255, 0, 0]
-                icon_color: '#D50000'
-    - type: conditional
-      conditions:
       - entity: light.dining_table
         state_not: 'unavailable'
       card:
@@ -201,6 +161,46 @@
         - entity: light.terrace_led
           tap_action:
             action: toggle
+    - type: conditional
+      conditions:
+      - entity: light.bedroom_rgb
+        state_not: 'unavailable'
+      card:
+        type: entities
+        title: 'Hálószoba RGB'
+        show_header_toggle: true
+        entities:
+          - type: custom:slider-entity-row
+            entity: light.bedroom_rgb
+            name: 'Fényerő'
+            hide_when_off: true
+            min: 11
+            step: 5
+            #tap_action:
+            #  action: toggle
+          - type: custom:rgb-light-card
+            entity: light.bedroom_rgb
+            hide_when_off: true
+            justify: right
+            colors:
+              - rgb_color: [255, 255, 255]
+                icon_color: '#FEFEFE'
+              - rgb_color: [0, 0, 255]
+                icon_color: '#0000FF'
+              - rgb_color: [51, 102, 204]
+                icon_color: '#3366CC'
+              - rgb_color: [0, 255, 255]
+                icon_color: '#00FFFF'
+              - rgb_color: [51, 204, 51]
+                icon_color: '#33CC33'
+              - rgb_color: [255, 0, 255]
+                icon_color: '#FF00FF'
+              - rgb_color: [255, 255, 64]
+                icon_color: '#FFFF40'
+              - rgb_color: [255, 126, 0]
+                icon_color: '#FF7E00'
+              - rgb_color: [255, 0, 0]
+                icon_color: '#D50000'
     - type: conditional
       conditions:
       - entity: light.magichome_rgb

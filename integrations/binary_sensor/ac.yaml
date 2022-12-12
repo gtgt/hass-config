@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+    ac_on:
+      value_template: "{{ states('climate.ac') not in ['off', 'fan_only'] }}"
+      icon_template: 'mdi:air-conditioner'

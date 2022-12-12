@@ -47,7 +47,8 @@
       "ThomasPrior/EthermineInfo",
       "spycle/microbot_push",
       "DavidMStraub/homeassistant-homeconnect",
-      "Sholofly/arrisdcx960"
+      "Sholofly/arrisdcx960",
+      "lukich48/hass_mqtt_template_switch"
     ],
     "renamed_repositories": {
       "xMrVizzy/Philips-AirPurifier": "kraineff/philips-airpurifier",
@@ -67,7 +68,8 @@
       "dmitry-k/yandex_smart_home": "dext0r/yandex_smart_home",
       "uvjustin/alarmdotcom": "pyalarmdotcom/alarmdotcom",
       "wernerhp/ha_integration_load_shedding": "wernerhp/ha.integration.load_shedding",
-      "TheLastProject/lovelace-valetudo-map-card": "Hypfer/lovelace-valetudo-map-card"
+      "TheLastProject/lovelace-valetudo-map-card": "Hypfer/lovelace-valetudo-map-card",
+      "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo"
     },
     "ignored_repositories": []
   }

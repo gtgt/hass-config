@@ -22,12 +22,12 @@
         - type: sensor
           entity: sensor.energy2_power
           graph: line
-          detail: 2
+          detail: 1
           hours_to_show: 24
         - type: sensor
           entity: sensor.ac_sensor_temp_ac_outlet
           graph: line
-          detail: 2
+          detail: 1
           hours_to_show: 24
     - type: horizontal-stack
       cards:
@@ -48,7 +48,8 @@
       sensors:
         - entity: sensor.ac_sensor_temp_ac_outlet
         - entity: sensor.ac_sensor_temp_ac_gas_tube
-        - entity: sensor.attic_temp
+        - entity: sensor.ble_temperature_attic
+        - entity: sensor.ble_humidity_attic
         #- entity: sensor.ble_temperature_terrace
         #- entity: sensor.ble_humidity_terrace
         #- entity: sensor.io_temp_diff
@@ -106,6 +107,7 @@
           secondary_info: last-triggered
         - entity: automation.ventillation_auto_on
           secondary_info: last-triggered
+        - entity: input_number.ventillation_temp_diff_treshold
         - entity: automation.ac_mode
           secondary_info: last-triggered
     - type: entities
@@ -124,15 +126,17 @@
         - type: entities
           show_header_toggle: false
           entities:
-           - type: attribute
-             entity: fan.ac
-             attribute: speed
-             prefix: 'Sebesség: '
-             name: 'Ventillátor'
-           - type: attribute
-             entity: climate.ac
-             attribute: hvac_action
-             name: 'Állapot'
+          - entity: sensor.ac_on_percentage
+            name: 'Aktív'
+          - type: attribute
+            entity: climate.ac
+            attribute: hvac_action
+            name: 'Tevékenység'
+          - type: attribute
+            entity: fan.ac
+            attribute: speed
+            prefix: 'Seb.: '
+            name: 'Ventillátor'
         - type: glance
           columns: 1
           entities:

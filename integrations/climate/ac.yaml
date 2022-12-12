@@ -13,6 +13,6 @@
     cooler: switch.ac_relay_kitchen
     actual_temp_sensor: sensor.ble_temperature_kitchen
     target_temp_sensor: input_number.ac_kitchen_target_temp
-    min_temp: 19
+    min_temp: 21
     max_temp: 27
     tolerance: 0

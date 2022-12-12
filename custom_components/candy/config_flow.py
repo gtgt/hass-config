@@ -41,13 +41,13 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         errors = {}
         try:
-            async with async_timeout.timeout(10):
+            async with async_timeout.timeout(40):
                 encryption_type, key = await detect_encryption(
                     session=async_get_clientsession(self.hass),
                     device_ip=user_input[CONF_IP_ADDRESS]
                 )
-        except Exception as e:  # pylint: disable=broad-except
-            _LOGGER.exception(e)
+        except Exception as err:  # pylint: disable=broad-except
+            _LOGGER.exception(err)
             errors["base"] = "detect_encryption"
         else:
             if encryption_type == Encryption.ENCRYPTION:

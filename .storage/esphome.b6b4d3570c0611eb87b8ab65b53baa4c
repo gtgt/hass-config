@@ -9,6 +9,7 @@
       "mac_address": "40:F5:20:C8:2A:31",
       "compilation_time": "Aug 17 2022, 23:57:15",
       "model": "esp8285",
+      "manufacturer": "",
       "has_deep_sleep": false,
       "esphome_version": "2022.8.0",
       "project_name": "",
@@ -21,6 +22,32 @@
       "major": 1,
       "minor": 6
     },
+    "switch": [
+      {
+        "object_id": "terrace_led_restart",
+        "key": 2539114339,
+        "name": "terrace_led_restart",
+        "unique_id": "terrace_ledswitchterrace_led_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "terrace_led_status",
+        "key": 2222982072,
+        "name": "terrace_led_status",
+        "unique_id": "terrace_ledbinary_sensorterrace_led_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "sensor": [
       {
         "object_id": "terrace_led_up_time",
@@ -73,32 +100,6 @@
         "legacy_supports_rgb": false,
         "legacy_supports_white_value": false,
         "legacy_supports_color_temperature": false
-      }
-    ],
-    "switch": [
-      {
-        "object_id": "terrace_led_restart",
-        "key": 2539114339,
-        "name": "terrace_led_restart",
-        "unique_id": "terrace_ledswitchterrace_led_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "terrace_led_status",
-        "key": 2222982072,
-        "name": "terrace_led_status",
-        "unique_id": "terrace_ledbinary_sensorterrace_led_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
       }
     ]
   }

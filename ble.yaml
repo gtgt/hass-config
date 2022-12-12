@@ -1,0 +1,40 @@
+ble_monitor:
+  bt_interface: 'B4:69:21:AA:7B:74'
+  bt_auto_restart: True
+  active_scan: True
+  discovery: True
+  period: 60
+  use_median: False
+  decimals: 2
+  log_spikes: False
+  restore_state: True
+  report_unknown: False
+  devices:
+    # sensor
+    - mac: 'A4:C1:38:10:D1:70'
+      name: 'study'
+      encryption_key: '986a222be56cf089587ba88b9aeaf8ee'
+      temperature_unit: C
+    - mac: 'A4:C1:38:78:F3:7C'
+      name: 'kitchen'
+      encryption_key: '8705a559d0365cd4c05c747b6105590d'
+      temperature_unit: C
+    - mac: 'A4:C1:38:99:3C:6E'
+      name: 'terrace'
+      encryption_key: '224b5d6b95520a37b5d8077ead093b07'
+      temperature_unit: C
+    - mac: 'A4:C1:38:21:7F:43'
+      name: 'attic'
+      encryption_key: '02d75ea35a33cf1d007ef824db000bb9'
+      temperature_unit: C
+    - mac: '88:0F:10:88:A9:AE'
+      name: 'mi_scale'
+    - mac: 'F8:24:41:C9:01:42'
+      name: 'dining_light_dimmer'
+
+    # device tracker
+    - uuid: '42657374-5761-7465-7254-6563686E6F00'
+      name: 'ibeacon'
+      track_device: True
+      tracker_scan_interval: 20
+      consider_home: 180

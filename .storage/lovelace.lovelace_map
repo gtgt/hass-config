@@ -27,7 +27,10 @@
                 }
               ],
               "dark_mode": true,
-              "hours_to_show": 12
+              "hours_to_show": 12,
+              "card_mod": {
+                "style": "ha-card {\n  min-height: 450px;\n  min-width: 450px;\n}\n"
+              }
             },
             {
               "type": "entities",

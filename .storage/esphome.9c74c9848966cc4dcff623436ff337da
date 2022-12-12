@@ -9,6 +9,7 @@
       "mac_address": "DC:4F:22:74:9A:47",
       "compilation_time": "Nov  8 2020, 17:33:34",
       "model": "PLATFORMIO_ESP01_1M",
+      "manufacturer": "",
       "has_deep_sleep": false,
       "esphome_version": "1.16.0-dev",
       "project_name": "",
@@ -21,6 +22,30 @@
       "major": 1,
       "minor": 3
     },
+    "switch": [
+      {
+        "object_id": "energy2_restart",
+        "key": 4116582893,
+        "name": "energy2_restart",
+        "unique_id": "energy2switchenergy2_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy2_reset",
+        "key": 1568442073,
+        "name": "energy2_reset",
+        "unique_id": "energy2switchenergy2_reset",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "sensor": [
       {
         "object_id": "energy2_temp",
@@ -143,30 +168,6 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": [],
-    "switch": [
-      {
-        "object_id": "energy2_restart",
-        "key": 4116582893,
-        "name": "energy2_restart",
-        "unique_id": "energy2switchenergy2_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy2_reset",
-        "key": 1568442073,
-        "name": "energy2_reset",
-        "unique_id": "energy2switchenergy2_reset",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ]
+    "text_sensor": []
   }
 }

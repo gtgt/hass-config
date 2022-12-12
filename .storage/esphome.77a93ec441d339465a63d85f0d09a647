@@ -7,10 +7,11 @@
       "uses_password": true,
       "name": "ac_sensor",
       "mac_address": "4C:11:AE:0E:6C:A4",
-      "compilation_time": "Oct 28 2022, 19:23:44",
+      "compilation_time": "Dec  6 2022, 04:10:48",
       "model": "esp01_1m",
+      "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.10.1",
+      "esphome_version": "2022.11.4",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -21,6 +22,19 @@
       "major": 1,
       "minor": 7
     },
+    "binary_sensor": [
+      {
+        "object_id": "ac_sensor_status",
+        "key": 2919039115,
+        "name": "ac_sensor_status",
+        "unique_id": "ac_sensorbinary_sensorac_sensor_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "sensor": [
       {
         "object_id": "ac_sensor_up_time",
@@ -30,7 +44,7 @@
         "disabled_by_default": false,
         "icon": "mdi:timelapse",
         "entity_category": 2,
-        "device_class": "",
+        "device_class": "duration",
         "unit_of_measurement": "s",
         "accuracy_decimals": 0,
         "force_update": false,
@@ -95,19 +109,6 @@
         "entity_category": 1,
         "assumed_state": false,
         "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "ac_sensor_status",
-        "key": 2919039115,
-        "name": "ac_sensor_status",
-        "unique_id": "ac_sensorbinary_sensorac_sensor_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
       }
     ]
   }
