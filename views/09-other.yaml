@@ -81,7 +81,7 @@
         styles:
           name:
             - font-size: 90%
-        name: "Tűzgyújtási tilalom"
+        name: "Tűzgyújtás"
         show_name: true
         entity: sensor.fire_permission
         color_type: icon
@@ -90,10 +90,10 @@
             color: green
           - value: 1
             color: red
-    - type: entities
-      title: LED
-      entities:
-        - switch.red_led
-        - switch.yellow_led
-        - switch.green_led
+#    - type: entities
+#      title: LED
+#      entities:
+#        - switch.red_led
+#        - switch.yellow_led
+#        - switch.green_led
         

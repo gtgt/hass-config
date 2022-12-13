@@ -121,6 +121,12 @@
         - switch.ac_relay_kitchen
         - switch.ac_relay_livingroom
         - switch.ac_relay_ventillation
+    - type: statistic
+      entity: sensor.energy2_power
+      period:
+        calendar:
+          period: month
+      stat_type: mean
     - type: horizontal-stack
       cards:
         - type: entities

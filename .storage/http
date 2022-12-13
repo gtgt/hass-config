@@ -13,9 +13,9 @@
       "192.168.1.5",
       "192.168.1.1"
     ],
-    "ssl_profile": "modern",
     "cors_allowed_origins": [
       "https://cast.home-assistant.io"
-    ]
+    ],
+    "ssl_profile": "modern"
   }
 }

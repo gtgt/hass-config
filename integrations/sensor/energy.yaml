@@ -27,3 +27,7 @@
           {% else %}
             {{ -1 * states('sensor.energy_power')|int }}
           {% endif %}
+
+      grid_kwh:
+        unit_of_measurement: kWh
+        value_template: "{{ states('sensor.solaredge_ac_energy_kwh')|float - states('sensor.energy_kwh')|float }}"

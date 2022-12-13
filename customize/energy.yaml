@@ -48,19 +48,14 @@ sensor.grid_kwh:
   icon: mdi:scale
 sensor.grid_kwh_hourly:
   friendly_name: "Hálózat egyenleg ebben az órában"
-  icon: mdi:scale
 sensor.grid_kwh_daily:
   friendly_name: "Hálózat egyenleg a mai napon"
-  icon: mdi:scale
 sensor.grid_kwh_weekly:
   friendly_name: "Hálózat egyenleg ezen a héten"
-  icon: mdi:scale
 sensor.grid_kwh_monthly:
   friendly_name: "Hálózat egyenleg ebben a hónapban"
-  icon: mdi:scale
 sensor.grid_kwh_yearly:
   friendly_name: "Hálózat egyenleg ebben az évben"
-  icon: mdi:scale
 
 sensor.energy2_power:
   friendly_name: "Klíma fogyasztás"

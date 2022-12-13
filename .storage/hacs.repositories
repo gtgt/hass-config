@@ -18,11 +18,11 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 79052,
-      "etag_repository": "W/\"80aab1f4f2e49d73afad0dd82e2485a70afd47c2f64db2b3f5198e2b0b9f5898\"",
+      "downloads": 81355,
+      "etag_repository": "W/\"09a9fd2c08890d78d59adc98546de0da710826171c8ef839ae35228343e4f740\"",
       "full_name": "hacs/integration",
       "last_updated": "2022-12-12T06:00:44Z",
-      "stargazers_count": 3140,
+      "stargazers_count": 3144,
       "topics": [
         "community",
         "package-manager"
@@ -45,7 +45,7 @@
       "pushed_at": "2022-12-12T06:00:44",
       "releases": true,
       "version_installed": "1.28.4",
-      "last_fetched": 1670878538.781235
+      "last_fetched": 1670929019.472554
     },
     "200081161": {
       "repository_manifest": {},
@@ -199,7 +199,7 @@
       "category": "plugin",
       "description": "Minimalistic humidifier card for Home Assistant Lovelace UI",
       "domain": "",
-      "downloads": 2784,
+      "downloads": 2788,
       "etag_repository": "W/\"cbeac0a1dd5f6fd160a21e1ae8668fe1aebf6049f18cb468d1bc8c927c460baf\"",
       "full_name": "artem-sedykh/mini-humidifier",
       "last_updated": "2022-12-05T18:18:09Z",
@@ -225,7 +225,7 @@
       "pushed_at": "2022-12-05T18:18:09",
       "releases": true,
       "version_installed": "v3.1.1",
-      "last_fetched": 1670878538.621846
+      "last_fetched": 1670929018.557794
     },
     "207292725": {
       "repository_manifest": {
@@ -505,7 +505,7 @@
       "category": "plugin",
       "description": "Customizable Animated Bar card for Home Assistant Lovelace",
       "domain": "",
-      "downloads": 46501,
+      "downloads": 46529,
       "etag_repository": "W/\"61e9beadfa8639ebeebce58fb31f9bb0fd5128a8d3d54eb7b93b523cd04680e2\"",
       "full_name": "custom-cards/bar-card",
       "last_updated": "2022-12-09T19:05:51Z",
@@ -526,7 +526,7 @@
       "pushed_at": "2022-12-09T19:05:51",
       "releases": true,
       "version_installed": "3.2.0",
-      "last_fetched": 1670878538.614645
+      "last_fetched": 1670929019.286311
     },
     "139634406": {
       "repository_manifest": {
@@ -570,7 +570,7 @@
       "category": "plugin",
       "description": "❇️ Lovelace button-card for home assistant",
       "domain": "",
-      "downloads": 154160,
+      "downloads": 154313,
       "etag_repository": "W/\"dccb9b60a3a45f573dce9986c756e8498317eba771bd84081120e74011557f31\"",
       "full_name": "custom-cards/button-card",
       "last_updated": "2022-12-11T00:34:44Z",
@@ -591,7 +591,7 @@
       "pushed_at": "2022-12-11T00:34:44",
       "releases": true,
       "version_installed": "v3.4.2",
-      "last_fetched": 1670878538.538957
+      "last_fetched": 1670929019.236622
     },
     "142545838": {
       "repository_manifest": {
@@ -4719,7 +4719,7 @@
       "last_commit": "5353628",
       "last_version": "10.8.0",
       "manifest_name": "Passive BLE monitor",
-      "open_issues": 50,
+      "open_issues": 49,
       "published_tags": [
         "10.8.0",
         "10.6.1",
@@ -4730,7 +4730,7 @@
       "pushed_at": "2022-12-12T07:31:53",
       "releases": true,
       "version_installed": "10.6.1",
-      "last_fetched": 1670878538.43324
+      "last_fetched": 1670929019.020801
     },
     "139892990": {
       "repository_manifest": {
@@ -10526,7 +10526,7 @@
       "pushed_at": "2022-12-12T15:15:01",
       "releases": true,
       "version_installed": "v4.1.1",
-      "last_fetched": 1670878538.923119
+      "last_fetched": 1670929019.00132
     },
     "149443194": {
       "repository_manifest": {
@@ -11211,7 +11211,7 @@
       "pushed_at": "2022-12-12T08:38:01",
       "releases": true,
       "version_installed": "2022.8.0.0",
-      "last_fetched": 1670878538.741141
+      "last_fetched": 1670929019.689492
     },
     "121934877": {
       "repository_manifest": {
@@ -13502,7 +13502,7 @@
       "pushed_at": "2022-11-28T13:03:16",
       "releases": true,
       "version_installed": "v2.3.1",
-      "last_fetched": 1670878538.755494
+      "last_fetched": 1670929019.786774
     },
     "356725611": {
       "repository_manifest": {
@@ -14682,7 +14682,7 @@
       "category": "plugin",
       "description": "Your Home Digital Twin: aka floor3d-card. Visualize Home Assistant state and perform actions using objects in a 3D home model based on Three.js.",
       "domain": "",
-      "downloads": 2618,
+      "downloads": 2624,
       "etag_repository": "W/\"d79e22e98343e89c4fa6fce6159287237a7bcde906bbd1effa69fd67f9517ee4\"",
       "full_name": "adizanni/floor3d-card",
       "last_updated": "2022-12-11T21:53:23Z",
@@ -14708,7 +14708,7 @@
       "pushed_at": "2022-12-11T21:53:23",
       "releases": true,
       "version_installed": "v1.5.0",
-      "last_fetched": 1670878538.810868
+      "last_fetched": 1670929019.885889
     },
     "373832981": {
       "repository_manifest": {
@@ -14769,7 +14769,7 @@
       },
       "category": "plugin",
       "description": "This card provides a user-friendly way to fully control Xiaomi, Valetudo, Neato and Roomba (+ possibly other) vacuums in Home Assistant.",
-      "downloads": 22607,
+      "downloads": 22698,
       "etag_repository": "W/\"23252592dccdafdf25a5c92c9036ecf3e7b9fa7e2931983a471a39af70127abd\"",
       "full_name": "PiotrMachowski/lovelace-xiaomi-vacuum-map-card",
       "last_updated": "2022-12-11T15:41:55Z",
@@ -14802,7 +14802,7 @@
       "pushed_at": "2022-12-11T15:41:55",
       "releases": true,
       "version_installed": "v2.1.2",
-      "last_fetched": 1670878538.772572
+      "last_fetched": 1670929020.327951
     },
     "309056232": {
       "repository_manifest": {
@@ -14834,7 +14834,7 @@
       "pushed_at": "2022-05-05T13:16:32",
       "releases": true,
       "version_installed": "v2.2",
-      "last_fetched": 1670878540.265445
+      "last_fetched": 1670929022.187141
     },
     "131915802": {
       "repository_manifest": {
@@ -14875,7 +14875,7 @@
       "pushed_at": "2022-12-01T00:06:26",
       "releases": true,
       "version_installed": "v2.3",
-      "last_fetched": 1670878540.14821
+      "last_fetched": 1670929024.368629
     },
     "160042309": {
       "repository_manifest": {
@@ -14920,7 +14920,7 @@
       "pushed_at": "2022-06-19T17:48:35",
       "releases": true,
       "version_installed": "v1.12",
-      "last_fetched": 1670878540.104538
+      "last_fetched": 1670929024.189685
     },
     "147764937": {
       "repository_manifest": {
@@ -14950,10 +14950,10 @@
       },
       "category": "plugin",
       "description": "Thermostat Lovelace card",
-      "etag_repository": "W/\"b26a1915aa8aa4f5d9a66fd44f6d3bb4571e1c1d2b8a697f0cfdbe9830d2d4df\"",
+      "etag_repository": "W/\"75dce8c5bc1869e8646fd6344062c65d58652552ab80592441fbfca9abfe0ca3\"",
       "full_name": "fineemb/lovelace-thermostat-card",
       "last_updated": "2022-06-02T18:36:47Z",
-      "stargazers_count": 87,
+      "stargazers_count": 88,
       "default_branch": "master",
       "installed_commit": "f95cd32",
       "installed": true,
@@ -14970,7 +14970,7 @@
       "pushed_at": "2022-06-02T18:36:47",
       "releases": true,
       "version_installed": "v1.3.0",
-      "last_fetched": 1670878541.599654
+      "last_fetched": 1670929022.584509
     },
     "299753146": {
       "repository_manifest": {
@@ -14985,7 +14985,7 @@
       "category": "integration",
       "description": "This custom integration provides a way to present a live view of a map for Xiaomi (Roborock/Viomi/Roidmi/Dreame) vacuums without a need for rooting.",
       "domain": "xiaomi_cloud_map_extractor",
-      "downloads": 29286,
+      "downloads": 29345,
       "etag_repository": "W/\"497dfc703c9cd26586243e3e1aaa5ab0a674c51d5d5c4fc52cb207311feea066\"",
       "full_name": "PiotrMachowski/Home-Assistant-custom-components-Xiaomi-Cloud-Map-Extractor",
       "last_updated": "2022-11-04T13:55:15Z",
@@ -15021,7 +15021,7 @@
       "pushed_at": "2022-11-04T13:55:15",
       "releases": true,
       "version_installed": "v2.2.0",
-      "last_fetched": 1670878540.305131
+      "last_fetched": 1670929027.023607
     },
     "236146080": {
       "repository_manifest": {
@@ -15062,7 +15062,7 @@
       "pushed_at": "2022-12-08T09:57:06",
       "releases": true,
       "version_installed": "V1.7.1",
-      "last_fetched": 1670878540.171454
+      "last_fetched": 1670929023.218924
     },
     "192732636": {
       "repository_manifest": {},
@@ -15088,7 +15088,7 @@
       "pushed_at": "2022-08-08T06:35:42",
       "releases": true,
       "version_installed": "v1.5.0",
-      "last_fetched": 1670878541.271918
+      "last_fetched": 1670929023.970217
     },
     "281453608": {
       "repository_manifest": {
@@ -15109,7 +15109,7 @@
       "open_issues": 5,
       "pushed_at": "2022-05-28T13:41:58",
       "version_installed": null,
-      "last_fetched": 1670878541.55288
+      "last_fetched": 1670929024.25116
     },
     "156434866": {
       "repository_manifest": {
@@ -15139,7 +15139,7 @@
       "pushed_at": "2022-10-14T01:05:55",
       "releases": true,
       "version_installed": "2.4.4",
-      "last_fetched": 1670878542.740614
+      "last_fetched": 1670929024.525929
     },
     "184333163": {
       "repository_manifest": {
@@ -15169,7 +15169,7 @@
       "pushed_at": "2022-12-05T12:27:57",
       "releases": true,
       "version_installed": "0.0.17",
-      "last_fetched": 1670878540.515168
+      "last_fetched": 1670929023.519641
     },
     "271398374": {
       "repository_manifest": {
@@ -15184,7 +15184,7 @@
       "category": "integration",
       "description": "This custom component allows you to save current state of any entity and use its data later to restore it.",
       "domain": "saver",
-      "downloads": 1197,
+      "downloads": 1198,
       "etag_repository": "W/\"97f66a8d449956577c1b7bda09b1eb5e4cf6c66337fbc4ec1b19fe36306ab25f\"",
       "full_name": "PiotrMachowski/Home-Assistant-custom-components-Saver",
       "last_updated": "2022-08-15T02:30:14Z",
@@ -15214,7 +15214,7 @@
       "pushed_at": "2022-08-15T02:30:14",
       "releases": true,
       "version_installed": "v1.1.3",
-      "last_fetched": 1670878541.49435
+      "last_fetched": 1670929025.50598
     },
     "158654878": {
       "repository_manifest": {
@@ -15224,11 +15224,11 @@
       },
       "category": "plugin",
       "description": "A different take on the thermostat card for Home Assistant ♨️",
-      "downloads": 25708,
-      "etag_repository": "W/\"fd96fe04e01285028b5a54be9b35663c7bd1c230115da1b0fe8c3dc2dd87e0a8\"",
+      "downloads": 25756,
+      "etag_repository": "W/\"c5c884e28d2d3150ad293b374a2848279a3bf12b43700d2f10dde01fc5ade8ce\"",
       "full_name": "nervetattoo/simple-thermostat",
       "last_updated": "2022-12-11T11:33:04Z",
-      "stargazers_count": 601,
+      "stargazers_count": 602,
       "topics": [
         "polymer-3"
       ],
@@ -15248,7 +15248,7 @@
       "pushed_at": "2022-12-11T11:33:04",
       "releases": true,
       "version_installed": "v2.5.0",
-      "last_fetched": 1670878541.7926
+      "last_fetched": 1670929026.874031
     },
     "190927524": {
       "repository_manifest": {
@@ -15277,7 +15277,7 @@
       "pushed_at": "2022-12-06T00:52:16",
       "releases": true,
       "version_installed": "3.2.0",
-      "last_fetched": 1670878540.21395
+      "last_fetched": 1670929022.478125
     },
     "280845405": {
       "repository_manifest": {
@@ -15316,7 +15316,7 @@
       "pushed_at": "2022-07-13T13:44:57",
       "releases": true,
       "version_installed": "1.0.50",
-      "last_fetched": 1670878541.475762
+      "last_fetched": 1670929025.972987
     },
     "231674882": {
       "repository_manifest": {
@@ -15347,7 +15347,7 @@
       "pushed_at": "2022-12-10T14:47:43",
       "releases": true,
       "version_installed": "1.3.0",
-      "last_fetched": 1670878541.84531
+      "last_fetched": 1670929027.078688
     },
     "180229356": {
       "repository_manifest": {
@@ -15357,7 +15357,7 @@
       },
       "category": "plugin",
       "description": "Simple card for various robot vacuums in Home Assistant's Lovelace UI",
-      "downloads": 13265,
+      "downloads": 13276,
       "etag_repository": "W/\"a3544976f9c30816c481e74e1aa5fb2f957e90b6efa8f7ca578ac93352624e01\"",
       "full_name": "benct/lovelace-xiaomi-vacuum-card",
       "last_updated": "2022-07-09T12:55:39Z",
@@ -15386,7 +15386,7 @@
       "pushed_at": "2022-07-09T12:55:39",
       "releases": true,
       "version_installed": "v4.5.0",
-      "last_fetched": 1670878541.578162
+      "last_fetched": 1670929027.099374
     },
     "274738925": {
       "repository_manifest": {
@@ -15397,7 +15397,7 @@
       "category": "plugin",
       "description": "Air Purifier card for Home Assistant Lovelace UI",
       "domain": "",
-      "downloads": 5559,
+      "downloads": 5570,
       "etag_repository": "W/\"e921ebb506c04e1efedb405490ddbd7a54b0125161ff27a6d059eba2d280ad0b\"",
       "full_name": "denysdovhan/purifier-card",
       "last_updated": "2022-12-01T16:02:42Z",
@@ -15423,7 +15423,7 @@
       "pushed_at": "2022-12-01T16:02:42",
       "releases": true,
       "version_installed": "v2.2.3",
-      "last_fetched": 1670878543.025848
+      "last_fetched": 1670929027.856039
     },
     "215327195": {
       "repository_manifest": {
@@ -15434,7 +15434,7 @@
       },
       "category": "plugin",
       "description": "💡 A Lovelace custom card for RGB lights",
-      "downloads": 16420,
+      "downloads": 16436,
       "etag_repository": "W/\"049a8ee957ca4eac180f74435875b5e25ec680c6cd32e08627d57475aa720b9a\"",
       "full_name": "bokub/rgb-light-card",
       "last_updated": "2022-10-26T16:00:59Z",
@@ -15459,7 +15459,7 @@
       "pushed_at": "2022-10-26T16:00:59",
       "releases": true,
       "version_installed": "1.11.0",
-      "last_fetched": 1670878542.995393
+      "last_fetched": 1670929028.324801
     },
     "220671784": {
       "repository_manifest": {},
@@ -15476,7 +15476,7 @@
       "manifest_name": "Programmable Thermostat",
       "pushed_at": "2022-10-28T19:36:57",
       "version_installed": null,
-      "last_fetched": 1670878542.348801
+      "last_fetched": 1670929026.719489
     },
     "244872232": {
       "repository_manifest": {
@@ -15485,7 +15485,7 @@
       "category": "plugin",
       "description": "Adds highly configurable buttons that use actions and per-state styling.",
       "domain": "",
-      "downloads": 14499,
+      "downloads": 14530,
       "etag_repository": "W/\"35ed0c139f73f5e8b4ffa6e52cecc7312e33dc44a81cef64630c2c8cab0ddcf9\"",
       "full_name": "jcwillox/lovelace-paper-buttons-row",
       "last_updated": "2022-12-11T13:51:36Z",
@@ -15512,7 +15512,7 @@
       "pushed_at": "2022-12-11T13:51:36",
       "releases": true,
       "version_installed": "1.0.1",
-      "last_fetched": 1670878543.257242
+      "last_fetched": 1670929026.650294
     },
     "144899700": {
       "repository_manifest": {
@@ -15541,16 +15541,16 @@
       "pushed_at": "2022-08-13T19:01:37",
       "releases": true,
       "version_installed": "17.2.1",
-      "last_fetched": 1670878543.667692
+      "last_fetched": 1670929028.484212
     },
     "199546187": {
       "repository_manifest": {},
       "category": "plugin",
       "description": "This is a companion card for Google Keep sensor. It displays notes downloaded by integration in a friendly way, similar to Google Keep app.",
-      "etag_repository": "W/\"8be539d0df00945be316c73e175c2b90ef15831335da520780716d8ffa6056e5\"",
+      "etag_repository": "W/\"72005ffd8faa5a9011716ae834afc32c5830a72bd703b5c698cb2fe4b90eee7a\"",
       "full_name": "PiotrMachowski/lovelace-google-keep-card",
       "last_updated": "2022-08-15T02:30:18Z",
-      "stargazers_count": 43,
+      "stargazers_count": 44,
       "topics": [
         "lovelace-card"
       ],
@@ -15569,7 +15569,7 @@
       "pushed_at": "2022-08-15T02:30:18",
       "releases": true,
       "version_installed": "v1.2.0",
-      "last_fetched": 1670878543.759634
+      "last_fetched": 1670929028.37683
     },
     "376904517": {
       "repository_manifest": {
@@ -17430,7 +17430,7 @@
       "domain": "candy",
       "etag_repository": "W/\"12fc84828d2238a10b41f2cb3f86bff526189b7662788e187baa6dc7187bbde4\"",
       "full_name": "ofalvai/home-assistant-candy",
-      "last_updated": "2022-12-08T23:05:53Z",
+      "last_updated": "2022-12-12T23:11:38Z",
       "stargazers_count": 59,
       "topics": [
         "home-assistant-component",
@@ -17451,11 +17451,11 @@
         "0.6.2",
         "0.6.1"
       ],
-      "pushed_at": "2022-12-08T23:05:53",
+      "pushed_at": "2022-12-12T23:11:38",
       "releases": true,
       "show_beta": true,
       "version_installed": "0.8.0",
-      "last_fetched": 1670878542.849876
+      "last_fetched": 1670929027.365347
     },
     "410667735": {
       "repository_manifest": {
@@ -19179,7 +19179,7 @@
       "category": "integration",
       "description": "UI-Lovelace-Minimalist is a \"theme\" for HomeAssistant",
       "domain": "ui_lovelace_minimalist",
-      "downloads": 11581,
+      "downloads": 11672,
       "etag_repository": "W/\"20c426895889edda620dc3acf555c32ee4f7c6fae20b3255c44c617b806aabea\"",
       "full_name": "UI-Lovelace-Minimalist/UI",
       "last_updated": "2022-12-08T00:17:09Z",
@@ -19202,7 +19202,7 @@
       "pushed_at": "2022-12-08T00:17:09",
       "releases": true,
       "version_installed": "v1.1.6",
-      "last_fetched": 1670878543.274339
+      "last_fetched": 1670929028.161883
     },
     "453143227": {
       "repository_manifest": {
@@ -20349,7 +20349,7 @@
       "pushed_at": "2022-04-30T13:38:21",
       "releases": true,
       "version_installed": "v1.1",
-      "last_fetched": 1670878541.463591
+      "last_fetched": 1670929026.59523
     },
     "294609880": {
       "repository_manifest": {
@@ -20592,10 +20592,10 @@
       "category": "integration",
       "description": "MiWiFi for Home Assistant",
       "domain": "miwifi",
-      "etag_repository": "W/\"1bf5bf8d9bf7805172c3cd478eca2b09d030d9c2d88d03691c3e5ab3141adfec\"",
+      "etag_repository": "W/\"54cfd93dd92d1e127745d2384fa2e98b3c61e1040894c16d0846b007dd44441e\"",
       "full_name": "dmamontov/hass-miwifi",
       "last_updated": "2022-09-07T13:17:27Z",
-      "stargazers_count": 113,
+      "stargazers_count": 114,
       "topics": [
         "mi",
         "miwifi",
@@ -20620,7 +20620,7 @@
       "pushed_at": "2022-09-07T13:17:27",
       "releases": true,
       "version_installed": "v2.8.2",
-      "last_fetched": 1670878543.136233
+      "last_fetched": 1670929028.144565
     },
     "472497355": {
       "repository_manifest": {
@@ -20932,7 +20932,7 @@
       "category": "plugin",
       "description": "Wall panel mode for your Home Assistant Lovelace dashboard with more focus on screensaver. Configurable extension which features a fullscreen kiosk mode, image and weather-clock screensaver, screen wake lock and the ability to hide side and top bar.",
       "domain": "",
-      "downloads": 3962,
+      "downloads": 3968,
       "etag_repository": "W/\"42131b0e1c0e7d1005880a6f539aa603dd24313d361606e99650fea8794a5e9e\"",
       "full_name": "Shreyas-R/lovelace-wallpanel-screensaver",
       "last_updated": "2022-09-08T12:24:08Z",
@@ -20965,7 +20965,7 @@
       "pushed_at": "2022-09-08T12:24:08",
       "releases": true,
       "version_installed": "v1.1.1",
-      "last_fetched": 1670878544.12052
+      "last_fetched": 1670929028.839942
     },
     "485281791": {
       "repository_manifest": {
@@ -21119,7 +21119,7 @@
       "pushed_at": "2022-11-04T18:21:18",
       "releases": true,
       "version_installed": "v1.7.2",
-      "last_fetched": 1670878541.620855
+      "last_fetched": 1670929028.259848
     },
     "483187645": {
       "repository_manifest": {
@@ -21282,7 +21282,7 @@
       "category": "plugin",
       "description": "A power distribution card inspired by the official Energy Distribution card for Home Assistant",
       "domain": "",
-      "downloads": 3290,
+      "downloads": 3322,
       "etag_repository": "W/\"b32fed83198888221fa5b09a41b5fe7988c67f582c5bdec7ed8f4d5fd53617f7\"",
       "full_name": "ulic75/power-flow-card",
       "last_updated": "2022-11-17T16:20:56Z",
@@ -21306,7 +21306,7 @@
       "pushed_at": "2022-11-17T16:20:56",
       "releases": true,
       "version_installed": "v2.6.1",
-      "last_fetched": 1670878544.238347
+      "last_fetched": 1670929029.240569
     },
     "457767453": {
       "repository_manifest": {
@@ -22814,10 +22814,10 @@
       "category": "integration",
       "description": "Provides an ICS (icalendar) platform for the Home Assistant calendar",
       "domain": "ics_calendar",
-      "etag_repository": "W/\"8c023e1377802b529529847ba6a6b446fdec52214e1273f96222632023a97baa\"",
+      "etag_repository": "W/\"520425797ef4ea36805956b037abadd2a04678ce9038a5fb64ad106ef99301df\"",
       "full_name": "franc6/ics_calendar",
       "last_updated": "2022-12-12T19:01:59Z",
-      "stargazers_count": 55,
+      "stargazers_count": 56,
       "topics": [
         "calendar",
         "ics"
@@ -22839,7 +22839,7 @@
       "pushed_at": "2022-12-12T19:01:59",
       "releases": true,
       "version_installed": "3.1.5",
-      "last_fetched": 1670878543.004817
+      "last_fetched": 1670929028.206341
     },
     "514029149": {
       "repository_manifest": {
@@ -23890,7 +23890,7 @@
       "manifest_name": "Fire Protection Hungary",
       "pushed_at": "2022-10-21T23:34:03",
       "version_installed": null,
-      "last_fetched": 1670878543.045891
+      "last_fetched": 1670929028.460128
     },
     "542686924": {
       "repository_manifest": {
@@ -24702,22 +24702,6 @@
         "water"
       ]
     },
-    "194381263": {
-      "repository_manifest": {
-        "name": "Thermostat Update"
-      },
-      "category": "python_script",
-      "description": "This script updates Z-Wave thermostat entity state and current temperature from external sensor",
-      "etag_repository": "W/\"ea4381de24d9841e8b4d641157aaf2d5fa585f2eec113e48d23712b4eca3977a\"",
-      "full_name": "bieniu/ha-thermostat-update",
-      "new": true,
-      "stargazers_count": 12,
-      "topics": [
-        "python-script",
-        "thermostat",
-        "z-wave"
-      ]
-    },
     "312649007": {
       "repository_manifest": {
         "name": "Reminder"
@@ -24732,46 +24716,20 @@
         "python-scripts"
       ]
     },
-    "194319685": {
+    "194381263": {
       "repository_manifest": {
-        "name": "Shellies Discovery",
-        "homeassistant": "2022.11.0",
-        "zip_release": true,
-        "filename": "shellies-discovery.zip"
+        "name": "Thermostat Update"
       },
       "category": "python_script",
-      "description": "Script that adds MQTT discovery support for Shellies devices",
-      "downloads": 642,
-      "etag_repository": "W/\"7097a484066d00db84dbd353582fe10f2966762cadecb530d158a715e2dbaf5d\"",
-      "full_name": "bieniu/ha-shellies-discovery",
+      "description": "This script updates Z-Wave thermostat entity state and current temperature from external sensor",
+      "etag_repository": "W/\"ea4381de24d9841e8b4d641157aaf2d5fa585f2eec113e48d23712b4eca3977a\"",
+      "full_name": "bieniu/ha-thermostat-update",
       "new": true,
-      "stargazers_count": 227,
+      "stargazers_count": 12,
       "topics": [
-        "discovery",
-        "mqtt",
         "python-script",
-        "shelly"
-      ]
-    },
-    "448031517": {
-      "repository_manifest": {
-        "name": "Shellies Discovery Gen2",
-        "homeassistant": "2022.11.0",
-        "zip_release": true,
-        "filename": "shellies-discovery-gen2.zip"
-      },
-      "category": "python_script",
-      "description": "Script that adds MQTT discovery support for Shellies Gen2 devices",
-      "downloads": 137,
-      "etag_repository": "W/\"5b631867c13d8866043a9e124134696cefa72ca045035fb12bcd3fe60dd12a0c\"",
-      "full_name": "bieniu/ha-shellies-discovery-gen2",
-      "new": true,
-      "stargazers_count": 32,
-      "topics": [
-        "discovery",
-        "mqtt",
-        "python-script",
-        "shelly"
+        "thermostat",
+        "z-wave"
       ]
     },
     "233093604": {
@@ -24791,6 +24749,27 @@
         "tracking"
       ]
     },
+    "194319685": {
+      "repository_manifest": {
+        "name": "Shellies Discovery",
+        "homeassistant": "2022.11.0",
+        "zip_release": true,
+        "filename": "shellies-discovery.zip"
+      },
+      "category": "python_script",
+      "description": "Script that adds MQTT discovery support for Shellies devices",
+      "downloads": 656,
+      "etag_repository": "W/\"10a8bd24d24f86fb6cc94bdf8c072c0c2ec7e890081122c238f330187588130c\"",
+      "full_name": "bieniu/ha-shellies-discovery",
+      "new": true,
+      "stargazers_count": 228,
+      "topics": [
+        "discovery",
+        "mqtt",
+        "python-script",
+        "shelly"
+      ]
+    },
     "258712314": {
       "repository_manifest": {
         "name": "Fan Speed Control",
@@ -24802,20 +24781,6 @@
       "full_name": "iml885203/HA-FanSpeedControl",
       "new": true,
       "stargazers_count": 15,
-      "topics": [
-        "python-script"
-      ]
-    },
-    "198460710": {
-      "repository_manifest": {
-        "name": "Date Countdown"
-      },
-      "category": "python_script",
-      "description": "A python script for Homeassistant that counts down the days to birthdays, anniversaries etc",
-      "etag_repository": "W/\"e84afb09f44b823dd8297e5106f31400674e749f46875bb881ab9f3624f9c362\"",
-      "full_name": "point-4ward/ps-date-countdown",
-      "new": true,
-      "stargazers_count": 21,
       "topics": [
         "python-script"
       ]
@@ -24835,6 +24800,20 @@
         "python-script"
       ]
     },
+    "198460710": {
+      "repository_manifest": {
+        "name": "Date Countdown"
+      },
+      "category": "python_script",
+      "description": "A python script for Homeassistant that counts down the days to birthdays, anniversaries etc",
+      "etag_repository": "W/\"e84afb09f44b823dd8297e5106f31400674e749f46875bb881ab9f3624f9c362\"",
+      "full_name": "point-4ward/ps-date-countdown",
+      "new": true,
+      "stargazers_count": 21,
+      "topics": [
+        "python-script"
+      ]
+    },
     "246406566": {
       "repository_manifest": {
         "name": "UpdateClimate",
@@ -24843,16 +24822,37 @@
       },
       "category": "python_script",
       "description": "Python script to update climate devices",
-      "etag_repository": "W/\"0b1eff094170f1e295340153a3f44e6f9fde538b96e95adcd260cb1ca01ba1a6\"",
+      "etag_repository": "W/\"ffcb1cd43a2d218fdc5969c290d483cd076bd990ccb3b647824bfee5fa83c342\"",
       "full_name": "Santobert/HA-UpdateClimate",
       "new": true,
-      "stargazers_count": 5,
+      "stargazers_count": 6,
       "topics": [
         "climate",
         "hvac",
         "preset",
         "python-script",
         "scheduler"
+      ]
+    },
+    "448031517": {
+      "repository_manifest": {
+        "name": "Shellies Discovery Gen2",
+        "homeassistant": "2022.11.0",
+        "zip_release": true,
+        "filename": "shellies-discovery-gen2.zip"
+      },
+      "category": "python_script",
+      "description": "Script that adds MQTT discovery support for Shellies Gen2 devices",
+      "downloads": 153,
+      "etag_repository": "W/\"5b631867c13d8866043a9e124134696cefa72ca045035fb12bcd3fe60dd12a0c\"",
+      "full_name": "bieniu/ha-shellies-discovery-gen2",
+      "new": true,
+      "stargazers_count": 32,
+      "topics": [
+        "discovery",
+        "mqtt",
+        "python-script",
+        "shelly"
       ]
     }
   }

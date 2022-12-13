@@ -158,6 +158,58 @@
                   name: Újraindítás
                   icon: mdi:reload
         - type: entities
+          title: Hálózati egyenleg
+          entities:
+            - sensor.grid_kwh
+            - type: divider
+            - sensor.grid_kwh_hourly
+            - type: attribute
+              entity: sensor.grid_kwh_hourly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.grid_kwh_daily
+            - type: attribute
+              entity: sensor.grid_kwh_daily
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.grid_kwh_weekly
+            - type: attribute
+              entity: sensor.grid_kwh_weekly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.grid_kwh_monthly
+            - type: attribute
+              entity: sensor.grid_kwh_monthly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.grid_kwh_yearly
+            - type: attribute
+              entity: sensor.grid_kwh_yearly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+        - type: entities
+          title: Napenergia
+          entities:
+            - sensor.solaredge_ac_current
+            - sensor.solaredge_ac_power
+            - sensor.solaredge_ac_energy_kwh
+            - type: divider
+            - sensor.solar_production_hourly
+            - sensor.solar_production_daily
+            - sensor.solar_production_weekly
+            - sensor.solar_production_monthly
+            - sensor.solar_production_yearly
+        - type: entities
           title: Energia fogyasztás
           entities:
             - sensor.energy_kwh_hourly
@@ -195,24 +247,6 @@
               suffix: kWh
               name: Előző periódus
               icon: mdi:page-last
-    #    - type: entities
-    #      title: Hálózati egyenleg
-    #      entities:
-    #        - sensor.grid_kwh_hourly
-    #        - sensor.grid_kwh_daily
-    #        - sensor.grid_kwh_weekly
-    #        - sensor.grid_kwh_monthly
-    #        - sensor.grid_kwh_monthly
-        - type: entities
-          title: Napenergia
-          entities:
-            - sensor.solaredge_ac_current
-            - sensor.solaredge_ac_power
-            - sensor.solaredge_ac_energy_kwh
-            - sensor.solar_production_hourly
-            - sensor.solar_production_daily
-            - sensor.solar_production_weekly
-            - sensor.solar_production_monthly
         - type: entities
           title: Ariston Aqua Velis
           entities:
