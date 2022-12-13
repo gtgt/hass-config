@@ -4714,7 +4714,7 @@
       ],
       "config_flow": true,
       "default_branch": "master",
-      "installed_commit": "49ab550",
+      "installed_commit": "5353628",
       "installed": true,
       "last_commit": "5353628",
       "last_version": "10.8.0",
@@ -4729,8 +4729,8 @@
       ],
       "pushed_at": "2022-12-12T07:31:53",
       "releases": true,
-      "version_installed": "10.6.1",
-      "last_fetched": 1670929019.020801
+      "version_installed": "10.8.0",
+      "last_fetched": 1670929075.726091
     },
     "139892990": {
       "repository_manifest": {
@@ -11195,7 +11195,7 @@
         "xiaomi"
       ],
       "default_branch": "develop",
-      "installed_commit": "5313895",
+      "installed_commit": "6afd85c",
       "installed": true,
       "last_commit": "6afd85c",
       "last_version": "2022.12.0.0",
@@ -11210,8 +11210,8 @@
       ],
       "pushed_at": "2022-12-12T08:38:01",
       "releases": true,
-      "version_installed": "2022.8.0.0",
-      "last_fetched": 1670929019.689492
+      "version_installed": "2022.12.0.0",
+      "last_fetched": 1670929094.724509
     },
     "121934877": {
       "repository_manifest": {
