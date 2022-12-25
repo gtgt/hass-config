@@ -68,6 +68,12 @@
           #dashboard_link: /energy
           watt_threshold: 10000
           kw_decimals: 2
+        - type: horizontal-stack
+          cards:
+            - type: sensor
+              entity: sensor.grid_cost_monthly
+            - type: sensor
+              entity: sensor.energy2_cost_monthly
         - type: vertical-stack
           cards:
             - type: entity-filter
@@ -158,7 +164,7 @@
                   name: Újraindítás
                   icon: mdi:reload
         - type: entities
-          title: Hálózati egyenleg
+          title: '"A" Tarifa (Hálózati egyenleg)'
           entities:
             - sensor.grid_kwh
             - type: divider
@@ -204,13 +210,38 @@
             - sensor.solaredge_ac_power
             - sensor.solaredge_ac_energy_kwh
             - type: divider
-            - sensor.solar_production_hourly
+            - entity: sensor.solar_production_hourly
+              secondary_info: last_period
+            - type: attribute
+              entity: sensor.solar_production_hourly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
             - sensor.solar_production_daily
+            - type: attribute
+              entity: sensor.solar_production_daily
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
             - sensor.solar_production_weekly
+            - type: attribute
+              entity: sensor.solar_production_weekly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
             - sensor.solar_production_monthly
+            - type: attribute
+              entity: sensor.solar_production_monthly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
             - sensor.solar_production_yearly
         - type: entities
-          title: Energia fogyasztás
+          title: Ház fogyasztás
           entities:
             - sensor.energy_kwh_hourly
             - type: attribute
@@ -243,6 +274,44 @@
             - sensor.energy_kwh_yearly
             - type: attribute
               entity: sensor.energy_kwh_yearly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+        - type: entities
+          title: '"H0" Tarifa'
+          entities:
+            - sensor.energy2_kwh_hourly
+            - type: attribute
+              entity: sensor.energy2_kwh_hourly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy2_kwh_daily
+            - type: attribute
+              entity: sensor.energy2_kwh_daily
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy2_kwh_weekly
+            - type: attribute
+              entity: sensor.energy2_kwh_weekly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy2_kwh_monthly
+            - type: attribute
+              entity: sensor.energy2_kwh_monthly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
+            - sensor.energy2_kwh_yearly
+            - type: attribute
+              entity: sensor.energy2_kwh_yearly
               attribute: last_period
               suffix: kWh
               name: Előző periódus

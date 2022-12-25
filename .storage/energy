@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "energy",
+  "data": {
+    "energy_sources": [
+      {
+        "type": "grid",
+        "flow_from": [
+          {
+            "stat_energy_from": "sensor.energy_kwh",
+            "stat_cost": null,
+            "entity_energy_price": "sensor.energy_tariff_a1",
+            "number_energy_price": null
+          }
+        ],
+        "flow_to": [
+          {
+            "stat_energy_to": "sensor.solaredge_ac_energy_kwh",
+            "stat_compensation": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          }
+        ],
+        "cost_adjustment_day": 0.0
+      },
+      {
+        "type": "solar",
+        "stat_energy_from": "sensor.solaredge_ac_energy_kwh",
+        "config_entry_solar_forecast": [
+          "3c2ea6ce9f8552a073e715ea3f0bda45"
+        ]
+      }
+    ],
+    "device_consumption": []
+  }
+}

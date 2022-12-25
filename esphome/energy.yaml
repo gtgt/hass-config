@@ -46,66 +46,128 @@ sensor:
     address: 1
     current:
       name: ${name}_current1
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
     voltage:
       name: ${name}_voltage1
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
     energy:
       name: ${name}_energy1
       accuracy_decimals: 3
       filters:
         - multiply: 0.001
       unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
     power:
       name: ${name}_power1
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
     frequency:
       name: ${name}_freq1
+      device_class: frequency
+      unit_of_measurement: Hz
+      state_class: measurement
+      icon: mdi:current-ac
     power_factor:
       name: ${name}_pf1
+      device_class: power_factor
+      state_class: measurement
+      icon: mdi:percent
     update_interval: 3s
   - platform: pzemac
     modbus_id: mbus2
     address: 2
     current:
       name: ${name}_current2
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
     voltage:
       name: ${name}_voltage2
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
     energy:
       name: ${name}_energy2
       accuracy_decimals: 3
       filters:
         - multiply: 0.001
       unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
     power:
       name: ${name}_power2
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
     frequency:
       name: ${name}_freq2
+      device_class: frequency
+      unit_of_measurement: Hz
+      state_class: measurement
+      icon: mdi:current-ac
     power_factor:
       name: ${name}_pf2
+      device_class: power_factor
+      state_class: measurement
+      icon: mdi:percent
     update_interval: 3s
   - platform: pzemac
     modbus_id: mbus3
     address: 3
     current:
       name: ${name}_current3
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
     voltage:
       name: ${name}_voltage3
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
     energy:
       name: ${name}_energy3
       accuracy_decimals: 3
       filters:
         - multiply: 0.001
       unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
     power:
       name: ${name}_power3
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
     frequency:
       name: ${name}_freq3
+      device_class: frequency
+      unit_of_measurement: Hz
+      state_class: measurement
+      icon: mdi:current-ac
     power_factor:
       name: ${name}_pf3
+      device_class: power_factor
+      state_class: measurement
+      icon: mdi:percent
     update_interval: 3s
     
   - platform: pulse_counter
     id: meter_pulse_counter
     pin: GPIO15 # D8
-    unit_of_measurement: 'W'
+    device_class: power
+    unit_of_measurement: W
+    state_class: measurement
     name: ${name}_meter_power
     count_mode:
       falling_edge: DISABLE
@@ -115,7 +177,10 @@ sensor:
       - multiply: 75  # (30s/400 pulses per kWh / 0.4 pulses per W)
     total:
       name: ${name}_meter_kwh
-      unit_of_measurement: 'kWh'
+      unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
       accuracy_decimals: 3
       filters:
         - multiply: 0.0025 # (1/400 pulses per kWh)

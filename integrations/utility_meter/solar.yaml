@@ -1,0 +1,20 @@
+    solar_production_hourly:
+      source: sensor.solaredge_ac_energy_kwh
+      cycle: hourly
+      delta_values: false
+    solar_production_daily:
+      source: sensor.solaredge_ac_energy_kwh
+      cycle: daily
+      delta_values: false
+    solar_production_weekly:
+      source: sensor.solaredge_ac_energy_kwh
+      cycle: weekly
+      delta_values: false
+    solar_production_monthly:
+      source: sensor.solaredge_ac_energy_kwh
+      cycle: monthly
+      delta_values: false
+    solar_production_yearly:
+      source: sensor.solaredge_ac_energy_kwh
+      cycle: yearly
+      delta_values: false

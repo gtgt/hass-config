@@ -1,0 +1,109 @@
+substitutions:
+  name: meeting-info
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp32.yaml
+  fonts: !include _includes/fonts2.yaml
+  color: !include _includes/color.yaml
+
+logger:
+  level: DEBUG
+  baud_rate: 115200
+  #hardware_uart: UART1
+
+# We can still control the backlight independently
+switch:
+  - platform: gpio
+    pin: GPIO4
+    name: ${name}_backlight
+    id: backlight
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      inverted: true
+    name: ${name}_button0
+    id: button0
+  - platform: gpio
+    pin:
+      number: GPIO35
+      inverted: true
+    name: ${name}_button1
+    id: button1
+
+time:
+- platform: sntp
+  id: itime
+  timezone: Europe/Budapest
+
+text_sensor:
+  - platform: homeassistant
+    internal: true
+    id: meeting1
+    entity_id: calendar.ics1
+  - platform: homeassistant
+    internal: true
+    id: meeting1_title
+    entity_id: calendar.ics1
+    attribute: message
+  - platform: homeassistant
+    internal: true
+    id: meeting1_start
+    entity_id: calendar.ics1
+    attribute: start_time
+  - platform: homeassistant
+    internal: true
+    id: meeting1_end
+    entity_id: calendar.ics1
+    attribute: end_time
+
+  - platform: homeassistant
+    internal: true
+    id: meeting2
+    entity_id: calendar.ics2
+  - platform: homeassistant
+    internal: true
+    id: meeting2_title
+    entity_id: calendar.ics2
+    attribute: message
+  - platform: homeassistant
+    internal: true
+    id: meeting2_start
+    entity_id: calendar.ics2
+    attribute: start_time
+  - platform: homeassistant
+    internal: true
+    id: meeting2_end
+    entity_id: calendar.ics2
+    attribute: end_time
+
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO19
+
+display:
+  # 240x135
+  - platform: st7789v
+    model: TTGO TDisplay 135x240
+    backlight_pin: GPIO4
+    cs_pin: GPIO5
+    dc_pin: GPIO16
+    reset_pin: GPIO23
+    rotation: 270
+    lambda: |-
+      if (id(itime).timestamp_now() > 90000) {
+        it.strftime(it.get_width() / 2, 0, id(monobig), TextAlign::TOP_CENTER, "%d %H:%M", id(itime).now());
+      } else {
+        it.print(it.get_width() / 2, 0, id(narrowbig), TextAlign::TOP_CENTER, "Connecting...");
+      }
+      if (id(meeting1).has_state()) {
+        it.printf(5, 80, id(narrow), TextAlign::BOTTOM_LEFT, "%s", str_truncate(str_sanitize(id(meeting1_title).state), 20).c_str());
+        it.printf(5, 75, id(normalbig), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.substr(8,8).c_str());
+      }
+      if (id(meeting2).has_state()) {
+        it.printf(5, 150, id(narrow), TextAlign::BOTTOM_LEFT, "%s", str_truncate(str_sanitize(id(meeting2_title).state), 20).c_str());
+        it.printf(5, 145, id(normalbig), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.substr(8,8).c_str());
+      }
+

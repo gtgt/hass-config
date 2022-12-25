@@ -1,0 +1,25 @@
+    grid_kwh_hourly:
+      source: sensor.grid_kwh
+      net_consumption: true
+      cycle: hourly
+      delta_values: false
+    grid_kwh_daily:
+      source: sensor.grid_kwh
+      net_consumption: true
+      cycle: daily
+      delta_values: false
+    grid_kwh_weekly:
+      source: sensor.grid_kwh
+      net_consumption: true
+      cycle: weekly
+      delta_values: false
+    grid_kwh_monthly:
+      source: sensor.grid_kwh
+      net_consumption: true
+      cycle: monthly
+      delta_values: false
+    grid_kwh_yearly:
+      source: sensor.grid_kwh
+      net_consumption: true
+      cycle: yearly
+      delta_values: false

@@ -7,20 +7,20 @@
       "uses_password": true,
       "name": "energy2",
       "mac_address": "DC:4F:22:74:9A:47",
-      "compilation_time": "Nov  8 2020, 17:33:34",
-      "model": "PLATFORMIO_ESP01_1M",
-      "manufacturer": "",
+      "compilation_time": "Dec 25 2022, 04:43:53",
+      "model": "esp01_1m",
+      "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "1.16.0-dev",
+      "esphome_version": "2022.12.3",
       "project_name": "",
       "project_version": "",
-      "webserver_port": 0,
+      "webserver_port": 80,
       "bluetooth_proxy_version": 0
     },
     "services": [],
     "api_version": {
       "major": 1,
-      "minor": 3
+      "minor": 7
     },
     "switch": [
       {
@@ -30,7 +30,7 @@
         "unique_id": "energy2switchenergy2_restart",
         "disabled_by_default": false,
         "icon": "mdi:restart",
-        "entity_category": 0,
+        "entity_category": 1,
         "assumed_state": false,
         "device_class": ""
       },
@@ -48,18 +48,63 @@
     ],
     "sensor": [
       {
+        "object_id": "energy2_up_time",
+        "key": 2023205033,
+        "name": "energy2_up_time",
+        "unique_id": "dc4f22749a47-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "energy2_wifi_signal",
+        "key": 1510399910,
+        "name": "energy2_wifi_signal",
+        "unique_id": "dc4f22749a47-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
         "object_id": "energy2_temp",
         "key": 143642942,
         "name": "energy2_temp",
         "unique_id": "energy2sensorenergy2_temp",
         "disabled_by_default": false,
-        "icon": "mdi:thermometer",
+        "icon": "",
         "entity_category": 0,
-        "device_class": "",
+        "device_class": "temperature",
         "unit_of_measurement": "°C",
         "accuracy_decimals": 1,
         "force_update": false,
-        "state_class": 0,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "energy2_humidity",
+        "key": 1825135755,
+        "name": "energy2_humidity",
+        "unique_id": "energy2sensorenergy2_humidity",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "humidity",
+        "unit_of_measurement": "%",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
         "last_reset_type": 0
       },
       {
@@ -68,13 +113,13 @@
         "name": "energy2_voltage",
         "unique_id": "energy2sensorenergy2_voltage",
         "disabled_by_default": false,
-        "icon": "mdi:flash",
+        "icon": "mdi:flash-outline",
         "entity_category": 0,
-        "device_class": "",
+        "device_class": "voltage",
         "unit_of_measurement": "V",
         "accuracy_decimals": 1,
         "force_update": false,
-        "state_class": 0,
+        "state_class": 1,
         "last_reset_type": 0
       },
       {
@@ -85,11 +130,11 @@
         "disabled_by_default": false,
         "icon": "mdi:current-ac",
         "entity_category": 0,
-        "device_class": "",
+        "device_class": "current",
         "unit_of_measurement": "A",
         "accuracy_decimals": 3,
         "force_update": false,
-        "state_class": 0,
+        "state_class": 1,
         "last_reset_type": 0
       },
       {
@@ -98,28 +143,13 @@
         "name": "energy2_power",
         "unique_id": "energy2sensorenergy2_power",
         "disabled_by_default": false,
-        "icon": "mdi:power",
+        "icon": "mdi:flash",
         "entity_category": 0,
-        "device_class": "",
+        "device_class": "power",
         "unit_of_measurement": "W",
-        "accuracy_decimals": 1,
+        "accuracy_decimals": 2,
         "force_update": false,
-        "state_class": 0,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "energy2_humidity",
-        "key": 1825135755,
-        "name": "energy2_humidity",
-        "unique_id": "energy2sensorenergy2_humidity",
-        "disabled_by_default": false,
-        "icon": "mdi:water-percent",
-        "entity_category": 0,
-        "device_class": "",
-        "unit_of_measurement": "%",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 0,
+        "state_class": 1,
         "last_reset_type": 0
       },
       {
@@ -130,11 +160,11 @@
         "disabled_by_default": false,
         "icon": "mdi:counter",
         "entity_category": 0,
-        "device_class": "",
+        "device_class": "energy",
         "unit_of_measurement": "Wh",
         "accuracy_decimals": 0,
         "force_update": false,
-        "state_class": 0,
+        "state_class": 2,
         "last_reset_type": 0
       },
       {
@@ -145,11 +175,11 @@
         "disabled_by_default": false,
         "icon": "mdi:current-ac",
         "entity_category": 0,
-        "device_class": "",
-        "unit_of_measurement": "hz",
+        "device_class": "frequency",
+        "unit_of_measurement": "Hz",
         "accuracy_decimals": 1,
         "force_update": false,
-        "state_class": 0,
+        "state_class": 1,
         "last_reset_type": 0
       },
       {
@@ -158,16 +188,29 @@
         "name": "energy2_pf",
         "unique_id": "energy2sensorenergy2_pf",
         "disabled_by_default": false,
-        "icon": "mdi:flash",
+        "icon": "mdi:percent",
         "entity_category": 0,
-        "device_class": "",
+        "device_class": "power_factor",
         "unit_of_measurement": "",
         "accuracy_decimals": 2,
         "force_update": false,
-        "state_class": 0,
+        "state_class": 1,
         "last_reset_type": 0
       }
     ],
-    "text_sensor": []
+    "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "energy2_status",
+        "key": 3600812850,
+        "name": "energy2_status",
+        "unique_id": "energy2binary_sensorenergy2_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ]
   }
 }

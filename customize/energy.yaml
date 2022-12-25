@@ -1,3 +1,26 @@
+sensor.solaredge_status:
+  friendly_name: "Napenergia státusz"
+
+sensor.solaredge_ac_energy_kwh:
+  friendly_name: "Napenergia termelés"
+sensor.solaredge_ac_power:
+  friendly_name: "Napenergia teljesítmény"
+sensor.solaredge_ac_va:
+  friendly_name: "Napenergia látszólagos teljesítmény"
+
+sensor.solaredge_ac_current_a:
+  friendly_name: "Napenergia áramerősség 1"
+sensor.solaredge_ac_current_b:
+  friendly_name: "Napenergia áramerősség 2"
+sensor.solaredge_ac_current_c:
+  friendly_name: "Napenergia áramerősség 3"
+
+sensor.solaredge_ac_pf:
+  friendly_name: "Napenergia energiafaktor"
+
+sensor.solaredge_temp_sink:
+  friendly_name: "Napenergia konverter hőmérséklet"
+
 sensor.solar_production_hourly:
   friendly_name: "Napenergia termelés ebben az órában"
 sensor.solar_production_daily:
@@ -61,3 +84,19 @@ sensor.energy2_power:
   friendly_name: "Klíma fogyasztás"
   icon: mdi:air-conditioner
   
+sensor.energy_tariff_a1:
+  friendly_name: "A1 pillanatnyi tarifa"
+sensor.energy_tariff_h:
+  friendly_name: "H pillanatnyi tarifa"
+sensor.energy_tariff_p:
+  friendly_name: "Visszatápllás tarifa"
+
+sensor.energy_kwh_cost:
+  friendly_name: "A1 költség"
+sensor.energy2_kwh_cost:
+  friendly_name: "H költség"
+
+sensor.grid_cost_monthly:
+  friendly_name: "A1 haviköltség"
+sensor.energy2_cost_monthly:
+  friendly_name: "H haviköltség"

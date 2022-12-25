@@ -1,0 +1,16 @@
+  - sensor:
+#    - name: livingroom_temp
+#      state: "{{ state_attr('fan.pufi', 'temperature') }}"
+#      state_class: measurement
+#      device_class: temperature
+#    - name: livingroom_humidity:
+#      state: "{{ state_attr('fan.pufi', 'humidity') }}"
+#      state_class: measurement
+#      device_class: humidity
+
+    - name: io_temp_diff
+      state: "{{ (states('sensor.ble_temperature_terrace')|float - states('sensor.t_livingroom_temperature')|float)|round(1) }}"
+      availability: "{{ states('sensor.t_livingroom_temperature')|float > 0 and states('sensor.ble_temperature_terrace') != None}}"
+      icon: "mdi:home-thermometer-outline"
+      state_class: measurement
+      device_class: temperature

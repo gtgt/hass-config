@@ -7,11 +7,11 @@
       "uses_password": true,
       "name": "bedroom_rgb",
       "mac_address": "98:F4:AB:C9:51:32",
-      "compilation_time": "Oct 28 2022, 18:15:59",
+      "compilation_time": "Dec 25 2022, 04:48:45",
       "model": "esp01_1m",
-      "manufacturer": "",
+      "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.10.1",
+      "esphome_version": "2022.12.3",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -22,19 +22,6 @@
       "major": 1,
       "minor": 7
     },
-    "switch": [
-      {
-        "object_id": "bedroom_rgb_restart",
-        "key": 2887119047,
-        "name": "bedroom_rgb_restart",
-        "unique_id": "bedroom_rgbswitchbedroom_rgb_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
     "light": [
       {
         "object_id": "bedroom_rgb",
@@ -60,6 +47,19 @@
         "legacy_supports_color_temperature": false
       }
     ],
+    "switch": [
+      {
+        "object_id": "bedroom_rgb_restart",
+        "key": 2887119047,
+        "name": "bedroom_rgb_restart",
+        "unique_id": "bedroom_rgbswitchbedroom_rgb_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "binary_sensor": [
       {
         "object_id": "bedroom_rgb_status",
@@ -82,7 +82,7 @@
         "disabled_by_default": false,
         "icon": "mdi:timelapse",
         "entity_category": 2,
-        "device_class": "",
+        "device_class": "duration",
         "unit_of_measurement": "s",
         "accuracy_decimals": 0,
         "force_update": false,

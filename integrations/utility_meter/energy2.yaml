@@ -1,0 +1,20 @@
+    energy2_kwh_hourly:
+      source: sensor.energy2_energy
+      cycle: hourly
+      delta_values: false
+    energy2_kwh_daily:
+      source: sensor.energy2_energy
+      cycle: daily
+      delta_values: false
+    energy2_kwh_weekly:
+      source: sensor.energy2_energy
+      cycle: weekly
+      delta_values: false
+    energy2_kwh_monthly:
+      source: sensor.energy2_energy
+      cycle: monthly
+      delta_values: false
+    energy2_kwh_yearly:
+      source: sensor.energy2_energy
+      cycle: yearly
+      delta_values: false

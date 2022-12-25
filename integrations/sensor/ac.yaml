@@ -1,16 +1,3 @@
-  - platform: template
-    sensors:
-#      livingroom_temp:
-#        value_template: "{{ state_attr('fan.pufi', 'temperature') }}"
-#      livingroom_humidity:
-#        value_template: "{{ state_attr('fan.pufi', 'humidity') }}"
-
-      io_temp_diff:
-        value_template: "{{ (states('sensor.ble_temperature_terrace')|float - states('sensor.t_livingroom_temperature')|float)|round(1) }}"
-        availability_template: "{{ states('sensor.t_livingroom_temperature')|float > 0 and states('sensor.ble_temperature_terrace') != None}}"
-        icon_template: "mdi:home-thermometer-outline"
-
-
   - platform: statistics
     name: ac_on_percentage
     unique_id: ac_on_percentage

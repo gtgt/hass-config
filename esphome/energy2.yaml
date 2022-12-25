@@ -25,16 +25,38 @@ sensor:
     address: 1
     current:
       name: ${name}_current
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
     voltage:
       name: ${name}_voltage
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
     energy:
       name: ${name}_energy
+      device_class: energy
+      unit_of_measurement: Wh
+      state_class: total_increasing
+      icon: mdi:counter
     power:
       name: ${name}_power
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
     frequency:
       name: ${name}_freq
+      device_class: frequency
+      unit_of_measurement: Hz
+      state_class: measurement
+      icon: mdi:current-ac
     power_factor:
       name: ${name}_pf
+      device_class: power_factor
+      state_class: measurement
+      icon: mdi:percent
+
     update_interval: 3s
   - platform: dht
     model: DHT11

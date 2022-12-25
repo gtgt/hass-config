@@ -1,0 +1,43 @@
+- sensor:
+  - name: energy_tariff_discount_limit
+    unit_of_measurement: kWh
+    state: "{{ 2523 / 365 * (now().replace(month = now().month % 12 + 1, day = 1)-timedelta(days = 1)).day }}"
+  - name: energy_tariff_a1
+    unit_of_measurement: HUF/kWh
+    device_class: monetary
+    state: >
+      {% set tariff = { "DP": 35.992, "MP": 70.104 } %}
+      {% if states('sensor.grid_kwh_monthly')|float > states('sensor.energy_tariff_discount_limit')|float * -1 %}
+        {{ tariff.DP }}
+      {% else %}
+        {{ tariff.MP }}
+      {% endif %}
+  - name: energy_tariff_p
+    unit_of_measurement: HUF/kWh
+    device_class: monetary
+    state: 4.940
+  - name: energy_tariff_h
+    unit_of_measurement: HUF/kWh
+    device_class: monetary
+    state: >
+      {% set tariff = { "SP": 22.682, "DP": 35.992, "MP": 70.104 } %}
+      {% set today = now().strftime('%m.%d')|float %}
+      {% if today < 4.15 or today > 10.15 %}
+        {{ tariff.SP }}
+      {% elif states('sensor.energy2_kwh_monthly')|float / 1000 < states('sensor.energy_tariff_discount_limit')|float %}
+        {{ tariff.DP }}
+      {% else %}
+        {{ tariff.MP }}
+      {% endif %}
+
+  - name: grid_cost_monthly
+    state: "{{ ((states('sensor.grid_kwh_monthly')|float * -1) * states('sensor.energy_tariff_a1')|float)|round }}"
+    device_class: monetary
+    unit_of_measurement: HUF
+    state_class: total_increasing
+
+  - name: energy2_cost_monthly
+    state: "{{ ((states('sensor.energy2_kwh_monthly')|float / 1000) * states('sensor.energy_tariff_h')|float)|round }}"
+    device_class: monetary
+    unit_of_measurement: HUF
+    state_class: total_increasing

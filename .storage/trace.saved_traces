@@ -7,12 +7,12 @@
       {
         "extended_dict": {
           "last_step": "action/5",
-          "run_id": "a35b9dc274b34b21d2c83c078b85c23b",
+          "run_id": "208204f21726bbddb9d4e6d4628b7d17",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:00.121321+00:00",
-            "finish": "2022-12-13T10:58:00.158724+00:00"
+            "start": "2022-12-25T02:44:30.461876+00:00",
+            "finish": "2022-12-25T02:44:30.495187+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -21,23 +21,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2022-12-13T10:58:00.121526+00:00",
+                "timestamp": "2022-12-25T02:44:30.462132+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_thermostat_relay_init",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:57:55.121398+00:00",
+                      "last_triggered": "2022-12-25T02:44:25.462114+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_thermostat_relay_init",
                       "friendly_name": "Szelepvez\u00e9rl\u00e9s (peri\u00f3dikus)",
                       "icon": "mdi:thermostat-auto"
                     },
-                    "last_changed": "2022-12-13T10:56:12.386328+00:00",
-                    "last_updated": "2022-12-13T10:57:55.158632+00:00",
+                    "last_changed": "2022-12-25T02:22:06.100605+00:00",
+                    "last_updated": "2022-12-25T02:44:25.494837+00:00",
                     "context": {
-                      "id": "01GM5J4JXH4PM9ETD5AVV02RDB",
+                      "id": "01GN3JNK7N62A0YMRRZ3GKXZYP",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -47,7 +47,7 @@
                     "idx": "1",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:00.120720+01:00",
+                    "now": "2022-12-25T03:44:30.461311+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -56,15 +56,15 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:58:00.122936+00:00",
+                "timestamp": "2022-12-25T02:44:30.463519+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "eec1d3b02d32a69fbebc991451a3c047"
+                  "run_id": "0e372280fef402a9905ae1f69762c9a9"
                 },
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J4QSSTQN5BD23NBB6GCB2",
+                    "id": "01GN3JNR3XBXNJAQCVV9CHC7FN",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -87,11 +87,11 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2022-12-13T10:58:00.128883+00:00",
+                "timestamp": "2022-12-25T02:44:30.468837+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "511e521acd9712d0fe453746936a3efb"
+                  "run_id": "a08460941fa9ef4ef37fb8996901c345"
                 },
                 "result": {
                   "params": {
@@ -111,11 +111,11 @@
             "action/2": [
               {
                 "path": "action/2",
-                "timestamp": "2022-12-13T10:58:00.134667+00:00",
+                "timestamp": "2022-12-25T02:44:30.474064+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "c754c7beea4b3ba1f43860a7a26aead8"
+                  "run_id": "a8ac3732a074378a28292a1e32c96a8b"
                 },
                 "result": {
                   "params": {
@@ -135,11 +135,11 @@
             "action/3": [
               {
                 "path": "action/3",
-                "timestamp": "2022-12-13T10:58:00.140626+00:00",
+                "timestamp": "2022-12-25T02:44:30.479243+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "4848ae472454fbd39e553b2b027aff24"
+                  "run_id": "afbf00459e44442daa5900708afc96ff"
                 },
                 "result": {
                   "params": {
@@ -159,11 +159,11 @@
             "action/4": [
               {
                 "path": "action/4",
-                "timestamp": "2022-12-13T10:58:00.146429+00:00",
+                "timestamp": "2022-12-25T02:44:30.486349+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "a5cd7e828b990c04338b6721132f730c"
+                  "run_id": "d5acc8dd414321ecc2b75229a6287097"
                 },
                 "result": {
                   "params": {
@@ -183,11 +183,11 @@
             "action/5": [
               {
                 "path": "action/5",
-                "timestamp": "2022-12-13T10:58:00.152156+00:00",
+                "timestamp": "2022-12-25T02:44:30.490588+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "94a33da87e66059800881caeff8d6189"
+                  "run_id": "4ece67e37931ac6f7b8a2b60eb8ac88e"
                 },
                 "result": {
                   "params": {
@@ -266,19 +266,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J4QSSTQN5BD23NBB6GCB2",
+            "id": "01GN3JNR3XBXNJAQCVV9CHC7FN",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/5",
-          "run_id": "a35b9dc274b34b21d2c83c078b85c23b",
+          "run_id": "208204f21726bbddb9d4e6d4628b7d17",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:00.121321+00:00",
-            "finish": "2022-12-13T10:58:00.158724+00:00"
+            "start": "2022-12-25T02:44:30.461876+00:00",
+            "finish": "2022-12-25T02:44:30.495187+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -288,12 +288,12 @@
       {
         "extended_dict": {
           "last_step": "action/5",
-          "run_id": "a8ca6461f9d80e189e4013855e0d4d92",
+          "run_id": "5d563b8e1d28d80e73f20bfc14a48cb1",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:05.122802+00:00",
-            "finish": "2022-12-13T10:58:05.260374+00:00"
+            "start": "2022-12-25T02:44:35.461062+00:00",
+            "finish": "2022-12-25T02:44:35.496239+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -302,23 +302,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2022-12-13T10:58:05.123059+00:00",
+                "timestamp": "2022-12-25T02:44:35.461271+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_thermostat_relay_init",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:00.121787+00:00",
+                      "last_triggered": "2022-12-25T02:44:30.462386+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_thermostat_relay_init",
                       "friendly_name": "Szelepvez\u00e9rl\u00e9s (peri\u00f3dikus)",
                       "icon": "mdi:thermostat-auto"
                     },
-                    "last_changed": "2022-12-13T10:56:12.386328+00:00",
-                    "last_updated": "2022-12-13T10:58:00.157979+00:00",
+                    "last_changed": "2022-12-25T02:22:06.100605+00:00",
+                    "last_updated": "2022-12-25T02:44:30.494318+00:00",
                     "context": {
-                      "id": "01GM5J4QSSTQN5BD23NBB6GCB2",
+                      "id": "01GN3JNR3XBXNJAQCVV9CHC7FN",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -328,7 +328,7 @@
                     "idx": "1",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:05.122241+01:00",
+                    "now": "2022-12-25T03:44:35.460461+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -337,15 +337,15 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:58:05.124393+00:00",
+                "timestamp": "2022-12-25T02:44:35.462621+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "554e2819c3cfb617a0d8717fde7bbaa1"
+                  "run_id": "74a960f2bf9047894fd8545cbcf4a1bd"
                 },
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J4WP2PJ4YAHBJ0CFT55V2",
+                    "id": "01GN3JNX0420M294SB1C82CPRV",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -368,11 +368,11 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2022-12-13T10:58:05.144198+00:00",
+                "timestamp": "2022-12-25T02:44:35.467765+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "710fbaaa5b2b5952a663d8451e8f8d1b"
+                  "run_id": "719f3016779f08521d89fe8aa64b30b6"
                 },
                 "result": {
                   "params": {
@@ -392,11 +392,11 @@
             "action/2": [
               {
                 "path": "action/2",
-                "timestamp": "2022-12-13T10:58:05.164587+00:00",
+                "timestamp": "2022-12-25T02:44:35.474802+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "2e10d9a910343b90167f6c2b961e54ac"
+                  "run_id": "01507e7a3e674e3c0cb525c109bf2454"
                 },
                 "result": {
                   "params": {
@@ -416,11 +416,11 @@
             "action/3": [
               {
                 "path": "action/3",
-                "timestamp": "2022-12-13T10:58:05.185580+00:00",
+                "timestamp": "2022-12-25T02:44:35.480055+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "098a229a4a66ed9ffac9ee506e812fea"
+                  "run_id": "ccf872e9f25273047b6c13f736a5dd1d"
                 },
                 "result": {
                   "params": {
@@ -440,11 +440,11 @@
             "action/4": [
               {
                 "path": "action/4",
-                "timestamp": "2022-12-13T10:58:05.203250+00:00",
+                "timestamp": "2022-12-25T02:44:35.485138+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "71fad5464a62046898f42a6b809ad484"
+                  "run_id": "ee3574f4eb115ad0c0fdb1e828597154"
                 },
                 "result": {
                   "params": {
@@ -464,11 +464,11 @@
             "action/5": [
               {
                 "path": "action/5",
-                "timestamp": "2022-12-13T10:58:05.233981+00:00",
+                "timestamp": "2022-12-25T02:44:35.490234+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "2da8a0002361c445017c16bbb229b282"
+                  "run_id": "50ef1a415cfba6fab41e1c637a35e1dc"
                 },
                 "result": {
                   "params": {
@@ -547,19 +547,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J4WP2PJ4YAHBJ0CFT55V2",
+            "id": "01GN3JNX0420M294SB1C82CPRV",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/5",
-          "run_id": "a8ca6461f9d80e189e4013855e0d4d92",
+          "run_id": "5d563b8e1d28d80e73f20bfc14a48cb1",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:05.122802+00:00",
-            "finish": "2022-12-13T10:58:05.260374+00:00"
+            "start": "2022-12-25T02:44:35.461062+00:00",
+            "finish": "2022-12-25T02:44:35.496239+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -569,12 +569,12 @@
       {
         "extended_dict": {
           "last_step": "action/5",
-          "run_id": "914a487869f2fa6dff80337af98373c9",
+          "run_id": "c957702d7c60eadf36ac8f5108bd90d5",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:10.125990+00:00",
-            "finish": "2022-12-13T10:58:10.242850+00:00"
+            "start": "2022-12-25T02:44:40.461479+00:00",
+            "finish": "2022-12-25T02:44:40.503710+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -583,23 +583,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2022-12-13T10:58:10.126261+00:00",
+                "timestamp": "2022-12-25T02:44:40.461691+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_thermostat_relay_init",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:05.123307+00:00",
+                      "last_triggered": "2022-12-25T02:44:35.461535+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_thermostat_relay_init",
                       "friendly_name": "Szelepvez\u00e9rl\u00e9s (peri\u00f3dikus)",
                       "icon": "mdi:thermostat-auto"
                     },
-                    "last_changed": "2022-12-13T10:56:12.386328+00:00",
-                    "last_updated": "2022-12-13T10:58:05.257387+00:00",
+                    "last_changed": "2022-12-25T02:22:06.100605+00:00",
+                    "last_updated": "2022-12-25T02:44:35.495403+00:00",
                     "context": {
-                      "id": "01GM5J4WP2PJ4YAHBJ0CFT55V2",
+                      "id": "01GN3JNX0420M294SB1C82CPRV",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -609,7 +609,7 @@
                     "idx": "1",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:10.125352+01:00",
+                    "now": "2022-12-25T03:44:40.460845+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -618,15 +618,15 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:58:10.127702+00:00",
+                "timestamp": "2022-12-25T02:44:40.463074+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "9751dad2513f851f7f29ec3599354767"
+                  "run_id": "a695fb787d4925da60cb38e3d0e2ed00"
                 },
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J51JDEAXMS1K0BV4XPNJX",
+                    "id": "01GN3JP1WDVV488VM1M78D05Y6",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -649,11 +649,11 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2022-12-13T10:58:10.217381+00:00",
+                "timestamp": "2022-12-25T02:44:40.475281+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "1a116038c11101982296a8cfffcf3f26"
+                  "run_id": "5458248a2c09e1e5b3569171832c73f8"
                 },
                 "result": {
                   "params": {
@@ -673,11 +673,11 @@
             "action/2": [
               {
                 "path": "action/2",
-                "timestamp": "2022-12-13T10:58:10.223557+00:00",
+                "timestamp": "2022-12-25T02:44:40.481939+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "3ce5d765f51d9260a6706fd1cfeb0f40"
+                  "run_id": "810756484d88e5f5fe60e0aedba089b3"
                 },
                 "result": {
                   "params": {
@@ -697,11 +697,11 @@
             "action/3": [
               {
                 "path": "action/3",
-                "timestamp": "2022-12-13T10:58:10.227768+00:00",
+                "timestamp": "2022-12-25T02:44:40.487132+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "8c7cd52a283604c8aa4a6174edcff946"
+                  "run_id": "4c741f2f80c6d09cd151d98ed7737315"
                 },
                 "result": {
                   "params": {
@@ -721,11 +721,11 @@
             "action/4": [
               {
                 "path": "action/4",
-                "timestamp": "2022-12-13T10:58:10.232920+00:00",
+                "timestamp": "2022-12-25T02:44:40.492328+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "684e7c22b42a1ca6974ff053b2489640"
+                  "run_id": "7a1453fab9c935ad320ac1f31d55dac9"
                 },
                 "result": {
                   "params": {
@@ -745,11 +745,11 @@
             "action/5": [
               {
                 "path": "action/5",
-                "timestamp": "2022-12-13T10:58:10.237110+00:00",
+                "timestamp": "2022-12-25T02:44:40.497542+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "bea8106018a91bf17cd3517b751fbc69"
+                  "run_id": "c3b27f135cdad285470b164f2ef0395d"
                 },
                 "result": {
                   "params": {
@@ -828,19 +828,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J51JDEAXMS1K0BV4XPNJX",
+            "id": "01GN3JP1WDVV488VM1M78D05Y6",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/5",
-          "run_id": "914a487869f2fa6dff80337af98373c9",
+          "run_id": "c957702d7c60eadf36ac8f5108bd90d5",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:10.125990+00:00",
-            "finish": "2022-12-13T10:58:10.242850+00:00"
+            "start": "2022-12-25T02:44:40.461479+00:00",
+            "finish": "2022-12-25T02:44:40.503710+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -850,12 +850,12 @@
       {
         "extended_dict": {
           "last_step": "action/5",
-          "run_id": "32137c26ecaa95e4ed0d29e0ad131cfb",
+          "run_id": "714f7e7d5c68833397c187f01cb0104f",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:15.121279+00:00",
-            "finish": "2022-12-13T10:58:15.161247+00:00"
+            "start": "2022-12-25T02:44:45.461987+00:00",
+            "finish": "2022-12-25T02:44:45.501947+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -864,23 +864,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2022-12-13T10:58:15.121491+00:00",
+                "timestamp": "2022-12-25T02:44:45.462214+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_thermostat_relay_init",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:10.126573+00:00",
+                      "last_triggered": "2022-12-25T02:44:40.461950+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_thermostat_relay_init",
                       "friendly_name": "Szelepvez\u00e9rl\u00e9s (peri\u00f3dikus)",
                       "icon": "mdi:thermostat-auto"
                     },
-                    "last_changed": "2022-12-13T10:56:12.386328+00:00",
-                    "last_updated": "2022-12-13T10:58:10.240658+00:00",
+                    "last_changed": "2022-12-25T02:22:06.100605+00:00",
+                    "last_updated": "2022-12-25T02:44:40.502886+00:00",
                     "context": {
-                      "id": "01GM5J51JDEAXMS1K0BV4XPNJX",
+                      "id": "01GN3JP1WDVV488VM1M78D05Y6",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -890,7 +890,7 @@
                     "idx": "1",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:15.120710+01:00",
+                    "now": "2022-12-25T03:44:45.461398+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -899,15 +899,15 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:58:15.122836+00:00",
+                "timestamp": "2022-12-25T02:44:45.463656+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "de39ff0c993c05a3e4369253df796187"
+                  "run_id": "ed85673cf529f417e6446bfb163f2412"
                 },
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J56EH9MQ7JEEKWZZHZQG3",
+                    "id": "01GN3JP6RNZGSC3S5HS8V6J0G8",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -930,11 +930,11 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2022-12-13T10:58:15.128725+00:00",
+                "timestamp": "2022-12-25T02:44:45.469639+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "404b386a7025fe654d066a3573ab9730"
+                  "run_id": "db58af10256f041b723d0b780675abb0"
                 },
                 "result": {
                   "params": {
@@ -954,11 +954,11 @@
             "action/2": [
               {
                 "path": "action/2",
-                "timestamp": "2022-12-13T10:58:15.136270+00:00",
+                "timestamp": "2022-12-25T02:44:45.479866+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "95cfe92e5860692c652c7961a75b1cb2"
+                  "run_id": "31ad4dcf996316e035335376712864c4"
                 },
                 "result": {
                   "params": {
@@ -978,11 +978,11 @@
             "action/3": [
               {
                 "path": "action/3",
-                "timestamp": "2022-12-13T10:58:15.141960+00:00",
+                "timestamp": "2022-12-25T02:44:45.485360+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "a75fb6549fd7765fafa65af84935d2de"
+                  "run_id": "988fd0709b82f2b501bd70e0ba1fc786"
                 },
                 "result": {
                   "params": {
@@ -1002,11 +1002,11 @@
             "action/4": [
               {
                 "path": "action/4",
-                "timestamp": "2022-12-13T10:58:15.147743+00:00",
+                "timestamp": "2022-12-25T02:44:45.490597+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "a26d90d769758ba55bf8c1f08b4a2c31"
+                  "run_id": "2c6accc04e1881378c5bebea27e0ca93"
                 },
                 "result": {
                   "params": {
@@ -1026,11 +1026,11 @@
             "action/5": [
               {
                 "path": "action/5",
-                "timestamp": "2022-12-13T10:58:15.154682+00:00",
+                "timestamp": "2022-12-25T02:44:45.495859+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "8446d5ae0177892de71abc76793a7c87"
+                  "run_id": "7e07d0da6f798871ed03c4b12b786a08"
                 },
                 "result": {
                   "params": {
@@ -1109,19 +1109,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J56EH9MQ7JEEKWZZHZQG3",
+            "id": "01GN3JP6RNZGSC3S5HS8V6J0G8",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/5",
-          "run_id": "32137c26ecaa95e4ed0d29e0ad131cfb",
+          "run_id": "714f7e7d5c68833397c187f01cb0104f",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:15.121279+00:00",
-            "finish": "2022-12-13T10:58:15.161247+00:00"
+            "start": "2022-12-25T02:44:45.461987+00:00",
+            "finish": "2022-12-25T02:44:45.501947+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -1131,12 +1131,12 @@
       {
         "extended_dict": {
           "last_step": "action/5",
-          "run_id": "bd8d6acc753c071e8e5daac56730c0ee",
+          "run_id": "4c20cae10bebdd2fcdd61e0fcf1847ba",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.121875+00:00",
-            "finish": "2022-12-13T10:58:20.159471+00:00"
+            "start": "2022-12-25T02:44:50.461509+00:00",
+            "finish": "2022-12-25T02:44:50.498926+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -1145,23 +1145,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2022-12-13T10:58:20.122111+00:00",
+                "timestamp": "2022-12-25T02:44:50.461640+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_thermostat_relay_init",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:15.121744+00:00",
+                      "last_triggered": "2022-12-25T02:44:45.462501+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_thermostat_relay_init",
                       "friendly_name": "Szelepvez\u00e9rl\u00e9s (peri\u00f3dikus)",
                       "icon": "mdi:thermostat-auto"
                     },
-                    "last_changed": "2022-12-13T10:56:12.386328+00:00",
-                    "last_updated": "2022-12-13T10:58:15.160447+00:00",
+                    "last_changed": "2022-12-25T02:22:06.100605+00:00",
+                    "last_updated": "2022-12-25T02:44:45.501162+00:00",
                     "context": {
-                      "id": "01GM5J56EH9MQ7JEEKWZZHZQG3",
+                      "id": "01GN3JP6RNZGSC3S5HS8V6J0G8",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -1171,7 +1171,7 @@
                     "idx": "1",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:20.121316+01:00",
+                    "now": "2022-12-25T03:44:50.461142+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -1180,15 +1180,15 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:58:20.123460+00:00",
+                "timestamp": "2022-12-25T02:44:50.462535+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "f54edf29112d134f4dffce496c84958f"
+                  "run_id": "fc50a4c41626caa3b691444da38d7c22"
                 },
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                    "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -1211,11 +1211,11 @@
             "action/1": [
               {
                 "path": "action/1",
-                "timestamp": "2022-12-13T10:58:20.130637+00:00",
+                "timestamp": "2022-12-25T02:44:50.467880+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "3ca0d500960d5f66cb963c224600e12f"
+                  "run_id": "417fc1e9edd6f9179a90808d4142d8d2"
                 },
                 "result": {
                   "params": {
@@ -1235,11 +1235,11 @@
             "action/2": [
               {
                 "path": "action/2",
-                "timestamp": "2022-12-13T10:58:20.136224+00:00",
+                "timestamp": "2022-12-25T02:44:50.473230+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "bb41f3e48ed8db282616d16fc508e112"
+                  "run_id": "2e51114aac3360d05461995032df3f95"
                 },
                 "result": {
                   "params": {
@@ -1259,11 +1259,11 @@
             "action/3": [
               {
                 "path": "action/3",
-                "timestamp": "2022-12-13T10:58:20.141855+00:00",
+                "timestamp": "2022-12-25T02:44:50.478689+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "ec5603aa3a65707f34852054f0a5c0a5"
+                  "run_id": "cd9fcebff9489c60ecc2311d8a4596fa"
                 },
                 "result": {
                   "params": {
@@ -1283,11 +1283,11 @@
             "action/4": [
               {
                 "path": "action/4",
-                "timestamp": "2022-12-13T10:58:20.147440+00:00",
+                "timestamp": "2022-12-25T02:44:50.484784+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "277dc94162d0a9edccbf6741d65b84ce"
+                  "run_id": "ecbdff0606b5802db17d9e4679110cda"
                 },
                 "result": {
                   "params": {
@@ -1307,11 +1307,11 @@
             "action/5": [
               {
                 "path": "action/5",
-                "timestamp": "2022-12-13T10:58:20.152996+00:00",
+                "timestamp": "2022-12-25T02:44:50.492767+00:00",
                 "child_id": {
                   "domain": "script",
                   "item_id": "turn_switch_by_climate",
-                  "run_id": "f1cdeb4c4f22863380d76ac609906199"
+                  "run_id": "9319b1e9e73492c81f40a7fc955da764"
                 },
                 "result": {
                   "params": {
@@ -1390,19 +1390,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+            "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/5",
-          "run_id": "bd8d6acc753c071e8e5daac56730c0ee",
+          "run_id": "4c20cae10bebdd2fcdd61e0fcf1847ba",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.121875+00:00",
-            "finish": "2022-12-13T10:58:20.159471+00:00"
+            "start": "2022-12-25T02:44:50.461509+00:00",
+            "finish": "2022-12-25T02:44:50.498926+00:00"
           },
           "domain": "automation",
           "item_id": "ac_thermostat_relay_init",
@@ -1414,12 +1414,12 @@
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "e0724c5841f3182fa1f6d5852e8c73dd",
+          "run_id": "35f1b1a5bae93b7f79efb5ba7ec16b8a",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:56:54.545208+00:00",
-            "finish": "2022-12-13T10:56:54.840754+00:00"
+            "start": "2022-12-25T02:23:02.886333+00:00",
+            "finish": "2022-12-25T02:23:03.142406+00:00"
           },
           "domain": "automation",
           "item_id": "humi1_operation_mode_update",
@@ -1428,22 +1428,22 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:56:54.545255+00:00",
+                "timestamp": "2022-12-25T02:23:02.886383+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.humi1_operation_mode_update",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:52:53.491513+00:00",
+                      "last_triggered": "2022-12-25T02:17:54.032824+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "humi1_operation_mode_update",
                       "friendly_name": "Humi1 operation mode update"
                     },
-                    "last_changed": "2022-12-13T10:56:12.387592+00:00",
-                    "last_updated": "2022-12-13T10:56:12.387592+00:00",
+                    "last_changed": "2022-12-25T02:22:06.102127+00:00",
+                    "last_updated": "2022-12-25T02:22:06.102127+00:00",
                     "context": {
-                      "id": "01GM5J1EK3QWGTZCVKR9MN0K31",
+                      "id": "01GN3HCQ8PNF3VY6HJV5BCZ9VG",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -1462,10 +1462,10 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:56:54.555595+00:00",
+                "timestamp": "2022-12-25T02:23:02.896479+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J2QRH7KRQMN6ZV0JBKGWH",
+                    "id": "01GN3HEEQ6NN0AB29KADFZ8AQ9",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -1515,19 +1515,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J2QRH7KRQMN6ZV0JBKGWH",
+            "id": "01GN3HEEQ6NN0AB29KADFZ8AQ9",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "e0724c5841f3182fa1f6d5852e8c73dd",
+          "run_id": "35f1b1a5bae93b7f79efb5ba7ec16b8a",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:56:54.545208+00:00",
-            "finish": "2022-12-13T10:56:54.840754+00:00"
+            "start": "2022-12-25T02:23:02.886333+00:00",
+            "finish": "2022-12-25T02:23:03.142406+00:00"
           },
           "domain": "automation",
           "item_id": "humi1_operation_mode_update",
@@ -1539,12 +1539,12 @@
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "869dda19d0446f1af78d7ece98efe271",
+          "run_id": "a3ca58fc2a90c2c24244632f37dfea5c",
           "state": "stopped",
           "script_execution": "error",
           "timestamp": {
-            "start": "2022-12-13T10:56:54.546276+00:00",
-            "finish": "2022-12-13T10:56:54.668053+00:00"
+            "start": "2022-12-25T02:23:02.886752+00:00",
+            "finish": "2022-12-25T02:23:02.992032+00:00"
           },
           "domain": "automation",
           "item_id": "humi1_target_humidity_update",
@@ -1554,22 +1554,22 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:56:54.546335+00:00",
+                "timestamp": "2022-12-25T02:23:02.886794+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.humi1_target_humidity_update",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:52:53.491934+00:00",
+                      "last_triggered": "2022-12-25T02:20:59.851340+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "humi1_target_humidity_update",
                       "friendly_name": "Humi1 target humidity update"
                     },
-                    "last_changed": "2022-12-13T10:56:12.388097+00:00",
-                    "last_updated": "2022-12-13T10:56:12.388097+00:00",
+                    "last_changed": "2022-12-25T02:22:06.102707+00:00",
+                    "last_updated": "2022-12-25T02:22:06.102707+00:00",
                     "context": {
-                      "id": "01GM5J1EK4H1Q4YW9C5BKP833A",
+                      "id": "01GN3HCQ8PNHC982YF9NJQZZ2X",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -1588,10 +1588,10 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:56:54.575756+00:00",
+                "timestamp": "2022-12-25T02:23:02.907934+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J2QRJ4REMZWCE2WGFT130",
+                    "id": "01GN3HEEQ6T0HPQT6DG2NDJ33K",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -1642,19 +1642,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J2QRJ4REMZWCE2WGFT130",
+            "id": "01GN3HEEQ6T0HPQT6DG2NDJ33K",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "869dda19d0446f1af78d7ece98efe271",
+          "run_id": "a3ca58fc2a90c2c24244632f37dfea5c",
           "state": "stopped",
           "script_execution": "error",
           "timestamp": {
-            "start": "2022-12-13T10:56:54.546276+00:00",
-            "finish": "2022-12-13T10:56:54.668053+00:00"
+            "start": "2022-12-25T02:23:02.886752+00:00",
+            "finish": "2022-12-25T02:23:02.992032+00:00"
           },
           "domain": "automation",
           "item_id": "humi1_target_humidity_update",
@@ -1667,12 +1667,12 @@
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "e6c18edaa5811b563f75b69c3481288f",
+          "run_id": "7125b378e548b309b9dd155fd6a87223",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:56:54.546745+00:00",
-            "finish": "2022-12-13T10:56:54.691315+00:00"
+            "start": "2022-12-25T02:23:02.887192+00:00",
+            "finish": "2022-12-25T02:23:03.113095+00:00"
           },
           "domain": "automation",
           "item_id": "set_theme_at_startup",
@@ -1681,22 +1681,22 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:56:54.546790+00:00",
+                "timestamp": "2022-12-25T02:23:02.887239+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.set_theme_at_startup",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:52:53.492364+00:00",
+                      "last_triggered": "2022-12-25T02:17:54.033621+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "set_theme_at_startup",
                       "friendly_name": "Set theme at startup"
                     },
-                    "last_changed": "2022-12-13T10:56:12.389035+00:00",
-                    "last_updated": "2022-12-13T10:56:12.389035+00:00",
+                    "last_changed": "2022-12-25T02:22:06.103901+00:00",
+                    "last_updated": "2022-12-25T02:22:06.103901+00:00",
                     "context": {
-                      "id": "01GM5J1EK5YW326AQRPXTTNYGX",
+                      "id": "01GN3HCQ8Q99XG1J6PB0D1QV9H",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -1715,10 +1715,10 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2022-12-13T10:56:54.596725+00:00",
+                "timestamp": "2022-12-25T02:23:02.925879+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01GM5J2QRJTVADCSQJS2E6E2JC",
+                    "id": "01GN3HEEQ7F6GWYBKPKKTRVYD7",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -1756,19 +1756,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J2QRJTVADCSQJS2E6E2JC",
+            "id": "01GN3HEEQ7F6GWYBKPKKTRVYD7",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "e6c18edaa5811b563f75b69c3481288f",
+          "run_id": "7125b378e548b309b9dd155fd6a87223",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2022-12-13T10:56:54.546745+00:00",
-            "finish": "2022-12-13T10:56:54.691315+00:00"
+            "start": "2022-12-25T02:23:02.887192+00:00",
+            "finish": "2022-12-25T02:23:03.113095+00:00"
           },
           "domain": "automation",
           "item_id": "set_theme_at_startup",
@@ -1779,13 +1779,13 @@
     "script.turn_switch_by_climate": [
       {
         "extended_dict": {
-          "last_step": "sequence/1",
-          "run_id": "3ca0d500960d5f66cb963c224600e12f",
+          "last_step": "sequence/0",
+          "run_id": "417fc1e9edd6f9179a90808d4142d8d2",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.131470+00:00",
-            "finish": "2022-12-13T10:58:20.135869+00:00"
+            "start": "2022-12-25T02:44:50.468763+00:00",
+            "finish": "2022-12-25T02:44:50.472745+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate",
@@ -1793,52 +1793,40 @@
             "sequence/0": [
               {
                 "path": "sequence/0",
-                "timestamp": "2022-12-13T10:58:20.133784+00:00",
+                "timestamp": "2022-12-25T02:44:50.471130+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "script.turn_switch_by_climate",
                     "state": "off",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:20.125142+00:00",
+                      "last_triggered": "2022-12-25T02:44:50.464335+00:00",
                       "mode": "single",
                       "current": 0,
                       "icon": "mdi:switch",
                       "friendly_name": "turn_switch_by_climate"
                     },
-                    "last_changed": "2022-12-13T10:58:20.128158+00:00",
-                    "last_updated": "2022-12-13T10:58:20.128158+00:00",
+                    "last_changed": "2022-12-25T02:44:50.466690+00:00",
+                    "last_updated": "2022-12-25T02:44:50.466690+00:00",
                     "context": {
-                      "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                      "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                       "parent_id": null,
                       "user_id": null
                     }
                   },
                   "climate_entity_id": "climate.t_bedroom",
                   "switch_entity_id": "switch.ac_relay_bedroom",
-                  "hvac_mode": "unavailable",
+                  "hvac_mode": "heating",
                   "preferred_switch_state": "on",
                   "context": {
-                    "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                    "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                     "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
-                  "result": true,
-                  "entities": [
-                    "switch.ac_relay_bedroom"
-                  ]
-                }
-              }
-            ],
-            "sequence/1": [
-              {
-                "path": "sequence/1",
-                "timestamp": "2022-12-13T10:58:20.134384+00:00",
-                "result": {
                   "result": false,
                   "entities": [
-                    "saver.saver"
+                    "switch.ac_relay_bedroom"
                   ]
                 }
               }
@@ -1895,19 +1883,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+            "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "sequence/1",
-          "run_id": "3ca0d500960d5f66cb963c224600e12f",
+          "last_step": "sequence/0",
+          "run_id": "417fc1e9edd6f9179a90808d4142d8d2",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.131470+00:00",
-            "finish": "2022-12-13T10:58:20.135869+00:00"
+            "start": "2022-12-25T02:44:50.468763+00:00",
+            "finish": "2022-12-25T02:44:50.472745+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate"
@@ -1915,13 +1903,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "sequence/1",
-          "run_id": "bb41f3e48ed8db282616d16fc508e112",
+          "last_step": "sequence/0",
+          "run_id": "2e51114aac3360d05461995032df3f95",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.137073+00:00",
-            "finish": "2022-12-13T10:58:20.141530+00:00"
+            "start": "2022-12-25T02:44:50.474367+00:00",
+            "finish": "2022-12-25T02:44:50.478340+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate",
@@ -1929,22 +1917,22 @@
             "sequence/0": [
               {
                 "path": "sequence/0",
-                "timestamp": "2022-12-13T10:58:20.139429+00:00",
+                "timestamp": "2022-12-25T02:44:50.476713+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "script.turn_switch_by_climate",
                     "state": "off",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:20.132266+00:00",
+                      "last_triggered": "2022-12-25T02:44:50.469546+00:00",
                       "mode": "single",
                       "current": 0,
                       "icon": "mdi:switch",
                       "friendly_name": "turn_switch_by_climate"
                     },
-                    "last_changed": "2022-12-13T10:58:20.135065+00:00",
-                    "last_updated": "2022-12-13T10:58:20.135065+00:00",
+                    "last_changed": "2022-12-25T02:44:50.471867+00:00",
+                    "last_updated": "2022-12-25T02:44:50.471867+00:00",
                     "context": {
-                      "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                      "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -1954,27 +1942,15 @@
                   "hvac_mode": "idle",
                   "preferred_switch_state": "off",
                   "context": {
-                    "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                    "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                     "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
-                  "result": true,
-                  "entities": [
-                    "switch.ac_relay_childa"
-                  ]
-                }
-              }
-            ],
-            "sequence/1": [
-              {
-                "path": "sequence/1",
-                "timestamp": "2022-12-13T10:58:20.140048+00:00",
-                "result": {
                   "result": false,
                   "entities": [
-                    "saver.saver"
+                    "switch.ac_relay_childa"
                   ]
                 }
               }
@@ -2031,19 +2007,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+            "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "sequence/1",
-          "run_id": "bb41f3e48ed8db282616d16fc508e112",
+          "last_step": "sequence/0",
+          "run_id": "2e51114aac3360d05461995032df3f95",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.137073+00:00",
-            "finish": "2022-12-13T10:58:20.141530+00:00"
+            "start": "2022-12-25T02:44:50.474367+00:00",
+            "finish": "2022-12-25T02:44:50.478340+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate"
@@ -2051,13 +2027,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "sequence/1",
-          "run_id": "ec5603aa3a65707f34852054f0a5c0a5",
+          "last_step": "sequence/0",
+          "run_id": "cd9fcebff9489c60ecc2311d8a4596fa",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.142683+00:00",
-            "finish": "2022-12-13T10:58:20.147078+00:00"
+            "start": "2022-12-25T02:44:50.479668+00:00",
+            "finish": "2022-12-25T02:44:50.483901+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate",
@@ -2065,52 +2041,40 @@
             "sequence/0": [
               {
                 "path": "sequence/0",
-                "timestamp": "2022-12-13T10:58:20.144960+00:00",
+                "timestamp": "2022-12-25T02:44:50.482209+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "script.turn_switch_by_climate",
                     "state": "off",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:20.137852+00:00",
+                      "last_triggered": "2022-12-25T02:44:50.475160+00:00",
                       "mode": "single",
                       "current": 0,
                       "icon": "mdi:switch",
                       "friendly_name": "turn_switch_by_climate"
                     },
-                    "last_changed": "2022-12-13T10:58:20.140701+00:00",
-                    "last_updated": "2022-12-13T10:58:20.140701+00:00",
+                    "last_changed": "2022-12-25T02:44:50.477495+00:00",
+                    "last_updated": "2022-12-25T02:44:50.477495+00:00",
                     "context": {
-                      "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                      "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                       "parent_id": null,
                       "user_id": null
                     }
                   },
                   "climate_entity_id": "climate.t_childb",
                   "switch_entity_id": "switch.ac_relay_childb",
-                  "hvac_mode": "unavailable",
-                  "preferred_switch_state": "on",
+                  "hvac_mode": "off",
+                  "preferred_switch_state": "off",
                   "context": {
-                    "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                    "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                     "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
-                  "result": true,
-                  "entities": [
-                    "switch.ac_relay_childb"
-                  ]
-                }
-              }
-            ],
-            "sequence/1": [
-              {
-                "path": "sequence/1",
-                "timestamp": "2022-12-13T10:58:20.145569+00:00",
-                "result": {
                   "result": false,
                   "entities": [
-                    "saver.saver"
+                    "switch.ac_relay_childb"
                   ]
                 }
               }
@@ -2167,19 +2131,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+            "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "sequence/1",
-          "run_id": "ec5603aa3a65707f34852054f0a5c0a5",
+          "last_step": "sequence/0",
+          "run_id": "cd9fcebff9489c60ecc2311d8a4596fa",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.142683+00:00",
-            "finish": "2022-12-13T10:58:20.147078+00:00"
+            "start": "2022-12-25T02:44:50.479668+00:00",
+            "finish": "2022-12-25T02:44:50.483901+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate"
@@ -2187,13 +2151,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "sequence/1",
-          "run_id": "277dc94162d0a9edccbf6741d65b84ce",
+          "last_step": "sequence/0",
+          "run_id": "ecbdff0606b5802db17d9e4679110cda",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.148277+00:00",
-            "finish": "2022-12-13T10:58:20.152664+00:00"
+            "start": "2022-12-25T02:44:50.485613+00:00",
+            "finish": "2022-12-25T02:44:50.492417+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate",
@@ -2201,52 +2165,40 @@
             "sequence/0": [
               {
                 "path": "sequence/0",
-                "timestamp": "2022-12-13T10:58:20.150547+00:00",
+                "timestamp": "2022-12-25T02:44:50.488282+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "script.turn_switch_by_climate",
                     "state": "off",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:20.143477+00:00",
+                      "last_triggered": "2022-12-25T02:44:50.480476+00:00",
                       "mode": "single",
                       "current": 0,
                       "icon": "mdi:switch",
                       "friendly_name": "turn_switch_by_climate"
                     },
-                    "last_changed": "2022-12-13T10:58:20.146248+00:00",
-                    "last_updated": "2022-12-13T10:58:20.146248+00:00",
+                    "last_changed": "2022-12-25T02:44:50.482912+00:00",
+                    "last_updated": "2022-12-25T02:44:50.482912+00:00",
                     "context": {
-                      "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                      "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                       "parent_id": null,
                       "user_id": null
                     }
                   },
                   "climate_entity_id": "climate.ac_kitchen",
                   "switch_entity_id": "switch.ac_relay_kitchen",
-                  "hvac_mode": "heating",
-                  "preferred_switch_state": "on",
+                  "hvac_mode": "off",
+                  "preferred_switch_state": "off",
                   "context": {
-                    "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                    "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                     "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
-                  "result": true,
-                  "entities": [
-                    "switch.ac_relay_kitchen"
-                  ]
-                }
-              }
-            ],
-            "sequence/1": [
-              {
-                "path": "sequence/1",
-                "timestamp": "2022-12-13T10:58:20.151173+00:00",
-                "result": {
                   "result": false,
                   "entities": [
-                    "saver.saver"
+                    "switch.ac_relay_kitchen"
                   ]
                 }
               }
@@ -2303,19 +2255,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+            "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "sequence/1",
-          "run_id": "277dc94162d0a9edccbf6741d65b84ce",
+          "last_step": "sequence/0",
+          "run_id": "ecbdff0606b5802db17d9e4679110cda",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.148277+00:00",
-            "finish": "2022-12-13T10:58:20.152664+00:00"
+            "start": "2022-12-25T02:44:50.485613+00:00",
+            "finish": "2022-12-25T02:44:50.492417+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate"
@@ -2323,13 +2275,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "sequence/1",
-          "run_id": "f1cdeb4c4f22863380d76ac609906199",
+          "last_step": "sequence/0",
+          "run_id": "9319b1e9e73492c81f40a7fc955da764",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.153815+00:00",
-            "finish": "2022-12-13T10:58:20.158277+00:00"
+            "start": "2022-12-25T02:44:50.493631+00:00",
+            "finish": "2022-12-25T02:44:50.497668+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate",
@@ -2337,52 +2289,40 @@
             "sequence/0": [
               {
                 "path": "sequence/0",
-                "timestamp": "2022-12-13T10:58:20.156126+00:00",
+                "timestamp": "2022-12-25T02:44:50.495569+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "script.turn_switch_by_climate",
                     "state": "off",
                     "attributes": {
-                      "last_triggered": "2022-12-13T10:58:20.149055+00:00",
+                      "last_triggered": "2022-12-25T02:44:50.486413+00:00",
                       "mode": "single",
                       "current": 0,
                       "icon": "mdi:switch",
                       "friendly_name": "turn_switch_by_climate"
                     },
-                    "last_changed": "2022-12-13T10:58:20.151840+00:00",
-                    "last_updated": "2022-12-13T10:58:20.151840+00:00",
+                    "last_changed": "2022-12-25T02:44:50.491520+00:00",
+                    "last_updated": "2022-12-25T02:44:50.491520+00:00",
                     "context": {
-                      "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                      "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                       "parent_id": null,
                       "user_id": null
                     }
                   },
                   "climate_entity_id": "climate.t_livingroom",
                   "switch_entity_id": "switch.ac_relay_livingroom",
-                  "hvac_mode": "unavailable",
-                  "preferred_switch_state": "on",
+                  "hvac_mode": "idle",
+                  "preferred_switch_state": "off",
                   "context": {
-                    "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+                    "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
                     "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
-                  "result": true,
-                  "entities": [
-                    "switch.ac_relay_livingroom"
-                  ]
-                }
-              }
-            ],
-            "sequence/1": [
-              {
-                "path": "sequence/1",
-                "timestamp": "2022-12-13T10:58:20.156710+00:00",
-                "result": {
                   "result": false,
                   "entities": [
-                    "saver.saver"
+                    "switch.ac_relay_livingroom"
                   ]
                 }
               }
@@ -2439,19 +2379,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BASPX1WSK0MS9F7KX3A",
+            "id": "01GN3JPBMXY3CYHKZX1XMFBAXS",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "sequence/1",
-          "run_id": "f1cdeb4c4f22863380d76ac609906199",
+          "last_step": "sequence/0",
+          "run_id": "9319b1e9e73492c81f40a7fc955da764",
           "state": "stopped",
           "script_execution": "aborted",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.153815+00:00",
-            "finish": "2022-12-13T10:58:20.158277+00:00"
+            "start": "2022-12-25T02:44:50.493631+00:00",
+            "finish": "2022-12-25T02:44:50.497668+00:00"
           },
           "domain": "script",
           "item_id": "turn_switch_by_climate"
@@ -2461,13 +2401,13 @@
     "automation.ac_auto_on": [
       {
         "extended_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "f4a109c25ed7f119a1b54b70ad49eb05",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "98be3e4efccd4574220f0cab186b4470",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:00.097968+00:00",
-            "finish": "2022-12-13T10:58:00.099234+00:00"
+            "start": "2022-12-25T02:44:30.259479+00:00",
+            "finish": "2022-12-25T02:44:30.260607+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -2476,23 +2416,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:00.098151+00:00",
+                "timestamp": "2022-12-25T02:44:30.259635+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_on",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:15:03.974984+00:00",
+                      "last_triggered": "2022-12-25T01:43:16.674676+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_on",
                       "friendly_name": "Kl\u00edma bekapcsol\u00e1s, ha legal\u00e1bb egy szelep nyitva",
                       "icon": "mdi:hvac"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385393+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385393+00:00",
+                    "last_changed": "2022-12-25T02:22:06.099474+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099474+00:00",
                     "context": {
-                      "id": "01GM5J1EK177WZCZN6ZN0F6XFY",
+                      "id": "01GN3HCQ8KJKMM72D62WQ90R70",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -2502,7 +2442,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:00.096953+01:00",
+                    "now": "2022-12-25T03:44:30.258813+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -2511,16 +2451,16 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:00.098237+00:00",
+                "timestamp": "2022-12-25T02:44:30.259720+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/0": [
               {
                 "path": "condition/0/conditions/0",
-                "timestamp": "2022-12-13T10:58:00.098298+00:00",
+                "timestamp": "2022-12-25T02:44:30.259782+00:00",
                 "result": {
                   "result": false
                 }
@@ -2529,10 +2469,10 @@
             "condition/0/conditions/0/entity_id/0": [
               {
                 "path": "condition/0/conditions/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.098353+00:00",
+                "timestamp": "2022-12-25T02:44:30.259836+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -2540,7 +2480,7 @@
             "condition/0/conditions/1": [
               {
                 "path": "condition/0/conditions/1",
-                "timestamp": "2022-12-13T10:58:00.098476+00:00",
+                "timestamp": "2022-12-25T02:44:30.259961+00:00",
                 "result": {
                   "result": false
                 }
@@ -2549,10 +2489,10 @@
             "condition/0/conditions/1/entity_id/0": [
               {
                 "path": "condition/0/conditions/1/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.098527+00:00",
+                "timestamp": "2022-12-25T02:44:30.260035+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -2560,7 +2500,7 @@
             "condition/0/conditions/2": [
               {
                 "path": "condition/0/conditions/2",
-                "timestamp": "2022-12-13T10:58:00.098628+00:00",
+                "timestamp": "2022-12-25T02:44:30.260142+00:00",
                 "result": {
                   "result": false
                 }
@@ -2569,10 +2509,10 @@
             "condition/0/conditions/2/entity_id/0": [
               {
                 "path": "condition/0/conditions/2/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.098677+00:00",
+                "timestamp": "2022-12-25T02:44:30.260193+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -2580,60 +2520,40 @@
             "condition/0/conditions/3": [
               {
                 "path": "condition/0/conditions/3",
-                "timestamp": "2022-12-13T10:58:00.098773+00:00",
+                "timestamp": "2022-12-25T02:44:30.260290+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/3/entity_id/0": [
               {
                 "path": "condition/0/conditions/3/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.098821+00:00",
+                "timestamp": "2022-12-25T02:44:30.260339+00:00",
                 "result": {
-                  "result": false,
-                  "state": "unavailable",
+                  "result": true,
+                  "state": "on",
                   "wanted_state": "on"
                 }
               }
             ],
-            "condition/0/conditions/4": [
+            "condition/1": [
               {
-                "path": "condition/0/conditions/4",
-                "timestamp": "2022-12-13T10:58:00.098917+00:00",
+                "path": "condition/1",
+                "timestamp": "2022-12-25T02:44:30.260464+00:00",
                 "result": {
                   "result": false
                 }
               }
             ],
-            "condition/0/conditions/4/entity_id/0": [
+            "condition/1/entity_id/0": [
               {
-                "path": "condition/0/conditions/4/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.098966+00:00",
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2022-12-25T02:44:30.260518+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
-                }
-              }
-            ],
-            "condition/0/conditions/5": [
-              {
-                "path": "condition/0/conditions/5",
-                "timestamp": "2022-12-13T10:58:00.099078+00:00",
-                "result": {
-                  "result": false
-                }
-              }
-            ],
-            "condition/0/conditions/5/entity_id/0": [
-              {
-                "path": "condition/0/conditions/5/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.099128+00:00",
-                "result": {
-                  "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
+                  "state": "heat",
+                  "wanted_state": "off"
                 }
               }
             ]
@@ -2713,19 +2633,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J4QS148A2X4B2VTNZPDCP",
+            "id": "01GN3JNQXKX71FR90CK25K2ZTH",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "f4a109c25ed7f119a1b54b70ad49eb05",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "98be3e4efccd4574220f0cab186b4470",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:00.097968+00:00",
-            "finish": "2022-12-13T10:58:00.099234+00:00"
+            "start": "2022-12-25T02:44:30.259479+00:00",
+            "finish": "2022-12-25T02:44:30.260607+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -2734,13 +2654,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "798e3aca54893cf1e27970cebe66dac4",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "3f30d73936e877644ce6f7dd632835e8",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:05.097595+00:00",
-            "finish": "2022-12-13T10:58:05.098876+00:00"
+            "start": "2022-12-25T02:44:35.259587+00:00",
+            "finish": "2022-12-25T02:44:35.260714+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -2749,23 +2669,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:05.097760+00:00",
+                "timestamp": "2022-12-25T02:44:35.259748+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_on",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:15:03.974984+00:00",
+                      "last_triggered": "2022-12-25T01:43:16.674676+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_on",
                       "friendly_name": "Kl\u00edma bekapcsol\u00e1s, ha legal\u00e1bb egy szelep nyitva",
                       "icon": "mdi:hvac"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385393+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385393+00:00",
+                    "last_changed": "2022-12-25T02:22:06.099474+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099474+00:00",
                     "context": {
-                      "id": "01GM5J1EK177WZCZN6ZN0F6XFY",
+                      "id": "01GN3HCQ8KJKMM72D62WQ90R70",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -2775,7 +2695,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:05.096989+01:00",
+                    "now": "2022-12-25T03:44:35.258975+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -2784,16 +2704,16 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:05.097845+00:00",
+                "timestamp": "2022-12-25T02:44:35.259832+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/0": [
               {
                 "path": "condition/0/conditions/0",
-                "timestamp": "2022-12-13T10:58:05.097909+00:00",
+                "timestamp": "2022-12-25T02:44:35.259891+00:00",
                 "result": {
                   "result": false
                 }
@@ -2802,10 +2722,10 @@
             "condition/0/conditions/0/entity_id/0": [
               {
                 "path": "condition/0/conditions/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.097964+00:00",
+                "timestamp": "2022-12-25T02:44:35.259946+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -2813,7 +2733,7 @@
             "condition/0/conditions/1": [
               {
                 "path": "condition/0/conditions/1",
-                "timestamp": "2022-12-13T10:58:05.098113+00:00",
+                "timestamp": "2022-12-25T02:44:35.260096+00:00",
                 "result": {
                   "result": false
                 }
@@ -2822,10 +2742,10 @@
             "condition/0/conditions/1/entity_id/0": [
               {
                 "path": "condition/0/conditions/1/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.098167+00:00",
+                "timestamp": "2022-12-25T02:44:35.260150+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -2833,7 +2753,7 @@
             "condition/0/conditions/2": [
               {
                 "path": "condition/0/conditions/2",
-                "timestamp": "2022-12-13T10:58:05.098267+00:00",
+                "timestamp": "2022-12-25T02:44:35.260252+00:00",
                 "result": {
                   "result": false
                 }
@@ -2842,10 +2762,10 @@
             "condition/0/conditions/2/entity_id/0": [
               {
                 "path": "condition/0/conditions/2/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.098318+00:00",
+                "timestamp": "2022-12-25T02:44:35.260305+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -2853,60 +2773,40 @@
             "condition/0/conditions/3": [
               {
                 "path": "condition/0/conditions/3",
-                "timestamp": "2022-12-13T10:58:05.098412+00:00",
+                "timestamp": "2022-12-25T02:44:35.260403+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/3/entity_id/0": [
               {
                 "path": "condition/0/conditions/3/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.098460+00:00",
+                "timestamp": "2022-12-25T02:44:35.260452+00:00",
                 "result": {
-                  "result": false,
-                  "state": "unavailable",
+                  "result": true,
+                  "state": "on",
                   "wanted_state": "on"
                 }
               }
             ],
-            "condition/0/conditions/4": [
+            "condition/1": [
               {
-                "path": "condition/0/conditions/4",
-                "timestamp": "2022-12-13T10:58:05.098558+00:00",
+                "path": "condition/1",
+                "timestamp": "2022-12-25T02:44:35.260574+00:00",
                 "result": {
                   "result": false
                 }
               }
             ],
-            "condition/0/conditions/4/entity_id/0": [
+            "condition/1/entity_id/0": [
               {
-                "path": "condition/0/conditions/4/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.098617+00:00",
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2022-12-25T02:44:35.260626+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
-                }
-              }
-            ],
-            "condition/0/conditions/5": [
-              {
-                "path": "condition/0/conditions/5",
-                "timestamp": "2022-12-13T10:58:05.098721+00:00",
-                "result": {
-                  "result": false
-                }
-              }
-            ],
-            "condition/0/conditions/5/entity_id/0": [
-              {
-                "path": "condition/0/conditions/5/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.098770+00:00",
-                "result": {
-                  "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
+                  "state": "heat",
+                  "wanted_state": "off"
                 }
               }
             ]
@@ -2986,19 +2886,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J4WN9H9PN2HBJX425FKRG",
+            "id": "01GN3JNWSV1DX2J3S0S58AGDXR",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "798e3aca54893cf1e27970cebe66dac4",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "3f30d73936e877644ce6f7dd632835e8",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:05.097595+00:00",
-            "finish": "2022-12-13T10:58:05.098876+00:00"
+            "start": "2022-12-25T02:44:35.259587+00:00",
+            "finish": "2022-12-25T02:44:35.260714+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3007,13 +2907,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "d9fd3230e90a004cdbae9985dfce9491",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "06aa1cd073ab55e89ff2e6af866833d8",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:10.097264+00:00",
-            "finish": "2022-12-13T10:58:10.098507+00:00"
+            "start": "2022-12-25T02:44:40.259129+00:00",
+            "finish": "2022-12-25T02:44:40.260273+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3022,23 +2922,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:10.097432+00:00",
+                "timestamp": "2022-12-25T02:44:40.259288+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_on",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:15:03.974984+00:00",
+                      "last_triggered": "2022-12-25T01:43:16.674676+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_on",
                       "friendly_name": "Kl\u00edma bekapcsol\u00e1s, ha legal\u00e1bb egy szelep nyitva",
                       "icon": "mdi:hvac"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385393+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385393+00:00",
+                    "last_changed": "2022-12-25T02:22:06.099474+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099474+00:00",
                     "context": {
-                      "id": "01GM5J1EK177WZCZN6ZN0F6XFY",
+                      "id": "01GN3HCQ8KJKMM72D62WQ90R70",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -3048,7 +2948,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:10.096651+01:00",
+                    "now": "2022-12-25T03:44:40.258523+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -3057,16 +2957,16 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:10.097513+00:00",
+                "timestamp": "2022-12-25T02:44:40.259375+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/0": [
               {
                 "path": "condition/0/conditions/0",
-                "timestamp": "2022-12-13T10:58:10.097574+00:00",
+                "timestamp": "2022-12-25T02:44:40.259440+00:00",
                 "result": {
                   "result": false
                 }
@@ -3075,10 +2975,10 @@
             "condition/0/conditions/0/entity_id/0": [
               {
                 "path": "condition/0/conditions/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.097626+00:00",
+                "timestamp": "2022-12-25T02:44:40.259494+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3086,7 +2986,7 @@
             "condition/0/conditions/1": [
               {
                 "path": "condition/0/conditions/1",
-                "timestamp": "2022-12-13T10:58:10.097752+00:00",
+                "timestamp": "2022-12-25T02:44:40.259619+00:00",
                 "result": {
                   "result": false
                 }
@@ -3095,10 +2995,10 @@
             "condition/0/conditions/1/entity_id/0": [
               {
                 "path": "condition/0/conditions/1/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.097804+00:00",
+                "timestamp": "2022-12-25T02:44:40.259672+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3106,7 +3006,7 @@
             "condition/0/conditions/2": [
               {
                 "path": "condition/0/conditions/2",
-                "timestamp": "2022-12-13T10:58:10.097901+00:00",
+                "timestamp": "2022-12-25T02:44:40.259773+00:00",
                 "result": {
                   "result": false
                 }
@@ -3115,10 +3015,10 @@
             "condition/0/conditions/2/entity_id/0": [
               {
                 "path": "condition/0/conditions/2/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.097949+00:00",
+                "timestamp": "2022-12-25T02:44:40.259825+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3126,60 +3026,40 @@
             "condition/0/conditions/3": [
               {
                 "path": "condition/0/conditions/3",
-                "timestamp": "2022-12-13T10:58:10.098060+00:00",
+                "timestamp": "2022-12-25T02:44:40.259922+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/3/entity_id/0": [
               {
                 "path": "condition/0/conditions/3/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.098109+00:00",
+                "timestamp": "2022-12-25T02:44:40.259976+00:00",
                 "result": {
-                  "result": false,
-                  "state": "unavailable",
+                  "result": true,
+                  "state": "on",
                   "wanted_state": "on"
                 }
               }
             ],
-            "condition/0/conditions/4": [
+            "condition/1": [
               {
-                "path": "condition/0/conditions/4",
-                "timestamp": "2022-12-13T10:58:10.098199+00:00",
+                "path": "condition/1",
+                "timestamp": "2022-12-25T02:44:40.260124+00:00",
                 "result": {
                   "result": false
                 }
               }
             ],
-            "condition/0/conditions/4/entity_id/0": [
+            "condition/1/entity_id/0": [
               {
-                "path": "condition/0/conditions/4/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.098246+00:00",
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2022-12-25T02:44:40.260179+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
-                }
-              }
-            ],
-            "condition/0/conditions/5": [
-              {
-                "path": "condition/0/conditions/5",
-                "timestamp": "2022-12-13T10:58:10.098334+00:00",
-                "result": {
-                  "result": false
-                }
-              }
-            ],
-            "condition/0/conditions/5/entity_id/0": [
-              {
-                "path": "condition/0/conditions/5/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.098395+00:00",
-                "result": {
-                  "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
+                  "state": "heat",
+                  "wanted_state": "off"
                 }
               }
             ]
@@ -3259,19 +3139,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J51HHHD3HS1KJ9NB40VM3",
+            "id": "01GN3JP1P26VR2T862CG9EERME",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "d9fd3230e90a004cdbae9985dfce9491",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "06aa1cd073ab55e89ff2e6af866833d8",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:10.097264+00:00",
-            "finish": "2022-12-13T10:58:10.098507+00:00"
+            "start": "2022-12-25T02:44:40.259129+00:00",
+            "finish": "2022-12-25T02:44:40.260273+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3280,13 +3160,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "72fd7a73a720b8f39762486e5881a96d",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "ae4beeea5d7ee9f9e06924a6b728ca7c",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:15.097888+00:00",
-            "finish": "2022-12-13T10:58:15.099162+00:00"
+            "start": "2022-12-25T02:44:45.259824+00:00",
+            "finish": "2022-12-25T02:44:45.261016+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3295,23 +3175,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:15.098084+00:00",
+                "timestamp": "2022-12-25T02:44:45.259986+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_on",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:15:03.974984+00:00",
+                      "last_triggered": "2022-12-25T01:43:16.674676+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_on",
                       "friendly_name": "Kl\u00edma bekapcsol\u00e1s, ha legal\u00e1bb egy szelep nyitva",
                       "icon": "mdi:hvac"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385393+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385393+00:00",
+                    "last_changed": "2022-12-25T02:22:06.099474+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099474+00:00",
                     "context": {
-                      "id": "01GM5J1EK177WZCZN6ZN0F6XFY",
+                      "id": "01GN3HCQ8KJKMM72D62WQ90R70",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -3321,7 +3201,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:15.097224+01:00",
+                    "now": "2022-12-25T03:44:45.259233+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -3330,16 +3210,16 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:15.098171+00:00",
+                "timestamp": "2022-12-25T02:44:45.260114+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/0": [
               {
                 "path": "condition/0/conditions/0",
-                "timestamp": "2022-12-13T10:58:15.098233+00:00",
+                "timestamp": "2022-12-25T02:44:45.260175+00:00",
                 "result": {
                   "result": false
                 }
@@ -3348,10 +3228,10 @@
             "condition/0/conditions/0/entity_id/0": [
               {
                 "path": "condition/0/conditions/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.098286+00:00",
+                "timestamp": "2022-12-25T02:44:45.260238+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3359,7 +3239,7 @@
             "condition/0/conditions/1": [
               {
                 "path": "condition/0/conditions/1",
-                "timestamp": "2022-12-13T10:58:15.098417+00:00",
+                "timestamp": "2022-12-25T02:44:45.260373+00:00",
                 "result": {
                   "result": false
                 }
@@ -3368,10 +3248,10 @@
             "condition/0/conditions/1/entity_id/0": [
               {
                 "path": "condition/0/conditions/1/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.098468+00:00",
+                "timestamp": "2022-12-25T02:44:45.260426+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3379,7 +3259,7 @@
             "condition/0/conditions/2": [
               {
                 "path": "condition/0/conditions/2",
-                "timestamp": "2022-12-13T10:58:15.098567+00:00",
+                "timestamp": "2022-12-25T02:44:45.260530+00:00",
                 "result": {
                   "result": false
                 }
@@ -3388,10 +3268,10 @@
             "condition/0/conditions/2/entity_id/0": [
               {
                 "path": "condition/0/conditions/2/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.098615+00:00",
+                "timestamp": "2022-12-25T02:44:45.260581+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3399,60 +3279,40 @@
             "condition/0/conditions/3": [
               {
                 "path": "condition/0/conditions/3",
-                "timestamp": "2022-12-13T10:58:15.098709+00:00",
+                "timestamp": "2022-12-25T02:44:45.260679+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/3/entity_id/0": [
               {
                 "path": "condition/0/conditions/3/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.098756+00:00",
+                "timestamp": "2022-12-25T02:44:45.260729+00:00",
                 "result": {
-                  "result": false,
-                  "state": "unavailable",
+                  "result": true,
+                  "state": "on",
                   "wanted_state": "on"
                 }
               }
             ],
-            "condition/0/conditions/4": [
+            "condition/1": [
               {
-                "path": "condition/0/conditions/4",
-                "timestamp": "2022-12-13T10:58:15.098849+00:00",
+                "path": "condition/1",
+                "timestamp": "2022-12-25T02:44:45.260854+00:00",
                 "result": {
                   "result": false
                 }
               }
             ],
-            "condition/0/conditions/4/entity_id/0": [
+            "condition/1/entity_id/0": [
               {
-                "path": "condition/0/conditions/4/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.098902+00:00",
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2022-12-25T02:44:45.260908+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
-                }
-              }
-            ],
-            "condition/0/conditions/5": [
-              {
-                "path": "condition/0/conditions/5",
-                "timestamp": "2022-12-13T10:58:15.098994+00:00",
-                "result": {
-                  "result": false
-                }
-              }
-            ],
-            "condition/0/conditions/5/entity_id/0": [
-              {
-                "path": "condition/0/conditions/5/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.099057+00:00",
-                "result": {
-                  "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
+                  "state": "heat",
+                  "wanted_state": "off"
                 }
               }
             ]
@@ -3532,19 +3392,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J56DSAZXC9T5HX0WJB49M",
+            "id": "01GN3JP6JBGMBS3C969JEX46PA",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "72fd7a73a720b8f39762486e5881a96d",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "ae4beeea5d7ee9f9e06924a6b728ca7c",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:15.097888+00:00",
-            "finish": "2022-12-13T10:58:15.099162+00:00"
+            "start": "2022-12-25T02:44:45.259824+00:00",
+            "finish": "2022-12-25T02:44:45.261016+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3553,13 +3413,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "090f42f039905fc33e99789e818e5a0d",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "e6ce73c80bd8e196bf0561a44e04f3d7",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.097946+00:00",
-            "finish": "2022-12-13T10:58:20.099216+00:00"
+            "start": "2022-12-25T02:44:50.259263+00:00",
+            "finish": "2022-12-25T02:44:50.260418+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3568,23 +3428,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:20.098148+00:00",
+                "timestamp": "2022-12-25T02:44:50.259426+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_on",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:15:03.974984+00:00",
+                      "last_triggered": "2022-12-25T01:43:16.674676+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_on",
                       "friendly_name": "Kl\u00edma bekapcsol\u00e1s, ha legal\u00e1bb egy szelep nyitva",
                       "icon": "mdi:hvac"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385393+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385393+00:00",
+                    "last_changed": "2022-12-25T02:22:06.099474+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099474+00:00",
                     "context": {
-                      "id": "01GM5J1EK177WZCZN6ZN0F6XFY",
+                      "id": "01GN3HCQ8KJKMM72D62WQ90R70",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -3594,7 +3454,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:20.097375+01:00",
+                    "now": "2022-12-25T03:44:50.258718+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -3603,16 +3463,16 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:20.098233+00:00",
+                "timestamp": "2022-12-25T02:44:50.259513+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/0": [
               {
                 "path": "condition/0/conditions/0",
-                "timestamp": "2022-12-13T10:58:20.098296+00:00",
+                "timestamp": "2022-12-25T02:44:50.259574+00:00",
                 "result": {
                   "result": false
                 }
@@ -3621,10 +3481,10 @@
             "condition/0/conditions/0/entity_id/0": [
               {
                 "path": "condition/0/conditions/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.098348+00:00",
+                "timestamp": "2022-12-25T02:44:50.259635+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3632,7 +3492,7 @@
             "condition/0/conditions/1": [
               {
                 "path": "condition/0/conditions/1",
-                "timestamp": "2022-12-13T10:58:20.098472+00:00",
+                "timestamp": "2022-12-25T02:44:50.259769+00:00",
                 "result": {
                   "result": false
                 }
@@ -3641,10 +3501,10 @@
             "condition/0/conditions/1/entity_id/0": [
               {
                 "path": "condition/0/conditions/1/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.098525+00:00",
+                "timestamp": "2022-12-25T02:44:50.259823+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3652,7 +3512,7 @@
             "condition/0/conditions/2": [
               {
                 "path": "condition/0/conditions/2",
-                "timestamp": "2022-12-13T10:58:20.098622+00:00",
+                "timestamp": "2022-12-25T02:44:50.259928+00:00",
                 "result": {
                   "result": false
                 }
@@ -3661,10 +3521,10 @@
             "condition/0/conditions/2/entity_id/0": [
               {
                 "path": "condition/0/conditions/2/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.098671+00:00",
+                "timestamp": "2022-12-25T02:44:50.259980+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "off",
                   "wanted_state": "on"
                 }
               }
@@ -3672,60 +3532,40 @@
             "condition/0/conditions/3": [
               {
                 "path": "condition/0/conditions/3",
-                "timestamp": "2022-12-13T10:58:20.098766+00:00",
+                "timestamp": "2022-12-25T02:44:50.260098+00:00",
                 "result": {
-                  "result": false
+                  "result": true
                 }
               }
             ],
             "condition/0/conditions/3/entity_id/0": [
               {
                 "path": "condition/0/conditions/3/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.098813+00:00",
+                "timestamp": "2022-12-25T02:44:50.260150+00:00",
                 "result": {
-                  "result": false,
-                  "state": "unavailable",
+                  "result": true,
+                  "state": "on",
                   "wanted_state": "on"
                 }
               }
             ],
-            "condition/0/conditions/4": [
+            "condition/1": [
               {
-                "path": "condition/0/conditions/4",
-                "timestamp": "2022-12-13T10:58:20.098906+00:00",
+                "path": "condition/1",
+                "timestamp": "2022-12-25T02:44:50.260274+00:00",
                 "result": {
                   "result": false
                 }
               }
             ],
-            "condition/0/conditions/4/entity_id/0": [
+            "condition/1/entity_id/0": [
               {
-                "path": "condition/0/conditions/4/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.098955+00:00",
+                "path": "condition/1/entity_id/0",
+                "timestamp": "2022-12-25T02:44:50.260327+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
-                }
-              }
-            ],
-            "condition/0/conditions/5": [
-              {
-                "path": "condition/0/conditions/5",
-                "timestamp": "2022-12-13T10:58:20.099064+00:00",
-                "result": {
-                  "result": false
-                }
-              }
-            ],
-            "condition/0/conditions/5/entity_id/0": [
-              {
-                "path": "condition/0/conditions/5/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.099112+00:00",
-                "result": {
-                  "result": false,
-                  "state": "unavailable",
-                  "wanted_state": "on"
+                  "state": "heat",
+                  "wanted_state": "off"
                 }
               }
             ]
@@ -3805,19 +3645,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BA1JSFTAHVG52853V7R",
+            "id": "01GN3JPBEKD19XYSER2G55EYR4",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/conditions/5/entity_id/0",
-          "run_id": "090f42f039905fc33e99789e818e5a0d",
+          "last_step": "condition/1/entity_id/0",
+          "run_id": "e6ce73c80bd8e196bf0561a44e04f3d7",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.097946+00:00",
-            "finish": "2022-12-13T10:58:20.099216+00:00"
+            "start": "2022-12-25T02:44:50.259263+00:00",
+            "finish": "2022-12-25T02:44:50.260418+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_on",
@@ -3828,13 +3668,13 @@
     "automation.ac_auto_off": [
       {
         "extended_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "7f2c7e6283cc12fa61ada0932c1b0fec",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "545fbce691cc1939d709f8d024163993",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:00.166745+00:00",
-            "finish": "2022-12-13T10:58:00.167152+00:00"
+            "start": "2022-12-25T02:44:30.426255+00:00",
+            "finish": "2022-12-25T02:44:30.427063+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -3843,23 +3683,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:00.166869+00:00",
+                "timestamp": "2022-12-25T02:44:30.426473+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_off",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:52:11.159652+00:00",
+                      "last_triggered": "2022-12-25T01:43:15.311665+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_off",
                       "friendly_name": "Kl\u00edma kikapcsol\u00e1s, ha minden szelep z\u00e1rva",
                       "icon": "mdi:hvac-off"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385022+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385022+00:00",
+                    "last_changed": "2022-12-25T02:22:06.098968+00:00",
+                    "last_updated": "2022-12-25T02:22:06.098968+00:00",
                     "context": {
-                      "id": "01GM5J1EK1CRSYP90JZKD3E270",
+                      "id": "01GN3HCQ8J0G6X7FYE643R7387",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -3869,7 +3709,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:00.166171+01:00",
+                    "now": "2022-12-25T03:44:30.425669+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -3878,7 +3718,7 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:00.166950+00:00",
+                "timestamp": "2022-12-25T02:44:30.426560+00:00",
                 "result": {
                   "result": false
                 }
@@ -3887,10 +3727,43 @@
             "condition/0/entity_id/0": [
               {
                 "path": "condition/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:00.167037+00:00",
+                "timestamp": "2022-12-25T02:44:30.426622+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/1": [
+              {
+                "path": "condition/0/entity_id/1",
+                "timestamp": "2022-12-25T02:44:30.426722+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/2": [
+              {
+                "path": "condition/0/entity_id/2",
+                "timestamp": "2022-12-25T02:44:30.426859+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/3": [
+              {
+                "path": "condition/0/entity_id/3",
+                "timestamp": "2022-12-25T02:44:30.426948+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "on",
                   "wanted_state": "off"
                 }
               }
@@ -3943,19 +3816,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J4QV6S7XNS6EFT328GN4A",
+            "id": "01GN3JNR2T0WTARTG18WKZ5XSP",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "7f2c7e6283cc12fa61ada0932c1b0fec",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "545fbce691cc1939d709f8d024163993",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:00.166745+00:00",
-            "finish": "2022-12-13T10:58:00.167152+00:00"
+            "start": "2022-12-25T02:44:30.426255+00:00",
+            "finish": "2022-12-25T02:44:30.427063+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -3964,13 +3837,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "3ad67edc79443dc3dbe79b7a45719363",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "aff1901c97f500efd910c538c4cbf705",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:05.172372+00:00",
-            "finish": "2022-12-13T10:58:05.172717+00:00"
+            "start": "2022-12-25T02:44:35.426517+00:00",
+            "finish": "2022-12-25T02:44:35.427198+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -3979,23 +3852,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:05.172484+00:00",
+                "timestamp": "2022-12-25T02:44:35.426657+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_off",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:52:11.159652+00:00",
+                      "last_triggered": "2022-12-25T01:43:15.311665+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_off",
                       "friendly_name": "Kl\u00edma kikapcsol\u00e1s, ha minden szelep z\u00e1rva",
                       "icon": "mdi:hvac-off"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385022+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385022+00:00",
+                    "last_changed": "2022-12-25T02:22:06.098968+00:00",
+                    "last_updated": "2022-12-25T02:22:06.098968+00:00",
                     "context": {
-                      "id": "01GM5J1EK1CRSYP90JZKD3E270",
+                      "id": "01GN3HCQ8J0G6X7FYE643R7387",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -4005,7 +3878,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:05.167083+01:00",
+                    "now": "2022-12-25T03:44:35.425879+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -4014,7 +3887,7 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:05.172554+00:00",
+                "timestamp": "2022-12-25T02:44:35.426742+00:00",
                 "result": {
                   "result": false
                 }
@@ -4023,10 +3896,43 @@
             "condition/0/entity_id/0": [
               {
                 "path": "condition/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:05.172614+00:00",
+                "timestamp": "2022-12-25T02:44:35.426801+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/1": [
+              {
+                "path": "condition/0/entity_id/1",
+                "timestamp": "2022-12-25T02:44:35.426907+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/2": [
+              {
+                "path": "condition/0/entity_id/2",
+                "timestamp": "2022-12-25T02:44:35.426987+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/3": [
+              {
+                "path": "condition/0/entity_id/3",
+                "timestamp": "2022-12-25T02:44:35.427089+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "on",
                   "wanted_state": "off"
                 }
               }
@@ -4079,19 +3985,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J4WQMXK33QPDYCE8NS2R3",
+            "id": "01GN3JNWZ2HY75YJ26YSD09NW4",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "3ad67edc79443dc3dbe79b7a45719363",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "aff1901c97f500efd910c538c4cbf705",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:05.172372+00:00",
-            "finish": "2022-12-13T10:58:05.172717+00:00"
+            "start": "2022-12-25T02:44:35.426517+00:00",
+            "finish": "2022-12-25T02:44:35.427198+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -4100,13 +4006,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "d1747b240f8963832c0b72e49cc3ddad",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "56f77011311497f2a615cac771ba21d7",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:10.216592+00:00",
-            "finish": "2022-12-13T10:58:10.216873+00:00"
+            "start": "2022-12-25T02:44:40.426758+00:00",
+            "finish": "2022-12-25T02:44:40.427434+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -4115,23 +4021,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:10.216684+00:00",
+                "timestamp": "2022-12-25T02:44:40.426897+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_off",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:52:11.159652+00:00",
+                      "last_triggered": "2022-12-25T01:43:15.311665+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_off",
                       "friendly_name": "Kl\u00edma kikapcsol\u00e1s, ha minden szelep z\u00e1rva",
                       "icon": "mdi:hvac-off"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385022+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385022+00:00",
+                    "last_changed": "2022-12-25T02:22:06.098968+00:00",
+                    "last_updated": "2022-12-25T02:22:06.098968+00:00",
                     "context": {
-                      "id": "01GM5J1EK1CRSYP90JZKD3E270",
+                      "id": "01GN3HCQ8J0G6X7FYE643R7387",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -4141,7 +4047,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:10.216055+01:00",
+                    "now": "2022-12-25T03:44:40.426205+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -4150,7 +4056,7 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:10.216758+00:00",
+                "timestamp": "2022-12-25T02:44:40.426983+00:00",
                 "result": {
                   "result": false
                 }
@@ -4159,10 +4065,43 @@
             "condition/0/entity_id/0": [
               {
                 "path": "condition/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:10.216796+00:00",
+                "timestamp": "2022-12-25T02:44:40.427069+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/1": [
+              {
+                "path": "condition/0/entity_id/1",
+                "timestamp": "2022-12-25T02:44:40.427175+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/2": [
+              {
+                "path": "condition/0/entity_id/2",
+                "timestamp": "2022-12-25T02:44:40.427259+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/3": [
+              {
+                "path": "condition/0/entity_id/3",
+                "timestamp": "2022-12-25T02:44:40.427339+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "on",
                   "wanted_state": "off"
                 }
               }
@@ -4215,19 +4154,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J51N8BR19Y0BHA86YX557",
+            "id": "01GN3JP1VADRKJAWESDJ9SP9VB",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "d1747b240f8963832c0b72e49cc3ddad",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "56f77011311497f2a615cac771ba21d7",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:10.216592+00:00",
-            "finish": "2022-12-13T10:58:10.216873+00:00"
+            "start": "2022-12-25T02:44:40.426758+00:00",
+            "finish": "2022-12-25T02:44:40.427434+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -4236,13 +4175,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "5c61abf821229a246705a9a3492e157a",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "f6fba5037b2975ae3ea7620282f164f5",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:15.167256+00:00",
-            "finish": "2022-12-13T10:58:15.167632+00:00"
+            "start": "2022-12-25T02:44:45.426642+00:00",
+            "finish": "2022-12-25T02:44:45.427290+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -4251,23 +4190,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:15.167380+00:00",
+                "timestamp": "2022-12-25T02:44:45.426776+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_off",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:52:11.159652+00:00",
+                      "last_triggered": "2022-12-25T01:43:15.311665+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_off",
                       "friendly_name": "Kl\u00edma kikapcsol\u00e1s, ha minden szelep z\u00e1rva",
                       "icon": "mdi:hvac-off"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385022+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385022+00:00",
+                    "last_changed": "2022-12-25T02:22:06.098968+00:00",
+                    "last_updated": "2022-12-25T02:22:06.098968+00:00",
                     "context": {
-                      "id": "01GM5J1EK1CRSYP90JZKD3E270",
+                      "id": "01GN3HCQ8J0G6X7FYE643R7387",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -4277,7 +4216,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:15.166656+01:00",
+                    "now": "2022-12-25T03:44:45.426067+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -4286,7 +4225,7 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:15.167458+00:00",
+                "timestamp": "2022-12-25T02:44:45.426858+00:00",
                 "result": {
                   "result": false
                 }
@@ -4295,10 +4234,43 @@
             "condition/0/entity_id/0": [
               {
                 "path": "condition/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:15.167520+00:00",
+                "timestamp": "2022-12-25T02:44:45.426918+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/1": [
+              {
+                "path": "condition/0/entity_id/1",
+                "timestamp": "2022-12-25T02:44:45.427040+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/2": [
+              {
+                "path": "condition/0/entity_id/2",
+                "timestamp": "2022-12-25T02:44:45.427121+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/3": [
+              {
+                "path": "condition/0/entity_id/3",
+                "timestamp": "2022-12-25T02:44:45.427198+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "on",
                   "wanted_state": "off"
                 }
               }
@@ -4351,19 +4323,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J56FZABE57449B4DX34DW",
+            "id": "01GN3JP6QJN8J4F2PT0AWXXQXB",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "5c61abf821229a246705a9a3492e157a",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "f6fba5037b2975ae3ea7620282f164f5",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:15.167256+00:00",
-            "finish": "2022-12-13T10:58:15.167632+00:00"
+            "start": "2022-12-25T02:44:45.426642+00:00",
+            "finish": "2022-12-25T02:44:45.427290+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -4372,13 +4344,13 @@
       },
       {
         "extended_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "a5812014316cc0da9024c6c046237d9e",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "cfa9ca8fd72caa6ed926c0d24f0e8b35",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.166412+00:00",
-            "finish": "2022-12-13T10:58:20.166791+00:00"
+            "start": "2022-12-25T02:44:50.427131+00:00",
+            "finish": "2022-12-25T02:44:50.427751+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
@@ -4387,23 +4359,23 @@
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2022-12-13T10:58:20.166537+00:00",
+                "timestamp": "2022-12-25T02:44:50.427261+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.ac_auto_off",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2022-12-13T09:52:11.159652+00:00",
+                      "last_triggered": "2022-12-25T01:43:15.311665+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "ac_auto_off",
                       "friendly_name": "Kl\u00edma kikapcsol\u00e1s, ha minden szelep z\u00e1rva",
                       "icon": "mdi:hvac-off"
                     },
-                    "last_changed": "2022-12-13T10:56:12.385022+00:00",
-                    "last_updated": "2022-12-13T10:56:12.385022+00:00",
+                    "last_changed": "2022-12-25T02:22:06.098968+00:00",
+                    "last_updated": "2022-12-25T02:22:06.098968+00:00",
                     "context": {
-                      "id": "01GM5J1EK1CRSYP90JZKD3E270",
+                      "id": "01GN3HCQ8J0G6X7FYE643R7387",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -4413,7 +4385,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time_pattern",
-                    "now": "2022-12-13T11:58:20.165816+01:00",
+                    "now": "2022-12-25T03:44:50.426514+01:00",
                     "description": "time pattern"
                   }
                 }
@@ -4422,7 +4394,7 @@
             "condition/0": [
               {
                 "path": "condition/0",
-                "timestamp": "2022-12-13T10:58:20.166618+00:00",
+                "timestamp": "2022-12-25T02:44:50.427345+00:00",
                 "result": {
                   "result": false
                 }
@@ -4431,10 +4403,43 @@
             "condition/0/entity_id/0": [
               {
                 "path": "condition/0/entity_id/0",
-                "timestamp": "2022-12-13T10:58:20.166680+00:00",
+                "timestamp": "2022-12-25T02:44:50.427405+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/1": [
+              {
+                "path": "condition/0/entity_id/1",
+                "timestamp": "2022-12-25T02:44:50.427508+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/2": [
+              {
+                "path": "condition/0/entity_id/2",
+                "timestamp": "2022-12-25T02:44:50.427586+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "condition/0/entity_id/3": [
+              {
+                "path": "condition/0/entity_id/3",
+                "timestamp": "2022-12-25T02:44:50.427662+00:00",
                 "result": {
                   "result": false,
-                  "state": "unavailable",
+                  "state": "on",
                   "wanted_state": "off"
                 }
               }
@@ -4487,23 +4492,1085 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GM5J5BC6HCDHHY5TJ6MSXMCQ",
+            "id": "01GN3JPBKTXQD9HJG8299Q46Z4",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
-          "last_step": "condition/0/entity_id/0",
-          "run_id": "a5812014316cc0da9024c6c046237d9e",
+          "last_step": "condition/0/entity_id/3",
+          "run_id": "cfa9ca8fd72caa6ed926c0d24f0e8b35",
           "state": "stopped",
           "script_execution": "failed_conditions",
           "timestamp": {
-            "start": "2022-12-13T10:58:20.166412+00:00",
-            "finish": "2022-12-13T10:58:20.166791+00:00"
+            "start": "2022-12-25T02:44:50.427131+00:00",
+            "finish": "2022-12-25T02:44:50.427751+00:00"
           },
           "domain": "automation",
           "item_id": "ac_auto_off",
           "trigger": "time pattern"
+        }
+      }
+    ],
+    "automation.ac_mode": [
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "47b606d5e972a81c4aabd6623cc6a442",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:30:33.636989+00:00",
+            "finish": "2022-12-25T02:30:33.637557+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2022-12-25T02:30:33.637109+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ac_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2022-12-25T01:43:16.704506+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "ac_mode",
+                      "friendly_name": "Kl\u00edma m\u00f3d kapcsol\u00f3k \u00f6sszek\u00f6t\u00e9se",
+                      "icon": "mdi:vector-link"
+                    },
+                    "last_changed": "2022-12-25T02:22:06.099804+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099804+00:00",
+                    "context": {
+                      "id": "01GN3HCQ8KRCQPNRK4M99XKA57",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "climate.t_bedroom",
+                    "from_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 23.0,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:30:00.742199+00:00",
+                      "context": {
+                        "id": "01GN3HV6S6NF5AHQM5TEWZMAP2",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 22.5,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:30:33.636088+00:00",
+                      "context": {
+                        "id": "01GN3HW6X4CKD2YQ2WEC4R1YEP",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of climate.t_bedroom"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2022-12-25T02:30:33.637195+00:00",
+                "result": {
+                  "result": false,
+                  "entities": []
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "ac_mode",
+            "initial_state": true,
+            "alias": "AC mode",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "climate.ac",
+                  "climate.ac_study",
+                  "climate.t_childa",
+                  "climate.t_childb",
+                  "climate.t_bedroom",
+                  "climate.ac_kitchen",
+                  "climate.t_livingroom"
+                ]
+              }
+            ],
+            "condition": "{{ trigger.from_state.state != trigger.to_state.state and trigger.to_state.state in ['heat', 'cool', 'heat_cool', 'fan_only'] }}",
+            "action": [
+              {
+                "repeat": {
+                  "for_each": [
+                    "climate.ac",
+                    "climate.ac_study",
+                    "climate.t_childa",
+                    "climate.t_childb",
+                    "climate.t_bedroom",
+                    "climate.ac_kitchen",
+                    "climate.t_livingroom"
+                  ],
+                  "sequence": [
+                    {
+                      "if": [
+                        {
+                          "condition": "template",
+                          "value_template": "{{ states(repeat.item) != 'off' }}"
+                        }
+                      ],
+                      "then": [
+                        {
+                          "service": "system_log.write",
+                          "data": {
+                            "level": "info",
+                            "message": "Switch {{ repeat.item }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!\n"
+                          }
+                        },
+                        {
+                          "service": "climate.set_hvac_mode",
+                          "data": {
+                            "entity_id": "{{ repeat.item }}",
+                            "hvac_mode": "{{ trigger.to_state.state }}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GN3HW6X48KKVQWEFJ455Q6Z1",
+            "parent_id": "01GN3HW6X4CKD2YQ2WEC4R1YEP",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "47b606d5e972a81c4aabd6623cc6a442",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:30:33.636989+00:00",
+            "finish": "2022-12-25T02:30:33.637557+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "e4db850d0c5907f2de60c0d3e8248e4c",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:35:16.762592+00:00",
+            "finish": "2022-12-25T02:35:16.763233+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2022-12-25T02:35:16.762703+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ac_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2022-12-25T01:43:16.704506+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "ac_mode",
+                      "friendly_name": "Kl\u00edma m\u00f3d kapcsol\u00f3k \u00f6sszek\u00f6t\u00e9se",
+                      "icon": "mdi:vector-link"
+                    },
+                    "last_changed": "2022-12-25T02:22:06.099804+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099804+00:00",
+                    "context": {
+                      "id": "01GN3HCQ8KRCQPNRK4M99XKA57",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "climate.t_bedroom",
+                    "from_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 22.5,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:30:33.636088+00:00",
+                      "context": {
+                        "id": "01GN3HW6X4CKD2YQ2WEC4R1YEP",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 23.0,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:35:16.759999+00:00",
+                      "context": {
+                        "id": "01GN3J4VCQ2RZ14JAXEMQX45SK",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of climate.t_bedroom"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2022-12-25T02:35:16.762793+00:00",
+                "result": {
+                  "result": false,
+                  "entities": []
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "ac_mode",
+            "initial_state": true,
+            "alias": "AC mode",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "climate.ac",
+                  "climate.ac_study",
+                  "climate.t_childa",
+                  "climate.t_childb",
+                  "climate.t_bedroom",
+                  "climate.ac_kitchen",
+                  "climate.t_livingroom"
+                ]
+              }
+            ],
+            "condition": "{{ trigger.from_state.state != trigger.to_state.state and trigger.to_state.state in ['heat', 'cool', 'heat_cool', 'fan_only'] }}",
+            "action": [
+              {
+                "repeat": {
+                  "for_each": [
+                    "climate.ac",
+                    "climate.ac_study",
+                    "climate.t_childa",
+                    "climate.t_childb",
+                    "climate.t_bedroom",
+                    "climate.ac_kitchen",
+                    "climate.t_livingroom"
+                  ],
+                  "sequence": [
+                    {
+                      "if": [
+                        {
+                          "condition": "template",
+                          "value_template": "{{ states(repeat.item) != 'off' }}"
+                        }
+                      ],
+                      "then": [
+                        {
+                          "service": "system_log.write",
+                          "data": {
+                            "level": "info",
+                            "message": "Switch {{ repeat.item }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!\n"
+                          }
+                        },
+                        {
+                          "service": "climate.set_hvac_mode",
+                          "data": {
+                            "entity_id": "{{ repeat.item }}",
+                            "hvac_mode": "{{ trigger.to_state.state }}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GN3J4VCTBYB4SGJ3WHH4H079",
+            "parent_id": "01GN3J4VCQ2RZ14JAXEMQX45SK",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "e4db850d0c5907f2de60c0d3e8248e4c",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:35:16.762592+00:00",
+            "finish": "2022-12-25T02:35:16.763233+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "f759fa40a975a2c08ea882bd5b1ffefe",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:36:17.561808+00:00",
+            "finish": "2022-12-25T02:36:17.562444+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2022-12-25T02:36:17.561922+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ac_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2022-12-25T01:43:16.704506+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "ac_mode",
+                      "friendly_name": "Kl\u00edma m\u00f3d kapcsol\u00f3k \u00f6sszek\u00f6t\u00e9se",
+                      "icon": "mdi:vector-link"
+                    },
+                    "last_changed": "2022-12-25T02:22:06.099804+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099804+00:00",
+                    "context": {
+                      "id": "01GN3HCQ8KRCQPNRK4M99XKA57",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "climate.t_bedroom",
+                    "from_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 23.0,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:35:16.759999+00:00",
+                      "context": {
+                        "id": "01GN3J4VCQ2RZ14JAXEMQX45SK",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 22.5,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:36:17.558657+00:00",
+                      "context": {
+                        "id": "01GN3J6PRPXKVE59DQ70NWCQHJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of climate.t_bedroom"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2022-12-25T02:36:17.562048+00:00",
+                "result": {
+                  "result": false,
+                  "entities": []
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "ac_mode",
+            "initial_state": true,
+            "alias": "AC mode",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "climate.ac",
+                  "climate.ac_study",
+                  "climate.t_childa",
+                  "climate.t_childb",
+                  "climate.t_bedroom",
+                  "climate.ac_kitchen",
+                  "climate.t_livingroom"
+                ]
+              }
+            ],
+            "condition": "{{ trigger.from_state.state != trigger.to_state.state and trigger.to_state.state in ['heat', 'cool', 'heat_cool', 'fan_only'] }}",
+            "action": [
+              {
+                "repeat": {
+                  "for_each": [
+                    "climate.ac",
+                    "climate.ac_study",
+                    "climate.t_childa",
+                    "climate.t_childb",
+                    "climate.t_bedroom",
+                    "climate.ac_kitchen",
+                    "climate.t_livingroom"
+                  ],
+                  "sequence": [
+                    {
+                      "if": [
+                        {
+                          "condition": "template",
+                          "value_template": "{{ states(repeat.item) != 'off' }}"
+                        }
+                      ],
+                      "then": [
+                        {
+                          "service": "system_log.write",
+                          "data": {
+                            "level": "info",
+                            "message": "Switch {{ repeat.item }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!\n"
+                          }
+                        },
+                        {
+                          "service": "climate.set_hvac_mode",
+                          "data": {
+                            "entity_id": "{{ repeat.item }}",
+                            "hvac_mode": "{{ trigger.to_state.state }}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GN3J6PRSNA6V9CQ1Z8K87913",
+            "parent_id": "01GN3J6PRPXKVE59DQ70NWCQHJ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "f759fa40a975a2c08ea882bd5b1ffefe",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:36:17.561808+00:00",
+            "finish": "2022-12-25T02:36:17.562444+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "77f0044d220a2769ce32b78dec38b936",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:40:49.715620+00:00",
+            "finish": "2022-12-25T02:40:49.716291+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2022-12-25T02:40:49.715760+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ac_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2022-12-25T01:43:16.704506+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "ac_mode",
+                      "friendly_name": "Kl\u00edma m\u00f3d kapcsol\u00f3k \u00f6sszek\u00f6t\u00e9se",
+                      "icon": "mdi:vector-link"
+                    },
+                    "last_changed": "2022-12-25T02:22:06.099804+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099804+00:00",
+                    "context": {
+                      "id": "01GN3HCQ8KRCQPNRK4M99XKA57",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "climate.t_bedroom",
+                    "from_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 22.5,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:36:17.558657+00:00",
+                      "context": {
+                        "id": "01GN3J6PRPXKVE59DQ70NWCQHJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 23.0,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:40:49.713046+00:00",
+                      "context": {
+                        "id": "01GN3JF0HH1WEA58GAW4JFV611",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of climate.t_bedroom"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2022-12-25T02:40:49.715843+00:00",
+                "result": {
+                  "result": false,
+                  "entities": []
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "ac_mode",
+            "initial_state": true,
+            "alias": "AC mode",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "climate.ac",
+                  "climate.ac_study",
+                  "climate.t_childa",
+                  "climate.t_childb",
+                  "climate.t_bedroom",
+                  "climate.ac_kitchen",
+                  "climate.t_livingroom"
+                ]
+              }
+            ],
+            "condition": "{{ trigger.from_state.state != trigger.to_state.state and trigger.to_state.state in ['heat', 'cool', 'heat_cool', 'fan_only'] }}",
+            "action": [
+              {
+                "repeat": {
+                  "for_each": [
+                    "climate.ac",
+                    "climate.ac_study",
+                    "climate.t_childa",
+                    "climate.t_childb",
+                    "climate.t_bedroom",
+                    "climate.ac_kitchen",
+                    "climate.t_livingroom"
+                  ],
+                  "sequence": [
+                    {
+                      "if": [
+                        {
+                          "condition": "template",
+                          "value_template": "{{ states(repeat.item) != 'off' }}"
+                        }
+                      ],
+                      "then": [
+                        {
+                          "service": "system_log.write",
+                          "data": {
+                            "level": "info",
+                            "message": "Switch {{ repeat.item }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!\n"
+                          }
+                        },
+                        {
+                          "service": "climate.set_hvac_mode",
+                          "data": {
+                            "entity_id": "{{ repeat.item }}",
+                            "hvac_mode": "{{ trigger.to_state.state }}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GN3JF0HK248ABEESTGQ8NJZK",
+            "parent_id": "01GN3JF0HH1WEA58GAW4JFV611",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "77f0044d220a2769ce32b78dec38b936",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:40:49.715620+00:00",
+            "finish": "2022-12-25T02:40:49.716291+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "condition/0",
+          "run_id": "d08a94cc16ed4f711c3729f67a75bafd",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:42:17.446611+00:00",
+            "finish": "2022-12-25T02:42:17.447415+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2022-12-25T02:42:17.446850+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.ac_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2022-12-25T01:43:16.704506+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "ac_mode",
+                      "friendly_name": "Kl\u00edma m\u00f3d kapcsol\u00f3k \u00f6sszek\u00f6t\u00e9se",
+                      "icon": "mdi:vector-link"
+                    },
+                    "last_changed": "2022-12-25T02:22:06.099804+00:00",
+                    "last_updated": "2022-12-25T02:22:06.099804+00:00",
+                    "context": {
+                      "id": "01GN3HCQ8KRCQPNRK4M99XKA57",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "climate.t_bedroom",
+                    "from_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 23.0,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:40:49.713046+00:00",
+                      "context": {
+                        "id": "01GN3JF0HH1WEA58GAW4JFV611",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "climate.t_bedroom",
+                      "state": "heat",
+                      "attributes": {
+                        "hvac_modes": [
+                          "heat",
+                          "cool",
+                          "fan_only",
+                          "off"
+                        ],
+                        "min_temp": 21,
+                        "max_temp": 27,
+                        "target_temp_step": 0.5,
+                        "fan_modes": [
+                          "auto",
+                          "low",
+                          "medium",
+                          "high"
+                        ],
+                        "current_temperature": 22.5,
+                        "temperature": 23.5,
+                        "fan_mode": "auto",
+                        "hvac_action": "heating",
+                        "friendly_name": "H\u00e1l\u00f3",
+                        "supported_features": 9
+                      },
+                      "last_changed": "2022-12-25T02:22:16.262371+00:00",
+                      "last_updated": "2022-12-25T02:42:17.443813+00:00",
+                      "context": {
+                        "id": "01GN3JHP73TVSS2TT55XZ2CZBP",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of climate.t_bedroom"
+                  }
+                }
+              }
+            ],
+            "condition/0": [
+              {
+                "path": "condition/0",
+                "timestamp": "2022-12-25T02:42:17.446946+00:00",
+                "result": {
+                  "result": false,
+                  "entities": []
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "ac_mode",
+            "initial_state": true,
+            "alias": "AC mode",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "climate.ac",
+                  "climate.ac_study",
+                  "climate.t_childa",
+                  "climate.t_childb",
+                  "climate.t_bedroom",
+                  "climate.ac_kitchen",
+                  "climate.t_livingroom"
+                ]
+              }
+            ],
+            "condition": "{{ trigger.from_state.state != trigger.to_state.state and trigger.to_state.state in ['heat', 'cool', 'heat_cool', 'fan_only'] }}",
+            "action": [
+              {
+                "repeat": {
+                  "for_each": [
+                    "climate.ac",
+                    "climate.ac_study",
+                    "climate.t_childa",
+                    "climate.t_childb",
+                    "climate.t_bedroom",
+                    "climate.ac_kitchen",
+                    "climate.t_livingroom"
+                  ],
+                  "sequence": [
+                    {
+                      "if": [
+                        {
+                          "condition": "template",
+                          "value_template": "{{ states(repeat.item) != 'off' }}"
+                        }
+                      ],
+                      "then": [
+                        {
+                          "service": "system_log.write",
+                          "data": {
+                            "level": "info",
+                            "message": "Switch {{ repeat.item }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!\n"
+                          }
+                        },
+                        {
+                          "service": "climate.set_hvac_mode",
+                          "data": {
+                            "entity_id": "{{ repeat.item }}",
+                            "hvac_mode": "{{ trigger.to_state.state }}"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GN3JHP76WXMPA4P64M7X388G",
+            "parent_id": "01GN3JHP73TVSS2TT55XZ2CZBP",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "condition/0",
+          "run_id": "d08a94cc16ed4f711c3729f67a75bafd",
+          "state": "stopped",
+          "script_execution": "failed_conditions",
+          "timestamp": {
+            "start": "2022-12-25T02:42:17.446611+00:00",
+            "finish": "2022-12-25T02:42:17.447415+00:00"
+          },
+          "domain": "automation",
+          "item_id": "ac_mode",
+          "trigger": "state of climate.t_bedroom"
         }
       }
     ]

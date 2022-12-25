@@ -114,13 +114,20 @@
       title: Szelepek
       show_header_toggle: false
       entities:
-        - switch.ac_relay_study
-        - switch.ac_relay_childa
-        - switch.ac_relay_childb
-        - switch.ac_relay_bedroom
-        - switch.ac_relay_kitchen
-        - switch.ac_relay_livingroom
-        - switch.ac_relay_ventillation
+        - entity: switch.ac_relay_study
+          state_color: true
+        - entity: switch.ac_relay_childa
+          state_color: true
+        - entity: switch.ac_relay_childb
+          state_color: true
+        - entity: switch.ac_relay_bedroom
+          state_color: true
+        - entity: switch.ac_relay_kitchen
+          state_color: true
+        - entity: switch.ac_relay_livingroom
+          state_color: true
+        - entity: switch.ac_relay_ventillation
+          state_color: true
     - type: statistic
       entity: sensor.energy2_power
       period:

@@ -107,6 +107,9 @@ recorder:
       - sensor.ac_*
       - sensor.*temp*
       - sensor.*power*
+      - sensor.*_kwh
+      - sensor.*_energy
+      - sensor.*_cost*
       - sensor.*current*
       - sensor.*location*
       - sensor.*_geokodolt_hely
@@ -115,8 +118,6 @@ recorder:
     entities:
       - sensor.aqua_ariston_average_showers
       - sensor.aqua_ariston_energy_use_in_the_last_day
-      - sensor.solaredge_ac_energy_kwh
-      - sensor.solar_production_hourly
       - sensor.dishwasher
       - sensor.ble_measured_power_ibeacon
   exclude:
@@ -180,6 +181,8 @@ shopping_list:
 
 # Track the sun
 sun:
+
+energy:
 
 saver:
 
@@ -280,6 +283,7 @@ climate: !include_dir_merge_list integrations/climate
 fan: !include_dir_merge_list integrations/fan
 sensor: !include_dir_merge_list integrations/sensor
 switch: !include_dir_merge_list integrations/switch
+template: !include_dir_merge_list integrations/template
 utility_meter: !include_dir_merge_named integrations/utility_meter
 #vacuum: !include_dir_merge_list integrations/vacuum
 weather: !include_dir_merge_list integrations/weather

@@ -7,11 +7,11 @@
       "uses_password": true,
       "name": "ac_sensor",
       "mac_address": "4C:11:AE:0E:6C:A4",
-      "compilation_time": "Dec  6 2022, 04:10:48",
+      "compilation_time": "Dec 25 2022, 05:01:47",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.11.4",
+      "esphome_version": "2022.12.3",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -22,6 +22,19 @@
       "major": 1,
       "minor": 7
     },
+    "switch": [
+      {
+        "object_id": "ac_sensor_restart",
+        "key": 3007705818,
+        "name": "ac_sensor_restart",
+        "unique_id": "ac_sensorswitchac_sensor_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "binary_sensor": [
       {
         "object_id": "ac_sensor_status",
@@ -97,19 +110,6 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": [],
-    "switch": [
-      {
-        "object_id": "ac_sensor_restart",
-        "key": 3007705818,
-        "name": "ac_sensor_restart",
-        "unique_id": "ac_sensorswitchac_sensor_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ]
+    "text_sensor": []
   }
 }
