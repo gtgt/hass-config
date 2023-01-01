@@ -50,7 +50,7 @@ sensor.energy_meter_yearly_kwh:
   friendly_name: "Fogyasztásmérő növekedés ebben az évben"
 
 sensor.energy_kwh:
-  friendly_name: "Fogyasztás"
+  friendly_name: "Ház fogyasztás"
   icon: mdi:counter
 sensor.energy_kwh_hourly:
   friendly_name: "Fogyasztás ebben az órában"
@@ -62,6 +62,9 @@ sensor.energy_kwh_monthly:
   friendly_name: "Fogyasztás ebben a hónapban"
 sensor.energy_kwh_yearly:
   friendly_name: "Fogyasztás ebben az évben"
+  
+sensor.energy2_energy:
+  friendly_name: "H tarifa fogyasztás"
 
 sensor.grid_power:
   friendly_name: "Hálózat egyenleg"

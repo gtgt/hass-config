@@ -72,7 +72,9 @@
       "wernerhp/ha_integration_load_shedding": "wernerhp/ha.integration.load_shedding",
       "TheLastProject/lovelace-valetudo-map-card": "Hypfer/lovelace-valetudo-map-card",
       "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo",
-      "jadson179/consul": "gtjadsonsantos/consul"
+      "jadson179/consul": "gtjadsonsantos/consul",
+      "iablon/HomeAssistant-Touchpad-Card": "iablon/HomeAssistant-TV-Touchpad-Card",
+      "iablon/HomeAssistant-TV-Touchpad-Card": "iablon/HomeAssistant-Touchpad-Card"
     },
     "ignored_repositories": []
   }

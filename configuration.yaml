@@ -90,7 +90,7 @@ system_health:
 recorder:
   db_url: mysql://homeassistant:K9cdXAIVbG62TRna@core-mariadb/homeassistant?charset=utf8
   commit_interval: 2
-  purge_keep_days: 30
+  purge_keep_days: 21
   include:
     domains:
       - binary_sensor
@@ -110,6 +110,7 @@ recorder:
       - sensor.*_kwh
       - sensor.*_energy
       - sensor.*_cost*
+      - sensor.*_compensation
       - sensor.*current*
       - sensor.*location*
       - sensor.*_geokodolt_hely
@@ -225,6 +226,8 @@ aquaariston:
   username: !secret ariston_username
   password: !secret ariston_password
   type: velis
+  polling: 2.0
+  store_config_files: true
   switches:
     - eco                             # switches ECO mode
     - power                           # switches power

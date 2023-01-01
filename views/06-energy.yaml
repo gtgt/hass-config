@@ -279,41 +279,41 @@
               name: Előző periódus
               icon: mdi:page-last
         - type: entities
-          title: '"H0" Tarifa'
+          title: '"H" Tarifa'
           entities:
             - sensor.energy2_kwh_hourly
             - type: attribute
               entity: sensor.energy2_kwh_hourly
               attribute: last_period
-              suffix: kWh
+              suffix: Wh
               name: Előző periódus
               icon: mdi:page-last
             - sensor.energy2_kwh_daily
             - type: attribute
               entity: sensor.energy2_kwh_daily
               attribute: last_period
-              suffix: kWh
+              suffix: Wh
               name: Előző periódus
               icon: mdi:page-last
             - sensor.energy2_kwh_weekly
             - type: attribute
               entity: sensor.energy2_kwh_weekly
               attribute: last_period
-              suffix: kWh
+              suffix: Wh
               name: Előző periódus
               icon: mdi:page-last
             - sensor.energy2_kwh_monthly
             - type: attribute
               entity: sensor.energy2_kwh_monthly
               attribute: last_period
-              suffix: kWh
+              suffix: Wh
               name: Előző periódus
               icon: mdi:page-last
             - sensor.energy2_kwh_yearly
             - type: attribute
               entity: sensor.energy2_kwh_yearly
               attribute: last_period
-              suffix: kWh
+              suffix: Wh
               name: Előző periódus
               icon: mdi:page-last
         - type: entities
