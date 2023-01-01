@@ -164,7 +164,7 @@
                   name: Újraindítás
                   icon: mdi:reload
         - type: entities
-          title: '"A" Tarifa (Hálózati egyenleg)'
+          title: '"A1" Tarifa (egyenleg)'
           entities:
             - sensor.grid_kwh
             - type: divider

@@ -122,7 +122,12 @@
                   tap_action:
                     service_data:
                       mode: program
-            - binary_sensor.aqua_ariston_changing_data_ongoing
+            - entity: binary_sensor.aqua_ariston_changing_data_ongoing
+              state_color: true
+              state_styles:
+                off:
+                  icon:
+                    opacity: 0.1
             - type: attribute
               entity: water_heater.aqua_ariston
               attribute: hvac_action

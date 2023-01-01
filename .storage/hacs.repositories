@@ -18,7 +18,7 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 75456,
+      "downloads": 75990,
       "etag_repository": "W/\"d930e2cc50fabdd5306f59d7461f66d876bd55b7d94cbcfed4b45cd60d6405dd\"",
       "full_name": "hacs/integration",
       "last_updated": "2022-12-26T06:00:40Z",
@@ -45,7 +45,7 @@
       "pushed_at": "2022-12-26T06:00:40",
       "releases": true,
       "version_installed": "1.29.0",
-      "last_fetched": 1672534857.771909
+      "last_fetched": 1672549257.75593
     },
     "200081161": {
       "repository_manifest": {},
@@ -199,7 +199,7 @@
       "category": "plugin",
       "description": "Minimalistic humidifier card for Home Assistant Lovelace UI",
       "domain": "",
-      "downloads": 795,
+      "downloads": 802,
       "etag_repository": "W/\"88c5333f3d36d2ce8dd405f7e0719115779a36814fdb7c966a42c4e38c1b3100\"",
       "full_name": "artem-sedykh/mini-humidifier",
       "last_updated": "2022-12-28T12:00:58Z",
@@ -225,7 +225,7 @@
       "pushed_at": "2022-12-28T12:00:58",
       "releases": true,
       "version_installed": "v3.1.2",
-      "last_fetched": 1672534857.666305
+      "last_fetched": 1672549257.664878
     },
     "207292725": {
       "repository_manifest": {
@@ -505,7 +505,7 @@
       "category": "plugin",
       "description": "Customizable Animated Bar card for Home Assistant Lovelace",
       "domain": "",
-      "downloads": 47820,
+      "downloads": 47829,
       "etag_repository": "W/\"f733a3076dbf07dffe1009bab1cc44c409577ce28e8ecd7578d2765b2ded36cf\"",
       "full_name": "custom-cards/bar-card",
       "last_updated": "2022-12-09T19:05:51Z",
@@ -526,7 +526,7 @@
       "pushed_at": "2022-12-09T19:05:51",
       "releases": true,
       "version_installed": "3.2.0",
-      "last_fetched": 1672534857.635101
+      "last_fetched": 1672549257.746233
     },
     "139634406": {
       "repository_manifest": {
@@ -570,7 +570,7 @@
       "category": "plugin",
       "description": "❇️ Lovelace button-card for home assistant",
       "domain": "",
-      "downloads": 160125,
+      "downloads": 160157,
       "etag_repository": "W/\"708d780b884e09309ba075a94a89c65b003ecb7f3c83443f1371aceb6dbd9c5a\"",
       "full_name": "custom-cards/button-card",
       "last_updated": "2022-12-11T00:34:44Z",
@@ -591,7 +591,7 @@
       "pushed_at": "2022-12-11T00:34:44",
       "releases": true,
       "version_installed": "v3.4.2",
-      "last_fetched": 1672534857.73495
+      "last_fetched": 1672549257.917607
     },
     "142545838": {
       "repository_manifest": {
@@ -4719,7 +4719,7 @@
       "pushed_at": "2022-12-30T14:36:00",
       "releases": true,
       "version_installed": "11.0.0",
-      "last_fetched": 1672534857.615463
+      "last_fetched": 1672549257.790773
     },
     "139892990": {
       "repository_manifest": {
@@ -10505,7 +10505,7 @@
       "last_commit": "a2e04b4",
       "last_version": "v4.1.1",
       "manifest_name": "LocalTuya integration",
-      "open_issues": 748,
+      "open_issues": 747,
       "published_tags": [
         "v4.1.1",
         "v4.1.0",
@@ -10516,7 +10516,7 @@
       "pushed_at": "2022-12-28T08:17:17",
       "releases": true,
       "version_installed": "v4.1.1",
-      "last_fetched": 1672534857.751867
+      "last_fetched": 1672549257.955215
     },
     "149443194": {
       "repository_manifest": {
@@ -11201,7 +11201,7 @@
       "pushed_at": "2022-12-12T08:38:01",
       "releases": true,
       "version_installed": "2022.12.0.0",
-      "last_fetched": 1672534857.834896
+      "last_fetched": 1672549257.828381
     },
     "121934877": {
       "repository_manifest": {
@@ -13472,7 +13472,7 @@
       "pushed_at": "2022-11-28T13:03:16",
       "releases": true,
       "version_installed": "v2.3.1",
-      "last_fetched": 1672534857.75972
+      "last_fetched": 1672549257.732666
     },
     "356725611": {
       "repository_manifest": {
@@ -14679,7 +14679,7 @@
       "pushed_at": "2022-12-11T21:53:23",
       "releases": true,
       "version_installed": "v1.5.0",
-      "last_fetched": 1672534857.795758
+      "last_fetched": 1672549257.782149
     },
     "373832981": {
       "repository_manifest": {
@@ -14740,7 +14740,7 @@
       },
       "category": "plugin",
       "description": "This card provides a user-friendly way to fully control Xiaomi, Valetudo, Neato and Roomba (+ possibly other) vacuums in Home Assistant.",
-      "downloads": 25614,
+      "downloads": 25619,
       "etag_repository": "W/\"861324cd3b13cf3ce60cfc5fcfeb21efe6530916b0a45fa699b0a87935622aff\"",
       "full_name": "PiotrMachowski/lovelace-xiaomi-vacuum-map-card",
       "last_updated": "2022-12-31T12:57:19Z",
@@ -14773,7 +14773,7 @@
       "pushed_at": "2022-12-31T12:57:19",
       "releases": true,
       "version_installed": "v2.1.2",
-      "last_fetched": 1672534857.698841
+      "last_fetched": 1672549257.721439
     },
     "309056232": {
       "repository_manifest": {
@@ -14805,7 +14805,7 @@
       "pushed_at": "2022-05-05T13:16:32",
       "releases": true,
       "version_installed": "v2.2",
-      "last_fetched": 1672534858.852702
+      "last_fetched": 1672549258.954966
     },
     "131915802": {
       "repository_manifest": {
@@ -14847,7 +14847,7 @@
       "pushed_at": "2022-12-01T00:06:26",
       "releases": true,
       "version_installed": "v2.3",
-      "last_fetched": 1672534859.036037
+      "last_fetched": 1672549259.081373
     },
     "160042309": {
       "repository_manifest": {
@@ -14892,7 +14892,7 @@
       "pushed_at": "2022-06-19T17:48:35",
       "releases": true,
       "version_installed": "v1.12",
-      "last_fetched": 1672534858.990747
+      "last_fetched": 1672549259.21523
     },
     "147764937": {
       "repository_manifest": {
@@ -14942,7 +14942,7 @@
       "pushed_at": "2022-06-02T18:36:47",
       "releases": true,
       "version_installed": "v1.3.0",
-      "last_fetched": 1672534859.045722
+      "last_fetched": 1672549258.982472
     },
     "299753146": {
       "repository_manifest": {
@@ -14957,7 +14957,7 @@
       "category": "integration",
       "description": "This custom integration provides a way to present a live view of a map for Xiaomi (Roborock/Viomi/Roidmi/Dreame) vacuums without a need for rooting.",
       "domain": "xiaomi_cloud_map_extractor",
-      "downloads": 31569,
+      "downloads": 31576,
       "etag_repository": "W/\"0184c931e4f6917615f42907f2e0c5c5324b070d435db774295222582d61ee3a\"",
       "full_name": "PiotrMachowski/Home-Assistant-custom-components-Xiaomi-Cloud-Map-Extractor",
       "last_updated": "2022-11-04T13:55:15Z",
@@ -14993,7 +14993,7 @@
       "pushed_at": "2022-11-04T13:55:15",
       "releases": true,
       "version_installed": "v2.2.0",
-      "last_fetched": 1672534860.417887
+      "last_fetched": 1672549259.297634
     },
     "236146080": {
       "repository_manifest": {
@@ -15034,7 +15034,7 @@
       "pushed_at": "2022-12-08T09:57:06",
       "releases": true,
       "version_installed": "V1.7.1",
-      "last_fetched": 1672534859.159441
+      "last_fetched": 1672549259.029772
     },
     "192732636": {
       "repository_manifest": {},
@@ -15060,7 +15060,7 @@
       "pushed_at": "2022-12-25T21:38:16",
       "releases": true,
       "version_installed": "v1.5.0",
-      "last_fetched": 1672534858.879031
+      "last_fetched": 1672549258.943941
     },
     "281453608": {
       "repository_manifest": {
@@ -15081,7 +15081,7 @@
       "open_issues": 5,
       "pushed_at": "2022-05-28T13:41:58",
       "version_installed": null,
-      "last_fetched": 1672534859.201463
+      "last_fetched": 1672549259.153493
     },
     "156434866": {
       "repository_manifest": {
@@ -15111,7 +15111,7 @@
       "pushed_at": "2022-10-14T01:05:55",
       "releases": true,
       "version_installed": "2.4.4",
-      "last_fetched": 1672534859.091685
+      "last_fetched": 1672549259.192406
     },
     "184333163": {
       "repository_manifest": {
@@ -15141,7 +15141,7 @@
       "pushed_at": "2022-12-05T12:27:57",
       "releases": true,
       "version_installed": "0.0.17",
-      "last_fetched": 1672534859.282896
+      "last_fetched": 1672549259.377296
     },
     "271398374": {
       "repository_manifest": {
@@ -15186,7 +15186,7 @@
       "pushed_at": "2022-12-23T22:20:39",
       "releases": true,
       "version_installed": "v1.1.3",
-      "last_fetched": 1672534860.074623
+      "last_fetched": 1672549260.192652
     },
     "158654878": {
       "repository_manifest": {
@@ -15196,7 +15196,7 @@
       },
       "category": "plugin",
       "description": "A different take on the thermostat card for Home Assistant ♨️",
-      "downloads": 27971,
+      "downloads": 27977,
       "etag_repository": "W/\"5c8a3583d0f608ae80a9621108b40bc1b358e46fbc31bcba64b57911b93b66d4\"",
       "full_name": "nervetattoo/simple-thermostat",
       "last_updated": "2022-12-11T11:33:04Z",
@@ -15220,7 +15220,7 @@
       "pushed_at": "2022-12-11T11:33:04",
       "releases": true,
       "version_installed": "v2.5.0",
-      "last_fetched": 1672534860.473558
+      "last_fetched": 1672549260.421589
     },
     "190927524": {
       "repository_manifest": {
@@ -15249,7 +15249,7 @@
       "pushed_at": "2022-12-06T00:52:16",
       "releases": true,
       "version_installed": "3.2.0",
-      "last_fetched": 1672534860.391148
+      "last_fetched": 1672549260.601345
     },
     "280845405": {
       "repository_manifest": {
@@ -15288,7 +15288,7 @@
       "pushed_at": "2022-07-13T13:44:57",
       "releases": true,
       "version_installed": "1.0.50",
-      "last_fetched": 1672534860.159439
+      "last_fetched": 1672549260.224412
     },
     "231674882": {
       "repository_manifest": {
@@ -15319,7 +15319,7 @@
       "pushed_at": "2022-12-10T14:47:43",
       "releases": true,
       "version_installed": "1.3.0",
-      "last_fetched": 1672534859.067074
+      "last_fetched": 1672549260.393413
     },
     "180229356": {
       "repository_manifest": {
@@ -15358,7 +15358,7 @@
       "pushed_at": "2022-07-09T12:55:39",
       "releases": true,
       "version_installed": "v4.5.0",
-      "last_fetched": 1672534860.373154
+      "last_fetched": 1672549260.547715
     },
     "274738925": {
       "repository_manifest": {
@@ -15395,7 +15395,7 @@
       "pushed_at": "2022-12-15T22:34:05",
       "releases": true,
       "version_installed": "v2.2.3",
-      "last_fetched": 1672534860.609899
+      "last_fetched": 1672549260.727838
     },
     "215327195": {
       "repository_manifest": {
@@ -15406,7 +15406,7 @@
       },
       "category": "plugin",
       "description": "💡 A Lovelace custom card for RGB lights",
-      "downloads": 17119,
+      "downloads": 17122,
       "etag_repository": "W/\"d06d76ba92c3cf0cefaa2c2570d6a272c4da4d63b1da92f399afd2d32ccccad6\"",
       "full_name": "bokub/rgb-light-card",
       "last_updated": "2022-10-26T16:00:59Z",
@@ -15431,7 +15431,7 @@
       "pushed_at": "2022-10-26T16:00:59",
       "releases": true,
       "version_installed": "1.11.0",
-      "last_fetched": 1672534861.795227
+      "last_fetched": 1672549261.706749
     },
     "220671784": {
       "repository_manifest": {},
@@ -15448,7 +15448,7 @@
       "manifest_name": "Programmable Thermostat",
       "pushed_at": "2022-10-28T19:36:57",
       "version_installed": null,
-      "last_fetched": 1672534860.205049
+      "last_fetched": 1672549260.209297
     },
     "244872232": {
       "repository_manifest": {
@@ -15457,7 +15457,7 @@
       "category": "plugin",
       "description": "Adds highly configurable buttons that use actions and per-state styling.",
       "domain": "",
-      "downloads": 5126,
+      "downloads": 5133,
       "etag_repository": "W/\"415c56c2cdffd8fd503ea125a50a5b1da465cd80edf800dc1c8045cf4ac27ae8\"",
       "full_name": "jcwillox/lovelace-paper-buttons-row",
       "last_updated": "2022-12-13T13:19:30Z",
@@ -15484,7 +15484,7 @@
       "pushed_at": "2022-12-13T13:19:30",
       "releases": true,
       "version_installed": "2.0.0",
-      "last_fetched": 1672534861.764869
+      "last_fetched": 1672549261.760104
     },
     "144899700": {
       "repository_manifest": {
@@ -15513,7 +15513,7 @@
       "pushed_at": "2022-12-26T01:55:34",
       "releases": true,
       "version_installed": "17.3.0",
-      "last_fetched": 1672534861.835689
+      "last_fetched": 1672549261.745878
     },
     "199546187": {
       "repository_manifest": {},
@@ -15541,7 +15541,7 @@
       "pushed_at": "2022-08-15T02:30:18",
       "releases": true,
       "version_installed": "v1.2.0",
-      "last_fetched": 1672534861.544776
+      "last_fetched": 1672549261.783294
     },
     "376904517": {
       "repository_manifest": {
@@ -17389,7 +17389,7 @@
       "releases": true,
       "show_beta": true,
       "version_installed": "0.8.0",
-      "last_fetched": 1672534861.435222
+      "last_fetched": 1672549261.602962
     },
     "410667735": {
       "repository_manifest": {
@@ -19118,7 +19118,7 @@
       "category": "integration",
       "description": "UI-Lovelace-Minimalist is a \"theme\" for HomeAssistant",
       "domain": "ui_lovelace_minimalist",
-      "downloads": 15025,
+      "downloads": 15038,
       "etag_repository": "W/\"fec976631226357f010af7b8cee288b0d85b8136623dfccd477e27b0ded3f905\"",
       "full_name": "UI-Lovelace-Minimalist/UI",
       "last_updated": "2022-12-28T20:12:24Z",
@@ -19141,7 +19141,7 @@
       "pushed_at": "2022-12-28T20:12:24",
       "releases": true,
       "version_installed": "v1.1.6",
-      "last_fetched": 1672534861.815743
+      "last_fetched": 1672549261.841855
     },
     "453143227": {
       "repository_manifest": {
@@ -20287,7 +20287,7 @@
       "pushed_at": "2022-04-30T13:38:21",
       "releases": true,
       "version_installed": "v1.1",
-      "last_fetched": 1672534860.23662
+      "last_fetched": 1672549260.204218
     },
     "294609880": {
       "repository_manifest": {
@@ -20559,7 +20559,7 @@
       "pushed_at": "2022-12-19T19:53:02",
       "releases": true,
       "version_installed": "v2.9.0",
-      "last_fetched": 1672534861.781925
+      "last_fetched": 1672549261.622071
     },
     "472497355": {
       "repository_manifest": {
@@ -20871,7 +20871,7 @@
       "category": "plugin",
       "description": "Wall panel mode for your Home Assistant Lovelace dashboard with more focus on screensaver. Configurable extension which features a fullscreen kiosk mode, image and weather-clock screensaver, screen wake lock and the ability to hide side and top bar.",
       "domain": "",
-      "downloads": 4157,
+      "downloads": 4158,
       "etag_repository": "W/\"6cbc7bde4dda137364e9ef4b074a85ae0e7adf20282ca786b55585d0340533e1\"",
       "full_name": "Shreyas-R/lovelace-wallpanel-screensaver",
       "last_updated": "2022-09-08T12:24:08Z",
@@ -20904,7 +20904,7 @@
       "pushed_at": "2022-09-08T12:24:08",
       "releases": true,
       "version_installed": "v1.1.1",
-      "last_fetched": 1672534861.826459
+      "last_fetched": 1672549262.067071
     },
     "485281791": {
       "repository_manifest": {
@@ -21058,7 +21058,7 @@
       "pushed_at": "2022-12-31T07:23:14",
       "releases": true,
       "version_installed": "v1.7.2",
-      "last_fetched": 1672534860.2905
+      "last_fetched": 1672549260.296563
     },
     "483187645": {
       "repository_manifest": {
@@ -21245,7 +21245,7 @@
       "pushed_at": "2022-11-17T16:20:56",
       "releases": true,
       "version_installed": "v2.6.1",
-      "last_fetched": 1672534862.92461
+      "last_fetched": 1672549262.904124
     },
     "457767453": {
       "repository_manifest": {
@@ -22775,7 +22775,7 @@
       "pushed_at": "2022-12-22T21:30:49",
       "releases": true,
       "version_installed": "3.1.6",
-      "last_fetched": 1672534861.810106
+      "last_fetched": 1672549261.795212
     },
     "514029149": {
       "repository_manifest": {
@@ -23750,7 +23750,7 @@
       "pushed_at": "2022-11-20T07:14:32",
       "releases": true,
       "version_installed": "v0.3.1",
-      "last_fetched": 1672534862.897549
+      "last_fetched": 1672549262.875402
     },
     "522634019": {
       "repository_manifest": {
@@ -23844,7 +23844,7 @@
       "manifest_name": "Fire Protection Hungary",
       "pushed_at": "2022-10-21T23:34:03",
       "version_installed": null,
-      "last_fetched": 1672534861.992121
+      "last_fetched": 1672549262.116139
     },
     "542686924": {
       "repository_manifest": {

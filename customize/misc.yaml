@@ -22,6 +22,10 @@ switch.hg01wt_switch1:
 water_heater.aqua_ariston:
   friendly_name: "Ariston Aqua Velis"
   icon: mdi:water-boiler
+binary_sensor.aqua_ariston_changing_data_ongoing:
+  friendly_name: "Kommunikáció"
+  device_class: running
+  icon: mdi:circle
 switch.aqua_ariston_power:
   friendly_name: "Főkapcsoló"
 sensor.aqua_ariston_mode:

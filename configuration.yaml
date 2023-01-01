@@ -54,6 +54,7 @@ logger:
     homeassistant.components.ipp: fatal
     homeassistant.components.nut: fatal
     homeassistant.components.xiaomi_miio.vacuum: error
+    custom_components.xiaomi_miio_airpurifier.fan: fatal
     homeassistant.components.http: info
 #    homeassistant.components.daikin: debug
 #    pydaikin: debug

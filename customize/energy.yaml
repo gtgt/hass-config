@@ -53,39 +53,49 @@ sensor.energy_kwh:
   friendly_name: "Ház fogyasztás"
   icon: mdi:counter
 sensor.energy_kwh_hourly:
-  friendly_name: "Fogyasztás ebben az órában"
+  friendly_name: "Ház fogyasztás ebben az órában"
 sensor.energy_kwh_daily:
-  friendly_name: "Fogyasztás mai napon"
+  friendly_name: "Ház fogyasztás mai napon"
 sensor.energy_kwh_weekly:
-  friendly_name: "Fogyasztás ezen a héten"
+  friendly_name: "Ház fogyasztás ezen a héten"
 sensor.energy_kwh_monthly:
-  friendly_name: "Fogyasztás ebben a hónapban"
+  friendly_name: "Ház fogyasztás ebben a hónapban"
 sensor.energy_kwh_yearly:
-  friendly_name: "Fogyasztás ebben az évben"
+  friendly_name: "Ház fogyasztás ebben az évben"
   
 sensor.energy2_energy:
   friendly_name: "H tarifa fogyasztás"
 
 sensor.grid_power:
-  friendly_name: "Hálózat egyenleg"
+  friendly_name: "A1 egyenleg"
   icon: mdi:scale-balance
 sensor.grid_kwh:
-  friendly_name: "Hálózati egyenleg"
+  friendly_name: "A1 egyenleg"
   icon: mdi:scale
 sensor.grid_kwh_hourly:
-  friendly_name: "Hálózat egyenleg ebben az órában"
+  friendly_name: "A1 egyenleg ebben az órában"
 sensor.grid_kwh_daily:
-  friendly_name: "Hálózat egyenleg a mai napon"
+  friendly_name: "A1 egyenleg a mai napon"
 sensor.grid_kwh_weekly:
-  friendly_name: "Hálózat egyenleg ezen a héten"
+  friendly_name: "A1 egyenleg ezen a héten"
 sensor.grid_kwh_monthly:
-  friendly_name: "Hálózat egyenleg ebben a hónapban"
+  friendly_name: "A1 egyenleg ebben a hónapban"
 sensor.grid_kwh_yearly:
-  friendly_name: "Hálózat egyenleg ebben az évben"
+  friendly_name: "A1 egyenleg ebben az évben"
 
 sensor.energy2_power:
-  friendly_name: "Klíma fogyasztás"
+  friendly_name: "H pillanatnyi fogyasztás"
   icon: mdi:air-conditioner
+sensor.energy2_kwh_hourly:
+  friendly_name: "H Fogyasztás ebben az órában"
+sensor.energy2_kwh_daily:
+  friendly_name: "H Fogyasztás mai napon"
+sensor.energy2_kwh_weekly:
+  friendly_name: "H Fogyasztás ezen a héten"
+sensor.energy2_kwh_monthly:
+  friendly_name: "H Fogyasztás ebben a hónapban"
+sensor.energy2_kwh_yearly:
+  friendly_name: "H Fogyasztás ebben az évben"
   
 sensor.energy_tariff_a1:
   friendly_name: "A1 pillanatnyi tarifa"
