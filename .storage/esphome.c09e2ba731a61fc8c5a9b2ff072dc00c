@@ -6,6 +6,7 @@
     "device_info": {
       "uses_password": true,
       "name": "attic",
+      "friendly_name": "",
       "mac_address": "24:62:AB:F9:8E:14",
       "compilation_time": "Oct 28 2022, 17:48:29",
       "model": "featheresp32",
@@ -22,6 +23,54 @@
       "major": 1,
       "minor": 7
     },
+    "sensor": [
+      {
+        "object_id": "attic_up_time",
+        "key": 237974150,
+        "name": "attic_up_time",
+        "unique_id": "2462abf98e14-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "attic_wifi_signal",
+        "key": 247489369,
+        "name": "attic_wifi_signal",
+        "unique_id": "2462abf98e14-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "attic_temp",
+        "key": 3400007495,
+        "name": "attic_temp",
+        "unique_id": "dallas-aa02179245598028",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
     "switch": [
       {
         "object_id": "attic_restart",
@@ -80,54 +129,6 @@
         "device_class": "",
         "is_status_binary_sensor": false
       }
-    ],
-    "sensor": [
-      {
-        "object_id": "attic_up_time",
-        "key": 237974150,
-        "name": "attic_up_time",
-        "unique_id": "2462abf98e14-uptime",
-        "disabled_by_default": false,
-        "icon": "mdi:timelapse",
-        "entity_category": 2,
-        "device_class": "",
-        "unit_of_measurement": "s",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 2,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "attic_wifi_signal",
-        "key": 247489369,
-        "name": "attic_wifi_signal",
-        "unique_id": "2462abf98e14-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "signal_strength",
-        "unit_of_measurement": "dBm",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "attic_temp",
-        "key": 3400007495,
-        "name": "attic_temp",
-        "unique_id": "dallas-aa02179245598028",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "temperature",
-        "unit_of_measurement": "°C",
-        "accuracy_decimals": 1,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      }
-    ],
-    "text_sensor": []
+    ]
   }
 }

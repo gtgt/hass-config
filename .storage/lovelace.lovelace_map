@@ -20,7 +20,7 @@
               "type": "map",
               "entities": [
                 {
-                  "entity": "device_tracker.gt_mi8"
+                  "entity": "device_tracker.gt_xm12"
                 },
                 {
                   "entity": "device_tracker.mi_9_lite"
@@ -36,15 +36,14 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "device_tracker.gt_mi8"
+                  "entity": "device_tracker.gt_xm12"
                 },
                 {
-                  "entity": "sensor.gt_mi8_geokodolt_hely",
+                  "entity": "sensor.gt_xm12_geocoded_location",
                   "secondary_info": "last-updated"
                 },
                 {
-                  "entity": "sensor.location_gt",
-                  "secondary_info": "last-updated"
+                  "entity": "sensor.location_gt"
                 },
                 {
                   "entity": "device_tracker.mi_9_lite"
@@ -63,7 +62,7 @@
               "type": "glance",
               "entities": [
                 {
-                  "entity": "sensor.gt_mi8_eszlelt_tevekenyseg",
+                  "entity": "sensor.gt_xm12_detected_activity",
                   "name": "Tomi"
                 }
               ],

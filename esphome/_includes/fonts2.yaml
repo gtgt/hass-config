@@ -1,11 +1,15 @@
 font:
   - file: '_fonts/slkscr.ttf'
     id: mono
-    size: 20
+    size: 22
 
   - file: '_fonts/slkscr.ttf'
     id: monobig
-    size: 42
+    size: 32
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: narrowsmall
+    size: 20
 
   - file: '_fonts/NimbusSans-Narrow.ttf'
     id: narrow

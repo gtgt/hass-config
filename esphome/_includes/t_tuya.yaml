@@ -1,0 +1,64 @@
+packages:
+  common: !include common.yaml
+  board: !include board/t_tuya.yaml
+
+# Enable logging, but make sure not using the serial port
+logger:
+  level: DEBUG
+  logs:
+    climate: INFO
+  baud_rate: 0
+  #hardware_uart: UART1
+
+uart:
+  rx_pin: GPIO3
+  tx_pin: GPIO1
+  baud_rate: 9600
+
+tuya:
+  #dpID 1:   "Switch (valve) (switch)"     Issue and report  Boolean
+  #dpID 2:   "Target temperature (int)"    Issue and report  Integer  Values range:0-37, Pitch1, Scale0, Unit:℃
+  #dpID 3:   "Current Temperature (int)"   Only report       Integer  Values range:-9-99, Pitch1, Scale0, Unit:℃
+  #dpID 4:   "Mode (enum)"                 Issue and report  Enum  Enumerated values:m, p (wip)
+  #dpID 5:   "Eco mode (switch)"           Issue and report, Function type 1 (boolean, Tuyasend1)
+  #dpID 6:   "Locked mode (switch)"        Issue and report, Function type 1 (boolean, Tuyasend1)
+  #dpID 102: "System mode (enum)"          Issue and report, Function type 4 (enum?, Tuyasend4), options: 0 cooling, 1 heating, 2 ventilating
+  #dpID 103: "Fan speed (enum)"            Issue and report, Function type 4 (enum?, Tuyasend4), options: 0 auto, 1 high, 2 medium, 3 low
+  #dpID 104  "Schedules (raw)"             Issue and report
+
+climate:
+  - platform: tuya
+    name: ${name}
+    supports_heat: true
+    supports_cool: true
+    switch_datapoint: 1
+    target_temperature_datapoint: 2
+    current_temperature_datapoint: 3
+    temperature_multiplier: 0.5
+    visual:
+      min_temperature: 21.0
+      max_temperature: 30.0
+      temperature_step: 0.5
+
+
+switch:
+  - platform: tuya
+    name: ${name}_eco_mode
+    switch_datapoint: 5
+  - platform: tuya
+    name: ${name}_locked_mode
+    switch_datapoint: 6
+
+sensor:
+  - platform: tuya
+    name: ${name}_mode
+    sensor_datapoint: 4
+  - platform: tuya
+    name: ${name}_system_mode
+    sensor_datapoint: 102
+
+fan:
+  - platform: tuya
+    name: ${name}
+    switch_datapoint: 1
+    speed_datapoint: 103

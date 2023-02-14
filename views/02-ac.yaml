@@ -31,6 +31,18 @@
           hours_to_show: 24
     - type: horizontal-stack
       cards:
+      - type: statistic
+        entity: sensor.energy2_power
+        name: "H átlagfogyasztás az elmúlt hónapban"
+        period:
+          calendar:
+            period: month
+        stat_type: mean
+      - type: entity
+        entity: sensor.ac_on_percentage
+        name: 'Aktív'
+    - type: horizontal-stack
+      cards:
       - type: sensor
         entity: sensor.io_temp_diff
         graph: line
@@ -128,19 +140,11 @@
           state_color: true
         - entity: switch.ac_relay_ventillation
           state_color: true
-    - type: statistic
-      entity: sensor.energy2_power
-      period:
-        calendar:
-          period: month
-      stat_type: mean
     - type: horizontal-stack
       cards:
         - type: entities
           show_header_toggle: false
           entities:
-          - entity: sensor.ac_on_percentage
-            name: 'Aktív'
           - type: attribute
             entity: climate.ac
             attribute: hvac_action

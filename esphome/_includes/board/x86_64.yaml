@@ -1,3 +1,6 @@
 esphome:
   platform: linux_x86_64
-  esp8266_restore_from_flash: true
+  restore_from_flash: true
+
+network:
+    enable_ipv6: true

@@ -50,7 +50,13 @@
       "Sholofly/arrisdcx960",
       "lukich48/hass_mqtt_template_switch",
       "marrobHD/firetv-card",
-      "clayauld/lovelace-darksky-card"
+      "clayauld/lovelace-darksky-card",
+      "NemesisRE/lovelace-swipe-navigation",
+      "natekspencer/hacs-litterrobot",
+      "frenck/home-assistant-theme-outline",
+      "gjohansson-ST/stl",
+      "custom-components/sensor.untappd",
+      "jessevl/homeassistant-greenchoice"
     ],
     "renamed_repositories": {
       "xMrVizzy/Philips-AirPurifier": "kraineff/philips-airpurifier",
@@ -73,8 +79,7 @@
       "TheLastProject/lovelace-valetudo-map-card": "Hypfer/lovelace-valetudo-map-card",
       "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo",
       "jadson179/consul": "gtjadsonsantos/consul",
-      "iablon/HomeAssistant-Touchpad-Card": "iablon/HomeAssistant-TV-Touchpad-Card",
-      "iablon/HomeAssistant-TV-Touchpad-Card": "iablon/HomeAssistant-Touchpad-Card"
+      "custom-components/integration_blueprint": "ludeeus/integration_blueprint"
     },
     "ignored_repositories": []
   }

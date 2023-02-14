@@ -4,14 +4,15 @@
   "key": "esphome.9e9969317c97db4638b794f273e7454c",
   "data": {
     "device_info": {
-      "uses_password": true,
+      "uses_password": false,
       "name": "energy",
+      "friendly_name": "",
       "mac_address": "18:FE:34:E0:C1:2A",
-      "compilation_time": "Dec 25 2022, 04:45:31",
+      "compilation_time": "Feb 10 2023, 20:36:27",
       "model": "d1_mini",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.3",
+      "esphome_version": "2022.12.8",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -33,65 +34,6 @@
       "major": 1,
       "minor": 7
     },
-    "switch": [
-      {
-        "object_id": "energy_restart",
-        "key": 1102582941,
-        "name": "energy_restart",
-        "unique_id": "energyswitchenergy_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy_reset1",
-        "key": 2614731994,
-        "name": "energy_reset1",
-        "unique_id": "energyswitchenergy_reset1",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy_reset2",
-        "key": 2614731993,
-        "name": "energy_reset2",
-        "unique_id": "energyswitchenergy_reset2",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy_reset3",
-        "key": 2614731992,
-        "name": "energy_reset3",
-        "unique_id": "energyswitchenergy_reset3",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "energy_status",
-        "key": 894977922,
-        "name": "energy_status",
-        "unique_id": "energybinary_sensorenergy_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "sensor": [
       {
         "object_id": "energy_up_time",
@@ -424,6 +366,65 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": []
+    "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "energy_status",
+        "key": 894977922,
+        "name": "energy_status",
+        "unique_id": "energybinary_sensorenergy_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "energy_restart",
+        "key": 1102582941,
+        "name": "energy_restart",
+        "unique_id": "energyswitchenergy_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy_reset1",
+        "key": 2614731994,
+        "name": "energy_reset1",
+        "unique_id": "energyswitchenergy_reset1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy_reset2",
+        "key": 2614731993,
+        "name": "energy_reset2",
+        "unique_id": "energyswitchenergy_reset2",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy_reset3",
+        "key": 2614731992,
+        "name": "energy_reset3",
+        "unique_id": "energyswitchenergy_reset3",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ]
   }
 }

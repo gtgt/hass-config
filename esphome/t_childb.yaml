@@ -1,0 +1,5 @@
+substitutions:
+  name: t_childb
+
+packages:
+  t_tuya: !include _includes/t_tuya.yaml

@@ -90,8 +90,8 @@ system_health:
 ## Configure the history of the logbook
 recorder:
   db_url: mysql://homeassistant:K9cdXAIVbG62TRna@core-mariadb/homeassistant?charset=utf8
-  commit_interval: 2
-  purge_keep_days: 21
+  commit_interval: 20
+  purge_keep_days: 30
   include:
     domains:
       - binary_sensor
@@ -104,6 +104,7 @@ recorder:
       - weather
       - input_number
       - input_select
+      - water_heater
     entity_globs:
       - sensor.ac_*
       - sensor.*temp*
@@ -116,6 +117,7 @@ recorder:
       - sensor.*location*
       - sensor.*_geokodolt_hely
       - sensor.*_eszlelt_tevekenyseg
+      - sensor.*_detected_activity
       - sensor.ble_*
     entities:
       - sensor.aqua_ariston_average_showers
@@ -130,6 +132,8 @@ recorder:
       - switch.energy_re*
       - input_number.energy_*
       - binary_sensor.*_pulse
+    entities:
+      - sensor.ble_mac_ibeacon
 
 ## Enables support for tracking state changes over time.
 history:
@@ -227,7 +231,7 @@ aquaariston:
   username: !secret ariston_username
   password: !secret ariston_password
   type: velis
-  polling: 2.0
+  polling: 4.0
   store_config_files: true
   switches:
     - eco                             # switches ECO mode

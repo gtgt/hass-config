@@ -4,14 +4,15 @@
   "key": "esphome.88b2f1faf0e62efe213cb584e4f43a10",
   "data": {
     "device_info": {
-      "uses_password": true,
+      "uses_password": false,
       "name": "ac_relay",
+      "friendly_name": "",
       "mac_address": "68:C6:3A:A4:80:F6",
-      "compilation_time": "Dec 25 2022, 05:11:14",
+      "compilation_time": "Feb  8 2023, 14:58:32",
       "model": "d1_mini",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.3",
+      "esphome_version": "2022.12.8",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -22,6 +23,52 @@
       "major": 1,
       "minor": 7
     },
+    "sensor": [
+      {
+        "object_id": "ac_relay_up_time",
+        "key": 3869629663,
+        "name": "ac_relay_up_time",
+        "unique_id": "68c63aa480f6-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_relay_wifi_signal",
+        "key": 953222208,
+        "name": "ac_relay_wifi_signal",
+        "unique_id": "68c63aa480f6-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "ac_relay_status",
+        "key": 2750351128,
+        "name": "ac_relay_status",
+        "unique_id": "ac_relaybinary_sensorac_relay_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "switch": [
       {
         "object_id": "ac_relay_restart",
@@ -122,52 +169,6 @@
         "assumed_state": false,
         "device_class": ""
       }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "ac_relay_status",
-        "key": 2750351128,
-        "name": "ac_relay_status",
-        "unique_id": "ac_relaybinary_sensorac_relay_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
-    "sensor": [
-      {
-        "object_id": "ac_relay_up_time",
-        "key": 3869629663,
-        "name": "ac_relay_up_time",
-        "unique_id": "68c63aa480f6-uptime",
-        "disabled_by_default": false,
-        "icon": "mdi:timelapse",
-        "entity_category": 2,
-        "device_class": "duration",
-        "unit_of_measurement": "s",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 2,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "ac_relay_wifi_signal",
-        "key": 953222208,
-        "name": "ac_relay_wifi_signal",
-        "unique_id": "68c63aa480f6-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "signal_strength",
-        "unit_of_measurement": "dBm",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      }
-    ],
-    "text_sensor": []
+    ]
   }
 }

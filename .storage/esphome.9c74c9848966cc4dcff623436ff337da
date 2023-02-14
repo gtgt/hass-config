@@ -6,6 +6,7 @@
     "device_info": {
       "uses_password": true,
       "name": "energy2",
+      "friendly_name": "",
       "mac_address": "DC:4F:22:74:9A:47",
       "compilation_time": "Dec 25 2022, 04:43:53",
       "model": "esp01_1m",
@@ -22,30 +23,6 @@
       "major": 1,
       "minor": 7
     },
-    "switch": [
-      {
-        "object_id": "energy2_restart",
-        "key": 4116582893,
-        "name": "energy2_restart",
-        "unique_id": "energy2switchenergy2_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy2_reset",
-        "key": 1568442073,
-        "name": "energy2_reset",
-        "unique_id": "energy2switchenergy2_reset",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
     "sensor": [
       {
         "object_id": "energy2_up_time",
@@ -210,6 +187,30 @@
         "entity_category": 2,
         "device_class": "connectivity",
         "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "energy2_restart",
+        "key": 4116582893,
+        "name": "energy2_restart",
+        "unique_id": "energy2switchenergy2_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy2_reset",
+        "key": 1568442073,
+        "name": "energy2_reset",
+        "unique_id": "energy2switchenergy2_reset",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
       }
     ]
   }

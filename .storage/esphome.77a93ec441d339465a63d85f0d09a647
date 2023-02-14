@@ -4,14 +4,15 @@
   "key": "esphome.77a93ec441d339465a63d85f0d09a647",
   "data": {
     "device_info": {
-      "uses_password": true,
+      "uses_password": false,
       "name": "ac_sensor",
+      "friendly_name": "",
       "mac_address": "4C:11:AE:0E:6C:A4",
-      "compilation_time": "Dec 25 2022, 05:01:47",
+      "compilation_time": "Feb 10 2023, 19:16:44",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.3",
+      "esphome_version": "2022.12.8",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -22,32 +23,6 @@
       "major": 1,
       "minor": 7
     },
-    "switch": [
-      {
-        "object_id": "ac_sensor_restart",
-        "key": 3007705818,
-        "name": "ac_sensor_restart",
-        "unique_id": "ac_sensorswitchac_sensor_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "ac_sensor_status",
-        "key": 2919039115,
-        "name": "ac_sensor_status",
-        "unique_id": "ac_sensorbinary_sensorac_sensor_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "sensor": [
       {
         "object_id": "ac_sensor_up_time",
@@ -110,6 +85,32 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": []
+    "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "ac_sensor_status",
+        "key": 2919039115,
+        "name": "ac_sensor_status",
+        "unique_id": "ac_sensorbinary_sensorac_sensor_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "ac_sensor_restart",
+        "key": 3007705818,
+        "name": "ac_sensor_restart",
+        "unique_id": "ac_sensorswitchac_sensor_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ]
   }
 }

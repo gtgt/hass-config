@@ -1,9 +1,16 @@
 esphome:
-  platform: ESP32
-  board: esp32dev
   platformio_options:
     monitor_speed: 115200
     upload_speed: 921600
+
+esp32:
+  board: esp32dev
+  framework:
+    type: esp-idf
+    version: recommended
+
+network:
+    enable_ipv6: true
 
 status_led:
   pin:

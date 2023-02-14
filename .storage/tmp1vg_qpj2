@@ -1,0 +1,5983 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.gt",
+        "state": "home",
+        "attributes": {
+          "editable": false,
+          "id": "aithuShiex4UTh4A",
+          "latitude": 47.6230055,
+          "longitude": 18.9185387,
+          "gps_accuracy": 39,
+          "source": "device_tracker.gt_xm12",
+          "user_id": "5a0a633ef7644660a34bd271371786aa",
+          "friendly_name": "Tomi"
+        },
+        "last_changed": "2023-02-07T02:15:32.565381+00:00",
+        "last_updated": "2023-02-07T03:08:53.094720+00:00",
+        "context": {
+          "id": "01GRMXJ0F6R0NZC9ZZRR31AAYD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "person.gsm",
+        "state": "home",
+        "attributes": {
+          "editable": false,
+          "id": "gsm",
+          "latitude": 47.6230575,
+          "longitude": 18.9184719,
+          "gps_accuracy": 20,
+          "source": "device_tracker.gsm_mi4",
+          "user_id": "1dedaecfcb6546b7a5acc4f80b5ac32c",
+          "friendly_name": "Marianna"
+        },
+        "last_changed": "2023-02-07T02:15:32.565608+00:00",
+        "last_updated": "2023-02-07T02:18:53.068782+00:00",
+        "context": {
+          "id": "01GRMTPERCJHP5EZREYZK3AN44",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_supervisor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2023.01.1",
+          "in_progress": false,
+          "latest_version": "2023.01.1",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/supervisor/releases/tag/2023.01.1",
+          "skipped_version": null,
+          "title": "Home Assistant Supervisor",
+          "entity_picture": "https://brands.home-assistant.io/hassio/icon.png",
+          "friendly_name": "Home Assistant Supervisor Update",
+          "supported_features": 1
+        },
+        "last_changed": "2023-02-07T02:15:38.319330+00:00",
+        "last_updated": "2023-02-07T02:15:38.319330+00:00",
+        "context": {
+          "id": "01GRMTGGJFJJPAMJRMKMZA3NDD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_core_update",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2023.2.1",
+          "in_progress": false,
+          "latest_version": "2023.2.2",
+          "release_summary": null,
+          "release_url": "https://www.home-assistant.io/latest-release-notes/",
+          "skipped_version": null,
+          "title": "Home Assistant Core",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Core Update",
+          "supported_features": 11
+        },
+        "last_changed": "2023-02-07T02:15:38.320582+00:00",
+        "last_updated": "2023-02-07T02:15:38.320582+00:00",
+        "context": {
+          "id": "01GRMTGGJGHN2VR1RP6A9B3HZH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.file_editor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "5.5.0",
+          "in_progress": false,
+          "latest_version": "5.5.0",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": "File editor",
+          "entity_picture": "/api/hassio/addons/core_configurator/icon",
+          "friendly_name": "File editor Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.320902+00:00",
+        "last_updated": "2023-02-07T02:35:49.397438+00:00",
+        "context": {
+          "id": "01GRMVNF8NGSJ2YNST9GECBXY8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.network_ups_tools_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "0.11.0",
+          "in_progress": false,
+          "latest_version": "0.11.0",
+          "release_summary": "## What’s changed\n\n## 📚 Documentation\n\n- 📚 Use new My Home Assistant link format @frenck (#232)\n\n## ⬆️ Dependency updates\n\n- ⬆️ Upgrades add-on base image to 6.0.0 @frenck (#231)\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Network UPS Tools",
+          "entity_picture": "/api/hassio/addons/a0d7b954_nut/icon",
+          "friendly_name": "Network UPS Tools Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.321127+00:00",
+        "last_updated": "2023-02-07T02:15:38.321127+00:00",
+        "context": {
+          "id": "01GRMTGGJHVSN7KQXD6NWHW2SN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ssh_web_terminal_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "13.0.2",
+          "in_progress": false,
+          "latest_version": "13.0.2",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Upgrades git to 2.38.3-r1 @frenck (#491)\n- ⬆️ Upgrades ttyd to 1.7.3 @frenck (#490)\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "SSH & Web Terminal",
+          "entity_picture": "/api/hassio/addons/a0d7b954_ssh/icon",
+          "friendly_name": "SSH & Web Terminal Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.321325+00:00",
+        "last_updated": "2023-02-07T02:15:38.321325+00:00",
+        "context": {
+          "id": "01GRMTGGJH71CS9KEPBZJ15R0P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.mariadb_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2.5.2",
+          "in_progress": false,
+          "latest_version": "2.5.2",
+          "release_summary": "# Changelog\n\n## 2.5.2\n\n- Update to MariaDB version 10.6.10\n\n## 2.5.1\n\n- Remove deprecated `innodb-buffer-pool-instances`\n\n## 2.5.0\n\n- Update alpine to 3.16 and s6 to v3\n\n## 2.4.0\n\n- Add lock capabilities during snapshot\n\n## 2.3.0\n\n- Option to grant user s",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "MariaDB",
+          "entity_picture": "/api/hassio/addons/core_mariadb/icon",
+          "friendly_name": "MariaDB Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.321525+00:00",
+        "last_updated": "2023-02-07T02:15:38.321525+00:00",
+        "context": {
+          "id": "01GRMTGGJHTWC2G4MY9VS41801",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.let_s_encrypt_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "4.12.8",
+          "in_progress": false,
+          "latest_version": "4.12.8",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Let's Encrypt",
+          "entity_picture": "/api/hassio/addons/core_letsencrypt/icon",
+          "friendly_name": "Let's Encrypt Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.321715+00:00",
+        "last_updated": "2023-02-07T02:15:38.321715+00:00",
+        "context": {
+          "id": "01GRMTGGJHAJR7NW5BRF6D19ZT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.appdaemon_4_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.11.0",
+          "in_progress": false,
+          "latest_version": "0.11.0",
+          "release_summary": null,
+          "release_url": null,
+          "skipped_version": null,
+          "title": "AppDaemon",
+          "entity_picture": "/api/hassio/addons/a0d7b954_appdaemon/icon",
+          "friendly_name": "AppDaemon Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.321899+00:00",
+        "last_updated": "2023-02-07T02:15:38.321899+00:00",
+        "context": {
+          "id": "01GRMTGGJHEQCEKSGYSNDTHJCA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.duck_dns_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "1.15.0",
+          "in_progress": false,
+          "latest_version": "1.15.0",
+          "release_summary": "# Changelog\n\n## 1.15.0\n\n- Use Supervisor API to detect IPv6 host addresses, selectable by interface\n- Split IPv4 and IPv6 updates as duckdns skips v4 detection with v6 present\n- Fix misleading help text regarding IPv6 address autodetection\n- Disable Docke",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Duck DNS",
+          "entity_picture": "/api/hassio/addons/core_duckdns/icon",
+          "friendly_name": "Duck DNS Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.322112+00:00",
+        "last_updated": "2023-02-07T02:15:38.322112+00:00",
+        "context": {
+          "id": "01GRMTGGJJKE7R36N7P9CD87E8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.mosquitto_broker_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "6.1.3",
+          "in_progress": false,
+          "latest_version": "6.1.3",
+          "release_summary": "# Changelog\n\n## 6.1.3\n\n- Change timestamp format in logs\n\n## 6.1.2\n\n- Add debug option to help with issues\n\n## 6.1.1\n\n- Don't purge openssl in cleanup\n\n## 6.1.0\n\n- Update mosquitto to 2.0.11\n- Remove `mosquitto-auth-plug` and replace with `mosquitto-go-au",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Mosquitto broker",
+          "entity_picture": "/api/hassio/addons/core_mosquitto/icon",
+          "friendly_name": "Mosquitto broker Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.322533+00:00",
+        "last_updated": "2023-02-07T02:15:38.322533+00:00",
+        "context": {
+          "id": "01GRMTGGJJXDAMN6NRDWBSPK9C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.esphome_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2022.12.8",
+          "in_progress": false,
+          "latest_version": "2022.12.8",
+          "release_summary": "## 2022.12.8\n\n- Upgrades add-on base image to 6.2.0 [esphome#4310](https://github.com/esphome/esphome/pull/4310) by [@frenck](https://github.com/frenck)\n- Migrate old-style S6 scripts to s6-rc.d [esphome#4311](https://github.com/esphome/esphome/pull/4311)",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "ESPHome",
+          "entity_picture": "/api/hassio/addons/5c53de3b_esphome/icon",
+          "friendly_name": "ESPHome Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-07T02:15:38.322809+00:00",
+        "last_updated": "2023-02-07T02:15:38.322809+00:00",
+        "context": {
+          "id": "01GRMTGGJJA4QDTSBW482H9N8Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_operating_system_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "9.5",
+          "in_progress": false,
+          "latest_version": "9.5",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/operating-system/releases/tag/9.5",
+          "skipped_version": null,
+          "title": "Home Assistant Operating System",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Operating System Update",
+          "supported_features": 3
+        },
+        "last_changed": "2023-02-07T02:15:38.323216+00:00",
+        "last_updated": "2023-02-07T02:15:38.323216+00:00",
+        "context": {
+          "id": "01GRMTGGJKCY4XRY2H36VW5PJZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.ac_on",
+        "state": "on",
+        "attributes": {
+          "icon": "mdi:air-conditioner",
+          "friendly_name": "ac_on"
+        },
+        "last_changed": "2023-02-07T02:18:53.075551+00:00",
+        "last_updated": "2023-02-07T02:18:53.075551+00:00",
+        "context": {
+          "id": "01GRMTPERK957H159TZMAKP6ZE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.humi1_no_water",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:tray-alert",
+          "friendly_name": "Nincs víz a tartályban"
+        },
+        "last_changed": "2023-02-07T02:18:53.097565+00:00",
+        "last_updated": "2023-02-07T02:18:53.097565+00:00",
+        "context": {
+          "id": "01GRMTPES9A9T1P215XS1F2AAF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.humi1_tank_detached",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:tray-remove",
+          "friendly_name": "Tartály nincs a helyén"
+        },
+        "last_changed": "2023-02-07T02:18:53.105992+00:00",
+        "last_updated": "2023-02-07T02:18:53.105992+00:00",
+        "context": {
+          "id": "01GRMTPESHJ8FNQHY3SW3N37A5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "saver.saver",
+        "state": "8",
+        "attributes": {
+          "entities": {},
+          "variables": {
+            "energy_meter_last_tick": "1636158590121",
+            "energy_meter_power": "325",
+            "switch.ac_relay_study_last_switch": "2023-02-06 23:48:35.408461+01:00",
+            "switch.ac_relay_childb_last_switch": "2023-02-07 03:23:55.222505+01:00",
+            "switch.ac_relay_bedroom_last_switch": "2023-02-07 04:02:50.014988+01:00",
+            "switch.ac_relay_childa_last_switch": "2023-02-07 03:18:55.022770+01:00",
+            "switch.ac_relay_livingroom_last_switch": "2023-02-07 03:18:55.284659+01:00",
+            "switch.ac_relay_kitchen_last_switch": "2023-02-07 03:24:00.213563+01:00"
+          },
+          "friendly_name": "saver"
+        },
+        "last_changed": "2023-02-07T02:15:39.567158+00:00",
+        "last_updated": "2023-02-07T03:02:50.016660+00:00",
+        "context": {
+          "id": "01GRMX6XX0TBM98GRP06MWVC67",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_select.humi1_mode",
+        "state": "Auto",
+        "attributes": {
+          "options": [
+            "Low",
+            "Mid",
+            "High",
+            "Auto"
+          ],
+          "editable": false,
+          "icon": "mdi:water-opacity",
+          "friendly_name": "Mód"
+        },
+        "last_changed": "2023-02-07T02:15:40.503592+00:00",
+        "last_updated": "2023-02-07T02:15:40.503592+00:00",
+        "context": {
+          "id": "01GRMTGJPQVJKTFZQQKYFH0KVX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_select.pufi_mode",
+        "state": "Auto",
+        "attributes": {
+          "options": [
+            "Auto",
+            "Silent",
+            "Favorite"
+          ],
+          "editable": false,
+          "icon": "mdi:animation-outline",
+          "friendly_name": "Pufi mód"
+        },
+        "last_changed": "2023-02-07T02:15:40.503850+00:00",
+        "last_updated": "2023-02-07T02:15:40.503850+00:00",
+        "context": {
+          "id": "01GRMTGJPQSAWC2RBJYEKWNPGX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_select.tv_remote",
+        "state": "study_tv",
+        "attributes": {
+          "options": [
+            "study_tv"
+          ],
+          "editable": false,
+          "icon": "mdi:remote-tv",
+          "friendly_name": "Távirányító"
+        },
+        "last_changed": "2023-02-07T02:15:40.504001+00:00",
+        "last_updated": "2023-02-07T02:15:40.504001+00:00",
+        "context": {
+          "id": "01GRMTGJPR147F2WTSGSP4S8FM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.ac_default_target_temp",
+        "state": "22.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 21.0,
+          "max": 27.0,
+          "step": 0.5,
+          "mode": "slider",
+          "icon": "mdi:home-thermometer-outline"
+        },
+        "last_changed": "2023-02-07T02:15:40.504229+00:00",
+        "last_updated": "2023-02-07T02:15:40.504229+00:00",
+        "context": {
+          "id": "01GRMTGJPR5Y5JW8RXWJ78KH77",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.ac_study_target_temp",
+        "state": "21.5",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 21.0,
+          "max": 27.0,
+          "step": 0.5,
+          "mode": "slider",
+          "icon": "mdi:thermometer"
+        },
+        "last_changed": "2023-02-07T02:15:40.504392+00:00",
+        "last_updated": "2023-02-07T02:15:40.504392+00:00",
+        "context": {
+          "id": "01GRMTGJPRB6ESVGQ4F1B430JB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.ac_kitchen_target_temp",
+        "state": "22.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 21.0,
+          "max": 27.0,
+          "step": 0.5,
+          "mode": "slider",
+          "icon": "mdi:thermometer"
+        },
+        "last_changed": "2023-02-07T02:15:40.504548+00:00",
+        "last_updated": "2023-02-07T02:15:40.504548+00:00",
+        "context": {
+          "id": "01GRMTGJPRQ94M710VR4MWBD6T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.ventillation_temp_diff_treshold",
+        "state": "-10.5",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": -25.0,
+          "max": -5.0,
+          "step": 0.5,
+          "mode": "slider",
+          "icon": "mdi:snowflake-thermometer",
+          "friendly_name": "Szellőztetés ki/be 'túl hideg' szintje"
+        },
+        "last_changed": "2023-02-07T02:15:40.504703+00:00",
+        "last_updated": "2023-02-07T02:15:40.504703+00:00",
+        "context": {
+          "id": "01GRMTGJPR7PNZKWHTQWSQ5QZT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.humi1_target_humidity",
+        "state": "40.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 40.0,
+          "max": 80.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "%",
+          "icon": "mdi:water-check-outline",
+          "friendly_name": "Cél páratartalom"
+        },
+        "last_changed": "2023-02-07T02:15:40.504855+00:00",
+        "last_updated": "2023-02-07T02:15:40.504855+00:00",
+        "context": {
+          "id": "01GRMTGJPRG8Q7GZVNXQ04JWFV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.humi1_buzzer",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:volume-off",
+          "friendly_name": "Hang"
+        },
+        "last_changed": "2023-02-07T02:15:40.526653+00:00",
+        "last_updated": "2023-02-07T02:15:40.526653+00:00",
+        "context": {
+          "id": "01GRMTGJQEPNCKMV14TH8YAF7S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.humi1_led",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:lightbulb-outline",
+          "friendly_name": "LED"
+        },
+        "last_changed": "2023-02-07T02:15:40.526917+00:00",
+        "last_updated": "2023-02-07T02:15:40.526917+00:00",
+        "context": {
+          "id": "01GRMTGJQE12QBJND3Q3B97S0Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "script.turn_switch_by_climate",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2023-02-07T03:18:50.197909+00:00",
+          "mode": "single",
+          "current": 0,
+          "icon": "mdi:switch",
+          "friendly_name": "turn_switch_by_climate"
+        },
+        "last_changed": "2023-02-07T03:18:50.199511+00:00",
+        "last_updated": "2023-02-07T03:18:50.199511+00:00",
+        "context": {
+          "id": "01GRMY47J0KF2GA04KF04F9CZB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.ac_study",
+        "state": "heat",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "cool",
+            "heat_cool",
+            "fan_only",
+            "off"
+          ],
+          "min_temp": 21.0,
+          "max_temp": 27.0,
+          "current_temperature": null,
+          "temperature": 21.5,
+          "hvac_action": "off",
+          "friendly_name": "Dolgozó",
+          "supported_features": 1,
+          "icon": "mdi:thermostat-box"
+        },
+        "last_changed": "2023-02-07T02:15:40.593655+00:00",
+        "last_updated": "2023-02-07T02:15:40.593655+00:00",
+        "context": {
+          "id": "01GRMTGJSHWPGMA2ACC22PDBDY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.ac_kitchen",
+        "state": "heat",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "cool",
+            "heat_cool",
+            "fan_only",
+            "off"
+          ],
+          "min_temp": 21.0,
+          "max_temp": 27.0,
+          "current_temperature": null,
+          "temperature": 22.0,
+          "hvac_action": "off",
+          "friendly_name": "Konyha",
+          "supported_features": 1,
+          "icon": "mdi:thermostat-box"
+        },
+        "last_changed": "2023-02-07T02:15:40.594165+00:00",
+        "last_updated": "2023-02-07T02:15:40.594165+00:00",
+        "context": {
+          "id": "01GRMTGJSJ3XVEP25DHT50ESM2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_kwh_hourly",
+        "state": "0.100",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_kwh",
+          "status": "collecting",
+          "last_period": "0.378",
+          "meter_period": "hourly",
+          "cron pattern": "0 * * * *",
+          "last_reset": "2023-02-07T03:00:00.010784+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Ház fogyasztás ebben az órában"
+        },
+        "last_changed": "2023-02-07T03:18:36.058693+00:00",
+        "last_updated": "2023-02-07T03:18:36.058693+00:00",
+        "context": {
+          "id": "01GRMY3SRT2Q69N75KAH1NQ4A2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "0.100"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "0.378",
+        "last_reset": "2023-02-07T03:00:00.010784+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_kwh_daily",
+        "state": "16.638",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_kwh",
+          "status": "collecting",
+          "last_period": "17.758",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-02-05T23:00:00.011586+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Ház fogyasztás mai napon"
+        },
+        "last_changed": "2023-02-07T03:18:36.059127+00:00",
+        "last_updated": "2023-02-07T03:18:36.059127+00:00",
+        "context": {
+          "id": "01GRMY3SRV4VCFSKX1PE7YBNN3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "16.638"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "17.758",
+        "last_reset": "2023-02-05T23:00:00.011586+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_kwh_weekly",
+        "state": "16.638",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_kwh",
+          "status": "collecting",
+          "last_period": "93.865",
+          "meter_period": "weekly",
+          "cron pattern": "0 0 * * 1",
+          "last_reset": "2023-02-05T23:00:00.004820+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Ház fogyasztás ezen a héten"
+        },
+        "last_changed": "2023-02-07T03:18:36.059499+00:00",
+        "last_updated": "2023-02-07T03:18:36.059499+00:00",
+        "context": {
+          "id": "01GRMY3SRVSKH8DFE5Y7GYWB0N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "16.638"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "93.865",
+        "last_reset": "2023-02-05T23:00:00.004820+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_kwh_monthly",
+        "state": "89.257",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_kwh",
+          "status": "collecting",
+          "last_period": "381.035",
+          "meter_period": "monthly",
+          "cron pattern": "0 0 1 * *",
+          "last_reset": "2023-01-31T23:00:00.034069+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Ház fogyasztás ebben a hónapban"
+        },
+        "last_changed": "2023-02-07T03:18:36.059847+00:00",
+        "last_updated": "2023-02-07T03:18:36.059847+00:00",
+        "context": {
+          "id": "01GRMY3SRVYZEECB4DZKH2PEZD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "89.257"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "381.035",
+        "last_reset": "2023-01-31T23:00:00.034069+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy_kwh_yearly",
+        "state": "470.292",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy_kwh",
+          "status": "collecting",
+          "last_period": "1812.880",
+          "meter_period": "yearly",
+          "cron pattern": "0 0 1 1/12 *",
+          "last_reset": "2022-12-31T23:00:00.025786+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Ház fogyasztás ebben az évben"
+        },
+        "last_changed": "2023-02-07T03:18:36.060222+00:00",
+        "last_updated": "2023-02-07T03:18:36.060222+00:00",
+        "context": {
+          "id": "01GRMY3SRW851WNZ1C4JDWFRGP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "470.292"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "1812.880",
+        "last_reset": "2022-12-31T23:00:00.025786+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy2_kwh_hourly",
+        "state": "439",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy2_energy",
+          "status": "collecting",
+          "last_period": "1671",
+          "meter_period": "hourly",
+          "cron pattern": "0 * * * *",
+          "last_reset": "2023-02-07T03:00:00.004163+00:00",
+          "unit_of_measurement": "Wh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "H Fogyasztás ebben az órában"
+        },
+        "last_changed": "2023-02-07T03:18:52.540236+00:00",
+        "last_updated": "2023-02-07T03:18:52.540236+00:00",
+        "context": {
+          "id": "01GRMY49VWD8PTHYCW8P1827P1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "439"
+        },
+        "native_unit_of_measurement": "Wh",
+        "last_period": "1671",
+        "last_reset": "2023-02-07T03:00:00.004163+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy2_kwh_daily",
+        "state": "36820",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy2_energy",
+          "status": "collecting",
+          "last_period": "30007",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-02-05T23:00:00.021895+00:00",
+          "unit_of_measurement": "Wh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "H Fogyasztás mai napon"
+        },
+        "last_changed": "2023-02-07T03:18:52.540483+00:00",
+        "last_updated": "2023-02-07T03:18:52.540483+00:00",
+        "context": {
+          "id": "01GRMY49VWB2P0DYQ5Z35QS2WX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "36820"
+        },
+        "native_unit_of_measurement": "Wh",
+        "last_period": "30007",
+        "last_reset": "2023-02-05T23:00:00.021895+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy2_kwh_weekly",
+        "state": "36820",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy2_energy",
+          "status": "collecting",
+          "last_period": "180836",
+          "meter_period": "weekly",
+          "cron pattern": "0 0 * * 1",
+          "last_reset": "2023-02-05T23:00:00.028959+00:00",
+          "unit_of_measurement": "Wh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "H Fogyasztás ezen a héten"
+        },
+        "last_changed": "2023-02-07T03:18:52.540647+00:00",
+        "last_updated": "2023-02-07T03:18:52.540647+00:00",
+        "context": {
+          "id": "01GRMY49VW60E5PQ3J9H7CXSR1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "36820"
+        },
+        "native_unit_of_measurement": "Wh",
+        "last_period": "180836",
+        "last_reset": "2023-02-05T23:00:00.028959+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy2_kwh_monthly",
+        "state": "162870",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy2_energy",
+          "status": "collecting",
+          "last_period": "508626",
+          "meter_period": "monthly",
+          "cron pattern": "0 0 1 * *",
+          "last_reset": "2023-01-31T23:00:00.040821+00:00",
+          "unit_of_measurement": "Wh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "H Fogyasztás ebben a hónapban"
+        },
+        "last_changed": "2023-02-07T03:18:52.540803+00:00",
+        "last_updated": "2023-02-07T03:18:52.540803+00:00",
+        "context": {
+          "id": "01GRMY49VWWZ0TVQG8R3Z6EG24",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "162870"
+        },
+        "native_unit_of_measurement": "Wh",
+        "last_period": "508626",
+        "last_reset": "2023-01-31T23:00:00.040821+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.energy2_kwh_yearly",
+        "state": "802524",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.energy2_energy",
+          "status": "collecting",
+          "last_period": "431467",
+          "meter_period": "yearly",
+          "cron pattern": "0 0 1 1/12 *",
+          "last_reset": "2022-12-31T23:00:00.005303+00:00",
+          "unit_of_measurement": "Wh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "H Fogyasztás ebben az évben"
+        },
+        "last_changed": "2023-02-07T03:18:52.540968+00:00",
+        "last_updated": "2023-02-07T03:18:52.540968+00:00",
+        "context": {
+          "id": "01GRMY49VWD5Z320RM9QW1RHK5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "802524"
+        },
+        "native_unit_of_measurement": "Wh",
+        "last_period": "431467",
+        "last_reset": "2022-12-31T23:00:00.005303+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.grid_kwh_hourly",
+        "state": "-0.100",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.grid_kwh",
+          "status": "collecting",
+          "last_period": "-0.378",
+          "meter_period": "hourly",
+          "cron pattern": "0 * * * *",
+          "last_reset": "2023-02-07T03:00:00.013974+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "A1 egyenleg ebben az órában"
+        },
+        "last_changed": "2023-02-07T03:18:36.066379+00:00",
+        "last_updated": "2023-02-07T03:18:36.066379+00:00",
+        "context": {
+          "id": "01GRMY3SS2W2E8YF7FR0WEZERJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "-0.100"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "-0.378",
+        "last_reset": "2023-02-07T03:00:00.013974+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.grid_kwh_daily",
+        "state": "-0.588",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.grid_kwh",
+          "status": "collecting",
+          "last_period": "-1.434",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-02-05T23:00:00.008281+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "A1 egyenleg a mai napon"
+        },
+        "last_changed": "2023-02-07T03:18:36.067145+00:00",
+        "last_updated": "2023-02-07T03:18:36.067145+00:00",
+        "context": {
+          "id": "01GRMY3SS38BYW1BRESMP9CN4Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "-0.588"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "-1.434",
+        "last_reset": "2023-02-05T23:00:00.008281+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.grid_kwh_weekly",
+        "state": "-0.588",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.grid_kwh",
+          "status": "collecting",
+          "last_period": "-39.653",
+          "meter_period": "weekly",
+          "cron pattern": "0 0 * * 1",
+          "last_reset": "2023-02-05T23:00:00.015031+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "A1 egyenleg ezen a héten"
+        },
+        "last_changed": "2023-02-07T03:18:36.067594+00:00",
+        "last_updated": "2023-02-07T03:18:36.067594+00:00",
+        "context": {
+          "id": "01GRMY3SS3RFKR55AZMZQF2VA2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "-0.588"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "-39.653",
+        "last_reset": "2023-02-05T23:00:00.015031+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.grid_kwh_monthly",
+        "state": "-29.507",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.grid_kwh",
+          "status": "collecting",
+          "last_period": "-155.783",
+          "meter_period": "monthly",
+          "cron pattern": "0 0 1 * *",
+          "last_reset": "2023-01-31T23:00:00.012208+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "A1 egyenleg ebben a hónapban"
+        },
+        "last_changed": "2023-02-07T03:18:36.067932+00:00",
+        "last_updated": "2023-02-07T03:18:36.067932+00:00",
+        "context": {
+          "id": "01GRMY3SS3BM90SFEFJZACQMXT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "-29.507"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "-155.783",
+        "last_reset": "2023-01-31T23:00:00.012208+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.grid_kwh_yearly",
+        "state": "-331.884",
+        "attributes": {
+          "state_class": "total",
+          "source": "sensor.grid_kwh",
+          "status": "collecting",
+          "last_period": "-146.600",
+          "meter_period": "yearly",
+          "cron pattern": "0 0 1 1/12 *",
+          "last_reset": "2022-12-31T23:00:00.029908+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "A1 egyenleg ebben az évben"
+        },
+        "last_changed": "2023-02-07T03:18:36.068385+00:00",
+        "last_updated": "2023-02-07T03:18:36.068385+00:00",
+        "context": {
+          "id": "01GRMY3SS4RV0EVV9RPNYJV1VG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "-331.884"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "-146.600",
+        "last_reset": "2022-12-31T23:00:00.029908+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.solar_production_hourly",
+        "state": "0",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.solaredge_ac_energy_kwh",
+          "status": "collecting",
+          "last_period": "0",
+          "meter_period": "hourly",
+          "cron pattern": "0 * * * *",
+          "last_reset": "2023-02-07T03:00:00.007552+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Napenergia termelés ebben az órában"
+        },
+        "last_changed": "2023-02-07T02:15:40.642856+00:00",
+        "last_updated": "2023-02-07T03:00:00.007782+00:00",
+        "context": {
+          "id": "01GRMX1QW7VXDHAJWT77TQ0VAQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0,
+        "native_unit_of_measurement": "kWh",
+        "last_period": "0",
+        "last_reset": "2023-02-07T03:00:00.007552+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.solar_production_daily",
+        "state": "16.080",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.solaredge_ac_energy_kwh",
+          "status": "collecting",
+          "last_period": "16.362",
+          "meter_period": "daily",
+          "cron pattern": "0 0 * * *",
+          "last_reset": "2023-02-05T23:00:00.025500+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Napenergia termelés ezen a napon"
+        },
+        "last_changed": "2023-02-07T02:15:40.644926+00:00",
+        "last_updated": "2023-02-07T02:15:40.644926+00:00",
+        "context": {
+          "id": "01GRMTGJV4PQN5NFW4515AFW8T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "16.080"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "16.362",
+        "last_reset": "2023-02-05T23:00:00.025500+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.solar_production_weekly",
+        "state": "16.080",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.solaredge_ac_energy_kwh",
+          "status": "collecting",
+          "last_period": "54.258",
+          "meter_period": "weekly",
+          "cron pattern": "0 0 * * 1",
+          "last_reset": "2023-02-05T23:00:00.018460+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Napenergia termelés ezen a héten"
+        },
+        "last_changed": "2023-02-07T02:15:40.647265+00:00",
+        "last_updated": "2023-02-07T02:15:40.647265+00:00",
+        "context": {
+          "id": "01GRMTGJV77D5Q44DMMFE0KGHQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "16.080"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "54.258",
+        "last_reset": "2023-02-05T23:00:00.018460+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.solar_production_monthly",
+        "state": "59.826",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.solaredge_ac_energy_kwh",
+          "status": "collecting",
+          "last_period": "143.586",
+          "meter_period": "monthly",
+          "cron pattern": "0 0 1 * *",
+          "last_reset": "2023-01-31T23:00:00.037473+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Napenergia termelés ebben a hónapban"
+        },
+        "last_changed": "2023-02-07T02:15:40.649441+00:00",
+        "last_updated": "2023-02-07T02:15:40.649441+00:00",
+        "context": {
+          "id": "01GRMTGJV9PYQGJ1TSYE45NE1S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "59.826"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "143.586",
+        "last_reset": "2023-01-31T23:00:00.037473+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.solar_production_yearly",
+        "state": "203.412",
+        "attributes": {
+          "state_class": "total_increasing",
+          "source": "sensor.solaredge_ac_energy_kwh",
+          "status": "collecting",
+          "last_period": "6536.010",
+          "meter_period": "yearly",
+          "cron pattern": "0 0 1 1/12 *",
+          "last_reset": "2022-12-31T23:00:00.034103+00:00",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:counter",
+          "friendly_name": "Napenergia termelés ebben az évben"
+        },
+        "last_changed": "2023-02-07T02:15:40.651617+00:00",
+        "last_updated": "2023-02-07T02:15:40.651617+00:00",
+        "context": {
+          "id": "01GRMTGJVB5MK19H0BZ2EGZZXH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "203.412"
+        },
+        "native_unit_of_measurement": "kWh",
+        "last_period": "6536.010",
+        "last_reset": "2022-12-31T23:00:00.034103+00:00",
+        "status": "collecting"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_auto_off",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-06T21:06:10.345906+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_auto_off",
+          "friendly_name": "Klíma kikapcsolás, ha minden szelep zárva",
+          "icon": "mdi:hvac-off"
+        },
+        "last_changed": "2023-02-07T02:15:41.016824+00:00",
+        "last_updated": "2023-02-07T02:15:41.016824+00:00",
+        "context": {
+          "id": "01GRMTGK6R10R4FE2GPMYXNBHX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_auto_on",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-06T21:06:14.581600+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_auto_on",
+          "friendly_name": "Klíma bekapcsolás, ha legalább egy szelep nyitva",
+          "icon": "mdi:hvac"
+        },
+        "last_changed": "2023-02-07T02:15:41.017187+00:00",
+        "last_updated": "2023-02-07T02:15:41.017187+00:00",
+        "context": {
+          "id": "01GRMTGK6SWXKEM97BFVCXX88X",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_mode",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-06T22:18:00.764142+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_mode",
+          "friendly_name": "Klíma mód kapcsolók összekötése",
+          "icon": "mdi:vector-link"
+        },
+        "last_changed": "2023-02-07T02:15:41.017515+00:00",
+        "last_updated": "2023-02-07T02:15:41.017515+00:00",
+        "context": {
+          "id": "01GRMTGK6SVPPWP95TW4JWR3QJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_target_temp_restore",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2020-11-09T18:02:15.679921+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_target_temp_restore",
+          "friendly_name": "ac_target_temp_restore"
+        },
+        "last_changed": "2023-02-07T02:15:41.017832+00:00",
+        "last_updated": "2023-02-07T02:15:41.017832+00:00",
+        "context": {
+          "id": "01GRMTGK6S1BK52E5A89JC4FER",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_target_temp_save",
+        "state": "off",
+        "attributes": {
+          "last_triggered": "2020-11-09T18:17:09.643303+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_target_temp_save",
+          "friendly_name": "ac_target_temp_save"
+        },
+        "last_changed": "2023-02-07T02:15:41.018074+00:00",
+        "last_updated": "2023-02-07T02:15:41.018074+00:00",
+        "context": {
+          "id": "01GRMTGK6TVZXCYZ3B78WSG1EB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_thermostat_relay_init",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-07T03:18:50.176608+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_thermostat_relay_init",
+          "friendly_name": "Szelepvezérlés (periódikus)",
+          "icon": "mdi:thermostat-auto"
+        },
+        "last_changed": "2023-02-07T02:15:41.018428+00:00",
+        "last_updated": "2023-02-07T03:18:50.200792+00:00",
+        "context": {
+          "id": "01GRMY47J0KF2GA04KF04F9CZB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ac_thermostat_relay",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-07T03:02:49.980834+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ac_thermostat_relay",
+          "friendly_name": "Szelepvezérlés (esemény)",
+          "icon": "mdi:thermostat-box-auto"
+        },
+        "last_changed": "2023-02-07T02:15:41.018746+00:00",
+        "last_updated": "2023-02-07T03:02:50.025929+00:00",
+        "context": {
+          "id": "01GRMX6XVWEG304SS4PVZJZ6JF",
+          "parent_id": "01GRMX6XVPBH2C9CH6MHAXPNY1",
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ventillation_auto_on",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-01-07T10:53:33.321281+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ventillation_auto_on",
+          "friendly_name": "Szellőztetés be ha már nincs túl hideg odakint",
+          "icon": "mdi:fan"
+        },
+        "last_changed": "2023-02-07T02:15:41.018997+00:00",
+        "last_updated": "2023-02-07T02:15:41.018997+00:00",
+        "context": {
+          "id": "01GRMTGK6TF4C9FK6T0YQW4N0Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.ventillation_auto_off",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-01-07T12:49:14.470661+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "ventillation_auto_off",
+          "friendly_name": "Szellőztetés ki ha túl hideg van odakint",
+          "icon": "mdi:fan-off"
+        },
+        "last_changed": "2023-02-07T02:15:41.019313+00:00",
+        "last_updated": "2023-02-07T02:15:41.019313+00:00",
+        "context": {
+          "id": "01GRMTGK6VR4GEGZT95TW2G0Y6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.humi1_operation_mode_select",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-07-25T20:28:15.020042+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "humi1_operation_mode_select",
+          "friendly_name": "Humi1 operation mode select"
+        },
+        "last_changed": "2023-02-07T02:15:41.019575+00:00",
+        "last_updated": "2023-02-07T02:15:41.019575+00:00",
+        "context": {
+          "id": "01GRMTGK6VJCY5357Y8PBFYTBY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.humi1_operation_mode_update",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-07T02:18:53.293619+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "humi1_operation_mode_update",
+          "friendly_name": "Humi1 operation mode update"
+        },
+        "last_changed": "2023-02-07T02:15:41.019822+00:00",
+        "last_updated": "2023-02-07T02:18:53.574369+00:00",
+        "context": {
+          "id": "01GRMTPEZDXYBKD8W4KFHMQ1A4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.humi1_target_humidity_select",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-07-25T20:29:29.164054+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "humi1_target_humidity_select",
+          "friendly_name": "Humi1 target humidity select"
+        },
+        "last_changed": "2023-02-07T02:15:41.020074+00:00",
+        "last_updated": "2023-02-07T02:15:41.020074+00:00",
+        "context": {
+          "id": "01GRMTGK6W6GE15ME3P3Z852TD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.humi1_target_humidity_update",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-07T02:18:53.294407+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "humi1_target_humidity_update",
+          "friendly_name": "Humi1 target humidity update"
+        },
+        "last_changed": "2023-02-07T02:15:41.020310+00:00",
+        "last_updated": "2023-02-07T02:18:53.446464+00:00",
+        "context": {
+          "id": "01GRMTPEZD0WMBHP1JNPF4Z7VA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.pufi_mode_set",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-31T21:01:14.525956+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "pufi_mode_set",
+          "friendly_name": "Pufi mode set"
+        },
+        "last_changed": "2023-02-07T02:15:41.020547+00:00",
+        "last_updated": "2023-02-07T02:15:41.020547+00:00",
+        "context": {
+          "id": "01GRMTGK6WJ390HKFP4C7V45FA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.pufi_mode_changed",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-01-08T23:03:34.798348+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "pufi_mode_changed",
+          "friendly_name": "Pufi mode changed"
+        },
+        "last_changed": "2023-02-07T02:15:41.020787+00:00",
+        "last_updated": "2023-02-07T02:15:41.020787+00:00",
+        "context": {
+          "id": "01GRMTGK6W6TTHT3V01ZZZPJYN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.toggle_terrace_light",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2021-04-05T17:39:50.355104+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "terrace_light",
+          "friendly_name": "Toggle terrace light"
+        },
+        "last_changed": "2023-02-07T02:15:41.021033+00:00",
+        "last_updated": "2023-02-07T02:15:41.021033+00:00",
+        "context": {
+          "id": "01GRMTGK6XSPRKVFQN3BVQ2962",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.set_theme_at_startup",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-07T02:18:53.295319+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "set_theme_at_startup",
+          "friendly_name": "Set theme at startup"
+        },
+        "last_changed": "2023-02-07T02:15:41.021266+00:00",
+        "last_updated": "2023-02-07T02:18:53.514454+00:00",
+        "context": {
+          "id": "01GRMTPEZE6VMTVA5Q8FZND8VM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.wc_light_off_at_sunrise",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-06T06:02:32.831369+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "wc_light_off_at_sunrise",
+          "friendly_name": "wc_light_off_at_sunrise"
+        },
+        "last_changed": "2023-02-07T02:15:41.021497+00:00",
+        "last_updated": "2023-02-07T02:15:41.021497+00:00",
+        "context": {
+          "id": "01GRMTGK6XWDNX51YM6Z9V7NPT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.wc_light_on_at_sunrise",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2023-02-06T15:54:49.312693+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "wc_light_on_at_sunrise",
+          "friendly_name": "wc_light_on_at_sunrise"
+        },
+        "last_changed": "2023-02-07T02:15:41.021738+00:00",
+        "last_updated": "2023-02-07T02:15:41.021738+00:00",
+        "context": {
+          "id": "01GRMTGK6X8VKCFBPRZQG355DH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.sony_study_tv_reboot",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "restart",
+          "friendly_name": "Sony study_tv Reboot"
+        },
+        "last_changed": "2023-02-07T02:17:19.381042+00:00",
+        "last_updated": "2023-02-07T02:17:19.381042+00:00",
+        "context": {
+          "id": "01GRMTKK8N45ZC94JW0VT617HJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.sony_study_tv_terminate_apps",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Sony study_tv Terminate apps"
+        },
+        "last_changed": "2023-02-07T02:17:19.381315+00:00",
+        "last_updated": "2023-02-07T02:17:19.381315+00:00",
+        "context": {
+          "id": "01GRMTKK8N8VE7TWRNGJRKXWBR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_bedroom_temperature",
+        "state": "22.0",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Háló"
+        },
+        "last_changed": "2023-02-07T03:10:01.602636+00:00",
+        "last_updated": "2023-02-07T03:10:01.602636+00:00",
+        "context": {
+          "id": "01GRMXM3C2ZMX2B105VGAQ9WCE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "22.0",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_bedroom_wifi_rssi",
+        "state": "-68",
+        "attributes": {
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "Háló termosztát jelerősség"
+        },
+        "last_changed": "2023-02-07T03:18:15.946715+00:00",
+        "last_updated": "2023-02-07T03:18:15.946715+00:00",
+        "context": {
+          "id": "01GRMY364AEZWK1NBEZXXMM487",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "-68",
+        "native_unit_of_measurement": "dBm"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_childa_temperature",
+        "state": "23.5",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Máté"
+        },
+        "last_changed": "2023-02-07T02:18:50.527786+00:00",
+        "last_updated": "2023-02-07T02:18:50.527786+00:00",
+        "context": {
+          "id": "01GRMTPC8ZYMK6M6X535CT0ECE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "23.5",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_9_lite_akkumulator_toltottsegi_szintje",
+        "state": "78",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-70",
+          "friendly_name": "Mi 9 Lite Battery Level"
+        },
+        "last_changed": "2023-02-07T02:18:50.575161+00:00",
+        "last_updated": "2023-02-07T02:18:50.575161+00:00",
+        "context": {
+          "id": "01GRMTPCAFCTJZ2P018NEM4Q0Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 78,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_9_lite_akkumulator_allapota",
+        "state": "charging",
+        "attributes": {
+          "icon": "mdi:battery-plus",
+          "friendly_name": "Mi 9 Lite Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.575501+00:00",
+        "last_updated": "2023-02-07T02:18:50.575501+00:00",
+        "context": {
+          "id": "01GRMTPCAFH82013M7AZ56BQ2K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_9_lite_tolto_tipusa",
+        "state": "ac",
+        "attributes": {
+          "icon": "mdi:power-plug",
+          "friendly_name": "Mi 9 Lite Charger Type"
+        },
+        "last_changed": "2023-02-07T02:18:50.575731+00:00",
+        "last_updated": "2023-02-07T02:18:50.575731+00:00",
+        "context": {
+          "id": "01GRMTPCAFK9GDAV1FYH1B2V6D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "ac",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_9_lite_akkumulator_allapota_2",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Mi 9 Lite Akkumulátor állapota",
+          "icon": "mdi:battery-heart-variant"
+        },
+        "last_changed": "2023-02-07T02:18:50.575944+00:00",
+        "last_updated": "2023-02-07T02:18:50.575944+00:00",
+        "context": {
+          "id": "01GRMTPCAF2C2RPF3SSPZHE8DW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_9_lite_geokodolt_hely",
+        "state": "Csobánka, Napsugár u. 4, 2014 Magyarország",
+        "attributes": {
+          "Administrative Area": "null",
+          "Country": "Magyarország",
+          "ISO Country Code": "HU",
+          "Latitude": 47.645615,
+          "Locality": "Csobánka",
+          "Longitude": 18.954018,
+          "Postal Code": "2014",
+          "Sub Administrative Area": "null",
+          "Sub Locality": "null",
+          "Sub Thoroughfare": "4",
+          "Thoroughfare": "Napsugár utca",
+          "icon": "mdi:map-marker-radius-outline",
+          "friendly_name": "Mi 9 Lite Geocoded Location"
+        },
+        "last_changed": "2023-02-07T02:18:50.576192+00:00",
+        "last_updated": "2023-02-07T02:18:50.576192+00:00",
+        "context": {
+          "id": "01GRMTPCAGN9XGC6HQT705GGJ3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Csobánka, Napsugár u. 4, 2014 Magyarország",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_9_lite_battery_temperature",
+        "state": "35.0",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "Mi 9 Lite Battery Temperature"
+        },
+        "last_changed": "2023-02-07T02:18:50.576453+00:00",
+        "last_updated": "2023-02-07T02:18:50.576453+00:00",
+        "context": {
+          "id": "01GRMTPCAG67J20KDX15A60GKD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 35.0,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.mi_9_lite_is_charging",
+        "state": "on",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug",
+          "friendly_name": "Mi 9 Lite Is Charging"
+        },
+        "last_changed": "2023-02-07T02:18:50.576639+00:00",
+        "last_updated": "2023-02-07T02:18:50.576639+00:00",
+        "context": {
+          "id": "01GRMTPCAGS84XDYF3E8RXPVPD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.mi_9_lite",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 47.6229697,
+          "longitude": 18.9185098,
+          "gps_accuracy": 20,
+          "altitude": 215,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 1,
+          "friendly_name": "Marianna",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.577169+00:00",
+        "last_updated": "2023-02-07T02:18:50.577169+00:00",
+        "context": {
+          "id": "01GRMTPCAH58PVKJK8JGWHGWPB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.redmi_note_2_akkumulator_toltottsegi_szintje",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-charging-10",
+          "friendly_name": "Redmi Note 2 Akkumulátor töltöttségi szintje"
+        },
+        "last_changed": "2023-02-07T02:18:50.577494+00:00",
+        "last_updated": "2023-02-07T02:18:50.577494+00:00",
+        "context": {
+          "id": "01GRMTPCAH2Q9JH9HN4SYVKAZF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.redmi_note_2_akkumulator_allapota",
+        "state": "unknown",
+        "attributes": {
+          "battery_health": "good",
+          "charger_type": "ac",
+          "is_charging": true,
+          "device_class": "battery",
+          "icon": "mdi:battery-plus",
+          "friendly_name": "Redmi Note 2 Akkumulátor állapota"
+        },
+        "last_changed": "2023-02-07T02:18:50.577710+00:00",
+        "last_updated": "2023-02-07T02:18:50.577710+00:00",
+        "context": {
+          "id": "01GRMTPCAHVS41A8H3GE7B0Q6P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.redmi_note_2_tolto_tipusa",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:power-plug",
+          "friendly_name": "Redmi Note 2 Töltő típusa"
+        },
+        "last_changed": "2023-02-07T02:18:50.577922+00:00",
+        "last_updated": "2023-02-07T02:18:50.577922+00:00",
+        "context": {
+          "id": "01GRMTPCAHWWVH4K2GEEV5PM6M",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.redmi_note_2_akkumulator_allapota_2",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Redmi Note 2 Akkumulátor állapota",
+          "icon": "mdi:battery-heart-variant"
+        },
+        "last_changed": "2023-02-07T02:18:50.578149+00:00",
+        "last_updated": "2023-02-07T02:18:50.578149+00:00",
+        "context": {
+          "id": "01GRMTPCAJ9A2EGW0SM8KACMGT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.redmi_note_2_is_charging",
+        "state": "on",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug",
+          "friendly_name": "Redmi Note 2 Is Charging"
+        },
+        "last_changed": "2023-02-07T02:18:50.578316+00:00",
+        "last_updated": "2023-02-07T02:18:50.578316+00:00",
+        "context": {
+          "id": "01GRMTPCAJZ93R6VTR17HECK3V",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.redmi_note_2",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 47.6230047,
+          "longitude": 18.9184346,
+          "gps_accuracy": 20,
+          "altitude": 214.0,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 0,
+          "friendly_name": "Redmi Note 2",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.578757+00:00",
+        "last_updated": "2023-02-07T02:18:50.578757+00:00",
+        "context": {
+          "id": "01GRMTPCAJFHCWHJEJMMPHA9KE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_akkumulator_toltottsegi_szintje",
+        "state": "65",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-60",
+          "friendly_name": "GT-MI8 Battery Level"
+        },
+        "last_changed": "2023-02-07T03:12:04.401056+00:00",
+        "last_updated": "2023-02-07T03:12:04.401056+00:00",
+        "context": {
+          "id": "01GRMXQV9HP2T8R8GCJZQ5QFK3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 65,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_akkumulator_allapota",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "GT-MI8 Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.579355+00:00",
+        "last_updated": "2023-02-07T02:18:50.579355+00:00",
+        "context": {
+          "id": "01GRMTPCAK1Q058PQFBY0FE8BZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_tolto_tipusa",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "GT-MI8 Charger Type"
+        },
+        "last_changed": "2023-02-07T02:18:50.579620+00:00",
+        "last_updated": "2023-02-07T02:18:50.579620+00:00",
+        "context": {
+          "id": "01GRMTPCAKPJ4KR37M5EBMDDNQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_akkumulator_allapota_2",
+        "state": "good",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "GT-MI8 Battery Health"
+        },
+        "last_changed": "2023-02-07T02:18:50.580001+00:00",
+        "last_updated": "2023-02-07T02:18:50.580001+00:00",
+        "context": {
+          "id": "01GRMTPCAM142SQM7PG3D09JN7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "good",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_geokodolt_hely",
+        "state": "Pilisvörösvár, Retek u. 7, 2085 Hungary",
+        "attributes": {
+          "administrative_area": "null",
+          "country": "Hungary",
+          "iso_country_code": "HU",
+          "locality": "Pilisvörösvár",
+          "location": [
+            47.623446,
+            18.917797
+          ],
+          "name": "7",
+          "phone": "null",
+          "postal_code": "2085",
+          "premises": "null",
+          "sub_administrative_area": "null",
+          "sub_locality": "null",
+          "sub_thoroughfare": "7",
+          "thoroughfare": "Retek utca",
+          "url": "null",
+          "icon": "mdi:map-marker-radius-outline",
+          "friendly_name": "GT-MI8 Geocoded Location"
+        },
+        "last_changed": "2023-02-07T02:18:50.580466+00:00",
+        "last_updated": "2023-02-07T02:18:50.580466+00:00",
+        "context": {
+          "id": "01GRMTPCAM7NFVSYJWEWP81VYR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Pilisvörösvár, Retek u. 7, 2085 Hungary",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_akkumulator_homerseklet",
+        "state": "26.3",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "GT-MI8 Battery Temperature"
+        },
+        "last_changed": "2023-02-07T03:02:54.950985+00:00",
+        "last_updated": "2023-02-07T03:02:54.950985+00:00",
+        "context": {
+          "id": "01GRMX72Q62VRZT41EV9E37ARS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 26.3,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_eszlelt_tevekenyseg",
+        "state": "still",
+        "attributes": {
+          "still": 99,
+          "unknown": 1,
+          "icon": "mdi:walk",
+          "friendly_name": "GT-MI8 Detected Activity"
+        },
+        "last_changed": "2023-02-07T02:18:50.582336+00:00",
+        "last_updated": "2023-02-07T02:18:50.582336+00:00",
+        "context": {
+          "id": "01GRMTPCAPQKHRE59AYZ8MWY50",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "still",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_sleep_segment",
+        "state": "40680000.0",
+        "attributes": {
+          "end": 1675680881122,
+          "start": 1675640201122,
+          "status": "successful",
+          "unit_of_measurement": "ms",
+          "icon": "mdi:sleep",
+          "friendly_name": "GT-MI8 Sleep Segment"
+        },
+        "last_changed": "2023-02-07T02:18:50.582601+00:00",
+        "last_updated": "2023-02-07T02:18:50.582601+00:00",
+        "context": {
+          "id": "01GRMTPCAP237S85R15TJAFPF2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 40680000.0,
+        "native_unit_of_measurement": "ms"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_sleep_confidence",
+        "state": "93",
+        "attributes": {
+          "state_class": "measurement",
+          "light": 2,
+          "motion": 1,
+          "timestamp": 1675738118000,
+          "unit_of_measurement": "%",
+          "icon": "mdi:sleep",
+          "friendly_name": "GT-MI8 Sleep Confidence"
+        },
+        "last_changed": "2023-02-07T02:48:41.290361+00:00",
+        "last_updated": "2023-02-07T02:48:41.290361+00:00",
+        "context": {
+          "id": "01GRMWD12A4NCZQXWXZPKP5P8G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 93,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_public_ip_address",
+        "state": "85.67.2.174",
+        "attributes": {
+          "icon": "mdi:ip",
+          "friendly_name": "GT-MI8 Public IP Address"
+        },
+        "last_changed": "2023-02-07T02:18:50.583066+00:00",
+        "last_updated": "2023-02-07T02:18:50.583066+00:00",
+        "context": {
+          "id": "01GRMTPCAQJXFB86EKYV8E9QJW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "85.67.2.174",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_mi8_battery_power",
+        "state": "-0.36",
+        "attributes": {
+          "state_class": "measurement",
+          "current": -0.092773,
+          "voltage": 3.885,
+          "unit_of_measurement": "W",
+          "device_class": "power",
+          "icon": "mdi:battery-minus",
+          "friendly_name": "GT-MI8 Battery Power"
+        },
+        "last_changed": "2023-02-07T03:17:11.572290+00:00",
+        "last_updated": "2023-02-07T03:17:11.572290+00:00",
+        "context": {
+          "id": "01GRMY178M4WSVKQAWR28BJG6M",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": -0.36,
+        "native_unit_of_measurement": "W"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.gt_mi8_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "GT-MI8 Is Charging"
+        },
+        "last_changed": "2023-02-07T02:18:50.583491+00:00",
+        "last_updated": "2023-02-07T02:18:50.583491+00:00",
+        "context": {
+          "id": "01GRMTPCAQEMWE5RCMPYN25KRP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.gt_mi8_interactive",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:cellphone-off",
+          "friendly_name": "GT-MI8 Interactive"
+        },
+        "last_changed": "2023-02-07T02:18:50.583649+00:00",
+        "last_updated": "2023-02-07T02:18:50.583649+00:00",
+        "context": {
+          "id": "01GRMTPCAQRCQQ8AY73JY2PDA8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.gt_mi8_doze_mode",
+        "state": "on",
+        "attributes": {
+          "ignoring_battery_optimizations": false,
+          "icon": "mdi:sleep",
+          "friendly_name": "GT-MI8 Doze Mode"
+        },
+        "last_changed": "2023-02-07T02:54:21.930963+00:00",
+        "last_updated": "2023-02-07T02:54:21.930963+00:00",
+        "context": {
+          "id": "01GRMWQDQAZ7Y3ABP480W0BFP7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.gt_mi8",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 47.6230054,
+          "longitude": 18.9185388,
+          "gps_accuracy": 28,
+          "altitude": 215,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 4,
+          "friendly_name": "Tomi",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T03:02:54.836477+00:00",
+        "last_updated": "2023-02-07T03:02:54.836477+00:00",
+        "context": {
+          "id": "01GRMX72KMXAKF1RZHMKF0DMBD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.wall_dashboard_akkumulator_toltottsegi_szintje",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery",
+          "friendly_name": "wall dashboard Akkumulátor töltöttségi szintje"
+        },
+        "last_changed": "2023-02-07T02:18:50.584597+00:00",
+        "last_updated": "2023-02-07T02:18:50.584597+00:00",
+        "context": {
+          "id": "01GRMTPCARXQCAFAR6P8QT9ST5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.wall_dashboard_akkumulator_allapota",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "wall dashboard Akkumulátor állapota",
+          "icon": "mdi:battery-minus"
+        },
+        "last_changed": "2023-02-07T02:18:50.584826+00:00",
+        "last_updated": "2023-02-07T02:18:50.584826+00:00",
+        "context": {
+          "id": "01GRMTPCARE1Z7KCQ6DYD7BKMY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.wall_dashboard_tolto_tipusa",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "wall dashboard Töltő típusa",
+          "icon": "mdi:battery"
+        },
+        "last_changed": "2023-02-07T02:18:50.585055+00:00",
+        "last_updated": "2023-02-07T02:18:50.585055+00:00",
+        "context": {
+          "id": "01GRMTPCASTJX2T0Q98HGAH36E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.wall_dashboard_akkumulator_allapota_2",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "wall dashboard Akkumulátor állapota",
+          "icon": "mdi:battery-heart-variant"
+        },
+        "last_changed": "2023-02-07T02:18:50.585527+00:00",
+        "last_updated": "2023-02-07T02:18:50.585527+00:00",
+        "context": {
+          "id": "01GRMTPCASDG956HQNEJGS8VZQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.wall_dashboard",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "wall dashboard",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.585789+00:00",
+        "last_updated": "2023-02-07T02:18:50.585789+00:00",
+        "context": {
+          "id": "01GRMTPCASF77DB8C0Y8ND23FH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_battery_level",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-outline",
+          "friendly_name": "rnote3 Battery Level"
+        },
+        "last_changed": "2023-02-07T02:18:50.586066+00:00",
+        "last_updated": "2023-02-07T02:18:50.586066+00:00",
+        "context": {
+          "id": "01GRMTPCATNJ31QVAZC0SQJ02B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_battery_state",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "rnote3 Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.586299+00:00",
+        "last_updated": "2023-02-07T02:18:50.586299+00:00",
+        "context": {
+          "id": "01GRMTPCAT6GK4R080A4FKNJM9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_charger_type",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "gsm-rnote3 Charger Type",
+          "icon": "mdi:battery"
+        },
+        "last_changed": "2023-02-07T02:18:50.586518+00:00",
+        "last_updated": "2023-02-07T02:18:50.586518+00:00",
+        "context": {
+          "id": "01GRMTPCATA4782BV4T3JR2K0C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_battery_health",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "gsm-rnote3 Battery Health",
+          "icon": "mdi:battery-heart-variant"
+        },
+        "last_changed": "2023-02-07T02:18:50.586726+00:00",
+        "last_updated": "2023-02-07T02:18:50.586726+00:00",
+        "context": {
+          "id": "01GRMTPCATFFKV7B5ZR5D01WDV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_battery_temperature",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "friendly_name": "gsm-rnote3 Battery Temperature",
+          "icon": "mdi:battery",
+          "device_class": "temperature"
+        },
+        "last_changed": "2023-02-07T02:18:50.586942+00:00",
+        "last_updated": "2023-02-07T02:18:50.586942+00:00",
+        "context": {
+          "id": "01GRMTPCATJXFXVM7VAEVZZJ4Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_geocoded_location",
+        "state": "unknown",
+        "attributes": {
+          "Administrative Area": "null",
+          "Country": "Magyarország",
+          "ISO Country Code": "HU",
+          "Latitude": 47.623493,
+          "Locality": "Pilisvörösvár",
+          "Longitude": 18.917767,
+          "Postal Code": "2085",
+          "Sub Administrative Area": "null",
+          "Sub Locality": "null",
+          "Sub Thoroughfare": "7",
+          "Thoroughfare": "Retek utca",
+          "icon": "mdi:map-marker-radius-outline",
+          "friendly_name": "rnote3 Geocoded Location"
+        },
+        "last_changed": "2023-02-07T02:18:50.587180+00:00",
+        "last_updated": "2023-02-07T02:18:50.587180+00:00",
+        "context": {
+          "id": "01GRMTPCAVHZ0NW0T0MN38B2XH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_rnote3_detected_activity",
+        "state": "unknown",
+        "attributes": {
+          "still": 100,
+          "icon": "mdi:sleep",
+          "friendly_name": "rnote3 Detected Activity"
+        },
+        "last_changed": "2023-02-07T02:18:50.587390+00:00",
+        "last_updated": "2023-02-07T02:18:50.587390+00:00",
+        "context": {
+          "id": "01GRMTPCAV4B2NSQ1S316A24RA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.gsm_rnote3",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 47.6230263,
+          "longitude": 18.9184842,
+          "gps_accuracy": 20,
+          "altitude": 215,
+          "course": 90,
+          "speed": 0,
+          "vertical_accuracy": 0,
+          "friendly_name": "rnote3",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.587870+00:00",
+        "last_updated": "2023-02-07T02:18:50.587870+00:00",
+        "context": {
+          "id": "01GRMTPCAVGF5HJM88FXCCNJCE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_a50_battery_level",
+        "state": "99",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-90",
+          "friendly_name": "GT-A50 Battery Level"
+        },
+        "last_changed": "2023-02-07T02:18:50.588210+00:00",
+        "last_updated": "2023-02-07T02:18:50.588210+00:00",
+        "context": {
+          "id": "01GRMTPCAWXB6M8F0CA2TM9X6A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 99,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_a50_battery_state",
+        "state": "not_charging",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "GT-A50 Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.588442+00:00",
+        "last_updated": "2023-02-07T02:18:50.588442+00:00",
+        "context": {
+          "id": "01GRMTPCAWVP1BR0Y98VYZ2ERQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "not_charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_a50_charger_type",
+        "state": "usb",
+        "attributes": {
+          "icon": "mdi:usb-port",
+          "friendly_name": "GT-A50 Charger Type"
+        },
+        "last_changed": "2023-02-07T02:18:50.588656+00:00",
+        "last_updated": "2023-02-07T02:18:50.588656+00:00",
+        "context": {
+          "id": "01GRMTPCAWFAZ1WNQ9VQBDA5WQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "usb",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_a50_battery_health",
+        "state": "good",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "GT-A50 Battery Health"
+        },
+        "last_changed": "2023-02-07T02:18:50.588864+00:00",
+        "last_updated": "2023-02-07T02:18:50.588864+00:00",
+        "context": {
+          "id": "01GRMTPCAW995F0Y0MEV3TVR66",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "good",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_a50_battery_temperature",
+        "state": "30.0",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "GT-A50 Battery Temperature"
+        },
+        "last_changed": "2023-02-07T02:18:50.589129+00:00",
+        "last_updated": "2023-02-07T02:18:50.589129+00:00",
+        "context": {
+          "id": "01GRMTPCAX4P28P9MFV0PRHVFG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 30.0,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_a50_battery_power",
+        "state": "0.0",
+        "attributes": {
+          "state_class": "measurement",
+          "current": -0.000303,
+          "voltage": 4.261,
+          "unit_of_measurement": "W",
+          "device_class": "power",
+          "icon": "mdi:battery-minus",
+          "friendly_name": "GT-A50 Battery Power"
+        },
+        "last_changed": "2023-02-07T02:18:50.589380+00:00",
+        "last_updated": "2023-02-07T02:18:50.589380+00:00",
+        "context": {
+          "id": "01GRMTPCAXBNQYG6DHY18VAJF8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 0.0,
+        "native_unit_of_measurement": "W"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.gt_a50_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "GT-A50 Is Charging"
+        },
+        "last_changed": "2023-02-07T02:18:50.589588+00:00",
+        "last_updated": "2023-02-07T02:18:50.589588+00:00",
+        "context": {
+          "id": "01GRMTPCAXPHYZ2ZB34N10PMMA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.gt_a50",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "GT-A50",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.589811+00:00",
+        "last_updated": "2023-02-07T02:18:50.589811+00:00",
+        "context": {
+          "id": "01GRMTPCAXPAVVDAVA9AQ5QXJC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_battery_level",
+        "state": "unknown",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-10",
+          "friendly_name": "GSM MI4 Battery Level"
+        },
+        "last_changed": "2023-02-07T02:18:50.590067+00:00",
+        "last_updated": "2023-02-07T02:18:50.590067+00:00",
+        "context": {
+          "id": "01GRMTPCAYKMJ5PQDHQRV33SYW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_battery_state",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "GSM MI4 Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.590303+00:00",
+        "last_updated": "2023-02-07T02:18:50.590303+00:00",
+        "context": {
+          "id": "01GRMTPCAYFN6118TGMWK9BDB9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_charger_type",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "GSM MI4 Charger Type"
+        },
+        "last_changed": "2023-02-07T02:18:50.590611+00:00",
+        "last_updated": "2023-02-07T02:18:50.590611+00:00",
+        "context": {
+          "id": "01GRMTPCAYAMVN0K45V0WBFM89",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_battery_health",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "GSM MI4 Battery Health"
+        },
+        "last_changed": "2023-02-07T02:18:50.591317+00:00",
+        "last_updated": "2023-02-07T02:18:50.591317+00:00",
+        "context": {
+          "id": "01GRMTPCAZE629V94BMEHCZ09S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_battery_temperature",
+        "state": "unknown",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "GSM MI4 Battery Temperature"
+        },
+        "last_changed": "2023-02-07T02:18:50.591680+00:00",
+        "last_updated": "2023-02-07T02:18:50.591680+00:00",
+        "context": {
+          "id": "01GRMTPCAZ7BAYS6N7YCQA501T",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_next_alarm",
+        "state": "unknown",
+        "attributes": {
+          "Local Time": "Fri Apr 08 09:45:00 GMT+02:00 2022",
+          "Package": "com.android.calendar",
+          "Time in Milliseconds": 1649403900000,
+          "device_class": "timestamp",
+          "icon": "mdi:alarm",
+          "friendly_name": "GSM MI4 Next Alarm"
+        },
+        "last_changed": "2023-02-07T02:18:50.591905+00:00",
+        "last_updated": "2023-02-07T02:18:50.591905+00:00",
+        "context": {
+          "id": "01GRMTPCAZP8X9FDAH5AM29KPV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_detected_activity",
+        "state": "unknown",
+        "attributes": {
+          "still": 100,
+          "icon": "mdi:sleep",
+          "friendly_name": "GSM MI4 Detected Activity"
+        },
+        "last_changed": "2023-02-07T02:18:50.592153+00:00",
+        "last_updated": "2023-02-07T02:18:50.592153+00:00",
+        "context": {
+          "id": "01GRMTPCB0W9EM9Y0C5P2E8HY7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gsm_mi4_geocoded_location",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:map-marker-radius-outline",
+          "friendly_name": "GSM MI4 Geocoded Location"
+        },
+        "last_changed": "2023-02-07T02:18:50.592407+00:00",
+        "last_updated": "2023-02-07T02:18:50.592407+00:00",
+        "context": {
+          "id": "01GRMTPCB043ANWFTEYGYFPTTJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.gsm_mi4_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "GSM MI4 Is Charging"
+        },
+        "last_changed": "2023-02-07T02:18:50.592849+00:00",
+        "last_updated": "2023-02-07T02:18:50.592849+00:00",
+        "context": {
+          "id": "01GRMTPCB08K7RB5AV35TB51RV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.gsm_mi4_high_accuracy_mode",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:crosshairs-gps",
+          "friendly_name": "GSM MI4 High Accuracy Mode"
+        },
+        "last_changed": "2023-02-07T02:18:50.593143+00:00",
+        "last_updated": "2023-02-07T02:18:50.593143+00:00",
+        "context": {
+          "id": "01GRMTPCB1GF1GXMZT2ZADA5QM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.gsm_mi4",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 47.6230575,
+          "longitude": 18.9184719,
+          "gps_accuracy": 20,
+          "altitude": 215,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 0,
+          "friendly_name": "GSM MI4",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.593635+00:00",
+        "last_updated": "2023-02-07T02:18:50.593635+00:00",
+        "context": {
+          "id": "01GRMTPCB1HQRGRZ607D3D6HPA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_3w_battery_level",
+        "state": "unknown",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-70",
+          "friendly_name": "MI 3W Battery Level"
+        },
+        "last_changed": "2023-02-07T02:18:50.593947+00:00",
+        "last_updated": "2023-02-07T02:18:50.593947+00:00",
+        "context": {
+          "id": "01GRMTPCB1BXP9Y0JG9SWQF2RC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_3w_battery_state",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "MI 3W Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.594218+00:00",
+        "last_updated": "2023-02-07T02:18:50.594218+00:00",
+        "context": {
+          "id": "01GRMTPCB2DMED3DAR5ET410ZB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_3w_charger_type",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "MI 3W Charger Type"
+        },
+        "last_changed": "2023-02-07T02:18:50.594428+00:00",
+        "last_updated": "2023-02-07T02:18:50.594428+00:00",
+        "context": {
+          "id": "01GRMTPCB20EA4FAABDY6V5T6S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_3w_battery_health",
+        "state": "unknown",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "MI 3W Battery Health"
+        },
+        "last_changed": "2023-02-07T02:18:50.594650+00:00",
+        "last_updated": "2023-02-07T02:18:50.594650+00:00",
+        "context": {
+          "id": "01GRMTPCB2JK62E1XWD8JSVV2G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.mi_3w_battery_temperature",
+        "state": "unknown",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "MI 3W Battery Temperature"
+        },
+        "last_changed": "2023-02-07T02:18:50.594863+00:00",
+        "last_updated": "2023-02-07T02:18:50.594863+00:00",
+        "context": {
+          "id": "01GRMTPCB2VX92VVTDGV0Y6ZSY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.mi_3w_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "MI 3W Is Charging"
+        },
+        "last_changed": "2023-02-07T02:18:50.595051+00:00",
+        "last_updated": "2023-02-07T02:18:50.595051+00:00",
+        "context": {
+          "id": "01GRMTPCB3SJ0PVNCN707B4HWZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.mi_3w",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "MI 3W",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.595263+00:00",
+        "last_updated": "2023-02-07T02:18:50.595263+00:00",
+        "context": {
+          "id": "01GRMTPCB367BJMDX23KCAZS1Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.sm_a505fn",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "SM-A505FN",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.595441+00:00",
+        "last_updated": "2023-02-07T02:18:50.595441+00:00",
+        "context": {
+          "id": "01GRMTPCB39DA5G4VSK424TGN7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.galaxy_a50",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "Galaxy A50",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T02:18:50.595610+00:00",
+        "last_updated": "2023-02-07T02:18:50.595610+00:00",
+        "context": {
+          "id": "01GRMTPCB36143NY0P3HAAA7BX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_detected_activity",
+        "state": "still",
+        "attributes": {
+          "in_vehicle": 23,
+          "on_bicycle": 2,
+          "on_foot": 11,
+          "still": 44,
+          "unknown": 1,
+          "walking": 11,
+          "icon": "mdi:sleep",
+          "friendly_name": "GT XM12 Detected Activity"
+        },
+        "last_changed": "2023-02-07T02:18:50.595863+00:00",
+        "last_updated": "2023-02-07T02:18:50.595863+00:00",
+        "context": {
+          "id": "01GRMTPCB3P1Y3J7STDXQGVH2B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "still",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_sleep_confidence",
+        "state": "46",
+        "attributes": {
+          "state_class": "measurement",
+          "light": 6,
+          "motion": 1,
+          "timestamp": 1675739367000,
+          "unit_of_measurement": "%",
+          "icon": "mdi:sleep",
+          "friendly_name": "GT XM12 Sleep Confidence"
+        },
+        "last_changed": "2023-02-07T03:09:28.407171+00:00",
+        "last_updated": "2023-02-07T03:09:28.407171+00:00",
+        "context": {
+          "id": "01GRMXK2YQ3XGKW7JTP0NRB9M9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 46,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_sleep_segment",
+        "state": "86040000.0",
+        "attributes": {
+          "end": 1675684943341,
+          "start": 1675598903341,
+          "status": "missing data",
+          "unit_of_measurement": "ms",
+          "icon": "mdi:sleep",
+          "friendly_name": "GT XM12 Sleep Segment"
+        },
+        "last_changed": "2023-02-07T02:18:50.596397+00:00",
+        "last_updated": "2023-02-07T02:18:50.596397+00:00",
+        "context": {
+          "id": "01GRMTPCB428WSZVPZ6M6EA38J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 86040000.0,
+        "native_unit_of_measurement": "ms"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_battery_level",
+        "state": "74",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-70",
+          "friendly_name": "GT XM12 Battery Level"
+        },
+        "last_changed": "2023-02-07T03:09:28.408764+00:00",
+        "last_updated": "2023-02-07T03:09:28.408764+00:00",
+        "context": {
+          "id": "01GRMXK2YRJCDQ1YREAPDPEBAN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 74,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_battery_state",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "GT XM12 Battery State"
+        },
+        "last_changed": "2023-02-07T02:18:50.596833+00:00",
+        "last_updated": "2023-02-07T02:18:50.596833+00:00",
+        "context": {
+          "id": "01GRMTPCB4DVENHETBG7FV221A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_battery_temperature",
+        "state": "28.7",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "GT XM12 Battery Temperature"
+        },
+        "last_changed": "2023-02-07T03:16:39.904797+00:00",
+        "last_updated": "2023-02-07T03:16:39.904797+00:00",
+        "context": {
+          "id": "01GRMY08B0JCK3H97RREE1DSNG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 28.7,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_geocoded_location",
+        "state": "Pilisvörösvár, Retek u. 7, 2085 Hungary",
+        "attributes": {
+          "administrative_area": "null",
+          "country": "Hungary",
+          "iso_country_code": "HU",
+          "locality": "Pilisvörösvár",
+          "location": [
+            47.623446,
+            18.917797
+          ],
+          "name": "7",
+          "phone": "null",
+          "postal_code": "2085",
+          "premises": "null",
+          "sub_administrative_area": "null",
+          "sub_locality": "null",
+          "sub_thoroughfare": "7",
+          "thoroughfare": "Retek utca",
+          "url": "null",
+          "icon": "mdi:map-marker-radius-outline",
+          "friendly_name": "GT XM12 Geocoded Location"
+        },
+        "last_changed": "2023-02-07T02:18:50.597316+00:00",
+        "last_updated": "2023-02-07T02:18:50.597316+00:00",
+        "context": {
+          "id": "01GRMTPCB59ZYSN4YPHMBNWW3D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Pilisvörösvár, Retek u. 7, 2085 Hungary",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_next_alarm",
+        "state": "unknown",
+        "attributes": {
+          "device_class": "timestamp",
+          "icon": "mdi:alarm",
+          "friendly_name": "GT XM12 Next Alarm"
+        },
+        "last_changed": "2023-02-07T02:18:50.597528+00:00",
+        "last_updated": "2023-02-07T02:18:50.597528+00:00",
+        "context": {
+          "id": "01GRMTPCB5Q823R8Y6AQM0JHFT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.gt_xm12_steps_sensor",
+        "state": "133",
+        "attributes": {
+          "state_class": "total_increasing",
+          "unit_of_measurement": "steps",
+          "icon": "mdi:walk",
+          "friendly_name": "GT XM12 Steps Sensor"
+        },
+        "last_changed": "2023-02-07T02:18:50.597748+00:00",
+        "last_updated": "2023-02-07T02:18:50.597748+00:00",
+        "context": {
+          "id": "01GRMTPCB5N8RY9ACCSWT1GRWS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "133",
+        "native_unit_of_measurement": "steps"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.gt_xm12",
+        "state": "home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 47.6230055,
+          "longitude": 18.9185387,
+          "gps_accuracy": 39,
+          "altitude": 215,
+          "course": 0,
+          "speed": 0,
+          "vertical_accuracy": 4,
+          "friendly_name": "GT XM12",
+          "hidden": true,
+          "control": "hidden"
+        },
+        "last_changed": "2023-02-07T03:08:53.094114+00:00",
+        "last_updated": "2023-02-07T03:08:53.094114+00:00",
+        "context": {
+          "id": "01GRMXJ0F6A0PBBDWBEPTN4JDN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_childa_wifi_rssi",
+        "state": "unknown",
+        "attributes": {
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "Máté termosztát jelerősség"
+        },
+        "last_changed": "2023-02-07T02:18:50.598888+00:00",
+        "last_updated": "2023-02-07T02:18:50.598888+00:00",
+        "context": {
+          "id": "01GRMTPCB6K4GNWY7XF5HH11MN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": null,
+        "native_unit_of_measurement": "dBm"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_childb_temperature",
+        "state": "20.5",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Milán"
+        },
+        "last_changed": "2023-02-07T03:03:32.994887+00:00",
+        "last_updated": "2023-02-07T03:03:32.994887+00:00",
+        "context": {
+          "id": "01GRMX87W2DK5FDY42Q5Y2GNSW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "20.5",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_childb_wifi_rssi",
+        "state": "-78",
+        "attributes": {
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "Milán termosztát jelerősség"
+        },
+        "last_changed": "2023-02-07T03:11:51.578343+00:00",
+        "last_updated": "2023-02-07T03:11:51.578343+00:00",
+        "context": {
+          "id": "01GRMXQERTPBGZAQFRFTC95GJF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "-78",
+        "native_unit_of_measurement": "dBm"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_livingroom_temperature",
+        "state": "21.5",
+        "attributes": {
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Nappali"
+        },
+        "last_changed": "2023-02-07T03:17:15.411370+00:00",
+        "last_updated": "2023-02-07T03:17:15.411370+00:00",
+        "context": {
+          "id": "01GRMY1B0KNDT3W5TMYN3D9J3E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "21.5",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q0",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Dolgozó",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.642028+00:00",
+        "last_updated": "2023-02-07T02:18:50.642028+00:00",
+        "context": {
+          "id": "01GRMTPCCJERSHFDWFGJZ5348D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.t_livingroom_wifi_rssi",
+        "state": "-69",
+        "attributes": {
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "Nappali termosztát jelerősség"
+        },
+        "last_changed": "2023-02-07T03:17:57.153378+00:00",
+        "last_updated": "2023-02-07T03:17:57.153378+00:00",
+        "context": {
+          "id": "01GRMY2KS1H1RDN9F1T2F227ME",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "-69",
+        "native_unit_of_measurement": "dBm"
+      },
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q1",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Háló",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.649650+00:00",
+        "last_updated": "2023-02-07T02:18:50.649650+00:00",
+        "context": {
+          "id": "01GRMTPCCSNEVFHFX5TCJV15N1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q2",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Fürdő",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.655573+00:00",
+        "last_updated": "2023-02-07T02:18:50.655573+00:00",
+        "context": {
+          "id": "01GRMTPCCZA10XFEJKNTG37TM1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q3",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Konyha",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.656253+00:00",
+        "last_updated": "2023-02-07T02:18:50.656253+00:00",
+        "context": {
+          "id": "01GRMTPCD0TEA8DKT2DACWGKJA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q4",
+        "state": "on",
+        "attributes": {
+          "friendly_name": "WC",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.660340+00:00",
+        "last_updated": "2023-02-07T02:18:50.660340+00:00",
+        "context": {
+          "id": "01GRMTPCD48S2D46EP07T9DNB9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q5",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Máté",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.666551+00:00",
+        "last_updated": "2023-02-07T02:18:50.666551+00:00",
+        "context": {
+          "id": "01GRMTPCDARHC82P00HRCAT8RA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q6",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Milán",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.667255+00:00",
+        "last_updated": "2023-02-07T02:18:50.667255+00:00",
+        "context": {
+          "id": "01GRMTPCDBAJCSZKHEN60CX6X7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q7",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Háztartási h.",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.668369+00:00",
+        "last_updated": "2023-02-07T02:18:50.668369+00:00",
+        "context": {
+          "id": "01GRMTPCDCWCZ188A0RKSEMAN5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q10",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Előszoba",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.673668+00:00",
+        "last_updated": "2023-02-07T02:18:50.673668+00:00",
+        "context": {
+          "id": "01GRMTPCDHJNDYAENB0HHYS0QY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q11",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Átjáró",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.676180+00:00",
+        "last_updated": "2023-02-07T02:18:50.676180+00:00",
+        "context": {
+          "id": "01GRMTPCDM0MPQ9SB2XNVQYKYS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q12",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Étkezőasztal",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.696877+00:00",
+        "last_updated": "2023-02-07T02:18:50.696877+00:00",
+        "context": {
+          "id": "01GRMTPCE8Y8D5230ZZY8WQNY4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q13",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Nappali",
+          "icon": "mdi:lightbulb"
+        },
+        "last_changed": "2023-02-07T02:18:50.699577+00:00",
+        "last_updated": "2023-02-07T02:18:50.699577+00:00",
+        "context": {
+          "id": "01GRMTPCEBZ0DQMFVCJVGW9DF7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q14",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Járda",
+          "icon": "mdi:outdoor-lamp"
+        },
+        "last_changed": "2023-02-07T02:18:50.700431+00:00",
+        "last_updated": "2023-02-07T02:18:50.700431+00:00",
+        "context": {
+          "id": "01GRMTPCECJ6WJG3Q2GTTR3PES",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q15",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Udvar",
+          "icon": "mdi:outdoor-lamp"
+        },
+        "last_changed": "2023-02-07T02:18:50.702995+00:00",
+        "last_updated": "2023-02-07T02:18:50.702995+00:00",
+        "context": {
+          "id": "01GRMTPCEEBJTKEH0VCBA641W7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q16",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Terasz",
+          "icon": "mdi:led-strip-variant"
+        },
+        "last_changed": "2023-02-07T02:18:50.705572+00:00",
+        "last_updated": "2023-02-07T02:18:50.705572+00:00",
+        "context": {
+          "id": "01GRMTPCEH1JVJ2RD87ZW21YMF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_q17",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Bejárati ajtó",
+          "icon": "mdi:wall-sconce-flat"
+        },
+        "last_changed": "2023-02-07T02:18:50.707075+00:00",
+        "last_updated": "2023-02-07T02:18:50.707075+00:00",
+        "context": {
+          "id": "01GRMTPCEKJWRFVBEWV3BWCZT1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_m0",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Világítás ki",
+          "icon": "mdi:lightbulb-off"
+        },
+        "last_changed": "2023-02-07T02:18:50.710053+00:00",
+        "last_updated": "2023-02-07T02:18:50.710053+00:00",
+        "context": {
+          "id": "01GRMTPCEP73CJN6ZBE6PHFB7J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_m1",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Külső Világítás",
+          "icon": "mdi:vanity-light"
+        },
+        "last_changed": "2023-02-07T02:18:50.711391+00:00",
+        "last_updated": "2023-02-07T02:18:50.711391+00:00",
+        "context": {
+          "id": "01GRMTPCEQMY5MXBF1HKN0S5RE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_m14",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Járda",
+          "icon": "mdi:outdoor-lamp"
+        },
+        "last_changed": "2023-02-07T02:18:50.713651+00:00",
+        "last_updated": "2023-02-07T02:18:50.713651+00:00",
+        "context": {
+          "id": "01GRMTPCESS4W82QXE23Y9KX92",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_m15",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Udvar",
+          "icon": "mdi:outdoor-lamp"
+        },
+        "last_changed": "2023-02-07T02:18:50.724473+00:00",
+        "last_updated": "2023-02-07T02:18:50.724473+00:00",
+        "context": {
+          "id": "01GRMTPCF46QGTMVYV5AH73BTS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_m16",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Terasz",
+          "icon": "mdi:led-strip-variant"
+        },
+        "last_changed": "2023-02-07T02:18:50.728410+00:00",
+        "last_updated": "2023-02-07T02:18:50.728410+00:00",
+        "context": {
+          "id": "01GRMTPCF89ZFKR7TTHN71DHTP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "switch.apb_m17",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Bejárati ajtó",
+          "icon": "mdi:wall-sconce-flat"
+        },
+        "last_changed": "2023-02-07T02:18:50.736718+00:00",
+        "last_updated": "2023-02-07T02:18:50.736718+00:00",
+        "context": {
+          "id": "01GRMTPCFGYRHBNZW4HQTD2RTE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i0",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Dolgozó B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.737619+00:00",
+        "last_updated": "2023-02-07T02:18:50.737619+00:00",
+        "context": {
+          "id": "01GRMTPCFH43S31GE0WQWHQCH4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i1",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Dolgozó J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.738870+00:00",
+        "last_updated": "2023-02-07T02:18:50.738870+00:00",
+        "context": {
+          "id": "01GRMTPCFJD3QR6B1T92KXP6BM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i2",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Háló B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.739767+00:00",
+        "last_updated": "2023-02-07T02:18:50.739767+00:00",
+        "context": {
+          "id": "01GRMTPCFK6M4HGQMTDVKC7GHR",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i3",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Háló J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.742271+00:00",
+        "last_updated": "2023-02-07T02:18:50.742271+00:00",
+        "context": {
+          "id": "01GRMTPCFP47J5JGDWVQS67Y4D",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i4",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Átjáró - Fürdő B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.746943+00:00",
+        "last_updated": "2023-02-07T02:18:50.746943+00:00",
+        "context": {
+          "id": "01GRMTPCFT9X53K869SMEGJJN9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i5",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Átjáró - Fürdő J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.747688+00:00",
+        "last_updated": "2023-02-07T02:18:50.747688+00:00",
+        "context": {
+          "id": "01GRMTPCFVAGX1JQ5WDKSH1XN9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i6",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Nappali - Konyha B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.748769+00:00",
+        "last_updated": "2023-02-07T02:18:50.748769+00:00",
+        "context": {
+          "id": "01GRMTPCFW9J8EG2QMC2G24TZ9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i7",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Nappali - Konyha J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.750351+00:00",
+        "last_updated": "2023-02-07T02:18:50.750351+00:00",
+        "context": {
+          "id": "01GRMTPCFYA50FT1GZ580Q1WE8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i8",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Előszoba - WC B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.750976+00:00",
+        "last_updated": "2023-02-07T02:18:50.750976+00:00",
+        "context": {
+          "id": "01GRMTPCFYSSRQCKNMGKJ9H4CN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_i9",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Előszoba - WC J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.751991+00:00",
+        "last_updated": "2023-02-07T02:18:50.751991+00:00",
+        "context": {
+          "id": "01GRMTPCFZ486K8PCQWV7W2GY6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_ia",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Máté B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.752650+00:00",
+        "last_updated": "2023-02-07T02:18:50.752650+00:00",
+        "context": {
+          "id": "01GRMTPCG0YDX3VSW8EE8EHD8J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_ib",
+        "state": "on",
+        "attributes": {
+          "friendly_name": "Máté J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.753206+00:00",
+        "last_updated": "2023-02-07T02:18:50.753206+00:00",
+        "context": {
+          "id": "01GRMTPCG1R9RXZKQK3JYDS1Q3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_ic",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Milán B",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.754137+00:00",
+        "last_updated": "2023-02-07T02:18:50.754137+00:00",
+        "context": {
+          "id": "01GRMTPCG2RAY689JPMDPK1F7S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.apb_id",
+        "state": "off",
+        "attributes": {
+          "friendly_name": "Milán J",
+          "icon": "mdi:nintendo-switch"
+        },
+        "last_changed": "2023-02-07T02:18:50.754744+00:00",
+        "last_updated": "2023-02-07T02:18:50.754744+00:00",
+        "context": {
+          "id": "01GRMTPCG2WANE7N9EKSZK1X52",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.energy2_firmware",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.12.3",
+          "in_progress": false,
+          "latest_version": "2022.12.8",
+          "release_summary": null,
+          "release_url": "https://esphome.io/changelog/",
+          "skipped_version": null,
+          "title": "ESPHome",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/esphome/icon.png",
+          "friendly_name": "energy2 Firmware",
+          "supported_features": 0
+        },
+        "last_changed": "2023-02-07T02:18:55.249646+00:00",
+        "last_updated": "2023-02-07T02:18:55.249646+00:00",
+        "context": {
+          "id": "01GRMTPGWH87EG3TMZB833E2EE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ac_relay_firmware",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.12.3",
+          "in_progress": false,
+          "latest_version": "2022.12.8",
+          "release_summary": null,
+          "release_url": "https://esphome.io/changelog/",
+          "skipped_version": null,
+          "title": "ESPHome",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/esphome/icon.png",
+          "friendly_name": "ac_relay Firmware",
+          "supported_features": 0
+        },
+        "last_changed": "2023-02-07T02:18:55.394495+00:00",
+        "last_updated": "2023-02-07T02:18:55.394495+00:00",
+        "context": {
+          "id": "01GRMTPH12AK3QJGMJAQ8124JY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.door_firmware",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/esphome/icon.png",
+          "friendly_name": "door Firmware",
+          "supported_features": 0
+        },
+        "last_changed": "2023-02-07T02:18:53.063276+00:00",
+        "last_updated": "2023-02-07T02:18:55.402414+00:00",
+        "context": {
+          "id": "01GRMTPH1AQJF01DWA25C7RR6A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.energy_firmware",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.12.3",
+          "in_progress": false,
+          "latest_version": "2022.12.8",
+          "release_summary": null,
+          "release_url": "https://esphome.io/changelog/",
+          "skipped_version": null,
+          "title": "ESPHome",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/esphome/icon.png",
+          "friendly_name": "energy Firmware",
+          "supported_features": 0
+        },
+        "last_changed": "2023-02-07T02:18:56.236279+00:00",
+        "last_updated": "2023-02-07T02:18:56.236279+00:00",
+        "context": {
+          "id": "01GRMTPHVCFNV440CGB8878KJ3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-07T03:18:53.205899+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.log_viewer_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "0.14.0",
+          "in_progress": false,
+          "latest_version": "0.14.0",
+          "release_summary": "## What’s changed\n\n## 📚 Documentation\n\n- 📚 Use new My Home Assistant link format @frenck (#142)\n\n## ⬆️ Dependency updates\n\n- ⬆️ Upgrades add-on base image to 12.0.0 @frenck (#141)\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Log Viewer",
+          "entity_picture": "/api/hassio/addons/a0d7b954_logviewer/icon",
+          "friendly_name": "Log Viewer Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-02-05T01:05:04.514323+00:00",
+        "last_updated": "2023-02-05T01:05:04.514323+00:00",
+        "context": {
+          "id": "01GRFHNW02E5S6VRS9NXRXQB4P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.ble_weight_removed_mi_scale",
+        "state": "on",
+        "attributes": {
+          "sensor_type": "Mi Scale V1",
+          "mac_address": "88:0F:10:88:A9:AE",
+          "rssi": -82,
+          "firmware": "Mi Scale V1",
+          "last_packet_id": "820000e707020611270a",
+          "weight": 12.3,
+          "uuid": "88:0F:10:88:A9:AE",
+          "icon": "mdi:weight",
+          "friendly_name": "Üres"
+        },
+        "last_changed": "2023-02-05T17:28:46.929948+00:00",
+        "last_updated": "2023-02-06T17:39:44.665514+00:00",
+        "context": {
+          "id": "01GRKWZWCS21NFVZ7Y5XRD6Y9C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_temperature_attic",
+        "state": "0.9",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:21:7F:43",
+          "median": 0.9,
+          "mean": 0.9,
+          "last_mean_of": 1,
+          "rssi": -70,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 175,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:21:7F:43",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Padlás",
+          "icon": "mdi:home-roof"
+        },
+        "last_changed": "2023-02-06T22:50:19.335048+00:00",
+        "last_updated": "2023-02-06T22:50:19.335048+00:00",
+        "context": {
+          "id": "01GRMERJA7WY6HQ58F400VF1CP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_humidity_attic",
+        "state": "55",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:21:7F:43",
+          "median": 55,
+          "mean": 55,
+          "last_mean_of": 1,
+          "rssi": -69,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 173,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:21:7F:43",
+          "unit_of_measurement": "%",
+          "device_class": "humidity",
+          "friendly_name": "Padlás"
+        },
+        "last_changed": "2023-02-06T22:49:19.286312+00:00",
+        "last_updated": "2023-02-06T22:49:19.286312+00:00",
+        "context": {
+          "id": "01GRMEPQNPK63S359C13C84Z9Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_battery_attic",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:21:7F:43",
+          "rssi": -69,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 167,
+          "uuid": "A4:C1:38:21:7F:43",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "ble battery attic"
+        },
+        "last_changed": "2023-02-06T22:34:18.574723+00:00",
+        "last_updated": "2023-02-06T22:34:18.574723+00:00",
+        "context": {
+          "id": "01GRMDV82EH5EENKT4PNJ7FWE9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_voltage_attic",
+        "state": "3.1",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:21:7F:43",
+          "median": 3.1,
+          "mean": 3.1,
+          "last_mean_of": 1,
+          "rssi": -69,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 167,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:21:7F:43",
+          "unit_of_measurement": "V",
+          "device_class": "voltage",
+          "friendly_name": "ble voltage attic"
+        },
+        "last_changed": "2023-02-06T22:34:18.575082+00:00",
+        "last_updated": "2023-02-06T22:34:18.575082+00:00",
+        "context": {
+          "id": "01GRMDV82FG2FRN86E2CS498JF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_attic",
+        "state": "-70",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:21:7F:43",
+          "median": -70,
+          "mean": -70,
+          "last_mean_of": 1,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 175,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:21:7F:43",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble rssi attic"
+        },
+        "last_changed": "2023-02-06T22:50:19.335381+00:00",
+        "last_updated": "2023-02-06T22:50:19.335381+00:00",
+        "context": {
+          "id": "01GRMERJA75DKZAZMPPBZMFR4H",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_dining_light_dimmer",
+        "state": "-57",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "YLKG07YL/YLKG08YL",
+          "mac_address": "F8:24:41:C9:01:42",
+          "median": -57.0,
+          "mean": -57,
+          "last_mean_of": 2,
+          "firmware": "Xiaomi (MiBeacon V3)",
+          "last_packet_id": 1,
+          "uuid": "F8:24:41:C9:01:42",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble rssi dining_light_dimmer"
+        },
+        "last_changed": "2023-02-06T06:13:31.714624+00:00",
+        "last_updated": "2023-02-06T06:13:31.714624+00:00",
+        "context": {
+          "id": "01GRJNQCE2JGY3VC1E8S6DV77B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_dimmer_dining_light_dimmer",
+        "state": "unknown",
+        "attributes": {
+          "sensor_type": "YLKG07YL/YLKG08YL",
+          "mac_address": "F8:24:41:C9:01:42",
+          "icon": "mdi:rotate-right",
+          "friendly_name": "ble dimmer dining_light_dimmer"
+        },
+        "last_changed": "2023-02-05T01:06:01.847674+00:00",
+        "last_updated": "2023-02-05T01:06:01.847674+00:00",
+        "context": {
+          "id": "01GRFHQKZQ01GQW1TGW77Z47J4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_temperature_kitchen",
+        "state": "22.0",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:78:F3:7C",
+          "median": 22.0,
+          "mean": 22.0,
+          "last_mean_of": 1,
+          "rssi": -62,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 171,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:78:F3:7C",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Konyha"
+        },
+        "last_changed": "2023-02-06T22:45:19.050782+00:00",
+        "last_updated": "2023-02-06T22:45:19.050782+00:00",
+        "context": {
+          "id": "01GRMEFD2AX2HXZ9NVWZY9BMEY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_humidity_kitchen",
+        "state": "54",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:78:F3:7C",
+          "median": 54,
+          "mean": 54,
+          "last_mean_of": 1,
+          "rssi": -73,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 169,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:78:F3:7C",
+          "unit_of_measurement": "%",
+          "device_class": "humidity",
+          "friendly_name": "Konyha"
+        },
+        "last_changed": "2023-02-06T22:44:19.000818+00:00",
+        "last_updated": "2023-02-06T22:44:19.000818+00:00",
+        "context": {
+          "id": "01GRMEDJDRQTMJ53KPYFYJ73B6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_battery_kitchen",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:78:F3:7C",
+          "rssi": -62,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 173,
+          "uuid": "A4:C1:38:78:F3:7C",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "ble battery kitchen"
+        },
+        "last_changed": "2023-02-06T22:47:19.192795+00:00",
+        "last_updated": "2023-02-06T22:47:19.192795+00:00",
+        "context": {
+          "id": "01GRMEK2CRHC8A6AS7F48RDW1R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_voltage_kitchen",
+        "state": "3.1",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:78:F3:7C",
+          "median": 3.1,
+          "mean": 3.1,
+          "last_mean_of": 1,
+          "rssi": -62,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 173,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:78:F3:7C",
+          "unit_of_measurement": "V",
+          "device_class": "voltage",
+          "friendly_name": "ble voltage kitchen"
+        },
+        "last_changed": "2023-02-06T22:47:19.193157+00:00",
+        "last_updated": "2023-02-06T22:47:19.193157+00:00",
+        "context": {
+          "id": "01GRMEK2CSRF2K4JAKFWY4DKSQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_kitchen",
+        "state": "-62",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:78:F3:7C",
+          "median": -62,
+          "mean": -62,
+          "last_mean_of": 1,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 173,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:78:F3:7C",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble rssi kitchen"
+        },
+        "last_changed": "2023-02-06T22:47:19.193441+00:00",
+        "last_updated": "2023-02-06T22:47:19.193441+00:00",
+        "context": {
+          "id": "01GRMEK2CS0QQVMV8NDQ59ZCQD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_mi_scale",
+        "state": "-82",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "Mi Scale V1",
+          "mac_address": "88:0F:10:88:A9:AE",
+          "median": -82,
+          "mean": -82,
+          "last_mean_of": 1,
+          "firmware": "Mi Scale V1",
+          "last_packet_id": "820000e707020611270a",
+          "uuid": "88:0F:10:88:A9:AE",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "Térerő"
+        },
+        "last_changed": "2023-02-06T17:40:05.497338+00:00",
+        "last_updated": "2023-02-06T17:40:05.497338+00:00",
+        "context": {
+          "id": "01GRKX0GQSPY3VK64RS1YM2SQS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_weight_mi_scale",
+        "state": "12.3",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "Mi Scale V1",
+          "mac_address": "88:0F:10:88:A9:AE",
+          "rssi": -76,
+          "firmware": "Mi Scale V1",
+          "last_packet_id": "229c09e7070205111c31",
+          "uuid": "88:0F:10:88:A9:AE",
+          "unit_of_measurement": "kg",
+          "icon": "mdi:scale-bathroom",
+          "friendly_name": "Mérleg"
+        },
+        "last_changed": "2023-02-05T17:28:41.580617+00:00",
+        "last_updated": "2023-02-05T17:28:41.580617+00:00",
+        "context": {
+          "id": "01GRH9YXVCQA5GFCYT3YMVN270",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_non_stabilized_weight_mi_scale",
+        "state": "0.0",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "Mi Scale V1",
+          "mac_address": "88:0F:10:88:A9:AE",
+          "rssi": -82,
+          "firmware": "Mi Scale V1",
+          "last_packet_id": "820000e707020611270a",
+          "uuid": "88:0F:10:88:A9:AE",
+          "stabilized": false,
+          "weight removed": true,
+          "unit_of_measurement": "kg",
+          "icon": "mdi:scale-bathroom",
+          "friendly_name": "Mérleg (pillanatnyi érték)"
+        },
+        "last_changed": "2023-02-06T17:39:44.665942+00:00",
+        "last_updated": "2023-02-06T17:39:44.665942+00:00",
+        "context": {
+          "id": "01GRKWZWCSE7G5AF9118EMJA22",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_temperature_study",
+        "state": "22.1",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:10:D1:70",
+          "median": 22.1,
+          "mean": 22.1,
+          "last_mean_of": 1,
+          "rssi": -73,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 232,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:10:D1:70",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Dolgozó"
+        },
+        "last_changed": "2023-02-06T22:45:19.051451+00:00",
+        "last_updated": "2023-02-06T22:45:19.051451+00:00",
+        "context": {
+          "id": "01GRMEFD2B5TAGQMR4Z5D15KHA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_humidity_study",
+        "state": "53",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:10:D1:70",
+          "median": 53,
+          "mean": 53,
+          "last_mean_of": 1,
+          "rssi": -68,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 230,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:10:D1:70",
+          "unit_of_measurement": "%",
+          "device_class": "humidity",
+          "friendly_name": "Dolgozó"
+        },
+        "last_changed": "2023-02-06T22:44:19.001932+00:00",
+        "last_updated": "2023-02-06T22:44:19.001932+00:00",
+        "context": {
+          "id": "01GRMEDJDSMVD6Y3QE71GCT06J",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_battery_study",
+        "state": "100",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:10:D1:70",
+          "rssi": -69,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 228,
+          "uuid": "A4:C1:38:10:D1:70",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "ble battery study"
+        },
+        "last_changed": "2023-02-06T22:35:18.618660+00:00",
+        "last_updated": "2023-02-06T22:35:18.618660+00:00",
+        "context": {
+          "id": "01GRMDX2PTACX5KD86G9G57N24",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_voltage_study",
+        "state": "3.1",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:10:D1:70",
+          "median": 3.1,
+          "mean": 3.1,
+          "last_mean_of": 1,
+          "rssi": -69,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 228,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:10:D1:70",
+          "unit_of_measurement": "V",
+          "device_class": "voltage",
+          "friendly_name": "ble voltage study"
+        },
+        "last_changed": "2023-02-06T22:35:18.619026+00:00",
+        "last_updated": "2023-02-06T22:35:18.619026+00:00",
+        "context": {
+          "id": "01GRMDX2PVC3YZKRY32JAKQ7MD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_study",
+        "state": "-73",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:10:D1:70",
+          "median": -73,
+          "mean": -73,
+          "last_mean_of": 1,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 232,
+          "battery_level": 100,
+          "uuid": "A4:C1:38:10:D1:70",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble rssi study"
+        },
+        "last_changed": "2023-02-06T22:45:19.051741+00:00",
+        "last_updated": "2023-02-06T22:45:19.051741+00:00",
+        "context": {
+          "id": "01GRMEFD2BDB2ZRSVPMHM9PYJF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_temperature_terrace",
+        "state": "-6.1",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:99:3C:6E",
+          "median": -6.1,
+          "mean": -6.1,
+          "last_mean_of": 1,
+          "rssi": -73,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 146,
+          "battery_level": 50,
+          "uuid": "A4:C1:38:99:3C:6E",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "friendly_name": "Terasz"
+        },
+        "last_changed": "2023-02-06T22:48:19.251556+00:00",
+        "last_updated": "2023-02-06T22:48:19.251556+00:00",
+        "context": {
+          "id": "01GRMEMX1KPFWWNANMA2JCG7K1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_humidity_terrace",
+        "state": "77",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:99:3C:6E",
+          "median": 77,
+          "mean": 77,
+          "last_mean_of": 1,
+          "rssi": -72,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 144,
+          "battery_level": 50,
+          "uuid": "A4:C1:38:99:3C:6E",
+          "unit_of_measurement": "%",
+          "device_class": "humidity",
+          "friendly_name": "Terasz"
+        },
+        "last_changed": "2023-02-06T22:47:19.193774+00:00",
+        "last_updated": "2023-02-06T22:47:19.193774+00:00",
+        "context": {
+          "id": "01GRMEK2CSXKMA8ABM284J678S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_battery_terrace",
+        "state": "50",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:99:3C:6E",
+          "rssi": -73,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 142,
+          "uuid": "A4:C1:38:99:3C:6E",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "friendly_name": "ble battery terrace"
+        },
+        "last_changed": "2023-02-06T22:41:18.912531+00:00",
+        "last_updated": "2023-02-06T22:41:18.912531+00:00",
+        "context": {
+          "id": "01GRME82J0158R17N52D4AKSAK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_voltage_terrace",
+        "state": "2.7",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:99:3C:6E",
+          "median": 2.7,
+          "mean": 2.7,
+          "last_mean_of": 1,
+          "rssi": -73,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 142,
+          "battery_level": 50,
+          "uuid": "A4:C1:38:99:3C:6E",
+          "unit_of_measurement": "V",
+          "device_class": "voltage",
+          "friendly_name": "ble voltage terrace"
+        },
+        "last_changed": "2023-02-06T22:41:18.912979+00:00",
+        "last_updated": "2023-02-06T22:41:18.912979+00:00",
+        "context": {
+          "id": "01GRME82J0251TA779NMPRPW4S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_terrace",
+        "state": "-73",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "LYWSD03MMC",
+          "mac_address": "A4:C1:38:99:3C:6E",
+          "median": -73,
+          "mean": -73,
+          "last_mean_of": 1,
+          "firmware": "Xiaomi (MiBeacon V5 encrypted)",
+          "last_packet_id": 146,
+          "battery_level": 50,
+          "uuid": "A4:C1:38:99:3C:6E",
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble rssi terrace"
+        },
+        "last_changed": "2023-02-06T22:48:19.251886+00:00",
+        "last_updated": "2023-02-06T22:48:19.251886+00:00",
+        "context": {
+          "id": "01GRMEMX1KQAW60BVME86WHXVY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_rssi_ibeacon",
+        "state": "-53.8",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "iBeacon",
+          "uuid": "42657374-5761-7465-7254-6563686e6f00",
+          "last_packet_id": "no packet id",
+          "firmware": "iBeacon",
+          "mac_address": "03:12:00:24:00:40",
+          "median": -54.0,
+          "mean": -53.8,
+          "last_mean_of": 1040,
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble rssi ibeacon"
+        },
+        "last_changed": "2023-02-06T22:51:19.382374+00:00",
+        "last_updated": "2023-02-06T22:51:19.382374+00:00",
+        "context": {
+          "id": "01GRMETCYP1MM04FFR15T68JA5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_measured_power_ibeacon",
+        "state": "-56",
+        "attributes": {
+          "state_class": "measurement",
+          "sensor_type": "iBeacon",
+          "uuid": "42657374-5761-7465-7254-6563686e6f00",
+          "last_packet_id": "no packet id",
+          "firmware": "iBeacon",
+          "mac_address": "03:12:00:24:00:40",
+          "median": -56.0,
+          "mean": -56,
+          "last_mean_of": 1040,
+          "rssi": -54,
+          "unit_of_measurement": "dBm",
+          "device_class": "signal_strength",
+          "friendly_name": "ble measured power ibeacon"
+        },
+        "last_changed": "2023-02-06T22:51:19.382703+00:00",
+        "last_updated": "2023-02-06T22:51:19.382703+00:00",
+        "context": {
+          "id": "01GRMETCYPN55W5TEBC77FSHC6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_mac_ibeacon",
+        "state": "03:12:00:24:00:40",
+        "attributes": {
+          "sensor_type": "iBeacon",
+          "uuid": "42657374-5761-7465-7254-6563686e6f00",
+          "last_packet_id": "no packet id",
+          "firmware": "iBeacon",
+          "mac_address": "03:12:00:24:00:40",
+          "rssi": -54,
+          "icon": "mdi:alpha-m-circle-outline",
+          "friendly_name": "ble mac ibeacon"
+        },
+        "last_changed": "2023-02-06T22:51:46.325546+00:00",
+        "last_updated": "2023-02-06T22:51:46.325546+00:00",
+        "context": {
+          "id": "01GRMEV78NKT8D1DDJ3V27Y6A7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_major_ibeacon",
+        "state": "16384",
+        "attributes": {
+          "sensor_type": "iBeacon",
+          "uuid": "42657374-5761-7465-7254-6563686e6f00",
+          "last_packet_id": "no packet id",
+          "firmware": "iBeacon",
+          "mac_address": "03:12:00:24:00:40",
+          "rssi": -54,
+          "icon": "mdi:counter",
+          "friendly_name": "ble major ibeacon"
+        },
+        "last_changed": "2023-02-05T01:06:02.162074+00:00",
+        "last_updated": "2023-02-05T01:06:02.162074+00:00",
+        "context": {
+          "id": "01GRFHQM9J7DC0R8M3WBMGA1EX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ble_minor_ibeacon",
+        "state": "9216",
+        "attributes": {
+          "sensor_type": "iBeacon",
+          "uuid": "42657374-5761-7465-7254-6563686e6f00",
+          "last_packet_id": "no packet id",
+          "firmware": "iBeacon",
+          "mac_address": "03:12:00:24:00:40",
+          "rssi": -54,
+          "icon": "mdi:counter",
+          "friendly_name": "ble minor ibeacon"
+        },
+        "last_changed": "2023-02-05T01:06:02.162237+00:00",
+        "last_updated": "2023-02-05T01:06:02.162237+00:00",
+        "context": {
+          "id": "01GRFHQM9JSCJJW5NJZ9BZM3VP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.hg01wt_firmware",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.10.1",
+          "in_progress": false,
+          "latest_version": "2022.12.8",
+          "release_summary": null,
+          "release_url": "https://esphome.io/changelog/",
+          "skipped_version": null,
+          "title": "ESPHome",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/esphome/icon.png",
+          "friendly_name": "hg01wt Firmware",
+          "supported_features": 0
+        },
+        "last_changed": "2023-02-05T01:06:47.067077+00:00",
+        "last_updated": "2023-02-05T01:06:47.067077+00:00",
+        "context": {
+          "id": "01GRFHS04VYJ4Z7SHS5CH83Y5Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ac_sensor_firmware",
+        "state": "on",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2022.12.3",
+          "in_progress": false,
+          "latest_version": "2022.12.8",
+          "release_summary": null,
+          "release_url": "https://esphome.io/changelog/",
+          "skipped_version": null,
+          "title": "ESPHome",
+          "device_class": "firmware",
+          "entity_picture": "https://brands.home-assistant.io/_/esphome/icon.png",
+          "friendly_name": "ac_sensor Firmware",
+          "supported_features": 0
+        },
+        "last_changed": "2023-02-05T01:06:47.068310+00:00",
+        "last_updated": "2023-02-05T01:06:47.068310+00:00",
+        "context": {
+          "id": "01GRFHS04W9KZW6VSN5R22BR22",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-02-06T22:51:46.333508+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.x12_battery_level",
+        "state": "68",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-60",
+          "friendly_name": "X12 Battery Level"
+        },
+        "last_changed": "2023-02-05T01:06:38.517099+00:00",
+        "last_updated": "2023-02-05T01:06:38.517099+00:00",
+        "context": {
+          "id": "01GRFHRQSNWG686W6KP0ARHHTX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 68,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-02-05T01:16:23.442324+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.x12_battery_state",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "X12 Battery State"
+        },
+        "last_changed": "2023-02-05T01:06:38.517360+00:00",
+        "last_updated": "2023-02-05T01:06:38.517360+00:00",
+        "context": {
+          "id": "01GRFHRQSN2S23FAEND3ZV9QEK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-05T01:16:23.442916+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.x12_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "X12 Charger Type"
+        },
+        "last_changed": "2023-02-05T01:06:38.517596+00:00",
+        "last_updated": "2023-02-05T01:06:38.517596+00:00",
+        "context": {
+          "id": "01GRFHRQSNFWHEEAYKZ1CYNBJN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-05T01:16:23.443350+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.x12_battery_health",
+        "state": "good",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "X12 Battery Health"
+        },
+        "last_changed": "2023-02-05T01:06:38.517856+00:00",
+        "last_updated": "2023-02-05T01:06:38.517856+00:00",
+        "context": {
+          "id": "01GRFHRQSNQZZAV73DHNB9V7ZK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "good",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-02-05T01:16:23.443760+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.x12_battery_temperature",
+        "state": "25.6",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "X12 Battery Temperature"
+        },
+        "last_changed": "2023-02-05T01:06:38.518182+00:00",
+        "last_updated": "2023-02-05T01:06:38.518182+00:00",
+        "context": {
+          "id": "01GRFHRQSPA95106PCE16EDFJ3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },

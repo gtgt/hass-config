@@ -1,11 +1,12 @@
 {
   "version": 1,
   "minor_version": 1,
-  "key": "esphome.586ef7ec8d51b57a327b514958a47ff0",
+  "key": "esphome.a7edd15162a1f0350b821e0b5fcd6a5f",
   "data": {
     "device_info": {
       "uses_password": true,
       "name": "door",
+      "friendly_name": "",
       "mac_address": "4C:11:AE:0C:44:7F",
       "compilation_time": "Oct 31 2022, 23:14:30",
       "model": "d1_mini",
@@ -22,32 +23,6 @@
       "major": 1,
       "minor": 7
     },
-    "switch": [
-      {
-        "object_id": "door_restart",
-        "key": 3498102881,
-        "name": "door_restart",
-        "unique_id": "doorswitchdoor_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "door_status",
-        "key": 2640944350,
-        "name": "door_status",
-        "unique_id": "doorbinary_sensordoor_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "sensor": [
       {
         "object_id": "door_up_time",
@@ -80,6 +55,32 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": []
+    "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "door_status",
+        "key": 2640944350,
+        "name": "door_status",
+        "unique_id": "doorbinary_sensordoor_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "door_restart",
+        "key": 3498102881,
+        "name": "door_restart",
+        "unique_id": "doorswitchdoor_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ]
   }
 }

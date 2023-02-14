@@ -4,14 +4,15 @@
   "key": "esphome.30ff643345584ed0fd3b3c114b64af56",
   "data": {
     "device_info": {
-      "uses_password": true,
+      "uses_password": false,
       "name": "hg01wt",
+      "friendly_name": "",
       "mac_address": "DC:4F:22:14:FE:06",
-      "compilation_time": "Oct 28 2022, 18:12:30",
+      "compilation_time": "Feb  8 2023, 14:49:09",
       "model": "esp01_1m",
-      "manufacturer": "",
+      "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.10.1",
+      "esphome_version": "2022.12.8",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -22,30 +23,39 @@
       "major": 1,
       "minor": 7
     },
-    "switch": [
+    "sensor": [
       {
-        "object_id": "hg01wt_restart",
-        "key": 1200459538,
-        "name": "hg01wt_restart",
-        "unique_id": "hg01wtswitchhg01wt_restart",
+        "object_id": "hg01wt_up_time",
+        "key": 3325659114,
+        "name": "hg01wt_up_time",
+        "unique_id": "dc4f2214fe06-uptime",
         "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
       },
       {
-        "object_id": "hg01wt_switch1",
-        "key": 1269465230,
-        "name": "hg01wt_switch1",
-        "unique_id": "hg01wtswitchhg01wt_switch1",
+        "object_id": "hg01wt_wifi_signal",
+        "key": 658019893,
+        "name": "hg01wt_wifi_signal",
+        "unique_id": "dc4f2214fe06-wifisignal",
         "disabled_by_default": false,
         "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
       }
     ],
+    "text_sensor": [],
     "binary_sensor": [
       {
         "object_id": "hg01wt_status",
@@ -70,38 +80,29 @@
         "is_status_binary_sensor": false
       }
     ],
-    "sensor": [
+    "switch": [
       {
-        "object_id": "hg01wt_up_time",
-        "key": 3325659114,
-        "name": "hg01wt_up_time",
-        "unique_id": "dc4f2214fe06-uptime",
+        "object_id": "hg01wt_restart",
+        "key": 1200459538,
+        "name": "hg01wt_restart",
+        "unique_id": "hg01wtswitchhg01wt_restart",
         "disabled_by_default": false,
-        "icon": "mdi:timelapse",
-        "entity_category": 2,
-        "device_class": "",
-        "unit_of_measurement": "s",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 2,
-        "last_reset_type": 0
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
       },
       {
-        "object_id": "hg01wt_wifi_signal",
-        "key": 658019893,
-        "name": "hg01wt_wifi_signal",
-        "unique_id": "dc4f2214fe06-wifisignal",
+        "object_id": "hg01wt_switch1",
+        "key": 1269465230,
+        "name": "hg01wt_switch1",
+        "unique_id": "hg01wtswitchhg01wt_switch1",
         "disabled_by_default": false,
         "icon": "",
-        "entity_category": 2,
-        "device_class": "signal_strength",
-        "unit_of_measurement": "dBm",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
       }
-    ],
-    "text_sensor": []
+    ]
   }
 }

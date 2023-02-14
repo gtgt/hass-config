@@ -18,6 +18,6 @@ ac_kitchen_target_temp:
 
 ventillation_temp_diff_treshold:
   min: -25
-  max: -15
+  max: -5
   step: 0.5
   icon: "mdi:snowflake-thermometer"

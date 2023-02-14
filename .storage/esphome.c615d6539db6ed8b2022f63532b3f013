@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.c615d6539db6ed8b2022f63532b3f013",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "meeting-info",
+      "friendly_name": "",
+      "mac_address": "24:62:AB:F9:8E:14",
+      "compilation_time": "Feb 14 2023, 21:11:41",
+      "model": "featheresp32",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2022.12.8",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "bluetooth_proxy_version": 0
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 7
+    },
+    "sensor": [
+      {
+        "object_id": "meeting-info_up_time",
+        "key": 3593164233,
+        "name": "meeting-info_up_time",
+        "unique_id": "2462abf98e14-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "meeting-info_wifi_signal",
+        "key": 318646470,
+        "name": "meeting-info_wifi_signal",
+        "unique_id": "2462abf98e14-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "meeting-info_status",
+        "key": 2850294546,
+        "name": "meeting-info_status",
+        "unique_id": "meeting-infobinary_sensormeeting-info_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      },
+      {
+        "object_id": "meeting-info_button0",
+        "key": 2095061752,
+        "name": "meeting-info_button0",
+        "unique_id": "meeting-infobinary_sensormeeting-info_button0",
+        "disabled_by_default": false,
+        "icon": "mdi:brightness-5",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "meeting-info_button1",
+        "key": 2095061753,
+        "name": "meeting-info_button1",
+        "unique_id": "meeting-infobinary_sensormeeting-info_button1",
+        "disabled_by_default": false,
+        "icon": "mdi:button-pointer",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "meeting-info_restart",
+        "key": 1810122829,
+        "name": "meeting-info_restart",
+        "unique_id": "meeting-infoswitchmeeting-info_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "meeting-info_backlight",
+        "key": 1786746587,
+        "name": "meeting-info_backlight",
+        "unique_id": "meeting-infoswitchmeeting-info_backlight",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ]
+  }
+}

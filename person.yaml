@@ -2,7 +2,7 @@
   id: aithuShiex4UTh4A
   user_id: !secret user_id_gt
   device_trackers:
-    - device_tracker.gt_mi8
+    - device_tracker.gt_xm12
 - name: gsm
   id: gsm
   user_id: !secret user_id_gsm

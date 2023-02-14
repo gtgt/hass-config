@@ -5,12 +5,14 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
   domain: .lan
-  fast_connect: true
+  fast_connect: false
+  reboot_timeout: 2min
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "${name} fallback hotspot"
+    ssid: "${name} fallback"
     password: !secret ap_password
+    ap_timeout: 10min
 
 captive_portal:
 
@@ -26,10 +28,13 @@ web_server:
 
 # Enable Home Assistant API
 api:
-  password: !secret api_password
+  encryption:
+    key: !secret api_enc_key
+  reboot_timeout: 5min
 
 ota:
   password: !secret ota_password
+  num_attempts: 5
 
 time:
   - platform: homeassistant
