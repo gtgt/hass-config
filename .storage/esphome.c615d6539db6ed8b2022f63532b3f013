@@ -8,15 +8,16 @@
       "name": "meeting-info",
       "friendly_name": "",
       "mac_address": "24:62:AB:F9:8E:14",
-      "compilation_time": "Feb 14 2023, 21:11:41",
+      "compilation_time": "Apr  5 2023, 12:17:30",
       "model": "featheresp32",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.8",
+      "esphome_version": "2023.3.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0
+      "bluetooth_proxy_version": 0,
+      "voice_assistant_version": 0
     },
     "services": [],
     "api_version": {

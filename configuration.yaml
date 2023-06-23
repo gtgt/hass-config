@@ -44,6 +44,7 @@ discovery:
 logger:
   default: warn
   logs:
+    homeassistant.loader: error
     homeassistant.components.system_log.external: info
     custom_components.programmable_thermostat.climate: info
     homeassistant.components.cloud.google_config: error
@@ -56,6 +57,7 @@ logger:
     homeassistant.components.xiaomi_miio.vacuum: error
     custom_components.xiaomi_miio_airpurifier.fan: fatal
     homeassistant.components.http: info
+    custom_components.xiaomi_cloud_map_extractor: fatal
 #    homeassistant.components.daikin: debug
 #    pydaikin: debug
 #    homeassistant.components.modbus: info
@@ -91,7 +93,7 @@ system_health:
 recorder:
   db_url: mysql://homeassistant:K9cdXAIVbG62TRna@core-mariadb/homeassistant?charset=utf8
   commit_interval: 20
-  purge_keep_days: 30
+  purge_keep_days: 42
   include:
     domains:
       - binary_sensor
@@ -231,7 +233,7 @@ aquaariston:
   username: !secret ariston_username
   password: !secret ariston_password
   type: velis
-  polling: 4.0
+  polling: 2.0
   store_config_files: true
   switches:
     - eco                             # switches ECO mode

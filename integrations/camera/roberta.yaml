@@ -1,6 +1,6 @@
 - platform: xiaomi_cloud_map_extractor
   name: roberta
-  host: roberta.lan
+  host: 192.168.1.55
   token: !secret roberta_token
   country: de
   username: !secret roberta_username
@@ -9,27 +9,31 @@
   attributes:
     - calibration_points
     - charger
+    - cleaned_rooms
     - country
     - goto
     - goto_path
     - goto_predicted_path
+    - ignored_obstacles_with_photo
+    - ignored_obstacles
     - image
     - is_empty
     - map_name
     - no_go_areas
     - no_mopping_areas
     - obstacles
+    - obstacles_with_photo
     - path
     - room_numbers
     - rooms
     - vacuum_position
     - vacuum_room
+    - vacuum_room_name
     - walls
     - zones
   scan_interval:
     seconds: 60
   auto_update: true
-  #store_map: true
   map_transformation:
     scale: 2
   colors:

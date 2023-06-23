@@ -8,21 +8,46 @@
       "name": "hg01wt",
       "friendly_name": "",
       "mac_address": "DC:4F:22:14:FE:06",
-      "compilation_time": "Feb  8 2023, 14:49:09",
+      "compilation_time": "Apr 10 2023, 01:14:34",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.8",
+      "esphome_version": "2023.3.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0
+      "bluetooth_proxy_version": 0,
+      "voice_assistant_version": 0
     },
     "services": [],
     "api_version": {
       "major": 1,
       "minor": 7
     },
+    "binary_sensor": [
+      {
+        "object_id": "hg01wt_status",
+        "key": 2041265331,
+        "name": "hg01wt_status",
+        "unique_id": "hg01wtbinary_sensorhg01wt_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      },
+      {
+        "object_id": "hg01wt_button1",
+        "key": 2305800510,
+        "name": "hg01wt_button1",
+        "unique_id": "hg01wtbinary_sensorhg01wt_button1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
     "sensor": [
       {
         "object_id": "hg01wt_up_time",
@@ -56,30 +81,6 @@
       }
     ],
     "text_sensor": [],
-    "binary_sensor": [
-      {
-        "object_id": "hg01wt_status",
-        "key": 2041265331,
-        "name": "hg01wt_status",
-        "unique_id": "hg01wtbinary_sensorhg01wt_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      },
-      {
-        "object_id": "hg01wt_button1",
-        "key": 2305800510,
-        "name": "hg01wt_button1",
-        "unique_id": "hg01wtbinary_sensorhg01wt_button1",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "",
-        "is_status_binary_sensor": false
-      }
-    ],
     "switch": [
       {
         "object_id": "hg01wt_restart",

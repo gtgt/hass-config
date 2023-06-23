@@ -10,8 +10,8 @@
           script:
             - service: climate.set_temperature
               data_template:
-                entity_id: climate.ac_study
-                temperature: "{{ climate_ac_study_attr_temperature | default(states('input_number.ac_study_target_temp')) | float }}"
+                entity_id: climate.t_study
+                temperature: "{{ climate_t_study_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.t_childa
@@ -26,8 +26,8 @@
                 temperature: "{{ climate_t_bedroom_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
-                entity_id: climate.ac_kitchen
-                temperature: "{{ climate_ac_kitchen_attr_temperature | default(states('input_number.ac_kitchen_target_temp')) | float }}"
+                entity_id: climate.t_kitchen
+                temperature: "{{ climate_t_kitchen_attr_temperature | default(states('input_number.ac_default_target_temp')) | float }}"
             - service: climate.set_temperature
               data_template:
                 entity_id: climate.t_livingroom
@@ -44,7 +44,7 @@
       - platform: homeassistant
         event: shutdown
       - platform: state
-        entity_id: climate.ac_study
+        entity_id: climate.t_study
       - platform: state
         entity_id: climate.t_childa
       - platform: state
@@ -52,13 +52,13 @@
       - platform: state
         entity_id: climate.t_bedroom
       - platform: state
-        entity_id: climate.ac_kitchen
+        entity_id: climate.t_kitchen
       - platform: state
         entity_id: climate.t_livingroom
     action:
       - service: saver.save_state
         data:
-          entity_id: climate.ac_study
+          entity_id: climate.t_study
       - service: saver.save_state
         data:
           entity_id: climate.t_childa
@@ -70,7 +70,7 @@
           entity_id: climate.t_bedroom
       - service: saver.save_state
         data:
-          entity_id: climate.ac_kitchen
+          entity_id: climate.t_kitchen
       - service: saver.save_state
         data:
           entity_id: climate.t_livingroom

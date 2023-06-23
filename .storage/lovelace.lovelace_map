@@ -23,7 +23,7 @@
                   "entity": "device_tracker.gt_xm12"
                 },
                 {
-                  "entity": "device_tracker.mi_9_lite"
+                  "entity": "device_tracker.gsm_mi8"
                 }
               ],
               "dark_mode": true,
@@ -36,25 +36,29 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "device_tracker.gt_xm12"
+                  "entity": "device_tracker.gt_xm12",
+                  "secondary_info": "last-updated"
                 },
                 {
                   "entity": "sensor.gt_xm12_geocoded_location",
                   "secondary_info": "last-updated"
                 },
                 {
-                  "entity": "sensor.location_gt"
+                  "entity": "sensor.location_gt",
+                  "secondary_info": "last-updated"
                 },
                 {
-                  "entity": "device_tracker.mi_9_lite"
+                  "entity": "device_tracker.gsm_mi8",
+                  "secondary_info": "last-updated"
                 },
                 {
-                  "entity": "sensor.mi_9_lite_geokodolt_hely",
+                  "entity": "sensor.gsm_mi8_geocoded_location",
                   "secondary_info": "last-updated"
                 },
                 {
                   "entity": "sensor.location_gsm",
-                  "secondary_info": "last-updated"
+                  "secondary_info": "last-updated",
+                  "name": "Mi8"
                 }
               ]
             },

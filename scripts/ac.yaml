@@ -15,14 +15,14 @@ turn_switch_by_climate:
     # [state] = fan_only ? [hvac_action] = fan, idle
     # (daikin) [state] = fan_only, dry ? [hvac_action] = <none>
     hvac_mode: "{{ state_attr(climate_entity_id, 'hvac_action') if states(climate_entity_id) in ['heat', 'cool', 'heat_cool'] else states(climate_entity_id) }}"
-    preferred_switch_state: "{{ 'off' if hvac_mode in ['idle', 'off'] else 'on' }}"
+    preferred_switch_state: "{{ 'off' if hvac_mode in ['idle', 'off', 'unavailable'] else 'on' }}"
   sequence:
 #    - condition: template
 #      value_template: "{{ hvac_mode in ['heating', 'cooling', 'fan_only', 'idle', 'off'] }}"
     - condition: template
       value_template: "{{ states(switch_entity_id) !=  preferred_switch_state }}"
     - condition: template
-      value_template: "{{ ( as_timestamp(now()) - as_timestamp(state_attr('saver.saver', 'variables')[switch_entity_id + '_last_switch']|default('0')) | default(0, 'None') ) | int >= 300 }}"
+      value_template: "{{ ( as_timestamp(now()) - as_timestamp(state_attr('saver.saver', 'variables')[switch_entity_id + '_last_switch']|default('0')) | default(0, 'None') ) | int >= 20 }}"
     - service: system_log.write
       data:
         level: info

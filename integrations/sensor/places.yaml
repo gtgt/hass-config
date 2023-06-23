@@ -1,8 +1,8 @@
 - platform: places
   name: location_gsm
-  devicetracker_id: device_tracker.mi_9_lite
-  api_key: abcd@kani.hu
+  devicetracker_id: device_tracker.gsm_mi8
+  api_key: tcat.hu@gmail.com
 - platform: places
   name: location_gt
-  devicetracker_id: device_tracker.gt_mi8
+  devicetracker_id: device_tracker.gt_xm12
   api_key: gt@kani.hu

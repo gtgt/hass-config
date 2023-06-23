@@ -31,6 +31,7 @@ output:
   - platform: gpio
     id: led1
     pin: GPIO5
+    inverted: true
 
 switch:
   - platform: output

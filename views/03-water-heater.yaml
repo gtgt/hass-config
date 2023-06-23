@@ -143,6 +143,11 @@
             - sensor.aqua_ariston_energy_use_in_the_last_week
             - sensor.aqua_ariston_energy_use_in_the_last_month
             - sensor.aqua_ariston_energy_use_in_the_last_year
+        - type: entities
+          show_header_toggle: false
+          entities:
+            - entity: automation.aqua_ariston_mode
+              secondary_info: last-triggered
         - type: conditional
           conditions:
             - entity: sensor.aqua_ariston_active_errors

@@ -13,14 +13,24 @@ from homeassistant.components.climate import (
 from homeassistant.components.climate.const import (
     CURRENT_HVAC_HEAT,
     CURRENT_HVAC_IDLE,
-    HVAC_MODE_AUTO,
+    CURRENT_HVAC_COOL,
+    CURRENT_HVAC_DRY,
+    HVAC_MODE_HEAT_COOL,
     HVAC_MODE_HEAT,
+    HVAC_MODE_COOL,
+    HVAC_MODE_DRY,
+    HVAC_MODE_FAN_ONLY,
     HVAC_MODE_OFF,
     PRESET_AWAY,
     PRESET_ECO,
     PRESET_HOME,
     PRESET_NONE,
+    FAN_LOW,
+    FAN_MEDIUM,
+    FAN_HIGH,
+    FAN_AUTO,
     SUPPORT_PRESET_MODE,
+    SUPPORT_FAN_MODE,
     SUPPORT_TARGET_TEMPERATURE,
     SUPPORT_TARGET_TEMPERATURE_RANGE,
 )
@@ -52,33 +62,49 @@ from .const import (
     CONF_TARGET_PRECISION,
     CONF_TARGET_TEMPERATURE_DP,
     CONF_TEMPERATURE_STEP,
+    CONF_FAN_MODE_DP,
+    CONF_FAN_MODE_SET,
 )
 
 _LOGGER = logging.getLogger(__name__)
 
 HVAC_MODE_SETS = {
+    "cool/heat/fan/dry/auto": {
+        HVAC_MODE_COOL: "cool",
+        HVAC_MODE_HEAT: "heat",
+        HVAC_MODE_FAN_ONLY: "fan",
+        HVAC_MODE_DRY: "dry",
+        HVAC_MODE_HEAT_COOL: "auto",
+    },
+    "cold/warm/air/dehumidify/auto": {
+        HVAC_MODE_COOL: "cold",
+        HVAC_MODE_HEAT: "warm",
+        HVAC_MODE_FAN_ONLY: "air",
+        HVAC_MODE_DRY: "dehumidify",
+        HVAC_MODE_HEAT_COOL: "auto",
+    },
     "manual/auto": {
         HVAC_MODE_HEAT: "manual",
-        HVAC_MODE_AUTO: "auto",
+        HVAC_MODE_HEAT_COOL: "auto",
     },
     "Manual/Auto": {
         HVAC_MODE_HEAT: "Manual",
-        HVAC_MODE_AUTO: "Auto",
+        HVAC_MODE_HEAT_COOL: "Auto",
     },
     "Manual/Program": {
         HVAC_MODE_HEAT: "Manual",
-        HVAC_MODE_AUTO: "Program",
+        HVAC_MODE_HEAT_COOL: "Program",
     },
     "m/p": {
         HVAC_MODE_HEAT: "m",
-        HVAC_MODE_AUTO: "p",
+        HVAC_MODE_HEAT_COOL: "p",
     },
     "True/False": {
         HVAC_MODE_HEAT: True,
     },
     "1/0": {
         HVAC_MODE_HEAT: "1",
-        HVAC_MODE_AUTO: "0",
+        HVAC_MODE_HEAT_COOL: "0",
     },
 }
 HVAC_ACTION_SETS = {
@@ -104,6 +130,14 @@ PRESET_SETS = {
         PRESET_AWAY: "Holiday",
         PRESET_HOME: "Program",
         PRESET_NONE: "Manual",
+    },
+}
+FAN_MODE_SETS = {
+    "low/middle/high/auto": {
+        FAN_LOW: "low",
+        FAN_MEDIUM: "middle",
+        FAN_HIGH: "high",
+        FAN_AUTO: "auto",
     },
 }
 
@@ -137,6 +171,8 @@ def flow_schema(dps):
         vol.Optional(CONF_ECO_VALUE): str,
         vol.Optional(CONF_PRESET_DP): vol.In(dps),
         vol.Optional(CONF_PRESET_SET): vol.In(list(PRESET_SETS.keys())),
+        vol.Optional(CONF_FAN_MODE_DP): vol.In(dps),
+        vol.Optional(CONF_FAN_MODE_SET): vol.In(list(FAN_MODE_SETS.keys())),
         vol.Optional(CONF_TEMPERATURE_UNIT): vol.In(
             [TEMPERATURE_CELSIUS, TEMPERATURE_FAHRENHEIT]
         ),
@@ -164,6 +200,7 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
         self._current_temperature = None
         self._hvac_mode = None
         self._preset_mode = None
+        self._fan_mode = None
         self._hvac_action = None
         self._precision = self._config.get(CONF_PRECISION, DEFAULT_PRECISION)
         self._target_precision = self._config.get(
@@ -179,6 +216,8 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
         self._conf_hvac_action_set = HVAC_ACTION_SETS.get(
             self._config.get(CONF_HVAC_ACTION_SET), {}
         )
+        self._conf_fan_mode_dp = self._config.get(CONF_PRESET_DP)
+        self._conf_fan_mode_set = FAN_MODE_SETS.get(self._config.get(CONF_FAN_MODE_SET), {})
         self._conf_eco_dp = self._config.get(CONF_ECO_DP)
         self._conf_eco_value = self._config.get(CONF_ECO_VALUE, "ECO")
         self._has_presets = self.has_config(CONF_ECO_DP) or self.has_config(
@@ -196,6 +235,8 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
             supported_features = supported_features | SUPPORT_TARGET_TEMPERATURE_RANGE
         if self.has_config(CONF_PRESET_DP) or self.has_config(CONF_ECO_DP):
             supported_features = supported_features | SUPPORT_PRESET_MODE
+        if self.has_config(CONF_FAN_MODE_DP):
+            supported_features = supported_features | SUPPORT_FAN_MODE
         return supported_features
 
     @property
@@ -253,6 +294,44 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
                     self._current_temperature + self._precision
                 ) > self._target_temperature:
                     self._hvac_action = CURRENT_HVAC_IDLE
+            if self._hvac_mode == HVAC_MODE_COOL:
+                if self._current_temperature > (
+                    self._target_temperature - self._precision
+                ):
+                    self._hvac_action = CURRENT_HVAC_COOL
+                if self._current_temperature == (
+                    self._target_temperature - self._precision
+                ):
+                    if self._hvac_action == CURRENT_HVAC_COOL:
+                        self._hvac_action = CURRENT_HVAC_COOL
+                    if self._hvac_action == CURRENT_HVAC_IDLE:
+                        self._hvac_action = CURRENT_HVAC_IDLE
+                if (
+                    self._current_temperature + self._precision
+                ) < self._target_temperature:
+                    self._hvac_action = CURRENT_HVAC_IDLE
+            if self._hvac_mode == HVAC_MODE_HEAT_COOL:
+                if self._current_temperature < (
+                    self._target_temperature - self._precision
+                ):
+                    self._hvac_action = CURRENT_HVAC_HEAT
+                if self._current_temperature == (
+                    self._target_temperature - self._precision
+                ):
+                    if self._hvac_action == CURRENT_HVAC_HEAT:
+                        self._hvac_action = CURRENT_HVAC_HEAT
+                    if self._hvac_action == CURRENT_HVAC_COOL:
+                        self._hvac_action = CURRENT_HVAC_COOL
+                    if self._hvac_action == CURRENT_HVAC_IDLE:
+                        self._hvac_action = CURRENT_HVAC_IDLE
+                if (
+                    self._current_temperature + self._precision
+                ) > self._target_temperature:
+                    self._hvac_action = CURRENT_HVAC_COOL
+            if self._hvac_mode == HVAC_MODE_FAN_ONLY:
+                self._hvac_action = CURRENT_HVAC_IDLE
+            if self._hvac_mode == HVAC_MODE_DRY:
+                self._hvac_action = CURRENT_HVAC_DRY
             return self._hvac_action
         return self._hvac_action
 
@@ -289,12 +368,15 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
     @property
     def fan_mode(self):
         """Return the fan setting."""
-        return NotImplementedError()
+        return self._fan_mode
 
     @property
     def fan_modes(self):
         """Return the list of available fan modes."""
-        return NotImplementedError()
+        if not self.has_config(CONF_FAN_MODE_DP):
+            return None
+        fan_modes = list(self._conf_fan_mode_set)
+        return fan_modes
 
     async def async_set_temperature(self, **kwargs):
         """Set new target temperature."""
@@ -304,9 +386,12 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
                 temperature, self._config[CONF_TARGET_TEMPERATURE_DP]
             )
 
-    def set_fan_mode(self, fan_mode):
+    async def async_set_fan_mode(self, fan_mode):
         """Set new target fan mode."""
-        return NotImplementedError()
+        if self.has_config(CONF_FAN_MODE_DP):
+            await self._device.set_dp(
+                self._conf_fan_mode_set[fan_mode], self._conf_fan_mode_dp
+            )
 
     async def async_set_hvac_mode(self, hvac_mode):
         """Set new target operation mode."""
@@ -391,7 +476,17 @@ class LocaltuyaClimate(LocalTuyaEntity, ClimateEntity):
                         break
                 else:
                     # in case hvac mode and preset share the same dp
-                    self._hvac_mode = HVAC_MODE_AUTO
+                    self._hvac_mode = HVAC_MODE_HEAT_COOL
+
+        # Update Fan mode
+        if self.has_config(CONF_FAN_MODE_DP):
+            for mode, value in self._conf_fan_mode_set.items():
+                if self.dps_conf(CONF_FAN_MODE_DP) == value:
+                    self._fan_mode = mode
+                    break
+            else:
+                # in case fan mode not found
+                self._fan_mode = FAN_AUTO
 
         # Update the current action
         for action, value in self._conf_hvac_action_set.items():

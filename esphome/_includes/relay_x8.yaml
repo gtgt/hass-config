@@ -1,0 +1,79 @@
+packages:
+  common: !include common.yaml
+  board: !include board/esp12e.yaml
+
+substitutions:
+  sw1_inverted: "no"
+  sw2_inverted: "no"
+  sw3_inverted: "no"
+  sw4_inverted: "no"
+  sw5_inverted: "no"
+  sw6_inverted: "no"
+  sw7_inverted: "no"
+  sw8_inverted: "no"
+
+switch:
+  - platform: gpio
+    id: sw1
+    name: ${name}_${sw1_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO5
+      mode: OUTPUT
+      inverted: ${sw1_inverted}
+  - platform: gpio
+    id: sw2
+    name: ${name}_${sw2_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO4
+      mode: OUTPUT
+      inverted: ${sw2_inverted}
+  - platform: gpio
+    id: sw3
+    name: ${name}_${sw3_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO0
+      mode: OUTPUT
+      inverted: ${sw3_inverted}
+  - platform: gpio
+    id: sw4
+    name: ${name}_${sw4_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO15
+      mode: OUTPUT
+      inverted: ${sw4_inverted}
+  - platform: gpio
+    id: sw5
+    name: ${name}_${sw5_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO13
+      mode: OUTPUT
+      inverted: ${sw5_inverted}
+  - platform: gpio
+    id: sw6
+    name: ${name}_${sw6_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO12
+      mode: OUTPUT
+      inverted: ${sw6_inverted}
+  - platform: gpio
+    id: sw7
+    name: ${name}_${sw7_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO14
+      mode: OUTPUT
+      inverted: ${sw7_inverted}
+  - platform: gpio
+    id: sw8
+    name: ${name}_${sw8_name}
+    icon: ${sw_icon}
+    pin:
+      number: GPIO16
+      mode: OUTPUT
+      inverted: ${sw8_inverted}

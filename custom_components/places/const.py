@@ -9,6 +9,9 @@ from homeassistant.const import (
 )
 
 DOMAIN = "places"
+VERSION = "v2.4"
+EVENT_TYPE = DOMAIN + "_state_update"
+ENTITY_ID_FORMAT = Platform.SENSOR + ".{}"
 
 # Defaults
 DEFAULT_EXTENDED_ATTR = False
@@ -98,11 +101,12 @@ ATTR_POSTAL_CODE = "postal_code"
 ATTR_POSTAL_TOWN = "postal_town"
 ATTR_PREVIOUS_STATE = "previous_state"
 ATTR_REGION = "state_province"
+ATTR_SHOW_DATE = "show_date"
 ATTR_STATE_ABBR = "state_abbr"
 ATTR_STREET = "street"
 ATTR_STREET_REF = "street_ref"
 ATTR_STREET_NUMBER = "street_number"
-ATTR_UPDATES_SKIPPED = "updates_skipped"
+# ATTR_UPDATES_SKIPPED = "updates_skipped"
 ATTR_WIKIDATA_DICT = "wikidata_dict"
 ATTR_WIKIDATA_ID = "wikidata_id"
 
@@ -149,7 +153,6 @@ RESET_ATTRIBUTE_LIST = [
     ATTR_STREET_NUMBER,
     ATTR_STREET,
     ATTR_STREET_REF,
-    ATTR_UPDATES_SKIPPED,
     ATTR_WIKIDATA_DICT,
     ATTR_WIKIDATA_ID,
 ]
@@ -209,7 +212,6 @@ JSON_IGNORE_ATTRIBUTE_LIST = [
     ATTR_LOCATION_CURRENT,
     ATTR_LOCATION_PREVIOUS,
     ATTR_PREVIOUS_STATE,
-    ATTR_UPDATES_SKIPPED,
 ]
 JSON_ATTRIBUTE_LIST = [
     ATTR_CITY,
@@ -255,6 +257,7 @@ JSON_ATTRIBUTE_LIST = [
     ATTR_STREET_REF,
     ATTR_WIKIDATA_DICT,
     ATTR_WIKIDATA_ID,
+    ATTR_SHOW_DATE,
 ]
 EVENT_ATTRIBUTE_LIST = [
     ATTR_PLACE_NAME,
@@ -319,6 +322,7 @@ DISPLAY_OPTIONS_MAP = {
     "place_neighbourhood": ATTR_PLACE_NEIGHBOURHOOD,
     "city": ATTR_CITY,
     "city_clean": ATTR_CITY_CLEAN,
+    "postal_town": ATTR_POSTAL_TOWN,
     "region": ATTR_REGION,
     "state": ATTR_REGION,
     "state_abbr": ATTR_STATE_ABBR,

@@ -4,22 +4,22 @@
   climate.ac:
     friendly_name: "Klíma"
     icon: mdi:air-conditioner
-  climate.ac_study:
+  climate.t_study:
     friendly_name: "Dolgozó"
     icon: mdi:thermostat-box
-  climate.ac_childa:
+  climate.t_childa:
     friendly_name: "Máté"
     icon: mdi:thermostat-box
-  climate.ac_childb:
+  climate.t_childb:
     friendly_name: "Milán"
     icon: mdi:thermostat-box
-  climate.ac_bedroom:
+  climate.t_bedroom:
     friendly_name: "Háló"
     icon: mdi:thermostat-box
-  climate.ac_kitchen:
+  climate.t_kitchen:
     friendly_name: "Konyha"
     icon: mdi:thermostat-box
-  climate.ac_livingroom:
+  climate.t_livingroom:
     friendly_name: "Nappali"
     icon: mdi:thermostat-box
     

@@ -8,15 +8,16 @@
       "name": "energy",
       "friendly_name": "",
       "mac_address": "18:FE:34:E0:C1:2A",
-      "compilation_time": "Feb 10 2023, 20:36:27",
+      "compilation_time": "Apr 10 2023, 00:36:58",
       "model": "d1_mini",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.8",
+      "esphome_version": "2023.3.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0
+      "bluetooth_proxy_version": 0,
+      "voice_assistant_version": 0
     },
     "services": [
       {
@@ -34,6 +35,19 @@
       "major": 1,
       "minor": 7
     },
+    "binary_sensor": [
+      {
+        "object_id": "energy_status",
+        "key": 894977922,
+        "name": "energy_status",
+        "unique_id": "energybinary_sensorenergy_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "sensor": [
       {
         "object_id": "energy_up_time",
@@ -78,21 +92,6 @@
         "accuracy_decimals": 2,
         "force_update": false,
         "state_class": 1,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "energy_meter_kwh",
-        "key": 867004720,
-        "name": "energy_meter_kwh",
-        "unique_id": "energysensorenergy_meter_kwh",
-        "disabled_by_default": false,
-        "icon": "mdi:counter",
-        "entity_category": 0,
-        "device_class": "energy",
-        "unit_of_measurement": "kWh",
-        "accuracy_decimals": 3,
-        "force_update": false,
-        "state_class": 2,
         "last_reset_type": 0
       },
       {
@@ -364,22 +363,24 @@
         "force_update": false,
         "state_class": 1,
         "last_reset_type": 0
+      },
+      {
+        "object_id": "energy_meter_kwh",
+        "key": 867004720,
+        "name": "energy_meter_kwh",
+        "unique_id": "energysensorenergy_meter_kwh",
+        "disabled_by_default": false,
+        "icon": "mdi:counter",
+        "entity_category": 0,
+        "device_class": "energy",
+        "unit_of_measurement": "kWh",
+        "accuracy_decimals": 3,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
       }
     ],
     "text_sensor": [],
-    "binary_sensor": [
-      {
-        "object_id": "energy_status",
-        "key": 894977922,
-        "name": "energy_status",
-        "unique_id": "energybinary_sensorenergy_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "switch": [
       {
         "object_id": "energy_restart",

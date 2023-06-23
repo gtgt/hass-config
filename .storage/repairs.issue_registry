@@ -26,25 +26,32 @@
         "issue_id": "deprecated_yaml"
       },
       {
-        "created": "2023-01-26T15:14:15.884163+00:00",
-        "dismissed_version": "2023.1.6",
-        "domain": "hassio",
-        "is_persistent": false,
-        "issue_id": "unsupported_system_software"
-      },
-      {
-        "created": "2023-02-05T01:06:22.963804+00:00",
-        "dismissed_version": "2023.2.3",
-        "domain": "esphome",
-        "is_persistent": false,
-        "issue_id": "api_password_deprecated-DC:4F:22:74:9A:47"
-      },
-      {
         "created": "2023-02-05T01:06:24.147399+00:00",
         "dismissed_version": "2023.2.3",
         "domain": "esphome",
         "is_persistent": false,
         "issue_id": "api_password_deprecated-4C:11:AE:0C:44:7F"
+      },
+      {
+        "created": "2023-05-05T15:20:49.109305+00:00",
+        "dismissed_version": "2023.6.0",
+        "domain": "workday",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml"
+      },
+      {
+        "created": "2023-06-08T22:10:18.058841+00:00",
+        "dismissed_version": null,
+        "domain": "hassio",
+        "is_persistent": false,
+        "issue_id": "0699f9e6a60b488cae1d30e164108621"
+      },
+      {
+        "created": "2023-06-14T17:32:17.830005+00:00",
+        "dismissed_version": "2023.6.1",
+        "domain": "hassio",
+        "is_persistent": false,
+        "issue_id": "unsupported_system_software"
       }
     ]
   }

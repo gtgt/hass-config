@@ -1,1 +1,1 @@
-":-( EverywareCloud error from 0080E1BF731F (Http status: 499 - Offline)"
+":-( EverywareCloud error from 0080E1BF731F (Http status: 0 - Timeout)"

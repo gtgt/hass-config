@@ -2,7 +2,7 @@
     name: babacam1
     still_image_url: https://www.pngitem.com/pimgs/m/193-1938855_security-camera-clip-art-map-of-eu-member.png
     #content_type: image/png
-    stream_source: rtsp://192.168.1.85:554/user=admin_password=jah56789S_channel=1_stream=0.sdp
+    stream_source: rtsp://babacam1.lan:554/user=admin_password=jah56789S_channel=1_stream=0.sdp
     #framerate: 5
     verify_ssl: false
 

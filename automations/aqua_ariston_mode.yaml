@@ -1,0 +1,14 @@
+- id: aqua_ariston_mode
+  initial_state: on
+  alias: Aqua Ariston Mode
+  trigger:
+    - platform: state
+      entity_id:
+        - sensor.aqua_ariston_average_showers
+        - sensor.aqua_ariston_required_showers
+  condition: "{{ states('select.aqua_ariston_boiler_mode') == 'manual' and states('sensor.aqua_ariston_average_showers') >=  states('sensor.aqua_ariston_required_showers') }}"
+  action:
+    - service: aquaariston.aqua_set_data
+      data:
+        entity_id: water_heater.aqua_ariston
+        mode: program

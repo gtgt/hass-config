@@ -80,9 +80,10 @@
       columns: 2
       cards:
       - type: custom:thermostat-card
-        entity: climate.ac_study
+        entity: climate.t_study
         title: Dolgozó
         pending: 0
+        step: 1
       - type: custom:thermostat-card
         entity: climate.t_bedroom
         title: Háló
@@ -96,9 +97,10 @@
         title: Milán
         pending: 0
       - type: custom:thermostat-card
-        entity: climate.ac_kitchen
+        entity: climate.t_kitchen
         title: Konyha
         pending: 0
+        step: 1
       - type: custom:thermostat-card
         entity: climate.t_livingroom
         title: Nappali

@@ -16,13 +16,27 @@
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0
+      "bluetooth_proxy_version": 0,
+      "voice_assistant_version": 0
     },
     "services": [],
     "api_version": {
       "major": 1,
       "minor": 7
     },
+    "switch": [
+      {
+        "object_id": "terrace_led_restart",
+        "key": 2539114339,
+        "name": "terrace_led_restart",
+        "unique_id": "terrace_ledswitchterrace_led_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "light": [
       {
         "object_id": "terrace_led",
@@ -77,19 +91,6 @@
       }
     ],
     "text_sensor": [],
-    "switch": [
-      {
-        "object_id": "terrace_led_restart",
-        "key": 2539114339,
-        "name": "terrace_led_restart",
-        "unique_id": "terrace_ledswitchterrace_led_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
     "binary_sensor": [
       {
         "object_id": "terrace_led_status",

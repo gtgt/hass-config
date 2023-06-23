@@ -27,7 +27,7 @@
         - binary_sensor.espcam1_pir
 
     - type: media-control
-      entity: media_player.qbox
+      entity: media_player.x96
     - type: entity-filter
       show_empty: false
       state_filter:

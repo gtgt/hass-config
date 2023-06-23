@@ -5,11 +5,11 @@
     - platform: state
       entity_id:
         - climate.ac
-        - climate.ac_study
+        - climate.t_study
         - climate.t_childa
         - climate.t_childb
         - climate.t_bedroom
-        - climate.ac_kitchen
+        - climate.t_kitchen
         - climate.t_livingroom
   # fan_only, dry, cool, heat, heat_cool, off
   condition: "{{ trigger.from_state.state != trigger.to_state.state and trigger.to_state.state in ['heat', 'cool', 'heat_cool', 'fan_only'] }}"
@@ -17,22 +17,22 @@
     - repeat:
         for_each:
           - climate.ac
-          - climate.ac_study
+          - climate.t_study
           - climate.t_childa
           - climate.t_childb
           - climate.t_bedroom
-          - climate.ac_kitchen
+          - climate.t_kitchen
           - climate.t_livingroom
         sequence:
           - if:
               - condition: template
-                value_template: "{{ states(repeat.item) != 'off' }}"
+                value_template: "{{ states(repeat.item) in ['off', trigger.to_state.state] }}"
             then:
               - service: system_log.write
                 data:
                   level: info
                   message: >
-                    Switch {{ repeat.item }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!
+                    Sync {{ repeat.item }}: {{ states(repeat.item) }} -> {{ trigger.to_state.state }} by {{ trigger.entity_id }}: {{ trigger.from_state.state }} -> {{ trigger.to_state.state }}!
               - service: climate.set_hvac_mode
                 data:
                   entity_id: "{{ repeat.item }}"

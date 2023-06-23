@@ -35,6 +35,7 @@ CONF_MODEL = "model"
 CONF_PRODUCT_KEY = "product_key"
 CONF_PRODUCT_NAME = "product_name"
 CONF_USER_ID = "user_id"
+CONF_ENABLE_ADD_ENTITIES = "add_entities"
 
 
 CONF_ACTION = "action"
@@ -101,6 +102,8 @@ CONF_HVAC_ACTION_DP = "hvac_action_dp"
 CONF_HVAC_ACTION_SET = "hvac_action_set"
 CONF_ECO_DP = "eco_dp"
 CONF_ECO_VALUE = "eco_value"
+CONF_FAN_MODE_DP = "fan_mode_dp"
+CONF_FAN_MODE_SET = "fan_mode_set"
 
 # vacuum
 CONF_POWERGO_DP = "powergo_dp"

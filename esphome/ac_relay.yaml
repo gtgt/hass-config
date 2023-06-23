@@ -1,82 +1,34 @@
+packages:
+  t_tuya: !include _includes/relay_x8.yaml
+
 substitutions:
   name: ac_relay
-  icon: "mdi:air-conditioner"
+  sw_icon: "mdi:switch"
+  sw1_name: bedroom
+  sw1_inverted: "yes"
+  sw2_name: study
+  sw3_name: livingroom
+  sw4_name: childb
+  sw5_name: childa
+  sw6_name: kitchen
+  sw7_name: sw7
+  sw8_name: ventillation
 
-packages:
-  common: !include _includes/common.yaml
+dallas:
+  - pin: GPIO2
+    update_interval: 20s
 
-esphome:
-  platform: ESP8266
-  board: d1_mini
-  esp8266_restore_from_flash: true
-  
-status_led:
-  pin:
-    number: D4
-    inverted: true
-
-switch:
-  - platform: gpio
-    id: bedroom
-    name: ${name}_bedroom
-    icon: ${icon}
-    pin:
-      number: D1 #5
-      mode: OUTPUT
-      inverted: no
-  - platform: gpio
-    id: r2
-    name: ${name}_r2
-    icon: ${icon}
-    pin:
-      number: D0 #16
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: livingroom
-    name: ${name}_livingroom
-    icon: ${icon}
-    pin:
-      number: D2
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: childb
-    name: ${name}_childb
-    icon: ${icon}
-    pin:
-      number: D3
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: childa
-    name: ${name}_childa
-    icon: ${icon}
-    pin:
-      number: D5
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: study
-    name: ${name}_study
-    icon: ${icon}
-    pin:
-      number: D6
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: kitchen
-    name: ${name}_kitchen
-    icon: ${icon}
-    pin:
-      number: D7
-      mode: OUTPUT
-      inverted: yes
-  - platform: gpio
-    id: ventillation
-    name: ${name}_ventillation
-    icon: "mdi:fan"
-    pin:
-      number: D8
-      mode: OUTPUT
-      inverted: no
+sensor:
+  - platform: dallas
+    id: temp1
+    name: ac_sensor_temp_ac_outlet
+    address: 0x9902099246320028
+    filters:
+      - offset: 0
+  - platform: dallas
+    id: temp2
+    name: ac_sensor_temp_ac_gas_tube
+    address: 0x99020791775C3828
+    filters:
+      - offset: 0
+      

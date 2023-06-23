@@ -4,25 +4,63 @@
   "key": "esphome.9c74c9848966cc4dcff623436ff337da",
   "data": {
     "device_info": {
-      "uses_password": true,
+      "uses_password": false,
       "name": "energy2",
       "friendly_name": "",
       "mac_address": "DC:4F:22:74:9A:47",
-      "compilation_time": "Dec 25 2022, 04:43:53",
+      "compilation_time": "Mar  7 2023, 22:02:41",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.3",
+      "esphome_version": "2023.2.4",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0
+      "bluetooth_proxy_version": 0,
+      "voice_assistant_version": 0
     },
     "services": [],
     "api_version": {
       "major": 1,
       "minor": 7
     },
+    "switch": [
+      {
+        "object_id": "energy2_restart",
+        "key": 4116582893,
+        "name": "energy2_restart",
+        "unique_id": "energy2switchenergy2_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy2_reset",
+        "key": 1568442073,
+        "name": "energy2_reset",
+        "unique_id": "energy2switchenergy2_reset",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "energy2_status",
+        "key": 3600812850,
+        "name": "energy2_status",
+        "unique_id": "energy2binary_sensorenergy2_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "sensor": [
       {
         "object_id": "energy2_up_time",
@@ -36,7 +74,7 @@
         "unit_of_measurement": "s",
         "accuracy_decimals": 0,
         "force_update": false,
-        "state_class": 2,
+        "state_class": 0,
         "last_reset_type": 0
       },
       {
@@ -175,43 +213,6 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": [],
-    "binary_sensor": [
-      {
-        "object_id": "energy2_status",
-        "key": 3600812850,
-        "name": "energy2_status",
-        "unique_id": "energy2binary_sensorenergy2_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
-    "switch": [
-      {
-        "object_id": "energy2_restart",
-        "key": 4116582893,
-        "name": "energy2_restart",
-        "unique_id": "energy2switchenergy2_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy2_reset",
-        "key": 1568442073,
-        "name": "energy2_reset",
-        "unique_id": "energy2switchenergy2_reset",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ]
+    "text_sensor": []
   }
 }

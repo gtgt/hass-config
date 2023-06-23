@@ -72,7 +72,7 @@
     - service: climate.turn_on
       data:
         entity_id: climate.ac
-    #- service: climate.set_hvac_mode
-    #  data:
-    #    entity_id: climate.ac
-    #    hvac_mode: "{{ states('climate.t_' + trigger.entity_id|regex_findall_index(find='\\.ac_relay_(.*)', index=0, ignorecase=False) ) }}"
+    - service: climate.set_hvac_mode
+      data:
+        entity_id: climate.ac
+        hvac_mode: "{{ states('climate.t_' + trigger.entity_id|regex_findall_index(find='\\.ac_relay_(.*)', index=0, ignorecase=False) ) }}"

@@ -9,7 +9,7 @@
   action:
     - service: script.turn_switch_by_climate
       data_template:
-        climate_entity_id: climate.ac_study
+        climate_entity_id: climate.t_study
         switch_entity_id: switch.ac_relay_study
     - service: script.turn_switch_by_climate
       data_template:
@@ -25,7 +25,7 @@
         switch_entity_id: switch.ac_relay_childb
     - service: script.turn_switch_by_climate
       data_template:
-        climate_entity_id: climate.ac_kitchen
+        climate_entity_id: climate.t_kitchen
         switch_entity_id: switch.ac_relay_kitchen
     - service: script.turn_switch_by_climate
       data_template:
@@ -38,11 +38,11 @@
   trigger:
     - platform: state
       entity_id:
-        - climate.ac_study
+        - climate.t_study
         - climate.t_bedroom
         - climate.t_childa
         - climate.t_childb
-        - climate.ac_kitchen
+        - climate.t_kitchen
         - climate.t_livingroom
       attribute: hvac_action
   action:

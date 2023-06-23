@@ -1,1 +1,1 @@
-{"gw": "0080E1BF731F", "on": true, "mode": 5, "state": 0, "eco": false, "avShw": 1, "reqShw": 3, "temp": 37.0, "tmP1": "00:00:00", "shwP1": 0, "rmTm": "00:00:00", "maxAvShw": 4, "maxReqShw": 4, "procReqShw": 2}
+{"gw": "0080E1BF731F", "on": true, "mode": 5, "state": 0, "eco": false, "avShw": 0, "reqShw": 3, "temp": 23.0, "tmP1": "00:00:00", "shwP1": 0, "rmTm": "00:00:00", "maxAvShw": 4, "maxReqShw": 4, "procReqShw": 3}

@@ -34,10 +34,10 @@
     state: "{{ ((states('sensor.grid_kwh_monthly')|float * -1) * states('sensor.energy_tariff_a1')|float)|round }}"
     device_class: monetary
     unit_of_measurement: HUF
-    state_class: total_increasing
+    state_class: total
 
   - name: energy2_cost_monthly
     state: "{{ ((states('sensor.energy2_kwh_monthly')|float / 1000) * states('sensor.energy_tariff_h')|float)|round }}"
     device_class: monetary
     unit_of_measurement: HUF
-    state_class: total_increasing
+    state_class: total
