@@ -46,6 +46,8 @@ XIAOMI_TYPE_DICT = {
     0x0391: "MMC-W505",
     0x03DD: "MUE4094RT",
     0x0489: "M1S-T500",
+    0x0806: "T700",
+    0x1790: "T700i",
     0x0A8D: "RTCGQ02LM",
     0x0863: "SJWS01LM",
     0x045C: "V-SK152",
@@ -411,10 +413,10 @@ def obj1001(xobj, device_type):
         elif button_type == 8:
             bathroom_remote_command = "heat"
 
-        # press type and dimmer
+        # press type and dimmer steps
         button_press_type = "no press"
         btn_switch_press_type = "no press"
-        dimmer = None
+        steps = None
 
         if press == 0:
             button_press_type = "single press"
@@ -428,24 +430,24 @@ def obj1001(xobj, device_type):
         elif press == 3:
             if button_type == 0:
                 button_press_type = "short press"
-                dimmer = value
+                steps = value
             if button_type == 1:
                 button_press_type = "long press"
-                dimmer = value
+                steps = value
         elif press == 4:
             if button_type == 0:
                 if value <= 127:
                     button_press_type = "rotate right"
-                    dimmer = value
+                    steps = value
                 else:
                     button_press_type = "rotate left"
-                    dimmer = 256 - value
+                    steps = 256 - value
             elif button_type <= 127:
                 button_press_type = "rotate right (pressed)"
-                dimmer = button_type
+                steps = button_type
             else:
                 button_press_type = "rotate left (pressed)"
-                dimmer = 256 - button_type
+                steps = 256 - button_type
         elif press == 5:
             button_press_type = "short press"
         elif press == 6:
@@ -475,8 +477,8 @@ def obj1001(xobj, device_type):
             result["bathroom heater remote"] = bathroom_remote_command
             result["button"] = button_press_type
         elif device_type == "YLKG07YL/YLKG08YL":
-            result["dimmer"] = dimmer
-            result["button"] = button_press_type
+            result["steps"] = steps
+            result["dimmer"] = button_press_type
         elif device_type == "K9B-1BTN":
             result["button switch"] = btn_switch_press_type
             result["one btn switch"] = one_btn_switch
@@ -568,13 +570,13 @@ def obj1013(xobj):
 
 
 def obj1014(xobj):
-    """Moisture"""
-    return {"moisture": xobj[0]}
+    """Moisture detected (wet/dry)"""
+    return {"moisture detected": xobj[0]}
 
 
 def obj1015(xobj):
     """Smoke"""
-    return {"smoke detector": xobj[0]}
+    return {"smoke": xobj[0]}
 
 
 def obj1017(xobj):
@@ -667,6 +669,27 @@ def obj2000(xobj):
         return {"temperature": body_temp, "battery": bat}
     else:
         return {}
+
+
+def obj3003(xobj):
+    """Brushing"""
+    result = {}
+    print("brush %s", xobj.hex())
+    start_obj = xobj[0]
+    if start_obj == 0:
+        # Start of brushing
+        result["toothbrush"] = 1
+        start_time = struct.unpack('<L', xobj[1:5])[0]
+        result["start time"] = datetime.fromtimestamp(start_time)
+    elif start_obj == 1:
+        # End of brushing
+        result["toothbrush"] = 0
+        end_time = struct.unpack('<L', xobj[1:5])[0]
+        result["end time"] = datetime.fromtimestamp(end_time)
+
+    if len(xobj) == 6:
+        result["score"] = xobj[5]
+    return result
 
 
 # The following data objects are device specific. For now only added for
@@ -1023,6 +1046,7 @@ xiaomi_dataobject_dict = {
     0x100D: obj100d,
     0x100E: obj100e,
     0x2000: obj2000,
+    0x3003: obj3003,
     0x4803: obj4803,
     0x4804: obj4804,
     0x4805: obj4805,
@@ -1270,7 +1294,9 @@ def decrypt_mibeacon_v4_v5(self, data, i, xiaomi_mac):
             return None
     except KeyError:
         # no encryption key found
-        _LOGGER.error("No encryption key found for device with MAC %s", to_mac(xiaomi_mac))
+        if xiaomi_mac not in self.no_key_message:
+            _LOGGER.error("No encryption key found for device with MAC %s", to_mac(xiaomi_mac))
+            self.no_key_message.append(xiaomi_mac)
         return None
 
     nonce = b"".join([xiaomi_mac[::-1], data[6:9], data[-7:-4]])

@@ -1,4 +1,6 @@
 """The tests for the Xiaomi ble_parser."""
+import datetime
+
 from ble_monitor.ble_parser import BleParser
 
 
@@ -231,7 +233,7 @@ class TestXiaomi:
         assert sensor_msg["mac"] == "54EF44E39CBC"
         assert sensor_msg["packet"] == 102
         assert sensor_msg["data"]
-        assert sensor_msg["smoke detector"] == 1
+        assert sensor_msg["smoke"] == 1
         assert sensor_msg["rssi"] == -53
 
     def test_Xiaomi_JTYJGD03MI_press(self):
@@ -417,6 +419,34 @@ class TestXiaomi:
         assert sensor_msg["counter"] == 3
         assert sensor_msg["rssi"] == -36
 
+    def test_Xiaomi_T700(self):
+        """Test Xiaomi parser for T700."""
+        self.aeskeys = {}
+        data_string = "043e28020102010c483f34deed1c020106181695fe48580608c9480ef11281079733fc1400005644db41c6"
+        data = bytes(bytearray.fromhex(data_string))
+
+        aeskey = "1330b99cded13258acc391627e9771f7"
+
+        is_ext_packet = True if data[3] == 0x0D else False
+        mac = (data[8 if is_ext_packet else 7:14 if is_ext_packet else 13])[::-1]
+        mac_address = mac.hex()
+        p_mac = bytes.fromhex(mac_address.replace(":", "").lower())
+        p_key = bytes.fromhex(aeskey.lower())
+        self.aeskeys[p_mac] = p_key
+        # pylint: disable=unused-variable
+        ble_parser = BleParser(aeskeys=self.aeskeys)
+        sensor_msg, tracker_msg = ble_parser.parse_raw_data(data)
+
+        assert sensor_msg["firmware"] == "Xiaomi (MiBeacon V5 encrypted)"
+        assert sensor_msg["type"] == "T700"
+        assert sensor_msg["mac"] == "EDDE343F480C"
+        assert sensor_msg["packet"] == 201
+        assert sensor_msg["data"]
+        assert sensor_msg["toothbrush"] == 0
+        assert sensor_msg["score"] == 83
+        assert sensor_msg["end time"] == datetime.datetime(2023, 6, 29, 10, 50, 43)
+        assert sensor_msg["rssi"] == -58
+
     def test_Xiaomi_ZNMS16LM_fingerprint(self):
         """Test Xiaomi parser for ZNMS16LM."""
         data_string = "043e2a02010000918aeb441fd71e020106030295fe161695fe50449e0642918aeb441fd7060005ffffffff00a9"
@@ -511,8 +541,8 @@ class TestXiaomi:
         assert sensor_msg["mac"] == "F82441C5988B"
         assert sensor_msg["packet"] == 210
         assert sensor_msg["data"]
-        assert sensor_msg["dimmer"] == 1
-        assert sensor_msg["button"] == "short press"
+        assert sensor_msg["steps"] == 1
+        assert sensor_msg["dimmer"] == "short press"
         assert sensor_msg["rssi"] == -34
 
     def test_Xiaomi_YLKG07YL_rotate(self):
@@ -538,8 +568,8 @@ class TestXiaomi:
         assert sensor_msg["mac"] == "F82441C5988B"
         assert sensor_msg["packet"] == 54
         assert sensor_msg["data"]
-        assert sensor_msg["dimmer"] == 1
-        assert sensor_msg["button"] == "rotate left"
+        assert sensor_msg["steps"] == 1
+        assert sensor_msg["dimmer"] == "rotate left"
         assert sensor_msg["rssi"] == -17
 
     def test_Xiaomi_K9B(self):

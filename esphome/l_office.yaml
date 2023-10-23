@@ -1,0 +1,5 @@
+packages:
+  board: !include _includes/ds-1311wn.yaml
+
+substitutions:
+  name: l_office

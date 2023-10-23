@@ -83,6 +83,7 @@ class BleParser:
         self.lpacket_ids = {}
         self.movements_list = {}
         self.adv_priority = {}
+        self.no_key_message = []
 
     def parse_raw_data(self, data):
         """Parse the raw data."""
@@ -288,6 +289,13 @@ class BleParser:
                             # Jaalee
                             sensor_data = parse_jaalee(self, man_spec_data, mac, rssi)
                             break
+                        elif len(man_spec_data_list) == 2:
+                            # Teltonika Eye (can send both iBeacon and Teltonika data in one message)
+                            second_man_spec_data = man_spec_data_list[1]
+                            second_comp_id = (second_man_spec_data[3] << 8) | second_man_spec_data[2]
+                            if second_comp_id == 0x089A:
+                                sensor_data = parse_teltonika(self, second_man_spec_data, local_name, mac, rssi)
+                                break
                         else:
                             # iBeacon
                             sensor_data, tracker_data = parse_ibeacon(self, man_spec_data, mac, rssi)
@@ -323,6 +331,10 @@ class BleParser:
                         if len(man_spec_data_list) == 2:
                             man_spec_data = b"".join(man_spec_data_list)
                         sensor_data = parse_hormann(self, man_spec_data, mac, rssi)
+                        break
+                    elif comp_id == 0x089A:
+                        # Teltonika
+                        sensor_data = parse_teltonika(self, man_spec_data, local_name, mac, rssi)
                         break
                     elif comp_id == 0x094F and data_len == 0x15:
                         # Mikrotik
@@ -452,7 +464,7 @@ class BleParser:
                         # Inkbird IBS-TH
                         sensor_data = parse_inkbird(self, man_spec_data, local_name, mac, rssi)
                         break
-                    elif local_name[0:5] in ["TP357", "TP359"] and data_len == 0x07:
+                    elif local_name[0:5] in ["TP357", "TP359"] and data_len >= 0x07:
                         # Thermopro
                         sensor_data = parse_thermopro(self, man_spec_data, local_name[0:5], mac, rssi)
                         break

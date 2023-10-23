@@ -1,0 +1,7 @@
+libretiny:
+  board: cb2s
+  framework:
+    version: dev
+
+status_led:
+  pin: P7

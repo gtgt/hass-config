@@ -1,5 +1,5 @@
 packages:
-  t_tuya: !include _includes/relay_x8.yaml
+  board: !include _includes/relay_x8.yaml
 
 substitutions:
   name: ac_relay
@@ -13,6 +13,8 @@ substitutions:
   sw6_name: kitchen
   sw7_name: sw7
   sw8_name: ventillation
+  sw8_inverted: "yes"
+  sw8_restore_mode: RESTORE_DEFAULT_ON
 
 dallas:
   - pin: GPIO2

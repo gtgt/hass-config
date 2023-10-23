@@ -36,11 +36,6 @@ zeroconf:
 ssdp:
 dhcp:
 
-discovery:
-  ignore:
-    - yeelight
-#    - daikin
-
 logger:
   default: warn
   logs:

@@ -61,18 +61,25 @@
           entity: fan.pufi
           platform: xiaomi_miio
           aqi:
-            - entity_id: sensor.pufi_pm2_5
-              attribute: state
+            entity_id: sensor.pufi_pm2_5
+          #  attribute: state
           stats:
             - entity_id: sensor.pufi_filter_life_remaining
               unit: '%'
-              subtitle: "Szűrő élettartam"
-            - entity_id: sensor.pufi_pm2_5
-              subtitle: "Levegőminőség"
-              unit: "µg/m³"
+              subtitle: "Szűrő %"
+            - entity_id: sensor.pufi_filter_use
+              #value_template: '{{ (value | float(0) / 3600) | round(1) }}'
+              unit: "d"
+              subtitle: "Szűrő nap"
+            - entity_id: sensor.pufi_temperature
+              subtitle: "Hőmérséklet"
+              unit: "˚C"
+            - entity_id: sensor.pufi_humidity
+              subtitle: "Pára"
+              unit: "%"
             - entity_id: sensor.pufi_motor_speed
               unit: RPM
-              subtitle: "Motor sebesség"
+              subtitle: "Motor"
           show_name: true
           show_state: true
           show_toolbar: false

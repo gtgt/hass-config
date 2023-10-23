@@ -1,0 +1,47 @@
+- id: roberta_map_scan
+  alias: Roberta map scan
+  description: "Start/Stop Xiaomi Fast Scan Interval"
+  trigger:
+    - platform: state
+      entity_id:
+        - vacuum.roberta
+  condition: []
+  action:
+    - if:
+        - condition: or
+          conditions:
+          - condition: state
+            entity_id: vacuum.roberta
+            state: docked
+          - condition: state
+            entity_id: vacuum.roberta
+            state: error
+      then:
+        - service: automation.turn_off
+          data: {}
+          target:
+            entity_id: automation.roberta_map_update
+        - service: homeassistant.update_entity # updatet the card after be in docked state make sure that the last camera image is the one where the roborock is at home
+          data: {}
+          target:
+            entity_id: camera.roberta
+      else:
+        - service: automation.turn_on
+          data: {}
+          target:
+            entity_id: automation.roberta_map_update
+  mode: single
+- id: roberta_map_update
+  alias: Roberta map update
+  description: "Update Xiaomi Map Extractor"
+  trigger:
+    - platform: time_pattern
+      seconds: "15"
+  condition: []
+  action:
+    - service: homeassistant.update_entity
+      data: {}
+      target:
+        entity_id: camera.roberta
+  initial_state: "off"
+  mode: restart

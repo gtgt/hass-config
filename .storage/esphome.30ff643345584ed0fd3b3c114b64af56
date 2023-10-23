@@ -8,22 +8,47 @@
       "name": "hg01wt",
       "friendly_name": "",
       "mac_address": "DC:4F:22:14:FE:06",
-      "compilation_time": "Apr 10 2023, 01:14:34",
+      "compilation_time": "Jul 28 2023, 21:32:11",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2023.3.2",
+      "esphome_version": "2023.7.0-dev",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0,
-      "voice_assistant_version": 0
+      "voice_assistant_version": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0
     },
     "services": [],
     "api_version": {
       "major": 1,
-      "minor": 7
+      "minor": 9
     },
+    "switch": [
+      {
+        "object_id": "hg01wt_restart",
+        "key": 1200459538,
+        "name": "hg01wt_restart",
+        "unique_id": "hg01wtswitchhg01wt_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "hg01wt_switch1",
+        "key": 1269465230,
+        "name": "hg01wt_switch1",
+        "unique_id": "hg01wtswitchhg01wt_switch1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "binary_sensor": [
       {
         "object_id": "hg01wt_status",
@@ -80,30 +105,6 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": [],
-    "switch": [
-      {
-        "object_id": "hg01wt_restart",
-        "key": 1200459538,
-        "name": "hg01wt_restart",
-        "unique_id": "hg01wtswitchhg01wt_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "hg01wt_switch1",
-        "key": 1269465230,
-        "name": "hg01wt_switch1",
-        "unique_id": "hg01wtswitchhg01wt_switch1",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ]
+    "text_sensor": []
   }
 }

@@ -1,14 +1,22 @@
 {
-    "version": 1,
-    "minor_version": 1,
-    "key": "lovelace.lovelace_test",
-    "data": {
-        "config": {
-            "views": [
-                {
-                    "title": "Home"
-                }
-            ]
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.lovelace_test",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "cards": [
+            {
+              "type": "custom:weather-card",
+              "entity": "weather.owm",
+              "hourly_forecast": false,
+              "number_of_forecasts": "7"
+            }
+          ]
         }
+      ]
     }
+  }
 }

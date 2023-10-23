@@ -1,1 +1,1 @@
-":-( EverywareCloud error from 0080E1BF731F (Http status: 0 - Timeout) (FailureId: 170711215454)"
+":-( M2M platform error from 0080E1BF731F (Http status: 404 - Not Found) (FailureId: 170711215454)"

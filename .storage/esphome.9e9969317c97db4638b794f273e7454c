@@ -16,8 +16,9 @@
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "bluetooth_proxy_version": 0,
-      "voice_assistant_version": 0
+      "voice_assistant_version": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0
     },
     "services": [
       {
@@ -35,19 +36,6 @@
       "major": 1,
       "minor": 7
     },
-    "binary_sensor": [
-      {
-        "object_id": "energy_status",
-        "key": 894977922,
-        "name": "energy_status",
-        "unique_id": "energybinary_sensorenergy_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "sensor": [
       {
         "object_id": "energy_up_time",
@@ -381,6 +369,19 @@
       }
     ],
     "text_sensor": [],
+    "binary_sensor": [
+      {
+        "object_id": "energy_status",
+        "key": 894977922,
+        "name": "energy_status",
+        "unique_id": "energybinary_sensorenergy_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "switch": [
       {
         "object_id": "energy_restart",

@@ -14,15 +14,18 @@
         - switch.ac_relay_livingroom
         - climate.ac
   condition:
-    - condition: state
-      entity_id:
-        - switch.ac_relay_study
-        - switch.ac_relay_childa
-        - switch.ac_relay_childb
-        - switch.ac_relay_bedroom
-        - switch.ac_relay_kitchen
-        - switch.ac_relay_livingroom
-      state: 'off'
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id:
+          - switch.ac_relay_study
+          - switch.ac_relay_childa
+          - switch.ac_relay_childb
+          - switch.ac_relay_bedroom
+          - switch.ac_relay_kitchen
+          - switch.ac_relay_livingroom
+        state: 'off'
+      - "{{ (state_attr('automation.ac_auto_mode', 'current')|int) = 0 }}"
   action:
     - service: climate.turn_off
       data:

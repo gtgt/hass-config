@@ -26,7 +26,7 @@
         sequence:
           - if:
               - condition: template
-                value_template: "{{ states(repeat.item) in ['off', trigger.to_state.state] }}"
+                value_template: "{{ states(repeat.item) not in ['off', trigger.to_state.state] }}"
             then:
               - service: system_log.write
                 data:

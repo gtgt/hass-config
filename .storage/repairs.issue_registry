@@ -47,11 +47,39 @@
         "issue_id": "0699f9e6a60b488cae1d30e164108621"
       },
       {
-        "created": "2023-06-14T17:32:17.830005+00:00",
-        "dismissed_version": "2023.6.1",
+        "created": "2023-08-15T21:37:46.917113+00:00",
+        "dismissed_version": "2023.8.2",
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_workday"
+      },
+      {
+        "created": "2023-08-15T21:40:02.815013+00:00",
+        "dismissed_version": "2023.8.2",
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_generic"
+      },
+      {
+        "created": "2023-08-15T21:40:10.572301+00:00",
+        "dismissed_version": "2023.8.2",
+        "domain": "mqtt",
+        "is_persistent": false,
+        "issue_id": "entity_name_is_device_name_discovery"
+      },
+      {
+        "created": "2023-10-04T17:57:51.944634+00:00",
+        "dismissed_version": "2023.9.3",
         "domain": "hassio",
         "is_persistent": false,
         "issue_id": "unsupported_system_software"
+      },
+      {
+        "created": "2023-10-04T18:01:08.772693+00:00",
+        "dismissed_version": "2023.10.1",
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_configuration"
       }
     ]
   }

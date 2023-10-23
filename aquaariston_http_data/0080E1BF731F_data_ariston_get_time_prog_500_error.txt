@@ -1,1 +1,1 @@
-":-( EverywareCloud error from 0080E1BF731F (Http status: 0 - Timeout)"
+":-( M2M platform error from 0080E1BF731F (Http status: 502 - Bad Gateway)"

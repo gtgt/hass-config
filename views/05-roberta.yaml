@@ -39,3 +39,7 @@
         - template: vacuum_clean_zone
         - template: vacuum_goto
         - template: vacuum_follow_path
+    - type: entities
+      entities:
+        - automation.roberta_map_scan
+        - automation.roberta_map_update

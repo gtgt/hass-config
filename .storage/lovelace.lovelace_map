@@ -20,10 +20,10 @@
               "type": "map",
               "entities": [
                 {
-                  "entity": "device_tracker.gt_xm12"
+                  "entity": "person.gsm"
                 },
                 {
-                  "entity": "device_tracker.gsm_mi8"
+                  "entity": "person.gt"
                 }
               ],
               "dark_mode": true,
@@ -48,6 +48,15 @@
                   "secondary_info": "last-updated"
                 },
                 {
+                  "entity": "person.gt",
+                  "secondary_info": "last-updated"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
                   "entity": "device_tracker.gsm_mi8",
                   "secondary_info": "last-updated"
                 },
@@ -57,31 +66,10 @@
                 },
                 {
                   "entity": "sensor.location_gsm",
-                  "secondary_info": "last-updated",
-                  "name": "Mi8"
-                }
-              ]
-            },
-            {
-              "type": "glance",
-              "entities": [
-                {
-                  "entity": "sensor.gt_xm12_detected_activity",
-                  "name": "Tomi"
-                }
-              ],
-              "show_name": true,
-              "state_color": true
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "device_tracker.gt_mi8",
                   "secondary_info": "last-updated"
                 },
                 {
-                  "entity": "device_tracker.mi_9_lite",
+                  "entity": "person.gsm",
                   "secondary_info": "last-updated"
                 }
               ],
