@@ -1,0 +1,35 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "Device is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "data": {
+          "password": "Password",
+          "username": "Username",
+          "api_url_setting": "Ariston API url"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "extra_energy_features": "Extra energy related entities",
+          "scan_interval": "Zone Scan Interval (seconds)",
+          "energy_scan_interval": "Energy Scan Interval (minutes)",
+          "bus_errors_scan_interval": "Bus Errors Scan Interval (seconds)"
+        },
+        "title": "Configure Ariston"
+      }
+    }
+  }
+}

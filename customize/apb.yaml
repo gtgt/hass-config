@@ -1,5 +1,6 @@
   switch.apb_q0:
     friendly_name: "Dolgozó"
+    unique_id: 9b080b80-6293-4243-90b3-6ac2eefd14c7
   switch.apb_q1:
     friendly_name: "Háló"
   switch.apb_q2:

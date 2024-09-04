@@ -1,1 +1,1 @@
-":-( M2M platform error from 0080E1BF731F (Http status: 502 - Bad Gateway) (FailureId: 150904124016)"
+":-( M2M platform error from 0080E1BF731F (Http status: 404 - Not Found) (FailureId: 150904124016)"

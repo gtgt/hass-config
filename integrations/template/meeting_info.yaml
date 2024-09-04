@@ -1,0 +1,53 @@
+- binary_sensor:
+  - name: cal1_upcoming
+    device_class: running
+    state: "{{ states('calendar.cal1_o365') }}"
+    attributes:
+      summary: >
+        {% if state_attr('calendar.cal1_o365', 'message') %}
+          {{ state_attr('calendar.cal1_o365', 'message')|truncate(32,True) }}
+        {% elif state_attr('calendar.cal1_o365', 'data')|length %}
+          {{ state_attr('calendar.cal1_o365', 'data')[0]['summary']|truncate(32,True) }}
+        {% endif %}
+      start: >
+        {% if state_attr('calendar.cal1_o365', 'start_time') %}
+          {{ (as_timestamp(state_attr('calendar.cal1_o365', 'start_time'))|timestamp_local)[11:16] }}
+        {% elif state_attr('calendar.cal1_o365', 'data')|length %}
+          {{ (as_timestamp(state_attr('calendar.cal1_o365', 'data')[0]['start'])|timestamp_local)[11:16] }}
+        {% endif %}
+      end: >
+        {% if state_attr('calendar.cal1_o365', 'end_time') %}
+          {{ (as_timestamp(state_attr('calendar.cal1_o365', 'end_time'))|timestamp_local)[11:16] }}
+        {% elif state_attr('calendar.cal1_o365', 'data')|length %}
+          {{ (as_timestamp(state_attr('calendar.cal1_o365', 'data')[0]['end'])|timestamp_local)[11:16] }}
+        {% endif %}
+  - name: cal2_upcoming
+    device_class: running
+    state: "{{ states('calendar.cal2_o365') }}"
+    attributes:
+      summary: >
+        {% if state_attr('calendar.cal2_o365', 'message') %}
+          {{ state_attr('calendar.cal2_o365', 'message')|truncate(32,True) }}
+        {% elif state_attr('calendar.cal2_o365', 'data')|length %}
+          {{ state_attr('calendar.cal2_o365', 'data')[0]['summary']|truncate(32,True) }}
+        {% endif %}
+      start: >
+        {% if state_attr('calendar.cal2_o365', 'start_time') %}
+          {{ (as_timestamp(state_attr('calendar.cal2_o365', 'start_time'))|timestamp_local)[11:16] }}
+        {% elif state_attr('calendar.cal2_o365', 'data')|length %}
+          {{ (as_timestamp(state_attr('calendar.cal2_o365', 'data')[0]['start'])|timestamp_local)[11:16] }}
+        {% endif %}
+      end: >
+        {% if state_attr('calendar.cal2_o365', 'end_time') %}
+          {{ (as_timestamp(state_attr('calendar.cal2_o365', 'end_time'))|timestamp_local)[11:16] }}
+        {% elif state_attr('calendar.cal2_o365', 'data')|length %}
+          {{ (as_timestamp(state_attr('calendar.cal2_o365', 'data')[0]['end'])|timestamp_local)[11:16] }}
+        {% endif %}
+- sensor:
+  - name: teams_chat
+    device_class: timestamp
+    state: "{{ states('sensor.teams_user_chat') }}"
+    attributes:
+      time: "{{ (as_timestamp(states('sensor.teams_user_chat'))|timestamp_local)[11:16] }}"
+      from: "{{ state_attr('sensor.teams_user_chat', 'from_display_name')|truncate(32,True) }}"
+      content: "{{ state_attr('sensor.teams_user_chat', 'content')|striptags|wordwrap(32,True) }}"

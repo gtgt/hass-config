@@ -1,0 +1,38 @@
+substitutions:
+  name: c-office
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/nodemcuv2.yaml
+
+remote_receiver:
+  id: ir_receiver
+  pin: 
+    number: GPIO14
+    inverted: true
+    mode: INPUT_PULLUP
+  tolerance: 55%
+
+remote_transmitter:
+  id: ir_transmitter
+  pin: GPIO12
+  carrier_duty_percent: 50%
+
+climate:
+  - platform: heatpumpir
+    protocol: greeyt
+    min_temperature: 19
+    max_temperature: 27
+    horizontal_default: auto
+    vertical_default: mdown
+    name: ${name}_ac
+    receiver_id: ir_receiver
+    transmitter_id: ir_transmitter
+    #sensor: room_temperature
+    icon: "mdi:air-conditioner"
+    visual:
+      min_temperature: 19
+      max_temperature: 27
+      temperature_step:
+        target_temperature: 1.0
+        current_temperature: 1.0

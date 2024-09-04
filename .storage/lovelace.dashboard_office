@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_office",
+  "data": {
+    "config": {
+      "strategy": {
+        "type": "original-states",
+        "hide_entities_without_area": true,
+        "areas": {
+          "hidden": [
+            "livingroom",
+            "study",
+            "outside",
+            "kitchen",
+            "childb",
+            "childa",
+            "bedroom",
+            "bathroom",
+            "attic"
+          ],
+          "order": [
+            "office",
+            "shed"
+          ]
+        },
+        "hide_energy": true
+      }
+    }
+  }
+}

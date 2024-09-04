@@ -1,0 +1,50 @@
+substitutions:
+  name: shed-relay
+  icon: "mdi:electric-switch"
+
+packages:
+  common: !include _includes/common.yaml
+
+esphome:
+  platform: ESP8266
+  board: d1_mini
+  esp8266_restore_from_flash: true
+
+status_led:
+  pin:
+    number: D4
+    inverted: true
+
+switch:
+  - platform: gpio
+    id: r1
+    name: ${name}_r1
+    icon: ${icon}
+    pin:
+      number: D5
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: r2
+    name: ${name}_r2
+    icon: ${icon}
+    pin:
+      number: D6
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: r3
+    name: ${name}_r3
+    icon: ${icon}
+    pin:
+      number: D7
+      mode: OUTPUT
+      inverted: yes
+  - platform: gpio
+    id: r4
+    name: ${name}_livingroom
+    icon: ${icon}
+    pin:
+      number: D8
+      mode: OUTPUT
+      inverted: yes

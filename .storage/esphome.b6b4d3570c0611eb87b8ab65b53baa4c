@@ -5,31 +5,59 @@
   "data": {
     "device_info": {
       "uses_password": false,
-      "name": "terrace_led",
+      "name": "l-office-led0",
       "friendly_name": "",
       "mac_address": "40:F5:20:C8:2A:31",
-      "compilation_time": "Feb 12 2023, 01:56:30",
+      "compilation_time": "Aug 31 2024, 19:41:01",
       "model": "esp8285",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2022.12.8",
+      "esphome_version": "2024.8.1",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "voice_assistant_version": 0,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
       "legacy_bluetooth_proxy_version": 0,
-      "bluetooth_proxy_feature_flags": 0
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
     },
     "services": [],
     "api_version": {
       "major": 1,
-      "minor": 7
+      "minor": 10
     },
+    "binary_sensor": [
+      {
+        "object_id": "l-office-led0_status",
+        "key": 1910698745,
+        "name": "l-office-led0_status",
+        "unique_id": "l-office-led0binary_sensorl-office-led0_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "l-office-led0_restart",
+        "key": 223736912,
+        "name": "l-office-led0_restart",
+        "unique_id": "l-office-led0switchl-office-led0_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "sensor": [
       {
-        "object_id": "terrace_led_up_time",
-        "key": 506467263,
-        "name": "terrace_led_up_time",
+        "object_id": "l-office-led0_up_time",
+        "key": 1811511984,
+        "name": "l-office-led0_up_time",
         "unique_id": "40f520c82a31-uptime",
         "disabled_by_default": false,
         "icon": "mdi:timelapse",
@@ -42,9 +70,9 @@
         "last_reset_type": 0
       },
       {
-        "object_id": "terrace_led_wifi_signal",
-        "key": 2090040608,
-        "name": "terrace_led_wifi_signal",
+        "object_id": "l-office-led0_wifi_signal",
+        "key": 3807403319,
+        "name": "l-office-led0_wifi_signal",
         "unique_id": "40f520c82a31-wifisignal",
         "disabled_by_default": false,
         "icon": "",
@@ -57,13 +85,44 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": [],
+    "text_sensor": [
+      {
+        "object_id": "l-office-led0_wifi_ssid",
+        "key": 3460439726,
+        "name": "l-office-led0_wifi_ssid",
+        "unique_id": "40f520c82a31-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "l-office-led0_wifi_mac",
+        "key": 4111996340,
+        "name": "l-office-led0_wifi_mac",
+        "unique_id": "40f520c82a31-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "l-office-led0_wifi_ip",
+        "key": 2573619056,
+        "name": "l-office-led0_wifi_ip",
+        "unique_id": "40f520c82a31-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ],
     "light": [
       {
-        "object_id": "terrace_led",
-        "key": 1192031567,
-        "name": "terrace_led",
-        "unique_id": "terrace_ledlightterrace_led",
+        "object_id": "l-office-led0",
+        "key": 3458262708,
+        "name": "l-office-led0",
+        "unique_id": "l-office-led0lightl-office-led0",
         "disabled_by_default": false,
         "icon": "",
         "entity_category": 0,
@@ -79,31 +138,6 @@
         "legacy_supports_color_temperature": false
       }
     ],
-    "switch": [
-      {
-        "object_id": "terrace_led_restart",
-        "key": 2539114339,
-        "name": "terrace_led_restart",
-        "unique_id": "terrace_ledswitchterrace_led_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "terrace_led_status",
-        "key": 2222982072,
-        "name": "terrace_led_status",
-        "unique_id": "terrace_ledbinary_sensorterrace_led_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ]
+    "update": []
   }
 }

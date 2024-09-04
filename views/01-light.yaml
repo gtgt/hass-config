@@ -158,9 +158,6 @@
         - entity: switch.apb_m0
           tap_action:
             action: toggle
-        - entity: light.terrace_led
-          tap_action:
-            action: toggle
     - type: conditional
       conditions:
       - entity: light.bedroom_rgb
@@ -201,6 +198,16 @@
                 icon_color: '#FF7E00'
               - rgb_color: [255, 0, 0]
                 icon_color: '#D50000'
+    - type: glance
+      show_state: false
+      columns: 3
+      entities:
+        - entity: light.l_office_led0
+          tap_action:
+            action: toggle
+        - entity: light.shed
+          tap_action:
+            action: toggle
     - type: conditional
       conditions:
       - entity: light.magichome_rgb

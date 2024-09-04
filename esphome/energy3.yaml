@@ -1,0 +1,156 @@
+substitutions:
+  name: energy3
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/d1_mini.yaml
+
+logger:
+  level: DEBUG
+  # logs:
+  #   sensor: INFO
+  #   pzemac: INFO
+  #   pzem004t: INFO
+  esp8266_store_log_strings_in_flash: false
+  baud_rate: 0
+  hardware_uart: UART1
+
+
+uart:
+  - id: ubus1
+    rx_pin: D2
+    tx_pin: D1
+    baud_rate: 9600
+    #stop_bits: 2
+  - id: ubus2
+    rx_pin: D8
+    tx_pin: D7
+    baud_rate: 9600
+    #stop_bits: 2
+  - id: ubus3
+    rx_pin: GPIO3
+    tx_pin: GPIO1
+    baud_rate: 9600
+    #stop_bits: 2
+
+modbus:
+  - id: mbus1
+    uart_id: ubus1
+    
+sensor:
+  - platform: pzemac
+    modbus_id: mbus1
+    address: 1
+    current:
+      name: ${name}_current1
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
+    voltage:
+      name: ${name}_voltage1
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
+    energy:
+      name: ${name}_energy1
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.001
+      unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
+    power:
+      name: ${name}_power1
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
+    frequency:
+      name: ${name}_freq1
+      device_class: frequency
+      unit_of_measurement: Hz
+      state_class: measurement
+      icon: mdi:current-ac
+    power_factor:
+      name: ${name}_pf1
+      device_class: power_factor
+      state_class: measurement
+      icon: mdi:percent
+    update_interval: 3s
+  - platform: pzem004t
+    uart_id: ubus2
+    current:
+      name: ${name}_current2
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
+    voltage:
+      name: ${name}_voltage2
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
+    energy:
+      name: ${name}_energy2
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.001
+      unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
+    power:
+      name: ${name}_power2
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
+    update_interval: 3s
+  - platform: pzem004t
+    uart_id: ubus3
+    current:
+      name: ${name}_current3
+      device_class: current
+      state_class: measurement
+      icon: mdi:current-ac
+    voltage:
+      name: ${name}_voltage3
+      device_class: voltage
+      state_class: measurement
+      icon: mdi:flash-outline
+    energy:
+      name: ${name}_energy3
+      accuracy_decimals: 3
+      filters:
+        - multiply: 0.001
+      unit_of_measurement: kWh
+      device_class: energy
+      state_class: total_increasing
+      icon: mdi:counter
+    power:
+      name: ${name}_power3
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement
+      icon: mdi:flash
+    update_interval: 3s
+    
+
+switch:
+  - platform: restart
+    name: ${name}_restart
+  - platform: uart
+    uart_id: ubus1
+    name: ${name}_reset1
+    data: [0x01, 0x42, 0x80, 0x11]
+  - platform: uart
+    uart_id: ubus2
+    name: ${name}_reset2
+    data: [0x02, 0x42, 0x80, 0x11]
+  - platform: uart
+    uart_id: ubus3
+    name: ${name}_reset3
+    data: [0x03, 0x42, 0x80, 0x11]
+    
+
+

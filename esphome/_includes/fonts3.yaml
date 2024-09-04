@@ -1,0 +1,32 @@
+font:
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: notosans_12
+    size: 12
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: notosans_24
+    size: 24
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: notosans_36
+    size: 36
+
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: notosans_48
+    size: 48
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: nimbussans_12
+    size: 12
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: nimbussans_24
+    size: 24
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: nimbussans_36
+    size: 36
+
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: nimbussans_48
+    size: 48

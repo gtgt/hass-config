@@ -8,23 +8,90 @@
       "name": "ac_relay",
       "friendly_name": "",
       "mac_address": "CC:50:E3:3A:70:9B",
-      "compilation_time": "Jul 28 2023, 22:20:25",
+      "compilation_time": "Jun 27 2024, 15:43:11",
       "model": "esp12e",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2023.7.0-dev",
+      "esphome_version": "2024.6.3",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "voice_assistant_version": 0,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
       "legacy_bluetooth_proxy_version": 0,
-      "bluetooth_proxy_feature_flags": 0
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
     },
     "services": [],
     "api_version": {
       "major": 1,
-      "minor": 9
+      "minor": 10
     },
+    "sensor": [
+      {
+        "object_id": "ac_relay_up_time",
+        "key": 3869629663,
+        "name": "ac_relay_up_time",
+        "unique_id": "cc50e33a709b-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_relay_wifi_signal",
+        "key": 953222208,
+        "name": "ac_relay_wifi_signal",
+        "unique_id": "cc50e33a709b-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "ac_relay_wifi_ssid",
+        "key": 281439429,
+        "name": "ac_relay_wifi_ssid",
+        "unique_id": "cc50e33a709b-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_wifi_mac",
+        "key": 1576529213,
+        "name": "ac_relay_wifi_mac",
+        "unique_id": "cc50e33a709b-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_relay_wifi_ip",
+        "key": 3748771239,
+        "name": "ac_relay_wifi_ip",
+        "unique_id": "cc50e33a709b-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ],
+    "update": [],
     "switch": [
       {
         "object_id": "ac_relay_restart",
@@ -138,69 +205,6 @@
         "device_class": "connectivity",
         "is_status_binary_sensor": true
       }
-    ],
-    "sensor": [
-      {
-        "object_id": "ac_relay_up_time",
-        "key": 3869629663,
-        "name": "ac_relay_up_time",
-        "unique_id": "cc50e33a709b-uptime",
-        "disabled_by_default": false,
-        "icon": "mdi:timelapse",
-        "entity_category": 2,
-        "device_class": "duration",
-        "unit_of_measurement": "s",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 2,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "ac_relay_wifi_signal",
-        "key": 953222208,
-        "name": "ac_relay_wifi_signal",
-        "unique_id": "cc50e33a709b-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "signal_strength",
-        "unit_of_measurement": "dBm",
-        "accuracy_decimals": 0,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "ac_sensor_temp_ac_outlet",
-        "key": 792558390,
-        "name": "ac_sensor_temp_ac_outlet",
-        "unique_id": "dallas-9902099246320028",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "temperature",
-        "unit_of_measurement": "°C",
-        "accuracy_decimals": 1,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      },
-      {
-        "object_id": "ac_sensor_temp_ac_gas_tube",
-        "key": 1944633169,
-        "name": "ac_sensor_temp_ac_gas_tube",
-        "unique_id": "dallas-99020791775c3828",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "temperature",
-        "unit_of_measurement": "°C",
-        "accuracy_decimals": 1,
-        "force_update": false,
-        "state_class": 1,
-        "last_reset_type": 0
-      }
-    ],
-    "text_sensor": []
+    ]
   }
 }

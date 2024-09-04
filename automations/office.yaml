@@ -1,0 +1,15 @@
+- id: meeting_info_switch
+  alias: meeting_info_switch
+  description: "Iroda világítás asztalról"
+  mode: single
+  trigger:
+    - platform: state
+      entity_id:
+       - binary_sensor.ttgo_tdisplay_button1
+      to:
+        - "on"
+  condition: []
+  action:
+    - service: "light.toggle"
+      target:
+        entity_id: light.l_office_led0

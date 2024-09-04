@@ -1,0 +1,46 @@
+substitutions:
+  name: desk_rgb
+
+packages:
+  common: !include _includes/common.yaml
+
+bk72xx:
+  board: generic-bk7231n-qfn32-tuya
+
+#logger:
+#  level: DEBUG
+
+# Defining the output pins
+output:
+  - platform: esp8266_pwm
+    id: output_red
+    pin: GPIO14
+  - platform: esp8266_pwm
+    id: output_green
+    pin: GPIO12
+  - platform: esp8266_pwm
+    id: output_blue
+    pin: GPIO13
+  - platform: esp8266_pwm
+    id: output_white
+    pin: GPIO2
+
+# here go the light definitions, effects and restore mode
+light:
+  - platform: rgbw
+    name: ${name}
+    red: output_red
+    green: output_green
+    blue: output_blue
+    white: output_white
+
+    effects:
+      - random:
+          name: ${name}_random
+      - random:
+          name: ${name}_random_slow
+          update_interval: 30s
+          transition_length: 7.5s
+
+    # Attempt to restore state and default to ON if the physical switch is actuated.
+    restore_mode: RESTORE_DEFAULT_ON

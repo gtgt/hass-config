@@ -1,4 +1,0 @@
-substitutions:
-  name: terrace_led
-
-<<: !include _includes/magichome_w.yaml

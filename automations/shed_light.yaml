@@ -1,0 +1,20 @@
+- id: shed_light_off_at_sunrise
+  alias: shed_light_off_at_sunrise
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: "+02:00:00"
+  action:
+    - service: light.turn_off
+      data:
+       entity_id: light.shed
+- id: shed_light_on_at_sunrise
+  alias: shed_light_on_at_sunrise
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "-02:00:00"
+  action:
+    - service: light.turn_on
+      data:
+       entity_id: light.shed

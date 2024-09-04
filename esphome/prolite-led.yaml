@@ -1,0 +1,19 @@
+substitutions:
+  name: prolite-led
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/d1_mini.yaml
+
+external_components:
+  - source: github://oxan/esphome-stream-server
+
+uart:
+   id: uart_bus
+   tx_pin: D2
+   rx_pin: D3
+   baud_rate: 9600
+
+stream_server:
+   uart_id: uart_bus
+   port: 6638

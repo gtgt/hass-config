@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.0e0f26fd62b7910884c24d790f728e5d",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "ac_sensor",
+      "friendly_name": "",
+      "mac_address": "4C:11:AE:0E:6C:A4",
+      "compilation_time": "Sep  3 2024, 02:34:29",
+      "model": "esp01_1m",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2024.8.1",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 10
+    },
+    "update": [],
+    "binary_sensor": [
+      {
+        "object_id": "ac_sensor_status",
+        "key": 2919039115,
+        "name": "ac_sensor_status",
+        "unique_id": "ac_sensorbinary_sensorac_sensor_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "ac_sensor_restart",
+        "key": 3007705818,
+        "name": "ac_sensor_restart",
+        "unique_id": "ac_sensorswitchac_sensor_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "ac_sensor_up_time",
+        "key": 1440981250,
+        "name": "ac_sensor_up_time",
+        "unique_id": "4c11ae0e6ca4-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_sensor_wifi_signal",
+        "key": 782336989,
+        "name": "ac_sensor_wifi_signal",
+        "unique_id": "4c11ae0e6ca4-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_sensor_temp_ac_outlet",
+        "key": 792558390,
+        "name": "ac_sensor_temp_ac_outlet",
+        "unique_id": "ac_sensorsensorac_sensor_temp_ac_outlet",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ac_sensor_temp_ac_gas_tube",
+        "key": 1944633169,
+        "name": "ac_sensor_temp_ac_gas_tube",
+        "unique_id": "ac_sensorsensorac_sensor_temp_ac_gas_tube",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "ac_sensor_wifi_ssid",
+        "key": 518223616,
+        "name": "ac_sensor_wifi_ssid",
+        "unique_id": "4c11ae0e6ca4-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_sensor_wifi_mac",
+        "key": 2250185958,
+        "name": "ac_sensor_wifi_mac",
+        "unique_id": "4c11ae0e6ca4-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ac_sensor_wifi_ip",
+        "key": 1718984514,
+        "name": "ac_sensor_wifi_ip",
+        "unique_id": "4c11ae0e6ca4-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ]
+  }
+}

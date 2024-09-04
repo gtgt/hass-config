@@ -4,10 +4,16 @@ esphome:
     upload_speed: 921600
 
 esp32:
-  board: esp32dev
+  board: esp32dev #esp32-c3-devkitm-1
   framework:
     type: esp-idf
     version: recommended
+    # Custom sdkconfig options
+    sdkconfig_options:
+      COMPILER_OPTIMIZATION_SIZE: y
+    # Advanced tweaking options
+    advanced:
+      ignore_efuse_mac_crc: false
 
 network:
     enable_ipv6: true

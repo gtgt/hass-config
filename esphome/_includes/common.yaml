@@ -1,23 +1,9 @@
-esphome:
-  name: ${name}
 
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-  domain: .lan
-  fast_connect: false
-  reboot_timeout: 2min
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "${name} fallback"
-    password: !secret ap_password
-    ap_timeout: 10min
+packages:
+  common: !include minimal.yaml
 
 captive_portal:
 
-# Enable logging
-logger:
 
 # Enable Web server
 web_server:
@@ -26,35 +12,45 @@ web_server:
     username: admin
     password: !secret web_server_password
 
-# Enable Home Assistant API
-api:
-  encryption:
-    key: !secret api_enc_key
-  reboot_timeout: 5min
-
-ota:
-  password: !secret ota_password
-  num_attempts: 5
-
-time:
-  - platform: homeassistant
-    id: hatime
-
 sensor:
-# Extra sensor to keep track of plug uptime
   - platform: uptime
     id: up_time
     name: ${name}_up_time
     icon: "mdi:timelapse"
+    disabled_by_default: true
   - platform: wifi_signal
     name: ${name}_wifi_signal
     update_interval: 30s
+    icon: "mdi:signal-variant"
+    disabled_by_default: true
 
 binary_sensor:
   - platform: status
     name: ${name}_status
     id: system_status
+    icon: "mdi:power"
+    disabled_by_default: true
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: ${name}_wifi_ip
+      id: wifi_ip
+      icon: "mdi:ip"
+      disabled_by_default: true
+    ssid:
+      name: ${name}_wifi_ssid
+      id: wifi_ssid
+      icon: "mdi:wifi-check"
+      disabled_by_default: true
+    mac_address:
+      name: ${name}_wifi_mac
+      id: wifi_mac
+      icon: "mdi:hexadecimal"
+      disabled_by_default: true
 
 switch:
   - platform: restart
     name: ${name}_restart
+    icon: "mdi:restart"
+    disabled_by_default: true

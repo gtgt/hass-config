@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.1cbb5b7ec09a76053c81810a1622220a",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "ttgo-tdisplay",
+      "friendly_name": "",
+      "mac_address": "24:62:AB:F9:8E:14",
+      "compilation_time": "Aug 31 2024, 19:32:43",
+      "model": "featheresp32",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2024.8.1",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 10
+    },
+    "binary_sensor": [
+      {
+        "object_id": "ttgo-tdisplay_status",
+        "key": 3517391651,
+        "name": "ttgo-tdisplay_status",
+        "unique_id": "ttgo-tdisplaybinary_sensorttgo-tdisplay_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      },
+      {
+        "object_id": "ttgo-tdisplay_button0",
+        "key": 1247346735,
+        "name": "ttgo-tdisplay_button0",
+        "unique_id": "ttgo-tdisplaybinary_sensorttgo-tdisplay_button0",
+        "disabled_by_default": false,
+        "icon": "mdi:brightness-5",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "ttgo-tdisplay_button1",
+        "key": 1247346734,
+        "name": "ttgo-tdisplay_button1",
+        "unique_id": "ttgo-tdisplaybinary_sensorttgo-tdisplay_button1",
+        "disabled_by_default": false,
+        "icon": "mdi:button-pointer",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "ttgo-tdisplay_restart",
+        "key": 2325206562,
+        "name": "ttgo-tdisplay_restart",
+        "unique_id": "ttgo-tdisplayswitchttgo-tdisplay_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "ttgo-tdisplay_up_time",
+        "key": 407021594,
+        "name": "ttgo-tdisplay_up_time",
+        "unique_id": "2462abf98e14-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "ttgo-tdisplay_wifi_signal",
+        "key": 617014725,
+        "name": "ttgo-tdisplay_wifi_signal",
+        "unique_id": "2462abf98e14-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "ttgo-tdisplay_wifi_ssid",
+        "key": 99531976,
+        "name": "ttgo-tdisplay_wifi_ssid",
+        "unique_id": "2462abf98e14-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ttgo-tdisplay_wifi_mac",
+        "key": 2293334878,
+        "name": "ttgo-tdisplay_wifi_mac",
+        "unique_id": "2462abf98e14-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ttgo-tdisplay_wifi_ip",
+        "key": 2290266026,
+        "name": "ttgo-tdisplay_wifi_ip",
+        "unique_id": "2462abf98e14-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ],
+    "light": [
+      {
+        "object_id": "ttgo-tdisplay_backlight",
+        "key": 3315393012,
+        "name": "ttgo-tdisplay_backlight",
+        "unique_id": "ttgo-tdisplaylightttgo-tdisplay_backlight",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          3
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ],
+    "update": []
+  }
+}

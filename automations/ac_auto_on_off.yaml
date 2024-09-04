@@ -25,7 +25,11 @@
           - switch.ac_relay_kitchen
           - switch.ac_relay_livingroom
         state: 'off'
-      - "{{ (state_attr('automation.ac_auto_mode', 'current')|int) = 0 }}"
+      - condition: numeric_state
+        entity_id: automation.ac_mode
+        attribute: current
+        below: 1
+
   action:
     - service: climate.turn_off
       data:

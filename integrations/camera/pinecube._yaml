@@ -1,5 +1,4 @@
-- platform: generic
-  name: pinecube
+- name: pinecube
   stream_source: rtsp://pinecube.lan:8554/video
   #rtsp_transport: tcp
   verify_ssl: false

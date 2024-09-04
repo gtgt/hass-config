@@ -8,30 +8,56 @@
       "name": "hg01wt",
       "friendly_name": "",
       "mac_address": "DC:4F:22:14:FE:06",
-      "compilation_time": "Jul 28 2023, 21:32:11",
+      "compilation_time": "Sep  4 2024, 02:41:27",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2023.7.0-dev",
+      "esphome_version": "2024.8.1",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "voice_assistant_version": 0,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
       "legacy_bluetooth_proxy_version": 0,
-      "bluetooth_proxy_feature_flags": 0
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
     },
     "services": [],
     "api_version": {
       "major": 1,
-      "minor": 9
+      "minor": 10
     },
+    "binary_sensor": [
+      {
+        "object_id": "hg01wt_status",
+        "key": 2041265331,
+        "name": "hg01wt_status",
+        "unique_id": "hg01wtbinary_sensorhg01wt_status",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      },
+      {
+        "object_id": "hg01wt_button1",
+        "key": 2305800510,
+        "name": "hg01wt_button1",
+        "unique_id": "hg01wtbinary_sensorhg01wt_button1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
     "switch": [
       {
         "object_id": "hg01wt_restart",
         "key": 1200459538,
         "name": "hg01wt_restart",
         "unique_id": "hg01wtswitchhg01wt_restart",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:restart",
         "entity_category": 1,
         "assumed_state": false,
@@ -49,37 +75,14 @@
         "device_class": ""
       }
     ],
-    "binary_sensor": [
-      {
-        "object_id": "hg01wt_status",
-        "key": 2041265331,
-        "name": "hg01wt_status",
-        "unique_id": "hg01wtbinary_sensorhg01wt_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      },
-      {
-        "object_id": "hg01wt_button1",
-        "key": 2305800510,
-        "name": "hg01wt_button1",
-        "unique_id": "hg01wtbinary_sensorhg01wt_button1",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "",
-        "is_status_binary_sensor": false
-      }
-    ],
+    "update": [],
     "sensor": [
       {
         "object_id": "hg01wt_up_time",
         "key": 3325659114,
         "name": "hg01wt_up_time",
         "unique_id": "dc4f2214fe06-uptime",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:timelapse",
         "entity_category": 2,
         "device_class": "duration",
@@ -94,8 +97,8 @@
         "key": 658019893,
         "name": "hg01wt_wifi_signal",
         "unique_id": "dc4f2214fe06-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:signal-variant",
         "entity_category": 2,
         "device_class": "signal_strength",
         "unit_of_measurement": "dBm",
@@ -105,6 +108,37 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": []
+    "text_sensor": [
+      {
+        "object_id": "hg01wt_wifi_ssid",
+        "key": 1438219864,
+        "name": "hg01wt_wifi_ssid",
+        "unique_id": "dc4f2214fe06-wifiinfo-ssid",
+        "disabled_by_default": true,
+        "icon": "mdi:wifi-check",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "hg01wt_wifi_mac",
+        "key": 2538463950,
+        "name": "hg01wt_wifi_mac",
+        "unique_id": "dc4f2214fe06-wifiinfo-macadr",
+        "disabled_by_default": true,
+        "icon": "mdi:hexadecimal",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "hg01wt_wifi_ip",
+        "key": 1120549210,
+        "name": "hg01wt_wifi_ip",
+        "unique_id": "dc4f2214fe06-wifiinfo-ip",
+        "disabled_by_default": true,
+        "icon": "mdi:ip",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ]
   }
 }

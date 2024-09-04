@@ -7,7 +7,7 @@
     device_class: monetary
     state: >
       {% set tariff = { "DP": 35.992, "MP": 70.104 } %}
-      {% if states('sensor.grid_kwh_monthly')|float > states('sensor.energy_tariff_discount_limit')|float * -1 %}
+      {% if states('sensor.grid_kwh_monthly')|float(0) > states('sensor.energy_tariff_discount_limit')|float(0) * -1 %}
         {{ tariff.DP }}
       {% else %}
         {{ tariff.MP }}
@@ -21,23 +21,25 @@
     device_class: monetary
     state: >
       {% set tariff = { "SP": 22.682, "DP": 35.992, "MP": 70.104 } %}
-      {% set today = now().strftime('%m.%d')|float %}
+      {% set today = now().strftime('%m.%d')|float(0) %}
       {% if today < 4.15 or today > 10.15 %}
         {{ tariff.SP }}
-      {% elif states('sensor.energy2_kwh_monthly')|float / 1000 < states('sensor.energy_tariff_discount_limit')|float %}
+      {% elif states('sensor.energy2_kwh_monthly')|float(0) / 1000 < states('sensor.energy_tariff_discount_limit')|float(0) %}
         {{ tariff.DP }}
       {% else %}
         {{ tariff.MP }}
       {% endif %}
 
   - name: grid_cost_monthly
-    state: "{{ ((states('sensor.grid_kwh_monthly')|float * -1) * states('sensor.energy_tariff_a1')|float)|round }}"
+    state: "{{ ((states('sensor.grid_kwh_monthly')|float(0) * -1) * states('sensor.energy_tariff_a1')|float(0))|round }}"
+    availability: "{{ states('sensor.grid_kwh_monthly') not in ['unavailable', 'unknown', 'none'] }}"
     device_class: monetary
     unit_of_measurement: HUF
     state_class: total
 
   - name: energy2_cost_monthly
-    state: "{{ ((states('sensor.energy2_kwh_monthly')|float / 1000) * states('sensor.energy_tariff_h')|float)|round }}"
+    state: "{{ ((states('sensor.energy2_kwh_monthly')|float(0) / 1000) * states('sensor.energy_tariff_h')|float(0))|round }}"
+    availability: "{{ states('sensor.energy2_kwh_monthly') not in ['unavailable', 'unknown', 'none'] }}"
     device_class: monetary
     unit_of_measurement: HUF
     state_class: total

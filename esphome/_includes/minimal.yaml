@@ -1,0 +1,56 @@
+substitutions:
+  wifi1_ssid: !secret wifi1_ssid
+  wifi1_password: !secret wifi1_password
+  wifi2_ssid: !secret wifi2_ssid
+  wifi2_password: !secret wifi2_password
+
+esphome:
+  name: ${name}
+  # on_boot:
+  #   priority: 200
+  #   then:
+  #     - wait_until:
+  #         condition:
+  #           wifi.connected:
+  #         timeout: 10s
+
+wifi:
+  id: iwifi
+  fast_connect: false
+  networks:
+  - ssid: ${wifi1_ssid}
+    password: ${wifi1_password}
+  - ssid: ${wifi2_ssid}
+    password: ${wifi2_password}
+  domain: .lan
+  reboot_timeout: 15min
+  power_save_mode: none
+  enable_on_boot: true
+  output_power: 8.5
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: ${name}
+    password: !secret ap_password
+    ap_timeout: 5min
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret api_enc_key
+  reboot_timeout: 5min
+
+ota:
+  - platform: esphome
+    password: !secret ota_password
+
+time:
+  # - platform: homeassistant
+  #   id: hatime
+  - platform: sntp
+    id: itime
+    timezone: Europe/Budapest
+

@@ -1,0 +1,42 @@
+
+- cal_id: AAMkADY0YTk5OGIwLWE1OWQtNGYwNC1iMGRkLTJjZTEzNzQxZTlmNwBGAAAAAADS7QdJNyEHTrk1tn0NuNYfBwDXkGL_JO-iSL6szTqRKimEAAAAAAEGAADXkGL_JO-iSL6szTqRKimEAAAG94gXAAA=
+  entities:
+  - device_id: cal1
+    end_offset: 96
+    name: cal1
+    start_offset: -15
+    track: true
+    exclude:
+     - "Launch"
+     - "Public holiday"
+     - "OOO"
+     - "PTO"
+
+- cal_id: AAMkADY0YTk5OGIwLWE1OWQtNGYwNC1iMGRkLTJjZTEzNzQxZTlmNwBGAAAAAADS7QdJNyEHTrk1tn0NuNYfBwDXkGL_JO-iSL6szTqRKimEAAAAAAEGAADXkGL_JO-iSL6szTqRKimEAAAG94gYAAA=
+  entities:
+  - device_id: "Magyarorsz\xE1g \xFCnnepei"
+    end_offset: 24
+    name: "Magyarorsz\xE1g \xFCnnepei"
+    start_offset: 0
+    track: false
+
+- cal_id: AAMkADY0YTk5OGIwLWE1OWQtNGYwNC1iMGRkLTJjZTEzNzQxZTlmNwBGAAAAAADS7QdJNyEHTrk1tn0NuNYfBwDXkGL_JO-iSL6szTqRKimEAAAAAAEGAADXkGL_JO-iSL6szTqRKimEAAAG94gbAAA=
+  entities:
+  - device_id: "Sz\xFClet\xE9snapok"
+    end_offset: 24
+    name: "Sz\xFClet\xE9snapok"
+    start_offset: 0
+    track: false
+- cal_id: AAMkADY0YTk5OGIwLWE1OWQtNGYwNC1iMGRkLTJjZTEzNzQxZTlmNwBGAAAAAADS7QdJNyEHTrk1tn0NuNYfBwDXkGL_JO-iSL6szTqRKimEAAAAAAEGAADXkGL_JO-iSL6szTqRKimEAAG_cNNlAAA=
+  entities:
+  - device_id: cal2
+    end_offset: 24
+    name: cal2
+    start_offset: -15
+    track: true
+    exclude:
+      - "Launch"
+      - "Public holiday"
+      - "OOO"
+      - "PTO"
+      - "POD1"

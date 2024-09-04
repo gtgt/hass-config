@@ -14,7 +14,7 @@
     platform: state
     entity_id: fan.pufi
     attribute: preset_mode
-  condition: "{{ trigger.to_state.attributes.preset_mode in ['Auto', 'Silent', 'Favorite'] }}"
+  condition: "{{ trigger.to_state.attributes.preset_mode in state_attr('fan.pufi', 'preset_modes') }}"
   action:
     service: input_select.select_option
     entity_id: input_select.pufi_mode

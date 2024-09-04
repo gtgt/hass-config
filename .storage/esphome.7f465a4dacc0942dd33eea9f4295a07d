@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.7f465a4dacc0942dd33eea9f4295a07d",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "magichome_rgb",
+      "friendly_name": "",
+      "mac_address": "50:02:91:30:1D:8A",
+      "compilation_time": "Sep  3 2024, 02:22:56",
+      "model": "esp8285",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2024.8.1",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 10
+    },
+    "update": [],
+    "binary_sensor": [
+      {
+        "object_id": "magichome_rgb_status",
+        "key": 3224360780,
+        "name": "magichome_rgb_status",
+        "unique_id": "magichome_rgbbinary_sensormagichome_rgb_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "magichome_rgb_restart",
+        "key": 1704545407,
+        "name": "magichome_rgb_restart",
+        "unique_id": "magichome_rgbswitchmagichome_rgb_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "magichome_rgb_up_time",
+        "key": 2296584747,
+        "name": "magichome_rgb_up_time",
+        "unique_id": "500291301d8a-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "magichome_rgb_wifi_signal",
+        "key": 1050427812,
+        "name": "magichome_rgb_wifi_signal",
+        "unique_id": "500291301d8a-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "magichome_rgb_wifi_ssid",
+        "key": 2266348937,
+        "name": "magichome_rgb_wifi_ssid",
+        "unique_id": "500291301d8a-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "magichome_rgb_wifi_mac",
+        "key": 2278655833,
+        "name": "magichome_rgb_wifi_mac",
+        "unique_id": "500291301d8a-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "magichome_rgb_wifi_ip",
+        "key": 1226850883,
+        "name": "magichome_rgb_wifi_ip",
+        "unique_id": "500291301d8a-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ],
+    "light": [
+      {
+        "object_id": "magichome_rgb",
+        "key": 3356892827,
+        "name": "magichome_rgb",
+        "unique_id": "magichome_rgblightmagichome_rgb",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          35
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": true,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ]
+  }
+}

@@ -1,4 +1,0 @@
----
-candy_dishwasher:
-  module: candy_dishwasher
-  class: CandyDishwasher

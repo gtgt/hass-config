@@ -5,20 +5,29 @@ packages:
   common: !include _includes/common.yaml
   board: !include _includes/board/esp01.yaml
 
-dallas:
+external_components:
+  - source: github://nrandell/dallasng
+
+dallasng:
   - pin: GPIO0
     update_interval: 20s
 
 sensor:
-  - platform: dallas
+  - platform: dallasng
     id: temp1
     name: ${name}_temp_ac_outlet
-    address: 0x9902099246320028
+    #address: 0x9902099246320028
+    index: 0
+    resolution: 12
     filters:
       - offset: 0
-  - platform: dallas
+      - filter_out: NAN
+  - platform: dallasng
     id: temp2
     name: ${name}_temp_ac_gas_tube
-    address: 0x99020791775C3828
+    #address: 0x99020791775C3828
+    index: 1
+    resolution: 12
     filters:
       - offset: 0
+      - filter_out: NAN

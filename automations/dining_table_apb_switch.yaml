@@ -1,0 +1,16 @@
+- id: dining_table_apb_switch
+  alias: dining_table_apb_switch
+  description: "Étkezőasztal világítás kapcsoló"
+  mode: single
+  trigger:
+    - platform: state
+      entity_id:
+       - switch.apb_q12
+      to:
+        - "on"
+        - "off"
+  condition: []
+  action:
+    - service: "light.turn_{{ trigger.to_state.state }}"
+      target:
+        entity_id: light.dining_table

@@ -7,6 +7,7 @@ light:
   - platform: monochromatic
     name: ${name}
     output: pwm1
+    restore_mode: RESTORE_DEFAULT_ON
 
 output:
   - platform: esp8266_pwm

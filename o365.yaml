@@ -1,0 +1,32 @@
+accounts:
+  - account_name: o365 # Do not use email address or spaces
+    client_id: !secret o365_client_id
+    client_secret: !secret o365_client_secret
+    alt_auth_method: False
+    enable_update: True
+    track_new_calendar: False
+    email_sensor:
+      - name: inbox
+        max_items: 5
+        is_unread: True
+        download_attachments: False
+#    query_sensors:
+#      - name: "Example"
+#        folder: "Inbox/Test_Inbox" #Default is Inbox
+#        from: "mail@example.com"
+#        subject_contains: "Example subject"
+#        has_attachment: True
+#        max_items: 5
+#        is_unread: True
+    status_sensors: # Cannot be used for personal accounts
+      - name: "Teams User Status"
+    chat_sensors: # Cannot be used for personal accounts
+      - name: "Teams User Chat"
+    todo_sensors:
+      enabled: False
+      enable_update: False # set this to true if you want to be able to create new todos
+    auto_reply_sensors:
+      - name: auto_reply
+#  - account_name: _o365
+#    client_secret: "xx.xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+#    client_id: "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx"

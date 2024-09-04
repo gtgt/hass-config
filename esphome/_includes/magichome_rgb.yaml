@@ -9,6 +9,7 @@ light:
     red: pwm_r
     green: pwm_g
     blue: pwm_b
+    restore_mode: RESTORE_DEFAULT_ON
 
 output:
   - platform: esp8266_pwm

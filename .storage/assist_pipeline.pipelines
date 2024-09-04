@@ -5,20 +5,34 @@
   "data": {
     "items": [
       {
-        "conversation_engine": "homeassistant",
+        "conversation_engine": "conversation.home_assistant",
         "conversation_language": "en",
         "id": "01gzp83t72g9a8xv79dey2pkfj",
         "language": "en",
         "name": "Home Assistant",
-        "stt_engine": null,
-        "stt_language": null,
+        "stt_engine": "stt.faster_whisper",
+        "stt_language": "en",
         "tts_engine": "google_translate",
         "tts_language": "en",
         "tts_voice": null,
-        "wake_word_entity": null,
-        "wake_word_id": null
+        "wake_word_entity": "wake_word.openwakeword",
+        "wake_word_id": "ok_nabu_v0.1"
+      },
+      {
+        "conversation_engine": "conversation.home_assistant",
+        "conversation_language": "hu",
+        "id": "01hdhaamq5rf2va8j58cqeazaj",
+        "language": "hu",
+        "name": "Home Assistant HU",
+        "stt_engine": "stt.faster_whisper",
+        "stt_language": "hu",
+        "tts_engine": "google_translate",
+        "tts_language": "hu",
+        "tts_voice": null,
+        "wake_word_entity": "wake_word.openwakeword",
+        "wake_word_id": "hey_rhasspy_v0.1"
       }
     ],
-    "preferred_item": "01gzp83t72g9a8xv79dey2pkfj"
+    "preferred_item": "01hdhaamq5rf2va8j58cqeazaj"
   }
 }

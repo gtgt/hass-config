@@ -21,7 +21,7 @@ card_cover:
     ulm_card_cover_enable_tilt: false
     ulm_card_cover_enable_horizontal: false
     ulm_card_cover_enable_popup: false
-    ulm_show_last_changed: false
+    ulm_card_cover_show_last_changed: false
     ulm_card_cover_force_background_color: false
   show_icon: false
   show_name: false
@@ -294,7 +294,7 @@ card_cover:
                   }
                   return variables.ulm_translation_state;
                 ]]]
-              show_last_changed: "[[[ return variables.ulm_show_last_changed; ]]]"
+              show_last_changed: "[[[ return variables.ulm_card_cover_show_last_changed; ]]]"
               state:
                 - operator: "template"
                   value: "[[[ return variables.ulm_active_state ]]]"
@@ -401,7 +401,7 @@ card_cover:
                       return "mdi:arrow-left";
                   }
                   var device_class = entity.attributes?.device_class;
-                  if (device_class == 'curtain' || device_class == 'gate') {
+                  if (device_class == 'curtain' || device_class == 'gate' || device_class == 'awning') {
                       return "mdi:arrow-collapse-horizontal";
                   }
                   return "mdi:arrow-down";
@@ -516,7 +516,7 @@ card_cover:
                       return "mdi:arrow-right";
                   }
                   var device_class = entity.attributes?.device_class;
-                  if (device_class == 'curtain' || device_class == 'gate') {
+                  if (device_class == 'curtain' || device_class == 'gate' || device_class == 'awning') {
                       return "mdi:arrow-expand-horizontal";
                   }
                   return "mdi:arrow-up";

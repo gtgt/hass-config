@@ -1,7 +1,7 @@
   - sensor:
     # from energy meter pulse (see automation for saver/input_number updates)
 #    - name energy_meter_kwh
-#      state: "{{ states('input_number.energy_meter_kwh')|float|round(4) }}"
+#      state: "{{ states('input_number.energy_meter_kwh')|float(0)|round(4) }}"
 #      device_class: energy
 #      unit_of_measurement: kWh
 #      state_class: total_increasing
@@ -10,16 +10,17 @@
 #      unit_of_measurement: W
 #      state_class: measurement
 #      state: >-
-#        {{ state_attr('saver.saver', 'variables')["energy_meter_power"]|int }}
+#        {{ state_attr('saver.saver', 'variables')["energy_meter_power"]|int(0) }}
 
     # from PZEM-004t v3
     - name: energy_power
-      state: "{{ states('sensor.energy_power1')|default(0)|int + states('sensor.energy_power2')|int + states('sensor.energy_power3')|int }}"
+      state: "{{ states('sensor.energy_power1')|int(0) + states('sensor.energy_power2')|int(0) + states('sensor.energy_power3')|int(0) }}"
       device_class: power
       unit_of_measurement: W
       state_class: measurement
     - name: energy_kwh
-      state: "{{ (states('sensor.energy_energy1')|default(0)|float + states('sensor.energy_energy2')|float + states('sensor.energy_energy3')|float)|float|round(3) }}"
+      state: "{{ (states('sensor.energy_energy1')|float(0) + states('sensor.energy_energy2')|float(0) + states('sensor.energy_energy3')|float(0))|float(0)|round(3) }}"
+      availability: "{{ states('sensor.energy_energy1') not in ['unavailable', 'unknown', 'none'] and states('sensor.energy_energy2') not in ['unavailable', 'unknown', 'none'] and states('sensor.energy_energy3') not in ['unavailable', 'unknown', 'none'] }}"
       device_class: energy
       unit_of_measurement: kWh
       state_class: total_increasing
@@ -28,17 +29,24 @@
     # if solar energy production is higher than what goes to grid, then we push to grid, when lower (cloudy/night), we pull from grid
     - name: grid_power
       state: >-
-        {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_power')|int %}
-          {{ states('sensor.energy_power')|int }}
+        {% if states('sensor.solaredge_ac_power')|int(0) > states('sensor.energy_power')|int(0) %}
+          {{ states('sensor.energy_power')|int(0) }}
         {% else %}
-          {{ -1 * states('sensor.energy_power')|int }}
+          {{ -1 * states('sensor.energy_power')|int(0) }}
         {% endif %}
       device_class: power
       unit_of_measurement: W
       state_class: measurement
 
     - name: grid_kwh
-      state: "{{ states('sensor.solaredge_ac_energy_kwh')|float - states('sensor.energy_kwh')|float }}"
+      state: "{{ states('sensor.solaredge_ac_energy_kwh')|float(0) - states('sensor.energy_kwh')|float(0) }}"
+      availability: "{{ states('sensor.solaredge_ac_energy_kwh') not in ['unavailable', 'unknown', 'none'] and states('sensor.energy_kwh') not in ['unavailable', 'unknown', 'none'] }}"
       device_class: energy
       unit_of_measurement: kWh
       state_class: total
+      
+    - name: energy2_power
+      state: 0
+      device_class: power
+      unit_of_measurement: W
+      state_class: measurement

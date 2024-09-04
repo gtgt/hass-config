@@ -20,14 +20,19 @@
               "type": "map",
               "entities": [
                 {
-                  "entity": "person.gsm"
+                  "entity": "device_tracker.gt_xm12",
+                  "name": "T"
                 },
                 {
-                  "entity": "person.gt"
+                  "entity": "device_tracker.2201123g",
+                  "name": "M"
+                },
+                {
+                  "entity": "device_tracker.gsm_mi8"
                 }
               ],
-              "dark_mode": true,
               "hours_to_show": 12,
+              "theme_mode": "dark",
               "card_mod": {
                 "style": "ha-card {\n  min-height: 450px;\n  min-width: 450px;\n}\n"
               }
@@ -36,20 +41,25 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "device_tracker.gt_xm12",
+                  "entity": "person.gt",
                   "secondary_info": "last-updated"
+                },
+                {
+                  "entity": "device_tracker.gt_xm12",
+                  "secondary_info": "last-updated",
+                  "name": "Tomi XM12",
+                  "icon": "mdi:cellphone-nfc"
                 },
                 {
                   "entity": "sensor.gt_xm12_geocoded_location",
+                  "name": "Tomi Geokódolt hely",
                   "secondary_info": "last-updated"
                 },
                 {
-                  "entity": "sensor.location_gt",
-                  "secondary_info": "last-updated"
-                },
-                {
-                  "entity": "person.gt",
-                  "secondary_info": "last-updated"
+                  "entity": "sensor.gt_xm12_detected_activity",
+                  "secondary_info": "last-updated",
+                  "name": "Tomi aktivítás",
+                  "icon": ""
                 }
               ]
             },
@@ -57,19 +67,23 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "device_tracker.gsm_mi8",
-                  "secondary_info": "last-updated"
-                },
-                {
-                  "entity": "sensor.gsm_mi8_geocoded_location",
-                  "secondary_info": "last-updated"
-                },
-                {
-                  "entity": "sensor.location_gsm",
-                  "secondary_info": "last-updated"
-                },
-                {
                   "entity": "person.gsm",
+                  "secondary_info": "last-updated",
+                  "icon": ""
+                },
+                {
+                  "entity": "device_tracker.2201123g",
+                  "secondary_info": "last-updated",
+                  "name": "Marianna XM12",
+                  "icon": "mdi:cellphone-nfc"
+                },
+                {
+                  "entity": "sensor.2201123g_geocoded_location",
+                  "secondary_info": "last-updated",
+                  "name": "Marianna Geokódolt hely"
+                },
+                {
+                  "entity": "device_tracker.gsm_mi8",
                   "secondary_info": "last-updated"
                 }
               ],

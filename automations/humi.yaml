@@ -20,7 +20,7 @@
     service: input_select.select_option
     entity_id: input_select.humi1_mode
     data_template:
-      option: '{{ states.fan.humi1.attributes.mode }}'
+      option: '{{ states.fan.humi1.attributes.preset_modes[states.fan.humi1.attributes.mode-1] }}'
 
 
 - id: humi1_target_humidity_select

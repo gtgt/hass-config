@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.e11f726602a9cbbd115fa300fbd786bb",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "c-office",
+      "friendly_name": "",
+      "mac_address": "60:01:94:16:06:9E",
+      "compilation_time": "May 30 2024, 16:15:58",
+      "model": "d1_mini",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2024.5.2",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 10
+    },
+    "climate": [
+      {
+        "object_id": "c-office_ac",
+        "key": 797049040,
+        "name": "c-office_ac",
+        "unique_id": "c-officeclimatec-office_ac",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supports_current_temperature": false,
+        "supports_two_point_target_temperature": false,
+        "supported_modes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "visual_min_temperature": 19.0,
+        "visual_max_temperature": 28.0,
+        "visual_target_temperature_step": 1.0,
+        "visual_current_temperature_step": 1.0,
+        "legacy_supports_away": false,
+        "supports_action": false,
+        "supported_fan_modes": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "supported_swing_modes": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "supported_custom_fan_modes": [],
+        "supported_presets": [],
+        "supported_custom_presets": [],
+        "supports_current_humidity": false,
+        "supports_target_humidity": false,
+        "visual_min_humidity": 30.0,
+        "visual_max_humidity": 99.0
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "c-office_restart",
+        "key": 3921456585,
+        "name": "c-office_restart",
+        "unique_id": "c-officeswitchc-office_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "turn_off",
+        "key": 188147178,
+        "name": "Turn Off",
+        "unique_id": "c-officeswitchturn_off",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "turn_on",
+        "key": 1015425996,
+        "name": "Turn On",
+        "unique_id": "c-officeswitchturn_on",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "c-office_status",
+        "key": 2973191574,
+        "name": "c-office_status",
+        "unique_id": "c-officebinary_sensorc-office_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "c-office_up_time",
+        "key": 205688917,
+        "name": "c-office_up_time",
+        "unique_id": "60019416069e-uptime",
+        "disabled_by_default": false,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "c-office_wifi_signal",
+        "key": 2689090922,
+        "name": "c-office_wifi_signal",
+        "unique_id": "60019416069e-wifisignal",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "c-office_wifi_ssid",
+        "key": 181866547,
+        "name": "c-office_wifi_ssid",
+        "unique_id": "60019416069e-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "c-office_wifi_mac",
+        "key": 2127129539,
+        "name": "c-office_wifi_mac",
+        "unique_id": "60019416069e-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "c-office_wifi_ip",
+        "key": 4262113213,
+        "name": "c-office_wifi_ip",
+        "unique_id": "60019416069e-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ]
+  }
+}

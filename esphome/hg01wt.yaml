@@ -5,6 +5,9 @@ packages:
   common: !include _includes/common.yaml
   board: !include _includes/board/tywe3s.yaml
 
+esp8266:
+  restore_from_flash: true
+
 # https://templates.blakadder.com/qualitel_HG01WT.html
 ### pins ###
 # GPIO4  | LED blue    | status_led
@@ -42,6 +45,7 @@ switch:
       - output.turn_on: led1
     on_turn_off:
       - output.turn_off: led1
+    restore_mode: RESTORE_DEFAULT_OFF
 
 binary_sensor:
   - platform: gpio

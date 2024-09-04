@@ -2,6 +2,7 @@
 secrets.yaml
 frigate.yml
 home-assistant*
+*.save
 custom_components/hacs
 __pycache__
 .cloud

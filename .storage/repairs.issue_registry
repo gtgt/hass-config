@@ -26,13 +26,6 @@
         "issue_id": "deprecated_yaml"
       },
       {
-        "created": "2023-02-05T01:06:24.147399+00:00",
-        "dismissed_version": "2023.2.3",
-        "domain": "esphome",
-        "is_persistent": false,
-        "issue_id": "api_password_deprecated-4C:11:AE:0C:44:7F"
-      },
-      {
         "created": "2023-05-05T15:20:49.109305+00:00",
         "dismissed_version": "2023.6.0",
         "domain": "workday",
@@ -68,18 +61,53 @@
         "issue_id": "entity_name_is_device_name_discovery"
       },
       {
-        "created": "2023-10-04T17:57:51.944634+00:00",
-        "dismissed_version": "2023.9.3",
-        "domain": "hassio",
-        "is_persistent": false,
-        "issue_id": "unsupported_system_software"
-      },
-      {
         "created": "2023-10-04T18:01:08.772693+00:00",
         "dismissed_version": "2023.10.1",
         "domain": "hacs",
         "is_persistent": false,
         "issue_id": "deprecated_yaml_configuration"
+      },
+      {
+        "created": "2023-11-03T01:34:04.324916+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_binary_sensor_workday"
+      },
+      {
+        "created": "2023-12-07T23:25:34.711127+00:00",
+        "dismissed_version": "2023.12.0",
+        "domain": "auth",
+        "is_persistent": false,
+        "issue_id": "deprecated_legacy_api_password"
+      },
+      {
+        "created": "2024-01-13T00:31:22.419465+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_systemmonitor"
+      },
+      {
+        "created": "2024-02-12T00:38:06.667525+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_camera_generic"
+      },
+      {
+        "created": "2024-06-06T11:27:10.400558+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "deprecated_yaml_media_extractor"
+      },
+      {
+        "created": "2024-06-25T21:42:50.521153+00:00",
+        "dismissed_version": "2024.6.3",
+        "domain": "hassio",
+        "is_persistent": false,
+        "issue_id": "unsupported_system_software"
       }
     ]
   }

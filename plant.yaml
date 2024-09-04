@@ -1,0 +1,8 @@
+lemon_tree:
+    sensors:
+        moisture: sensor.plant_lemon_tree_moisture
+        battery: sensor.plant_lemon_tree_battery
+        temperature: sensor.plant_lemon_tree_temperature
+        conductivity: sensor.plant_lemon_tree_conductivity
+        brightness: sensor.plant_lemon_tree_illuminance
+    min_moisture: 20

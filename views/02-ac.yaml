@@ -163,7 +163,7 @@
     - type: vertical-stack
       cards:
       - type: weather-forecast
-        entity: weather.owm
+        entity: weather.accuweather
 #      - type: picture
 #        image: "https://www.yr.no/en/content/2-3046340/meteogram.svg"
       - type: picture-entity

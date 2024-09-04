@@ -1,0 +1,69 @@
+- id: '1715389593859'
+  alias: dining_table_light_apb_switch
+  description: Étkezőasztal kapcsoló
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.apb_q12
+    to: 'on'
+  condition: []
+  action:
+  - service: light.toggle
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.dining_table
+  mode: single
+- id: '1715389774168'
+  alias: dining_table_apb_switch
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.apb_q12
+    to: 'on'
+  condition: []
+  action:
+  - service: light.toggle
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.dining_table
+  mode: single
+- id: '1715934936474'
+  alias: shed_light_turn_on
+  description: ''
+  trigger:
+  - platform: time
+    at: '20:30:00'
+  - platform: sun
+    event: sunrise
+    offset: 01:00:00
+  condition:
+  - condition: state
+    entity_id: light.shed
+    state: 'off'
+  action:
+  - service: light.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.shed
+  mode: single
+- id: '1715935043250'
+  alias: shed_light_turn_off
+  description: ''
+  trigger:
+  - platform: time
+    at: 07:30:00
+  condition:
+  - condition: state
+    entity_id: light.shed
+    state: 'on'
+  action:
+  - service: light.turn_off
+    target:
+      entity_id:
+      - light.shed
+    data: {}
+  mode: single

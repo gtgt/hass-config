@@ -51,12 +51,12 @@
           card_size: 1
           content: |
             ### Energy meter
-            {% if states('sensor.solaredge_ac_power')|int > states('sensor.energy_meter_power')|int %}
-            Balance: {{ states('sensor.energy_meter_power')|int }}W
-            Consumption: {{ states('sensor.solaredge_ac_power')|int - states('sensor.energy_meter_power')|int }}W
+            {% if states('sensor.solaredge_ac_power')|int(0) > states('sensor.energy_meter_power')|int(0) %}
+            Balance: {{ states('sensor.energy_meter_power')|int(0) }}W
+            Consumption: {{ states('sensor.solaredge_ac_power')|int(0) - states('sensor.energy_meter_power')|int(0) }}W
             {% else %}
-            Balance: {{ -1 * states('sensor.energy_meter_power')|int }}W
-            Consumption: {{ states('sensor.energy_meter_power')|int + states('sensor.solaredge_ac_power')|int }}W
+            Balance: {{ -1 * states('sensor.energy_meter_power')|int(0) }}W
+            Consumption: {{ states('sensor.energy_meter_power')|int(0) + states('sensor.solaredge_ac_power')|int(0) }}W
             {% endif %}
         - type: custom:power-flow-card
           entities:
@@ -240,6 +240,12 @@
               name: Előző periódus
               icon: mdi:page-last
             - sensor.solar_production_yearly
+            - type: attribute
+              entity: sensor.solar_production_yearly
+              attribute: last_period
+              suffix: kWh
+              name: Előző periódus
+              icon: mdi:page-last
         - type: entities
           title: Ház fogyasztás
           entities:

@@ -1,0 +1,85 @@
+  - platform: tasmota_irhvac
+    name: office
+    command_topic: "cmnd/office-ir/irhvac"
+    # Pick one of the following:
+    # State is updated when the tasmota device receives an IR signal (includes own transmission and original remote)
+    # useful when a normal remote is in use alongside the tasmota device, may be less reliable than the second option.
+    state_topic: "tele/office-ir/RESULT"
+    # State is updated when the tasmota device completes IR transmissionm, should be pretty reliable.
+    state_topic: "stat/office-ir/RESULT"
+    # Uncomment if your 'available topic' of Tasmota IR device are different (if device in HA is disabled)
+    #availability_topic: "tele/office-ir/LWT"
+    #temperature_sensor: sensor.kitchen_temperature
+    #humidity_sensor: sensor.kitchen_humidity #optional - default None
+    #power_sensor: binaly_sensor.kitchen_ac_power #optional - default None
+    vendor: "GREE"
+    # When operating grouped devices at the same time, MQTT commands are intentionally delayed to prevent multiple devices
+    # from performing the same operation at the same time. This allows the high current peaks to be shifted.
+    mqtt_delay: 0.0 #optional - default 0 int or 0.0 float value in [sec].
+    min_temp: 19 #optional - default 16 int value
+    max_temp: 28 #optional - default 32 int value
+    target_temp: 24 #optional - default 26 int value
+    initial_operation_mode: "off" # optional - default "off" string value (one of the "supported_modes")
+    away_temp: 24 #optional - default 24 int value
+    precision: 1 #optional - default 1 int or float value. Can be set to 1, 0.5 or 0.1
+    supported_modes:
+      - "heat"
+      - "cool"
+      - "dry"
+      - "fan_only" # Use "fan_only" even if Tasmota shows "Mode":"Fan"
+      - "auto"
+      - "off" #Turns the AC off - Should be in quotes
+      # Some devices have "auto" and "fan_only" switched
+      # If the following two lines are uncommented, "auto" and "fan" shoud be commented out
+      #- "auto_fan_only" #if remote shows fan but tasmota says auto
+      #- "fan_only_auto" #if remote shows auto but tasmota says fan
+    supported_fan_speeds:
+      # Some devices say max,but it is high, and auto which is max
+      # If you uncomment the following two, you have to comment high and max
+      # - "auto_max" #woud become max
+      # - "max_high" #would become high
+      #- "on"
+      #- "off"
+      #- "low"
+      - "medium"
+      #- "high"
+      #- "middle"
+      #- "focus"
+      #- "diffuse"
+      - "min"
+      - "max"
+      - "auto"
+    supported_swing_list:
+      - "off"
+      - "vertical" #up to down
+      # - "horizontal" # Left to right
+      # - "both"
+    default_quiet_mode: "Off" #optional - default "Off" string value
+    default_turbo_mode: "Off" #optional - default "Off" string value
+    default_econo_mode: "Off" #optional - default "Off" string value
+    hvac_model: "-1" #optional - default "1" string value
+    celsius_mode: "On" #optional - default "On" string value
+    default_light_mode: "Off" #optional - default "Off" string value
+    default_filter_mode: "Off" #optional - default "Off" string value
+    default_clean_mode: "Off" #optional - default "Off" string value
+    default_beep_mode: "Off" #optional - default "Off" string value
+    default_sleep_mode: "-1" #optional - default "-1" string value
+    default_swingv: "high" #optional - default "" string value
+    default_swingh: "off" #optional - default "" string value
+    keep_mode_when_off: True #optional - default False boolean value : Must be True for MITSUBISHI_AC, ECOCLIM, etc.
+    toggle_list: #optional - default []
+      # The toggled property is a setting that does not retain the On state.
+      # Set this if your AC properties are toggle function.
+      #- Beep
+      #- Clean
+      #- Econo
+      #- Filter
+      - Light
+      #- Quiet
+      - Sleep
+      #- SwingH
+      #- SwingV
+      - Turbo
+    # When turning off some devices with their remote control they are set to the lowest temperature
+    # and this is shown on the thermostat card. Setting `ignore_off_temp` value to True will keep the last target temperature displayed on the card.
+    ignore_off_temp: False #optional - default False boolean value

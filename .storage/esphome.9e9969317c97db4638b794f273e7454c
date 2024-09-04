@@ -8,17 +8,19 @@
       "name": "energy",
       "friendly_name": "",
       "mac_address": "18:FE:34:E0:C1:2A",
-      "compilation_time": "Apr 10 2023, 00:36:58",
+      "compilation_time": "Sep  2 2024, 03:01:12",
       "model": "d1_mini",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2023.3.2",
+      "esphome_version": "2024.8.1",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
-      "voice_assistant_version": 0,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
       "legacy_bluetooth_proxy_version": 0,
-      "bluetooth_proxy_feature_flags": 0
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
     },
     "services": [
       {
@@ -34,8 +36,68 @@
     ],
     "api_version": {
       "major": 1,
-      "minor": 7
+      "minor": 10
     },
+    "update": [],
+    "binary_sensor": [
+      {
+        "object_id": "energy_status",
+        "key": 894977922,
+        "name": "energy_status",
+        "unique_id": "energybinary_sensorenergy_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "energy_restart",
+        "key": 1102582941,
+        "name": "energy_restart",
+        "unique_id": "energyswitchenergy_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy_reset1",
+        "key": 2614731994,
+        "name": "energy_reset1",
+        "unique_id": "energyswitchenergy_reset1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy_reset2",
+        "key": 2614731993,
+        "name": "energy_reset2",
+        "unique_id": "energyswitchenergy_reset2",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "energy_reset3",
+        "key": 2614731992,
+        "name": "energy_reset3",
+        "unique_id": "energyswitchenergy_reset3",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
     "sensor": [
       {
         "object_id": "energy_up_time",
@@ -368,63 +430,35 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": [],
-    "binary_sensor": [
+    "text_sensor": [
       {
-        "object_id": "energy_status",
-        "key": 894977922,
-        "name": "energy_status",
-        "unique_id": "energybinary_sensorenergy_status",
+        "object_id": "energy_wifi_ssid",
+        "key": 3726589071,
+        "name": "energy_wifi_ssid",
+        "unique_id": "18fe34e0c12a-wifiinfo-ssid",
         "disabled_by_default": false,
         "icon": "",
         "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
-    "switch": [
-      {
-        "object_id": "energy_restart",
-        "key": 1102582941,
-        "name": "energy_restart",
-        "unique_id": "energyswitchenergy_restart",
-        "disabled_by_default": false,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
         "device_class": ""
       },
       {
-        "object_id": "energy_reset1",
-        "key": 2614731994,
-        "name": "energy_reset1",
-        "unique_id": "energyswitchenergy_reset1",
+        "object_id": "energy_wifi_mac",
+        "key": 2509633831,
+        "name": "energy_wifi_mac",
+        "unique_id": "18fe34e0c12a-wifiinfo-macadr",
         "disabled_by_default": false,
         "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
+        "entity_category": 2,
         "device_class": ""
       },
       {
-        "object_id": "energy_reset2",
-        "key": 2614731993,
-        "name": "energy_reset2",
-        "unique_id": "energyswitchenergy_reset2",
+        "object_id": "energy_wifi_ip",
+        "key": 1567880817,
+        "name": "energy_wifi_ip",
+        "unique_id": "18fe34e0c12a-wifiinfo-ip",
         "disabled_by_default": false,
         "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "energy_reset3",
-        "key": 2614731992,
-        "name": "energy_reset3",
-        "unique_id": "energyswitchenergy_reset3",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
+        "entity_category": 2,
         "device_class": ""
       }
     ]

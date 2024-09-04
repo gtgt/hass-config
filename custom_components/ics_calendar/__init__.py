@@ -9,6 +9,7 @@ from homeassistant.const import (
     CONF_INCLUDE,
     CONF_NAME,
     CONF_PASSWORD,
+    CONF_PREFIX,
     CONF_URL,
     CONF_USERNAME,
     Platform,
@@ -16,7 +17,7 @@ from homeassistant.const import (
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.typing import ConfigType
 
-from .const import DOMAIN
+from .const import DOMAIN, UPGRADE_URL
 
 _LOGGER = logging.getLogger(__name__)
 PLATFORMS: list[Platform] = [Platform.CALENDAR]
@@ -30,6 +31,7 @@ CONF_DOWNLOAD_INTERVAL = "download_interval"
 CONF_USER_AGENT = "user_agent"
 CONF_OFFSET_HOURS = "offset_hours"
 CONF_ACCEPT_HEADER = "accept_header"
+CONF_CONNECTION_TIMEOUT = "connection_timeout"
 
 CONFIG_SCHEMA = vol.Schema(
     {
@@ -57,6 +59,9 @@ CONFIG_SCHEMA = vol.Schema(
                                         CONF_PARSER, default="rie"
                                     ): cv.string,
                                     vol.Optional(
+                                        CONF_PREFIX, default=""
+                                    ): cv.string,
+                                    vol.Optional(
                                         CONF_DAYS, default=1
                                     ): cv.positive_int,
                                     vol.Optional(
@@ -77,6 +82,9 @@ CONFIG_SCHEMA = vol.Schema(
                                     vol.Optional(
                                         CONF_ACCEPT_HEADER, default=""
                                     ): cv.string,
+                                    vol.Optional(
+                                        CONF_CONNECTION_TIMEOUT, default=None
+                                    ): cv.socket_timeout,
                                 }
                             )
                         ]
@@ -94,7 +102,16 @@ def setup(hass: HomeAssistant, config: ConfigType) -> bool:
     _LOGGER.debug("Setting up ics_calendar component")
     hass.data.setdefault(DOMAIN, {})
 
-    hass.helpers.discovery.load_platform(
-        PLATFORMS[0], DOMAIN, config[DOMAIN], config
-    )
+    if DOMAIN in config and config[DOMAIN]:
+        hass.helpers.discovery.load_platform(
+            PLATFORMS[0], DOMAIN, config[DOMAIN], config
+        )
+    else:
+        _LOGGER.error(
+            "No configuration found! If you upgraded from ics_calendar v3.2.0 "
+            "or older, you need to update your configuration! See "
+            "%s for more information.",
+            UPGRADE_URL,
+        )
+
     return True

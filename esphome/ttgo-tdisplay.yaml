@@ -1,0 +1,160 @@
+substitutions:
+  name: ttgo-tdisplay
+
+esp32:
+  board: featheresp32 #esp32dev esp32-c3-devkitm-1
+  framework:
+    type: esp-idf
+    version: recommended
+
+packages:
+  common: !include _includes/common.yaml
+  fonts: !include _includes/fonts2.yaml
+  color: !include _includes/color.yaml
+
+status_led:
+  pin:
+    number: GPIO33
+    inverted: true
+
+# Allow dimmable control of the backlight (pin GPIO4)
+output:
+  - platform: ledc
+    pin: GPIO4
+    id: gpio4
+
+light:
+  - platform: monochromatic
+    output: gpio4
+    name: ${name}_backlight
+    id: backlight
+    restore_mode: RESTORE_DEFAULT_ON
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    name: ${name}_button0
+    id: button0
+    icon: "mdi:brightness-5"
+    on_click:
+      - min_length: 0ms
+        max_length: 350ms
+        then:
+          - logger.log: "Button0 pressed"
+          - light.toggle:
+              id: backlight
+              transition_length: 0.5s
+      - min_length: 500ms
+        max_length: 1000ms
+        then:
+          - light.dim_relative:
+              id: backlight
+              relative_brightness: -20%
+              transition_length: 0.2s
+          - delay: 0.2s
+      - min_length: 1000ms
+        max_length: 2000ms
+        then:
+          - light.dim_relative:
+              id: backlight
+              relative_brightness: 20%
+              transition_length: 0.2s
+          - delay: 0.2s
+
+
+  - platform: gpio
+    pin:
+      number: GPIO35
+      inverted: true
+    name: ${name}_button1
+    id: button1
+    icon: "mdi:button-pointer"
+    on_press:
+      - logger.log: "Button1 pressed"
+
+#time:
+# - platform: sntp
+#   id: itime
+#   timezone: Europe/Budapest
+
+text_sensor:
+  - platform: homeassistant
+    internal: true
+    id: meeting1
+    entity_id: binary_sensor.cal1_upcoming
+  - platform: homeassistant
+    internal: true
+    id: meeting1_title
+    entity_id: binary_sensor.cal1_upcoming
+    attribute: summary
+  - platform: homeassistant
+    internal: true
+    id: meeting1_start
+    entity_id: binary_sensor.cal1_upcoming
+    attribute: start
+  - platform: homeassistant
+    internal: true
+    id: meeting1_end
+    entity_id: binary_sensor.cal1_upcoming
+    attribute: end
+
+  - platform: homeassistant
+    internal: true
+    id: meeting2
+    entity_id: binary_sensor.cal2_upcoming
+  - platform: homeassistant
+    internal: true
+    id: meeting2_title
+    entity_id: binary_sensor.cal2_upcoming
+    attribute: summary
+  - platform: homeassistant
+    internal: true
+    id: meeting2_start
+    entity_id: binary_sensor.cal2_upcoming
+    attribute: start
+  - platform: homeassistant
+    internal: true
+    id: meeting2_end
+    entity_id: binary_sensor.cal2_upcoming
+    attribute: end
+
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO19
+
+display:
+  - platform: ili9xxx
+    model: st7789v
+    #TTGO TDisplay 135x240
+    dimensions:
+      height: 240
+      width: 135
+      offset_height: 40
+      offset_width: 52
+    # Required or the colors are all inverted, and Black screen is White
+    invert_colors: true
+    cs_pin: GPIO5
+    dc_pin: GPIO16
+    reset_pin: GPIO23
+    update_interval: 10s
+    rotation: 90
+    lambda: |-
+      if (id(itime).timestamp_now() > 90000) {
+          it.strftime(it.get_width() / 2, 0, id(monobig), TextAlign::TOP_CENTER, "%d %H:%M", id(itime).now());
+          if (id(meeting1_title).has_state()) {
+              it.printf(0, 54, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_sanitize(id(meeting1_title).state).c_str());
+              it.printf(0, 48, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.c_str());
+          }
+          if (id(meeting2_title).has_state()) {
+              it.printf(0, 111, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_sanitize(id(meeting2_title).state).c_str());
+              it.printf(0, 105, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.c_str());
+          }
+      } else {
+            it.print(it.get_width() / 2, 0, id(narrowbig), TextAlign::TOP_CENTER, "Connecting...");
+      }
+

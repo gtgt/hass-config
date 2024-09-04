@@ -19,3 +19,7 @@ color:
     red: 75%
     green: 75%
     blue: 75%
+  - id: white
+    red: 100%
+    green: 100%
+    blue: 100%

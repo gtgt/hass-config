@@ -14,4 +14,4 @@
       icon: "mdi:home-thermometer-outline"
       state_class: measurement
       device_class: temperature
-      unit_of_measurement: ºC
+      unit_of_measurement: °C

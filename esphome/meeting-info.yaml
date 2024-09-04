@@ -1,119 +1,105 @@
+packages:
+  common: !include _includes/minimal.yaml
+  fonts: !include _includes/fonts2.yaml
+
 substitutions:
   name: meeting-info
 
-packages:
-  common: !include _includes/common.yaml
-  board: !include _includes/board/esp32.yaml
-  fonts: !include _includes/fonts2.yaml
-  color: !include _includes/color.yaml
+esp8266:
+  board: d1_mini
+  restore_from_flash: true
+  framework:
+    version: 3.0.2
 
-logger:
-  level: DEBUG
-  baud_rate: 115200
-  #hardware_uart: UART1
-
-# We can still control the backlight independently
-switch:
-  - platform: gpio
-    pin: GPIO4
-    name: ${name}_backlight
-    id: backlight
-#    on_turn_on:
-#    - delay: 50000ms
-#    - switch.turn_off: backlight
-
-binary_sensor:
-  - platform: gpio
-    pin:
-      number: GPIO0
-      inverted: true
-    name: ${name}_button0
-    id: button0
-    icon: "mdi:brightness-5"
-    on_press:
-      - logger.log: "Button0 pressed"
-      - switch.toggle: backlight
-  - platform: gpio
-    pin:
-      number: GPIO35
-      inverted: true
-    name: ${name}_button1
-    id: button1
-    icon: "mdi:button-pointer"
-    on_press:
-      - logger.log: "Button1 pressed"
-
-time:
-- platform: sntp
-  id: itime
-  timezone: Europe/Budapest
+#i2c:
+#  sda: D2
+#  scl: D1
 
 text_sensor:
   - platform: homeassistant
     internal: true
+    id: chat_time
+    entity_id: sensor.teams_chat
+    attribute: time
+  - platform: homeassistant
+    internal: true
+    id: chat_from
+    entity_id: sensor.teams_chat
+    attribute: from
+  - platform: homeassistant
+    internal: true
+    id: chat_content
+    entity_id: sensor.teams_chat
+    attribute: content
+  - platform: homeassistant
+    internal: true
     id: meeting1
-    entity_id: calendar.ics1
+    entity_id: binary_sensor.cal1_upcoming
   - platform: homeassistant
     internal: true
     id: meeting1_title
-    entity_id: calendar.ics1
-    attribute: message
+    entity_id: binary_sensor.cal1_upcoming
+    attribute: summary
   - platform: homeassistant
     internal: true
     id: meeting1_start
-    entity_id: calendar.ics1
-    attribute: start_time
+    entity_id: binary_sensor.cal1_upcoming
+    attribute: start
   - platform: homeassistant
     internal: true
     id: meeting1_end
-    entity_id: calendar.ics1
-    attribute: end_time
+    entity_id: binary_sensor.cal1_upcoming
+    attribute: end
 
   - platform: homeassistant
     internal: true
     id: meeting2
-    entity_id: calendar.ics2
+    entity_id: binary_sensor.cal2_upcoming
   - platform: homeassistant
     internal: true
     id: meeting2_title
-    entity_id: calendar.ics2
-    attribute: message
+    entity_id: binary_sensor.cal2_upcoming
+    attribute: summary
   - platform: homeassistant
     internal: true
     id: meeting2_start
-    entity_id: calendar.ics2
-    attribute: start_time
+    entity_id: binary_sensor.cal2_upcoming
+    attribute: start
   - platform: homeassistant
     internal: true
     id: meeting2_end
-    entity_id: calendar.ics2
-    attribute: end_time
+    entity_id: binary_sensor.cal2_upcoming
+    attribute: end
+
 
 spi:
-  clk_pin: GPIO18
-  mosi_pin: GPIO19
+  clk_pin: D1
+  mosi_pin: D3
 
 display:
-  # 240x135
-  - platform: st7789v
-    model: TTGO TDisplay 135x240
-    backlight_pin: GPIO4
-    cs_pin: GPIO5
-    dc_pin: GPIO16
-    reset_pin: GPIO23
+  - platform: waveshare_epaper
+    cs_pin: D2
+    dc_pin: D4
+    busy_pin: D5
+    model: 1.54inv2 # 200x200
     rotation: 270
+    update_interval: 10s
+    full_update_every: 30
     lambda: |-
       if (id(itime).timestamp_now() > 90000) {
-        it.strftime(it.get_width() / 2, 0, id(monobig), TextAlign::TOP_CENTER, "%d %H:%M", id(itime).now());
+          it.strftime(it.get_width() / 2, 0, id(monobig), TextAlign::TOP_CENTER, "%d %H:%M", id(itime).now());
+          if (id(meeting1_title).has_state()) {
+              it.printf(0, 54, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_sanitize(id(meeting1_title).state).c_str());
+              it.printf(0, 48, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.c_str());
+          }
+          if (id(meeting2_title).has_state()) {
+              it.printf(0, 101, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_sanitize(id(meeting2_title).state).c_str());
+              it.printf(0, 95, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.c_str());
+          }
+          if (id(chat_time).has_state()) {
+              it.printf(0, 131, id(narrowsmall), TextAlign::TOP_LEFT, "%s", str_sanitize(id(chat_from).state).c_str());
+              it.printf(0, 145, id(narrowsmall), TextAlign::TOP_LEFT, "%s", str_sanitize(id(chat_content).state).c_str());
+          }
       } else {
-        it.print(it.get_width() / 2, 0, id(narrowbig), TextAlign::TOP_CENTER, "Connecting...");
+            it.print(it.get_width() / 2, 0, id(narrowbig), TextAlign::TOP_CENTER, "Connecting...");
       }
-      if (id(meeting1).has_state()) {
-        it.printf(0, 54, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_truncate(str_sanitize(id(meeting1_title).state), 20).c_str());
-        it.printf(0, 48, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.substr(8,8).c_str());
-      }
-      if (id(meeting2).has_state()) {
-        it.printf(0, 111, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_truncate(str_sanitize(id(meeting2_title).state), 20).c_str());
-        it.printf(0, 105, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.substr(8,8).c_str());
-      }
-

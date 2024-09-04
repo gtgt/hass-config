@@ -1,7 +1,7 @@
 """Support for ICS Calendar."""
 import logging
 from datetime import datetime, timedelta
-from typing import Optional
+from typing import Any, Optional
 
 # import homeassistant.helpers.config_validation as cv
 # import voluptuous as vol
@@ -17,6 +17,7 @@ from homeassistant.const import (
     CONF_INCLUDE,
     CONF_NAME,
     CONF_PASSWORD,
+    CONF_PREFIX,
     CONF_URL,
     CONF_USERNAME,
 )
@@ -30,6 +31,7 @@ from homeassistant.util.dt import now as hanow
 from . import (
     CONF_ACCEPT_HEADER,
     CONF_CALENDARS,
+    CONF_CONNECTION_TIMEOUT,
     CONF_DAYS,
     CONF_DOWNLOAD_INTERVAL,
     CONF_INCLUDE_ALL_DAY,
@@ -82,6 +84,7 @@ def setup_platform(
             CONF_USERNAME: calendar.get(CONF_USERNAME),
             CONF_PASSWORD: calendar.get(CONF_PASSWORD),
             CONF_PARSER: calendar.get(CONF_PARSER),
+            CONF_PREFIX: calendar.get(CONF_PREFIX),
             CONF_DAYS: calendar.get(CONF_DAYS),
             CONF_DOWNLOAD_INTERVAL: calendar.get(CONF_DOWNLOAD_INTERVAL),
             CONF_USER_AGENT: calendar.get(CONF_USER_AGENT),
@@ -89,6 +92,7 @@ def setup_platform(
             CONF_INCLUDE: calendar.get(CONF_INCLUDE),
             CONF_OFFSET_HOURS: calendar.get(CONF_OFFSET_HOURS),
             CONF_ACCEPT_HEADER: calendar.get(CONF_ACCEPT_HEADER),
+            CONF_CONNECTION_TIMEOUT: calendar.get(CONF_CONNECTION_TIMEOUT),
         }
         device_id = f"{device_data[CONF_NAME]}"
         entity_id = generate_entity_id(ENTITY_ID_FORMAT, device_id, hass=hass)
@@ -121,7 +125,7 @@ class ICSCalendarEntity(CalendarEntity):
 
     @property
     def event(self) -> Optional[CalendarEvent]:
-        """Return the current event for the calendar entity or None.
+        """Return the current or next upcoming event or None.
 
         :return: The current event as a dict
         :rtype: dict
@@ -180,8 +184,31 @@ class ICSCalendarEntity(CalendarEntity):
             else False
         }
 
+    async def async_create_event(self, **kwargs: Any):
+        """Raise error, this is a read-only calendar."""
+        raise NotImplementedError()
 
-class ICSCalendarData:
+    async def async_delete_event(
+        self,
+        uid: str,
+        recurrence_id: str | None = None,
+        recurrence_range: str | None = None,
+    ) -> None:
+        """Raise error, this is a read-only calendar."""
+        raise NotImplementedError()
+
+    async def async_update_event(
+        self,
+        uid: str,
+        event: dict[str, Any],
+        recurrence_id: str | None = None,
+        recurrence_range: str | None = None,
+    ) -> None:
+        """Raise error, this is a read-only calendar."""
+        raise NotImplementedError()
+
+
+class ICSCalendarData:  # pylint: disable=R0902
     """Class to use the calendar ICS client object to get next event."""
 
     def __init__(self, device_data):
@@ -193,6 +220,7 @@ class ICSCalendarData:
         self._days = device_data[CONF_DAYS]
         self._offset_hours = device_data[CONF_OFFSET_HOURS]
         self.include_all_day = device_data[CONF_INCLUDE_ALL_DAY]
+        self._summary_prefix: str = device_data[CONF_PREFIX]
         self.parser = ICalendarParser.get_instance(device_data[CONF_PARSER])
         self.parser.set_filter(
             Filter(device_data[CONF_EXCLUDE], device_data[CONF_INCLUDE])
@@ -213,6 +241,8 @@ class ICSCalendarData:
             device_data[CONF_USER_AGENT],
             device_data[CONF_ACCEPT_HEADER],
         )
+
+        self._calendar_data.set_timeout(device_data[CONF_CONNECTION_TIMEOUT])
 
     async def async_get_events(
         self, hass: HomeAssistant, start_date: datetime, end_date: datetime
@@ -247,6 +277,9 @@ class ICSCalendarData:
             )
             event_list = []
 
+        for event in event_list:
+            event.summary = self._summary_prefix + event.summary
+
         return event_list
 
     @Throttle(MIN_TIME_BETWEEN_UPDATES)
@@ -277,7 +310,7 @@ class ICSCalendarData:
                 self.event.all_day,
             )
             (summary, offset) = extract_offset(self.event.summary, OFFSET)
-            self.event.summary = summary
+            self.event.summary = self._summary_prefix + summary
             self.offset = offset
             return True
 
