@@ -5,9 +5,9 @@
     attributes:
       summary: >
         {% if state_attr('calendar.cal1_o365', 'message') %}
-          {{ state_attr('calendar.cal1_o365', 'message')|truncate(32,True) }}
+          {{ state_attr('calendar.cal1_o365', 'message')|truncate(32,True)|replace('\n', ' ') }}
         {% elif state_attr('calendar.cal1_o365', 'data')|length %}
-          {{ state_attr('calendar.cal1_o365', 'data')[0]['summary']|truncate(32,True) }}
+          {{ state_attr('calendar.cal1_o365', 'data')[0]['summary']|truncate(32,True)|replace('\n', ' ') }}
         {% endif %}
       start: >
         {% if state_attr('calendar.cal1_o365', 'start_time') %}
@@ -27,9 +27,9 @@
     attributes:
       summary: >
         {% if state_attr('calendar.cal2_o365', 'message') %}
-          {{ state_attr('calendar.cal2_o365', 'message')|truncate(32,True) }}
+          {{ state_attr('calendar.cal2_o365', 'message')|truncate(32,True)|replace('\n', ' ') }}
         {% elif state_attr('calendar.cal2_o365', 'data')|length %}
-          {{ state_attr('calendar.cal2_o365', 'data')[0]['summary']|truncate(32,True) }}
+          {{ state_attr('calendar.cal2_o365', 'data')[0]['summary']|truncate(32,True)|replace('\n', ' ') }}
         {% endif %}
       start: >
         {% if state_attr('calendar.cal2_o365', 'start_time') %}
@@ -50,4 +50,4 @@
     attributes:
       time: "{{ (as_timestamp(states('sensor.teams_user_chat'))|timestamp_local)[11:16] }}"
       from: "{{ state_attr('sensor.teams_user_chat', 'from_display_name')|truncate(32,True) }}"
-      content: "{{ state_attr('sensor.teams_user_chat', 'content')|striptags|wordwrap(32,True) }}"
+      content: "{{ state_attr('sensor.teams_user_chat', 'content')|striptags|wordwrap(32,True)|replace('\n', ' ') }}"

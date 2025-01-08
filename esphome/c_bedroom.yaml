@@ -1,0 +1,6 @@
+substitutions:
+  name: c_bedroom
+  hostname: c-bedroom
+
+packages:
+  device: !include _includes/bac-002-alw.yaml

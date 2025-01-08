@@ -1,0 +1,31 @@
+network:
+  enable_ipv6: true
+
+wifi:
+  id: iwifi
+  fast_connect: false
+  networks:
+  - ssid: !secret wifi1_ssid
+    password: !secret wifi1_password
+  - ssid: !secret wifi2_ssid
+    password: !secret wifi2_password
+  domain: .lan
+  use_address: ${hostname}.lan
+  reboot_timeout: 15min
+  # HIGH
+  power_save_mode: NONE
+  enable_on_boot: true
+  output_power: 8.5
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret api_enc_key
+  reboot_timeout: 5min
+
+time:
+  # - platform: homeassistant
+  #   id: hatime
+  - platform: sntp
+    id: itime
+    timezone: Europe/Budapest

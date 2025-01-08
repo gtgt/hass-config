@@ -1,0 +1,123 @@
+substitutions:
+  name: figerprint
+  hostname: fingerprint
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp8266.yaml
+
+uart:
+  rx_pin: GPIOXX
+  tx_pin: GPIOXX
+  baud_rate: 57600
+
+text_sensor:
+  id: fingerprint_state
+  name: ${name}_state
+
+fingerprint_grow:
+  sensing_pin: GPIOXX
+
+  on_finger_scan_start:
+    - fingerprint_grow.aura_led_control:
+        state: ALWAYS_ON
+        color: GREEN
+        speed: 0
+        count: 0
+
+  on_finger_scan_invalid:
+    - homeassistant.event:
+        event: esphome.test_node_finger_scan_invalid
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: "Invalid finger"
+
+  on_finger_scan_matched:
+    - homeassistant.event:
+        event: esphome.test_node_finger_scan_matched
+        data:
+          finger_id: !lambda 'return finger_id;'
+          confidence: !lambda 'return confidence;'
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: !lambda 'return "Authorized finger " + to_string(finger_id) + ", confidence " + to_string(confidence);'
+
+  on_finger_scan_unmatched:
+    - homeassistant.event:
+        event: esphome.test_node_finger_scan_unmatched
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: "Unauthorized finger"
+
+  on_finger_scan_misplaced:
+    - homeassistant.event:
+        event: esphome.frontdoor_finger_scan_misplaced
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: "Misplaced finger"
+
+  on_enrollment_scan:
+    - homeassistant.event:
+        event: esphome.test_node_enrollment_scan
+        data:
+          finger_id: !lambda 'return finger_id;'
+          scan_num: !lambda 'return scan_num;'
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: !lambda 'return "Enrolling into slot " + to_string(finger_id) + ", scanned " + to_string(scan_num) + " time(s)";'
+
+  on_enrollment_done:
+    - homeassistant.event:
+        event: esphome.test_node_enrollment_done
+        data:
+          finger_id: !lambda 'return finger_id;'
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: !lambda 'return "Enrolled into slot " + to_string(finger_id);'
+
+  on_enrollment_failed:
+    - homeassistant.event:
+        event: esphome.test_node_enrollment_failed
+        data:
+          finger_id: !lambda 'return finger_id;'
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: !lambda 'return "Failed to enroll into slot " + to_string(finger_id);'
+
+api:
+  actions:
+  - action: enroll
+    variables:
+      finger_id: int
+      num_scans: int
+    then:
+      - fingerprint_grow.enroll:
+          finger_id: !lambda 'return finger_id;'
+          num_scans: !lambda 'return num_scans;'
+    - text_sensor.template.publish:
+        id: fingerprint_state
+        state: "Place a finger on the reader"
+
+  - action: cancel_enroll
+    then:
+      - fingerprint_grow.cancel_enroll:
+      - text_sensor.template.publish:
+          id: fingerprint_state
+          state: "Enroll cancelled"
+
+  - action: delete
+    variables:
+      finger_id: int
+    then:
+      - fingerprint_grow.delete:
+          finger_id: !lambda 'return finger_id;'
+      - text_sensor.template.publish:
+          id: fingerprint_state
+          state: !lambda 'return "Slot " + to_string(finger_id) + " deleted";'
+
+  - action: delete_all
+    then:
+      - fingerprint_grow.delete_all:
+      - text_sensor.template.publish:
+          id: fingerprint_state
+          state: "All slot deleted"

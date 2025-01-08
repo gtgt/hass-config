@@ -1,0 +1,9 @@
+- path: media
+  #title: Media
+  icon: mdi:play-network-outline
+  panel: false
+  cards:
+    - type: media-control
+      entity: media_player.x96
+    - type: media-control
+      entity: media_player.tvbox

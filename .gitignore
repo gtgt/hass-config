@@ -13,4 +13,5 @@ __pycache__
 .storage/mobile_app
 .storage/core.*
 .storage/hassio
+o365_storage/.O365-token-cache
 gtfs/*

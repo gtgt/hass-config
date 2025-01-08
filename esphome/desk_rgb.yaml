@@ -1,5 +1,6 @@
 substitutions:
   name: desk_rgb
+  hostname: desk-rgb
 
 packages:
   common: !include _includes/common.yaml

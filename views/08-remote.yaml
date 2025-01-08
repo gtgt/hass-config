@@ -1,6 +1,6 @@
-- path: tv
-  #title: TV
-  icon: mdi:television
+- path: remote
+  #title: Remote
+  icon: mdi:remote-tv
   panel: false
   cards:
   - type: entity
@@ -12,6 +12,8 @@
     card:
         type: vertical-stack
         cards:
+          - type: media-control
+            entity: media_player.study_tv
           - type: horizontal-stack
             cards:
               - type: button
@@ -62,10 +64,9 @@
                 name: Power
                 tap_action:
                   action: call-service
-                  service: remote.send_command
+                  service: remote.toggle
                   service_data:
                     entity_id: remote.study_tv
-                    command: TvPower
                   target: {}
                 icon: 'mdi:power'
                 icon_height: 25px
@@ -187,7 +188,7 @@
                   service: remote.send_command
                   service_data:
                     entity_id: remote.study_tv
-                    command: VolumeUp
+                    command: VolumeDown
                 icon: 'hass:volume-minus'
                 icon_height: 25px
               - type: button
@@ -418,4 +419,3 @@
                     command: iManual
                 icon_height: 25px
                 show_icon: false
-    

@@ -3,3 +3,4 @@ packages:
 
 substitutions:
   name: l_office
+  hostname: l-office

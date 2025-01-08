@@ -1,5 +1,6 @@
 substitutions:
   name: connector
+  hostname: connector
 
 packages:
   common: !include _includes/common.yaml

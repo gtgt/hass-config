@@ -1,5 +1,6 @@
 substitutions:
-  name: prolite-led
+  name: prolite_led
+  hostname: prolite-led
 
 packages:
   common: !include _includes/common.yaml

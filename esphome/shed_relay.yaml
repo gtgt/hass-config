@@ -1,5 +1,6 @@
 substitutions:
-  name: shed-relay
+  name: shed_relay
+  hostname: shed-relay
   icon: "mdi:electric-switch"
 
 packages:

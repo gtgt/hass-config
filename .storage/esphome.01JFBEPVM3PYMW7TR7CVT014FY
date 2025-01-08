@@ -1,18 +1,18 @@
 {
   "version": 1,
   "minor_version": 1,
-  "key": "esphome.163901f7f73d19747baedaa2b3a4fc98",
+  "key": "esphome.01JFBEPVM3PYMW7TR7CVT014FY",
   "data": {
     "device_info": {
       "uses_password": false,
       "name": "c-office",
       "friendly_name": "",
-      "mac_address": "D8:BF:C0:10:D8:A1",
-      "compilation_time": "Jun  7 2024, 20:13:25",
-      "model": "nodemcuv2",
+      "mac_address": "C8:2B:96:F8:19:C6",
+      "compilation_time": "Dec 26 2024, 02:31:11",
+      "model": "esp8285",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.5.5",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -27,19 +27,33 @@
       "major": 1,
       "minor": 10
     },
+    "binary_sensor": [
+      {
+        "object_id": "c-office_status",
+        "key": 2973191574,
+        "name": "c-office_status",
+        "unique_id": "c-officebinary_sensorc-office_status",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "switch": [
       {
         "object_id": "c-office_restart",
         "key": 3921456585,
         "name": "c-office_restart",
         "unique_id": "c-officeswitchc-office_restart",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:restart",
         "entity_category": 1,
         "assumed_state": false,
         "device_class": ""
       }
     ],
+    "update": [],
     "climate": [
       {
         "object_id": "c-office_ac",
@@ -49,7 +63,7 @@
         "disabled_by_default": false,
         "icon": "mdi:air-conditioner",
         "entity_category": 0,
-        "supports_current_temperature": false,
+        "supports_current_temperature": true,
         "supports_two_point_target_temperature": false,
         "supported_modes": [
           0,
@@ -59,8 +73,8 @@
           4,
           5
         ],
-        "visual_min_temperature": 19.0,
-        "visual_max_temperature": 27.0,
+        "visual_min_temperature": 11.0,
+        "visual_max_temperature": 33.0,
         "visual_target_temperature_step": 1.0,
         "visual_current_temperature_step": 1.0,
         "legacy_supports_away": false,
@@ -86,26 +100,13 @@
         "visual_max_humidity": 99.0
       }
     ],
-    "binary_sensor": [
-      {
-        "object_id": "c-office_status",
-        "key": 2973191574,
-        "name": "c-office_status",
-        "unique_id": "c-officebinary_sensorc-office_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "sensor": [
       {
         "object_id": "c-office_up_time",
         "key": 205688917,
         "name": "c-office_up_time",
-        "unique_id": "d8bfc010d8a1-uptime",
-        "disabled_by_default": false,
+        "unique_id": "c82b96f819c6-uptime",
+        "disabled_by_default": true,
         "icon": "mdi:timelapse",
         "entity_category": 2,
         "device_class": "duration",
@@ -119,13 +120,28 @@
         "object_id": "c-office_wifi_signal",
         "key": 2689090922,
         "name": "c-office_wifi_signal",
-        "unique_id": "d8bfc010d8a1-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
+        "unique_id": "c82b96f819c6-wifisignal",
+        "disabled_by_default": true,
+        "icon": "mdi:signal-variant",
         "entity_category": 2,
         "device_class": "signal_strength",
         "unit_of_measurement": "dBm",
         "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "c-office_temp",
+        "key": 420659026,
+        "name": "c-office_temp",
+        "unique_id": "c-officesensorc-office_temp",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "temperature",
+        "unit_of_measurement": "°C",
+        "accuracy_decimals": 1,
         "force_update": false,
         "state_class": 1,
         "last_reset_type": 0
@@ -136,9 +152,9 @@
         "object_id": "c-office_wifi_ssid",
         "key": 181866547,
         "name": "c-office_wifi_ssid",
-        "unique_id": "d8bfc010d8a1-wifiinfo-ssid",
-        "disabled_by_default": false,
-        "icon": "",
+        "unique_id": "c82b96f819c6-wifiinfo-ssid",
+        "disabled_by_default": true,
+        "icon": "mdi:wifi-check",
         "entity_category": 2,
         "device_class": ""
       },
@@ -146,9 +162,9 @@
         "object_id": "c-office_wifi_mac",
         "key": 2127129539,
         "name": "c-office_wifi_mac",
-        "unique_id": "d8bfc010d8a1-wifiinfo-macadr",
-        "disabled_by_default": false,
-        "icon": "",
+        "unique_id": "c82b96f819c6-wifiinfo-macadr",
+        "disabled_by_default": true,
+        "icon": "mdi:hexadecimal",
         "entity_category": 2,
         "device_class": ""
       },
@@ -156,9 +172,9 @@
         "object_id": "c-office_wifi_ip",
         "key": 4262113213,
         "name": "c-office_wifi_ip",
-        "unique_id": "d8bfc010d8a1-wifiinfo-ip",
-        "disabled_by_default": false,
-        "icon": "",
+        "unique_id": "c82b96f819c6-wifiinfo-ip",
+        "disabled_by_default": true,
+        "icon": "mdi:ip",
         "entity_category": 2,
         "device_class": ""
       }

@@ -8,11 +8,11 @@
       "name": "ac_relay",
       "friendly_name": "",
       "mac_address": "CC:50:E3:3A:70:9B",
-      "compilation_time": "Jun 27 2024, 15:43:11",
+      "compilation_time": "Dec 26 2024, 03:18:44",
       "model": "esp12e",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.6.3",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -27,13 +27,14 @@
       "major": 1,
       "minor": 10
     },
+    "update": [],
     "sensor": [
       {
         "object_id": "ac_relay_up_time",
         "key": 3869629663,
         "name": "ac_relay_up_time",
         "unique_id": "cc50e33a709b-uptime",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:timelapse",
         "entity_category": 2,
         "device_class": "duration",
@@ -48,8 +49,8 @@
         "key": 953222208,
         "name": "ac_relay_wifi_signal",
         "unique_id": "cc50e33a709b-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:signal-variant",
         "entity_category": 2,
         "device_class": "signal_strength",
         "unit_of_measurement": "dBm",
@@ -65,8 +66,8 @@
         "key": 281439429,
         "name": "ac_relay_wifi_ssid",
         "unique_id": "cc50e33a709b-wifiinfo-ssid",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:wifi-check",
         "entity_category": 2,
         "device_class": ""
       },
@@ -75,8 +76,8 @@
         "key": 1576529213,
         "name": "ac_relay_wifi_mac",
         "unique_id": "cc50e33a709b-wifiinfo-macadr",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:hexadecimal",
         "entity_category": 2,
         "device_class": ""
       },
@@ -85,20 +86,32 @@
         "key": 3748771239,
         "name": "ac_relay_wifi_ip",
         "unique_id": "cc50e33a709b-wifiinfo-ip",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:ip",
         "entity_category": 2,
         "device_class": ""
       }
     ],
-    "update": [],
+    "binary_sensor": [
+      {
+        "object_id": "ac_relay_status",
+        "key": 2750351128,
+        "name": "ac_relay_status",
+        "unique_id": "ac_relaybinary_sensorac_relay_status",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
     "switch": [
       {
         "object_id": "ac_relay_restart",
         "key": 1188761155,
         "name": "ac_relay_restart",
         "unique_id": "ac_relayswitchac_relay_restart",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:restart",
         "entity_category": 1,
         "assumed_state": false,
@@ -191,19 +204,6 @@
         "entity_category": 0,
         "assumed_state": false,
         "device_class": ""
-      }
-    ],
-    "binary_sensor": [
-      {
-        "object_id": "ac_relay_status",
-        "key": 2750351128,
-        "name": "ac_relay_status",
-        "unique_id": "ac_relaybinary_sensorac_relay_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
       }
     ]
   }

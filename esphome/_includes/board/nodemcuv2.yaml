@@ -2,6 +2,12 @@ esp8266:
   board: nodemcuv2
   restore_from_flash: true
 
+esphome:
+  on_boot:
+    priority: 200
+    then:
+       - lambda: 'WiFi.setPhyMode(WIFI_PHY_MODE_11G);'
+
 status_led:
   pin:
     number: GPIO2

@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.01J82KS5720MB6C233K0H2CP8J",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "office-panel",
+      "friendly_name": "office-panel",
+      "mac_address": "24:58:7C:D7:97:A0",
+      "compilation_time": "Sep 18 2024, 19:50:38",
+      "model": "esp32-s3-devkitc-1",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2024.8.3",
+      "project_name": "Guition.ESP32_S3_4848S040",
+      "project_version": "1.0.0",
+      "webserver_port": 80,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "suggested_area": ""
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 10
+    },
+    "binary_sensor": [
+      {
+        "object_id": "office-panel_status",
+        "key": 3513600149,
+        "name": "office-panel_status",
+        "unique_id": "office-panelbinary_sensoroffice-panel_status",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      },
+      {
+        "object_id": "status",
+        "key": 939730931,
+        "name": "Status",
+        "unique_id": "office-panelbinary_sensorstatus",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ],
+    "light": [
+      {
+        "object_id": "display_backlight",
+        "key": 2576302831,
+        "name": "Display Backlight",
+        "unique_id": "office-panellightdisplay_backlight",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          3
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      },
+      {
+        "object_id": "storage",
+        "key": 1789079356,
+        "name": "Storage",
+        "unique_id": "office-panellightstorage",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "supported_color_modes": [
+          1
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": false,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "office-panel_restart",
+        "key": 4006564932,
+        "name": "office-panel_restart",
+        "unique_id": "office-panelswitchoffice-panel_restart",
+        "disabled_by_default": true,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      }
+    ],
+    "sensor": [
+      {
+        "object_id": "office-panel_up_time",
+        "key": 2135521604,
+        "name": "office-panel_up_time",
+        "unique_id": "24587cd797a0-uptime",
+        "disabled_by_default": true,
+        "icon": "mdi:timelapse",
+        "entity_category": 2,
+        "device_class": "duration",
+        "unit_of_measurement": "s",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 2,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "office-panel_wifi_signal",
+        "key": 49719939,
+        "name": "office-panel_wifi_signal",
+        "unique_id": "24587cd797a0-wifisignal",
+        "disabled_by_default": true,
+        "icon": "mdi:signal-variant",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "dBm",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      },
+      {
+        "object_id": "wifi_strength",
+        "key": 1162292102,
+        "name": "WiFi Strength",
+        "unique_id": "office-panelsensorwifi_strength",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "signal_strength",
+        "unit_of_measurement": "%",
+        "accuracy_decimals": 0,
+        "force_update": false,
+        "state_class": 1,
+        "last_reset_type": 0
+      }
+    ],
+    "text_sensor": [
+      {
+        "object_id": "office-panel_wifi_ssid",
+        "key": 1236517578,
+        "name": "office-panel_wifi_ssid",
+        "unique_id": "24587cd797a0-wifiinfo-ssid",
+        "disabled_by_default": true,
+        "icon": "mdi:wifi-check",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "office-panel_wifi_mac",
+        "key": 96510152,
+        "name": "office-panel_wifi_mac",
+        "unique_id": "24587cd797a0-wifiinfo-macadr",
+        "disabled_by_default": true,
+        "icon": "mdi:hexadecimal",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "office-panel_wifi_ip",
+        "key": 4186094148,
+        "name": "office-panel_wifi_ip",
+        "unique_id": "24587cd797a0-wifiinfo-ip",
+        "disabled_by_default": true,
+        "icon": "mdi:ip",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "esphome_version",
+        "key": 2314437119,
+        "name": "ESPHome Version",
+        "unique_id": "24587cd797a0-version",
+        "disabled_by_default": false,
+        "icon": "mdi:new-box",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "connected_ssid",
+        "key": 1333571096,
+        "name": "Connected SSID",
+        "unique_id": "24587cd797a0-wifiinfo-ssid",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "last_restart",
+        "key": 4015774313,
+        "name": "Last Restart",
+        "unique_id": "office-paneltext_sensorlast_restart",
+        "disabled_by_default": false,
+        "icon": "mdi:clock",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "mac_address",
+        "key": 4039452215,
+        "name": "MAC Address",
+        "unique_id": "24587cd797a0-wifiinfo-macadr",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      },
+      {
+        "object_id": "ip_address",
+        "key": 3849966195,
+        "name": "IP Address",
+        "unique_id": "24587cd797a0-wifiinfo-ip",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": ""
+      }
+    ],
+    "update": []
+  }
+}

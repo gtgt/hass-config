@@ -1,5 +1,6 @@
 substitutions:
   name: kitchen
+  hostname: kitchen
 
 packages:
   common: !include _includes/common.yaml

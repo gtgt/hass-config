@@ -1,16 +1,19 @@
 substitutions:
   name: energy3
+  hostname: energy3
 
 packages:
   common: !include _includes/common.yaml
   board: !include _includes/board/d1_mini.yaml
 
 logger:
-  level: DEBUG
-  # logs:
-  #   sensor: INFO
-  #   pzemac: INFO
-  #   pzem004t: INFO
+  level: VERBOSE
+  logs:
+    sensor: INFO
+    pzemac: DEBUG
+    scheduler: INFO
+    modbus: DEBUG
+    pzem004t: VERBOSE
   esp8266_store_log_strings_in_flash: false
   baud_rate: 0
   hardware_uart: UART1
@@ -23,15 +26,15 @@ uart:
     baud_rate: 9600
     #stop_bits: 2
   - id: ubus2
-    rx_pin: D8
+    rx_pin: D6
     tx_pin: D7
     baud_rate: 9600
-    #stop_bits: 2
+    stop_bits: 1
   - id: ubus3
     rx_pin: GPIO3
     tx_pin: GPIO1
     baud_rate: 9600
-    #stop_bits: 2
+    stop_bits: 1
 
 modbus:
   - id: mbus1

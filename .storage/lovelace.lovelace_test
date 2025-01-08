@@ -9,12 +9,52 @@
           "title": "Home",
           "cards": [
             {
-              "type": "custom:weather-card",
-              "entity": "weather.owm",
-              "hourly_forecast": false,
-              "number_of_forecasts": "7"
+              "type": "thermostat",
+              "entity": "climate.c_office_ac",
+              "show_current_as_primary": true,
+              "features": [
+                {
+                  "type": "climate-hvac-modes"
+                },
+                {
+                  "style": "icons",
+                  "type": "climate-swing-modes"
+                },
+                {
+                  "style": "dropdown",
+                  "type": "climate-fan-modes"
+                }
+              ],
+              "name": "Office AC"
+            },
+            {
+              "type": "light",
+              "entity": "light.magichome_rgb"
+            },
+            {
+              "type": "light",
+              "entity": "light.l_office_led0"
             }
-          ]
+          ],
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": false,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "climate.c_office_ac",
+              "color": "",
+              "state_content": [
+                "state",
+                "temperature"
+              ]
+            },
+            {
+              "type": "entity",
+              "entity": "sensor.c_office_temp"
+            }
+          ],
+          "type": "masonry"
         }
       ]
     }

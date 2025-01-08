@@ -1,0 +1,74 @@
+substitutions:
+  name: c-office
+  hostname: c-office
+
+esp8266:
+  board: esp8285
+  restore_from_flash: true
+
+esphome:
+  # this board has 2mb flash, but esphome assumes 1mb for the 8285 board id
+  platformio_options:
+    board_upload.flash_size: 2MB
+    board_upload.maximum_size: 2097152
+    board_build.ldscript: "eagle.flash.2m256.ld"
+
+packages:
+  common: !include _includes/common.yaml
+
+one_wire:
+  - platform: gpio
+    pin: GPIO0
+
+sensor:
+  - platform: dallas_temp
+    address: 0xAA02179245598028
+    update_interval: 15s
+    id: temp
+    name: ${name}_temp
+    filters:
+      - offset: -1.5
+      #- exponential_moving_average:
+      #    alpha: 0.75
+      #    send_every: 4
+      #-   sliding_window_moving_average:
+      - median:
+          window_size: 4
+          send_every: 4
+          send_first_at: 4
+
+remote_receiver:
+  id: ir_receiver
+  pin: 
+    number: GPIO14
+    inverted: true
+    mode:
+      input: true
+      pullup: true
+  tolerance: 55%
+  dump: all
+
+remote_transmitter:
+  id: ir_transmitter
+  pin: GPIO4
+  carrier_duty_percent: 50%
+
+climate:
+  - platform: heatpumpir
+    id: ac
+    protocol: greeyac
+    min_temperature: 11
+    max_temperature: 33
+    horizontal_default: auto
+    vertical_default: mdown
+    name: ${name}_ac
+    receiver_id: ir_receiver
+    transmitter_id: ir_transmitter
+    sensor: temp
+    icon: "mdi:air-conditioner"
+    visual:
+      #min_temperature: 11
+      #max_temperature: 33
+      temperature_step:
+        target_temperature: 1.0
+        current_temperature: 1.0

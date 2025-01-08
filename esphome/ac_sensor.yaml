@@ -1,5 +1,6 @@
 substitutions:
   name: ac_sensor
+  hostname: ac-sensor
 
 packages:
   common: !include _includes/common.yaml

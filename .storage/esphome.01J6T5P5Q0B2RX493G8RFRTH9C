@@ -8,11 +8,11 @@
       "name": "esp32-2432s028",
       "friendly_name": "",
       "mac_address": "1C:69:20:30:96:74",
-      "compilation_time": "Sep  4 2024, 02:46:46",
+      "compilation_time": "Dec 27 2024, 05:25:47",
       "model": "esp32dev",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.8.1",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -27,44 +27,50 @@
       "major": 1,
       "minor": 10
     },
-    "light": [
+    "binary_sensor": [
       {
-        "object_id": "esp32-2432s028_backlight",
-        "key": 2614609805,
-        "name": "esp32-2432s028_backlight",
-        "unique_id": "esp32-2432s028lightesp32-2432s028_backlight",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "supported_color_modes": [
-          3
-        ],
-        "min_mireds": 0.0,
-        "max_mireds": 0.0,
-        "effects": [],
-        "legacy_supports_brightness": true,
-        "legacy_supports_rgb": false,
-        "legacy_supports_white_value": false,
-        "legacy_supports_color_temperature": false
+        "object_id": "esp32-2432s028_status",
+        "key": 1579296336,
+        "name": "esp32-2432s028_status",
+        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_status",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
       },
       {
-        "object_id": "led",
-        "key": 646037088,
-        "name": "LED",
-        "unique_id": "esp32-2432s028lightled",
+        "object_id": "esp32-2432s028_power",
+        "key": 4235683781,
+        "name": "esp32-2432s028_power",
+        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_power",
         "disabled_by_default": false,
         "icon": "",
         "entity_category": 0,
-        "supported_color_modes": [
-          35
-        ],
-        "min_mireds": 0.0,
-        "max_mireds": 0.0,
-        "effects": [],
-        "legacy_supports_brightness": true,
-        "legacy_supports_rgb": true,
-        "legacy_supports_white_value": false,
-        "legacy_supports_color_temperature": false
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "esp32-2432s028_music",
+        "key": 256754423,
+        "name": "esp32-2432s028_music",
+        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_music",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      },
+      {
+        "object_id": "esp32-2432s028_button0",
+        "key": 1465512702,
+        "name": "esp32-2432s028_button0",
+        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_button0",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
       }
     ],
     "switch": [
@@ -80,6 +86,7 @@
         "device_class": ""
       }
     ],
+    "update": [],
     "sensor": [
       {
         "object_id": "esp32-2432s028_up_time",
@@ -144,51 +151,44 @@
         "device_class": ""
       }
     ],
-    "update": [],
-    "binary_sensor": [
+    "light": [
       {
-        "object_id": "esp32-2432s028_status",
-        "key": 1579296336,
-        "name": "esp32-2432s028_status",
-        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_status",
-        "disabled_by_default": true,
-        "icon": "mdi:power",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      },
-      {
-        "object_id": "esp32-2432s028_power",
-        "key": 4235683781,
-        "name": "esp32-2432s028_power",
-        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_power",
+        "object_id": "esp32-2432s028_backlight",
+        "key": 2614609805,
+        "name": "esp32-2432s028_backlight",
+        "unique_id": "esp32-2432s028lightesp32-2432s028_backlight",
         "disabled_by_default": false,
         "icon": "",
         "entity_category": 0,
-        "device_class": "",
-        "is_status_binary_sensor": false
+        "supported_color_modes": [
+          3
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
       },
       {
-        "object_id": "esp32-2432s028_music",
-        "key": 256754423,
-        "name": "esp32-2432s028_music",
-        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_music",
+        "object_id": "led",
+        "key": 646037088,
+        "name": "LED",
+        "unique_id": "esp32-2432s028lightled",
         "disabled_by_default": false,
         "icon": "",
         "entity_category": 0,
-        "device_class": "",
-        "is_status_binary_sensor": false
-      },
-      {
-        "object_id": "esp32-2432s028_button0",
-        "key": 1465512702,
-        "name": "esp32-2432s028_button0",
-        "unique_id": "esp32-2432s028binary_sensoresp32-2432s028_button0",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "",
-        "is_status_binary_sensor": false
+        "supported_color_modes": [
+          35
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": true,
+        "legacy_supports_rgb": true,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
       }
     ]
   }

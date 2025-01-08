@@ -8,11 +8,11 @@
       "name": "l-office-led0",
       "friendly_name": "",
       "mac_address": "40:F5:20:C8:2A:31",
-      "compilation_time": "Aug 31 2024, 19:41:01",
+      "compilation_time": "Dec 26 2024, 02:53:06",
       "model": "esp8285",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.8.1",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -33,8 +33,8 @@
         "key": 1910698745,
         "name": "l-office-led0_status",
         "unique_id": "l-office-led0binary_sensorl-office-led0_status",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
         "entity_category": 2,
         "device_class": "connectivity",
         "is_status_binary_sensor": true
@@ -46,20 +46,21 @@
         "key": 223736912,
         "name": "l-office-led0_restart",
         "unique_id": "l-office-led0switchl-office-led0_restart",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:restart",
         "entity_category": 1,
         "assumed_state": false,
         "device_class": ""
       }
     ],
+    "update": [],
     "sensor": [
       {
         "object_id": "l-office-led0_up_time",
         "key": 1811511984,
         "name": "l-office-led0_up_time",
         "unique_id": "40f520c82a31-uptime",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:timelapse",
         "entity_category": 2,
         "device_class": "duration",
@@ -74,8 +75,8 @@
         "key": 3807403319,
         "name": "l-office-led0_wifi_signal",
         "unique_id": "40f520c82a31-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:signal-variant",
         "entity_category": 2,
         "device_class": "signal_strength",
         "unit_of_measurement": "dBm",
@@ -91,8 +92,8 @@
         "key": 3460439726,
         "name": "l-office-led0_wifi_ssid",
         "unique_id": "40f520c82a31-wifiinfo-ssid",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:wifi-check",
         "entity_category": 2,
         "device_class": ""
       },
@@ -101,8 +102,8 @@
         "key": 4111996340,
         "name": "l-office-led0_wifi_mac",
         "unique_id": "40f520c82a31-wifiinfo-macadr",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:hexadecimal",
         "entity_category": 2,
         "device_class": ""
       },
@@ -111,8 +112,8 @@
         "key": 2573619056,
         "name": "l-office-led0_wifi_ip",
         "unique_id": "40f520c82a31-wifiinfo-ip",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:ip",
         "entity_category": 2,
         "device_class": ""
       }
@@ -137,7 +138,6 @@
         "legacy_supports_white_value": false,
         "legacy_supports_color_temperature": false
       }
-    ],
-    "update": []
+    ]
   }
 }

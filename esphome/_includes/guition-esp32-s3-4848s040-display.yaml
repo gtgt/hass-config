@@ -1,0 +1,186 @@
+substitutions:
+  name: "guition-esp32-s3-4848s040"
+  friendly_name: $name
+  device_description: "Guition ESP32-S3-4848S040 480*480 Smart Screen"
+  project_name: "Guition.ESP32_S3_4848S040"
+  project_version: "1.0.0"
+  
+  lightbulb:     "\U000F0335"
+  ceiling_light: "\U000F0769"
+  lamp:          "\U000F06B5"
+  floor_lamp:    "\U000F08DD"
+  string_lights: "\U000F12BA"
+  led_strip:     "\U000F07D6"
+  ambient_light: "\U000F041C"
+  light_recessed: "\U000F179B"
+
+  icon_font: light40
+  text_font: roboto24  
+  screen_hight: '480px'
+  screen_width: '480px'
+  button_on_color: "Burnt_Sienna"
+  button_off_color: "Very_Dark_Gray"  
+  icon_on_color: "Yellow"
+  icon_off_color: "Gray"
+  button_text_color: "White"
+  button_height_single: '109px'
+  button_height_double: '228px'
+  button_width: '150px'
+  touchscreen_idle_timeout: "120s"
+  touchscreen_daytime_brightness: "100%"
+  touchscreen_nighttime_brightness: "50%"
+  # Screen goes to sleep at Mightnight
+  screen_sleep_hour: '0'
+  screen_sleep_minute: '0'
+  # Screen wakes up at 5:30am
+  screen_wake_hour: '5'
+  screen_wake_minute: '30'
+
+  button_1_name: "Button 1"
+  button_1_id: local_light
+  button_1_icon: $lightbulb
+  button_1_device: "-"
+
+  button_2_name: "Button 2"
+  button_2_id: button2
+  button_2_icon: $lightbulb
+  button_2_device: "-"
+
+  button_3_name: "Button 3"
+  button_3_id: button3
+  button_3_icon: $lightbulb
+  button_3_device: "-"
+  
+globals:
+  - id: late_night_mode
+    type: bool
+    restore_value: false
+    initial_value: 'false'  
+
+packages:
+  base: !include common.yaml
+  hardware: !include board/guition-esp32-s3-4848s040.yaml
+  colors: !include panel/common/color.yaml
+  time: !include panel/lvgl/lvgl_time_base.yaml
+  sensors: !include panel/lvgl/lvgl_sensors_base.yaml
+
+esphome:
+  on_boot:
+    priority: -100
+    then:
+      - delay: 60s
+      - lvgl.widget.hide: boot_screen
+ 
+# -------------------------------------------------------------------------    
+# Button state - Update state for Homeassistant objects and internal relays
+# ------------------------------------------------------------------------- 
+
+# Internal Relays defined as lights go here
+light:
+  - !include { file: panel/lvgl/basic_local_relay_button_state.yaml, vars: { id: 1 } }
+
+# Homeassistant lights go here
+text_sensor:
+  - !include { file: panel/lvgl/basic_light_switch_button_state.yaml, vars: { id: 2 } }
+  - !include { file: panel/lvgl/basic_light_switch_button_state.yaml, vars: { id: 3 } }
+
+#-------------------------------------------
+# LVGL pages and Buttons
+#-------------------------------------------    
+
+# Wake screen on touch
+touchscreen:
+  on_touch:
+    then:
+      - logger.log: "LVGL is active"
+      - lvgl.resume:
+      - if:   
+      # Only turn on baclight and set to 50% if late_night_mode is on
+          condition:
+            - lambda: |-
+                return id(late_night_mode);
+          then:      
+            - light.turn_on:
+                id: display_backlight
+                brightness: 50%  
+
+# Main LVGL section
+lvgl:
+  displays: 
+    - my_display
+  touchscreens:
+    - my_touchscreen
+  on_idle: !include { file: panel/lvgl/lvgl_touchscreen_idle.yaml }
+    
+  theme: !include { file: panel/lvgl/lvgl_theme.yaml }
+  page_wrap: true
+
+# Boot Screen  
+  top_layer: !include { file: panel/lvgl/boot_screen.yaml, vars: { hight: $screen_hight, width: $screen_width  } }
+
+# Main Page
+  pages:
+    - id: main_page
+      layout: 
+        type: flex
+        flex_flow: column_wrap
+      width: 100%
+      bg_color: Black
+      bg_opa: cover
+      pad_all: 5
+      widgets:
+        - button: !include { file: panel/lvgl/basic_local_relay_button.yaml, vars: { id: 1, hight: $button_height_single } }
+        - button: !include { file: panel/lvgl/basic_light_switch_button.yaml, vars: { id: 2, hight: $button_height_double } }
+        - button: !include { file: panel/lvgl/basic_light_switch_button.yaml, vars: { id: 3, hight: $button_height_single } }
+        - button: !include { file: panel/lvgl/transparent_empty_button.yaml, vars: { id: 4, hight: $button_height_single } }
+
+#-------------------------------------------
+# Graphics and Fonts
+#-------------------------------------------
+image:
+  - file: https://esphome.io/_static/logo-text-on-light.svg
+    id: boot_logo
+    resize: 460x90
+    type: RGB565
+    use_transparency: true
+    
+font:
+  - file: "gfonts://Roboto"
+    id: roboto24
+    size: 24
+    bpp: 4
+    extras:
+      # http://materialdesignicons.com/cdn/7.4.47/
+      - file: 'https://github.com/Templarian/MaterialDesign-Webfont/raw/v7.4.47/fonts/materialdesignicons-webfont.ttf'
+        glyphs: [
+          "\U000F004B",
+          "\U000F00ED",
+          "\U000F006E",
+          "\U000F012C",
+          "\U000F179B", # mdi:light-recessed
+          "\U000F0748",
+          "\U000F1A1B",
+          "\U000F02DC",
+          "\U000F0A02",
+          "\U000F035F",
+          "\U000F0156",
+          "\U000F0C5F",
+          "\U000F0084",
+          "\U000F0091",
+        ]
+
+  # http://materialdesignicons.com/cdn/7.4.47/
+  - file: 'https://github.com/Templarian/MaterialDesign-Webfont/raw/v7.4.47/fonts/materialdesignicons-webfont.ttf'
+    id: light40
+    size: 40
+    bpp: 4
+    glyphs: [
+      "${lightbulb}",  # mdi:lightbulb
+      "${ceiling_light}",  # mdi:ceiling-light
+      "${lamp}",  # mdi:lamp
+      "${floor_lamp}",  # mdi:floor-lamp
+      "${string_lights}",  # mdi:string-lights
+      "${led_strip}",  # mdi:led-strip
+      "${ambient_light}",  # mdi:mdi:wall-sconce-flat
+      "${light_recessed}",  # mdi:light-recessed
+    ]       

@@ -1,6 +1,5 @@
 """Main initialisation code."""
 
-import functools as ft
 import json
 import logging
 
@@ -31,9 +30,10 @@ from .const import (
     CONST_PRIMARY,
     CONST_UTC_TIMEZONE,
     DOMAIN,
-    TOKEN_CORRUPTED,
+    TOKEN_FILE_CORRUPTED,
     TOKEN_FILE_MISSING,
 )
+from .helpers.migration import MigrationServices
 from .helpers.setup import do_setup
 from .schema import MULTI_ACCOUNT_SCHEMA
 
@@ -52,6 +52,7 @@ async def async_setup(hass, config):
     for account in accounts:
         await _async_setup_account(hass, account, conf_type)
 
+    await _async_setup_migration_service(hass, conf)
     _LOGGER.debug("Finish")
     return True
 
@@ -70,20 +71,24 @@ async def _async_setup_account(hass, account_conf, conf_type):
     _LOGGER.debug("Permissions setup")
     perms = Permissions(hass, account_conf, conf_type)
     permissions, failed_permissions = await perms.async_check_authorizations()
-    account, is_authenticated = await _async_try_authentication(
-        hass, perms, credentials, main_resource, account_name
+
+    account, is_authenticated = await hass.async_add_executor_job(
+        _try_authentication, perms, credentials, main_resource
     )
 
-    if (
-        is_authenticated
-        and permissions
-        and permissions != TOKEN_FILE_MISSING
-        and permissions != TOKEN_CORRUPTED
-    ):
+    if is_authenticated and permissions is True:
         _LOGGER.debug("do setup")
         check_token = await _async_check_token(hass, account, account_name)
         if check_token:
-            await do_setup(hass, account_conf, account, account_name, conf_type, perms)
+            await do_setup(
+                hass,
+                account_conf,
+                account,
+                is_authenticated,
+                account_name,
+                conf_type,
+                perms,
+            )
     else:
         await _async_authorization_repair(
             hass,
@@ -96,36 +101,24 @@ async def _async_setup_account(hass, account_conf, conf_type):
         )
 
 
-async def _async_try_authentication(
-    hass, perms, credentials, main_resource, account_name
-):
+def _try_authentication(perms, credentials, main_resource):
     _LOGGER.debug("Setup token")
-    token_backend = await hass.async_add_executor_job(
-        ft.partial(
-            FileSystemTokenBackend,
-            token_path=perms.token_path,
-            token_filename=perms.token_filename,
-        )
+    token_backend = FileSystemTokenBackend(
+        token_path=perms.token_path,
+        token_filename=perms.token_filename,
     )
     _LOGGER.debug("Setup account")
-    account = await hass.async_add_executor_job(
-        ft.partial(
-            Account,
-            credentials,
-            token_backend=token_backend,
-            timezone=CONST_UTC_TIMEZONE,
-            main_resource=main_resource,
-        )
+    account = Account(
+        credentials,
+        token_backend=token_backend,
+        timezone=CONST_UTC_TIMEZONE,
+        main_resource=main_resource,
     )
+
     try:
         return account, account.is_authenticated
 
-    except json.decoder.JSONDecodeError as err:
-        _LOGGER.warning(
-            "Token corrupt for account - please delete and re-authenticate: %s. Error - %s",
-            account_name,
-            err,
-        )
+    except json.decoder.JSONDecodeError:
         return account, False
 
 
@@ -185,11 +178,14 @@ async def _async_authorization_repair(
     token_missing,
 ):
     base_message = f"requesting authorization for account: {account_name}"
-    message = (
-        "No token file found;"
-        if token_missing == TOKEN_FILE_MISSING
-        else "Token doesn't have all required permissions;"
-    )
+
+    if token_missing == TOKEN_FILE_MISSING:
+        message = "No token file found;"
+    elif token_missing == TOKEN_FILE_CORRUPTED:
+        message = "Token file corrupted;"
+    else:
+        message = "Token doesn't have all required permissions;"
+
     _LOGGER.warning("%s %s", message, base_message)
     data = {
         CONF_ACCOUNT_CONF: account_conf,
@@ -211,6 +207,13 @@ async def _async_authorization_repair(
         translation_placeholders={
             CONF_ACCOUNT_NAME: account_name,
         },
+    )
+
+
+async def _async_setup_migration_service(hass, config):
+    migration_services = MigrationServices(hass, config)
+    hass.services.async_register(
+        DOMAIN, "migrate_config", migration_services.async_migrate_config
     )
 
 

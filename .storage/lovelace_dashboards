@@ -23,9 +23,9 @@
         "id": "lovelace_camera"
       },
       {
-        "show_in_sidebar": false,
-        "icon": "mdi:view-dashboard-variant",
-        "title": "Test",
+        "show_in_sidebar": true,
+        "icon": "mdi:chair-rolling",
+        "title": "Iroda",
         "require_admin": true,
         "mode": "storage",
         "url_path": "lovelace-test",
@@ -44,7 +44,7 @@
         "id": "plant_sensors",
         "show_in_sidebar": true,
         "icon": "mdi:flower",
-        "title": "Plants",
+        "title": "Növények",
         "require_admin": true,
         "mode": "storage",
         "url_path": "plant-sensors"

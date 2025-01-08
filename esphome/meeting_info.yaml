@@ -1,15 +1,15 @@
 packages:
   common: !include _includes/minimal.yaml
-  fonts: !include _includes/fonts2.yaml
 
 substitutions:
   name: meeting-info
+  hostname: meeting-info
 
 esp8266:
   board: d1_mini
   restore_from_flash: true
-  framework:
-    version: 3.0.2
+  #framework:
+  #  version: 3.0.2
 
 #i2c:
 #  sda: D2
@@ -71,10 +71,20 @@ text_sensor:
     entity_id: binary_sensor.cal2_upcoming
     attribute: end
 
-
 spi:
   clk_pin: D1
   mosi_pin: D3
+
+font:
+  - file: '_fonts/slkscr.ttf'
+    id: monobig
+    size: 32
+  - file: '_fonts/NimbusSans-Narrow.ttf'
+    id: narrowsmall
+    size: 20
+  - file: '_fonts/NotoSans-Regular.ttf'
+    id: normallarge
+    size: 26
 
 display:
   - platform: waveshare_epaper
@@ -84,22 +94,22 @@ display:
     model: 1.54inv2 # 200x200
     rotation: 270
     update_interval: 10s
-    full_update_every: 30
+    full_update_every: 60
     lambda: |-
-      if (id(itime).timestamp_now() > 90000) {
+      if (id(itime).now().is_valid()) {
           it.strftime(it.get_width() / 2, 0, id(monobig), TextAlign::TOP_CENTER, "%d %H:%M", id(itime).now());
           if (id(meeting1_title).has_state()) {
-              it.printf(0, 54, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_sanitize(id(meeting1_title).state).c_str());
-              it.printf(0, 48, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.c_str());
+              it.printf(0, 54, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", id(meeting1_title).state.c_str());
+              it.printf(0, 44, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting1_start).state.c_str());
           }
           if (id(meeting2_title).has_state()) {
-              it.printf(0, 101, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", str_sanitize(id(meeting2_title).state).c_str());
-              it.printf(0, 95, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.c_str());
+              it.printf(0, 101, id(narrowsmall), TextAlign::BOTTOM_LEFT, "%s", id(meeting2_title).state.c_str());
+              it.printf(0, 91, id(normallarge), TextAlign::TOP_LEFT, "%s", id(meeting2_start).state.c_str());
           }
           if (id(chat_time).has_state()) {
-              it.printf(0, 131, id(narrowsmall), TextAlign::TOP_LEFT, "%s", str_sanitize(id(chat_from).state).c_str());
-              it.printf(0, 145, id(narrowsmall), TextAlign::TOP_LEFT, "%s", str_sanitize(id(chat_content).state).c_str());
+              it.printf(0, 130, id(narrowsmall), TextAlign::TOP_LEFT, "%s", id(chat_from).state.c_str());
+              it.printf(0, 153, id(narrowsmall), TextAlign::TOP_LEFT, "%s", id(chat_content).state.c_str());
           }
       } else {
-            it.print(it.get_width() / 2, 0, id(narrowbig), TextAlign::TOP_CENTER, "Connecting...");
+            it.print(it.get_width() / 2, 0, id(normallarge), TextAlign::TOP_CENTER, "Connecting...");
       }

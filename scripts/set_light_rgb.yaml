@@ -1,0 +1,30 @@
+set_light_rgb:
+  alias: 'ESPHome RGB light set'
+  fields:
+    entity_id:
+      name: entity_id
+      description: 'Entity ID'
+      required: true
+    red:
+      name: red
+      description: 'Red'
+      required: true
+      default: 255
+    green:
+      name: green
+      description: 'Green'
+      required: true
+      default: 255
+    blue:
+      name: blue
+      description: 'Blue'
+      required: true
+      default: 255
+  sequence:
+    - action: light.turn_on
+      data_template:
+        entity_id: '{{ entity_id }}'
+        rgb_color:
+        - '{{ red }}'
+        - '{{ green }}'
+        - '{{ blue }}'

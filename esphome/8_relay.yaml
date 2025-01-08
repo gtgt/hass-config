@@ -1,5 +1,6 @@
 substitutions:
   name: 8_relay
+  hostname: 8-relay
   icon: "mdi:air-conditioner"
 
 packages:

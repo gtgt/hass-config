@@ -16,7 +16,8 @@
         "tts_language": "en",
         "tts_voice": null,
         "wake_word_entity": "wake_word.openwakeword",
-        "wake_word_id": "ok_nabu_v0.1"
+        "wake_word_id": "hey_jarvis_v0.1",
+        "prefer_local_intents": false
       },
       {
         "conversation_engine": "conversation.home_assistant",
@@ -30,7 +31,8 @@
         "tts_language": "hu",
         "tts_voice": null,
         "wake_word_entity": "wake_word.openwakeword",
-        "wake_word_id": "hey_rhasspy_v0.1"
+        "wake_word_id": "ok_nabu_v0.1",
+        "prefer_local_intents": false
       }
     ],
     "preferred_item": "01hdhaamq5rf2va8j58cqeazaj"

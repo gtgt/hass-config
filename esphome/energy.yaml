@@ -1,5 +1,6 @@
 substitutions:
   name: energy
+  hostname: energy
 
 packages:
   common: !include _includes/common.yaml

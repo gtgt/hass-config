@@ -1,5 +1,6 @@
 substitutions:
   name: gate
+  hostname: gate
 
 packages:
   common: !include _includes/common.yaml

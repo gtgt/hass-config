@@ -1,5 +1,6 @@
 substitutions:
   name: esp32-2432s028
+  hostname: esp32-2432s028
 
 esp32:
   board: esp32dev
@@ -41,6 +42,7 @@ display:
     cs_pin: 15
     dc_pin: 2
     auto_clear_enabled: false
+    invert_colors: false
     dimensions:
         width: 320
         height: 240
@@ -119,7 +121,6 @@ text_sensor:
   #   id: uptime_human
   #   icon: mdi:clock-start
   #   internal: true
-
   - platform: wifi_info
     ip_address:
       id: ip_address
@@ -130,6 +131,74 @@ text_sensor:
             text:
               format: "IP: %s"
               args: [ x.c_str() ]
+  - platform: homeassistant
+    id: light_magichome_rgb_color
+    entity_id: light.magichome_rgb
+    attribute: rgb_color
+
+# Define pins for backlight display and back LED1
+output:
+  - platform: ledc
+    pin: GPIO21
+    id: output_backlight
+  - platform: ledc
+    id: output_red
+    pin: GPIO4
+    inverted: true
+  - platform: ledc
+    id: output_green
+    pin: GPIO16
+    inverted: true
+  - platform: ledc
+    id: output_blue
+    pin: GPIO17
+    inverted: true
+
+api:
+  on_client_connected:
+    - if:
+        condition:
+          lambda: 'return (0 == client_info.find("Home Assistant "));'
+        then:
+          - lvgl.widget.show: lbl_hastatus
+  on_client_disconnected:
+    - if:
+        condition:
+          lambda: 'return (0 == client_info.find("Home Assistant "));'
+        then:
+          - lvgl.widget.hide: lbl_hastatus
+
+# Define a monochromatic, dimmable light for the backlight
+light:
+  - platform: monochromatic
+    name: ${name}_backlight
+    id: backlight
+    internal: true
+    output: output_backlight
+    restore_mode: ALWAYS_ON
+  - platform: rgb
+    id: led
+    internal: true
+    red: output_red
+    green: output_green
+    blue: output_blue
+    restore_mode: ALWAYS_OFF
+
+number:
+  - platform: lvgl
+    widget: slider_brightness
+    id: screen_brightness
+    internal: true
+    on_value:
+      - globals.set:
+          id: brightness
+          value: !lambda return x;
+      - light.turn_on:
+          id: backlight
+          brightness: !lambda |-
+            // output value must be in range 0 - 1.0
+            // id(backlight).turn_on().set_brightness(x / 100.0).perform()
+            return x / 100.0;
 
 sensor:
   # - platform: uptime
@@ -155,61 +224,51 @@ sensor:
   #               (minutes ? to_string(minutes) + "m " : "") +
   #               (to_string(seconds) + "s")
   #             ).c_str();
-
-# Define pins for backlight display and back LED1
-output:
-  - platform: ledc
-    pin: GPIO21
-    id: output_backlight
-  - platform: ledc
-    id: output_red
-    pin: GPIO4
-    inverted: true
-  - platform: ledc
-    id: output_green
-    pin: GPIO16
-    inverted: true
-  - platform: ledc
-    id: output_blue
-    pin: GPIO17
-    inverted: true
-
-# Define a monochromatic, dimmable light for the backlight
-light:
-  - platform: monochromatic
-    name: ${name}_backlight
-    id: backlight
-    internal: true
-    output: output_backlight
-    restore_mode: ALWAYS_ON
-  - platform: rgb
-    id: led
-    internal: true
-    red: output_red
-    green: output_green
-    blue: output_blue
-    restore_mode: ALWAYS_OFF
-  - platform: lvgl
-    id: light_magichome_rgb
-    led: led_magichome_rgb
-    internal: true
-
-number:
-  - platform: lvgl
-    widget: slider_brightness
-    id: screen_brightness
-    internal: true
+  - platform: homeassistant
+    id: light_l_office_led0_brightness
+    entity_id: light.l_office_led0
+    attribute: brightness
     on_value:
-      - globals.set:
-          id: brightness
+      - lvgl.slider.update:
+          id: dimmer_l_office_led0
           value: !lambda return x;
-      - light.turn_on:
-          id: backlight
-          brightness: !lambda |-
-            // output value must be in range 0 - 1.0
-            // id(backlight).turn_on().set_brightness(x / 100.0).perform()
-            return x / 100.0;
+  - platform: homeassistant
+    id: light_magichome_rgb_brightness
+    entity_id: light.magichome_rgb
+    attribute: brightness
+    on_value:
+      - lvgl.slider.update:
+          id: dimmer_magichome_rgb
+          value: !lambda return x;
 
+  - platform: homeassistant
+    id: c_cur_temp
+    entity_id: climate.c_office_ac
+    attribute: current_temperature
+    on_value: 
+      then:
+        - lvgl.label.update:
+            id: lbl_climate_cur_temp
+            text:
+              format: "%.0f C"
+              args: [x]
+  - platform: homeassistant
+    id: c_target_temp
+    entity_id: climate.c_office_ac
+    attribute: temperature
+    on_value: 
+      then:
+        - lvgl.arc.update:
+            id: arc_climate
+            value: !lambda return x;
+        - lvgl.spinbox.update:
+            id: spinbox_climate
+            value: !lambda return x;
+        - lvgl.label.update:
+            id: lbl_climate_target_temp
+            text:
+              format: "%.0f C"
+              args: [x]
 
 # Exposed switches.
 switch:
@@ -217,13 +276,52 @@ switch:
     id: l_office_led0
     entity_id: light.l_office_led0
     on_turn_on:
-      - lvgl.matrix.button.update:
+      - lvgl.widget.update:
           id: btn_l_office_led0
-          selected: true
+          state:
+            checked: true
+      - lvgl.label.update:
+          id: btn_l_office_led0_label
+          text: "\U0000e0f0"
+      - lvgl.slider.update:
+          id: dimmer_l_office_led0
+          hidden: false
     on_turn_off:
-      - lvgl.matrix.button.update:
+      - lvgl.widget.update:
           id: btn_l_office_led0
-          selected: false
+          state:
+            checked: false
+      - lvgl.label.update:
+          id: btn_l_office_led0_label
+          text: "\U0000e9b8"
+      - lvgl.slider.update:
+          id: dimmer_l_office_led0
+          hidden: true
+  - platform: homeassistant
+    id: magichome_rgb
+    entity_id: light.magichome_rgb
+    on_turn_on:
+      - lvgl.widget.update:
+          id: btn_magichome_rgb
+          state:
+            checked: true
+      - lvgl.label.update:
+          id: btn_magichome_rgb_label
+          text: "\U0000f7ed"
+      - lvgl.slider.update:
+          id: dimmer_magichome_rgb
+          hidden: false
+    on_turn_off:
+      - lvgl.widget.update:
+          id: btn_magichome_rgb
+          state:
+            checked: false
+      - lvgl.label.update:
+          id: btn_magichome_rgb_label
+          text: "\U0000f4ef"
+      - lvgl.slider.update:
+          id: dimmer_magichome_rgb
+          hidden: true
   - platform: restart
     name: ${name} Restart
 
@@ -235,6 +333,9 @@ font:
     glyphs: [
         "\U0000f8b5", # air-conditioner
         "\U0000e0f0", # bulb
+        "\U0000e9b8", # bulb off
+        "\U0000f7ed", # backlight-high
+        "\U0000f4ef", # backlight-high-off
         "\U0000e8b8"  # cog
     ]
 
@@ -266,25 +367,28 @@ lvgl:
       bg_opa: TRANSP
   styles: black_style
   theme:
+    obj:
+      styles: black_style
     label:
       styles: black_style
     tabview:
       styles: black_style
     button:
-      bg_color: 0x333333
-      #bg_grad_color: 0x333333
+      bg_color: 0x111111
+      #bg_grad_color: 0x111111
       #bg_grad_dir: VER
       bg_opa: 85%
       border_color: 0x333333
       border_width: 0
       text_color: 0xFFFFFF
       pressed: # set some btn colors to be different in pressed state
-        bg_color: 0x111111
-        bg_grad_color: 0x111111
+        bg_color: 0x333333
+        bg_grad_color: 0x333333
+        text_color: orange
       checked: # set some btn colors to be different in checked state
-        bg_color: 0x111111
-        bg_grad_color: 0x111111
-        text_color: 0xf6ff00
+        bg_color: 0x333333
+        bg_grad_color: 0x333333
+        text_color: orange
     buttonmatrix:
       bg_opa: TRANSP
       border_color: 0x333333
@@ -292,20 +396,21 @@ lvgl:
       text_color: 0xFFFFFF
       pad_all: 0
       items: # set all your btnmatrix buttons to use your custom defined styles and font
-        bg_color: 0x333333
-        bg_grad_color: 0x333333
+        bg_color: 0x111111
+        bg_grad_color: 0x111111
         bg_grad_dir: VER
         bg_opa: COVER
         border_color: 0x333333
         border_width: 1
         text_color: 0xFFFFFF
         pressed:
-          bg_color: 0x111111
-          bg_grad_color: 0x111111
+          bg_color: 0x333333
+          bg_grad_color: 0x333333
+          text_color: orange
         checked:
-          bg_color: 0x111111
-          bg_grad_color: 0x111111
-          text_color: 0xEEEEEE
+          bg_color: 0x333333
+          bg_grad_color: 0x333333
+          text_color: orange
     switch:
       bg_color: 0xC0C0C0
       bg_grad_color: 0xb0b0b0
@@ -323,9 +428,9 @@ lvgl:
         bg_opa: COVER
     slider:
       border_width: 1
-      border_opa: 30%
+      border_opa: 60%
       bg_color: 0x9c9c9c
-      bg_opa: 15%
+      bg_opa: 30%
       indicator:
         bg_color: 0x333333
         bg_grad_color: 0x333333
@@ -348,14 +453,24 @@ lvgl:
       flex_align_track: START # align-content
     widgets:
       - label:
+          text: "\uF1EB"
+          id: lbl_hastatus
+          align: CENTER
+          hidden: true
+          text_align: center
+          text_color: 0xFFFFFF
+          width: 10%
+          height: 35
+      - label:
           id: text_title
-          text: 'Hello World!'
-          width: 70%
+          text: 'Connecting...'
+          width: 60%
           height: 35
       - slider:
           id: slider_brightness
           width: 30%
           pad_top: 10
+          pad_right: 20
           min_value: 5
           max_value: 100
           value: !lambda return id(brightness);
@@ -391,51 +506,167 @@ lvgl:
               - name: "\U0000e0f0"
                 layout:
                   type: flex
-                  pad_row: 4
+                  pad_row: 15
                   pad_column: 0
-                  flex_flow: COLUMN
-                  flex_align_main: CENTER # justify-content
+                  flex_flow: COLUMN_WRAP
+                  flex_align_main: START # justify-content
                   flex_align_cross: CENTER # align-items
-                  flex_align_track: CENTER # align-content
+                  flex_align_track: START # align-content
                 widgets:
-                  - buttonmatrix:
-                      height: 60%
-                      items:
-                        text_font: icons_24
-                      rows:
-                        - buttons:
-                          - id: btn_l_office_led0
+                  - button:
+                      id: btn_l_office_led0
+                      checkable: true
+                      height: 25%
+                      width: 50%
+                      widgets:
+                        - label:
+                            id: btn_l_office_led0_label
+                            text_font: icons_24
                             text: "\U0000e0f0"
-                            #selected: !lambda return id(l_office_led0).state
-                            control:
-                              checkable: true
-                              no_repeat: true
-                            on_value:
+                            align: CENTER
+                      on_value:
+                        then:
+                          - logger.log:
+                              format: "Button pressed: %u"
+                              args: [ x ]
+                          - if:
+                              condition:
+                                lambda: "return x == true;"
+                              ## todo: create script with x as input
                               then:
-                                - logger.log:
-                                    format: "Button pressed: %u"
-                                    args: [ x ]
-                                - if:
-                                    condition:
-                                      lambda: "return x == true;"
-                                    ## todo: create script with x as input
-                                    then:
-                                      - homeassistant.service:
-                                          service: light.turn_on
-                                          data:
-                                            entity_id: light.l_office_led0
-                                    else:
-                                      - homeassistant.service:
-                                          service: light.turn_off
-                                          data:
-                                            entity_id: light.l_office_led0
-                        # - buttons
-                        #   - id: ...
-                  - led:
-                      id: led_magichome_rgb
-                      height: 20%
-                      align: CENTER
-                      color: 0xFF0000
+                                - homeassistant.service:
+                                    service: light.turn_on
+                                    data:
+                                      entity_id: light.l_office_led0
+                              else:
+                                - homeassistant.service:
+                                    service: light.turn_off
+                                    data:
+                                      entity_id: light.l_office_led0
+                  - slider:
+                      id: dimmer_l_office_led0
+                      hidden: true
+                      pad_all: 8
+                      min_value: 0
+                      max_value: 255
+                      width: 50%
+                      on_release:
+                          - homeassistant.action:
+                              action: light.turn_on
+                              data:
+                                entity_id: light.l_office_led0
+                                brightness: !lambda return int(x);
+                  - button:
+                      id: btn_magichome_rgb
+                      checkable: true
+                      height: 25%
+                      width: 50%
+                      widgets:
+                        - label:
+                            id: btn_magichome_rgb_label
+                            text_font: icons_24
+                            text: "\U0000f7ed"
+                            align: CENTER
+                      on_value:
+                        then:
+                          - logger.log:
+                              format: "Button pressed: %u"
+                              args: [ x ]
+                          - if:
+                              condition:
+                                lambda: "return x == true;"
+                              ## todo: create script with x as input
+                              then:
+                                - homeassistant.service:
+                                    service: light.turn_on
+                                    data:
+                                      entity_id: light.magichome_rgb
+                              else:
+                                - homeassistant.service:
+                                    service: light.turn_off
+                                    data:
+                                      entity_id: light.magichome_rgb
+                  - slider:
+                      id: dimmer_magichome_rgb
+                      hidden: true
+                      pad_all: 8
+                      min_value: 0
+                      max_value: 255
+                      width: 50%
+                      on_release:
+                          - homeassistant.action:
+                              action: light.turn_on
+                              data:
+                                entity_id: light.magichome_rgb
+                                brightness: !lambda return int(x);
+                  - obj:
+                      align: TOP_MID
+                      border_width: 0
+                      layout:
+                        type: FLEX
+                        flex_flow: ROW_WRAP
+                        flex_align_main: CENTER
+                        flex_align_track: CENTER
+                        flex_align_cross: CENTER
+                      width: 50%
+                      widgets:
+                        ## LED colors order is changed. it's: 0x<blue><green><red>
+                        - led:
+                            id: led_magichome_rgb_fuchsia
+                            align: CENTER
+                            color: 0xFF00FF
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '255', green: '0', blue: '255'}
+                        - led:
+                            id: led_magichome_rgb_yellow
+                            align: CENTER
+                            color: 0x00FFFF
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '255', green: '255', blue: '0'}
+                        - led:
+                            id: led_magichome_rgb_aqua
+                            align: CENTER
+                            color: 0xFFFF00
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '0', green: '255', blue: '255'}
+                        - led:
+                            id: led_magichome_rgb_red
+                            align: CENTER
+                            color: 0x0000FF
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '255', green: '0', blue: '0'}
+                        - led:
+                            id: led_magichome_rgb_green
+                            align: CENTER
+                            color: 0x00FF00
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '0', green: '255', blue: '0'}
+                        - led:
+                            id: led_magichome_rgb_blue
+                            align: CENTER
+                            color: 0xFF0000
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '0', green: '0', blue: '255'}
+                        - led:
+                            id: led_magichome_rgb_white
+                            align: CENTER
+                            color: 0xFFFFFF
+                            on_click:
+                                - homeassistant.action:
+                                    action: script.set_light_rgb
+                                    data: {entity_id: 'light.magichome_rgb', red: '255', green: '255', blue: '255'}
 
               - name: "\U0000f8b5"
                 layout:
@@ -447,12 +678,76 @@ lvgl:
                   flex_align_cross: CENTER # align-items
                   flex_align_track: CENTER # align-content
                 widgets:
+                  - label:
+                      id: lbl_climate_cur_temp
+                      text_font: montserrat_26
+                      translate_y: 80
+                      align_to:
+                        id: arc_climate
+                        align: CENTER                  
                   - arc:
-                      id: arc_id
-                      value: 24
-                      min_value: 19
-                      max_value: 27
+                      id: arc_climate
+                      value: 14
+                      min_value: 14
+                      max_value: 29
                       adjustable: true
+                      on_release:
+                        - homeassistant.service:
+                            service: climate.set_temperature
+                            data:
+                              entity_id: climate.c_office_ac
+                              temperature: !lambda return x;
+                  - label:
+                      id: lbl_climate_target_temp
+                      text_font: montserrat_18
+                      translate_y: -30
+                  - obj:
+                      align: TOP_MID
+                      translate_y: -50
+                      border_width: 0
+                      pad_all: 0
+                      layout:
+                        type: FLEX
+                        flex_flow: ROW
+                        flex_align_cross: CENTER
+                        pad_row: 0
+                        pad_column: 100
+                      width: SIZE_CONTENT
+                      height: SIZE_CONTENT
+                      widgets:
+                        - button:
+                            id: btn_climate_spinbox_down
+                            on_click:
+                              - lvgl.spinbox.decrement: spinbox_climate
+                            widgets:
+                              - label:
+                                  text: "-"
+                        - spinbox:
+                            id: spinbox_climate
+                            align: CENTER
+                            text_align: CENTER
+                            width: 50
+                            range_from: 14
+                            range_to: 29
+                            step: 1
+                            rollover: false
+                            digits: 2
+                            decimal_places: 0
+                            hidden: true
+                            on_change:
+                              then:
+                                - homeassistant.action:
+                                    action: climate.set_temperature
+                                    data:
+                                      temperature: !lambda return x;
+                                      entity_id: climate.c_office_ac
+                        - button:
+                            id: btn_climate_spinbox_up
+                            on_click:
+                              - lvgl.spinbox.increment: spinbox_climate
+                            widgets:
+                              - label:
+                                  text: "+"
 
               - name: "\U0000e8b8"
                 layout:

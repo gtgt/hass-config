@@ -1,0 +1,231 @@
+substitutions:
+  name: c_office2
+  hostname: c-office2
+
+packages:
+  common: !include _includes/common.yaml
+  board: !include _includes/board/esp12e.yaml
+
+sensor:
+  - platform: adc
+    pin: A0
+    id: a0
+    internal: true
+    filters:
+      - multiply: 1000
+      - delta: 5
+    unit_of_measurement: mV
+    update_interval: 0.1s
+
+#1.0: 50, 195, 380, 555, 790
+binary_sensor:
+  - platform: template
+    id: btn_right
+    name: ${name}_right
+    condition:
+      sensor.in_range:
+        id: a0
+        above: 0.0
+        below: 100.0
+    on_press:
+      - climate.control:
+          id: ac
+          fan_mode: !lambda |-
+            esphome::optional<esphome::climate::ClimateFanMode> fan_mode = id(ac).fan_mode;
+            if (fan_mode == CLIMATE_FAN_AUTO) { return CLIMATE_FAN_LOW; }
+            else if (fan_mode == CLIMATE_FAN_LOW) { return CLIMATE_FAN_MEDIUM; }
+            return CLIMATE_FAN_HIGH;
+
+  - platform: template
+    id: btn_up
+    name: ${name}_up
+    condition:
+      sensor.in_range:
+        id: a0
+        above: 100.0
+        below: 250.0
+    on_press:
+      - climate.control:
+          id: ac
+          target_temperature: !lambda "return id(ac).target_temperature + 1.0;"
+
+  - platform: template
+    id: btn_down
+    name: ${name}_down
+    condition:
+      sensor.in_range:
+        id: a0
+        above: 250.0
+        below: 500.0
+    on_press:
+      - climate.control:
+          id: ac
+          target_temperature: !lambda "return id(ac).target_temperature - 1.0;"
+
+  - platform: template
+    id: btn_left
+    name: ${name}_left
+    condition:
+      sensor.in_range:
+        id: a0
+        above: 500.0
+        below: 750.0
+    on_press:
+      - climate.control:
+          id: ac
+          fan_mode: !lambda |-
+            esphome::optional<esphome::climate::ClimateFanMode> fan_mode = id(ac).fan_mode;
+            if (fan_mode == CLIMATE_FAN_HIGH) { return CLIMATE_FAN_MEDIUM; }
+            else if (fan_mode == CLIMATE_FAN_MEDIUM) { return CLIMATE_FAN_LOW; }
+            return CLIMATE_FAN_AUTO;
+
+  - platform: template
+    id: btn_select
+    name: ${name}_select
+    condition:
+      sensor.in_range:
+        id: a0
+        above: 750.0
+        below: 999.0
+
+remote_receiver:
+  id: ir_receiver
+  pin: 
+    number: GPIO15 #D8
+    inverted: True
+    mode: INPUT_PULLUP
+  tolerance: 55%
+  #dump: raw
+
+remote_transmitter:
+  id: ir_transmitter
+  pin: GPIO13 #D7
+  carrier_duty_percent: 50%
+
+climate:
+  - platform: heatpumpir
+    id: ac
+    protocol: greeyt
+    min_temperature: 19
+    max_temperature: 27
+    horizontal_default: auto
+    vertical_default: mdown
+    name: ${name}_ac
+    receiver_id: ir_receiver
+    transmitter_id: ir_transmitter
+    #sensor: room_temperature
+    icon: "mdi:air-conditioner"
+    visual:
+      min_temperature: 19
+      max_temperature: 27
+      temperature_step:
+        target_temperature: 1.0
+        current_temperature: 1.0
+
+display:
+  - platform: lcd_gpio
+    dimensions: 20x4
+    data_pins:
+      - GPIO16 #D0
+      - GPIO5 #D1
+      - GPIO4 #D2
+      - GPIO0 #D3
+    enable_pin: GPIO14 #D5
+    rs_pin: GPIO12 #D6
+    user_characters:
+      - position: 0
+        data:
+          - 0b00111
+          - 0b00101
+          - 0b00111
+          - 0b00000
+          - 0b00000
+          - 0b00000
+          - 0b00000
+          - 0b00000
+      - position: 1
+        data:
+          - 0b11111
+          - 0b11111
+          - 0b11111
+          - 0b11111
+          - 0b11111
+          - 0b11111
+          - 0b11111
+          - 0b11111
+    lambda: |-
+        char* _mode = (char*)"-";
+        char* _fan_mode = (char*)"-";
+        switch(id(ac).mode) {
+          case CLIMATE_MODE_OFF:
+            _mode = (char*)"off";
+            break;
+          case CLIMATE_MODE_HEAT_COOL:
+            _mode = (char*)"heat-cool";
+            break;
+          case CLIMATE_MODE_AUTO:
+            _mode = (char*)"auto";
+            break;
+          case CLIMATE_MODE_COOL:
+            _mode = (char*)"cool";
+            break;
+          case CLIMATE_MODE_HEAT:
+            _mode = (char*)"heat";
+            break;
+          case CLIMATE_MODE_FAN_ONLY:
+            _mode = (char*)"fan";
+            break;
+          case CLIMATE_MODE_DRY:
+            _mode = (char*)"dry";
+            break;
+        }
+        esphome::optional<esphome::climate::ClimateFanMode> fan_mode = id(ac).fan_mode;
+        if (fan_mode == CLIMATE_FAN_AUTO) {
+            _fan_mode = (char*)"-A-";
+        } else if (fan_mode == CLIMATE_FAN_LOW) {
+            _fan_mode = (char*)"\x01  ";
+        } else if (fan_mode == CLIMATE_FAN_MEDIUM) {
+            _fan_mode = (char*)"\x01\x01 ";
+        } else if (fan_mode == CLIMATE_FAN_HIGH) {
+            _fan_mode = (char*)"\x01\x01\x01";
+        }
+        it.printf("C:%.1f\x08""C%8s", id(ac).current_temperature, _fan_mode);
+        it.printf(0, 1, "T:%.1f\x08""C%8s", id(ac).target_temperature, _mode);
+
+# switch:
+#   - platform: gpio
+#     pin: GPIO9 #S2
+#     id: up
+#     icon: "mdi:up"
+#     on_turn_on:
+#     - delay: 500ms
+#     - switch.turn_off: up
+#     - lambda: |-
+#         auto call = id(ac).make_call();
+#         call.set_target_temperature(id(ac).current_temperature + 0.5f);
+#         call.perform();
+#   - platform: gpio
+#     pin: GPIO10 #S3
+#     id: down
+#     icon: "mdi:down"
+#     on_turn_on:
+#     - delay: 500ms
+#     - switch.turn_off: down
+#     - lambda: |-
+#         auto call = id(ac).make_call();
+#         call.set_target_temperature(id(ac).current_temperature - 0.5f);
+#         call.perform();
+#   - platform: gpio
+#     pin: GPIO7 #S0
+#     id: left
+#     icon: "mdi:left"
+#     on_turn_on:
+#     - delay: 500ms
+#     - switch.turn_off: left
+#   - platform: gpio
+#     pin: GPIO8 #S1
+#     id: right
+#     icon: "mdi:right"
+#     on_turn_on:
+#     - delay: 500ms
+#     - switch.turn_off: right

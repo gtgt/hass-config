@@ -1,5 +1,6 @@
 substitutions:
   name: bedroom
+  hostname: bedroom
   
 packages:
   common: !include _includes/common.yaml

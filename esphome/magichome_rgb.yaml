@@ -1,5 +1,6 @@
 substitutions:
   name: magichome_rgb
+  hostname: magichome-rgb
 
 packages:
   magichome: !include _includes/magichome_rgb.yaml

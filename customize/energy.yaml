@@ -113,3 +113,4 @@ sensor.grid_cost_monthly:
   friendly_name: "A1 haviköltség"
 sensor.energy2_cost_monthly:
   friendly_name: "H haviköltség"
+  

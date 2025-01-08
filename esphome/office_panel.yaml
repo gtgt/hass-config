@@ -1,0 +1,21 @@
+packages:
+  magichome: !include _includes/guition-esp32-s3-4848s040-display.yaml
+
+substitutions:
+  name: office_panel
+  hostname: office-panel
+  button_1_name: "Storage"
+  button_1_id: local_light
+  button_1_icon: $light_recessed
+  button_1_device: "internal_relay_1"
+
+  button_2_name: "White"
+  button_2_id: white_light
+  button_2_icon: $led_strip
+  button_2_device: "light.l_office_led0"
+
+  button_3_name: "RGB"
+  button_3_id: rgb_light
+  button_3_icon: $ambient_light
+  button_3_device: "light.magichome_rgb"
+

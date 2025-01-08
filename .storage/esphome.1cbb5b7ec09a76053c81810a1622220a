@@ -8,11 +8,11 @@
       "name": "ttgo-tdisplay",
       "friendly_name": "",
       "mac_address": "24:62:AB:F9:8E:14",
-      "compilation_time": "Aug 31 2024, 19:32:43",
+      "compilation_time": "Dec 26 2024, 02:42:29",
       "model": "featheresp32",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.8.1",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -33,8 +33,8 @@
         "key": 3517391651,
         "name": "ttgo-tdisplay_status",
         "unique_id": "ttgo-tdisplaybinary_sensorttgo-tdisplay_status",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
         "entity_category": 2,
         "device_class": "connectivity",
         "is_status_binary_sensor": true
@@ -68,20 +68,21 @@
         "key": 2325206562,
         "name": "ttgo-tdisplay_restart",
         "unique_id": "ttgo-tdisplayswitchttgo-tdisplay_restart",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:restart",
         "entity_category": 1,
         "assumed_state": false,
         "device_class": ""
       }
     ],
+    "update": [],
     "sensor": [
       {
         "object_id": "ttgo-tdisplay_up_time",
         "key": 407021594,
         "name": "ttgo-tdisplay_up_time",
         "unique_id": "2462abf98e14-uptime",
-        "disabled_by_default": false,
+        "disabled_by_default": true,
         "icon": "mdi:timelapse",
         "entity_category": 2,
         "device_class": "duration",
@@ -96,8 +97,8 @@
         "key": 617014725,
         "name": "ttgo-tdisplay_wifi_signal",
         "unique_id": "2462abf98e14-wifisignal",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:signal-variant",
         "entity_category": 2,
         "device_class": "signal_strength",
         "unit_of_measurement": "dBm",
@@ -113,8 +114,8 @@
         "key": 99531976,
         "name": "ttgo-tdisplay_wifi_ssid",
         "unique_id": "2462abf98e14-wifiinfo-ssid",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:wifi-check",
         "entity_category": 2,
         "device_class": ""
       },
@@ -123,8 +124,8 @@
         "key": 2293334878,
         "name": "ttgo-tdisplay_wifi_mac",
         "unique_id": "2462abf98e14-wifiinfo-macadr",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:hexadecimal",
         "entity_category": 2,
         "device_class": ""
       },
@@ -133,8 +134,8 @@
         "key": 2290266026,
         "name": "ttgo-tdisplay_wifi_ip",
         "unique_id": "2462abf98e14-wifiinfo-ip",
-        "disabled_by_default": false,
-        "icon": "",
+        "disabled_by_default": true,
+        "icon": "mdi:ip",
         "entity_category": 2,
         "device_class": ""
       }
@@ -159,7 +160,6 @@
         "legacy_supports_white_value": false,
         "legacy_supports_color_temperature": false
       }
-    ],
-    "update": []
+    ]
   }
 }

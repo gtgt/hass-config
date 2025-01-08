@@ -90,44 +90,52 @@ system_health:
 recorder:
   db_url: !secret db_url
   commit_interval: 20
-  purge_keep_days: 90
+  purge_keep_days: 14
   include:
     domains:
       - binary_sensor
       - switch
-      - media_player
       - climate
       - light
       - person
       - device_tracker
-      - weather
       - input_number
       - input_select
       - water_heater
     entity_globs:
       - sensor.ac_*
-      - sensor.*temp*
-      - sensor.*power*
+      - sensor.*_temp*
+      - sensor.*_power*
+      - sensor.*_humidity*
       - sensor.*_kwh
       - sensor.*_energy
       - sensor.*_cost*
+      - sensor.*_weight*
+      - sensor.*_conductivity*
+      - sensor.*_moisture*
+      - sensor.*_illuminance*
+      - sensor.*_score*
       - sensor.*_compensation
-      - sensor.*current*
+      - sensor.*_current*
       - sensor.*location*
+      - sensor.*battery*
       - sensor.*_geokodolt_hely
       - sensor.*_eszlelt_tevekenyseg
       - sensor.*_detected_activity
-      - sensor.ble_*
     entities:
       - sensor.aqua_ariston_average_showers
       - sensor.aqua_ariston_energy_use_in_the_last_day
       - sensor.dishwasher
       - sensor.ble_measured_power_ibeacon
   exclude:
+    domains:
+      - saver
     entity_globs:
-      - switch.*_led
-      - switch.*_backlight
-      - sensor.*_time
+      - switch.*_led*
+      - switch.*_backlight*
+      - sensor.*_time*
+      - sensor.*_rssi*
+      - sensor.*_wifi*
       - switch.energy_re*
       - switch.*_restart
       - input_number.energy_*
@@ -139,6 +147,7 @@ recorder:
 history:
 logbook:
 
+influxdb: !include influxdb.yaml
 #influxdb:
 #  api_version: 2
 #  ssl: true
@@ -194,14 +203,6 @@ saver:
 
 satel_integra: !include satel_integra.yaml
 
-media_player:
-  - platform: kodi
-    host: 192.168.1.9
-    port: 80
-    tcp_port: 9090
-    name: QBox
-    username: !secret kodi_username
-    password: !secret kodi_password
 
 #tuya:
 #  username: !secret tuya_username
@@ -277,7 +278,8 @@ frontend:
   themes: !include_dir_merge_named themes
 
 # https://www.home-assistant.io/docs/automation/
-automation: !include_dir_merge_list automations
+automation dir: !include_dir_merge_list automations
+automation ui: !include automations.yaml
 
 # https://www.home-assistant.io/integrations/script/
 script: !include_dir_merge_named scripts

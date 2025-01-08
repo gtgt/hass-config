@@ -1,17 +1,18 @@
 substitutions:
   name: energy2
+  hostname: energy2
 
 packages:
   common: !include _includes/common.yaml
-  board: !include _includes/board/esp01.yaml
+  board: !include _includes/board/d1_mini.yaml
 
 logger:
   level: INFO
 
 uart:
   - id: ubus1
-    rx_pin: GPIO3
-    tx_pin: GPIO1
+    rx_pin: D2
+    tx_pin: D1
     baud_rate: 9600
     #stop_bits: 2
 
@@ -60,7 +61,7 @@ sensor:
     update_interval: 3s
   - platform: dht
     model: DHT11
-    pin: GPIO0
+    pin: D3
     update_interval: 15s
     temperature:
       id: temp

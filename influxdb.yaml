@@ -1,0 +1,89 @@
+api_version: 1
+host: 8f49de54-victoria-metrics
+port: 8428
+max_retries: 3
+measurement_attr: entity_id
+tags_attributes:
+  - friendly_name
+  - unit_of_measurement
+ignore_attributes:
+  - icon
+  - source
+  - options
+  - editable
+  - min
+  - max
+  - step
+  - mode
+  - marker_type
+  - preset_modes
+  - supported_features
+  - supported_color_modes
+  - effect_list
+  - attribution
+  - assumed_state
+  - state_open
+  - state_closed
+  - writable
+  - stateExtra
+  - event
+  - friendly_name
+  - device_class
+  - state_class
+  - ip_address
+  - device_file
+  - unit_of_measurement
+  - unitOfMeasure
+include:
+  domains:
+    - binary_sensor
+    - switch
+    - climate
+    - light
+    - person
+    - device_tracker
+    - input_number
+    - input_select
+    - water_heater
+    - lock
+    - cover
+  entity_globs:
+    - sensor.ac_*
+    - sensor.*_temp*
+    - sensor.*_power*
+    - sensor.*_humidity*
+    - sensor.*_kwh
+    - sensor.*_energy
+    - sensor.*_cost*
+    - sensor.*_weight*
+    - sensor.*_conductivity*
+    - sensor.*_moisture*
+    - sensor.*_illuminance*
+    - sensor.*_score*
+    - sensor.*_compensation
+    - sensor.*_current*
+    - sensor.*location*
+    - sensor.*_geokodolt_hely
+    - sensor.*_eszlelt_tevekenyseg
+    - sensor.*_detected_activity
+  entities:
+    - sensor.aqua_ariston_average_showers
+    - sensor.aqua_ariston_energy_use_in_the_last_day
+    - sensor.dishwasher
+    - sensor.ble_measured_power_ibeacon
+exclude:
+  domains:
+    - saver
+  entity_globs:
+    - switch.*_led*
+    - switch.*_backlight*
+    - sensor.*_time*
+    - sensor.*_battery_temperature*
+    - sensor.*_rssi*
+    - sensor.*_wifi*
+    - switch.energy_re*
+    - switch.*_restart
+    - input_number.energy_*
+    - binary_sensor.*_pulse
+  entities:
+    - sensor.ble_mac_ibeacon

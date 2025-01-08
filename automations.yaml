@@ -1,69 +1,79 @@
-- id: '1715389593859'
-  alias: dining_table_light_apb_switch
-  description: Étkezőasztal kapcsoló
-  trigger:
-  - platform: state
-    entity_id:
-    - switch.apb_q12
-    to: 'on'
-  condition: []
-  action:
-  - service: light.toggle
+- id: '1732908024287'
+  alias: Let's Encrypt renew
+  description: Renew Let's Encrypt certs
+  triggers:
+  - trigger: time
+    at: 03:00:00
+  conditions: []
+  actions:
+  - action: hassio.addon_restart
     metadata: {}
-    data: {}
-    target:
-      entity_id: light.dining_table
+    data:
+      addon: core_letsencrypt
   mode: single
-- id: '1715389774168'
-  alias: dining_table_apb_switch
+- id: '1732910862841'
+  alias: Terrace Motion Light
   description: ''
-  trigger:
-  - platform: state
-    entity_id:
-    - switch.apb_q12
-    to: 'on'
-  condition: []
-  action:
-  - service: light.toggle
-    metadata: {}
-    data: {}
-    target:
-      entity_id: light.dining_table
+  use_blueprint:
+    path: gist.githubusercontent.com/motion_illuminance_activated_entity.yaml
+    input:
+      motion_sensor: binary_sensor.pir_terrace
+      target_entity: switch.apb_q16
+      sunstate_condition: Below horizon
+      no_motion_wait: '2'
+- id: '1733774848048'
+  alias: pufi_childlock
+  description: Force child lock on
+  triggers:
+  - type: pm25
+    device_id: 38a9cf36a11b41fb1399bfd5227c8578
+    entity_id: 453dd8ac556a75ec8539ad2c802ad375
+    domain: sensor
+    trigger: device
+    above: 0
+  conditions:
+  - condition: device
+    type: is_off
+    device_id: 38a9cf36a11b41fb1399bfd5227c8578
+    entity_id: 293da9e352721c087a4f2a54fe9ccb94
+    domain: switch
+  actions:
+  - type: turn_on
+    device_id: 38a9cf36a11b41fb1399bfd5227c8578
+    entity_id: 293da9e352721c087a4f2a54fe9ccb94
+    domain: switch
   mode: single
-- id: '1715934936474'
-  alias: shed_light_turn_on
+- id: '1735044244067'
+  alias: Fish tank pump on
   description: ''
-  trigger:
-  - platform: time
-    at: '20:30:00'
-  - platform: sun
-    event: sunrise
-    offset: 01:00:00
-  condition:
+  triggers:
+  - trigger: time
+    at: 08:00:00
+  conditions:
   - condition: state
-    entity_id: light.shed
+    entity_id: switch.hg01wt_switch1
     state: 'off'
-  action:
-  - service: light.turn_on
+  actions:
+  - action: switch.turn_on
     metadata: {}
     data: {}
     target:
-      entity_id: light.shed
+      entity_id: switch.hg01wt_switch1
   mode: single
-- id: '1715935043250'
-  alias: shed_light_turn_off
+- id: '1735044398182'
+  alias: Fish tank pump off
   description: ''
-  trigger:
-  - platform: time
-    at: 07:30:00
-  condition:
+  triggers:
+  - trigger: time
+    at: '13:00:00'
+  conditions:
   - condition: state
-    entity_id: light.shed
+    entity_id: switch.hg01wt_switch1
     state: 'on'
-  action:
-  - service: light.turn_off
-    target:
-      entity_id:
-      - light.shed
+  actions:
+  - action: switch.turn_off
+    metadata: {}
     data: {}
+    target:
+      entity_id: switch.hg01wt_switch1
   mode: single

@@ -8,11 +8,11 @@
       "name": "meeting-info",
       "friendly_name": "",
       "mac_address": "4C:11:AE:0C:44:7F",
-      "compilation_time": "Sep  4 2024, 01:08:40",
+      "compilation_time": "Dec 28 2024, 04:36:39",
       "model": "d1_mini",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.8.1",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 0,
@@ -27,19 +27,6 @@
       "major": 1,
       "minor": 10
     },
-    "binary_sensor": [
-      {
-        "object_id": "meeting-info_status",
-        "key": 2850294546,
-        "name": "meeting-info_status",
-        "unique_id": "meeting-infobinary_sensormeeting-info_status",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      }
-    ],
     "switch": [
       {
         "object_id": "meeting-info_restart",
@@ -53,7 +40,6 @@
         "device_class": ""
       }
     ],
-    "update": [],
     "sensor": [
       {
         "object_id": "meeting-info_up_time",
@@ -86,6 +72,20 @@
         "last_reset_type": 0
       }
     ],
-    "text_sensor": []
+    "text_sensor": [],
+    "update": [],
+    "binary_sensor": [
+      {
+        "object_id": "meeting-info_status",
+        "key": 2850294546,
+        "name": "meeting-info_status",
+        "unique_id": "meeting-infobinary_sensormeeting-info_status",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      }
+    ]
   }
 }

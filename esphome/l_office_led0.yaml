@@ -1,4 +1,5 @@
 substitutions:
   name: l-office-led0
+  hostname: l-office-led0
 
 <<: !include _includes/magichome_w.yaml

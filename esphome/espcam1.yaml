@@ -1,5 +1,6 @@
 substitutions:
   name: espcam1
+  hostname: espcam1
 
 packages:
   common: !include _includes/common.yaml

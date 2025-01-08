@@ -1,5 +1,6 @@
 substitutions:
   name: hg01wt
+  hostname: hg0wt
 
 packages:
   common: !include _includes/common.yaml

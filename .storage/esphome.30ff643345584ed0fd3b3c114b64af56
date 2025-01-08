@@ -8,11 +8,11 @@
       "name": "hg01wt",
       "friendly_name": "",
       "mac_address": "DC:4F:22:14:FE:06",
-      "compilation_time": "Sep  4 2024, 02:41:27",
+      "compilation_time": "Dec 26 2024, 03:08:54",
       "model": "esp01_1m",
       "manufacturer": "Espressif",
       "has_deep_sleep": false,
-      "esphome_version": "2024.8.1",
+      "esphome_version": "2024.12.2",
       "project_name": "",
       "project_version": "",
       "webserver_port": 80,
@@ -27,54 +27,6 @@
       "major": 1,
       "minor": 10
     },
-    "binary_sensor": [
-      {
-        "object_id": "hg01wt_status",
-        "key": 2041265331,
-        "name": "hg01wt_status",
-        "unique_id": "hg01wtbinary_sensorhg01wt_status",
-        "disabled_by_default": true,
-        "icon": "mdi:power",
-        "entity_category": 2,
-        "device_class": "connectivity",
-        "is_status_binary_sensor": true
-      },
-      {
-        "object_id": "hg01wt_button1",
-        "key": 2305800510,
-        "name": "hg01wt_button1",
-        "unique_id": "hg01wtbinary_sensorhg01wt_button1",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "device_class": "",
-        "is_status_binary_sensor": false
-      }
-    ],
-    "switch": [
-      {
-        "object_id": "hg01wt_restart",
-        "key": 1200459538,
-        "name": "hg01wt_restart",
-        "unique_id": "hg01wtswitchhg01wt_restart",
-        "disabled_by_default": true,
-        "icon": "mdi:restart",
-        "entity_category": 1,
-        "assumed_state": false,
-        "device_class": ""
-      },
-      {
-        "object_id": "hg01wt_switch1",
-        "key": 1269465230,
-        "name": "hg01wt_switch1",
-        "unique_id": "hg01wtswitchhg01wt_switch1",
-        "disabled_by_default": false,
-        "icon": "",
-        "entity_category": 0,
-        "assumed_state": false,
-        "device_class": ""
-      }
-    ],
     "update": [],
     "sensor": [
       {
@@ -137,6 +89,54 @@
         "disabled_by_default": true,
         "icon": "mdi:ip",
         "entity_category": 2,
+        "device_class": ""
+      }
+    ],
+    "binary_sensor": [
+      {
+        "object_id": "hg01wt_status",
+        "key": 2041265331,
+        "name": "hg01wt_status",
+        "unique_id": "hg01wtbinary_sensorhg01wt_status",
+        "disabled_by_default": true,
+        "icon": "mdi:power",
+        "entity_category": 2,
+        "device_class": "connectivity",
+        "is_status_binary_sensor": true
+      },
+      {
+        "object_id": "hg01wt_button1",
+        "key": 2305800510,
+        "name": "hg01wt_button1",
+        "unique_id": "hg01wtbinary_sensorhg01wt_button1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_class": "",
+        "is_status_binary_sensor": false
+      }
+    ],
+    "switch": [
+      {
+        "object_id": "hg01wt_restart",
+        "key": 1200459538,
+        "name": "hg01wt_restart",
+        "unique_id": "hg01wtswitchhg01wt_restart",
+        "disabled_by_default": true,
+        "icon": "mdi:restart",
+        "entity_category": 1,
+        "assumed_state": false,
+        "device_class": ""
+      },
+      {
+        "object_id": "hg01wt_switch1",
+        "key": 1269465230,
+        "name": "hg01wt_switch1",
+        "unique_id": "hg01wtswitchhg01wt_switch1",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "assumed_state": false,
         "device_class": ""
       }
     ]

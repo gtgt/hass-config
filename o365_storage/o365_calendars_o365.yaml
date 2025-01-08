@@ -7,10 +7,12 @@
     start_offset: -15
     track: true
     exclude:
-     - "Launch"
-     - "Public holiday"
-     - "OOO"
-     - "PTO"
+      - "Launch"
+      - "Public holiday"
+      - "OOO"
+      - "PTO"
+      - "Vacation"
+      - "Day off"
 
 - cal_id: AAMkADY0YTk5OGIwLWE1OWQtNGYwNC1iMGRkLTJjZTEzNzQxZTlmNwBGAAAAAADS7QdJNyEHTrk1tn0NuNYfBwDXkGL_JO-iSL6szTqRKimEAAAAAAEGAADXkGL_JO-iSL6szTqRKimEAAAG94gYAAA=
   entities:
@@ -40,3 +42,5 @@
       - "OOO"
       - "PTO"
       - "POD1"
+      - "Vacation"
+      - "Day off"

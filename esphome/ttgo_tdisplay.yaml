@@ -1,5 +1,6 @@
 substitutions:
   name: ttgo-tdisplay
+  hostname: ttgo-disoplay
 
 esp32:
   board: featheresp32 #esp32dev esp32-c3-devkitm-1

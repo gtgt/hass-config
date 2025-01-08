@@ -3,6 +3,7 @@ packages:
 
 substitutions:
   name: ac_relay
+  hostname: ac-relay
   sw_icon: "mdi:switch"
   sw1_name: bedroom
   sw1_inverted: "yes"

@@ -45,8 +45,8 @@
       unit_of_measurement: kWh
       state_class: total
       
-    - name: energy2_power
-      state: 0
-      device_class: power
-      unit_of_measurement: W
-      state_class: measurement
+#    - name: energy2_power
+#      state: 0
+#      device_class: power
+#      unit_of_measurement: W
+#      state_class: measurement
