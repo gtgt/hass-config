@@ -57,6 +57,8 @@ logger:
 #    pydaikin: debug
 #    homeassistant.components.modbus: info
 #    pymodbus.client: fatal
+    custom_components.localtuya: debug
+    custom_components.localtuya.pytuya: debug
   
 http:
   server_port: 443
