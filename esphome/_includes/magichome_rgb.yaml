@@ -1,5 +1,5 @@
 packages:
-  common: !include common.yaml
+  common: !include minimal.yaml
   board: !include board/magichome.yaml
 
 # this is code for the RGBW version of magichome 

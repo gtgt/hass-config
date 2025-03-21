@@ -4,15 +4,17 @@ substitutions:
 
 packages:
   common: !include _includes/common.yaml
-  board: !include _includes/board/d1_mini.yaml
+  board: !include _includes/board/esp01.yaml
 
 external_components:
   - source: github://oxan/esphome-stream-server
 
 uart:
    id: uart_bus
-   tx_pin: D2
-   rx_pin: D3
+   tx_pin: GPIO01
+   #tx_pin: GPIO15
+   rx_pin: GPIO03
+   #rx_pin: GPIO13
    baud_rate: 9600
 
 stream_server:

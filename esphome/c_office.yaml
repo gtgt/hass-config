@@ -57,7 +57,7 @@ climate:
   - platform: heatpumpir
     id: ac
     protocol: greeyac
-    min_temperature: 11
+    min_temperature: 16
     max_temperature: 33
     horizontal_default: auto
     vertical_default: mdown
@@ -67,7 +67,7 @@ climate:
     sensor: temp
     icon: "mdi:air-conditioner"
     visual:
-      #min_temperature: 11
+      #min_temperature: 16
       #max_temperature: 33
       temperature_step:
         target_temperature: 1.0

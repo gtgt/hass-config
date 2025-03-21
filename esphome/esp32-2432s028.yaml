@@ -44,13 +44,13 @@ display:
     auto_clear_enabled: false
     invert_colors: false
     dimensions:
-        width: 320
-        height: 240
+        width: 240
+        height: 320
 
     #rotation: 180
     transform:
-        swap_xy: false
-        mirror_x: true
+        swap_xy: true
+        mirror_x: false
         mirror_y: false
 #    lambda: |-
 #      auto touch = id(touch_screen)->get_touch();
@@ -63,7 +63,7 @@ touchscreen:
   spi_id: touch_spi
   cs_pin: 33
   interrupt_pin: 36
-  update_interval: 50ms
+  #update_interval: 50ms
   #report_interval: 1s
   threshold: 400
   calibration:
@@ -72,15 +72,15 @@ touchscreen:
     y_min: 280
     y_max: 3620
   transform:
-    swap_xy: true
-    mirror_x: true
+    swap_xy: false
+    mirror_x: false
     mirror_y: true
   on_touch:
     then:
       - lvgl.label.update:
           id: text_title
           text:
-            format: "x=%d, y=%d\nx_raw=%d, y_raw=%d"
+            format: "x=%d, y=%d\nxr=%d,yr=%d"
             args: [ touch.x, touch.y, touch.x_raw, touch.y_raw ]
   on_release:
     then:
@@ -115,26 +115,6 @@ binary_sensor:
         pullup: true
     name: ${name}_button0
     id: button0
-
-text_sensor:
-  # - platform: template
-  #   id: uptime_human
-  #   icon: mdi:clock-start
-  #   internal: true
-  - platform: wifi_info
-    ip_address:
-      id: ip_address
-      internal: true
-      on_value:
-        - lvgl.label.update:
-            id: text_title
-            text:
-              format: "IP: %s"
-              args: [ x.c_str() ]
-  - platform: homeassistant
-    id: light_magichome_rgb_color
-    entity_id: light.magichome_rgb
-    attribute: rgb_color
 
 # Define pins for backlight display and back LED1
 output:
@@ -245,7 +225,7 @@ sensor:
     id: c_cur_temp
     entity_id: climate.c_office_ac
     attribute: current_temperature
-    on_value: 
+    on_value:
       then:
         - lvgl.label.update:
             id: lbl_climate_cur_temp
@@ -256,7 +236,7 @@ sensor:
     id: c_target_temp
     entity_id: climate.c_office_ac
     attribute: temperature
-    on_value: 
+    on_value:
       then:
         - lvgl.arc.update:
             id: arc_climate
@@ -269,6 +249,56 @@ sensor:
             text:
               format: "%.0f C"
               args: [x]
+
+text_sensor:
+  # - platform: template
+  #   id: uptime_human
+  #   icon: mdi:clock-start
+  #   internal: true
+
+  - platform: wifi_info
+    ip_address:
+      id: ip_address
+      internal: true
+      on_value:
+        - lvgl.label.update:
+            id: text_title
+            text:
+              format: "IP: %s"
+              args: [ x.c_str() ]
+
+  - platform: homeassistant
+    id: light_magichome_rgb_color
+    entity_id: light.magichome_rgb
+    attribute: rgb_color
+
+  - platform: homeassistant
+    id: c_mode
+    entity_id: climate.c_office_ac
+    on_value:
+      then:
+        - lvgl.dropdown.update:
+            id: dd_mode_climate
+            selected_index: !lambda |-
+              if (x == "cool") { return 1; }
+              else if (x == "heat") { return 2; }
+              else if (x == "fan_only") { return 3; }
+              else if (x == "dry") { return 4; }
+              return 0;
+
+  - platform: homeassistant
+    id: c_fan
+    entity_id: climate.c_office_ac
+    attribute: fan_mode
+    on_value:
+      then:
+        - lvgl.dropdown.update:
+            id: dd_fan_climate
+            selected_index: !lambda |-
+              if (x == "low") { return 1; }
+              else if (x == "medium") { return 2; }
+              else if (x == "high") { return 3; }
+              return 0;
 
 # Exposed switches.
 switch:
@@ -389,6 +419,11 @@ lvgl:
         bg_color: 0x333333
         bg_grad_color: 0x333333
         text_color: orange
+    dropdown:
+      bg_color: 0x111111
+      bg_opa: 85%
+      border_color: 0x333333
+      text_color: 0xFFFFFF
     buttonmatrix:
       bg_opa: TRANSP
       border_color: 0x333333
@@ -488,12 +523,12 @@ lvgl:
               - lvgl.widget.hide: keyboard
   pages:
     - id: main_page
-      pad_top: 38
+      pad_top: 35
       widgets:
         - tabview:
             id: tabview_id
             position: top
-            size: 15%
+            size: 12%
             styles: black_style
             text_font: montserrat_14
             tab_style:
@@ -524,7 +559,7 @@ lvgl:
                             text_font: icons_24
                             text: "\U0000e0f0"
                             align: CENTER
-                      on_value:
+                      on_click:
                         then:
                           - logger.log:
                               format: "Button pressed: %u"
@@ -567,7 +602,7 @@ lvgl:
                             text_font: icons_24
                             text: "\U0000f7ed"
                             align: CENTER
-                      on_value:
+                      on_click:
                         then:
                           - logger.log:
                               format: "Button pressed: %u"
@@ -671,7 +706,7 @@ lvgl:
               - name: "\U0000f8b5"
                 layout:
                   type: flex
-                  pad_row: 4
+                  pad_row: 0
                   pad_column: 0
                   flex_flow: COLUMN
                   flex_align_main: CENTER # justify-content
@@ -681,29 +716,38 @@ lvgl:
                   - label:
                       id: lbl_climate_cur_temp
                       text_font: montserrat_26
+                      text: " "
+                      translate_x: -3
                       translate_y: 80
                       align_to:
                         id: arc_climate
-                        align: CENTER                  
+                        align: CENTER
                   - arc:
                       id: arc_climate
                       value: 14
-                      min_value: 14
+                      pad_top: 10
+                      min_value: 16
                       max_value: 29
                       adjustable: true
-                      on_release:
-                        - homeassistant.service:
-                            service: climate.set_temperature
-                            data:
-                              entity_id: climate.c_office_ac
-                              temperature: !lambda return x;
+                      on_change:
+                        - if:
+                            condition:
+                              lambda: "return int(x) != id(c_target_temp).state;"
+                            then:
+                              - homeassistant.service:
+                                  service: climate.set_temperature
+                                  data:
+                                    entity_id: climate.c_office_ac
+                                    temperature: !lambda return x;
                   - label:
                       id: lbl_climate_target_temp
-                      text_font: montserrat_18
+                      text_font: montserrat_20
+                      text: " "
+                      translate_x: -3
                       translate_y: -30
                   - obj:
                       align: TOP_MID
-                      translate_y: -50
+                      translate_y: -40
                       border_width: 0
                       pad_all: 0
                       layout:
@@ -711,23 +755,25 @@ lvgl:
                         flex_flow: ROW
                         flex_align_cross: CENTER
                         pad_row: 0
-                        pad_column: 100
+                        pad_column: 120
                       width: SIZE_CONTENT
                       height: SIZE_CONTENT
                       widgets:
                         - button:
                             id: btn_climate_spinbox_down
+                            translate_y: 10
                             on_click:
                               - lvgl.spinbox.decrement: spinbox_climate
                             widgets:
                               - label:
+                                  text_font: montserrat_28
                                   text: "-"
                         - spinbox:
                             id: spinbox_climate
                             align: CENTER
                             text_align: CENTER
-                            width: 50
-                            range_from: 14
+                            width: 90
+                            range_from: 16
                             range_to: 29
                             step: 1
                             rollover: false
@@ -735,20 +781,78 @@ lvgl:
                             decimal_places: 0
                             hidden: true
                             on_change:
-                              then:
-                                - homeassistant.action:
-                                    action: climate.set_temperature
-                                    data:
-                                      temperature: !lambda return x;
-                                      entity_id: climate.c_office_ac
+                              - if:
+                                  condition:
+                                    lambda: "return int(x) != id(c_target_temp).state;"
+                                  then:
+                                    - homeassistant.action:
+                                        action: climate.set_temperature
+                                        data:
+                                          temperature: !lambda return x;
+                                          entity_id: climate.c_office_ac
                         - button:
                             id: btn_climate_spinbox_up
+                            translate_y: 10
                             on_click:
                               - lvgl.spinbox.increment: spinbox_climate
                             widgets:
                               - label:
+                                  text_font: montserrat_28
                                   text: "+"
-
+                  - dropdown:
+                      id: dd_mode_climate
+                      width: 90
+                      align: TOP_MID
+                      translate_y: -75
+                      translate_x: -3
+                      options:
+                        - "off"
+                        - "cool"
+                        - "heat"
+                        - "fan_only"
+                        - "dry"
+                      selected_index: 0
+                      dropdown_list:
+                        selected:
+                          checked:
+                            text_color: 0x0000FF
+                      on_change:
+                        - homeassistant.action:
+                            action: climate.set_hvac_mode
+                            data:
+                              entity_id: climate.c_office_ac
+                              hvac_mode: !lambda |-
+                                if (int(x) == 1) { return (char*)"cool"; }
+                                else if (int(x) == 2) { return (char*)"heat"; }
+                                else if (int(x) == 3) { return (char*)"fan_only"; }
+                                else if (int(x) == 4) { return (char*)"dry"; }
+                                return (char*)"off";
+                  - dropdown:
+                      id: dd_fan_climate
+                      width: 90
+                      align: TOP_MID
+                      translate_y: -60
+                      translate_x: -3
+                      options:
+                        - "auto"
+                        - "low"
+                        - "medium"
+                        - "high"
+                      selected_index: 0
+                      dropdown_list:
+                        selected:
+                          checked:
+                            text_color: 0x0000FF
+                      on_change:
+                        - homeassistant.action:
+                            action: climate.set_fan_mode
+                            data:
+                              entity_id: climate.c_office_ac
+                              fan_mode: !lambda |-
+                                if (int(x) == 1) { return (char*)"low"; }
+                                else if (int(x) == 2) { return (char*)"medium"; }
+                                else if (int(x) == 3) { return (char*)"high"; }
+                                return (char*)"auto";
               - name: "\U0000e8b8"
                 layout:
                   type: flex
@@ -774,7 +878,7 @@ lvgl:
                       on_defocus:
                         then:
                           - lvgl.widget.hide: keyboard
-                      on_value:
+                      on_change:
                         then:
                           - logger.log:
                               format: "Textarea changed to: %s"
